@@ -1,0 +1,34 @@
+{{#
+    @name Offices index
+    @desc The offices index template.
+#}}
+
+<!-- /offices/index.antlers.html -->
+<main class="outer-grid" id="content">
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
+<!-- End: /offices/index.antlers.html -->
+
+{{ section:index_content }}
+    <!-- /offices/index.antlers.html -->
+    <div class="fluid-container self-start grid md:grid-cols-12 gap-8">
+        {{ partial:navigation/breadcrumbs class="md:col-span-12" }}
+        {{ partial:typography/h1 :content="title" class="md:col-span-12" }}
+        {{ collection:offices sort="date:desc" paginate="true" limit="12" as="items" }}
+            {{ unless no_results }}
+                {{ items }}
+                    {{ partial:components/offices_item class="md:col-span-4" }}
+                {{ /items }}
+            {{ else }}
+                <div class="md:col-span-6">
+                    {{ trans:strings.no_results }}
+                </div>
+            {{ /unless }}
+
+            {{ partial:statamic-peak-tools::components/pagination class="md:col-span-12" }}
+        {{ /collection:offices }}
+    </div>
+    <!-- End: /offices/index.antlers.html -->
+{{ /section:index_content }}

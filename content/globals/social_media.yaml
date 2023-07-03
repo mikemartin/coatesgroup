@@ -1,0 +1,33 @@
+title: 'Social media'
+data:
+  social_media:
+    -
+      id: ljmepi0x
+      handle: coatesgroup
+      prefix: 'https://www.twitter.com/'
+      type: twitter
+      enabled: true
+    -
+      id: ljmeps4o
+      handle: coatesgroup
+      prefix: 'https://www.instagram.com/'
+      type: instagram
+      enabled: true
+    -
+      id: ljmeq8dh
+      handle: company/coatesgroup
+      prefix: 'https://www.linkedin.com/'
+      type: linkedin
+      enabled: true
+    -
+      id: ljmeqj2l
+      handle: coatesgroup
+      prefix: 'https://www.vimeo.com/'
+      type: vimeo
+      enabled: true
+    -
+      id: ljmeqvin
+      handle: Coates-Group-308435269623525
+      prefix: 'https://www.facebook.com/'
+      type: facebook
+      enabled: true

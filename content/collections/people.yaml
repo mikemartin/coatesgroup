@@ -1,0 +1,16 @@
+title: People
+template: default
+layout: layout
+mount: 4e8b0869-92ca-4971-ac6b-95ba0d48057b
+revisions: false
+title_format: '{first_name} {last_name}'
+slugs: false
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+structure:
+  root: false
+  max_depth: 1

@@ -1,0 +1,17 @@
+{{#
+    @name Experiences show
+    @desc The Experiences show template.
+#}}
+
+<!-- /experiences/show.antlers.html -->
+<main class="outer-grid" id="content">
+    <div class="fluid-container">
+        {{ partial:navigation/breadcrumbs }}
+        {{ partial:typography/h1 :content="title" }}
+    </div>
+
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
+<!-- /experiences/show.antlers.html -->

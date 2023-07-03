@@ -1,0 +1,41 @@
+{{#
+    @name Leadership Team
+    @desc The Leadership Team page builder block.
+    @set page.page_builder.leadership_team
+#}}
+
+<!-- /page_builder/_leadership_team.antlers.html -->
+<section class="fluid-container grid md:grid-cols-12 gap-8">
+    {{ if block:title or block:text }}
+        <header class="md:col-span-6">
+            {{ block:title ?= { partial:typography/h2 :content="block:title" class="mb-4" } }}
+            {{ block:text ?= { partial:typography/p :content="block:text" } }}
+        </header>
+    {{ /if }}
+
+    <div class="md:col-span-12 grid md:grid-cols-12 gap-8">
+        {{
+            leadership_team = block:leadership_team
+                ? block:leadership_team
+                : { collection:leadership_team sort="order" }
+        }}
+
+        {{ leadership_team scope="leadership_team_member" }}
+            <article class="md:col-span-4 flex flex-col gap-3 aspect-[4/3]">
+                {{ partial
+                    src="statamic-peak-tools::components/picture"
+                    :image="leadership_team_member:image:url"
+                    aspect_ratio="4/3"
+                    sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                    cover="true"
+                    lazy="true"
+                }}
+                <header class="flex flex-col">
+                    <span class="text-sm text-neutral">{{ leadership_team_member:function }}</span>
+                    <span class="text-neutral">{{ leadership_team_member:title }}</span>
+                </header>
+            </article>
+        {{ /leadership_team }}
+    </div>
+</section>
+<!-- End: /page_builder/_leadership_team.antlers.html -->

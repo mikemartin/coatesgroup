@@ -1,0 +1,33 @@
+{{#
+    @name Case Studies index
+    @desc The Case Studies index template.
+#}}
+
+<!-- /case_studies/index.antlers.html -->
+<main class="outer-grid" id="content">
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
+</main>
+<!-- End: /case_studies/index.antlers.html -->
+
+{{ section:index_content }}
+    <!-- /case_studies/index.antlers.html -->
+    <div class="fluid-container grid md:grid-cols-12 gap-12">
+        {{ collection:case_studies sort="date:desc" paginate="true" limit="10" as="items" }}
+            {{ unless no_results }}
+                {{ items }}
+                    <div class="md:col-span-6">
+                        <a class="underline" href="{{ url }}">{{ title }}</a>
+                    </div>
+                {{ /items }}
+            {{ else }}
+                <div class="md:col-span-6">
+                    {{ trans:strings.no_results }}
+                </div>
+            {{ /unless }}
+            {{ partial:statamic-peak-tools::components/pagination class="md:col-span-12" }}
+        {{ /collection:case_studies }}
+    </div>
+    <!-- End: /case_studies/index.antlers.html -->
+{{ /section:index_content }}

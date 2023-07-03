@@ -1,0 +1,29 @@
+{{#
+    @name Utility navigation
+    @desc The sites utility navigation rendered on each page.
+#}}
+
+<!-- /navigation/_utility.antlers.html -->
+<nav class="hidden md:block" aria-label="{{ trans:strings.utility_navigation }}">
+    <ul class="flex items-center space-x-8">
+        {{ nav:utility max_depth="1" select="title|url" }}
+            <li
+                class="relative leading-none"
+            >
+                <a
+                    class="
+                        p-1 -m-1 flex items-center font-bold text-sm text-white hover:text-white/75 focus:outline-none focus-visible:ring-2 ring-primary
+                        {{ is_current || is_parent
+                            ? 'text-primary'
+                            : 'text-neutral' }}
+                    "
+                    href="{{ url }}"
+                >
+                    {{ title }}
+                </a>
+            </li>
+        {{ /nav:utility }}
+        {{ partial:navigation/language_picker }}
+    </ul>
+</nav>
+<!-- End: /navigation/_utility.antlers.html -->

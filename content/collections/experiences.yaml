@@ -1,0 +1,11 @@
+title: Experiences
+route: '/{mount}/{slug}'
+layout: layout
+template: experiences/show
+revisions: false
+date: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+mount: d70deed0-6959-4ec0-97a2-75d120b8899e

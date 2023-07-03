@@ -1,0 +1,11 @@
+title: Products
+route: ''
+layout: layout
+template: default
+revisions: false
+date: false
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+mount: 

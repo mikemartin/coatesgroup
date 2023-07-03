@@ -1,0 +1,11 @@
+title: Case Studies
+route: '/{mount}/{slug}'
+layout: layout
+template: case_studies/show
+revisions: false
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+mount: a5663a02-3b33-48ec-8a46-625a20d4ccf3

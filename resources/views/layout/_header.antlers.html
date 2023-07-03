@@ -1,0 +1,20 @@
+{{#
+    @name Header
+    @desc The sites header rendered on each page.
+#}}
+
+<!-- /layout/_header.antlers.html -->
+<header class="w-full">
+    <div class="hidden md:block bg-black dark py-1">
+        <div class="fluid-container flex justify-between items-center">
+            {{ partial:navigation/social_media }}
+            {{ partial:navigation/utility }}
+        </div>
+    </div>
+    <div class="py-4 fluid-container flex justify-between items-center">
+        {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
+        {{ partial:components/logo width="120" }}
+        {{ partial:navigation/main }}
+    </div>
+</header>
+<!-- End: /layout/_header.antlers.html -->
