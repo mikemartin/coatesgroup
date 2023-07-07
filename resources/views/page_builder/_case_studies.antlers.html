@@ -1,0 +1,48 @@
+{{#
+    @name Case Studies
+    @desc The Case Studies page builder block.
+    @set page.page_builder.case_studies
+#}}
+
+<!-- /page_builder/_case_studies.antlers.html -->
+<section class="bg-black-10 py-16 md:py-24">
+    <div class="fluid-container grid md:grid-cols-12 gap-8">
+        <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
+            {{ block:title ?= { partial:typography/h1 :content="block:title" class="md:col-span-5" } }}
+        </div>
+
+        {{ block:case_studies }}
+            <a
+                class="
+                    relative aspect-square md:aspect-[5/3] flex flex-col justify-end items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
+                    md:col-span-6
+                "
+                aria-labelledby="{{ title | slugify }}"
+                draggable="false"
+                {{ partial:snippets/button_attributes }}
+            >
+                <figure class="absolute inset-0 overflow-hidden">
+                    {{ partial
+                        src="statamic-peak-tools::components/picture"
+                        sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                        aspect_ratio="1/1 large:5/3"
+                        cover="true"
+                        lazy="true"
+                    }}
+                </figure>
+                <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+
+                <div class="px-6 py-4 relative">
+                    <span id="{{ title | slugify }}">
+                        {{ partial:typography/h2 color="text-white" :content="title" }}
+                    </span>
+                    {{ if client }}
+                        {{ partial:typography/p class="text-white text-sm" :content="client:title" }}
+                    {{ /if }}
+                </div>
+                {{ partial:components/button as="span" faux="true" }}
+            </a>
+        {{ /block:case_studies }}
+    </div>
+</section>
+<!-- End: /page_builder/_case_studies.antlers.html -->

@@ -1,0 +1,20 @@
+{{#
+	@name Full width image
+	@desc The Full width image page builder block.
+    @set page.page_builder.full_width_image
+#}}
+
+<!-- /page_builder/_full_width_image.antlers.html -->
+<section class="fluid-container grid md:grid-cols-12 gap-8">
+    <figure class="md:col-span-12">
+        <div class="aspect-square md:aspect-[9/2] -mx-8 lg:mx-0">
+            {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:9/2" cover="true" lazy="true" sizes="100vw" }}
+        </div>
+    </figure>
+    {{ block:title ?= { partial:typography/h1 :content="block:title" class="md:col-span-5" } }}
+    <div class="md:col-start-7 md:col-span-6">
+        {{ partial:typography/p :content="block:text"}}
+        {{ partial:components/buttons :buttons="block:buttons" button_type="outline" class="mt-6" }}
+    </div>
+</section>
+<!-- End: /page_builder/_full_width_image.antlers.html -->

@@ -97,7 +97,7 @@ return [
         */
 
         'presets' => [
-            'replacement' => ['w' => 4500, 'fit' => 'max'],
+            'replacement' => ['w' => 2500, 'fit' => 'max'],
         ],
 
         /*

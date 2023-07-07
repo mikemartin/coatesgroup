@@ -5,23 +5,29 @@
 #}}
 
 <!-- /page_builder/_insights.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8">
-    {{ title ?= { partial:typography/h1 as="h2" :content="title" class="md:col-span-12" } }}
-
-    {{ collection:insights sort="date:desc" limit="3" as="items" }}
-        {{ unless no_results }}
-            {{ items }}
-                {{ partial:components/insights_item class="md:col-span-4" }}
-            {{ /items }}
-        {{ else }}
-            <div class="md:col-span-6">
-                {{ trans:strings.no_results }}
-            </div>
+<section class="bg-black-10 py-16 md:py-24">
+    <div class="fluid-container grid md:grid-cols-12 gap-8">
+        {{ if block:title }}
+        <div class="grid md:grid-cols-12 md:col-span-12">
+            {{ partial:typography/h1 as="h2" :content="title" class="md:col-span-5" }}
+        </div>
         {{ /if }}
-    {{ /collection:insights }}
 
-    <nav class="md:col-span-12 text-right">
-        {{ partial:components/button label="{trans:strings.insights_all}" button_type="inline" link_type="url" url="{mount_url:insights}" }}
-    </nav>
+        {{ collection:insights sort="date:desc" limit="4" as="items" }}
+            {{ unless no_results }}
+                {{ items }}
+                    {{ partial:components/insights_item class="md:col-span-3" }}
+                {{ /items }}
+            {{ else }}
+                <div class="md:col-span-6">
+                    {{ trans:strings.no_results }}
+                </div>
+            {{ /if }}
+        {{ /collection:insights }}
+
+        <nav class="md:col-span-12 text-center">
+            {{ partial:components/button label="{trans:strings.insights_all}" button_type="outline" link_type="url" url="{mount_url:insights}" show_arrow="true" }}
+        </nav>
+    </div>
 </section>
 <!-- End: /page_builder/_insights.antlers.html -->

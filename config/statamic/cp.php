@@ -77,6 +77,11 @@ return [
             'width' => 50
         ],
         [
+            'type' => 'collection',
+            'collection' => 'clients',
+            'width' => 50
+        ],
+        [
             'type' => 'form',
             'form' => 'contact',
             'fields' => ['name', 'email'],

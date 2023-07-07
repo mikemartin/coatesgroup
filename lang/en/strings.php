@@ -52,7 +52,7 @@ return [
     'language_close' => 'Close language picker',
 
     // Insights
-    'insights_all' => 'All articles',
+    'insights_all' => 'View all insights',
     'insights_more' => 'More articles',
     'insights_read_more' => 'Read more',
 

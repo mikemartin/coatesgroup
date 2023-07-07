@@ -25,6 +25,11 @@ fields:
           handle: text
           field: common.text_plain
         -
+          handle: image
+          field: common.image
+          config:
+            mode: grid
+        -
           handle: section_button
           field:
             type: section
@@ -40,3 +45,7 @@ fields:
       listable: hidden
       display: 'Link blocks'
       replicator_preview: false
+      instructions_position: above
+      visibility: visible
+      fullscreen: true
+      hide_display: false

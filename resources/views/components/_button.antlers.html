@@ -24,7 +24,7 @@
                 inline-flex items-center py-3 px-4 uppercase tracking-wide rounded-full leading-none no-underline select-none whitespace-nowrap motion-safe:transition
                 {{ inverted
                     ? 'border border-white text-white focus-visible:ring-white'
-                    : 'border bg-neutral text-neutral focus-visible:ring-primary'
+                    : 'border border-neutral text-neutral focus-visible:ring-primary'
                 }}   
             {{ else }}
                 inline-flex items-center py-3 px-4 uppercase tracking-wide rounded leading-none no-underline select-none whitespace-nowrap motion-safe:transition
@@ -38,7 +38,7 @@
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
-        {{ if arrow }}<span aria-hidden="true"> →</span>{{ /if }}
+        {{ if show_arrow }}<span aria-hidden="true"> →</span>{{ /if }}
     </{{ as or 'a' }}>
 {{ /if }}
 <!-- End: /components/_button.antlers.html -->

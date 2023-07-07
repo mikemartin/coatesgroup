@@ -1,4 +1,4 @@
-title: Case Studies
+title: 'Case Studies'
 tabs:
   main:
     display: Main
@@ -17,6 +17,21 @@ tabs:
               display: Title
               validate:
                 - required
+          -
+            handle: client
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - clients
+              type: entries
+              display: Client
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
       -
         display: 'Page builder'
         fields:
@@ -75,8 +90,9 @@ tabs:
             handle: date
             field:
               type: date
-              listable: true
               required: true
+              default: now
+              listable: true
               validate:
                 - required
               display: Date
@@ -88,3 +104,8 @@ tabs:
               inline: false
               columns: 1
               rows: 1
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid

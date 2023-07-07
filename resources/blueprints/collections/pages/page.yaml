@@ -39,26 +39,7 @@ tabs:
               display: Text
           -
             handle: hero_video
-            field:
-              max_files: 1
-              mode: grid
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
-              type: assets
-              display: Video
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-              width: 50
-              container: videos
-              validate:
-                - 'mimes:mp4'
-                - 'max_filesize:10000'
-              instructions: 'This should be a looping `mp4` file.'
+            field: common.video
           -
             handle: hero_image
             field: common.image

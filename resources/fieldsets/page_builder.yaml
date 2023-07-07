@@ -15,6 +15,18 @@ fields:
           instructions: 'Interactive blocks.'
           icon: programming-script-code
           sets:
+            case_studies:
+              display: 'Case Studies'
+              instructions: 'Carousel of featured case studies'
+              fields:
+                -
+                  import: case_studies
+            clients:
+              display: Clients
+              instructions: 'A Clients logo cloud.'
+              fields:
+                -
+                  import: clients
             form:
               display: Form
               instructions: 'Select and render a form.'
@@ -22,15 +34,37 @@ fields:
               fields:
                 -
                   import: form
+            full_width_image:
+              display: 'Full width image'
+              instructions: 'A full width image with optional text and button(s).'
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: full_width_image
+            full_width_video:
+              display: 'Full width video'
+              instructions: 'A full width video with optional text and button(s).'
+              icon: media-computer-screen-tv
+              fields:
+                -
+                  import: full_width_video
             hero:
               display: Hero
               instructions: null
               fields:
                 -
                   import: hero
+            images_grid:
+              display: 'Images grid'
+              instructions: 'A multi row image grid.'
+              icon: null
+              fields:
+                -
+                  import: images_grid
             index_content:
               display: 'Index content'
               instructions: 'Render the currently mounted entries if available.'
+              icon: null
               fields:
                 -
                   import: index_content
@@ -44,6 +78,7 @@ fields:
             leadership:
               display: Leadership
               instructions: 'List Leadership.'
+              icon: null
               fields:
                 -
                   import: leadership

@@ -96,6 +96,15 @@ editor:
     - 'edit other authors products entries'
     - 'publish other authors products entries'
     - 'delete other authors products entries'
+    - 'view clients entries'
+    - 'edit clients entries'
+    - 'create clients entries'
+    - 'delete clients entries'
+    - 'publish clients entries'
+    - 'reorder clients entries'
+    - 'edit other authors clients entries'
+    - 'publish other authors clients entries'
+    - 'delete other authors clients entries'
 marketeer:
   title: Marketeer
   permissions:

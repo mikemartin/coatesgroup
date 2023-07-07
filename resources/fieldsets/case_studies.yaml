@@ -1,0 +1,29 @@
+title: "Case Studies"
+fields:
+  - 
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: case_studies
+    field:
+      mode: default
+      create: true
+      collections:
+        - case_studies
+      display: Case Studies
+      type: entries
+      icon: entries
+      instructions: 'Select case studies or leave empty to show all.'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      always_save: false

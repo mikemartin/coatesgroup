@@ -1,0 +1,26 @@
+{{#
+	@name Full width video
+	@desc The Full width video page builder block.
+    @set page.page_builder.full_width_video
+#}}
+
+<!-- /page_builder/_full_width_video.antlers.html -->
+<section class="fluid-container grid md:grid-cols-12 gap-8">
+    <figure class="md:col-span-12">
+        <div class="aspect-[5/7] md:aspect-[7/3] -mx-8 lg:mx-0">
+            <video
+                    playsinline muted autoplay loop preload
+                    poster="{{ block:fallback_image }}"
+                    class="w-full h-full object-cover object-center"
+                >
+                <source src="{{ block:video }}" type="video/mp4">
+            </video>
+        </div>
+    </figure>
+    {{ block:title ?= { partial:typography/h1 :content="block:title" class="md:col-span-5" } }}
+    <div class="md:col-start-7 md:col-span-6">
+        {{ partial:typography/p :content="block:text"}}
+        {{ partial:components/buttons :buttons="block:buttons" button_type="outline" class="mt-6" }}
+    </div>
+</section>
+<!-- End: /page_builder/_full_width_video.antlers.html -->

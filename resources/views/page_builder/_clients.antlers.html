@@ -1,0 +1,21 @@
+{{#
+    @name Clients
+    @desc The Clients page builder block.
+    @set page.page_builder.clients
+#}}
+
+<!-- /page_builder/_clients.antlers.html -->
+<section class="fluid-container grid grid-cols-2 gap-8 md:grid-cols-12 md:gap-8 place-items-center">
+    {{
+        clients = block:clients
+            ? block:clients
+            : { collection:clients sort="order" }
+    }}
+
+    {{ clients }}
+        <a class="md:col-span-3 p-1 -m-1 hover:scale-105 motion-safe:transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group" href="{{ website }}" target="_blank" rel="noopener" aria-label="{{ title }}">
+        {{ partial:statamic-peak-tools::components/picture :image="logo" class="w-full grayscale group-focus-visible:grayscale-0 group-hover:grayscale-0 motion-safe:transition" }}
+        </a>
+    {{ /clients }}
+</section>
+<!-- End: /page_builder/_clients.antlers.html -->
