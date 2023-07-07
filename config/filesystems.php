@@ -74,6 +74,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'videos' => [
+            'driver' => 'local',
+            'root' => public_path('videos'),
+            'url' => '/videos',
+            'visibility' => 'public',
+        ],
+
         'favicons' => [
             'driver' => 'local',
             'root' => public_path('favicons'),

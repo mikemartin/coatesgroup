@@ -1,0 +1,20 @@
+<div class="relative bg-black-80 -mt-16 -mb-12 md:-mb-16 lg:-mb-20">
+    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+        <video
+                playsinline muted autoplay loop preload
+                poster="{{ hero_image }}"
+                class="w-full h-full object-cover object-center"
+            >
+            <source src="{{ hero_video }}" type="video/mp4">
+        </video>
+    </div>
+    <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+    <div class="relative w-full h-screen flex flex-col justify-end md:h-auto pb-8 md:pt-64 md:pb-16">
+        <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
+            <div class="relative md:col-span-8">
+                <h1 class="text-white text-4xl md:text-5xl xl:text-6xl !leading-[1.1] font-light md:max-w-[18ch]">{{ hero_title }}</h1>
+                {{ partial:typography/p :content="hero_text" class="mt-2 md:mt-6 text-white font-light md:text-2xl md:max-w-[38ch]" }}
+            </div>
+        </div>
+    </div>
+</div>
