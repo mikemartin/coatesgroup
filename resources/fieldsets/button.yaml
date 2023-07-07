@@ -138,9 +138,9 @@ fields:
     handle: asset
     field: common.image
     config:
+      container: files
       localizable: true
       display: Asset
-      container: files
       width: 50
       validate:
         - 'required_if:{this}.link_type,asset'
@@ -152,6 +152,7 @@ fields:
     field:
       options:
         button: Button
+        outline: Outline
         inline: Inline
       type: button_group
       localizable: true
@@ -161,6 +162,10 @@ fields:
       replicator_preview: false
       if:
         show_controls: 'equals true'
+      width: 50
+      instructions_position: above
+      visibility: visible
+      hide_display: false
   -
     handle: attr_title
     field:
@@ -185,5 +190,19 @@ fields:
       display: 'Aria label'
       width: 50
       replicator_preview: false
+      if:
+        show_controls: 'equals true'
+  -
+    handle: show_arrow
+    field:
+      default: false
+      type: toggle
+      display: 'Show Arrow'
+      icon: toggle
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
       if:
         show_controls: 'equals true'

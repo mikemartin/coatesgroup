@@ -1,0 +1,46 @@
+<li class="flex" x-data x-popover>
+    <div class="relative leading-none">
+      <button type="button" x-popover:button class="p-1 -m-1 flex items-center font-bold text-sm hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-white': 'text-white' }} relative z-10">
+        {{ title }}
+        <div :class="{ 'scale-y-[-1]': $popover.isOpen }" class="motion-safe:transition-transform">
+          {{ svg:chevron_down class="w-2 ml-1 overflow-visible stroke-current text-white" aria-hidden="true" }}
+        </div>
+      </button>
+    </div>
+    
+    <div x-popover:panel x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-x-0 top-full text-sm text-gray-500">
+      <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+      <div class="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true"></div>
+
+      <div class="relative bg-white">
+        <div class="max-w-2xl mx-auto">
+          <div class="grid grid-cols-3 gap-x-8 gap-y-10 py-12">
+            <div class="col-start-3">
+              <div class="flex items-center bg-black-10 px-8 py-6">
+                <div class="mx-auto max-w-sm">
+                  <h3 class="font-medium text-black-90">{{ cta:nav_title }}</h3>
+                  <p class="mt-2 text-sm text-black-60">{{ cta:nav_text }}</p>
+                  {{ partial:components/buttons :buttons="cta:nav_buttons" class="mt-2 text-xs uppercase tracking-wide" }}
+                </div>
+              </div>
+            </div>
+            <div class="row-start-1 col-span-2 grid grid-cols-2 gap-x-8 gap-y-10 text-sm">
+              {{ children }}
+              <div>
+                  <p id="{{ title|slugify }}-heading" class="font-medium text-gray-900">{{ title }}</p>
+                  <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                    {{ children }}
+                    <li class="flex">
+                        <a href="#" class="hover:text-gray-800">{{ title }}</a>
+                    </li>
+                    {{ /children }}
+                  </ul>
+                </div>
+              {{ /children }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </li>

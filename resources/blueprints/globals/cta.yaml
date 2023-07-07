@@ -1,0 +1,52 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: Footer
+        instructions: 'Primary call to action shown in site footer.'
+        fields:
+          -
+            handle: footer_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Title
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: footer_text
+            field: common.text_plain
+            config:
+              display: Text
+          -
+            handle: footer_buttons
+            field: buttons.buttons
+      -
+        display: Navigation
+        instructions: 'Small call to action shown in dropdown navigation.'
+        fields:
+          -
+            handle: nav_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Title
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: nav_text
+            field: common.text_plain
+            config:
+              display: Text
+          -
+            handle: nav_buttons
+            field: buttons.buttons

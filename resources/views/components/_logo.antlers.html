@@ -9,6 +9,6 @@
     aria-label="Logo {{ config:app:name }}"
     href="{{ site:url }}"
 >
-    <img src="/visuals/coates-logo.png" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
+    <img src="{{ inverse ? '/visuals/coates-inverse-logo.png' : '/visuals/coates-logo.png' }}" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
 </a>
 <!-- End: /components/_logo.antlers.html -->

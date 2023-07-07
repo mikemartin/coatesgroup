@@ -1,0 +1,28 @@
+title: 'Call to action'
+data:
+  footer_title: 'Connect with Coates today'
+  footer_text: 'Connect with the Coates Crew today – Ask us a question, talk to us about a new project you have or arrange a visit to one of our Innovation labs. We’re all ears.'
+  footer_buttons:
+    -
+      id: ljrv2tmg
+      label: 'Contact Us'
+      link_type: entry
+      target_blank: false
+      entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+      button_type: outline
+      attr_title: 'Contact Us'
+      attr_aria: 'Contact Us'
+      show_arrow: true
+  nav_title: 'Got a project with us?'
+  nav_text: 'Lorem ipsum dolor sit amet consectetur.'
+  nav_buttons:
+    -
+      id: ljrv3z8h
+      label: 'Get in Touch'
+      link_type: entry
+      target_blank: false
+      entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+      button_type: inline
+      attr_title: 'Get in Touch'
+      attr_aria: 'Get in Touch'
+      show_arrow: true

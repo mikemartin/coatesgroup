@@ -1,0 +1,20 @@
+{{ nav:footer max_depth="2" select="title|url|nav_taxonomy" }}
+  <div>
+    <h3 class="text-xs font-bold leading-6 tracking-wide uppercase text-white">{{ title }}</h3>
+    <ul role="list" class="mt-3 space-y-1.5">
+      {{ if nav_taxonomy }}
+        {{ taxonomy :from="nav_taxonomy" sort="entries:count:desc" limit="6" }}
+          <li>
+            <a href="{{ url }}" class="text-sm font-medium leading-6 text-primary-100 hover:text-white hover:underline">{{ title }}</a>
+          </li>
+        {{ /taxonomy }}
+      {{ else }}
+        {{ children }}
+          <li>
+            <a href="{{ url }}" class="text-sm font-medium leading-6 text-primary-100 hover:text-white hover:underline">{{ title }}</a>
+          </li>
+        {{ /children }}
+      {{ /if }}
+    </ul>
+  </div>
+{{ /nav:footer }}

@@ -4,18 +4,21 @@
 #}}
 
 <!-- /layout/_footer.antlers.html -->
-<footer class="bg-primary-900 pt-16 pb-8" aria-labelledby="footer-heading">
+<footer class="bg-black-80 text-white/75 pt-16 pb-8" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    <div class="fluid-container pb-8">
-      <div class="grid grid-cols-2 gap-8 xl:grid-cols-5">
-        <div>
-            {{ partial:components/logo width="120" }}
-
+    {{ partial:components/call_to_action }}
+    <div class="fluid-container mt-12 md:mt-16 pb-8">
+      <nav class="grid md:grid-cols-4 gap-8 xl:grid-cols-5">
+        {{ partial:navigation/footer_mobile }}
+        {{ partial:navigation/footer_desktop }}
+        <div class="md:col-span-4 xl:col-span-1 xl:-order-1">
+            {{ partial:components/logo width="120" inverse="true" class="inline-block" }}
+    
             {{ if social_media:social_media }}
-                <div class="flex space-x-2">
+                <div class="mt-3 flex space-x-2">
                 {{ social_media:social_media }}
                     <a
-                    class="h-6 w-6 rounded-full flex items-center justify-center bg-primary-300 hover:bg-primary-100 text-primary-900"
+                    class="h-6 w-6 rounded-full flex items-center justify-center text-white/75"
                     href="{{ prefix }}{{ handle }}"
                     rel="noopener"
                     aria-label="{{ config:app:name }} {{ trans:strings.on }} {{ type | title }}"
@@ -26,34 +29,22 @@
                 {{ /social_media:social_media }}
                 </div>
             {{ /if }}
-
-            <a href="mailto:{{ email | obfuscate_email }}" class="px-1 -mx-1 text-sm underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors">
+    
+            <a href="mailto:{{ email | obfuscate_email }}" class="px-1 -mx-1 text-sm underline rounded hover:text-white focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors">
                 {{configuration:email | obfuscate_email}}
             </a>
         </div>
-        {{ nav:footer max_depth="2" select="title|url|nav_taxonomy" }}
-          <div>
-            <h3 class="text-xs font-bold leading-6 tracking-wide uppercase text-primary-300">{{ title }}</h3>
-            <ul role="list" class="mt-3 space-y-1.5">
-              {{ if nav_taxonomy }}
-                {{ taxonomy :from="nav_taxonomy" sort="entries:count:desc" limit="6" }}
-                  <li>
-                    <a href="{{ url }}" class="text-sm font-medium leading-6 text-primary-100 hover:text-white hover:underline">{{ title }}</a>
-                  </li>
-                {{ /taxonomy }}
-              {{ else }}
-                {{ children }}
-                  <li>
-                    <a href="{{ url }}" class="text-sm font-medium leading-6 text-primary-100 hover:text-white hover:underline">{{ title }}</a>
-                  </li>
-                {{ /children }}
-              {{ /if }}
-            </ul>
-          </div>
-        {{ /nav:footer }}
-      </div>
-      <div class="mt-8 border-t border-primary-800 pt-8 md:flex md:items-center md:justify-between">
-        <div class="text-xs leading-5 text-primary-200">
+      </nav>
+      <div class="mt-8 border-t border-white/25 pt-8 flex flex-col items-center md:flex-row">
+        <div class="text-xs leading-5 md:order-2 md:ml-3">
+          {{ configuration:privacy_statement_entry }}
+              <a class="px-1 -mx-1 underline rounded hover:text-white focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors" href="{{ url }}">{{ title }}</a>
+            {{ /configuration:privacy_statement_entry }}
+            
+            {{# Let's users reset their cookie consent when you use the cookie banner. #}}
+            {{ yield:reset_cookie_consent }}
+        </div>
+        <div class="mt-2 md:mt-0 text-xs leading-5">
           <p>
             &copy; {{ configuration:copyright_since }}
             {{ unless (now | format('Y')) == configuration:copyright_since }}
@@ -61,14 +52,6 @@
             {{ /unless }}
             {{ configuration:copyright_name ?? config:app:name }}
           </p>
-        </div>
-        <div class="text-xs">
-        {{ configuration:privacy_statement_entry }}
-            <a class="px-1 -mx-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors" href="{{ url }}">{{ title }}</a>
-          {{ /configuration:privacy_statement_entry }}
-          
-          {{# Let's users reset their cookie consent when you use the cookie banner. #}}
-          {{ yield:reset_cookie_consent }}
         </div>
       </div>
     </div>

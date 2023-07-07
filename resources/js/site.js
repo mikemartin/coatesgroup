@@ -1,3 +1,4 @@
+import ui from '@alpinejs/ui'
 import Alpine from 'alpinejs'
 import collapse from '@alpinejs/collapse'
 import morph from '@alpinejs/morph'
@@ -19,5 +20,5 @@ window.getToken = async () => {
 
 // Call Alpine.
 window.Alpine = Alpine
-Alpine.plugin([collapse, focus, morph, persist])
+Alpine.plugin([ui, collapse, focus, morph, persist])
 Alpine.start()
