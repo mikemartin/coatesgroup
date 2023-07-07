@@ -26,27 +26,27 @@ module.exports = {
       // Primary: primary brand color with a default fallback if you don't need shades. Always set a DEFAULT when you use shades.
       primary: {
         DEFAULT: 'rgb(var(--color-blue) / <alpha-value>)',
-        '50': 'rgb(var(--color-blue) / 50%)',
+        '40': 'rgb(var(--color-blue) / 40%)',
         '20': 'rgb(var(--color-blue) / 20%)',
       },
       blue: {
         DEFAULT: 'rgb(var(--color-blue) / <alpha-value>)',
-        '50': 'rgb(var(--color-blue) / 50%)',
+        '40': 'rgb(var(--color-blue) / 40%)',
         '20': 'rgb(var(--color-blue) / 20%)',
       },
       red: {
         DEFAULT: 'rgb(var(--color-red) / <alpha-value>)',
-        '50': 'rgb(var(--color-red) / 50%)',
+        '40': 'rgb(var(--color-red) / 40%)',
         '20': 'rgb(var(--color-red) / 20%)',
       },
       yellow: {
         DEFAULT: 'rgb(var(--color-yellow) / <alpha-value>)',
-        '50': 'rgb(var(--color-yellow) / 50%)',
+        '40': 'rgb(var(--color-yellow) / 40%)',
         '20': 'rgb(var(--color-yellow) / 20%)',
       },
       green: {
         DEFAULT: 'rgb(var(--color-green) / <alpha-value>)',
-        '50': 'rgb(var(--color-green) / 50%)',
+        '40': 'rgb(var(--color-green) / 40%)',
         '20': 'rgb(var(--color-green) / 20%)',
       },
       black: {
@@ -58,6 +58,13 @@ module.exports = {
         '50': 'rgb(var(--color-black) / 50%)',
         '40': 'rgb(var(--color-black) / 40%)',
         '30': 'rgb(var(--color-black) / 30%)',
+        '20': 'rgb(var(--color-black) / 20%)',
+        '10': 'rgb(var(--color-black) / 10%)',
+      },
+      charcoal: {
+        DEFAULT: 'rgb(var(--color-charcoal) / <alpha-value>)',
+        '60': 'rgb(var(--color-black) / 60%)',
+        '40': 'rgb(var(--color-black) / 40%)',
         '20': 'rgb(var(--color-black) / 20%)',
         '10': 'rgb(var(--color-black) / 10%)',
       },
@@ -76,13 +83,13 @@ module.exports = {
       mono: [
         // Use a custom mono font for this site by changing 'Anonymous' to the
         // font name you want and uncommenting the following line.
-        // 'Anonymous',
+        'Roboto Mono',
         ...defaultTheme.fontFamily.mono,
       ],
       sans: [
         // Use a custom sans serif font for this site by changing 'Gaultier' to the
         // font name you want and uncommenting the following line.
-        // 'Gaultier',
+        'Roboto',
         ...defaultTheme.fontFamily.sans,
       ],
       serif: [
@@ -96,9 +103,9 @@ module.exports = {
     fontWeight: {
       // hairline: 100,
       // thin: 200,
-      // light: 300,
+      light: 300,
       normal: 400,
-      // medium: 500,
+      medium: 500,
       // semibold: 600,
       bold: 700,
       // extrabold: 800,

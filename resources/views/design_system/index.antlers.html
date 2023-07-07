@@ -1,0 +1,9 @@
+<main class="py-10 lg:pl-72">
+    <div class="px-4 sm:px-6 lg:px-8">
+        {{ nav:design_system }}
+        <div x-show="component == '{{ url }}'" class="relative h-[calc(100vh-5rem)] outer-grid items-center overflow-hidden rounded-xl border border-dashed border-gray-400 opacity-75">
+            {{ partial:design_system/component/{ url } }}
+        </div>
+        {{ /nav:design_system }}
+    </div>
+</main>

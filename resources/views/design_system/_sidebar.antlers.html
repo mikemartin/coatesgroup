@@ -1,0 +1,18 @@
+<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-16 {{ class }}">
+    <div class="flex h-16 shrink-0 items-center">
+      <a href="#top"><img class="h-8 w-auto" src="/visuals/coates-logo.png"></a>
+    </div>
+    <nav class="flex flex-1 flex-col">
+
+      <ul role="list" class="-mx-2 space-y-1">
+          {{ nav:design_system }}
+          <li>
+              <a href="#{{ url }}" @click="component = '{{ url }}'" :class="component == '{{ url }}' ? 'bg-black text-white' : 'text-black hover:font-medium'" class="group w-full flex gap-x-3 p-2 text-sm leading-6 font-mono">
+              {{ title }}
+              </a>
+          </li>
+          {{ /nav:design_system }}                   
+      </ul>
+
+    </nav>
+  </div>
