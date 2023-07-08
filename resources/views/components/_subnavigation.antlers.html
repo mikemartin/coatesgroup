@@ -1,0 +1,29 @@
+<div class="relative bg-white">
+    <div class="max-w-2xl mx-auto">
+      <div class="grid grid-cols-3 gap-x-8 gap-y-10 py-12">
+        <div class="col-start-3">
+          <div class="flex items-center bg-black-10 px-8 py-6">
+            <div class="mx-auto max-w-sm">
+              <h3 class="font-medium text-black-90">{{ cta:nav_title }}</h3>
+              <p class="mt-2 text-sm text-black-60">{{ cta:nav_text }}</p>
+              {{ partial:components/buttons :buttons="cta:nav_buttons" class="mt-2 text-xs uppercase tracking-wide" }}
+            </div>
+          </div>
+        </div>
+        <div class="row-start-1 col-span-2 grid grid-cols-2 gap-x-8 gap-y-10 text-sm">
+          {{ children }}
+          <div>
+              <p id="{{ title|slugify }}-heading" class="font-medium text-gray-900">{{ title }}</p>
+              <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                {{ children }}
+                <li class="flex">
+                    <a href="#" class="hover:text-gray-800">{{ title }}</a>
+                </li>
+                {{ /children }}
+              </ul>
+            </div>
+          {{ /children }}
+        </div>
+      </div>
+    </div>
+  </div>

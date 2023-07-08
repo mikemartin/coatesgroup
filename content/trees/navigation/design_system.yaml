@@ -20,10 +20,6 @@ tree:
     title: Sub-Navigation
     url: 'sub-navigation'
   -
-    id: 5e9fbe31-81b2-4efd-903f-5e893773043d
-    title: 'Navigation Mobile'
-    url: 'navigation-mobile'
-  -
     id: 4f9f7937-3624-4cbe-b561-b3a3b17dca66
     title: 'Mobile Menu'
     url: 'mobile-menu'
@@ -31,10 +27,6 @@ tree:
     id: 8bd94bb9-bbe7-4e01-9ddb-616f0d589c88
     title: Footer
     url: 'footer'
-  -
-    id: be4a34a3-9eb1-45d8-89e5-fe093a4d1002
-    title: 'Footer Mobile'
-    url: 'footer-mobile'
   -
     id: 0632d316-39c5-4d06-bfbe-a4c311e98a14
     title: 'Primary Button'

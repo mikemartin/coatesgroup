@@ -4,7 +4,7 @@
 #}}
 
 <!-- /navigation/_main_desktop.antlers.html -->
-<nav class="hidden md:block" aria-label="{{ trans:strings.main_navigation }}">
+<nav class="{{ class }}" aria-label="{{ trans:strings.main_navigation }}">
     <div class="inset-x-0 bottom-0 px-4" x-popover:group>
         <ul class="flex items-center space-x-8">
             {{ nav:main max_depth="3" select="title|url" }}
@@ -12,7 +12,7 @@
                     {{ partial:navigation/main_dropdown }}
                 {{ else }}
                     <li class="relative leading-none">
-                        <a class="p-1 -m-1 flex items-center font-bold text-sm hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-white': 'text-white' }}" href="{{ url }}">
+                        <a class="p-1 -m-1 flex items-center font-bold text-sm hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-black dark:text-white': 'text-black dark:text-white' }}" href="{{ url }}">
                             {{ title }}
                         </a>
                     </li>
