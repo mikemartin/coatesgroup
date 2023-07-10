@@ -63,10 +63,10 @@ module.exports = {
       },
       charcoal: {
         DEFAULT: 'rgb(var(--color-charcoal) / <alpha-value>)',
-        '60': 'rgb(var(--color-black) / 60%)',
-        '40': 'rgb(var(--color-black) / 40%)',
-        '20': 'rgb(var(--color-black) / 20%)',
-        '10': 'rgb(var(--color-black) / 10%)',
+        '60': 'rgb(var(--color-charcoal-60) / <alpha-value>)',
+        '40': 'rgb(var(--color-charcoal-40) / <alpha-value>)',
+        '20': 'rgb(var(--color-charcoal-20) / <alpha-value>)',
+        '10': 'rgb(var(--color-charcoal-10)/ <alpha-value>)',
       },
     },
     extend: {

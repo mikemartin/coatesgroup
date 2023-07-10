@@ -1,8 +1,10 @@
-<div class="relative w-full pt-32 pb-8 md:pt-36 md:pb-16 bg-black-80 -mb-12 md:-mb-16 lg:-mb-20 ">
-	<div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
-		<div class="relative md:col-start-3 md:col-span-8 text-center">
-			<h1 class="text-white text-4xl md:text-5xl xl:text-6xl !leading-[1.1] font-light md:max-w-[18ch]">Lorem ipsum dolor sit amet consectetur.</h1>
-            {{ partial:typography/p content="Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur." class="mt-2 md:mt-6 text-white" }}
+<div class="relative -mt-16 pt-16 w-full bg-black-80 -mb-12 md:-mb-16 lg:-mb-24">
+	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
+		<div class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
+			{{ partial:navigation/breadcrumbs }}
+
+			{{ partial:typography/h1 :content="hero_title" color="text-white" class="md:max-w-[18ch] md:mx-auto" }}
+			{{ hero_text = {partial:typography/large :content="hero_text" color="text-white" class="mt-2 md:mt-6 md:max-w-[38ch]" } }}
         </div>
 	</div>
 </div>
