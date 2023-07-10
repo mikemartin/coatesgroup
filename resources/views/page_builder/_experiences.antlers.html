@@ -5,13 +5,14 @@
 <!-- /page_builder/_experiences.antlers.html -->
 <section x-data="{thumbs: null, swiper: null}"
 x-init="thumbs = new Swiper($refs.thumbs, {
-    slidesPerView: 2,
+    slidesPerView: 'auto',
+    spaceBetween: 32,
     freeMode: true,
     multipleActiveThumbs: false,
     a11y: true,
     breakpoints: {
         640: {
-            slidesPerView: 5
+            spaceBetween: 50
         }
     },
 });
@@ -41,11 +42,11 @@ class="overflow-hidden">
             <div class="pr-6 md:pr-12">
                 <h3 class="text-lg md:text-2xl leading-tight text-black">{{ title }}</h3>
             </div>
-            <div class="border-r border-chacoal-20 h-1/2"></div>
-            <nav x-ref="thumbs" class="!pl-6 !md:pl-12 w-full h-full swiper relative !overflow-x-visible">
-                <div class="swiper-wrapper">
+            <div class="border-r border-chacoal-20 h-full md:h-1/2"></div>
+            <nav x-ref="thumbs" class="!pl-6 !md:pl-12 w-full h-full swiper relative md:!overflow-x-visible">
+                <div class="swiper-wrapper items-start justify-start">
                     {{ experiences }}
-                        <a href="javascript:void(0)" class="swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
+                        <a href="javascript:void(0)" class="!w-auto swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
                             <span class="swiper-tab-dot w-4 h-4 bg-green rounded-full mr-3"></span>
                             {{ title }}
                         </a>
