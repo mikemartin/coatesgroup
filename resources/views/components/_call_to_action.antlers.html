@@ -1,9 +1,7 @@
 <div class="fluid-container">
     <div class="grid gap-6 md:grid-cols-12 relative">
         <div class="md:col-span-5">
-            <h2 class="text-3xl font-medium tracking-tight text-white md:text-5xl">
-            {{ cta:footer_title }}
-            </h2>
+            {{ partial:typography/h2 color="text-white" :content="cta:footer_title|widont" }}
         </div>
         <div class="md:col-start-7 md:col-span-6">
             {{ partial:typography/p :content="cta:footer_text" class="text-white/70" }}

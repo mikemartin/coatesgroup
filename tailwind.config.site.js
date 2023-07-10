@@ -77,6 +77,9 @@ module.exports = {
       transitionTimingFunction: {
         DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
+      lineHeight: {
+        'tighter': "1.1"
+      }
     },
     // Remove the font families you don't want to use.
     fontFamily: {

@@ -1,14 +1,14 @@
 {{#
     @name Logo
-    @desc The logo component with a `width` attribute.
+    @desc The logo component with a `size` and `class` attribute.
 #}}
 
 <!-- /components/_logo.antlers.html -->
 <a
-    class="p-2 -m-2 focus:outline-none focus-visible:ring-2 ring-primary"
+    class="p-2 -m-2 inline-block focus:outline-none focus-visible:ring-2 ring-primary"
     aria-label="Logo {{ config:app:name }}"
     href="{{ site:url }}"
 >
-    <img src="{{ inverse ? '/visuals/coates-inverse-logo.png' : '/visuals/coates-logo.png' }}" class="select-none {{ class }}" width="{{ width }}" alt="{{ config:app:name }}"/>
+    {{ svg:coates-logo class="select-none {{ size ? size : 'h-7 md:h-8' }} w-auto {{ class }}" }}
 </a>
 <!-- End: /components/_logo.antlers.html -->

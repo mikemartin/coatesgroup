@@ -7,9 +7,11 @@
 <!-- /page_builder/_case_studies.antlers.html -->
 <section class="w-full bg-black-10 py-16 md:py-24">
     <div class="fluid-container grid md:grid-cols-12 gap-8">
+        {{ if block:title }}
         <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
-            {{ block:title ?= { partial:typography/h1 :content="block:title" class="md:col-span-5" } }}
+            {{ partial:typography/h2 :content="block:title" class="md:col-span-6" }}
         </div>
+        {{/if}}
 
         {{ block:case_studies }}
             <a

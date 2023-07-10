@@ -12,8 +12,8 @@
     <div class="relative w-full h-screen flex flex-col justify-end md:h-auto pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div class="relative md:col-span-8">
-                <h1 class="text-white text-4xl md:text-5xl xl:text-6xl !leading-[1.1] font-light md:max-w-[18ch]">{{ hero_title }}</h1>
-                {{ partial:typography/p :content="hero_text" class="mt-2 md:mt-6 text-white font-light md:text-2xl md:max-w-[38ch]" }}
+                {{ partial:typography/h1 :content="hero_title" color="text-white" class="md:max-w-[18ch]" }}
+                {{ partial:typography/large :content="hero_text" color="text-white" class="mt-2 md:mt-6 md:max-w-[38ch]" }}
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@ hero_image: hero/coverr-running-with-a-kite.jpg
 page_builder:
   -
     id: ljs2lhvj
-    title: 'A headline about Experiences'
+    title: 'A headline about Experiences on two lines'
     link_blocks:
       -
         id: ludHHOwH

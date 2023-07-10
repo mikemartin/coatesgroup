@@ -4,12 +4,12 @@
     @param* content The time content.
     @param format The iso format. Defaults to `D MMMM YYYY`.
     @param as The wrapping element. Defaults to `time`.
-    @param color Set a custom text color utility. Falls back to `text-neutral`.
+    @param color Set a custom text color utility. Falls back to `text-black`.
     @param class Add custom CSS classes.
 #}}
 
 <!-- /typography/_time.antlers.html -->
-<{{ as or 'time' }} class="{{ color or 'text-neutral' }} {{ class }}" lang="{{ site:short_locale }}">
+<{{ as or 'time' }} class="{{ color or 'text-black' }} {{ class }}" lang="{{ site:short_locale }}">
     {{ content | iso_format(format or 'D MMMM YYYY') }}
 </{{ as or 'time' }}>
 <!-- End: /typography/_time.antlers.html -->

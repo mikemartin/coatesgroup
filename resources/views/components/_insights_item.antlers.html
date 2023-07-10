@@ -7,15 +7,14 @@
 <!-- /components/_insights_item.antlers.html -->
 <article class="flex flex-col {{ class }}">
     <figure class="{{ if count %2 }}aspect-square{{else}}aspect-[3/4]{{/if}} mb-4">
-        
         {{ partial:statamic-peak-tools::components/picture :image="image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="1/1" lazy="true" cover="true" }}
     </figure>
 
     <div class="flex flex-col gap-y-2">
-        {{ partial:typography/time :content="date" class="text-sm" }}
+        <div>{{ partial:typography/time :content="date" }} &bull; Awards</div>
 
         <a href="{{ url }}" class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group">
-            {{ partial:typography/h3 :content="title" class="underline decoration-primary decoration-2 underline-offset-2 group-hover:text-primary motion-safe:transition-colors" }}
+            {{ partial:typography/large :content="title" }} 
         </a>
     </div>
 </article>

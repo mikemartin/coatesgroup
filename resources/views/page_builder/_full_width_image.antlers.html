@@ -11,7 +11,7 @@
             {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:9/2" cover="true" lazy="true" sizes="100vw" }}
         </div>
     </figure>
-    {{ block:title ?= { partial:typography/h1 :content="block:title" class="md:col-span-5" } }}
+    {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
     <div class="md:col-start-7 md:col-span-6">
         {{ partial:typography/p :content="block:text"}}
         {{ partial:components/buttons :buttons="block:buttons" button_type="outline" class="mt-6" }}

@@ -1,5 +1,5 @@
 {{#
-    @name Paragraph
+    @name Paragraph Large
     @desc The typography paragraph partial to render a paragraph with `class`, `as`, `color` and `content` attributes.
     @param* content The p content.
     @param as The wrapping element. Defaults to `p`.
@@ -7,6 +7,6 @@
     @param class Add custom CSS classes.
 #}}
 
-<!-- /typography/_p.antlers.html -->
-<{{ as or 'p' }} class="text-lg leading-snug mt-0 mb-8 last:mb-0 {{ color or 'text-black' }} {{ class }}">{{ content | nl2br }}</{{ as or 'p' }}>
-<!-- End: /typography/_p.antlers.html -->
+<!-- /typography/_large.antlers.html -->
+<{{ as or 'p' }} class="text-2xl leading-tight mt-0 mb-8 last:mb-0 {{ color or 'text-black' }} {{ class }}">{{ content | nl2br }}</{{ as or 'p' }}>
+<!-- End: /typography/_large.antlers.html -->
