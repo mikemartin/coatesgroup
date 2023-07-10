@@ -2,7 +2,7 @@
     {{ partial:components/logo class="text-black" }}
     <button
         @click.prevent.stop="mobileNavOpen = false"
-        class="absolute right-0 top-1/2 -translate-y-1/2 text-black flex items-center justify-center text-xs font-bold mb-safe rounded focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
+        class="absolute right-0 top-1/2 -translate-y-1/2 text-black flex items-center justify-center focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
         aria-label="{{ trans:strings.nav_close }}"
     >
         {{ svg:close class="h-12 w-12 -mr-4" }}
