@@ -4,15 +4,15 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="relative z-10 w-full">
+<header class="relative z-10 w-full {{ class }}">
     <div class="hidden md:block bg-black-90 dark py-3">
         <div class="fluid-container flex justify-between items-center">
             {{ partial:components/social_media }}
             {{ partial:navigation/utility }}
         </div>
     </div>
-    <div class="{{ background ?? 'bg-transparent' }} dark">
-        <div class="h-16 fluid-container flex justify-between items-center">
+    <div class="{{ background ?? 'bg-transparent' }}">
+        <div class="h-16 relative fluid-container flex justify-between items-center">
             {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
             {{ partial:components/logo class="text-black dark:text-white" }}
             {{ partial:navigation/main }}

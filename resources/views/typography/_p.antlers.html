@@ -4,9 +4,10 @@
     @param* content The p content.
     @param as The wrapping element. Defaults to `p`.
     @param color Set a custom text color utility. Falls back to `text-black`.
+    @param anchor Set an id for aria-labels.
     @param class Add custom CSS classes.
 #}}
 
 <!-- /typography/_p.antlers.html -->
-<{{ as or 'p' }} class="text-lg leading-snug {{ color or 'text-black' }} {{ class }}">{{ content | nl2br }}</{{ as or 'p' }}>
+<{{ as or 'p' }} class="text-lg leading-snug {{ color or 'text-black' }} {{ class }}" {{ if anchor}}id="{{ anchor }}"{{/if}}>{{ content | nl2br }}</{{ as or 'p' }}>
 <!-- End: /typography/_p.antlers.html -->

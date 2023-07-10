@@ -20,6 +20,9 @@ tree:
     title: Sub-Navigation
     url: 'sub-navigation'
   -
+    title: Navigation Mobile
+    url: 'navigation-mobile'
+  -
     id: 4f9f7937-3624-4cbe-b561-b3a3b17dca66
     title: 'Mobile Menu'
     url: 'mobile-menu'

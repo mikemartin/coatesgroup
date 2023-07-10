@@ -151,8 +151,6 @@ fields:
     handle: button_type
     field:
       options:
-        button: Button
-        outline: Outline
         inline: Inline
       type: button_group
       localizable: true
