@@ -8,5 +8,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1688357808
+updated_at: 1688993046
+text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+image: drive-thru/heber-davis-6v1gbwk38qu-unsplash.jpg
+headline: 'Lorem ipsum dolor sit amet consectetur.'
 ---

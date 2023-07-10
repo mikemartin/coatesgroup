@@ -17,6 +17,23 @@ tabs:
               display: Title
               validate:
                 - required
+          -
+            handle: headline
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Headline
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: text
+            field: common.text_plain
+            config:
+              display: Text
       -
         display: 'Page builder'
         fields:
@@ -38,3 +55,8 @@ tabs:
               display: Slug
               validate:
                 - required
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid

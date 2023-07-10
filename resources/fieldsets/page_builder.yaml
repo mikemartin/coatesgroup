@@ -21,6 +21,18 @@ fields:
               fields:
                 -
                   import: case_studies
+            experiences:
+              display: 'Experiences'
+              instructions: 'Tab sections of experiences'
+              fields:
+                -
+                  import: experiences
+            products:
+              display: 'Products'
+              instructions: 'Tab sections of products'
+              fields:
+                -
+                  import: products
             clients:
               display: Clients
               instructions: 'A Clients logo cloud.'

@@ -6,14 +6,14 @@ import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import 'focus-visible'
 import Swiper from 'swiper';
-import { Pagination, Navigation, Mousewheel, A11y, FreeMode } from 'swiper/modules';
+import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/a11y';
 import 'swiper/css/mousewheel';
 
-Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode]);
+Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs]);
 
 
 // Global get CSRF token function (used by forms).

@@ -16,6 +16,29 @@
 }
 
 @layer components {
+  .swiper-watch-progress .swiper-slide {
+    opacity: .5;
+  }
+
+  .swiper-watch-progress .swiper-slide.swiper-slide-active {
+    opacity: 1;
+  }
+
+  .swiper-thumbs .swiper-slide {
+    @apply text-charcoal-40 hover:text-black;
+  }
+
+  .swiper-thumbs .swiper-tab-dot {
+    display: none
+  }
+
+  .swiper-thumbs .swiper-slide.swiper-slide-thumb-active {
+    @apply text-black;
+  }
+
+  .swiper-thumbs .swiper-slide-thumb-active .swiper-tab-dot {
+    display: block;
+  }
 
 }
 
