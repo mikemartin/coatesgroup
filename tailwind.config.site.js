@@ -79,6 +79,9 @@ module.exports = {
       },
       lineHeight: {
         'tighter': "1.1"
+      },
+      spacing: {
+        '4.5': '1.125rem'
       }
     },
     // Remove the font families you don't want to use.
@@ -143,6 +146,19 @@ module.exports = {
     // Custom components for this particular site.
     plugin(function({ addComponents, theme }) {
       const components = {
+        '.w-medium::after': {
+          content: ['attr(data-text)', 'attr(data-text) / ""'],
+          height: 0,
+          visibility: 'hidden',
+          overflow: 'hidden',
+          userSelect: 'none',
+          pointerEvents: 'none',
+          fontWeight: theme('fontWeight.medium'),
+
+          '@media speech': {
+            display: 'none',
+          },
+        },
       }
       addComponents(components)
     }),

@@ -1,9 +1,9 @@
 <li class="flex" x-data x-popover>
   <div class="relative leading-none">
-    <button type="button" x-popover:button class="p-1 -m-1 flex items-center font-bold text-sm hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-black dark:text-white': 'text-black dark:text-white' }} relative z-10">
+    <button type="button" x-popover:button class="p-1 -m-1 flex items-center w-medium hover:font-medium focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-black dark:text-white': 'text-black dark:text-white' }} relative z-10">
       {{ title }}
       <div :class="{ 'scale-y-[-1]': $popover.isOpen }" class="motion-safe:transition-transform">
-        {{ svg:chevron_down class="w-2 ml-1 overflow-visible stroke-current" aria-hidden="true" }}
+        {{ svg:chevron_down class="w-2.5 ml-2.5 overflow-visible stroke-current" aria-hidden="true" }}
       </div>
     </button>
   </div>

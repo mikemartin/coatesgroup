@@ -12,7 +12,7 @@
                     {{ partial:navigation/main_dropdown }}
                 {{ else }}
                     <li class="relative leading-none">
-                        <a class="p-1 -m-1 flex items-center font-bold text-sm hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-black dark:text-white': 'text-black dark:text-white' }}" href="{{ url }}">
+                        <a class="p-1 -m-1 inline-flex flex-col items-center w-medium hover:font-medium focus:outline-none focus-visible:ring-2 ring-primary {{ is_current || is_parent ? 'text-black dark:text-white': 'text-black dark:text-white' }}" href="{{ url }}" data-text="{{ title }}">
                             {{ title }}
                         </a>
                     </li>

@@ -5,9 +5,9 @@
 
 <!-- /navigation/_social_media.antlers.html -->
 {{ if social_media:social_media }}
-    <div class="flex space-x-2">
+    <div class="flex space-x-3">
         {{ social_media:social_media }}
-            <a class="p-1 -m-1 text-white/75 hover:text-white focus:outline-none focus-visible:ring-2 ring-primary" href="{{ prefix }}{{ handle }}" rel="noopener{{ type == 'mastodon' ?= ' me' }}" aria-label="{{ config:app:name }} {{ trans:strings.on }} {{ type | title }}" target="_blank">{{ svg :src="type" class="w-3 h-3 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
+            <a class="p-1 -m-1 text-white hover:text-white/60 active:text-white/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ prefix }}{{ handle }}" rel="noopener{{ type == 'mastodon' ?= ' me' }}" aria-label="{{ config:app:name }} {{ trans:strings.on }} {{ type | title }}" target="_blank">{{ svg :src="type" class="w-4.5 h-4.5 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
         {{ /social_media:social_media }}
     </div>
 {{ /if }}

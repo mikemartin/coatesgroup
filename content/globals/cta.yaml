@@ -22,7 +22,6 @@ data:
       link_type: entry
       target_blank: false
       entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
-      button_type: inline
+      button_type: outline
       attr_title: 'Get in Touch'
       attr_aria: 'Get in Touch'
-      show_arrow: true
