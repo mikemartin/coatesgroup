@@ -5,46 +5,73 @@
 #}}
 
 <!-- /page_builder/_case_studies.antlers.html -->
-<section class="w-full bg-black-10 py-16 md:py-24">
-    <div class="fluid-container grid md:grid-cols-12 gap-8">
+<section x-data="{swiper: null}"
+x-init="swiper = new Swiper($refs.container, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  edgeSwipeDetection: 'prevent',
+  updateOnWindowResize: true,
+  a11y: true,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+    }
+  }
+})" class="w-full bg-black-10 py-16 md:py-24 overflow-hidden">
+    <div class="fluid-container">
         {{ if block:title }}
         <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
             {{ partial:typography/h2 :content="block:title" class="md:col-span-6" }}
         </div>
         {{/if}}
 
-        {{ block:case_studies }}
-            <a
-                class="
-                    relative aspect-square md:aspect-[5/3] flex flex-col justify-end items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
-                    md:col-span-6
-                "
-                aria-labelledby="{{ title | slugify }}"
-                draggable="false"
-                {{ partial:snippets/button_attributes }}
-            >
-                <figure class="absolute inset-0 overflow-hidden">
-                    {{ partial
-                        src="statamic-peak-tools::components/picture"
-                        sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                        aspect_ratio="1/1 large:5/3"
-                        cover="true"
-                        lazy="true"
-                    }}
-                </figure>
-                <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+        <div class="swiper mt-8 !pb-14" x-ref="container">
+            <div class="swiper-wrapper">
+                {{ block:case_studies }}
+                    <div class="swiper-slide">
+                        <a
+                            class="
+                                relative aspect-square md:aspect-[5/3] flex flex-col justify-end items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
+                            "
+                            aria-labelledby="{{ title | slugify }}"
+                            draggable="false"
+                            {{ partial:snippets/button_attributes }}
+                        >
+                            <figure class="absolute inset-0 overflow-hidden">
+                                {{ partial
+                                    src="statamic-peak-tools::components/picture"
+                                    sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                                    aspect_ratio="1/1 large:5/3"
+                                    cover="true"
+                                    lazy="true"
+                                }}
+                            </figure>
+                            <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
 
-                <div class="px-6 py-4 relative">
-                    <span id="{{ title | slugify }}">
-                        {{ partial:typography/h2 color="text-white" :content="title" }}
-                    </span>
-                    {{ if client }}
-                        {{ partial:typography/p class="text-white text-sm" :content="client:title" }}
-                    {{ /if }}
-                </div>
-                {{ partial:components/button as="span" faux="true" }}
-            </a>
-        {{ /block:case_studies }}
+                            <div class="px-6 py-4 relative">
+                                <span id="{{ title | slugify }}">
+                                    {{ partial:typography/h2 color="text-white" :content="title" }}
+                                </span>
+                                {{ if client }}
+                                    {{ partial:typography/p class="text-white text-sm" :content="client:title" }}
+                                {{ /if }}
+                            </div>
+                            {{ partial:components/button as="span" faux="true" }}
+                        </a>
+                    </div>
+                {{ /block:case_studies }}
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination absolute !bottom-0"></div>
+        </div>
+        
     </div>
 </section>
 <!-- End: /page_builder/_case_studies.antlers.html -->

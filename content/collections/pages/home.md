@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1688711525
+updated_at: 1688970654
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -106,6 +106,8 @@ page_builder:
     case_studies:
       - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
       - 1c37dfff-7c87-4872-a2fb-21aaeeba89ea
+      - adbfcbac-77a8-4773-8b8a-7c1a31c5dcb6
+      - 4c7dfc70-b3fb-455b-ba7e-bbf7129d5a74
   -
     id: ljs64twe
     clients:

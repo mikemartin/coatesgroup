@@ -16,7 +16,8 @@
     "@alpinejs/persist": "^3.12.1",
     "@alpinejs/ui": "^3.12.3-beta.0",
     "alpinejs": "^3.12.1",
-    "focus-visible": "^5.2.0"
+    "focus-visible": "^5.2.0",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@csstools/postcss-oklab-function": "^2.2.2",
