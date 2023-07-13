@@ -1,0 +1,13 @@
+{{#
+    @name Header
+    @desc The page header component.
+#}}
+
+<!-- /components/_header.antlers.html -->
+<section class="fluid-container grid md:grid-cols-12 gap-8 py-8 md:py-16">
+    <div class="relative md:col-span-10">
+        {{ partial:navigation/breadcrumbs }}
+        {{ partial:typography/h1 :content="title" class="mt-4 md:max-w-[18ch]" }}
+    </div>
+</section>
+<!-- End: /components/_header.antlers.html -->
