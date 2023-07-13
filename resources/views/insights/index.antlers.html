@@ -3,8 +3,11 @@
     @desc The Insights index template.
 #}}
 
+{{ enable_hero ? {partial:layout/hero} : {partial:components/header} }}
+
 <!-- /insights/index.antlers.html -->
 <main class="outer-grid" id="content">
+    {{ {enable_hero && hero_extend} ?= { partial:components/hero_extend } }}
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}
@@ -14,8 +17,6 @@
 {{ section:index_content }}
     <!-- /insights/index.antlers.html -->
     <div class="fluid-container self-start grid md:grid-cols-12 gap-8">
-        {{ partial:navigation/breadcrumbs class="md:col-span-12" }}
-        {{ partial:typography/h1 :content="title" class="md:col-span-12" }}
         {{ collection:insights sort="date:desc" paginate="true" limit="12" as="items" }}
             {{ unless no_results }}
                 {{ items }}

@@ -9,3 +9,5 @@ date_behavior:
   past: public
   future: private
 mount: d70deed0-6959-4ec0-97a2-75d120b8899e
+inject:
+  enable_hero: true

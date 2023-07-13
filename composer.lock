@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7690d53b17781360a84fd95076655668",
+    "content-hash": "ea5c2710fa9e576efa1d74e8b94ec26f",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4753,6 +4753,47 @@
                 }
             ],
             "time": "2023-02-18T15:52:58+00:00"
+        },
+        {
+            "name": "rias/statamic-color-swatches",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/riasvdv/statamic-color-swatches.git",
+                "reference": "03c42644bc0ff4fe4b9a142825052269228745ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/riasvdv/statamic-color-swatches/zipball/03c42644bc0ff4fe4b9a142825052269228745ce",
+                "reference": "03c42644bc0ff4fe4b9a142825052269228745ce",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^3.0 || ^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Color Swatches",
+                    "description": "Color Swatches addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Rias\\ColorSwatches\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rias\\ColorSwatches\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/riasvdv/statamic-color-swatches/issues",
+                "source": "https://github.com/riasvdv/statamic-color-swatches/tree/v2.2.0"
+            },
+            "time": "2023-05-10T07:25:54+00:00"
         },
         {
             "name": "scrivo/highlight.php",

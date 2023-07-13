@@ -5,20 +5,19 @@
 #}}
 
 <div class="relative -mt-16 pt-16 w-full {{ switch(
-		(color == 'red') => 'bg-red text-white',
-		(color == 'yellow') => 'bg-yellow text-black',
+		(hero_color:label == 'Red') => 'bg-red text-white',
+		(hero_color:label == 'Yellow') => 'bg-yellow text-black',
 		() => 'bg-black-80 text-white'
 	)}} -mb-12 md:-mb-16 lg:-mb-24">
 	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
 		<div class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
 			{{ partial:navigation/breadcrumbs color="{ switch(
-				(color == 'red') => 'text-white',
-				(color == 'yellow') => 'text-black',
+				(hero_color:label == 'Red') => 'text-white',
+				(hero_color:label == 'Yellow') => 'text-black',
 				() => 'text-charcoal-40'
 			)}" }}
 
-			{{ partial:typography/h1 :content="hero_title" color="text-inherit" class="md:max-w-[18ch] md:mx-auto" }}
-			{{ hero_text = {partial:typography/large :content="hero_text" color="text-inherit" class="mt-2 md:mt-6 md:max-w-[38ch]" } }}
+			{{ partial:typography/h1 :content="headline" color="text-inherit" class="md:max-w-[18ch] md:mx-auto" }}
         </div>
 	</div>
 </div>

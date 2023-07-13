@@ -34,6 +34,19 @@ tabs:
             field: common.text_plain
             config:
               display: Text
+          -
+            handle: enable_hero
+            field:
+              default: false
+              type: toggle
+              display: 'Enable Hero'
+              icon: toggle
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'Replace page header with hero.'
       -
         display: 'Page builder'
         fields:

@@ -40,24 +40,24 @@
     <div class="mt-16 relative">
         <div x-show="variant == 'image'" class="dark">
             {{ partial:layout/header }}
-            {{ partial:layout/hero 
+            {{ partial:components/background_hero 
                 hero_image="/images/hero/coverr-running-with-a-kite.jpg" 
-                hero_title="Lorem ipsum dolor sit amet consectetur."
+                headline="Lorem ipsum dolor sit amet consectetur."
                 show_breadcrumb="true" }}
         </div>
         <div x-show="variant == 'video'" class="dark">
             {{ partial:layout/header }}
-            {{ partial:layout/hero 
+            {{ partial:components/background_hero 
                 hero_video="/videos/coverr-running-with-a-kite-8106-720p.mp4" 
-                hero_title="Lorem ipsum dolor sit amet consectetur."
-                hero_text="Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc." }}
+                headline="Lorem ipsum dolor sit amet consectetur."
+                supporting_text="Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc." }}
         </div>
         <div x-show="variant == 'case-study'" class="dark">
             {{ get_content from="/case-studies/mcdonald-s-drive-thru-aus-nz" }}
                 {{ partial:layout/header }}
-                {{ partial:layout/hero 
+                {{ partial:components/background_hero 
                     :hero_image="image" 
-                    :hero_title="title"
+                    :headline="title"
                     show_breadcrumb="true"
                     show_client="true" }}
             {{ /get_content }}
@@ -65,9 +65,9 @@
         <div x-show="variant == 'article'" class="dark">
             {{ get_content from="/insights/lorem-ipsum-dolor-sit-amet-consectetur-4" }}
                 {{ partial:layout/header }}
-                {{ partial:layout/hero 
+                {{ partial:components/background_hero 
                     :hero_image="image" 
-                    :hero_title="title"
+                    :headline="title"
                     show_topic="true"
                     show_date="true" }}
             {{ /get_content }}

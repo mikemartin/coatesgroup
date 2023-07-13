@@ -14,6 +14,7 @@
         "laravel/framework": "^10.8",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
+        "rias/statamic-color-swatches": "^2.2",
         "statamic/cms": "^4.0",
         "studio1902/statamic-peak-browser-appearance": "^3.0",
         "studio1902/statamic-peak-commands": "^2.0",

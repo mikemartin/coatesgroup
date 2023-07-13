@@ -4,9 +4,11 @@
 #}}
 
 <!-- /default.antlers.html -->
-{{ partial:layout/hero }}
+{{ enable_hero ? {partial:layout/hero} : {partial:components/header} }}
 
 <main class="outer-grid" id="content">
+    {{ {enable_hero && hero_extend} ?= { partial:components/hero_extend } }}
+
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

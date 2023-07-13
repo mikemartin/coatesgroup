@@ -11,6 +11,8 @@ sort_dir: desc
 date_behavior:
   past: public
   future: private
+inject:
+  enable_hero: true
 preview_targets:
   -
     label: Entry

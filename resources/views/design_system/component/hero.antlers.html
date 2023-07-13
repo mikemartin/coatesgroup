@@ -33,21 +33,21 @@
     <div class="mt-16 relative">
         <div x-show="variant == 'black'" class="dark">
             {{ partial:layout/header }}
-            {{ partial:layout/centered_hero hero_title="Lorem ipsum dolor sit amet consectetur." }}
+            {{ partial:components/hero headline="Lorem ipsum dolor sit amet consectetur." }}
             <div class="outer-grid">
                 {{ partial:components/hero_extend }}
             </div>
         </div>
         <div x-show="variant == 'yellow'">
             {{ partial:layout/header }}
-            {{ partial:layout/centered_hero color="yellow" hero_title="Lorem ipsum dolor sit amet consectetur." }}
+            {{ partial:components/hero color="yellow" headline="Lorem ipsum dolor sit amet consectetur." }}
             <div class="outer-grid">
                 {{ partial:components/hero_extend color="yellow" }}
             </div>
         </div>
         <div x-show="variant == 'red'" class="dark">
             {{ partial:layout/header }}
-            {{ partial:layout/centered_hero color="red" hero_title="Lorem ipsum dolor sit amet consectetur." }}
+            {{ partial:components/hero color="red" headline="Lorem ipsum dolor sit amet consectetur." }}
             <div class="outer-grid">
                 {{ partial:components/hero_extend color="red" }}
             </div>

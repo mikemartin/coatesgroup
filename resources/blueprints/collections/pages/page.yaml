@@ -17,42 +17,52 @@ tabs:
               display: Title
               validate:
                 - required
-      -
-        display: Hero
-        fields:
           -
-            handle: hero_title
+            handle: headline
             field:
               input_type: text
               antlers: false
               type: text
-              display: Title
+              display: Headline
               icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
           -
-            handle: hero_text
+            handle: supporting_text
             field: common.text_plain
             config:
-              display: Text
+              display: 'Supporting Text'
+              if:
+                hero_type: 'equals video'
           -
-            handle: hero_video
-            field: common.video
-          -
-            handle: hero_image
-            field: common.image
-            config:
-              mode: grid
-              display: 'Fallback image'
+            handle: enable_hero
+            field:
+              default: false
+              type: toggle
+              display: 'Enable Hero'
+              icon: toggle
               width: 50
-              instructions: 'The image shown while the video is downloading.'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              instructions: 'Replace page header with hero. See options in Hero tab.'
       -
         display: 'Page builder'
         fields:
           -
             import: page_builder
+  hero:
+    display: Hero
+    sections:
+      -
+        display: Hero
+        instructions: 'Optional hero settings'
+        fields:
+          -
+            import: hero
   seo:
     display: SEO
     sections:

@@ -8,8 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1688992389
-template: experiences/index
+updated_at: 1689227583
 page_builder:
   -
     id: ljwscq36
@@ -37,7 +36,21 @@ page_builder:
       - 5cad4e92-02fa-476d-8ad8-429bdf2aff00
       - a9353df9-7db6-4dea-8464-bd33c13faa2a
       - 1d2592aa-536e-4dfd-8901-23b7413fc22a
-hero_title: 'Lorem ipsum dolor sit amet consectetur.'
-hero_video: coverr-running-with-a-kite-8106-720p.mp4
-hero_image: hero/coverr-running-with-a-kite.jpg
+headline: 'Lorem ipsum dolor sit amet consectetur.'
+hero_type: brand
+background_color:
+  label: Black
+  value:
+    - rgb(28
+    - '28'
+    - 28)
+extend_color: true
+hero_extend: true
+enable_hero: true
+hero_color:
+  label: Black
+  value:
+    - rgb(28
+    - ' 28'
+    - ' 28)'
 ---

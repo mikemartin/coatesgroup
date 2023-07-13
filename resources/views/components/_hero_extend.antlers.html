@@ -5,8 +5,8 @@
 
 <!-- /components/_hero_extend.antlers.html -->
 <div class="absolute z-behind inset-x-0 w-full h-32 md:h-64 {{ switch(
-    (color == 'red') => 'bg-red text-white',
-    (color == 'yellow') => 'bg-yellow text-black',
+    (hero_color:label == 'Red') => 'bg-red text-white',
+    (hero_color:label == 'Yellow') => 'bg-yellow text-black',
     () => 'bg-black-80'
 )}}"></div>
 <!-- /components/_hero_extend.antlers.html -->
