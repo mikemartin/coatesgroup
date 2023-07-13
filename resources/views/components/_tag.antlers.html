@@ -1,0 +1,27 @@
+{{#
+    @name Tag
+    @desc A single tag component.
+    @param* tag_type Fallsback to primary.
+    @param* label The caption label.
+#}}
+
+<!-- /components/_button.antlers.html -->
+{{ if label }}
+    <{{ as or 'a' }}
+        {{ slot:attributes }}
+        class="
+            font-bold focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            inline-flex items-center py-3 px-4 uppercase tracking-wide rounded-full leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+            {{ if tag_type == 'secondary' }}
+                text-white bg-black focus-visible:ring-primary 
+            {{ else }}
+                text-white bg-black focus-visible:ring-primary 
+            {{ /if }}
+            {{ class }}
+        "
+        {{ partial:snippets/button_attributes }}
+    >
+        {{ label }}
+    </{{ as or 'a' }}>
+{{ /if }}
+<!-- End: /components/_button.antlers.html -->

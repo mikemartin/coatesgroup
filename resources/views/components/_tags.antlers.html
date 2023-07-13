@@ -1,0 +1,12 @@
+{{#
+    @name Tags
+    @desc Multiple tags component calling in `resources/views/components/_tag.antlers.html`.
+#}}
+
+<!-- /components/_tags.antlers.html -->
+<div class="flex flex-wrap gap-3 {{ class }}">
+    {{ tags }}
+        {{ partial:components/tag }}
+    {{ /tags }}
+</div>
+<!-- /components/_tags.antlers.html -->

@@ -1,0 +1,76 @@
+<div class="w-full" x-data="{ variant: 'image' }">
+    <div class="fixed top-0 inset-0 lg:pl-72">
+        <div class="w-full bg-white border-charcoal-20 h-[4.5rem] border-t border-b flex justify-start items-center">
+            <ul class="fluid-container flex items-center space-x-8">
+                <li class="relative leading-none shrink-0">
+                    <a href="#background-hero" @click="variant = 'image'" :class="variant == 'image' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'image'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            Image
+                        </span>
+                    </a>
+                </li>
+                <li class="relative leading-none shrink-0">
+                    <a href="#background-hero" @click="variant = 'video'" :class="variant == 'video' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'video'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            Video
+                        </span>
+                    </a>
+                </li> 
+                <li class="relative leading-none shrink-0">
+                    <a href="#background-hero" @click="variant = 'case-study'" :class="variant == 'case-study' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'case-study'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            Case Study
+                        </span>
+                    </a>
+                </li> 
+                <li class="relative leading-none shrink-0">
+                    <a href="#background-hero" @click="variant = 'article'" :class="variant == 'article' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'article'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            Article
+                        </span>
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </div>
+    <div class="mt-16 relative">
+        <div x-show="variant == 'image'" class="dark">
+            {{ partial:layout/header }}
+            {{ partial:layout/hero 
+                hero_image="/images/hero/coverr-running-with-a-kite.jpg" 
+                hero_title="Lorem ipsum dolor sit amet consectetur."
+                show_breadcrumb="true" }}
+        </div>
+        <div x-show="variant == 'video'" class="dark">
+            {{ partial:layout/header }}
+            {{ partial:layout/hero 
+                hero_video="/videos/coverr-running-with-a-kite-8106-720p.mp4" 
+                hero_title="Lorem ipsum dolor sit amet consectetur."
+                hero_text="Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc." }}
+        </div>
+        <div x-show="variant == 'case-study'" class="dark">
+            {{ get_content from="/case-studies/mcdonald-s-drive-thru-aus-nz" }}
+                {{ partial:layout/header }}
+                {{ partial:layout/hero 
+                    :hero_image="image" 
+                    :hero_title="title"
+                    show_breadcrumb="true"
+                    show_client="true" }}
+            {{ /get_content }}
+        </div>
+        <div x-show="variant == 'article'" class="dark">
+            {{ get_content from="/insights/lorem-ipsum-dolor-sit-amet-consectetur-4" }}
+                {{ partial:layout/header }}
+                {{ partial:layout/hero 
+                    :hero_image="image" 
+                    :hero_title="title"
+                    show_topic="true"
+                    show_date="true" }}
+            {{ /get_content }}
+        </div>
+    </div>
+</div>

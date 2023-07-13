@@ -1125,6 +1125,113 @@
             "time": "2023-01-14T14:17:03+00:00"
         },
         {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "239e257605e2141265b429e40987b2ee51bba4b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/239e257605e2141265b429e40987b2ee51bba4b4",
+                "reference": "239e257605e2141265b429e40987b2ee51bba4b4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "ezyang/htmlpurifier": "^4.16",
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.16.0"
+            },
+            "time": "2023-03-20T10:51:12+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.16.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "reference": "523407fb06eb9e5f3d59889b3978d5bfe94299c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
+            },
+            "time": "2022-09-18T07:06:19+00:00"
+        },
+        {
             "name": "facade/ignition-contracts",
             "version": "1.0.2",
             "source": {
@@ -2873,16 +2980,16 @@
         },
         {
             "name": "league/glide",
-            "version": "2.2.4",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/glide.git",
-                "reference": "d31132bf5651d5abeef345ff523cd9cf2575b971"
+                "reference": "2ff92c8f1edc80b74e2d3c5efccfc7223f74d407"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/glide/zipball/d31132bf5651d5abeef345ff523cd9cf2575b971",
-                "reference": "d31132bf5651d5abeef345ff523cd9cf2575b971",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/2ff92c8f1edc80b74e2d3c5efccfc7223f74d407",
+                "reference": "2ff92c8f1edc80b74e2d3c5efccfc7223f74d407",
                 "shasum": ""
             },
             "require": {
@@ -2932,9 +3039,9 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/glide/issues",
-                "source": "https://github.com/thephpleague/glide/tree/2.2.4"
+                "source": "https://github.com/thephpleague/glide/tree/2.3.0"
             },
-            "time": "2023-04-18T18:42:22+00:00"
+            "time": "2023-07-08T06:26:07+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -3758,16 +3865,16 @@
         },
         {
             "name": "pixelfear/composer-dist-plugin",
-            "version": "v0.1.5",
+            "version": "v0.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelfear/composer-dist-plugin.git",
-                "reference": "f1cec1e14d026eb898f985a22dfb140ae0d74d6c"
+                "reference": "40cd101208c975fd14e5f3b5b0710cf6cd0084d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelfear/composer-dist-plugin/zipball/f1cec1e14d026eb898f985a22dfb140ae0d74d6c",
-                "reference": "f1cec1e14d026eb898f985a22dfb140ae0d74d6c",
+                "url": "https://api.github.com/repos/pixelfear/composer-dist-plugin/zipball/40cd101208c975fd14e5f3b5b0710cf6cd0084d5",
+                "reference": "40cd101208c975fd14e5f3b5b0710cf6cd0084d5",
                 "shasum": ""
             },
             "require": {
@@ -3788,10 +3895,13 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "description": "Downloads distributable assets to be used in packages so you don't have to commit them.",
             "support": {
                 "issues": "https://github.com/pixelfear/composer-dist-plugin/issues",
-                "source": "https://github.com/pixelfear/composer-dist-plugin/tree/v0.1.5"
+                "source": "https://github.com/pixelfear/composer-dist-plugin/tree/v0.1.6"
             },
             "funding": [
                 {
@@ -3799,7 +3909,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-20T15:49:08+00:00"
+            "time": "2021-05-24T14:05:38+00:00"
         },
         {
             "name": "psr/container",
@@ -5022,21 +5132,22 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v4.9.2",
+            "version": "v4.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "7c66c069f622aec49f26a083d2fe41049ffb5f6e"
+                "reference": "b74a4ecec07d572bf6d4ce614aab6e4f543ff9ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/7c66c069f622aec49f26a083d2fe41049ffb5f6e",
-                "reference": "7c66c069f622aec49f26a083d2fe41049ffb5f6e",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/b74a4ecec07d572bf6d4ce614aab6e4f543ff9ba",
+                "reference": "b74a4ecec07d572bf6d4ce614aab6e4f543ff9ba",
                 "shasum": ""
             },
             "require": {
                 "ajthinking/archetype": "^1.0.3",
                 "composer/composer": "^1.10.22 || ^2.2.12",
+                "enshrined/svg-sanitize": "^0.16.0",
                 "ext-json": "*",
                 "facade/ignition-contracts": "^1.0",
                 "guzzlehttp/guzzle": "^6.3 || ^7.0",
@@ -5051,7 +5162,7 @@
                 "nesbot/carbon": "^2.62.1",
                 "pixelfear/composer-dist-plugin": "^0.1.4",
                 "rebing/graphql-laravel": "^6.5 || ^8.0",
-                "spatie/blink": "^1.1.2",
+                "spatie/blink": "^1.3",
                 "statamic/stringy": "^3.1.2",
                 "symfony/http-foundation": "^4.3.3 || ^5.1.4 || ^6.0",
                 "symfony/lock": "^5.4",
@@ -5111,7 +5222,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v4.9.2"
+                "source": "https://github.com/statamic/cms/tree/v4.10.2"
             },
             "funding": [
                 {
@@ -5119,7 +5230,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-30T17:50:21+00:00"
+            "time": "2023-07-10T15:48:54+00:00"
         },
         {
             "name": "statamic/stringy",
@@ -8532,16 +8643,16 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v14.11.9",
+            "version": "v14.11.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "ff91c9f3cf241db702e30b2c42bcc0920e70ac70"
+                "reference": "d9c2fdebc6aa01d831bc2969da00e8588cffef19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/ff91c9f3cf241db702e30b2c42bcc0920e70ac70",
-                "reference": "ff91c9f3cf241db702e30b2c42bcc0920e70ac70",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/d9c2fdebc6aa01d831bc2969da00e8588cffef19",
+                "reference": "d9c2fdebc6aa01d831bc2969da00e8588cffef19",
                 "shasum": ""
             },
             "require": {
@@ -8561,8 +8672,7 @@
                 "phpunit/phpunit": "^7.2 || ^8.5",
                 "psr/http-message": "^1.0",
                 "react/promise": "2.*",
-                "simpod/php-coveralls-mirror": "^3.0",
-                "squizlabs/php_codesniffer": "3.5.4"
+                "simpod/php-coveralls-mirror": "^3.0"
             },
             "suggest": {
                 "psr/http-message": "To use standard GraphQL server",
@@ -8586,7 +8696,7 @@
             ],
             "support": {
                 "issues": "https://github.com/webonyx/graphql-php/issues",
-                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.9"
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.11.10"
             },
             "funding": [
                 {
@@ -8594,7 +8704,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-01-06T12:12:50+00:00"
+            "time": "2023-07-05T14:23:37+00:00"
         },
         {
             "name": "wilderborn/partyline",

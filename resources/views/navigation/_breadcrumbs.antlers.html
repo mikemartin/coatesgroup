@@ -25,12 +25,12 @@
                         <span property="name">{{ title }}</span>
                     </a>
                     <meta property="position" content="{{ count }}">
-                    <span class="px-2 text-neutral" aria-hidden>/</span>
+                    <span class="px-2 {{ color ?? 'text-neutral' }}" aria-hidden>/</span>
                 {{ else }}
                     <a
                         href="{{ url }}"
                         property="name"
-                        class="text-charcoal-40"
+                        class="{{ color ?? 'text-charcoal-40' }}"
                         aria-current="page"
                     >
                         <span property="name">{{ title }}</span>
