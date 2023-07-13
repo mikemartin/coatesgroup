@@ -8,7 +8,7 @@
 <!-- /case_studies/index.antlers.html -->
 <main class="outer-grid" id="content">
     {{ if enable_hero && hero_extend }}
-        {{ partial:components/hero_extend }}
+        {{ partial:components/hero_extend :color="hero_color:label" }}
     {{ /if }}
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}

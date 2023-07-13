@@ -7,7 +7,7 @@
 {{ enable_hero ? {partial:layout/hero} : {partial:components/header} }}
 
 <main class="outer-grid" id="content">
-    {{ {enable_hero && hero_extend} ?= { partial:components/hero_extend } }}
+    {{ {enable_hero && hero_extend} ?= { partial:components/hero_extend :color="hero_color:label" } }}
 
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
