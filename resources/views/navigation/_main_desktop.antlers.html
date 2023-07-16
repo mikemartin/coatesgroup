@@ -5,7 +5,7 @@
 
 <!-- /navigation/_main_desktop.antlers.html -->
 <nav class="{{ class }}" aria-label="{{ trans:strings.main_navigation }}">
-    <div class="inset-x-0 bottom-0 px-4" x-popover:group>
+    <div class="inset-x-0 bottom-0 px-4" x-data x-popover:group>
         <ul class="flex items-center space-x-8">
             {{ nav:main max_depth="3" select="title|url" }}
                 {{ if children }}
