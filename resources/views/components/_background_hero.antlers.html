@@ -6,7 +6,7 @@
 
 <!-- /layout/_hero.antlers.html -->
 <div class="relative bg-black-80 -mt-16">
-    {{ if hero_video }}
+    {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video
                 playsinline muted autoplay loop preload
