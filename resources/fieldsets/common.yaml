@@ -37,7 +37,6 @@ fields:
       validate:
         - 'mimes:mp4'
         - 'max_filesize:10000'
-      instructions: 'This should be a looping `mp4` file.'
   -
     handle: entry
     field:
