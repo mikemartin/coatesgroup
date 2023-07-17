@@ -1,0 +1,17 @@
+title: 'Repeating Squares'
+fields:
+  -
+    handle: squares
+    field:
+      type: list
+      display: Squares
+      icon: list
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: text
+    field: common.text_basic
+    config:
+      display: Text

@@ -18,24 +18,28 @@ fields:
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'
+              icon: null
               fields:
                 -
                   import: case_studies
             experiences:
-              display: 'Experiences'
+              display: Experiences
               instructions: 'Tab sections of experiences'
+              icon: null
               fields:
                 -
                   import: experiences
             products:
-              display: 'Products'
+              display: Products
               instructions: 'Tab sections of products'
+              icon: null
               fields:
                 -
                   import: products
             clients:
               display: Clients
               instructions: 'A Clients logo cloud.'
+              icon: null
               fields:
                 -
                   import: clients
@@ -63,6 +67,7 @@ fields:
             hero:
               display: Hero
               instructions: null
+              icon: null
               fields:
                 -
                   import: hero
@@ -120,6 +125,13 @@ fields:
               fields:
                 -
                   import: article
+            repeating_squares:
+              display: 'Repeating Squares'
+              instructions: 'Repeating square outlines with text.'
+              icon: layout-header-sidebar-left
+              fields:
+                -
+                  import: repeating_squares
       instructions_position: above
       visibility: visible
       previews: true
