@@ -1,0 +1,48 @@
+title: 'Call to action'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Title
+      validate:
+        - required
+  -
+    import: buttons
+  -
+    handle: image
+    field: common.image
+    config:
+      mode: grid
+      width: 100
+  -
+    handle: color
+    field:
+      colors:
+        -
+          id: lk0oxmjg
+          label: Black
+          value:
+            - 'rgb(28 28 28)'
+        -
+          id: lk0oxqle
+          label: Yellow
+          value:
+            - 'rgb(254 195 37)'
+        -
+          id: lk0oxro9
+          label: Red
+          value:
+            - 'rgb(238 48 53)'
+      default: Black
+      type: color_swatches
+      display: 'Background Color'
+      icon: color
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

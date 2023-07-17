@@ -1,11 +1,11 @@
 {{#
     @name Tag
     @desc A single tag component.
-    @param* tag_type Fallsback to primary.
+    @param tag_type Fallsback to primary.
     @param* label The caption label.
 #}}
 
-<!-- /components/_button.antlers.html -->
+<!-- /components/_tag.antlers.html -->
 {{ if label }}
     <{{ as or 'a' }}
         {{ slot:attributes }}
@@ -19,9 +19,9 @@
             {{ /if }}
             {{ class }}
         "
-        {{ partial:snippets/button_attributes }}
+        {{ !faux ?= { partial:snippets/button_attributes } }}
     >
         {{ label }}
     </{{ as or 'a' }}>
 {{ /if }}
-<!-- End: /components/_button.antlers.html -->
+<!-- End: /components/_tag.antlers.html -->

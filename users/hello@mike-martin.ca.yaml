@@ -6,3 +6,6 @@ preferences:
   assets:
     videos:
       mode: grid
+  collections:
+    offices:
+      after_save: create_another

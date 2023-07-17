@@ -15,6 +15,12 @@ fields:
           instructions: 'Interactive blocks.'
           icon: programming-script-code
           sets:
+            call_to_action:
+              display: 'Call to action'
+              instructions: 'Show a call to action.'
+              fields:
+                -
+                  import: call_to_action
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'
@@ -22,20 +28,6 @@ fields:
               fields:
                 -
                   import: case_studies
-            experiences:
-              display: Experiences
-              instructions: 'Tab sections of experiences'
-              icon: null
-              fields:
-                -
-                  import: experiences
-            products:
-              display: Products
-              instructions: 'Tab sections of products'
-              icon: null
-              fields:
-                -
-                  import: products
             clients:
               display: Clients
               instructions: 'A Clients logo cloud.'
@@ -43,6 +35,13 @@ fields:
               fields:
                 -
                   import: clients
+            experiences:
+              display: Experiences
+              instructions: 'Tab sections of experiences'
+              icon: null
+              fields:
+                -
+                  import: experiences
             form:
               display: Form
               instructions: 'Select and render a form.'
@@ -92,13 +91,6 @@ fields:
               fields:
                 -
                   import: insights
-            leadership:
-              display: Leadership
-              instructions: 'List Leadership.'
-              icon: null
-              fields:
-                -
-                  import: leadership
             link_blocks:
               display: 'Link blocks'
               instructions: 'Show linkable blocks with text.'
@@ -106,6 +98,12 @@ fields:
               fields:
                 -
                   import: link_blocks
+            offices:
+              display: Offices
+              instructions: 'List offices.'
+              fields:
+                -
+                  import: offices
             people:
               display: People
               instructions: 'List People.'
@@ -113,6 +111,13 @@ fields:
               fields:
                 -
                   import: people
+            products:
+              display: Products
+              instructions: 'Tab sections of products'
+              icon: null
+              fields:
+                -
+                  import: products
         text:
           display: Text
           instructions: 'Text based blocks.'
@@ -125,6 +130,18 @@ fields:
               fields:
                 -
                   import: article
+            centered:
+              display: Centered
+              instructions: 'Centered lead text with eyebrow.'
+              fields:
+                -
+                  import: centered
+            image_and_text:
+              display: 'Image and text'
+              instructions: 'An image and text side by side.'
+              fields:
+                -
+                  import: image_and_text
             repeating_squares:
               display: 'Repeating Squares'
               instructions: 'Repeating square outlines with text.'

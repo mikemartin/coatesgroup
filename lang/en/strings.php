@@ -56,6 +56,8 @@ return [
     'insights_more' => 'More articles',
     'insights_read_more' => 'Read more',
 
+    'read_more' => 'Read more',
+
     // Other
     'no_results'                        => 'There are currently no posts.',
     'no_script'                         => 'This website requires Javascript for some parts to function properly. Your experience may vary.',

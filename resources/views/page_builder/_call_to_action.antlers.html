@@ -1,0 +1,31 @@
+{{#
+	@name Call to action
+	@desc The call to action page builder block.
+    @set page.page_builder.call_to_action
+#}}
+
+<!-- /page_builder/_call_to_action.antlers.html -->
+<section class="fluid-container">
+    <div class="{{ switch(
+        (block:color:label == 'Red') => 'bg-red text-white',
+        (block:color:label == 'Yellow') => 'bg-yellow text-black',
+        () => 'bg-black-80 text-white'
+        )}} aspect-square md:aspect-[3/1]">
+        {{ if block:image }}
+            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+                {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:3/1"  cover="true" lazy="true" sizes="100vw" }}
+            </div>
+            <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+        {{ /if }}
+        <div class="relative h-full w-full flex flex-col justify-end pb-8 md:pb-20">
+            <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
+                <div class="md:col-span-10">
+                    {{ partial:typography/h2 :content="block:title" }}
+                    {{ block:buttons ?= { partial:components/buttons inverted="true" class="mt-4 lg:mt-8" } }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End: /page_builder/_call_to_action.antlers.html -->
+

@@ -105,7 +105,7 @@ fields:
   -
     handle: tel
     field:
-      placeholder: '+0 (0)12 345678'
+      placeholder: '+61 2 9699 3122'
       input_type: tel
       type: text
       localizable: true
@@ -121,7 +121,7 @@ fields:
   -
     handle: sms
     field:
-      placeholder: '+0 (0)12 345678'
+      placeholder: '+61 2 9699 3122'
       input_type: tel
       type: text
       localizable: true
@@ -138,9 +138,9 @@ fields:
     handle: asset
     field: common.image
     config:
-      container: files
       localizable: true
       display: Asset
+      container: files
       width: 50
       validate:
         - 'required_if:{this}.link_type,asset'
@@ -151,6 +151,7 @@ fields:
     handle: button_type
     field:
       options:
+        button: Button
         inline: Inline
       type: button_group
       localizable: true
@@ -160,10 +161,6 @@ fields:
       replicator_preview: false
       if:
         show_controls: 'equals true'
-      width: 50
-      instructions_position: above
-      visibility: visible
-      hide_display: false
   -
     handle: attr_title
     field:
@@ -188,19 +185,5 @@ fields:
       display: 'Aria label'
       width: 50
       replicator_preview: false
-      if:
-        show_controls: 'equals true'
-  -
-    handle: show_arrow
-    field:
-      default: false
-      type: toggle
-      display: 'Show Arrow'
-      icon: toggle
-      width: 25
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      hide_display: false
       if:
         show_controls: 'equals true'

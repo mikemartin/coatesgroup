@@ -9,19 +9,82 @@ tabs:
           -
             handle: title
             field:
-              type: text
-              required: true
+              type: hidden
+              required: false
+          -
+            handle: city
+            field:
               input_type: text
-              localizable: true
-              listable: true
-              display: Title
+              antlers: false
+              display: City
+              type: text
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              width: 50
               validate:
                 - required
-      -
-        display: 'Page builder'
-        fields:
           -
-            import: page_builder
+            handle: country
+            field:
+              input_type: text
+              antlers: false
+              display: Country
+              type: text
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              width: 50
+              validate:
+                - required
+          -
+            handle: address
+            field:
+              mode: keyed
+              keys:
+                1: 'Line 1'
+                2: 'Line 2'
+                3: 'Line 3'
+              type: array
+              display: Address
+              icon: array
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: tel
+            field:
+              placeholder: '+61 2 9699 3122'
+              input_type: tel
+              type: text
+              localizable: true
+              listable: false
+              display: Telephone
+              width: 50
+              replicator_preview: false
+          -
+            handle: email
+            field:
+              placeholder: info@coatesgroup.com
+              input_type: email
+              type: text
+              localizable: true
+              listable: false
+              display: E-mail
+              width: 50
+              replicator_preview: false
+          -
+            handle: about
+            field: common.text_rich
+            config:
+              display: About
   sidebar:
     display: Sidebar
     sections:
@@ -29,29 +92,21 @@ tabs:
         display: Meta
         fields:
           -
-            handle: slug
+            handle: head_office
             field:
-              type: slug
-              localizable: true
-              generate: true
+              default: false
+              type: toggle
+              display: 'Head Office'
+              icon: toggle
               listable: hidden
-              display: Slug
-              validate:
-                - required
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
-            handle: date
-            field:
-              type: date
-              listable: true
-              required: true
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              folder: offices
               validate:
                 - required
-              display: Date
-              mode: single
-              time_enabled: false
-              time_required: false
-              earliest_date: '2021-01-01'
-              full_width: false
-              inline: false
-              columns: 1
-              rows: 1

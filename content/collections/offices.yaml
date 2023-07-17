@@ -3,6 +3,8 @@ template: default
 layout: layout
 mount: 82143229-3dff-4e67-a5a4-21ec485cec07
 revisions: false
+title_format: '{{ city }}, {{ country }}'
+slugs: false
 sort_dir: asc
 date_behavior:
   past: public

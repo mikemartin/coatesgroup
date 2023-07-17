@@ -28,6 +28,8 @@
         {{ partial:layout/header }}
         {{ template_content }}
         {{ partial:layout/footer }}
+        {{ yield:modal }}
+        {{ yield:slideover }}
     </body>
 </html>
 <!-- End: /layout.antlers.html -->

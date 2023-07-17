@@ -42,6 +42,11 @@ fields:
               fields:
                 -
                   import: buttons
+            invoke_modal:
+              display: 'Invoke modal'
+              fields:
+                -
+                  import: invoke_modal
         text:
           display: Text
           instructions: 'Text based sets.'

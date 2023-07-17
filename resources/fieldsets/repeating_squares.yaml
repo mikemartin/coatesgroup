@@ -15,3 +15,8 @@ fields:
     field: common.text_basic
     config:
       display: Text
+  -
+    handle: no_bottom_margin
+    field:
+      type: toggle
+      display: "Remove bottom margin"

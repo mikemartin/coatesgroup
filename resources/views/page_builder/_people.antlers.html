@@ -6,36 +6,55 @@
 
 <!-- /page_builder/_people.antlers.html -->
 <section class="fluid-container grid md:grid-cols-12 gap-8">
-    {{ if block:title or block:text }}
-        <header class="md:col-span-6">
-            {{ block:title ?= { partial:typography/h2 :content="block:title" class="mb-4" } }}
-            {{ block:text ?= { partial:typography/p :content="block:text" } }}
-        </header>
-    {{ /if }}
+    {{
+        people = block:people
+            ? block:people
+            : { collection:people sort="order" }
+    }}
 
-    <div class="md:col-span-12 grid md:grid-cols-12 gap-8">
-        {{
-            people = block:people
-                ? block:people
-                : { collection:people sort="order" }
-        }}
-
-        {{ people scope="people" }}
-            <article class="md:col-span-4 flex flex-col gap-3 aspect-[4/3]">
+    {{ people scope="person" }}
+        <article x-data="{ open: false }" class="md:col-span-4 flex flex-col gap-3">
+            <figure class="relative aspect-[4/3] lg:aspect-[7/8]">
+                {{ partial:components/tag :label="person:office:title" as="span" faux="true" class="absolute top-4 left-4" }}
                 {{ partial
                     src="statamic-peak-tools::components/picture"
-                    :image="people:image:url"
-                    aspect_ratio="4/3"
+                    :image="person:image:url"
+                    aspect_ratio="4/3 large:7/8 "
                     sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
                     cover="true"
                     lazy="true"
                 }}
-                <header class="flex flex-col">
-                    <span class="text-sm text-neutral">{{ people:function }}</span>
-                    <span class="text-neutral">{{ people:title }}</span>
-                </header>
-            </article>
-        {{ /people }}
-    </div>
+            </figure>
+            <header class="flex flex-col">
+                {{ partial:typography/large :content="person:title" class="font-bold" }}
+                {{ partial:typography/p :content="person:function" }}
+                {{ partial:components/slideover label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ person:title }}" }}
+                    {{ slot:content }}
+                        <div class="aspect-[7/3]">
+                            {{ partial
+                                src="statamic-peak-tools::components/picture"
+                                :image="person:image:url"
+                                aspect_ratio="7/3"
+                                sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                                cover="true"
+                                lazy="true"
+                            }}
+                        </div>
+                        <div class="p-8">
+                            <div class="space-y-2">
+                                {{ partial:typography/h3 :content="person:title" class="font-bold" }}
+                                {{ partial:typography/p :content="person:function" class="font-bold"}}
+                                {{ partial:typography/p :content="person:office:title" class="mt-2" }}
+                            </div>
+                            {{ partial:typography/prose class="mt-8" }}
+                                {{ person:bio }}
+                            {{ /partial:typography/prose }}
+                        </div>
+                        
+                    {{ /slot:content }}
+                {{ /partial:components/slideover }}
+            </header>
+        </article>
+    {{ /people }}
 </section>
 <!-- End: /page_builder/_people.antlers.html -->

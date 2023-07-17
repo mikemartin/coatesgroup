@@ -7,14 +7,18 @@ tabs:
         display: General
         fields:
           -
+            handle: title
+            field:
+              type: hidden
+              required: false
+          -
             handle: first_name
             field:
               type: text
-              required: true
               input_type: text
               localizable: true
               listable: true
-              display: First name
+              display: 'First name'
               width: 50
               validate:
                 - required
@@ -22,11 +26,28 @@ tabs:
             handle: last_name
             field:
               type: text
-              required: true
               input_type: text
               localizable: true
               listable: true
-              display: Last name
+              display: 'Last name'
+              width: 50
+              validate:
+                - required
+          -
+            handle: office
+            field:
+              max_items: 1
+              mode: select
+              create: true
+              collections:
+                - offices
+              type: entries
+              display: Office
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
               width: 50
               validate:
                 - required
@@ -34,13 +55,18 @@ tabs:
             handle: function
             field:
               type: text
-              required: true
               input_type: text
               localizable: true
               listable: true
               display: Function
               validate:
                 - required
+              width: 50
+          -
+            handle: bio
+            field: common.text_rich
+            config:
+              display: Bio
   sidebar:
     display: Sidebar
     sections:
@@ -55,3 +81,4 @@ tabs:
               instructions_position: below
               validate:
                 - required
+              folder: people

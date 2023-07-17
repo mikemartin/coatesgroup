@@ -12,7 +12,7 @@
     >
         {{ nav:breadcrumbs include_home="false" }}
             <li
-                class="flex"
+                class="flex items-baseline"
                 property="itemListElement"
                 typeof="ListItem"
             >
@@ -25,12 +25,14 @@
                         <span property="name">{{ title }}</span>
                     </a>
                     <meta property="position" content="{{ count }}">
-                    <span class="px-2 {{ color ?? 'text-neutral' }}" aria-hidden>/</span>
+                    <span class="px-2 {{ color ?? 'text-charcoal' }}" aria-hidden>
+                        {{ svg:chevron-right class="w-2 h-3"}}
+                    </span>
                 {{ else }}
                     <a
                         href="{{ url }}"
                         property="name"
-                        class="{{ color ?? 'text-charcoal-40' }}"
+                        class="{{ color ?? 'text-black' }} font-bold "
                         aria-current="page"
                     >
                         <span property="name">{{ title }}</span>
