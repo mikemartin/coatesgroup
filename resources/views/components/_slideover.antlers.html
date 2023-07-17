@@ -18,7 +18,7 @@
     {{ /partial:components/button }}
 
     <template x-teleport="#slideover-content">
-        <div x-show="open" @slideover-close.window="open = false" x-transition>
+        <div x-show="open" @slideover-close.window="open = false" x-transition.opacity.duration.400ms>
             {{ slot:content }}
         </div>
     </template>
@@ -60,12 +60,12 @@
                 <div
                     x-show="slideoverOpen"
                     class="h-full w-full"
-                    x-transition:enter="transition ease-out duration-300"
-                    x-transition:enter-start="translate-x-full"
-                    x-transition:enter-end="translate-x-0"
-                    x-transition:leave="transition ease-in duration-300"
-                    x-transition:leave-start="translate-x-0"
-                    x-transition:leave-end="translate-x-full"
+                    x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700" 
+                    x-transition:enter-start="translate-x-full" 
+                    x-transition:enter-end="translate-x-0" 
+                    x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700" 
+                    x-transition:leave-start="translate-x-0" 
+                    x-transition:leave-end="translate-x-full" 
                 >
                     <div class="h-full flex flex-col justify-between {{ slideover_inverted ? 'bg-black dark' : 'bg-white' }} shadow-lg overflow-y-auto">
                         <div class="absolute top-0 right-0 pt-4 pr-4">
