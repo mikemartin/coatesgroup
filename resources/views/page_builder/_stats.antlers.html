@@ -1,0 +1,25 @@
+{{#
+    @name Stats
+    @desc The Stats page builder block.
+    @set page.page_builder.stats
+#}}
+
+<!-- /page_builder/_stats.antlers.html -->
+<section class="w-full relative bg-blue dark">
+    <div class="fluid-container grid grid-cols-2 md:grid-cols-12 gap-8 py-16 md:py-20">
+        <div class="relative text-center col-span-2 md:col-start-3 md:col-span-8">
+            {{ partial:typography/h2 :content="block:title" }}
+        </div>
+        {{ block:stats }}
+            <div class="md:col-span-3 text-center">
+                {{ partial:typography/h1 class="tracking-tight" :content="number" }}
+                {{ partial:typography/p class="mt-4 font-mono" :content="label" }}
+            </div>
+        {{ /block:stats }}
+
+        <div class="relative text-center col-span-2 md:col-start-3 md:col-span-8">
+            {{ block:buttons ?= { partial:components/buttons inverted="true" class="inline-flex" } }}
+        </div>
+    </div>
+</section>
+<!-- End: /page_builder/_stats.antlers.html -->

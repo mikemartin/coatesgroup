@@ -1,4 +1,4 @@
-title: 'Image and text'
+title: 'Testimonial'
 fields:
   -
     handle: title
@@ -13,7 +13,7 @@ fields:
       visibility: visible
       always_save: false
   -
-    handle: text
+    handle: quote
     field: common.text_basic
     config:
       buttons:
@@ -23,33 +23,23 @@ fields:
         - orderedlist
         - removeformat
         - anchor
-      display: Text
+      display: Quote
       validate:
         - required
   -
-    import: buttons
-  -
-    handle: image
-    field: common.image
-    config:
-      width: 50
-      validate:
-        - required
-  -
-    handle: image_position
+    handle: author
     field:
-      options:
-        left: Left
-        right: Right
-      default: right
-      display: 'Image position'
-      type: button_group
-      icon: button_group
-      replicator_preview: false
-      width: 50
+      mode: default
+      create: true
+      collections:
+        - people
+      display: Author
+      type: entries
+      icon: entries
       listable: hidden
-      instructions_position: above
+      instructions_position: below
       visibility: visible
       always_save: false
-      validate:
-        - required
+      max_items: 1
+  -
+    import: buttons

@@ -6,9 +6,19 @@
 
 <!-- /page_builder/_call_to_action.antlers.html -->
 <section class="fluid-container">
+    {{ is_inverted = switch(
+        (block:color:label == 'Red') => 'true',
+        (block:color:label == 'Charcoal') => 'true',
+        (block:color:label == 'Black') => 'true'
+    )}}
+
+    {{ is_inverted }}
     <div class="{{ switch(
         (block:color:label == 'Red') => 'bg-red text-white',
         (block:color:label == 'Yellow') => 'bg-yellow text-black',
+        (block:color:label == 'Green') => 'bg-green text-black',
+        (block:color:label == 'Blue') => 'bg-blue text-black',
+        (block:color:label == 'Charcoal') => 'bg-charcoal text-black',
         () => 'bg-black-80 text-white'
         )}} aspect-square md:aspect-[3/1]">
         {{ if block:image }}
@@ -21,7 +31,7 @@
             <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
                 <div class="md:col-span-10">
                     {{ partial:typography/h2 :content="block:title" }}
-                    {{ block:buttons ?= { partial:components/buttons inverted="true" class="mt-4 lg:mt-8" } }}
+                    {{ block:buttons ?= { partial:components/buttons :inverted="is_inverted" class="mt-4 lg:mt-8" } }}
                 </div>
             </div>
         </div>

@@ -136,12 +136,6 @@ fields:
               fields:
                 -
                   import: centered
-            image_and_text:
-              display: 'Image and text'
-              instructions: 'An image and text side by side.'
-              fields:
-                -
-                  import: image_and_text
             repeating_squares:
               display: 'Repeating Squares'
               instructions: 'Repeating square outlines with text.'
@@ -149,6 +143,18 @@ fields:
               fields:
                 -
                   import: repeating_squares
+            stats:
+              display: Stats
+              instructions: null
+              fields:
+                -
+                  import: stats
+            testimonial:
+              display: Testimonial
+              instructions: 'An photo and testimonial side by side.'
+              fields:
+                -
+                  import: testimonial
       instructions_position: above
       visibility: visible
       previews: true

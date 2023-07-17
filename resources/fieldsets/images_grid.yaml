@@ -1,6 +1,23 @@
 title: 'Images grid'
 fields:
   -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
     handle: rows
     field:
       fields:
@@ -12,7 +29,7 @@ fields:
             restrict: false
             allow_uploads: true
             show_filename: true
-            max_files: 3
+            max_files: 4
             display: Images
             type: assets
             icon: assets
@@ -22,6 +39,8 @@ fields:
             always_save: false
             validate:
               - required
+            show_set_alt: true
+            hide_display: false
       mode: table
       add_row: 'Add image row'
       reorderable: true
@@ -33,3 +52,5 @@ fields:
       replicator_preview: false
       visibility: visible
       always_save: false
+      fullscreen: true
+      hide_display: false

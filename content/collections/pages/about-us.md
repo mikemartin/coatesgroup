@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689561229
+updated_at: 1689575322
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -66,28 +66,77 @@ page_builder:
     type: centered
     enabled: true
   -
-    id: lk672n9j
+    id: lk6fx9ls
     title: 'Hear from our CEO'
-    text:
+    quote:
       -
         type: paragraph
         content:
           -
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc.'
+    author: a85f3420-0809-4f7a-a5af-11635a138181
     buttons:
       -
-        id: lk673wa9
+        id: lk6fxmkf
         label: 'View our Leadership Team'
         link_type: entry
         target_blank: false
         entry: b894f99b-58a9-41d0-bde4-411b91dcad01
         button_type: button
-        show_arrow: false
-    image: about-us/javier-allegue-barros-i5kx0p8a0d4-unsplash.jpg
-    image_position: left
-    type: image_and_text
+    type: testimonial
     enabled: true
+  -
+    id: lk6hhy08
+    title: 'Lorem ipsum dolor sit amet consectetur'
+    stats:
+      -
+        id: lk6hi163
+        number: '5'
+        label: Countries
+      -
+        id: lk6hi5b6
+        number: '12'
+        label: Cities
+      -
+        id: lk6hi8iu
+        number: XXX
+        label: 'Lorem Ipsum'
+      -
+        id: lk6hider
+        number: '13,500'
+        label: Employees
+    buttons:
+      -
+        id: lk6hijcm
+        label: 'View our offices'
+        link_type: entry
+        target_blank: false
+        entry: 82143229-3dff-4e67-a5a4-21ec485cec07
+        button_type: inline
+    type: stats
+    enabled: true
+  -
+    id: lk6glodm
+    rows:
+      -
+        id: lk6gotg5
+        images:
+          - about-us/img_3981-1.jpg
+          - about-us/coatesholidayparty-20-1.jpg
+          - about-us/20210327_coatesxmas0340-1.jpg
+          - about-us/1661533224378-1.jpg
+      -
+        id: lk6gviz6
+        images:
+          - about-us/img_3980-1.jpg
+          - about-us/1635271238097-1.jpg
+          - about-us/jane-from-hq-office-visited-coates-china-1.jpg
+          - about-us/1661533224378-1.jpg
+    type: images_grid
+    enabled: true
+    title: 'Lorem ipsum dolor sit amet consectetur.'
+    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
   -
     id: lk693ywn
     title: 'Be part of our team'
@@ -100,9 +149,9 @@ page_builder:
         entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
         button_type: button
     color:
-      label: Yellow
+      label: Green
       value:
-        - 'rgb(254 195 37)'
+        - 'rgb(117 187 67)'
     type: call_to_action
     enabled: true
 enable_hero: true
