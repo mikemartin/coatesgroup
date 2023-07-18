@@ -50,7 +50,7 @@
                         >
                             {{ children }}
                                 <div>
-                                    {{ partial:typography/p id="{{ title|slugify }}-heading" :content="title" }}
+                                    {{ partial:typography/p id="{{ title|slugify }}-heading" :content="title" color="text-black"  }}
                                     <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-4 space-y-4">
                                         {{ children }}
                                         <li class="flex">
