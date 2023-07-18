@@ -38,7 +38,7 @@ x-init="swiper = new Swiper($refs.container, {
             <div class="swiper-wrapper">
                 {{ block:blocks }}
                     <div class="swiper-slide">
-                        <figure>
+                        <figure class="aspect-square lg:aspect-[5/2]">
                             {{ partial
                                 src="statamic-peak-tools::components/picture"
                                 sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
@@ -49,7 +49,7 @@ x-init="swiper = new Swiper($refs.container, {
                         </figure>
 
                         <div class="px-8 pt-6 pb-12 relative bg-black">
-                            {{ partial:typography/large color="text-white font-bold" :content="title" }}
+                            {{ partial:typography/large color="text-white font-medium" :content="title" }}
                             {{ partial:typography/p class="text-white text-sm" :content="text" }}
                         </div>
                     </div>
