@@ -12,12 +12,14 @@
         </div>
     </div>
     <div class="{{ switch(
-		(enable_hero && hero_color:label == 'Red') => 'dark',
-		(enable_hero && hero_color:label == 'Yellow') => '',
-		(enable_hero) => 'dark'
-	)}}
-    
-    {{ background ?? 'bg-transparent' }}">
+		(hero_color == 'Red') => 'bg-white',
+		(hero_color == 'Yellow') => 'bg-white',
+        (hero_color == 'Red') => 'bg-white',
+        (hero_color == 'Green') => 'bg-white',
+        (hero_color == 'Blue') => 'bg-white',
+        (enable_hero) => 'bg-transparent dark',
+        () => 'bg-transparent',
+	)}}">
         <div class="h-16 fluid-container flex justify-center md:justify-between items-center">
             {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
             {{ partial:components/logo class="text-black dark:text-white" }}

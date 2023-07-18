@@ -5,28 +5,52 @@
                 <li class="relative leading-none shrink-0">
                     <a href="#hero" @click="variant = 'black'" :class="variant == 'black' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
                         <span class="flex">
-                            <span x-show="variant == 'black'" class="w-4 h-4 bg-black rounded-full mr-3"></span>
+                            <span x-show="variant == 'black'" class="w-4 h-4 bg-black rounded-full mr-3" x-cloak></span>
                             Black
                         </span>
                     </a>
                 </li>
                 <li class="relative leading-none shrink-0">
-                    <a href="#hero" @click="variant = 'yellow'" :class="variant == 'yellow' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                    <a href="#hero" @click="variant = 'charcoal'" :class="variant == 'charcoal' ? 'text-charcoal' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
                         <span class="flex">
-                            <span x-show="variant == 'yellow'" class="w-4 h-4 bg-yellow rounded-full mr-3"></span>
-                            Yellow
+                            <span x-show="variant == 'charcoal'" class="w-4 h-4 bg-charcoal rounded-full mr-3" x-cloak></span>
+                            Charcoal
                         </span>
                     </a>
                 </li>
                 <li class="relative leading-none shrink-0">
                     <a href="#hero" @click="variant = 'red'" :class="variant == 'red' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
                         <span class="flex">
-                            <span x-show="variant == 'red'" class="w-4 h-4 bg-red rounded-full mr-3"></span>
+                            <span x-show="variant == 'red'" class="w-4 h-4 bg-red rounded-full mr-3" x-cloak></span>
                             Red
                         </span>
                     </a>
                 </li>
                 
+                <li class="relative leading-none shrink-0">
+                    <a href="#hero" @click="variant = 'green'" :class="variant == 'green' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'green'" class="w-4 h-4 bg-green rounded-full mr-3" x-cloak></span>
+                            Green
+                        </span>
+                    </a>
+                </li>
+                <li class="relative leading-none shrink-0">
+                    <a href="#hero" @click="variant = 'blue'" :class="variant == 'blue' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'blue'" class="w-4 h-4 bg-blue rounded-full mr-3" x-cloak></span>
+                            Blue
+                        </span>
+                    </a>
+                </li>
+                <li class="relative leading-none shrink-0">
+                    <a href="#hero" @click="variant = 'yellow'" :class="variant == 'yellow' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'yellow'" class="w-4 h-4 bg-yellow rounded-full mr-3" x-cloak></span>
+                            Yellow
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -38,19 +62,41 @@
                 {{ partial:components/hero_extend }}
             </div>
         </div>
-        <div x-show="variant == 'yellow'">
-            {{ partial:layout/header }}
-            {{ partial:components/hero color="Yellow" headline="Lorem ipsum dolor sit amet consectetur." }}
+        <div x-show="variant == 'charcoal'" class="dark" x-cloak>
+            {{ partial:layout/header hero_color="Charcoal" }}
+            {{ partial:components/hero hero_color="Charcoal" headline="Lorem ipsum dolor sit amet consectetur." }}
             <div class="outer-grid">
-                {{ partial:components/hero_extend color="Yellow" }}
+                {{ partial:components/hero_extend hero_color="Charcoal" }}
             </div>
         </div>
-        <div x-show="variant == 'red'" class="dark">
-            {{ partial:layout/header }}
-            {{ partial:components/hero color="Red" headline="Lorem ipsum dolor sit amet consectetur." }}
+        <div x-show="variant == 'red'" x-cloak>
+            {{ partial:layout/header hero_color="Red" }}
+            {{ partial:components/hero hero_color="Red" headline="Lorem ipsum dolor sit amet consectetur." }}
             <div class="outer-grid">
-                {{ partial:components/hero_extend color="Red" }}
+                {{ partial:components/hero_extend hero_color="Red" }}
             </div>
         </div>
+        <div x-show="variant == 'green'" x-cloak>
+            {{ partial:layout/header hero_color="Green" }}
+            {{ partial:components/hero hero_color="Green" headline="Lorem ipsum dolor sit amet consectetur." }}
+            <div class="outer-grid">
+                {{ partial:components/hero_extend hero_color="Green" }}
+            </div>
+        </div>
+        <div x-show="variant == 'blue'" x-cloak>
+            {{ partial:layout/header hero_color="Blue" }}
+            {{ partial:components/hero hero_color="Blue" headline="Lorem ipsum dolor sit amet consectetur." }}
+            <div class="outer-grid">
+                {{ partial:components/hero_extend hero_color="Blue" }}
+            </div>
+        </div>
+        <div x-show="variant == 'yellow'" x-cloak>
+            {{ partial:layout/header hero_color="Yellow" }}
+            {{ partial:components/hero hero_color="Yellow" headline="Lorem ipsum dolor sit amet consectetur." }}
+            <div class="outer-grid">
+                {{ partial:components/hero_extend hero_color="Yellow" }}
+            </div>
+        </div>
+        
     </div>
 </div>

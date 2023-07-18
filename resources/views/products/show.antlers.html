@@ -4,7 +4,7 @@
 #}}
 
 <!-- /products/show.antlers.html -->
-{{ enable_hero ? {partial:layout/hero hero_type="image" :hero_image="image"} : {partial:components/header} }}
+{{ enable_hero ? {partial:layout/hero hero_type="image" :hero_image="image"} : {partial:components/header :hero_color="hero_color:label"} }}
 
 <main class="outer-grid" id="content">
     {{ page_builder scope="block" }}

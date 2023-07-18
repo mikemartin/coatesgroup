@@ -4,10 +4,10 @@
 #}}
 
 <!-- /default.antlers.html -->
-{{ enable_hero ? {partial:layout/hero} : {partial:components/header} }}
+{{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label"} }}
 
 <main class="outer-grid" id="content">
-    {{ {enable_hero && hero_extend && hero_type == 'brand'} ?= { partial:components/hero_extend :color="hero_color:label" } }}
+    {{ {enable_hero && hero_extend && hero_type == 'brand'} ?= { partial:components/hero_extend :hero_color="hero_color:label" } }}
 
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}

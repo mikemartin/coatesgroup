@@ -4,16 +4,25 @@
     @param color
 #}}
 
+{{ is_inverted = switch(
+	(hero_color == 'Red') => 'true',
+	(hero_color == 'Charcoal') => 'true',
+	(hero_color == 'Black') => 'true'
+)}}
+
 <div class="relative -mt-16 pt-16 w-full {{ switch(
-		(color == 'Red') => 'bg-red text-white',
-		(color == 'Yellow') => 'bg-yellow text-black',
-		() => 'bg-black-80 text-white'
+	(hero_color == 'Red') => 'bg-red text-white',
+	(hero_color == 'Yellow') => 'bg-yellow text-black',
+	(hero_color == 'Green') => 'bg-green text-black',
+	(hero_color == 'Blue') => 'bg-blue text-black',
+	(hero_color == 'Charcoal') => 'bg-charcoal text-white',
+	() => 'bg-black text-white'
 	)}} -mb-12 md:-mb-16 lg:-mb-24">
 	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
 		<div class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
 			{{ partial:navigation/breadcrumbs color="{ switch(
-				(color == 'Red') => 'text-white',
-				(color == 'Yellow') => 'text-black',
+				(is_inverted) => 'text-white',
+				(hero_color) => 'text-black',
 				() => 'text-charcoal-40'
 			)}" }}
 

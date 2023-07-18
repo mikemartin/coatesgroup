@@ -25,7 +25,7 @@
         {{ partial:statamic-peak-tools::components/toolbar }}
         {{ yield:seo_body }}
 
-        {{ partial:layout/header }}
+        {{ partial:layout/header :hero_color="hero_color:label" }}
         {{ template_content }}
         {{ partial:layout/footer }}
         {{ yield:modal }}
