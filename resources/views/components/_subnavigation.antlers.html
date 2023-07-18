@@ -4,7 +4,7 @@
         <div class="col-start-2 col-span-6 grid grid-cols-2 gap-8 pr-6">
           {{ children }}
           <div>
-              {{ partial:typography/p id="{{ title|slugify }}-heading" :content="title" }}
+              {{ partial:typography/p id="{{ title|slugify }}-heading" :content="title" color="text-black" }}
               <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-4 space-y-4">
                 {{ children }}
                 <li class="flex">
@@ -17,7 +17,7 @@
         </div>
         <div class="col-span-4">
           <div class="bg-black-10 px-8 py-6">
-              {{ partial:typography/p as="h3" class="font-medium" :content="cta:nav_title" }}
+              {{ partial:typography/p as="h3" class="font-medium" :content="cta:nav_title" color="text-black" }}
               <p class="mt-2 text-sm text-black-60">{{ cta:nav_text }}</p>
               {{ partial:components/buttons :buttons="cta:nav_buttons" class="mt-4 text-sm uppercase tracking-wide" }}
           </div>
