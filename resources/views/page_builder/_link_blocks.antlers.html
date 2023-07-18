@@ -5,7 +5,9 @@
 #}}
 
 <!-- /page_builder/_link_blocks.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8">
+<section x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-200px="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
     {{ if block:title }}
     <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
         {{ partial:typography/h2 :content="block:title" class="md:col-span-6" }}

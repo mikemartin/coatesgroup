@@ -5,16 +5,19 @@
 #}}
 
 <!-- /page_builder/_full_width_image.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8">
-    <figure class="md:col-span-12">
-        <div class="aspect-square md:aspect-[9/2] -mx-8 lg:mx-0">
-            {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:9/2" cover="true" lazy="true" sizes="100vw" }}
-        </div>
+<section class="fluid-container">
+    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-200px="fadeIn($el)" class="aspect-square md:aspect-[9/2] -mx-8 lg:mx-0">
+        {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:9/2" cover="true" lazy="true" sizes="100vw" }}
     </figure>
-    {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
-    <div class="md:col-start-7 md:col-span-6">
-        {{ partial:typography/p :content="block:text"}}
-        {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
+    <div 
+        x-data="fadeIn()" 
+        x-init="hide($el.children)" 
+        x-intersect.once.margin.-200px="fadeInStagger($el)" class="mt-8 grid md:grid-cols-12 gap-8">
+        {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
+        <div class="md:col-start-7 md:col-span-6">
+            {{ partial:typography/p :content="block:text"}}
+            {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
+        </div>
     </div>
 </section>
 <!-- End: /page_builder/_full_width_image.antlers.html -->

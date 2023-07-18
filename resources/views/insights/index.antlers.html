@@ -16,7 +16,8 @@
 
 {{ section:index_content }}
     <!-- /insights/index.antlers.html -->
-    <div class="fluid-container self-start grid md:grid-cols-12 gap-8">
+    <div 
+    class="fluid-container self-start grid md:grid-cols-12 gap-8">
         {{ collection:insights sort="date:desc" paginate="true" limit="12" as="items" }}
             {{ unless no_results }}
                 {{ items }}

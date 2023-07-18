@@ -4,6 +4,7 @@ import collapse from '@alpinejs/collapse'
 import morph from '@alpinejs/morph'
 import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
+import intersect from '@alpinejs/intersect'
 import 'focus-visible'
 import Swiper from 'swiper';
 import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs } from 'swiper/modules';
@@ -12,6 +13,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/a11y';
 import 'swiper/css/mousewheel';
+import fadeIn from './components/fadeIn.js'
+
 
 Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs]);
 
@@ -32,5 +35,7 @@ window.getToken = async () => {
 window.Alpine = Alpine
 window.Swiper = Swiper;
 
-Alpine.plugin([ui, collapse, focus, morph, persist])
+Alpine.plugin([ui, collapse, focus, morph, persist, intersect])
+Alpine.data('fadeIn', fadeIn)
 Alpine.start()
+

@@ -6,7 +6,10 @@
 
 <!-- /page_builder/_insights.antlers.html -->
 <section class="w-full bg-black-10 py-16 md:py-24">
-    <div class="fluid-container grid md:grid-cols-12 gap-8">
+    <div 
+    x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-200px="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
         {{ if block:title }}
         <div class="grid md:grid-cols-12 md:col-span-12">
             {{ partial:typography/h2 :content="title" class="md:col-span-6" }}

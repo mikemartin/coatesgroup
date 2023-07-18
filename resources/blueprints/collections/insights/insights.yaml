@@ -22,8 +22,6 @@ tabs:
             field: common.text_plain
             config:
               display: Teaser
-              validate:
-                - required
               character_limit: '250'
           -
             handle: article
@@ -95,6 +93,7 @@ tabs:
             field:
               type: date
               required: true
+              default: now
               listable: true
               validate:
                 - required
@@ -112,7 +111,15 @@ tabs:
             field: common.image
             config:
               mode: grid
-              width: 100
               listable: true
+              width: 100
               validate:
                 - required
+          -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select
