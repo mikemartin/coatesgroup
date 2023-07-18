@@ -26,7 +26,7 @@
     <div class="relative w-full h-screen flex flex-col justify-end md:h-auto pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div class="relative md:col-span-10">
-                {{ show_breadcrumb ?= { partial:navigation/breadcrumbs } }}
+                {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" } }}
                 {{ show_topic ?= {partial:components/tag :label="topics:0:title" :url="topics:0:url" } }}
                 {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[18ch]" }}
                 {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6"} }}
