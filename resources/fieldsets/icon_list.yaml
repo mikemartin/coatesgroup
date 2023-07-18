@@ -1,0 +1,54 @@
+title: 'Icon List'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
+    handle: icon_list
+    field:
+      fields:
+        -
+          handle: title
+          field:
+            input_type: text
+            type: text
+            localizable: true
+            listable: hidden
+            validate: required
+            display: Title
+        -
+          handle: text
+          field: common.text_plain
+          config:
+            display: Text
+        -
+          handle: icon
+          field:
+            type: icon
+            display: Icon
+            icon: icon_picker
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+      add_row: 'Add item'
+      reorderable: true
+      type: grid
+      localizable: true
+      listable: hidden
+      display: 'Icon List'
+      replicator_preview: false
+      instructions_position: above
+      visibility: visible
+      fullscreen: true
+      mode: table
+      hide_display: false

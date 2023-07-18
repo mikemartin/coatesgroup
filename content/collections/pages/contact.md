@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689227589
+updated_at: 1689639068
 page_builder:
   -
     id: ljmfvd7s
@@ -17,9 +17,23 @@ page_builder:
     form: contact
     type: form
     enabled: true
+  -
+    id: lk7jg5fv
+    title: 'Lorem ipsum dolor sit amet consectetur.'
+    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    buttons:
+      -
+        id: lk7jgjos
+        label: 'View Offices'
+        link_type: entry
+        target_blank: false
+        entry: 82143229-3dff-4e67-a5a4-21ec485cec07
+        button_type: button
+    image: offices/christoph-schulz-aeiu9niln_c-unsplash.jpg
+    type: half_width_image
+    enabled: true
 hero_type: image
 hero_image: hero/coverr-running-with-a-kite.jpg
-hero_extend: false
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 enable_hero: true
 ---

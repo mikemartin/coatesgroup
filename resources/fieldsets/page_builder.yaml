@@ -21,6 +21,12 @@ fields:
               fields:
                 -
                   import: call_to_action
+            block_carousel:
+              display: 'Block Carousel'
+              instructions: 'Carousel of blocks with image and text'
+              fields:
+                -
+                  import: block_carousel
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'
@@ -63,6 +69,12 @@ fields:
               fields:
                 -
                   import: full_width_video
+            half_width_image:
+              display: 'Half-width image'
+              instructions: 'A half width image with optional text and button(s).'
+              fields:
+                -
+                  import: half_width_image
             hero:
               display: Hero
               instructions: null
@@ -136,6 +148,12 @@ fields:
               fields:
                 -
                   import: centered
+            icon_list:
+              display: 'Icon List'
+              instructions: 'List of icons with text.'
+              fields:
+                -
+                  import: icon_list
             repeating_squares:
               display: 'Repeating Squares'
               instructions: 'Repeating square outlines with text.'

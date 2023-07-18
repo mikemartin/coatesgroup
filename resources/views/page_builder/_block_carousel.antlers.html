@@ -1,0 +1,65 @@
+{{#
+    @name Block Carousel
+    @desc The Block Carousel page builder block.
+    @set page.page_builder.carousel
+#}}
+
+<!-- /page_builder/_block_carousel.antlers.html -->
+<section x-data="{swiper: null}"
+x-init="swiper = new Swiper($refs.container, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  edgeSwipeDetection: 'prevent',
+  updateOnWindowResize: true,
+  a11y: true,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 40
+    }
+  }
+})" class="overflow-hidden">
+    <div class="fluid-container">
+        {{ if block:title }}
+        <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
+            {{ partial:typography/h2 :content="block:title" class="md:col-span-5" }}
+            <div class="md:col-start-7 md:col-span-6">
+                {{ partial:typography/p :content="block:text"}}
+            </div>
+        </div>
+        {{/if}}
+
+        <div class="mt-10 md:mt-20 swiper !pb-14" x-ref="container">
+            <div class="swiper-wrapper">
+                {{ block:blocks }}
+                    <div class="swiper-slide">
+                        <figure>
+                            {{ partial
+                                src="statamic-peak-tools::components/picture"
+                                sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                                aspect_ratio="1/1 large:5/2"
+                                cover="true"
+                                lazy="true"
+                            }}
+                        </figure>
+
+                        <div class="px-8 pt-6 pb-12 relative bg-black">
+                            {{ partial:typography/large color="text-white font-bold" :content="title" }}
+                            {{ partial:typography/p class="text-white text-sm" :content="text" }}
+                        </div>
+                    </div>
+                {{ /block:blocks }}
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination absolute !bottom-0"></div>
+        </div>
+        
+    </div>
+</section>
+<!-- End: /page_builder/_block_carousel.antlers.html -->

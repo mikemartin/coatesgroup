@@ -1,0 +1,22 @@
+{{#
+    @name Half-width image
+    @desc The Half-width image page builder block.
+    @set page.page_builder.half_width_image
+#}}
+
+<!-- /page_builder/_half_width_image.antlers.html -->
+<section class="w-full relative bg-[#FCFCFC]">
+    <figure class="lg:absolute lg:inset-0 lg:left-1/2">
+        {{ partial:statamic-peak-tools::components/picture :image="block:image" class="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
+    </figure>
+    <div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
+      <div class="fluid-container">
+        <div class="lg:mx-0 lg:max-w-lg">
+            {{ partial:typography/h2 :content="block:title" }}
+            {{ partial:typography/p :content="block:text" class="mt-4"}}
+            {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
+        </div>
+      </div>
+    </div>
+</section>
+<!-- End: /page_builder/_half_width_image.antlers.html -->
