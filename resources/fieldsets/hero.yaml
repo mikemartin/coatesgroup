@@ -22,8 +22,20 @@ fields:
       validate:
         - sometimes
         - 'mimes:mp4'
-        - 'max_filesize:10000'
-      instructions: 'Must be a looping `mp4` file. Image required while the video loads.'
+        - 'max_filesize:5000'
+      instructions: 'Must be a 1280 x 720 looping `mp4` file. Image required while the video loads.'
+      if:
+        hero_type: 'equals video'
+  -
+    handle: hero_video_mobile
+    field: common.video
+    config:
+      display: 'Mobile Video'
+      instructions: 'Must be a 720 x 1280 looping `mp4` file.'
+      validate:
+        - sometimes
+        - 'mimes:mp4'
+        - 'max_filesize:5000'
       if:
         hero_type: 'equals video'
   -

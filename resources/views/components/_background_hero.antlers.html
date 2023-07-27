@@ -11,9 +11,17 @@
         <video
                 playsinline muted autoplay loop preload
                 poster="{{ fallback_image }}"
-                class="w-full h-full object-cover object-center"
+                class="hidden md:block w-full h-full object-cover object-center"
             >
             <source src="{{ hero_video }}" type="video/mp4">
+        </video>
+
+        <video
+                playsinline muted autoplay loop preload
+                poster="{{ fallback_image }}"
+                class="md:hidden w-full h-full object-cover object-center"
+            >
+            <source src="{{ hero_video_mobile }}" type="video/mp4">
         </video>
     </div>
     <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
