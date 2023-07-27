@@ -9,7 +9,7 @@
     {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video
-                playsinline muted autoplay loop preload
+                playsinline muted autoplay loop
                 poster="{{ fallback_image }}"
                 class="hidden md:block w-full h-full object-cover object-center"
             >
@@ -17,7 +17,7 @@
         </video>
 
         <video
-                playsinline muted autoplay loop preload
+                playsinline muted autoplay loop
                 poster="{{ fallback_image }}"
                 class="md:hidden w-full h-full object-cover object-center"
             >
