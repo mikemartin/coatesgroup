@@ -6,3 +6,6 @@ preferences:
   collections:
     offices:
       after_save: create_another
+  assets:
+    images:
+      mode: grid

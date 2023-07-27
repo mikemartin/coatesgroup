@@ -1,0 +1,18 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply">
+<path d="M430.09 179.91H260V340H430.09V179.91Z" fill="#F1F2F2"/>
+</g>
+<g style="mix-blend-mode:multiply">
+<path d="M210.08 179.91H59.96V260H210.08V179.91Z" fill="#F1F2F2"/>
+</g>
+<path d="M60 335H210" stroke="#F1F2F2" stroke-width="10.35" stroke-miterlimit="10"/>
+<path d="M60 315H210" stroke="#F1F2F2" stroke-width="10.35" stroke-miterlimit="10"/>
+<path d="M60 295H210" stroke="#F1F2F2" stroke-width="10.35" stroke-miterlimit="10"/>
+<path d="M195.289 262.703L188.289 269.703L202.431 283.846L209.432 276.845L195.289 262.703Z" fill="#159FD8"/>
+<path d="M202.43 255.57L181.21 276.78L170.57 245L202.43 255.57Z" fill="#159FD8"/>
+<path d="M459.56 110.44V369.56H30.44V110.44H459.56ZM470 100H20V380H470V100Z" fill="#231F20"/>
+<path d="M45 130C47.7614 130 50 127.761 50 125C50 122.239 47.7614 120 45 120C42.2386 120 40 122.239 40 125C40 127.761 42.2386 130 45 130Z" fill="#159FD8"/>
+<path d="M65 130C67.7614 130 70 127.761 70 125C70 122.239 67.7614 120 65 120C62.2386 120 60 122.239 60 125C60 127.761 62.2386 130 65 130Z" fill="#159FD8"/>
+<path d="M85 130C87.7614 130 90 127.761 90 125C90 122.239 87.7614 120 85 120C82.2386 120 80 122.239 80 125C80 127.761 82.2386 130 85 130Z" fill="#159FD8"/>
+<path d="M475 110V385H30" stroke="#159FD8" stroke-width="10.06" stroke-miterlimit="10"/>
+</svg>

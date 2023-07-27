@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690437285
+updated_at: 1690465180
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -26,7 +26,7 @@ page_builder:
         entry: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
         button_type: outline
         show_arrow: true
-        image: drive-thru/heber-davis-6v1gbwk38qu-unsplash.jpg
+        image: homepage/drivethru.jpg
       -
         id: ljs2mon9
         title: In-Restaurant
@@ -37,7 +37,7 @@ page_builder:
         entry: ff9d8311-380b-41a3-8521-fca66900b6bb
         button_type: outline
         show_arrow: true
-        image: in-restaurant/toa-heftiba-6bkphaun4d8-unsplash.jpg
+        image: homepage/inrestaurant.jpg
     type: link_blocks
     enabled: true
   -
@@ -48,7 +48,7 @@ page_builder:
         id: lC8ei2CA
         title: 'Digital Menu Board'
         text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
-        image: digital-menu-board/erik-mclean-j0zd8r_clgg-unsplash.jpg
+        image: homepage/digitalmenuboard.jpg
         label: 'View More'
         link_type: entry
         target_blank: false
@@ -59,7 +59,7 @@ page_builder:
         id: ljs3nwqo
         title: 'Self-Service Kiosk'
         text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
-        image: self-service-kiosk/onesix-lbikv4hmgwm-unsplash.jpg
+        image: homepage/selfservicekiosks.jpg
         label: 'View More'
         link_type: entry
         target_blank: false
@@ -70,7 +70,7 @@ page_builder:
         id: ljs3oszb
         title: Software
         text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
-        image: software/domenico-loia-ehtcc9syxsw-unsplash.jpg
+        image: homepage/software.jpg
         label: 'View More'
         link_type: entry
         target_blank: false
@@ -92,31 +92,32 @@ page_builder:
         entry: 1d2592aa-536e-4dfd-8901-23b7413fc22a
         button_type: outline
         show_arrow: true
-    type: full_width_video
+    type: full_width_image
     enabled: true
-    video: coverr-running-with-a-kite-8106-720p.mp4
-    fallback_image: hero/coverr-running-with-a-kite.jpg
+    image: homepage/traditionalsignage.jpg
   -
     id: ljs76pgs
     type: case_studies
     enabled: true
     title: 'A headline about Case Studies goes here'
     case_studies:
-      - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
       - 1c37dfff-7c87-4872-a2fb-21aaeeba89ea
+      - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
       - adbfcbac-77a8-4773-8b8a-7c1a31c5dcb6
       - 4c7dfc70-b3fb-455b-ba7e-bbf7129d5a74
   -
     id: ljs64twe
     clients:
-      - a3cffb0a-0c45-4ae0-8858-dd07b4763bde
-      - 3768eb0b-da94-40e1-ae93-751bde10352e
+      - 91e99798-6674-4dec-b39f-edf3482957f9
+      - a57f2074-3e76-41fe-86ca-20a156c23b03
       - a2a6cedb-b6e3-48d6-98d2-920e195b1b1c
-      - ab72888e-927d-453a-b653-1bbd0142f3fc
-      - 0378a75a-702a-49b1-95eb-193e6b6068e9
-      - 50de6185-118a-4915-8a2b-3021687bea3a
+      - a3cffb0a-0c45-4ae0-8858-dd07b4763bde
       - b5ed9803-ef57-425f-89d6-ce3d3b4270c5
       - f2b58d8b-8bde-4b53-ae16-988dc5f5949b
+      - 3768eb0b-da94-40e1-ae93-751bde10352e
+      - ab72888e-927d-453a-b653-1bbd0142f3fc
+      - 50de6185-118a-4915-8a2b-3021687bea3a
+      - 0378a75a-702a-49b1-95eb-193e6b6068e9
     type: clients
     enabled: true
   -
@@ -132,7 +133,7 @@ page_builder:
         entry: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
         button_type: outline
         show_arrow: true
-    image: about-us/javier-allegue-barros-i5kx0p8a0d4-unsplash.jpg
+    image: homepage/company.jpg
     type: full_width_image
     enabled: true
   -

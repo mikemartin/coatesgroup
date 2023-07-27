@@ -43,3 +43,4 @@ tabs:
               validate:
                 - required
                 - 'mimes:svg'
+              folder: clients

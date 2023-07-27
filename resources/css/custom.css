@@ -12,10 +12,30 @@
         --color-charcoal-40: 184 185 187;
         --color-charcoal-20: 219 220 221;
         --color-charcoal-10: 244 244 244;
+
+        --swiper-theme-color: rgb(var(--color-blue)) !important;
+        --swiper-pagination-color: var(--swiper-theme-color);
+        --swiper-pagination-left: auto;
+        --swiper-pagination-right: 8px;
+        --swiper-pagination-bottom: 8px;
+        --swiper-pagination-top: auto;
+        --swiper-pagination-fraction-color: inherit;
+        --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+        --swiper-pagination-progressbar-size: 4px;
+        --swiper-pagination-bullet-size: 8px;
+        --swiper-pagination-bullet-width: 96px;
+        --swiper-pagination-bullet-height: 8px;
+        --swiper-pagination-bullet-border-radius: 0px;
+        --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal));
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-pagination-bullet-opacity: 1;
+        --swiper-pagination-bullet-horizontal-gap: 4px;
+        --swiper-pagination-bullet-vertical-gap: 6px;
       }
 }
 
 @layer components {
+
   .swiper-watch-progress .swiper-slide {
     opacity: .5;
   }
