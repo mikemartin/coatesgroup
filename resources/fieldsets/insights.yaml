@@ -1,4 +1,4 @@
-title: 'Insights'
+title: Insights
 fields:
   -
     handle: title
@@ -12,3 +12,18 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
+  -
+    handle: insights
+    field:
+      max_items: 4
+      mode: default
+      create: true
+      collections:
+        - insights
+      type: entries
+      display: Insights
+      icon: entries
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

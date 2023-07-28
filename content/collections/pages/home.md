@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690503896
+updated_at: 1690510132
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -158,6 +158,11 @@ page_builder:
     title: 'A headline about Insights goes here'
     type: insights
     enabled: true
+    insights:
+      - ed8df7f9-2421-4673-aa26-90d81b960df6
+      - 90a1d00c-28cf-4543-9974-eb45c85649ad
+      - 0782b648-66a5-4132-a0ce-bd215682b3f0
+      - 803ff766-2f17-488c-947d-bf5fc3dfc793
 hero_type: video
 hero_video: 1--1280x720-homepage-mix-10s.mp4
 hero_fallback: hero/coverr-running-with-a-kite.jpg
