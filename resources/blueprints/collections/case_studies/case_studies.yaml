@@ -87,6 +87,35 @@ tabs:
               validate:
                 - required
           -
+            handle: experience
+            field:
+              max_items: 1
+              mode: select
+              create: true
+              collections:
+                - experiences
+              type: entries
+              display: Experience
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: products
+            field:
+              mode: select
+              create: true
+              collections:
+                - products
+              type: entries
+              display: Products
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: date
             field:
               type: date

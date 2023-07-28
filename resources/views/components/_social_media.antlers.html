@@ -5,7 +5,7 @@
 
 <!-- /navigation/_social_media.antlers.html -->
 {{ if social_media:social_media }}
-    <div class="flex {{ large ? 'space-x-4' : 'space-x-3' }}">
+    <div class="flex {{ large ? 'space-x-4' : 'space-x-3' }} {{ class }}">
         {{ social_media:social_media }}
             <a class="p-1 -m-1 {{ color ?? 'text-white hover:text-white/60' }} focus:outline-none focus-visible:ring-2 ring-primary" href="{{ prefix }}{{ handle }}" rel="noopener{{ type == 'mastodon' ?= ' me' }}" aria-label="{{ config:app:name }} {{ trans:strings.on }} {{ type | title }}" target="_blank">{{ svg :src="type" class="{ large ? 'w-7 h-7' : 'w-4.5 h-4.5' } overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
         {{ /social_media:social_media }}

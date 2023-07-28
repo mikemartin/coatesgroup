@@ -6,13 +6,13 @@
 
 <!-- /page_builder/_full_width_image.antlers.html -->
 <section class="fluid-container">
-    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-200px="fadeIn($el)" class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0">
+    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0">
         {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="7/5 large:8/3" cover="true" lazy="true" sizes="100vw" }}
     </figure>
     <div 
         x-data="fadeIn()" 
         x-init="hide($el.children)" 
-        x-intersect.once.margin.-200px="fadeInStagger($el)" class="mt-8 grid md:grid-cols-12 gap-8">
+        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mt-8 grid md:grid-cols-12 gap-8">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
         <div class="md:col-start-7 md:col-span-6">
             {{ partial:typography/p :content="block:text"}}

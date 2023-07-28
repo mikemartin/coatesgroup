@@ -1,14 +1,14 @@
 ---
 id: d70deed0-6959-4ec0-97a2-75d120b8899e
 blueprint: page
-title: 'What We Do'
+title: 'What we do'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689227583
+updated_at: 1690498503
 page_builder:
   -
     id: ljwscq36
@@ -51,6 +51,6 @@ hero_color:
   label: Black
   value:
     - rgb(28
-    - ' 28'
-    - ' 28)'
+    - '28'
+    - 28)
 ---

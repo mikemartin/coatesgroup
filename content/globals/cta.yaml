@@ -1,11 +1,11 @@
 title: 'Call to action'
 data:
   footer_title: 'Connect with Coates today'
-  footer_text: 'Connect with the Coates Crew today – Ask us a question, talk to us about a new project you have or arrange a visit to one of our Innovation labs. We’re all ears.'
+  footer_text: 'Coates delivers holistic drive-thru experiences encompassing hardware touchpoints and the advanced CMS technology needed to bring them together. Reach out to see how our drive-thru solutions can help maximise the ROI for your brand.'
   footer_buttons:
     -
       id: ljrv2tmg
-      label: 'Contact Us'
+      label: 'Get in touch'
       link_type: entry
       target_blank: false
       entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
@@ -18,10 +18,10 @@ data:
   nav_buttons:
     -
       id: ljrv3z8h
-      label: 'Get in Touch'
+      label: 'Read more'
       link_type: entry
       target_blank: false
       entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
-      button_type: outline
-      attr_title: 'Get in Touch'
-      attr_aria: 'Get in Touch'
+      button_type: inline
+      attr_title: 'Read more'
+      attr_aria: 'Read more'

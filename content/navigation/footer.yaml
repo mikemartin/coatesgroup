@@ -3,3 +3,4 @@ collections:
   - pages
   - experiences
   - products
+max_depth: 2

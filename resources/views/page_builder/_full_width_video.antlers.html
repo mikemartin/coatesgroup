@@ -6,7 +6,7 @@
 
 <!-- /page_builder/_full_width_video.antlers.html -->
 <section class="fluid-container">
-    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-200px="fadeIn($el)" class="aspect-[5/7] md:aspect-[9/4] -mx-8 lg:mx-0">
+    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" class="aspect-[5/7] md:aspect-[9/4] -mx-8 lg:mx-0">
         <video
                 playsinline muted autoplay loop preload
                 poster="{{ block:fallback_image }}"
@@ -17,7 +17,7 @@
     </figure>
     <div x-data="fadeIn()" 
         x-init="hide($el.children)" 
-        x-intersect.once.margin.-200px="fadeInStagger($el)" 
+        x-intersect.once.margin.-20%="fadeInStagger($el)" 
         class="mt-8 grid md:grid-cols-12 gap-8">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
         <div class="md:col-start-7 md:col-span-6">

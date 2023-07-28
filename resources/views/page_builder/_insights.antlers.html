@@ -9,7 +9,7 @@
     <div 
     x-data="fadeIn()" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-200px="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
         {{ if block:title }}
         <div class="grid md:grid-cols-12 md:col-span-12">
             {{ partial:typography/h2 :content="title" class="md:col-span-6" }}
@@ -29,7 +29,7 @@
         {{ /collection:insights }}
 
         <nav class="md:col-span-12 text-center">
-            {{ partial:components/button label="{trans:strings.insights_all}" link_type="url" url="{mount_url:insights}" show_arrow="true" }}
+            {{ partial:components/button label="{trans:strings.insights_all}" link_type="url" url="{mount_url:insights}" }}
         </nav>
     </div>
 </section>

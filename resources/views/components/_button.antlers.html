@@ -13,9 +13,9 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-            underline decoration-2 focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            focus:outline-none focus-visible:ring focus-visible:ring-offset-2
             {{ if button_type == 'inline' }}
-                underline motion-safe:transition
+                decoration-2 underline motion-safe:transition text-lg leading-snug {{ color or 'text-black dark:text-white' }}
                 {{ inverted
                     ? 'text-white decoration-white focus-visible:ring-white'
                     : 'text-neutral decoration-neutral focus-visible:ring-primary'

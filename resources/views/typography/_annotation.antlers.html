@@ -1,0 +1,13 @@
+{{#
+    @name Annotation
+    @desc The typography paragraph partial to render an annotation with `class`, `as`, `color` and `content` attributes.
+    @param* content The p content.
+    @param as The wrapping element. Defaults to `p`.
+    @param color Set a custom text color utility. Falls back to `text-black`.
+    @param anchor Set an id for aria-labels.
+    @param class Add custom CSS classes.
+#}}
+
+<!-- /typography/_annotation.antlers.html -->
+<{{ as or 'p' }} class="text-lg font-mono leading-snug {{ color or 'text-black dark:text-white' }} {{ class }}" {{ if anchor}}id="{{ anchor }}"{{/if}}>{{ content | nl2br }}</{{ as or 'p' }}>
+<!-- End: /typography/_annotation.antlers.html -->

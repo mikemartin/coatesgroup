@@ -5,7 +5,11 @@
 
 <!-- /layout/_header.antlers.html -->
 <header class="relative z-10 w-full {{ class }}">
-    <div class="hidden md:block bg-black-90 dark py-3">
+    <div class="hidden md:block {{ switch(
+		(hero_color == 'Yellow') => 'bg-green',
+        (hero_color == 'Red') => 'bg-green',
+        () => 'bg-blue',
+	)}} dark py-3">
         <div class="fluid-container flex justify-between items-center">
             {{ partial:components/social_media }}
             {{ partial:navigation/utility }}
