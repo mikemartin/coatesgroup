@@ -1,6 +1,7 @@
 title: Link
 tabs:
   main:
+    display: Main
     sections:
       -
         fields:
@@ -8,8 +9,43 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
+              validate:
+                - required
           -
             handle: redirect
             field:
               type: link
+              validate:
+                - required
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: date
+            field:
+              type: date
               required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
