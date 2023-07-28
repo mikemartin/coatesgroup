@@ -37,6 +37,11 @@ tabs:
               validate:
                 - required
           -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+          -
             handle: topics
             field:
               type: terms
@@ -44,8 +49,3 @@ tabs:
                 - topics
               display: Topics
               mode: select
-          -
-            handle: image
-            field: common.image
-            config:
-              mode: grid
