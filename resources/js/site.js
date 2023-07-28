@@ -14,6 +14,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/a11y';
 import 'swiper/css/mousewheel';
 import fadeIn from './components/fadeIn.js'
+import horizontalLoop from './components/horizontalLoop.js'
 
 
 Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs]);
@@ -37,5 +38,6 @@ window.Swiper = Swiper;
 
 Alpine.plugin([ui, collapse, focus, morph, persist, intersect])
 Alpine.data('fadeIn', fadeIn)
+Alpine.data('horizontalLoop', horizontalLoop)
 Alpine.start()
 

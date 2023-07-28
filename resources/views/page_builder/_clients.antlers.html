@@ -5,21 +5,35 @@
 #}}
 
 <!-- /page_builder/_clients.antlers.html -->
-<section class="fluid-container space-y-8">
-    {{ rows }}
-        <ul 
-            x-data="fadeIn()" 
-            x-init="hide($el.children)" 
-            x-intersect.once.margin.-20%="fadeInStagger($el)"
-            role="list" class="flex gap-x-40 justify-center">
-            {{ clients }}
-            <li>
-                <a class="p-1 -m-1 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group" href="{{ website }}" target="_blank" rel="noopener" aria-label="{{ title }}">
-                    {{ partial:statamic-peak-tools::components/picture :image="logo" class="w-full h-14 max-w-[175px]" }}
-                </a>
-            </li>
-            {{ /clients }}
+<section x-data="horizontalLoop()" x-init="
+    loop1 = horizontalLoop($refs.loop1.children, {repeat: -1}), 
+    loop2 = horizontalLoop($refs.loop2.children, {repate: -1, reversed: true });" 
+    class="space-y-4 md:space-y-8">
+    {{ rows:0 }}
+        <ul x-ref="loop1" role="list" class="w-full flex justify-center">
+            {{ loop times="2" }}
+                {{ clients }}
+                <li class="px-11 md:px-20">
+                    <a @mouseenter="pause(loop1)" @mouseleave="resume(loop1, 1)" class="inline-block p-1 -m-1 motion-safe:transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group" href="{{ website }}" target="_blank" rel="noopener" aria-label="{{ title }}">
+                        {{ partial:statamic-peak-tools::components/picture :image="logo" class="w-auto h-8 max-w-[87px] md:h-14 md:max-w-[175px] group-focus-visible:grayscale group-hover:grayscale motion-safe:transition" }}
+                    </a>
+                </li>
+                {{ /clients }}
+            {{ /loop }}
         </ul>
-    {{ /rows }}
+    {{ /rows:0 }}
+    {{ rows:1 }}
+        <ul x-ref="loop2" role="list" class="w-full flex justify-center">
+            {{ loop times="2" }}
+                {{ clients }}
+                <li class="px-8 md:px-16">
+                    <a @mouseenter="pause(loop2)" @mouseleave="resume(loop2, -1)" class="inline-block p-1 -m-1 motion-safe:transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-primary group" href="{{ website }}" target="_blank" rel="noopener" aria-label="{{ title }}">
+                        {{ partial:statamic-peak-tools::components/picture :image="logo" class="w-auto h-8 max-w-[87px] md:h-14 md:max-w-[175px] group-focus-visible:grayscale group-hover:grayscale motion-safe:transition" }}
+                    </a>
+                </li>
+                {{ /clients }}
+            {{ /loop }}
+        </ul>
+    {{ /rows:1 }}
 </section>
 <!-- End: /page_builder/_clients.antlers.html -->
