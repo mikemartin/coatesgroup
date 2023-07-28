@@ -1,17 +1,32 @@
 title: Clients
 fields:
   -
-    handle: clients
+    handle: rows
     field:
-      mode: default
-      create: true
-      collections:
-        - clients
-      display: Clients
-      type: entries
-      icon: entries
-      instructions: 'Select entries or leave empty to show all.'
+      fields:
+        -
+          handle: clients
+          field:
+            mode: default
+            create: false
+            collections:
+              - clients
+            type: entries
+            display: Clients
+            icon: entries
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+      mode: table
+      max_rows: 2
+      add_row: 'Add clients row'
+      reorderable: true
+      fullscreen: true
+      type: grid
+      display: Rows
+      icon: grid
       listable: hidden
-      instructions_position: below
+      instructions_position: above
       visibility: visible
-      always_save: false
+      hide_display: false

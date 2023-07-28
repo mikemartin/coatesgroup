@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690465180
+updated_at: 1690503896
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -120,6 +120,23 @@ page_builder:
       - 0378a75a-702a-49b1-95eb-193e6b6068e9
     type: clients
     enabled: true
+    rows:
+      -
+        id: lklucc9w
+        clients:
+          - 91e99798-6674-4dec-b39f-edf3482957f9
+          - a57f2074-3e76-41fe-86ca-20a156c23b03
+          - a2a6cedb-b6e3-48d6-98d2-920e195b1b1c
+          - a3cffb0a-0c45-4ae0-8858-dd07b4763bde
+          - b5ed9803-ef57-425f-89d6-ce3d3b4270c5
+          - f2b58d8b-8bde-4b53-ae16-988dc5f5949b
+      -
+        id: lklucvx8
+        clients:
+          - 3768eb0b-da94-40e1-ae93-751bde10352e
+          - ab72888e-927d-453a-b653-1bbd0142f3fc
+          - 50de6185-118a-4915-8a2b-3021687bea3a
+          - 0378a75a-702a-49b1-95eb-193e6b6068e9
   -
     id: ljs5n5ni
     title: 'A headline about the Company'
