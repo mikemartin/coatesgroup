@@ -22,6 +22,22 @@ fields:
   -
     handle: video
     field: common.video
+    config:
+      width: 50
+      validate:
+        - sometimes
+        - 'mimes:mp4'
+      instructions: 'Must be a 1280 x 720 looping `mp4` file.'
+  -
+    handle: video_mobile
+    field: common.video
+    config:
+      width: 50
+      display: 'Mobile Video'
+      validate:
+        - sometimes
+        - 'mimes:mp4'
+      instructions: 'Must be a 720 x 1280 looping `mp4` file.'
   -
     handle: fallback_image
     field: common.image
@@ -29,4 +45,4 @@ fields:
       mode: grid
       display: 'Fallback image'
       width: 50
-      instructions: 'The image shown while the video is downloading.'
+      instructions: 'Image required while the video loads.'

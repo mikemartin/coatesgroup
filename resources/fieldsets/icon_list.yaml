@@ -40,6 +40,8 @@ fields:
             instructions_position: above
             visibility: visible
             hide_display: false
+            directory: public/images/iconography
+            folder: career-benefits
       add_row: 'Add item'
       reorderable: true
       type: grid

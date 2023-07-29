@@ -133,4 +133,5 @@ hero_fallback: hero/coverr-running-with-a-kite.jpg
 extend_color: true
 enable_hero: true
 hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
+fallback_image: homepage/1.-homepage.jpg
 ---

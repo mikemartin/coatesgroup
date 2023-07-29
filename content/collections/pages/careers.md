@@ -8,89 +8,102 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689641512
+updated_at: 1690639795
 page_builder:
   -
     id: lk0po80o
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Consequat ullamcorper lorem nunc nulla. In etiam ac pellentesque egestas nunc diam. Egestas aliquet neque elementum quisque luctus ac dolor suscipit. Tellus sed lorem ridiculus cras. Amet quis mattis feugiat bibendum turpis iaculis ornare. Tristique dolor leo suscipit felis amet elit. Facilisi elementum libero amet magna nibh viverra. At ut iaculis nullam non quam blandit laoreet aliquam. Amet ut porta diam eros nunc commodo pharetra. A duis in integer dictum. Feugiat velit id urna semper bibendum blandit ac aenean. Ullamcorper quisque sed sed sit consequat. Praesent tempor elit ultricies porttitor. In est diam sem arcu vitae diam quis ridiculus.'
-    video: coverr-running-with-a-kite-8106-720p.mp4
-    fallback_image: hero/coverr-running-with-a-kite.jpg
+    title: 'A Leading Digital Signage Company'
+    text: |-
+      Founded in 1963, Coates Group is a growing global technology company that delivers innovative, immersive brand experiences to clients in more than 50 global markets. 
+
+      As a company, we're focused on creating dynamic, personalised, and engaging customer experiences through our range of traditional and digital signage solutions and proprietary content management system. And we're good at what we do – not only are we a 2X Australia Good Design Award winner, but we've also been recognised for successfully completing the largest hardware deployment in Quick Service Restaurant history.
+    video: 7--careerers-full-reel.mp4
+    fallback_image: careers/7.-careers.png
     type: full_width_video
     enabled: true
   -
     id: lk7k1ik2
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Consequat ullamcorper lorem nunc nulla. In etiam ac pellentesque egestas nunc diam. Egestas aliquet neque elementum quisque luctus ac dolor suscipit. Tellus sed lorem ridiculus cras. Amet quis mattis feugiat bibendum turpis iaculis ornare. Tristique dolor leo susci'
+    title: 'How You Fit In'
+    text: "At Coates Group, we're building a collaborative, people-centric culture like no other by putting our people at the forefront of everything we do. If you're similarly dedicated to continuous learning and growth – and to delighting clients with exceptional customer experiences – we'd love to have you join us."
     blocks:
       -
         id: lk7k1rky
-        title: Initiatives
+        title: 'Equality & Empowerment'
         text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id. Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        image: about-us/1635271238097-1.jpg
+        image: careers/ee-desktop-2.png
       -
         id: lk7k2628
-        title: Initiatives
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id. Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        image: about-us/1661533224378-1.jpg
+        title: 'Diversity, Equity & Inclusion'
+        text: 'Our holistic approach to DE&I at Coates Group prioritises equity, opportunity, inclusivity, and accountability in everything we do – and we follow through on our commitment with regular monitoring and progress reporting.'
+        image: careers/trive-desktop-copy-4.png
       -
         id: lk7k2djo
         title: Initiatives
         text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id. Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        image: about-us/coatesholidayparty-20-1.jpg
+        image: careers/trive-desktop-copy.png
       -
         id: lk7k2mf3
         title: Initiatives
         text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id. Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        image: about-us/jane-from-hq-office-visited-coates-china-1.jpg
+        image: careers/hoc-desktop-2.png
     type: block_carousel
     enabled: true
+    buttons:
+      -
+        id: lko2nskr
+        label: 'About Us'
+        link_type: entry
+        target_blank: false
+        entry: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
+        button_type: button
+        attr_title: 'About Us'
+        attr_aria: 'About Us'
   -
     id: lk7knbuz
     icon_list:
       -
         id: lk7kncxs
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Annual Bonus Program'
+        text: 'Market-competitive bonuses recognise our Crew for delivering exceptional quality and service to our clients.'
+        icon: competitive_bonus_program
       -
         id: lk7ko1hz
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Flexible Work Options'
+        text: 'Our flexible work options empower our Crew to balance personal priorities whilst facilitating connection...'
+        icon: competitive_bonus_program
       -
         id: lk7ko61w
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Global Wellness Day'
+        text: 'Our Wellness program gives Crew members a well-deserved break with dedicated time to rest, relax, and...'
+        icon: competitive_bonus_program
       -
         id: lk7ko9ym
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Parental Leave'
+        text: 'Our generous parental leave benefits support carers of all types – in all countries – as they balance growing their ...'
+        icon: competitive_bonus_program
       -
         id: lk7koda3
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Growth, Learning & Development'
+        text: 'We invest in your success. Our global Crew members at every level are supported in pursuing educational...'
+        icon: competitive_bonus_program
       -
         id: lk7kohs4
-        title: Benefits
-        text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id.'
-        icon: image-picture
+        title: 'Give Back Day'
+        text: 'Make an impact in your community with a paid “Give Back Day” to volunteer for a cause that’s close to your heart.'
+        icon: competitive_bonus_program
     type: icon_list
     enabled: true
     title: 'Benefits of working with Coates'
   -
     id: lk7k4806
-    title: 'Hear from our employee'
+    title: 'Hear from a Coates Crew Member'
     quote:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc.'
+            text: 'My experience has helped me grow into a technology leader to set the vision for our proprietary CMS by bringing it to life through our amazing technologists and partnering with world class enterprise customers to address their everyday business challenges. The future of our technology and how it revolutionises the way businesses connect with their audiences, is something I’m passionate about, and couldn’t be more thrilled for the journey ahead at Coates Group!'
     author: 4142e41e-8977-4681-a060-a5bbdd355d91
     buttons:
       -
@@ -119,8 +132,9 @@ page_builder:
         - 'rgb(0 162 222)'
     type: call_to_action
     enabled: true
+    image: careers/be-part-of-our-team-01.svg
 hero_type: brand
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: "Join a Crew That Cares:\L Careers at Coates Group"
 hero_color:
   label: Red
   value:

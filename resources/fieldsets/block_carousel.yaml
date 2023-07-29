@@ -1,4 +1,4 @@
-title: Block Carousel
+title: 'Block Carousel'
 fields:
   -
     handle: title
@@ -17,6 +17,9 @@ fields:
     field: common.text_plain
     config:
       display: Text
+  -
+    handle: buttons
+    field: buttons.buttons
   -
     handle: blocks
     field:
@@ -44,7 +47,7 @@ fields:
       type: grid
       localizable: true
       listable: hidden
-      display: 'Blocks'
+      display: Blocks
       replicator_preview: false
       instructions_position: above
       visibility: visible

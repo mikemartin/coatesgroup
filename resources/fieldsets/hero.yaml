@@ -22,7 +22,7 @@ fields:
       validate:
         - sometimes
         - 'mimes:mp4'
-        - 'max_filesize:5000'
+        - 'max_filesize:8000'
       instructions: 'Must be a 1280 x 720 looping `mp4` file. Image required while the video loads.'
       if:
         hero_type: 'equals video'
@@ -31,11 +31,11 @@ fields:
     field: common.video
     config:
       display: 'Mobile Video'
-      instructions: 'Must be a 720 x 1280 looping `mp4` file.'
       validate:
         - sometimes
         - 'mimes:mp4'
-        - 'max_filesize:5000'
+        - 'max_filesize:8000'
+      instructions: 'Must be a 720 x 1280 looping `mp4` file.'
       if:
         hero_type: 'equals video'
   -
@@ -48,7 +48,28 @@ fields:
       validate:
         - sometimes
       if:
-        hero_type: 'contains_any image, video'
+        hero_type: 'contains_any image'
+  -
+    handle: fallback_image
+    field:
+      max_files: 1
+      mode: grid
+      container: images
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'Fallback image'
+      icon: assets
+      instructions: 'Image required while the video loads.'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        hero_type: 'equals video'
   -
     handle: hero_color
     field: common.color
