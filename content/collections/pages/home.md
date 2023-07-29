@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690510132
+updated_at: 1690637673
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -169,4 +169,5 @@ hero_fallback: hero/coverr-running-with-a-kite.jpg
 extend_color: true
 enable_hero: true
 hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
+fallback_image: homepage/1.-homepage.jpg
 ---

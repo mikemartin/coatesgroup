@@ -8,16 +8,17 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690498503
+updated_at: 1690638051
 page_builder:
   -
     id: ljwscq36
     title: 'A headline about experiences and products'
     text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc. Sit at ornare porttitor neque molestie luctus etiam morbi. Viverra scelerisque curabitur mattis vel a viverra nisi. Eu facilisis quis nunc sollicitudin justo nibh vitae massa. Turpis congue vulputate diam a vulputate nunc. Libero purus sapien integer aliquam posuere. Posuere condimentum eget quisque facilisis et non nascetur diam auctor.'
-    video: coverr-running-with-a-kite-8106-720p.mp4
-    fallback_image: hero/coverr-running-with-a-kite.jpg
+    video: 2--1280x720-what-we-do-product-creators-10s.mp4
+    fallback_image: what-we-do/2.-what-we-do.jpg
     type: full_width_video
     enabled: true
+    video_mobile: 2--720x1280-what-we-do-product-creators-10s-2.mp4
   -
     id: ljwuf4kb
     title: Experiences
@@ -45,12 +46,10 @@ background_color:
     - '28'
     - 28)
 extend_color: true
-hero_extend: true
 enable_hero: true
 hero_color:
   label: Black
   value:
-    - rgb(28
-    - '28'
-    - 28)
+    - 'rgb(28 28 28)'
+hero_extend: true
 ---
