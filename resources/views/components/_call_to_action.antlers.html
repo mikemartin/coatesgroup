@@ -31,12 +31,14 @@
     <div class="bg-[var(--illustration-color-light)] px-8 lg:px-12 relative">
         <div class="bg-[var(--illustration-color)] absolute inset-x-0 bottom-0 h-1/2 lg:h-16"></div>
         <div class="min-h-[430px] lg:min-h-[440px] relative h-full w-full flex flex-col lg:flex-row lg:items-end">
-            <div class="pt-8 h-[255px] lg:h-auto mx-auto relative flex justify-center items-end lg:mb-8 lg:pt-0 lg:w-full lg:flex-1 lg:order-2">
-                {{ svg:character-a class="{!show_a ?= 'hidden lg:hidden'} shrink-0 basis-[108px] lg:basis-[146px] md:block 2xl:block" }}
-                {{ svg:character-b class="{!show_b ?= 'hidden lg:hidden'} shrink-0 basis-[139px] lg:basis-[196px] sm:block xl:block" }}
-                {{ svg:character-c class="{!show_c ?= 'hidden lg:hidden'} shrink-0 basis-[100px] lg:basis-[138px] -ml-4 sm:block xl:block" }}
-                {{ svg:character-d class="{!show_d ?= 'hidden lg:hidden'} shrink-0 basis-[96px] lg:basis-[130px] sm:ml-6 sm:block xl:block" }}
-                {{ svg:character-e class="{!show_e ?= 'hidden lg:hidden'} shrink-0 basis-[90px] lg:basis-[124px] sm:ml-3 sm:block xl:block" }}
+            <div x-data="fadeIn()" 
+            x-init="hide($el.children)" 
+            x-intersect.once.margin.-20%="fadeInStagger($el)" class="pt-8 h-[255px] lg:h-auto mx-auto relative flex justify-center items-end lg:mb-8 lg:pt-0 lg:w-full lg:flex-1 lg:order-2">
+                {{ svg:character-a class="{!show_a ?= 'hidden lg:hidden'} shrink-0 basis-[108px] lg:shrink lg:basis-[146px] md:block xl:block" }}
+                {{ svg:character-b class="{!show_b ?= 'hidden lg:hidden'} shrink-0 basis-[139px] lg:shrink lg:basis-[196px] sm:block xl:block" }}
+                {{ svg:character-c class="{!show_c ?= 'hidden lg:hidden'} shrink-0 basis-[100px] lg:shrink lg:basis-[138px] -ml-4 sm:block xl:block" }}
+                {{ svg:character-d class="{!show_d ?= 'hidden lg:hidden'} shrink-0 basis-[96px] lg:shrink lg:basis-[130px] sm:ml-6 sm:block xl:block" }}
+                {{ svg:character-e class="{!show_e ?= 'hidden lg:hidden'} shrink-0 basis-[90px] lg:shrink lg:basis-[124px] sm:ml-3 sm:block xl:block" }}
             </div>
             <div class="pb-12 flex-1 flex flex-col justify-end items-center lg:items-start lg:pb-24 lg:flex-initial">
                 {{ partial:typography/h2 :content="cta_title" color="text-white { cta_color != 'Red' ?= 'lg:text-black' } " }}
