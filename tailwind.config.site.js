@@ -82,7 +82,14 @@ module.exports = {
       },
       spacing: {
         '4.5': '1.125rem'
-      }
+      },
+      fontSize: {
+        lg: ['1.125rem', { lineHeight: '1.575rem' }],
+        '2xl': ['1.5625rem;', { lineHeight: '2.03125rem' }],
+        '4xl': ['2.1875rem', { lineHeight: '2.5rem' }],
+        '5xl': ['2.8125rem', { lineHeight: '2.625rem' }],
+        '7xl': ['4.5rem', { lineHeight: '4.95rem' }]
+      },
     },
     // Remove the font families you don't want to use.
     fontFamily: {
@@ -105,6 +112,7 @@ module.exports = {
         ...defaultTheme.fontFamily.serif,
       ],
     },
+
     // The font weights available for this site.
     fontWeight: {
       // hairline: 100,

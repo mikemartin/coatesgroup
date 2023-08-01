@@ -40,6 +40,9 @@ tree:
     title: 'Background Hero'
     url: background-hero
   -
+    title: 'Call to Action'
+    url: call-to-action
+  -
     id: 8bd94bb9-bbe7-4e01-9ddb-616f0d589c88
     title: Footer
     url: footer

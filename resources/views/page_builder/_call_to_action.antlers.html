@@ -5,63 +5,9 @@
 #}}
 
 <!-- /page_builder/_call_to_action.antlers.html -->
-<section id="{{block:title | slugify}}" class="fluid-container">
-    {{ is_inverted = switch(
-        (block:color:label == 'Red') => 'true',
-        (block:color:label == 'Charcoal') => 'true',
-        (block:color:label == 'Black') => 'true'
-    )}}
-
-    {{ is_inverted }}
-    <div class="{{ switch(
-        (block:color:label == 'Red') => 'bg-red text-white',
-        (block:color:label == 'Yellow') => 'bg-yellow text-black',
-        (block:color:label == 'Green') => 'bg-green text-black',
-        (block:color:label == 'Blue') => 'bg-blue text-black',
-        (block:color:label == 'Charcoal') => 'bg-charcoal text-black',
-        () => 'bg-black-80 text-white'
-        )}} relative aspect-square md:aspect-[3/1]">
-        {{ if block:image }}
-            <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
-                {{ if block:image:extension == 'svg' }}
-                    {{ svg :src="block:image" class="call-to-action object-cover w-full h-full" style="object-position: { block:image:focus | background_position }" }}
-                {{ else }}
-                    {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="1/1 large:3/1"  cover="true" lazy="true" sizes="100vw" }}
-                {{ /if }}
-            </div>
-        {{ /if }}
-        <div class="relative h-full w-full flex flex-col justify-end pb-8 md:pb-20">
-            <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
-                <div class="md:col-span-10">
-                    {{ partial:typography/h2 :content="block:title" }}
-                    {{ block:buttons ?= { partial:components/buttons :inverted="is_inverted" class="mt-4 lg:mt-8" } }}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End: /page_builder/_call_to_action.antlers.html -->
-
-{{ push:theme }}
-<style>
-    #{{block:title | slugify}} {
-        {{ if (block:color:label == 'Blue') }}
-        --illustration-color-light: rgba(0, 163, 227);
-        --illustration-color: rgba(0, 88, 202, 1);
-        --illustration-color-dark: rgba(0, 62, 160, 1);
-        {{ elseif (block:color:label == 'Green') }}
-        --illustration-color-light: rgba(80, 199, 34, 1);
-        --illustration-color: rgba(0, 127, 0, 1);
-        --illustration-color-dark: rgba(0, 99, 0, 1);
-        {{ elseif (block:color:label == 'Red') }}
-        --illustration-color-light: rgba(80, 199, 34, 1);
-        --illustration-color: rgba(227, 0, 0, 1);
-        --illustration-color-dark: rgba(202, 0, 0, 1);
-        {{ elseif (block:color:label == 'Yellow') }}
-        --illustration-color-light: rgba(255, 193, 0, 1);
-        --illustration-color: rgba(255, 165, 0, 1);
-        --illustration-color-dark: rgba(255, 140, 0, 1);
-        {{ /if }}
-    }
-</style>
-{{ /push:theme }}
+{{ partial:components/call_to_action 
+    :cta_color="block:color:label"
+    :cta_title="block:title"
+    :cta_image="block:image"
+    :cta_label="block:label" }}
+<!-- /page_builder/_call_to_action.antlers.html -->

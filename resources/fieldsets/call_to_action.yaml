@@ -11,15 +11,37 @@ fields:
       validate:
         - required
   -
-    import: buttons
-  -
-    handle: image
-    field: common.image
-    config:
-      mode: grid
-      width: 100
+    import: button
   -
     handle: color
-    field: common.color
-    config:
-      display: 'Background Color'
+    field:
+      colors:
+        -
+          id: lk0oxro9
+          label: Red
+          value:
+            - 'rgb(255 0 39)'
+        -
+          id: lk0oxro9
+          label: Green
+          value:
+            - 'rgb(80 199 34)'
+        -
+          id: lk0oxro9
+          label: Blue
+          value:
+            - 'rgb(0 163 227)'
+        -
+          id: lk0oxqle
+          label: Yellow
+          value:
+            - 'rgb(255 193 0)'
+      default: Red
+      type: color_swatches
+      display: 'Illustration Color'
+      icon: color
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

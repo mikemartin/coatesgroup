@@ -16,10 +16,8 @@
         x-init="hide($el.children)"
         x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
             {{ block:icon_list }}
-                <div class="relative flex">
-                    <div class="w-16 lg:w-24 shrink-0">
-                        {{ icon }}
-                    </div>
+                <div class="relative flex items-start">
+                    {{ svg src="images/iconography/career-benefits/{icon | raw}" class="w-16 lg:w-24 h-auto shrink-0" }}
                     <div class="ml-4">
                         {{ partial:typography/large as="dt" class="font-medium" :content="title" }}
                         {{ partial:typography/p as="dd" :content="text" class="mt-4" }}

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690639795
+updated_at: 1690886681
 page_builder:
   -
     id: lk0po80o
@@ -118,21 +118,18 @@ page_builder:
   -
     id: lk7k50fa
     title: 'Be part of our team'
-    buttons:
-      -
-        id: lk7k551z
-        label: 'View Opening Roles'
-        link_type: entry
-        target_blank: false
-        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
-        button_type: button
     color:
       label: Blue
       value:
-        - 'rgb(0 162 222)'
+        - 'rgb(0 163 227)'
     type: call_to_action
     enabled: true
     image: careers/be-part-of-our-team-01.svg
+    label: 'View Open Roles'
+    link_type: entry
+    target_blank: false
+    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    button_type: button
 hero_type: brand
 headline: "Join a Crew That Cares:\L Careers at Coates Group"
 hero_color:

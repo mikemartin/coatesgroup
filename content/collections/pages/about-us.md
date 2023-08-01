@@ -140,14 +140,11 @@ page_builder:
   -
     id: lk693ywn
     title: 'Be part of our team'
-    buttons:
-      -
-        id: lk6948ls
-        label: 'View opening roles'
-        link_type: entry
-        target_blank: false
-        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
-        button_type: button
+    label: 'View Open Roles'
+    link_type: entry
+    target_blank: false
+    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    button_type: button
     color:
       label: Green
       value:

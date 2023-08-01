@@ -1,11 +1,73 @@
-<div class="fluid-container">
-    <div class="grid gap-6 md:grid-cols-12 relative">
-        <div class="md:col-span-5">
-            {{ partial:typography/h2 color="text-white" :content="cta:footer_title|widont" }}
-        </div>
-        <div class="md:col-start-7 md:col-span-6">
-            {{ partial:typography/p :content="cta:footer_text" class="text-white" }}
-            {{ partial:components/buttons :buttons="cta:footer_buttons" inverted="true" class="mt-6" }}
+{{#
+	@name Call to action
+	@desc The call to action component with color themes.
+    @set components.call_to_action
+#}}
+
+<!-- /components/_call_to_action.antlers.html -->
+{{ show_a = switch(
+	(cta_color == 'Green') => 'true'
+)}}
+
+{{ show_b = switch(
+	(cta_color == 'Blue') => 'true',
+	(cta_color == 'Yellow') => 'true'
+)}}
+
+{{ show_c = switch(
+	(cta_color == 'Blue') => 'true'
+)}}
+
+{{ show_d = switch(
+	(cta_color == 'Red') => 'true',
+	(cta_color == 'Yellow') => 'true'
+)}}
+
+{{ show_e = switch(
+	(cta_color == 'Red') => 'true',
+	(cta_color == 'Green') => 'true'
+)}}
+<section id="{{anchor ?? cta_title | slugify}}" class="fluid-container">
+    <div class="bg-[var(--illustration-color-light)] px-8 lg:px-12 relative">
+        <div class="bg-[var(--illustration-color)] absolute inset-x-0 bottom-0 h-1/2 lg:h-16"></div>
+        <div class="min-h-[430px] lg:min-h-[440px] relative h-full w-full flex flex-col lg:flex-row lg:items-end">
+            <div class="pt-8 h-[255px] lg:h-auto mx-auto relative flex justify-center items-end lg:mb-8 lg:pt-0 lg:w-full lg:flex-1 lg:order-2">
+                {{ svg:character-a class="{!show_a ?= 'hidden lg:hidden'} shrink-0 basis-[108px] lg:basis-[146px] md:block 2xl:block" }}
+                {{ svg:character-b class="{!show_b ?= 'hidden lg:hidden'} shrink-0 basis-[139px] lg:basis-[196px] sm:block xl:block" }}
+                {{ svg:character-c class="{!show_c ?= 'hidden lg:hidden'} shrink-0 basis-[100px] lg:basis-[138px] -ml-4 sm:block xl:block" }}
+                {{ svg:character-d class="{!show_d ?= 'hidden lg:hidden'} shrink-0 basis-[96px] lg:basis-[130px] sm:ml-6 sm:block xl:block" }}
+                {{ svg:character-e class="{!show_e ?= 'hidden lg:hidden'} shrink-0 basis-[90px] lg:basis-[124px] sm:ml-3 sm:block xl:block" }}
+            </div>
+            <div class="pb-12 flex-1 flex flex-col justify-end items-center lg:items-start lg:pb-24 lg:flex-initial">
+                {{ partial:typography/h2 :content="cta_title" color="text-white { cta_color != 'Red' ?= 'lg:text-black' } " }}
+                {{ partial:components/button inverted="true" :label="cta_label" class="lg:hidden mt-4" }}
+                {{ partial:components/button :inverted="cta_color == 'Red'" :label="cta_label" class="hidden lg:inline-flex mt-4" }}
+            </div>
         </div>
     </div>
-</div>
+</section>
+<!-- End: /components/_call_to_action.antlers.html -->
+
+{{ push:theme }}
+<style>
+    #{{anchor ?? cta_title | slugify}} {
+        {{ if (cta_color == 'Blue') }}
+        --illustration-color-light: rgba(0, 163, 227);
+        --illustration-color: rgba(0, 88, 202, 1);
+        --illustration-color-dark: rgba(0, 62, 160, 1);
+        {{ elseif (cta_color == 'Green') }}
+        --illustration-color-light: rgba(80, 199, 34, 1);
+        --illustration-color: rgba(0, 127, 0, 1);
+        --illustration-color-dark: rgba(0, 99, 0, 1);
+        {{ elseif (cta_color == 'Red') }}
+        --illustration-color-light: rgba(255, 0, 39, 1);
+        --illustration-color: rgba(227, 0, 0, 1);
+        --illustration-color-dark: rgba(202, 0, 0, 1);
+        {{ elseif (cta_color == 'Yellow') }}
+        --illustration-color-light: rgba(255, 193, 0, 1);
+        --illustration-color: rgba(255, 165, 0, 1);
+        --illustration-color-dark: rgba(255, 140, 0, 1);
+        {{ /if }}
+    }
+</style>
+{{ /push:theme }}

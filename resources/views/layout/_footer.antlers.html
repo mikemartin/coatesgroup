@@ -6,7 +6,18 @@
 <!-- /layout/_footer.antlers.html -->
 <footer class="bg-black text-white pt-16 pb-8" aria-labelledby="footer-heading">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
-    {{ partial:components/call_to_action }}
+    <div class="fluid-container">
+        <div class="grid gap-6 md:grid-cols-12 relative">
+            <div class="md:col-span-5">
+                {{ partial:typography/h2 color="text-white" :content="cta:footer_title|widont" }}
+            </div>
+            <div class="md:col-start-7 md:col-span-6">
+                {{ partial:typography/p :content="cta:footer_text" class="text-white" }}
+                {{ partial:components/buttons :buttons="cta:footer_buttons" inverted="true" class="mt-6" }}
+            </div>
+        </div>
+    </div>
+  
     <div class="fluid-container mt-12 md:mt-16 pb-8">
       <nav class="grid md:grid-cols-4 gap-8 xl:grid-cols-5">
         {{ partial:navigation/footer_mobile }}

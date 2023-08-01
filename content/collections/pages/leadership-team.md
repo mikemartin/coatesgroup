@@ -31,14 +31,11 @@ page_builder:
   -
     id: lk68o78u
     title: 'Be part of our team'
-    buttons:
-      -
-        id: lk68oiez
-        label: 'View opening roles'
-        link_type: entry
-        target_blank: false
-        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
-        button_type: button
+    label: 'View Open Roles'
+    link_type: entry
+    target_blank: false
+    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    button_type: button
     type: call_to_action
     enabled: true
     color:
