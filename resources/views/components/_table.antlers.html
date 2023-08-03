@@ -9,9 +9,9 @@
     class="
         overflow-auto not-prose
         {{ switch(
+            (size == 'sm') => 'size-sm',
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
-            (size == 'xl') => 'size-xl',
             () => 'size-md'
         )}}
     "

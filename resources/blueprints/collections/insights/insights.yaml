@@ -18,6 +18,25 @@ tabs:
               validate:
                 - required
           -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              listable: true
+              width: 50
+              validate:
+                - required
+              folder: blog
+          -
+            handle: thumbnail
+            field: common.image
+            config:
+              mode: grid
+              restrict: false
+              display: Thumbnail
+              width: 50
+              folder: blog/thumbnails
+          -
             handle: teaser
             field: common.text_plain
             config:
@@ -89,6 +108,14 @@ tabs:
               validate:
                 - required
           -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select
+          -
             handle: date
             field:
               type: date
@@ -107,19 +134,16 @@ tabs:
               columns: 1
               rows: 1
           -
-            handle: image
-            field: common.image
-            config:
-              mode: grid
-              listable: true
-              width: 100
-              validate:
-                - required
-          -
-            handle: topics
+            handle: author
             field:
-              type: terms
-              taxonomies:
-                - topics
-              display: Topics
-              mode: select
+              max_items: 1
+              mode: typeahead
+              default:
+                - 227293d1-c4ba-400c-a06f-d4ccfe15b482
+              type: users
+              display: Author
+              icon: users
+              listable: true
+              instructions_position: above
+              visibility: visible
+              hide_display: false

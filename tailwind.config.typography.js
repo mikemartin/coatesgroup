@@ -9,28 +9,36 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
 
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, '$1')
+    .replace(/\.0$/, '')
+const rem = (px) => `${round(px / 16)}rem`
+const em = (px, base) => `${round(px / base)}em`
+
 module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            '--tw-prose-body': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-headings': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-lead': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-links': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-bold': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-counters': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-bullets': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-hr': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-quotes': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-quote-borders': theme('colors.primary.DEFAULT / 1'),
-            '--tw-prose-captions': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-code': theme('colors.neutral.DEFAULT'),
+            '--tw-prose-body': theme('colors.black.DEFAULT'),
+            '--tw-prose-headings': theme('colors.black.DEFAULT'),
+            '--tw-prose-lead': theme('colors.black.DEFAULT'),
+            '--tw-prose-links': theme('colors.black.DEFAULT'),
+            '--tw-prose-bold': theme('colors.black.DEFAULT'),
+            '--tw-prose-counters': theme('colors.black.DEFAULT'),
+            '--tw-prose-bullets': theme('colors.black.DEFAULT'),
+            '--tw-prose-hr': theme('colors.black.DEFAULT'),
+            '--tw-prose-quotes': theme('colors.black.DEFAULT'),
+            '--tw-prose-quote-borders': theme('colors.black.DEFAULT / 1'),
+            '--tw-prose-captions': theme('colors.black.DEFAULT'),
+            '--tw-prose-code': theme('colors.black.DEFAULT'),
             '--tw-prose-pre-code': theme('colors.white'),
-            '--tw-prose-pre-bg': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-th-borders': theme('colors.neutral.DEFAULT'),
-            '--tw-prose-td-borders': theme('colors.neutral.DEFAULT'),
+            '--tw-prose-pre-bg': theme('colors.black.DEFAULT'),
+            '--tw-prose-th-borders': theme('colors.black.DEFAULT'),
+            '--tw-prose-td-borders': theme('colors.black.DEFAULT'),
             '--tw-prose-invert-body': theme('colors.white'),
             '--tw-prose-invert-headings': theme('colors.white'),
             '--tw-prose-invert-lead': theme('colors.white'),
@@ -59,9 +67,87 @@ module.exports = {
             },
             '.not-prose': {
               margin: '2rem 0 !important',
-            }
+            },
+            'p strong': {
+              fontWeight: '500',
+            },
+            '[class~="lead"]': {
+              fontSize: em(35, 16),
+              lineHeight: round(42 / 35),
+              marginTop: em(48, 35),
+              marginBottom: em(24, 35),
+            },
+            a: {
+              fontWeight: '300',
+            },
+            h1: {
+              fontWeight: '300',
+              color: 'var(--tw-prose-headings)',
+            },
+            'h1 strong': {
+              fontWeight: '500',
+              color: 'inherit',
+            },
+            h2: {
+              fontWeight: '300',
+              color: 'var(--tw-prose-headings)',
+            },
+            'h2 strong': {
+              fontWeight: '500',
+              color: 'inherit',
+            },
+            'h2': {
+              fontSize: em(35, 16),
+              lineHeight: round(42 / 35),
+              marginTop: em(48, 35),
+              marginBottom: em(24, 35),
+              fontWeight: '300',
+            },
+            h3: {
+              fontWeight: '500',
+              color: 'var(--tw-prose-headings)',
+              fontSize: em(18, 16),
+              marginTop: em(32, 18),
+              marginBottom: em(12, 18),
+              lineHeight: round(25.2 / 18),
+            },
+            'h3 strong': {
+              fontWeight: '500',
+              color: 'inherit',
+            },
+            h4: {
+              fontWeight: '300',
+              color: 'var(--tw-prose-headings)',
+            },
+            'h4 strong': {
+              fontWeight: '500',
+              color: 'inherit',
+            },
           }
-        }
+        },
+        lg: {
+          css: {
+            '[class~="lead"]': {
+              fontSize: em(45, 18),
+              marginTop: em(32, 45),
+              marginBottom: em(32, 45),
+              lineHeight: round(49.5 / 45),
+            },
+            h2: {
+              fontSize: em(45, 18),
+              marginTop: em(56, 45),
+              marginBottom: em(32, 45),
+              lineHeight: round(49.5 / 45),
+            },
+            h3: {
+              fontSize: em(35, 18),
+              marginTop: em(40, 35),
+              marginBottom: em(16, 35),
+              lineHeight: round(42 / 35),
+              fontWeight: '300',
+            },
+          }
+        },
       }),
     }
   },

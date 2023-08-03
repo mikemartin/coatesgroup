@@ -10,7 +10,7 @@ x-init="hide($el)"
 x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col {{ class }}">
     {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
     <figure class="{{ if count %2 }}aspect-[7/8]{{else}}aspect-[5/7]{{/if}} mb-4">
-        {{ partial:statamic-peak-tools::components/picture :image="image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="7/8 large:5/7" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
+        {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="7/8 large:5/7" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
     </figure>
 
     <div class="flex flex-col gap-y-2">

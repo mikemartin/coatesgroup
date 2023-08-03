@@ -5,7 +5,7 @@
 #}}
 
 <!-- /layout/_hero.antlers.html -->
-<div class="relative bg-black-80 -mt-16">
+<div class="relative bg-white -mt-16">
     {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video
@@ -27,21 +27,30 @@
     <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
     {{ elseif hero_image }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
-        {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" lazy="true" sizes="100vw" }}
+        {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" sizes="100vw" }}
     </div>
-    <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+    <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%"></div>
     {{ /if}}
-    <div class="relative w-full flex flex-col justify-end min-h-[800px] pb-8 md:pt-64 md:pb-20">
+
+    <div class="relative w-full flex flex-col justify-end min-h-[760px] pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn()" 
                 x-init="hide($el.children)" 
                 x-intersect.once.margin.-20%="fadeInStagger($el)" class="relative md:col-span-10">
                 {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" } }}
-                {{ show_topic ?= {partial:components/tag :label="topics:0:title" :url="topics:0:url" } }}
-                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[18ch]" }}
+                {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
+                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[24ch]" }}
                 {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6"} }}
                 {{ show_client ?= {partial:components/tag :label="client:title" :url="client:website" target_blank="true" } }}
-                {{ show_date ?= {partial:typography/time :content="date" class="text-white mt-2 md:mt-6" } }}
+                {{ if show_date }}
+                <div class="flex flex-col md:flex-row md:items-center text-lg text-white mt-2 md:mt-4">
+                    {{ show_date ?= {partial:typography/time :content="date" class="text-white" } }}
+                    {{ if author }}
+                        <span class="hidden md:block w-3 h-3 bg-green rounded-full mx-4"></span>
+                        By {{ author:name }}
+                    {{ /if }}
+                </div>
+                {{ /if }}
             </div>
         </div>
     </div>

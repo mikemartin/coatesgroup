@@ -1,0 +1,23 @@
+{{#
+    @name Tabs
+#}}
+
+<!-- /components/_tabs.antlers.html -->
+<div x-data="{ link: '{{ permalink }}', success: false }" class="sticky top-0 bg-white border-charcoal-20 border-t border-b">
+    <div class="h-14 space-x-8 flex justify-center md:justify-start items-center fluid-container">
+        {{ partial:typography/p content="Share"}}
+        <div class="flex space-x-3">
+            <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:linkedin:share :text="title" }}" aria-label="Share on LinkedIn" target="_blank">{{ svg:linkedin class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
+            <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:facebook:share :text="title" }}" aria-label="Share on Facebook" target="_blank">{{ svg:facebook class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
+            <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:twitter:share :text="title" }}" aria-label="Share on Twitter" target="_blank">{{ svg:twitter class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
+            <button @click="navigator.clipboard.writeText(link), success = true, setTimeout(() => success = false, 1000)" class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary">{{ svg:link class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</button>
+        </div>
+        <div class="hidden md:block border-r border-chacoal-20 h-1/2"></div>
+    </div>
+    {{ partial src="components/notification" type="success" content="{trans:strings.copied_clipboard}" class="fixed bottom-3 right-3 z-20 max-w-sm" }}
+        {{ slot:attributes }}
+            x-show="success" @click.away="success = false" x-cloak
+        {{ /slot:attributes }}
+    {{ /partial }}
+</div>
+<!-- /components/_tabs.antlers.html -->

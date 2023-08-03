@@ -8,20 +8,20 @@
 <figure
     class="
         not-prose
+        space-y-4 py-8
         {{ switch(
+            (size == 'sm') => 'size-sm',
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
-            (size == 'xl') => 'size-xl',
             () => 'size-md'
         )}}
     "
 >
-    <blockquote class="p-0 m-0 text-3xl font-bold leading-snug text-neutral">
-        <span class="text-primary">&OpenCurlyDoubleQuote;</span>{{ quote | nl2br | widont}}<span class="text-primary">&CloseCurlyDoubleQuote;</span>
-    </blockquote>
+    {{ partial:typography/large as="blockquote" class="font-medium" content="<span class='text-black'>&OpenCurlyDoubleQuote;</span>{quote | nl2br | widont}<span class='text-black'>&CloseCurlyDoubleQuote;</span>" }}
+
     {{ if author }}
-        <figcaption class="block mt-4 font-bold text-neutral">
-            <span class="text-primary">- </span>{{ author }}
+        <figcaption class="block">
+            {{ partial:typography/p content="<span class='text-black'>- </span>{author}" class="font-medium" color="text-black" }}
         </figcaption>
     {{ /if }}
 </figure>

@@ -13,6 +13,15 @@ tabs:
               validate:
                 - required
           -
+            handle: thumbnail
+            field: common.image
+            config:
+              mode: grid
+              restrict: false
+              display: Thumbnail
+              width: 50
+              folder: blog/thumbnails
+          -
             handle: redirect
             field:
               type: link
@@ -36,11 +45,6 @@ tabs:
               default: now
               validate:
                 - required
-          -
-            handle: image
-            field: common.image
-            config:
-              mode: grid
           -
             handle: topics
             field:
