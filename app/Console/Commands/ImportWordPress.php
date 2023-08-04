@@ -57,17 +57,15 @@ class ImportWordPress extends Command
             // match all instances where the image_url is found and get the id
             preg_match_all('/image_url="\d{4,5}/', $content, $matches);
             
-            if ($matches && collect($matches[0])->isNotEmpty()) {
-                foreach ($matches[0] as $match) {
-                    $id = explode('"', $match);
-                
-                    // find the image with this id and get the url
-                    $attachment = Post::where('id', $id[1])->first();
-                    $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment);
-                
-                    // replace the plugin text with img tag and url
-                    $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);
-                }
+            foreach ($matches[0] as $match) {
+                $id = explode('"', $match);
+            
+                // find the image with this id and get the url
+                $attachment = Post::where('id', $id[1])->first();
+                $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment);
+            
+                // replace the plugin text with img tag and url
+                $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);
             }
 
             // match all instances where the url has the post id and get the id
@@ -95,6 +93,12 @@ class ImportWordPress extends Command
             }
 
             $content = $this->htmlToBard($content);
+
+            if ($post->thumbnail) {
+                $featured_image = Str::replace('https://domain.com/wp-content/', 'wp/', $post->thumbnail->size('invalid_size'));
+            } else {
+                $featured_image = 'wp/no_image.jpg';
+            }
             
             $categories = $this->getCategories($post->terms['category']);
 
@@ -105,6 +109,7 @@ class ImportWordPress extends Command
                 ->date($post->post_date)
                 ->data([
                     'title' => $post->title,
+                    'image' => $featured_image,
                     'topics' => $categories,
                     'article' => $content,
                 ]);
