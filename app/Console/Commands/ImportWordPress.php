@@ -101,7 +101,7 @@ class ImportWordPress extends Command
             }
 
             
-            $category = $this->getCategories($post->main_category);
+            $categories = $this->getCategories($post->terms['category']);
 
             $entry = Entry::make()
                 ->collection('blog')
@@ -111,7 +111,7 @@ class ImportWordPress extends Command
                 ->data([
                     'title' => $post->title,
                     'image' => $featured_image,
-                    'topics' => $category,
+                    'topics' => $categories,
                     'article' => $content,
                 ]);
 
@@ -125,23 +125,27 @@ class ImportWordPress extends Command
         return 'WordPress posts successfully migrated to Statamic';
     }
 
-    public function getCategories($category)
+    public function getCategories($data)
     {
-
         $categories = [
-            'Equality &amp; Empowerment' => 'Equality & Empowerment',
-            'Events' => 'Events',
-            'Innovation' => 'Product & Innovation',
-            'Opinion' => 'News',
-            'Partners' => 'News',
-            'People' => 'Company Culture',
-            'People &amp; Culture' => 'Company Culture',
-            'Press' => 'Press',
-            'Product' => 'Product & Innovation',
-            'Project' => 'Product & Innovation',
-            'Uncategorized' => 'Uncategorized',
+            'Equality &amp; Empowerment' => 'equality-empowerment',
+            'Events' => 'events',
+            'Innovation' => 'product-innovation',
+            'Opinion' => 'news',
+            'Partners' => 'news',
+            'People' => 'company-culture',
+            'People &amp; Culture' => 'company-culture',
+            'Press' => 'press',
+            'Product' => 'product-innovation',
+            'Project' => 'product-innovation',
+            'Uncategorized' => 'uncategorized',
         ];
 
-        return $categories[$category];
+        $result = collect($data)->map(function ($category, $slug) use ($categories) {
+            return $categories[$category];
+        })->values()->unique()->toArray();
+
+        return $result;
+        
     }
 }
