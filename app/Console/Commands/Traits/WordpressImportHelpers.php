@@ -258,8 +258,8 @@ trait WordpressImportHelpers
      */
     public function replaceImagePath($html) {
 
-        $search = '/http:\/\/pilot-wp\.test\/wp-content\/uploads\/(\d{4})\/(\d{2})\/(.*?)\.(.*)/';
-        $replace = '/images/wp/$1/$3.$4"';
+        $search = '/http:\/\/coates-wp\.test\/wp-content\/uploads\/(\d{4})\/(\d{2})\/(.*?)\.(.*)/';
+        $replace = '/images/wp/$1/$3.$4';
         return preg_replace($search, $replace, $html);
         
     }

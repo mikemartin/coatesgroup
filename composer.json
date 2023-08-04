@@ -21,7 +21,8 @@
         "studio1902/statamic-peak-browser-appearance": "^3.0",
         "studio1902/statamic-peak-commands": "^2.0",
         "studio1902/statamic-peak-seo": "^2.0",
-        "studio1902/statamic-peak-tools": "^3.0"
+        "studio1902/statamic-peak-tools": "^3.0",
+        "swiftmade/statamic-clear-assets": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8.1",

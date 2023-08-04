@@ -44,7 +44,11 @@ class Set extends Node
                     $src = Str::replace($img->getAttribute('src'), '/images/wp/', '/wp/' );  
 
                     $alt = $img->getAttribute('alt');
-                    $caption = $DOMNode->getElementsByTagName('figcaption')->item(0)->textContent;
+                    $captionElements = $DOMNode->getElementsByTagName('figcaption');
+
+                    if ($captionElements->length > 0) {
+                        $caption = $captionElements->item(0)->textContent;
+                    }
     
                     while ($DOMNode->hasChildNodes()) {
                         $DOMNode->removeChild($DOMNode->firstChild);
@@ -54,7 +58,7 @@ class Set extends Node
                         'type' => 'image',
                         'image' => $src,
                         'alt' => $alt,
-                        'caption' => $caption,
+                        'caption' => $caption ?? null,
                     ];
                 }
                 

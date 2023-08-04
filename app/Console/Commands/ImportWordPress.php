@@ -42,6 +42,7 @@ class ImportWordPress extends Command
 
         $posts = Post::type('post')
               ->orderBy('post_date', 'desc')
+              ->limit('25')
               ->published()
               ->get();
 
@@ -62,7 +63,8 @@ class ImportWordPress extends Command
             
                 // find the image with this id and get the url
                 $attachment = Post::where('id', $id[1])->first();
-                $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment);
+                ray($attachment);
+                $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment->guid);
             
                 // replace the plugin text with img tag and url
                 $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);
@@ -92,10 +94,14 @@ class ImportWordPress extends Command
                 continue;
             }
 
+            $content = $this->replaceImagePath($content);
+            $content = $this->wpautop($content);
             $content = $this->htmlToBard($content);
 
             if ($post->thumbnail) {
-                $featured_image = Str::replace('https://domain.com/wp-content/', 'wp/', $post->thumbnail->size('invalid_size'));
+                $search = '/http:\/\/coates-wp\.test\/wp-content\/uploads\/(\d{4})\/(\d{2})\/(.*?)\.(.*)/';
+                $replace = 'wp/$1/$3.$4';
+                $featured_image = preg_replace($search, $replace, $post->thumbnail->size('invalid_size'));
             } else {
                 $featured_image = 'wp/no_image.jpg';
             }
