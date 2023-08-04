@@ -15,6 +15,11 @@ preferences:
           filters:
             status:
               status: draft
+        published:
+          display: Published
+          filters:
+            status:
+              status: published
   assets:
     images:
       mode: grid
