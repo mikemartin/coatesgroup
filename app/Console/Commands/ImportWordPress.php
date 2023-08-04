@@ -9,6 +9,7 @@ use Statamic\Facades\Entry;
 
 class ImportWordPress extends Command
 {
+    use Traits\TiptapHelpers;
     /**
      * The name and signature of the console command.
      *
@@ -37,8 +38,7 @@ class ImportWordPress extends Command
     {
         $lang = 'default';
 
-        $posts = Post::whereIn('id', $ids)
-              ->type('post')
+        $posts = Post::type('post')
               ->orderBy('post_date', 'desc')
               ->published()
               ->get();
@@ -55,15 +55,17 @@ class ImportWordPress extends Command
             // match all instances where the image_url is found and get the id
             preg_match_all('/image_url="\d{4,5}/', $content, $matches);
             
-            foreach ($matches[0] as $match) {
-                $id = explode('"', $match);
-            
-                // find the image with this id and get the url
-                $attachment = Post::where('id', $id[1])->first();
-                $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment->guid);
-            
-                // replace the plugin text with img tag and url
-                $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);
+            if ($matches && collect($matches[0])->isNotEmpty()) {
+                foreach ($matches[0] as $match) {
+                    $id = explode('"', $match);
+                
+                    // find the image with this id and get the url
+                    $attachment = Post::where('id', $id[1])->first();
+                    $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment);
+                
+                    // replace the plugin text with img tag and url
+                    $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);
+                }
             }
 
             // match all instances where the url has the post id and get the id
@@ -90,15 +92,15 @@ class ImportWordPress extends Command
                 continue;
             }
 
-            $content = (new \HtmlToProseMirror\Renderer)->render($content);
-            $content = $content['content'];
+            $content = $this->htmlToBard($content);
 
-            if ($post->thumbnail) {
+            if ($post->thumbnail && collect($post->thumbnail[0])->isNotEmpty()) {
                 $featured_image = Str::replace('http://coates-wp.test/wp-content/', 'wp/', $post->thumbnail->size('invalid_size'));
             } else {
                 $featured_image = 'wp/no_image.jpg';
             }
 
+            
             $category = $this->getCategories($post->main_category);
 
             $entry = Entry::make()
@@ -127,17 +129,17 @@ class ImportWordPress extends Command
     {
 
         $categories = [
-            'equality-empowerment' => 'equality-empowerment',
-            'events' => 'events',
-            'innovation' => 'product-innovation',
-            'opinion' => 'news',
-            'partners' => 'news',
-            'people' => 'company-culture',
-            'people-culture' => 'company-culture',
-            'press' => 'press',
-            'product' => 'product-innovation',
-            'project' => 'product-innovation',
-            'uncategorized' => 'disinformation',
+            'Equality &amp; Empowerment' => 'Equality & Empowerment',
+            'Events' => 'Events',
+            'Innovation' => 'Product & Innovation',
+            'Opinion' => 'News',
+            'Partners' => 'News',
+            'People' => 'Company Culture',
+            'People &amp; Culture' => 'Company Culture',
+            'Press' => 'Press',
+            'Product' => 'Product & Innovation',
+            'Project' => 'Product & Innovation',
+            'Uncategorized' => 'Uncategorized',
         ];
 
         return $categories[$category];
