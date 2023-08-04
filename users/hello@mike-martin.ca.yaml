@@ -8,6 +8,13 @@ preferences:
       after_save: create_another
     pages:
       after_save: continue_editing
+    blog:
+      filters:
+        draft:
+          display: Draft
+          filters:
+            status:
+              status: draft
   assets:
     images:
       mode: grid
