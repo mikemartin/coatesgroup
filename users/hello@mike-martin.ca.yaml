@@ -20,6 +20,11 @@ preferences:
           filters:
             status:
               status: published
+        scheduled:
+          display: Scheduled
+          filters:
+            status:
+              status: scheduled
   assets:
     images:
       mode: grid
