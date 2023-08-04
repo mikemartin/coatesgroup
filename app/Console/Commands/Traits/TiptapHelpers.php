@@ -26,6 +26,7 @@ trait TiptapHelpers
         $bard = (new Editor([
             'extensions' => [
                 new Extensions\StarterKit,
+                new Set,
                 new Nodes\BulletList,
                 new Nodes\OrderedList,
                 new Nodes\Image,

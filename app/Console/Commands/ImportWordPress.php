@@ -93,13 +93,6 @@ class ImportWordPress extends Command
             }
 
             $content = $this->htmlToBard($content);
-
-            if ($post->thumbnail && collect($post->thumbnail[0])->isNotEmpty()) {
-                $featured_image = Str::replace('http://coates-wp.test/wp-content/', 'wp/', $post->thumbnail->size('invalid_size'));
-            } else {
-                $featured_image = 'wp/no_image.jpg';
-            }
-
             
             $categories = $this->getCategories($post->terms['category']);
 
@@ -110,12 +103,11 @@ class ImportWordPress extends Command
                 ->date($post->post_date)
                 ->data([
                     'title' => $post->title,
-                    'image' => $featured_image,
                     'topics' => $categories,
                     'article' => $content,
                 ]);
 
-            $entry->save();
+            //$entry->save();
 
             $bar->advance();
         }
