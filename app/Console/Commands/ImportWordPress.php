@@ -10,6 +10,8 @@ use Statamic\Facades\Entry;
 class ImportWordPress extends Command
 {
     use Traits\TiptapHelpers;
+    use Traits\WordpressImportHelpers;
+
     /**
      * The name and signature of the console command.
      *
@@ -107,7 +109,7 @@ class ImportWordPress extends Command
                     'article' => $content,
                 ]);
 
-            //$entry->save();
+            $entry->save();
 
             $bar->advance();
         }

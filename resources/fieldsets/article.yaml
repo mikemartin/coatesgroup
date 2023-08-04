@@ -14,6 +14,7 @@ fields:
         - quote
         - removeformat
         - anchor
+        - image
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -44,6 +45,8 @@ fields:
                   import: buttons
             invoke_modal:
               display: 'Invoke modal'
+              instructions: null
+              icon: null
               fields:
                 -
                   import: invoke_modal
@@ -85,7 +88,7 @@ fields:
               fields:
                 -
                   import: video
-      container: files
+      container: images
       enable_input_rules: true
       enable_paste_rules: true
       instructions_position: above
@@ -98,3 +101,5 @@ fields:
       smart_typography: true
       inline: false
       hide_display: false
+      word_count: false
+      always_show_set_button: false
