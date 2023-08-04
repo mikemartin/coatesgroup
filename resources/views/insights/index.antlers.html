@@ -13,24 +13,3 @@
     {{ /page_builder }}
 </main>
 <!-- End: /insights/index.antlers.html -->
-
-{{ section:index_content }}
-    <!-- /insights/index.antlers.html -->
-    <div 
-    class="fluid-container self-start grid md:grid-cols-12 gap-8">
-        {{ collection:insights sort="date:desc" paginate="true" limit="12" as="items" }}
-            {{ unless no_results }}
-                {{ items }}
-                    {{ partial:components/insights_item class="md:col-span-4" }}
-                {{ /items }}
-            {{ else }}
-                <div class="md:col-span-6">
-                    {{ trans:strings.no_results }}
-                </div>
-            {{ /unless }}
-
-            {{ partial:statamic-peak-tools::components/pagination class="md:col-span-12" }}
-        {{ /collection:insights }}
-    </div>
-    <!-- End: /insights/index.antlers.html -->
-{{ /section:index_content }}

@@ -1,0 +1,149 @@
+title: Awards
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: News
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              input_type: text
+              localizable: true
+              listable: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              listable: true
+              width: 50
+              validate:
+                - required
+              folder: awards
+          -
+            handle: thumbnail
+            field: common.image
+            config:
+              mode: grid
+              restrict: false
+              display: Thumbnail
+              width: 50
+              folder: awards/thumbnails
+          -
+            handle: teaser
+            field: common.text_plain
+            config:
+              display: Teaser
+              character_limit: '250'
+          -
+            handle: article
+            field: article.article
+            config:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - removeformat
+                - anchor
+              validate:
+                - required
+  seo:
+    display: SEO
+    sections:
+      -
+        display: Basic
+        instructions: 'Basic SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_basic'
+      -
+        display: Advanced
+        instructions: 'Advanced SEO settings.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_advanced'
+      -
+        display: 'Open Graph'
+        instructions: 'Open Graph meta tags for social sharing.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_open_graph'
+      -
+        display: Sitemap
+        instructions: 'Sitemap configuration.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_sitemap'
+      -
+        display: 'JSON-ld Schema'
+        instructions: 'Custom JSON-ld schema objects.'
+        fields:
+          -
+            import: 'statamic-peak-seo::seo_jsonld'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        display: Meta
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              generate: true
+              listable: hidden
+              display: Slug
+              validate:
+                - required
+          -
+            handle: topics
+            field:
+              type: terms
+              taxonomies:
+                - topics
+              display: Topics
+              mode: select
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              listable: true
+              validate:
+                - required
+              display: Date
+              mode: single
+              time_enabled: false
+              time_required: false
+              earliest_date: '2021-01-01'
+              full_width: false
+              inline: false
+              columns: 1
+              rows: 1
+          -
+            handle: author
+            field:
+              max_items: 1
+              mode: typeahead
+              default:
+                - 227293d1-c4ba-400c-a06f-d4ccfe15b482
+              type: users
+              display: Author
+              icon: users
+              listable: true
+              instructions_position: above
+              visibility: visible
+              hide_display: false

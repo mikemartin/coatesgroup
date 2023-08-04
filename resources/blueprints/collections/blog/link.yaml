@@ -13,14 +13,14 @@ tabs:
               validate:
                 - required
           -
-            handle: thumbnail
+            handle: image
             field: common.image
             config:
               mode: grid
               restrict: false
-              display: Thumbnail
+              display: Image
               width: 50
-              folder: blog/thumbnails
+              folder: blog
           -
             handle: redirect
             field:

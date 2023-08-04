@@ -58,7 +58,22 @@ return [
         ],
         [
             'type' => 'collection',
-            'collection' => 'insights',
+            'collection' => 'blog',
+            'width' => 50
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'press',
+            'width' => 50
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'awards',
+            'width' => 50
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'thought_leadership',
             'width' => 50
         ],
         [

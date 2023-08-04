@@ -1,4 +1,4 @@
-title: Insights
+title: Awards
 fields:
   -
     handle: title
@@ -13,21 +13,23 @@ fields:
       visibility: visible
       always_save: false
   -
-    handle: insights
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
+    handle: awards
     field:
       max_items: 4
       mode: default
       create: true
       collections:
-        - blog
-        - press
         - awards
-        - thought_leadership
       type: entries
-      display: Insights
+      display: Awards
       icon: entries
       listable: hidden
       instructions_position: above
       visibility: visible
       hide_display: false
-      instructions: 'Leave blank to show the most recent Insights.'
+      instructions: 'Leave blank to show the most recent Awards.'

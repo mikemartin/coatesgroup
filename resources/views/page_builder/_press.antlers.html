@@ -1,0 +1,31 @@
+{{#
+    @name press
+    @desc The press page builder block.
+    @set page.page_builder.press
+#}}
+
+<!-- /page_builder/_press.antlers.html -->
+<section class="fluid-container">
+    <div 
+    x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-20%="fadeInStagger($el)"
+    class="pb-10 border-b grid md:grid-cols-12 gap-8">
+        {{ if block:title }}
+        <div class="grid md:grid-cols-12 md:col-span-12">
+            {{ partial:typography/h2 :content="title" class="md:col-span-6" }}
+        </div>
+        {{ /if }}
+
+        {{ press = block:press ? block:press : {collection:press limit="5" redirects="true" } }}
+
+        {{ press }}
+            {{ partial:components/article_item class="md:col-span-3" }}
+        {{ /press }}
+
+        <nav class="md:col-span-12 text-center">
+            {{ partial:components/button label="{trans:strings.press_all}" link_type="url" url="#" }}
+        </nav>
+    </div>
+</section>
+<!-- End: /page_builder/_press.antlers.html -->

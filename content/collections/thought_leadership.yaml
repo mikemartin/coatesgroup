@@ -1,20 +1,19 @@
-title: Insights
+title: 'Thought Leadership'
 template: insights/show
 layout: layout
-mount: d11a5ec8-9915-4528-8cfe-e282362ef9ee
 taxonomies:
   - topics
 revisions: false
-route: '/{mount}/{slug}'
+route: '/thought-leadership/{slug}'
 date: true
 sort_dir: desc
 date_behavior:
   past: public
   future: private
-inject:
-  enable_hero: true
 preview_targets:
   -
     label: Entry
     url: '{permalink}'
     refresh: false
+inject:
+  enable_hero: true

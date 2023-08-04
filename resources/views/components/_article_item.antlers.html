@@ -1,10 +1,10 @@
 {{#
-    @name Insights item
-    @desc A Insights item component.
+    @name Article item
+    @desc A Article item component.
     @param class Add optional CSS classes.
 #}}
 
-<!-- /components/_insights_item.antlers.html -->
+<!-- /components/_article_item.antlers.html -->
 <article x-data="fadeIn()" 
 x-init="hide($el)" 
 x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col {{ class }}">
@@ -14,12 +14,12 @@ x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col {
     </figure>
 
     <div class="flex flex-col gap-y-2">
-        <div>{{ partial:typography/time :content="date" }} &bull; {{ collection:title }}</div>
-
+        {{ partial:typography/caption :caption="collection:title" class="text-sm" }}
         <a href="{{ url }}" class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group">
-            {{ partial:typography/large :content="title" }} 
+            {{ partial:typography/p :content="title" class="font-medium" }} 
             <span class="absolute inset-0"></span>
         </a>
+        {{ partial:typography/time :content="date" class="text-sm" }}
     </div>
 </article>
-<!-- End: /components/_insights_item.antlers.html -->
+<!-- End: /components/_article_item.antlers.html -->

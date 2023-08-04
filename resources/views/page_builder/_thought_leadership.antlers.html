@@ -1,0 +1,32 @@
+{{#
+    @name thought_leadership
+    @desc The thought_leadership page builder block.
+    @set page.page_builder.thought_leadership
+#}}
+
+<!-- /page_builder/_thought_leadership.antlers.html -->
+<section 
+class="fluid-container">
+    <div x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-20%="fadeInStagger($el)"
+    class="pb-10 border-b grid md:grid-cols-12 gap-8">
+        {{ if block:title }}
+        <div class="md:col-span-12">
+            {{ partial:typography/h2 :content="title" }}
+            {{ block:text ?= {partial:typography/p :content="block:text" class="mt-2" } }}
+        </div>
+        {{ /if }}
+
+        {{ thought_leadership = block:thought_leadership ? block:thought_leadership : {collection:thought_leadership limit="5" redirects="true" } }}
+
+        {{ thought_leadership }}
+            {{ partial:components/article_item class="md:col-span-3" }}
+        {{ /thought_leadership }}
+
+        <nav class="md:col-span-12 text-center">
+            {{ partial:components/button label="{trans:strings.thought_leadership_all}" link_type="url" url="#" }}
+        </nav>
+    </div>
+</section>
+<!-- End: /page_builder/_thought_leadership.antlers.html -->

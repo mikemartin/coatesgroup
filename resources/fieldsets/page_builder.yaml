@@ -10,6 +10,46 @@ fields:
       listable: false
       display: 'Page builder'
       sets:
+        insights:
+          display: Insights
+          instructions: 'Insights articles'
+          icon: media-news-paper
+          sets:
+            insights:
+              display: Insights
+              instructions: 'List all Insights articles.'
+              icon: media-news-paper
+              fields:
+                -
+                  import: insights
+            blog:
+              display: 'Blog'
+              instructions: 'List blog articles and topics.'
+              icon: media-news-paper
+              fields:
+                -
+                  import: blog
+            press:
+              display: 'Press'
+              instructions: 'List Press articles.'
+              icon: media-news-paper
+              fields:
+                -
+                  import: press
+            awards:
+              display: 'Awards'
+              instructions: 'List Awards articles.'
+              icon: media-news-paper
+              fields:
+                -
+                  import: awards
+            thought_leadership:
+              display: 'Thought Leadership'
+              instructions: 'List Thought Leadership articles and topics.'
+              icon: media-news-paper
+              fields:
+                -
+                  import: thought_leadership
         interactive:
           display: Interactive
           instructions: 'Interactive blocks.'
@@ -96,13 +136,6 @@ fields:
               fields:
                 -
                   import: index_content
-            insights:
-              display: Insights
-              instructions: 'List the most recent Insights.'
-              icon: media-news-paper
-              fields:
-                -
-                  import: insights
             link_blocks:
               display: 'Link blocks'
               instructions: 'Show linkable blocks with text.'

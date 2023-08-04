@@ -52,9 +52,13 @@ return [
     'language_close' => 'Close language picker',
 
     // Insights
-    'insights_all' => 'View all insights',
+    'insights_all' => 'View all Insights',
     'insights_more' => 'More articles',
     'insights_read_more' => 'Read more',
+    'blog_all' => 'View all Blogs',
+    'awards_all' => 'View all Awards',
+    'press_all' => 'View all Press',
+    'thought_leadership_all' => 'View all Thought Leadership',
 
     'read_more' => 'Read more',
 

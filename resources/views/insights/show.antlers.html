@@ -43,16 +43,16 @@
         {{ /partial:typography/prose }}
     </section>
 
-    {{ collection:previous in="insights" sort="date:asc" limit="3" as="items" }}
+    {{ collection:next in="blog" sort="date:asc" limit="3" as="items" redirects="true" }}
         {{ unless no_results }}
             <section class="fluid-container grid md:grid-cols-12 gap-8">
                 {{ partial:typography/h1 as="h2" content="{ trans:strings.insights_more }" class="md:col-span-12" }}
 
                 {{ items }}
-                    {{ partial:components/insights_item class="md:col-span-4" }}
+                    {{ partial:components/article_item class="md:col-span-4" }}
                 {{ /items }}
             </section>
         {{ /unless }}
-    {{ /collection:previous }}
+    {{ /collection:next }}
 </main>
 <!-- /insights/show.antlers.html -->

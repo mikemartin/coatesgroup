@@ -9,7 +9,7 @@
       {{ /get_content }}
       <language>{{ site:locale | replace('_', '-') }}</language>
       <lastBuildDate>{{ now iso_format="ddd, DD MMM GGGG HH:mm:ss UT" }}</lastBuildDate>
-      {{ collection:insights sort="date:desc" limit="50" }}
+      {{ collection from="blog|awards|press|thought_leadership" sort="date:desc" limit="50" }}
         <item>
             <title>{{ title }}</title>
             <link>{{ permalink }}</link>
@@ -17,6 +17,6 @@
             <description><![CDATA[<img align="left" hspace="5" src="{{ glide:image preset='lg' }}"/><p>{{ teaser | nl2br }}</p><a href="{{ permalink }}" rel="nofollow">{{ trans:strings.insights_read_more }}</a>]]></description>
             <pubDate>{{ date iso_format="ddd, DD MMM GGGG hh:mm:ss UT" }}</pubDate>
         </item>
-      {{ /collection:insights }}
+      {{ /collection }}
    </channel>
 </rss>

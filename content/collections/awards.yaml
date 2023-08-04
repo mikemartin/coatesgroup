@@ -1,0 +1,19 @@
+title: Awards
+template: insights/show
+layout: layout
+taxonomies:
+  - topics
+revisions: false
+route: '/awards/{slug}'
+date: true
+sort_dir: desc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: false
+inject:
+  enable_hero: true
