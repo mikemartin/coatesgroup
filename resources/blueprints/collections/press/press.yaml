@@ -4,7 +4,7 @@ tabs:
     display: Main
     sections:
       -
-        display: News
+        display: Press
         fields:
           -
             handle: title

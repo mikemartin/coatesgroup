@@ -11,3 +11,4 @@ date_behavior:
 mount: a5663a02-3b33-48ec-8a46-625a20d4ccf3
 inject:
   enable_hero: true
+  hero_type: case-study

@@ -19,6 +19,7 @@ tabs:
               mode: grid
               restrict: false
               display: Image
+              listable: true
               width: 50
               folder: press
               validate:
@@ -39,6 +40,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              listable: hidden
           -
             handle: date
             field:

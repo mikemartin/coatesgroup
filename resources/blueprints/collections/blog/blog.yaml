@@ -46,17 +46,6 @@ tabs:
             handle: article
             field: article.article
             config:
-              buttons:
-                - h2
-                - h3
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - removeformat
-                - anchor
-                - image
               validate:
                 - required
   seo:

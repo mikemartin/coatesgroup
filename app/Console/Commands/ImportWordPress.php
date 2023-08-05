@@ -42,7 +42,6 @@ class ImportWordPress extends Command
 
         $posts = Post::type('post')
               ->orderBy('post_date', 'desc')
-              ->limit('25')
               ->published()
               ->get();
 
@@ -63,8 +62,7 @@ class ImportWordPress extends Command
             
                 // find the image with this id and get the url
                 $attachment = Post::where('id', $id[1])->first();
-                ray($attachment);
-                $url = Str::replace('http://coates-wp.test/wp-content/', 'images/wp/', $attachment->guid);
+                $url = $attachment->guid;
             
                 // replace the plugin text with img tag and url
                 $content = preg_replace('(\[image_with_animation image_url="' . preg_quote($id[1], '/') . '[^\]]+])', '<img class="w-full h-auto" alt="image" src="' . $url . '">', $content);

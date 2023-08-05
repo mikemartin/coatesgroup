@@ -1,10 +1,11 @@
 title: Awards
 template: insights/show
 layout: layout
+mount: 1ae02c37-cfc2-484e-848a-38f59eda7e54
 taxonomies:
   - topics
 revisions: false
-route: '/awards/{slug}'
+route: '/{mount}/{slug}'
 date: true
 sort_dir: desc
 date_behavior:
@@ -17,3 +18,4 @@ preview_targets:
     refresh: false
 inject:
   enable_hero: true
+  hero_type: article

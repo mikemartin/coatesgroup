@@ -1,10 +1,11 @@
 title: Press
 template: insights/show
 layout: layout
+mount: f629b35c-b8e1-4a91-81a0-ba156bdd7eff
 taxonomies:
   - topics
 revisions: false
-route: '/press/{slug}'
+route: '/{mount}/{slug}'
 date: true
 sort_dir: desc
 date_behavior:
@@ -17,3 +18,4 @@ preview_targets:
     refresh: false
 inject:
   enable_hero: true
+  hero_type: article

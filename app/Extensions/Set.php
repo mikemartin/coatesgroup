@@ -19,6 +19,9 @@ class Set extends Node
             ],
             [
                 'tag' => 'iframe',
+            ],
+            [
+                'tag' => 'img',
             ]
         ];
     }
@@ -39,11 +42,21 @@ class Set extends Node
                         'type' => 'video',
                         'youtube_url' => $src,
                     ];
+                } elseif ($DOMNode->nodeName == 'img') {
+
+                    while ($DOMNode->hasChildNodes()) {
+                        $DOMNode->removeChild($DOMNode->firstChild);
+                    }
+                    
+                    return [
+                        'type' => 'image',
+                        'image' => $DOMNode->getAttribute('src'),
+                        'size' => 'LG'
+                    ];
                 } else {
                     $img = $DOMNode->getElementsByTagName('img')->item(0);
                     $src = Str::replace($img->getAttribute('src'), '/images/wp/', '/wp/' );  
 
-                    $alt = $img->getAttribute('alt');
                     $captionElements = $DOMNode->getElementsByTagName('figcaption');
 
                     if ($captionElements->length > 0) {
@@ -57,8 +70,8 @@ class Set extends Node
                     return [
                         'type' => 'image',
                         'image' => $src,
-                        'alt' => $alt,
                         'caption' => $caption ?? null,
+                        'size' => 'LG'
                     ];
                 }
                 
