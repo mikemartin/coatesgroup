@@ -9,7 +9,7 @@
     <div x-data="fadeIn()" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
-    class="pb-10 border-b grid md:grid-cols-12 gap-8">
+    class="pb-10 border-b grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-6">
         {{ if block:title }}
         <div class="md:col-span-12">
             {{ partial:typography/h2 :content="title" }}
@@ -23,7 +23,7 @@
             {{ partial:components/article_item large="true" class="md:col-span-6" }}
         {{ /awards:0 }}
 
-        <div class="grid md:grid-cols-6 md:col-span-6 gap-8">
+        <div class="grid md:grid-cols-6 md:col-span-6 gap-6">
             {{ awards offset="1" }}
                 {{ partial:components/article_item class="md:col-span-3" }}
             {{ /awards }}

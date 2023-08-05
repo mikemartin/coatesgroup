@@ -17,7 +17,7 @@
 {{ section:index_content }}
     <!-- /insights/archive.antlers.html -->
     <div 
-    class="fluid-container self-start grid md:grid-cols-12 gap-8">
+    class="fluid-container self-start grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-8">
         {{ collection :from="mount" sort="date:desc" paginate="true" limit="99" as="items" redirects="true" }}
             {{ unless no_results }}
                 {{ items }}

@@ -32,6 +32,17 @@ window.getToken = async () => {
         })
 }
 
+// Masonry Support
+// https://techhub.iodigital.com/articles/why-you-should-be-using-new-css-features-today/why-you-should-be-using-new-css-features-today-part-2
+const supportMasonry = CSS.supports('grid-template-rows', 'masonry')
+
+if (!supportMasonry) {
+  /* 
+    dont't support masonry in CSS? 
+    init your masonry here in JS
+     */
+}
+
 // Call Alpine.
 window.Alpine = Alpine
 window.Swiper = Swiper;
