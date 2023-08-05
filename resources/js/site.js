@@ -37,10 +37,7 @@ window.getToken = async () => {
 const supportMasonry = CSS.supports('grid-template-rows', 'masonry')
 
 if (!supportMasonry) {
-  /* 
-    dont't support masonry in CSS? 
-    init your masonry here in JS
-     */
+    let grids = [...document.querySelectorAll('.grid[data-rows="masonry"]')];
 }
 
 // Call Alpine.

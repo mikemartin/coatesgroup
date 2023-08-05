@@ -10,7 +10,7 @@ class="fluid-container">
     <div x-data="fadeIn()" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
-    class="pb-10 border-b grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-6">
+    class="pb-10 border-b grid grid-rows-[masonry] md:grid-cols-12 gap-6" data-rows="masonry">
         {{ if block:title }}
         <div class="md:col-span-12">
             {{ partial:typography/h2 :content="title" }}
