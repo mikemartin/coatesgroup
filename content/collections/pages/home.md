@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1690512380
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1691238092
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -23,6 +23,10 @@ page_builder:
         label: 'View More'
         show_arrow: true
         image: homepage/drivethru.jpg
+        link_type: entry
+        target_blank: false
+        entry: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
+        button_type: button
       -
         id: ljs2mon9
         title: In-Restaurant
@@ -30,6 +34,10 @@ page_builder:
         label: 'View More'
         show_arrow: true
         image: homepage/inrestaurant.jpg
+        link_type: entry
+        target_blank: false
+        entry: ff9d8311-380b-41a3-8521-fca66900b6bb
+        button_type: button
     type: link_blocks
     enabled: true
   -
@@ -43,6 +51,10 @@ page_builder:
         image: homepage/digitalmenuboard.jpg
         label: 'View More'
         show_arrow: true
+        link_type: entry
+        target_blank: false
+        entry: 10b3a0e8-9688-479e-9a82-6433aa322e55
+        button_type: button
       -
         id: ljs3nwqo
         title: 'Self-Service Kiosk'
@@ -50,6 +62,10 @@ page_builder:
         image: homepage/selfservicekiosks.jpg
         label: 'View More'
         show_arrow: true
+        link_type: entry
+        target_blank: false
+        entry: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
+        button_type: button
       -
         id: ljs3oszb
         title: Software
@@ -57,6 +73,10 @@ page_builder:
         image: homepage/software.jpg
         label: 'View More'
         show_arrow: false
+        link_type: entry
+        target_blank: false
+        entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
+        button_type: button
     type: link_blocks
     enabled: true
   -
@@ -68,6 +88,10 @@ page_builder:
         id: ljs44ak2
         label: 'View More'
         show_arrow: true
+        link_type: entry
+        target_blank: false
+        entry: 1d2592aa-536e-4dfd-8901-23b7413fc22a
+        button_type: button
     type: full_width_image
     enabled: true
     image: homepage/traditionalsignage.jpg
@@ -114,6 +138,10 @@ page_builder:
         id: ljs5op1o
         label: 'View About Us'
         show_arrow: true
+        link_type: entry
+        target_blank: false
+        entry: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
+        button_type: button
     image: homepage/company.jpg
     type: full_width_image
     enabled: true
@@ -123,10 +151,8 @@ page_builder:
     type: insights
     enabled: true
     insights:
-      - ed8df7f9-2421-4673-aa26-90d81b960df6
-      - c1ddb26e-c11e-4b89-958c-0352644bc586
-      - 2ff83eca-2919-4abd-8b21-0cab6ef51083
-      - 753e810d-9a58-44b9-99d3-68e5780eec0b
+      - 1932f64f-adb6-4a6d-8b7c-67d42b572b28
+      - 1775e6e5-966c-4bc8-b8e2-4f056e760024
 hero_type: video
 hero_video: 1--1280x720-homepage-mix-10s.mp4
 hero_fallback: hero/coverr-running-with-a-kite.jpg
