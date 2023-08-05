@@ -1,4 +1,4 @@
-title: Thought Leadership
+title: 'Thought Leadership'
 fields:
   -
     handle: title
@@ -20,13 +20,13 @@ fields:
   -
     handle: press
     field:
-      max_items: 4
+      max_items: 5
       mode: default
       create: true
       collections:
         - thought_leadership
       type: entries
-      display: Thought Leadership
+      display: 'Thought Leadership'
       icon: entries
       listable: hidden
       instructions_position: above

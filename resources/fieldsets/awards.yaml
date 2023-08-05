@@ -20,7 +20,7 @@ fields:
   -
     handle: awards
     field:
-      max_items: 4
+      max_items: 5
       mode: default
       create: true
       collections:

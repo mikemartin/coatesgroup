@@ -10,18 +10,31 @@ page_builder:
     text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
     type: blog
     enabled: true
+    blog:
+      - 7a1ce215-5b7f-4aa1-a624-706210e0360b
+      - 1932f64f-adb6-4a6d-8b7c-67d42b572b28
+      - 7f28aa3c-4821-44e8-8fe2-f69896bd58f5
+      - 409452e6-fd28-4466-a7c7-b6947b1b8ed6
+      - 9f21f438-65a5-47d4-a3ca-d7417bbcb6a1
+      - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
   -
     id: lkvsev2o
     title: '1 Liner about Press section'
     text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
     type: press
     enabled: true
+    press:
+      - 1775e6e5-966c-4bc8-b8e2-4f056e760024
   -
     id: lkvsf50t
     title: '1 Liner about Awards section'
     text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
     type: awards
     enabled: true
+    awards:
+      - 87dfdcee-2559-4116-85ad-8b48bab37461
+      - c7623794-5306-4796-a0f0-28a52556a1bf
+      - 8fa81eb4-68c3-4b94-a2b9-34e196740fbf
   -
     id: lkvsff6f
     title: '1 Liner about Thought Leadership section'
@@ -42,5 +55,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691105307
+updated_at: 1691238492
 ---

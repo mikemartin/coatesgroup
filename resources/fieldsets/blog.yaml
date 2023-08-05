@@ -20,7 +20,7 @@ fields:
   -
     handle: blog
     field:
-      max_items: 4
+      max_items: 8
       mode: default
       create: true
       collections:
