@@ -18,7 +18,7 @@
     <!-- /insights/archive.antlers.html -->
     <div 
     class="fluid-container self-start grid md:grid-cols-12 gap-8">
-        {{ collection :from="mount" sort="date:desc" paginate="true" limit="12" as="items" }}
+        {{ collection :from="mount" sort="date:desc" paginate="true" limit="99" as="items" redirects="true" }}
             {{ unless no_results }}
                 {{ items }}
                     {{ partial:components/article_item class="md:col-span-3" }}

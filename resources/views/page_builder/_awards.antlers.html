@@ -19,12 +19,18 @@
 
         {{ awards = block:awards ? block:awards : {collection:awards limit="5" redirects="true" } }}
 
-        {{ awards }}
-            {{ partial:components/article_item class="md:col-span-3" }}
-        {{ /awards }}
+        {{ awards:0 }}
+            {{ partial:components/article_item large="true" class="md:col-span-6" }}
+        {{ /awards:0 }}
+
+        <div class="grid md:grid-cols-6 md:col-span-6 gap-8">
+            {{ awards offset="1" }}
+                {{ partial:components/article_item class="md:col-span-3" }}
+            {{ /awards }}
+        </div>
 
         <nav class="md:col-span-12 text-center">
-            {{ partial:components/button label="{trans:strings.awards_all}" link_type="url" url="/insights/award" }}
+            {{ partial:components/button label="{trans:strings.awards_all}" link_type="url" url="/insights/awards" }}
         </nav>
     </div>
 </section>

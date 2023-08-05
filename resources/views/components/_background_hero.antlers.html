@@ -5,7 +5,7 @@
 #}}
 
 <!-- /layout/_hero.antlers.html -->
-<div class="relative bg-white -mt-16">
+<div class="relative bg-white {{ if hero_type != 'article'}}-mt-16{{/if}}">
     {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video

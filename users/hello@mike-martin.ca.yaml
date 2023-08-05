@@ -26,6 +26,4 @@ preferences:
             status:
               status: scheduled
       per_page: 500
-  assets:
-    images:
-      mode: grid
+      after_save: continue_editing

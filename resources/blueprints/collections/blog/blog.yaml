@@ -118,11 +118,15 @@ tabs:
               mode: single
               time_enabled: false
               time_required: false
-              earliest_date: '2021-01-01'
+              earliest_date: '2016-01-01'
               full_width: false
               inline: false
               columns: 1
               rows: 1
+              instructions_position: above
+              visibility: visible
+              time_seconds_enabled: false
+              hide_display: false
           -
             handle: author
             field:

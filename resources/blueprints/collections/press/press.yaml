@@ -128,7 +128,7 @@ tabs:
               mode: single
               time_enabled: false
               time_required: false
-              earliest_date: '2021-01-01'
+              earliest_date: '2016-01-01'
               full_width: false
               inline: false
               columns: 1

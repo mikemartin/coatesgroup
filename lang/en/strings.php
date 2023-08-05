@@ -54,6 +54,7 @@ return [
     // Insights
     'insights_all' => 'View All Insights',
     'insights_more' => 'More articles',
+    'insights_next' => 'Next',
     'insights_read_more' => 'Read more',
     'blog_all' => 'View All Blogs',
     'awards_all' => 'View All Awards',
