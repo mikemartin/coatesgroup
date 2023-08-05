@@ -37,7 +37,11 @@
 
     <section class="fluid-container grid grid-cols-12">
         {{ partial:typography/prose as="article" class="contents" }}
+            {{ if teaser }}
+                <p class="lead size-md">{{ teaser }}</p>
+            {{ /if }}
             {{ article }}
+                
                 {{ partial src="components/{type}" }}
             {{ /article }}
         {{ /partial:typography/prose }}
