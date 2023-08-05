@@ -25,6 +25,7 @@ preferences:
           filters:
             status:
               status: scheduled
+      per_page: 500
   assets:
     images:
       mode: grid
