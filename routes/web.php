@@ -18,3 +18,5 @@ Route::statamic('/feed/insights', 'feed/feed', [
     'layout' => null,
     'content_type' => 'application/xml',
 ]);
+
+Route::statamic('/insights/type', 'insights/type');
