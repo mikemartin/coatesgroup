@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d57dd68ad50e26c84f640bc15cf93517",
+    "content-hash": "866d86a17c9418dd02760e703108c825",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -239,6 +239,94 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "codedge/statamic-move-entries",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikemartin/statamic-move-entries.git",
+                "reference": "c6d8191135e2c470e088e26b577e6f1fc15f706a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikemartin/statamic-move-entries/zipball/c6d8191135e2c470e088e26b577e6f1fc15f706a",
+                "reference": "c6d8191135e2c470e088e26b577e6f1fc15f706a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "statamic/cms": "^4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.21.0",
+                "phpunit/phpunit": "^9.5",
+                "spatie/ray": "^1.30"
+            },
+            "default-branch": true,
+            "type": "statamic-addon",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Codedge\\MoveEntries\\ServiceProvider"
+                    ]
+                },
+                "statamic": {
+                    "description": "Move entries in the Control Panel",
+                    "name": "Move Entries"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Codedge\\MoveEntries\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Codedge\\MoveEntries\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "./vendor/bin/phpunit --debug --testdox"
+                ],
+                "test-clover-coverage": [
+                    "./vendor/bin/phpunit --coverage-clover clover.xml"
+                ],
+                "test-coverage": [
+                    "./vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Holger Lösken",
+                    "email": "holger.loesken@codedge.de",
+                    "homepage": "https://www.codedge.de"
+                }
+            ],
+            "description": "Move entries in the Control Panel",
+            "keywords": [
+                "control",
+                "control panel",
+                "entries",
+                "move",
+                "panel",
+                "statamic"
+            ],
+            "support": {
+                "issues": "https://github.com/codedge/statamic-move-entries/issues",
+                "source": "https://github.com/codedge/statamic-move-entries"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/codedge"
+                }
+            ],
+            "time": "2023-07-11T05:10:45+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -12224,7 +12312,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "codedge/statamic-move-entries": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
