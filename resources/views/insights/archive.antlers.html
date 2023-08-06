@@ -17,13 +17,14 @@
 {{ section:index_content }}
     <!-- /insights/archive.antlers.html -->
     <section class="fluid-container">
-        <div 
-        class="self-start grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-8" data-columns="4">
+        <div class="grid md:grid-cols-12">
             {{ collection :from="mount" sort="date:desc" paginate="true" limit="99" as="items" redirects="true" }}
                 {{ unless no_results }}
+                    <div class="md:col-span-12 grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-8" data-columns="4">
                     {{ items }}
                         {{ partial:components/article_item class="md:col-span-3" }}
                     {{ /items }}
+                    </div>
                 {{ else }}
                     <div class="md:col-span-6">
                         {{ trans:strings.no_results }}
