@@ -1,4 +1,4 @@
-title: Thought Leadership
+title: 'Thought Leadership'
 tabs:
   main:
     display: Main
@@ -108,12 +108,12 @@ tabs:
               validate:
                 - required
           -
-            handle: topics
+            handle: resources
             field:
               type: terms
               taxonomies:
-                - topics
-              display: Topics
+                - resources
+              display: Resources
               mode: select
           -
             handle: date

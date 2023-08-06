@@ -9,21 +9,47 @@
     <div x-data="fadeIn()" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
-    class="pb-10 border-b grid grid-rows-[masonry] md:grid-cols-12 gap-6" data-rows="masonry">
+    class="pb-10 border-b">
         {{ if block:title }}
-        <div class="md:col-span-12">
+        <div>
             {{ partial:typography/h2 :content="title" }}
             {{ block:text ?= {partial:typography/p :content="block:text" class="mt-2" } }}
         </div>
         {{ /if }}
 
+        <div class="mt-10 flex flex-wrap gap-4">
+            <button
+                    class="
+                        font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+                        inline-flex items-center py-4 px-8 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+                        border border-blue bg-blue text-white focus-visible:ring-primary
+                    "
+                >
+                All
+            </button>
+            {{ topics = block:topics ? block:topics : {taxonomy:topics } }}
+
+            {{ topics }}
+                <a href="{{ url }}"
+                    class="
+                        font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+                        inline-flex items-center py-4 px-6 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+                        border border-charcoal-40 text-neutral w-medium hover:font-medium focus-visible:ring-primary
+                    "
+                >
+                    {{ title }}
+                </a>
+            {{ /topics }}
+        </div>
+
         {{ blog = block:blog ? block:blog : {collection:blog limit="8" redirects="true" } }}
+        <div class="mt-10 grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-6" data-columns="4">
+            {{ blog }}
+                {{ partial:components/article_item class="md:col-span-3" }}
+            {{ /blog }}
+        </div>
 
-        {{ blog }}
-            {{ partial:components/article_item class="md:col-span-3" }}
-        {{ /blog }}
-
-        <nav class="md:col-span-12 text-center">
+        <nav class="mt-20 text-center">
             {{ partial:components/button label="{trans:strings.blog_all}" link_type="url" url="/insights/blog" }}
         </nav>
     </div>

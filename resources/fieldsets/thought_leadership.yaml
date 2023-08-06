@@ -18,6 +18,20 @@ fields:
     config:
       display: Text
   -
+    handle: resources
+    field:
+      mode: default
+      create: true
+      taxonomies:
+        - resources
+      type: terms
+      display: Resources
+      icon: taxonomy
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: press
     field:
       max_items: 5

@@ -10,9 +10,9 @@
     x-data="fadeIn()" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
-    class="pb-10 border-b grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-6" data-rows="masonry">
+    class="pb-10 border-b">
         {{ if block:title }}
-        <div class="md:col-span-12">
+        <div>
             {{ partial:typography/h2 :content="title" }}
             {{ block:text ?= {partial:typography/p :content="block:text" class="mt-2" } }}
         </div>
@@ -20,17 +20,20 @@
 
         {{ press = block:press ? block:press : {collection:press limit="5" redirects="true" } }}
 
-        {{ press:0 }}
-            {{ partial:components/article_item large="true" class="md:col-span-6" }}
-        {{ /press:0 }}
+        <div class="mt-10 grid md:grid-cols-12 gap-6">
 
-        <div class="grid grid-rows-[masonry] md:grid-cols-6 md:col-span-6 gap-6" data-rows="masonry">
-            {{ press offset="1" }}
-                {{ partial:components/article_item class="md:col-span-3" }}
-            {{ /press }}
+            {{ press:0 }}
+                {{ partial:components/article_item large="true" class="md:col-span-6" }}
+            {{ /press:0 }}
+
+            <div class="grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-6 md:col-span-6 gap-6" data-columns="2">
+                {{ press offset="1" }}
+                    {{ partial:components/article_item class="md:col-span-3" }}
+                {{ /press }}
+            </div>
         </div>
         
-        <nav class="md:col-span-12 text-center">
+        <nav class="mt-20 text-center">
             {{ partial:components/button label="{trans:strings.press_all}" link_type="url" url="/insights/press" }}
         </nav>
     </div>

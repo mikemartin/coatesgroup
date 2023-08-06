@@ -9,20 +9,22 @@
     <div 
     x-data="fadeIn()" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid grid-rows-[masonry] md:grid-cols-12 gap-6 md:gap-8" data-rows="masonry">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container">
         {{ if block:title }}
-        <div class="grid md:grid-cols-12 md:col-span-12">
+        <div class="grid md:grid-cols-12">
             {{ partial:typography/h2 :content="title" class="md:col-span-6" }}
         </div>
         {{ /if }}
 
         {{ insights = block:insights ? block:insights : {%collection from="blog|press|awards|thought_leadership" limit="4" redirects="true" } }}
 
-        {{ insights }}
-            {{ partial:components/insights_item class="md:col-span-3" }}
-        {{ /insights }}
+        <div class="mt-10 grid md:grid-cols-12 gap-6 md:gap-8">
+            {{ insights }}
+                {{ partial:components/insights_item class="md:col-span-3" }}
+            {{ /insights }}
+        </div>
 
-        <nav class="md:col-span-12 text-center">
+        <nav class="mt-20 text-center">
             {{ partial:components/button label="{trans:strings.insights_all}" link_type="url" url="/insights" }}
         </nav>
     </div>

@@ -7,6 +7,7 @@ import focus from '@alpinejs/focus'
 import intersect from '@alpinejs/intersect'
 import 'focus-visible'
 import Swiper from 'swiper';
+import Macy from 'macy';
 import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -37,7 +38,20 @@ window.getToken = async () => {
 const supportMasonry = CSS.supports('grid-template-rows', 'masonry')
 
 if (!supportMasonry) {
-    let grids = [...document.querySelectorAll('.grid[data-rows="masonry"]')];
+    document.querySelectorAll('.grid[data-columns]').forEach((elem) => {
+        const macy = Macy({
+            container: elem,
+            columns: 1,
+            mobileFirst: true,
+            margin: 24,
+            breakAt: {
+                '768': {
+                    columns: elem.dataset.columns,
+                    margin: 24
+                }
+            }
+        });
+    });    
 }
 
 // Call Alpine.

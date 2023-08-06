@@ -19,6 +19,11 @@ page_builder:
       - 9f21f438-65a5-47d4-a3ca-d7417bbcb6a1
       - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
       - 4ac941c0-c57a-46ee-8a52-06138a57890c
+    topics:
+      - news
+      - events
+      - product-innovation
+      - company-culture
   -
     id: lkvsev2o
     title: '1 Liner about Press section'
@@ -29,8 +34,8 @@ page_builder:
       - 90a1d00c-28cf-4543-9974-eb45c85649ad
       - 1775e6e5-966c-4bc8-b8e2-4f056e760024
       - b8c36515-da3f-44bf-866d-48de67333f74
-      - d6a5ad2a-6bfb-48e8-878f-90e1c13d4d31
       - b3036152-9c75-4f2f-b05f-734d33ef65b0
+      - d6a5ad2a-6bfb-48e8-878f-90e1c13d4d31
   -
     id: lkvsf50t
     title: '1 Liner about Awards section'
@@ -54,6 +59,11 @@ page_builder:
       - 753e810d-9a58-44b9-99d3-68e5780eec0b
       - 950e10c9-812f-465e-9b0f-77db58da8cc6
       - 866a7ac5-8bad-40d1-8ff4-e2a55cedf0c6
+    resources:
+      - webinars
+      - white-pages
+      - media
+      - interviews
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 enable_hero: false
 hero_type: brand
@@ -68,5 +78,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691247184
+updated_at: 1691295045
 ---
