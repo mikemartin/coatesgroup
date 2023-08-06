@@ -54,7 +54,27 @@
                     {{ partial:typography/h2 content="{ trans:strings.insights_next }" class="md:col-span-12" }}
     
                     {{ items }}
-                        {{ partial:components/article_item class="md:col-span-6" }}
+                        <article x-data="fadeIn()" 
+                        x-init="hide($el)" 
+                        x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col md:col-span-6">
+                            {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
+                            
+                            <figure class="relative overflow-hidden aspect-[3/4] md:aspect-[9/4] mb-4">
+                                {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw'" aspect_ratio="3/4 large:9/4" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
+                            </figure>
+
+                            <div class="flex flex-col gap-y-2">
+                                <div class="flex justify-between">
+                                    {{ partial:typography/caption :caption="collection:title" class="text-sm" }}
+                                    {{ redirect ?= { svg:link-out class="w-4 h-4 text-black group-hover:text-blue motion-safe:transition" } }}
+                                </div>
+                                <a href="{{ url }}" class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group" {{ if redirect }}target="_blank"{{/if}}>
+                                    {{ partial:typography/p :content="title" class="font-medium" }} 
+                                    <span class="absolute inset-0"></span>
+                                </a>
+                                {{ partial:typography/time :content="date" class="text-sm" }}
+                            </div>
+                        </article>
                     {{ /items }}
                 </div>
             </section>

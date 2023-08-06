@@ -30,9 +30,9 @@ module.exports = {
             '--tw-prose-bold': theme('colors.black.DEFAULT'),
             '--tw-prose-counters': theme('colors.black.DEFAULT'),
             '--tw-prose-bullets': theme('colors.black.DEFAULT'),
-            '--tw-prose-hr': theme('colors.black.DEFAULT'),
+            '--tw-prose-hr': theme('colors.charcoal.DEFAULT'),
             '--tw-prose-quotes': theme('colors.black.DEFAULT'),
-            '--tw-prose-quote-borders': theme('colors.black.DEFAULT / 1'),
+            '--tw-prose-quote-borders': theme('colors.charcoal.40 / 1'),
             '--tw-prose-captions': theme('colors.black.DEFAULT'),
             '--tw-prose-code': theme('colors.black.DEFAULT'),
             '--tw-prose-pre-code': theme('colors.white'),
@@ -118,10 +118,18 @@ module.exports = {
             h4: {
               fontWeight: '300',
               color: 'var(--tw-prose-headings)',
+              fontSize: em(18, 16),
+              lineHeight: round(28 / 18),
+              marginTop: em(24, 18),
+              marginBottom: em(8, 18),
             },
             'h4 strong': {
               fontWeight: '500',
               color: 'inherit',
+            },
+            blockquote: {
+              fontWeight: '300',
+              fontStyle: 'normal'
             },
           }
         },
@@ -145,6 +153,12 @@ module.exports = {
               marginBottom: em(16, 35),
               lineHeight: round(42 / 35),
               fontWeight: '300',
+            },
+            h4: {
+              fontSize: em(24, 18),
+              lineHeight: round(32 / 24),
+              marginTop: em(32, 18),
+              marginBottom: em(8, 18),
             },
           }
         },

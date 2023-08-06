@@ -27,3 +27,5 @@ preferences:
               status: scheduled
       per_page: 500
       after_save: continue_editing
+    press:
+      per_page: 500

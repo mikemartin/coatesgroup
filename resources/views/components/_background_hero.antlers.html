@@ -32,7 +32,7 @@
     <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%"></div>
     {{ /if}}
 
-    <div class="relative w-full flex flex-col justify-end min-h-[760px] pb-8 md:pt-64 md:pb-16">
+    <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article'}}min-h-[760px]{{else}}min-h-[696px]{{/if}} pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn()" 
                 x-init="hide($el.children)" 
@@ -47,7 +47,7 @@
                     {{ show_date ?= {partial:typography/time :content="date" class="text-white" } }}
                     {{ if author }}
                         <span class="hidden md:block w-3 h-3 bg-green rounded-full mx-4"></span>
-                        By {{ author:name }}
+                        By {{ author:name ?? 'Coates' }}
                     {{ /if }}
                 </div>
                 {{ /if }}
