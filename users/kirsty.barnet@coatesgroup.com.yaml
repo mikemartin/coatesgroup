@@ -4,3 +4,4 @@ roles:
   - marketeer
   - user_management
 id: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+password_hash: $2y$10$080qhLp5o2wwaFuyT4tNb.R.uTu8eEkV0uKjRPix7jT4jpa79WsKK
