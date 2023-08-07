@@ -39,23 +39,37 @@ x-init="swiper = new Swiper($refs.container, {
         </div>
         {{/if}}
 
-        <div class="mt-10 md:mt-20 swiper !pb-14" x-ref="container">
-            <div class="swiper-wrapper">
-                {{ products = {block:products} ? {block:products} : {collection:products} }}
-                {{ products }}
-                    <div class="swiper-slide h-[calc((100%-30px)/2)] flex justify-center items-center">
-                        <a href="{{ url }}" class="block px-10 py-8 relative border border-charcoal-40">
-                            {{ partial:typography/large color="font-medium" :content="title" }}
-                            {{ partial:components/button button_type="inline" as="button" faux="true" label="View more" class="inline-block mt-4" }}
-                        </a>
+        {{ products = {block:products} ? {block:products} : {collection:products} }}
+
+        <div class="mt-10 md:mt-20 pb-14">   
+            <div class="hidden md:block">
+                <div class="swiper !pb-14" x-ref="container">
+                    <div class="swiper-wrapper">
+                        {{ loop times="3" }}
+                        {{ products }}
+                            <div class="swiper-slide">
+                                <a href="{{ url }}" class="block px-10 py-8 relative border border-charcoal-40">
+                                    {{ partial:typography/large color="font-medium" :content="title" }}
+                                    {{ partial:components/button button_type="inline" as="button" faux="true" label="View more" class="inline-block mt-4" }}
+                                </a>
+                            </div>
+                        {{ /products }}
+                        {{ /loop }}
                     </div>
+        
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination !text-left absolute !bottom-0"></div>
+                </div>
+            </div>
+            <div class="md:hidden space-y-6">
+                {{ products }}
+                    <a href="{{ url }}" class="block px-10 py-8 relative border border-charcoal-40">
+                        {{ partial:typography/large color="font-medium" :content="title" }}
+                        {{ partial:components/button button_type="inline" as="button" faux="true" label="View more" class="inline-block mt-4" }}
+                    </a>
                 {{ /products }}
             </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination absolute !bottom-0"></div>
         </div>
-        
     </div>
 </section>
 <!-- End: /page_builder/_products_carousel.antlers.html -->

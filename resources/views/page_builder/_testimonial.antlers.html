@@ -5,26 +5,28 @@
 #}}
 
 <!-- /page_builder/_testimonial.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8 md:gap-12 items-center">
-    <article class="md:col-span-6 order-2">
-        {{ block:title ?= { partial:typography/h2 :content="block:title" class="mb-4" } }}
+<section class="w-full bg-charcoal-10 py-12 md:py-16 lg:py-24">
+    <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-12 items-center">
+        <article class="md:col-span-6 order-2">
+            {{ block:title ?= { partial:typography/h3 :content="block:title" class="mb-4 font-medium" } }}
 
-        <figure class="space-y-4">
-            {{ partial:typography/large as="blockquote" :content="block:quote" }}
-            
-            {{ if block:author }}
-                <figcaption class="block">
-                    {{ partial:typography/p :content="author:title" class="font-bold" }}
-                    {{ partial:typography/p :content="author:function" }}
-                </figcaption>
-            {{ /if }}
+            <figure class="mt-12 space-y-4">
+                {{ partial:typography/large as="blockquote" :content="block:quote" }}
+                
+                {{ if block:author }}
+                    <figcaption class="block">
+                        {{ partial:typography/p :content="author:title" class="font-bold" }}
+                        {{ partial:typography/p :content="author:function" }}
+                    </figcaption>
+                {{ /if }}
+            </figure>
+
+            {{ partial:components/buttons class="mt-8" }}
+        </article>
+
+        <figure class="md:col-span-6">
+            {{ partial:statamic-peak-tools::components/picture :image="block:author:image" aspect_ratio="1/1" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
         </figure>
-
-        {{ partial:components/buttons class="mt-8" }}
-    </article>
-
-    <figure class="md:col-span-6">
-        {{ partial:statamic-peak-tools::components/picture :image="block:author:image" aspect_ratio="1/1" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
-    </figure>
+    </div>
 </section>
 <!-- End: /page_builder/_testimonial.antlers.html -->
