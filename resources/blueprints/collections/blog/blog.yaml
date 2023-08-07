@@ -4,7 +4,7 @@ tabs:
     display: Main
     sections:
       -
-        display: News
+        display: Blog
         fields:
           -
             handle: title
@@ -140,7 +140,7 @@ tabs:
             handle: source
             field:
               type: text
-              display: 'Source'
+              display: Source
               validate:
                 - required
                 - sometimes
