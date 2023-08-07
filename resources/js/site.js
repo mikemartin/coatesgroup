@@ -45,10 +45,7 @@ if (!supportMasonry) {
             mobileFirst: true,
             margin: 24,
             breakAt: {
-                '768': {
-                    columns: elem.dataset.columns,
-                    margin: 24
-                }
+                '768': elem.dataset.columns,
             }
         });
     });    

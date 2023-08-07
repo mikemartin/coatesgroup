@@ -9,10 +9,9 @@
 x-init="hide($el)" 
 x-intersect.once.margin.-20%="fadeIn($el)" class="group flex md:flex-col {{ class }}">
     <div class="relative mr-4 w-40 md:mr-0 md:w-full">
-        {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
+        {{ svg:corner-piece class="z-10 w-1/5 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
         <figure class="relative overflow-hidden aspect-[3/4] {{ count %2 ? 'md:aspect-[5/7]' : 'md:aspect-[7/8]' }} mb-4">
-            {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="30vw" aspect_ratio="3/4 " lazy="true" cover="true" class="md:hidden group-hover:opacity-50 transition-opacity duration-300" }}
-            {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="{ count %2 ? '5/7' : '7/8' }" lazy="true" cover="true" class="hidden md:block group-hover:opacity-50 transition-opacity duration-300" }}
+            {{ partial:components/insights_picture :image="thumbnail ?? image" }}
         </figure>
     </div>
 
