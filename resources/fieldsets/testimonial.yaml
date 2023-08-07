@@ -42,4 +42,11 @@ fields:
       always_save: false
       max_items: 1
   -
+    handle: background
+    field:
+      default: false
+      type: toggle
+      display: 'Background'
+      icon: toggle
+  -
     import: buttons

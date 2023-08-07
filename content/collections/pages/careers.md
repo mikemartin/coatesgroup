@@ -123,6 +123,7 @@ page_builder:
       value:
         - 'rgb(0 163 227)'
     type: call_to_action
+    cta_type: 'illustration'
     enabled: true
     image: careers/be-part-of-our-team-01.svg
     label: 'View Open Roles'

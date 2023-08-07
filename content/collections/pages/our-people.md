@@ -41,5 +41,6 @@ page_builder:
       value:
         - 'rgb(238 48 53)'
     type: call_to_action
+    cta_type: 'illustration'
     enabled: true
 ---

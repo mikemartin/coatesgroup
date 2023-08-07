@@ -5,9 +5,16 @@
 #}}
 
 <!-- /page_builder/_call_to_action.antlers.html -->
-{{ partial:components/call_to_action 
-    :cta_color="block:color:label"
-    :cta_title="block:title"
-    :cta_image="block:image"
-    :cta_label="block:label" }}
+{{ if cta_type == 'image' }}
+    {{ partial:components/cta_illustration
+        :cta_color="block:color:label"
+        :cta_title="block:title"
+        :cta_label="block:label" }}
+{{ else }}
+    {{ partial:components/cta_render
+        :cta_color="block:color:label"
+        :cta_title="block:title"
+        :cta_image="block:image"
+        :cta_label="block:label" }}
+{{ /if }}
 <!-- /page_builder/_call_to_action.antlers.html -->

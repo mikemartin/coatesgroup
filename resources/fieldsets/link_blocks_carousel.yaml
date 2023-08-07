@@ -1,0 +1,55 @@
+title: 'Link Blocks Carousel'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
+    handle: link_blocks
+    field:
+      fields:
+        -
+          handle: title
+          field:
+            input_type: text
+            type: text
+            localizable: true
+            listable: hidden
+            validate: required
+            display: Title
+        -
+          handle: link
+          field:
+            max_items: 1
+            mode: default
+            type: entries
+            localizable: true
+            listable: false
+            display: Link
+            replicator_preview: false
+      mode: table
+      min_rows: 1
+      add_row: 'Add link block'
+      reorderable: true
+      type: grid
+      localizable: true
+      listable: hidden
+      display: 'Link blocks'
+      replicator_preview: false
+      instructions_position: above
+      visibility: visible
+      fullscreen: false
+      hide_display: false

@@ -150,6 +150,7 @@ page_builder:
       value:
         - 'rgb(117 187 67)'
     type: call_to_action
+    cta_type: 'illustration'
     enabled: true
 enable_hero: true
 ---

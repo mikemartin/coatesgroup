@@ -37,6 +37,7 @@ page_builder:
     entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
     button_type: button
     type: call_to_action
+    cta_type: 'illustration'
     enabled: true
     color:
       label: Yellow

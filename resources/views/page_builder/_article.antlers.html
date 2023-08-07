@@ -5,11 +5,24 @@
 #}}
 
 <!-- /page_builder/_article.antlers.html -->
-<section class="fluid-container grid grid-cols-12">
+<section x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-20%="fadeInStagger($el)" 
+    class="fluid-container grid grid-cols-12 gap-8">
+
+    {{ if block:title }}
+        {{ partial:typography/h2 :content="block:title" class="col-span-12 md:col-span-4" }}
+        <div class="col-span-12 md:col-span-8">
+    {{ /if }}
+
     {{ partial:typography/prose as="article" class="contents" }}
         {{ article }}
             {{ partial src="components/{type}" }}
         {{ /article }}
     {{ /partial:typography/prose }}
+    
+    {{ if block:title }}
+    </div>
+    {{ /if }}
 </section>
 <!-- End: /page_builder/_article.antlers.html -->

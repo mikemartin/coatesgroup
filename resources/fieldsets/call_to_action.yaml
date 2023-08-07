@@ -1,6 +1,20 @@
 title: 'Call to action'
 fields:
   -
+    handle: cta_type
+    field:
+      options:
+        render: Render
+        illustration: 'Illustration'
+      default: render
+      type: button_group
+      display: 'CTA Type'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: title
     field:
       input_type: text
@@ -12,6 +26,17 @@ fields:
         - required
   -
     import: button
+  -
+    handle: image
+    field: common.image
+    config:
+      mode: grid
+      display: Render Image
+      width: 50
+      validate:
+        - sometimes
+      if:
+        cta_type: 'contains_any render'
   -
     handle: color
     field:
@@ -45,3 +70,5 @@ fields:
       instructions_position: above
       visibility: visible
       hide_display: false
+      if:
+        cta_type: 'contains_any illustration'

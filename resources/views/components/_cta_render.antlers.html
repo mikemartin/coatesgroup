@@ -1,0 +1,26 @@
+{{#
+	@name Call to action Render
+	@desc The call to action render component.
+    @set components.call_to_action
+#}}
+
+<!-- /components/_cta_render.antlers.html -->
+<section class="fluid-container">
+    <div class="bg-[#f8f8f8] relative">
+        <div class="relative h-full w-full flex flex-col lg:flex-row lg:items-end">
+            <div x-data="fadeIn()" 
+            x-init="hide($el.children)" 
+            x-intersect.once.margin.-20%="fadeInStagger($el)"
+            class="mx-auto relative flex justify-center items-end lg:w-full lg:flex-1 lg:order-2">
+                <figure 
+                    {{ partial:statamic-peak-tools::components/picture :image="block:image" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
+                </figure>
+            </div>
+            <div class="px-8 lg:px-12 pb-12 flex-1 flex flex-col justify-end items-center lg:items-start lg:pb-24 lg:flex-initial">
+                {{ partial:typography/h2 :content="cta_title" color="text-black" }}
+                {{ partial:components/button :label="cta_label" class="mt-4" }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End: /components/_cta_render.antlers.html -->
