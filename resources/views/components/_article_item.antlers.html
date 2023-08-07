@@ -7,20 +7,27 @@
 <!-- /components/_article_item.antlers.html -->
 <article x-data="fadeIn()" 
 x-init="hide($el)" 
-x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col {{ class }}">
-    {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
-    
-    {{ if large }}
-        <figure class="relative overflow-hidden aspect-[3/4] md:aspect-[9/7] mb-4">
-            {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw'" aspect_ratio="3/4 large:9/7" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
-        </figure>
-    {{ else }}
-        <figure class="relative overflow-hidden aspect-[3/4] {{ count %2 ? 'md:aspect-[8/7]' : 'md:aspect-[5/3]' }} md:aspect-[5/3] mb-4">
-            {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="3/4 large:5/3 { count %2 ? 'large:8/7' : 'large:5/3' }" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
-        </figure>
-    {{ /if }}
+x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex md:flex-col {{ class }}">
+    <div class="relative mr-4 w-40 md:mr-0 md:w-full">
+        {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
+        
+        {{ if large }}
+            <figure class="relative overflow-hidden aspect-[3/4] md:aspect-[9/7] mb-4">
+                {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw'" aspect_ratio="3/4 large:9/7" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
+            </figure>
+        {{ elseif square }}
+            <figure class="relative overflow-hidden aspect-[3/4] md:aspect-[1/1] mb-4">
+                {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="3/4 large:1/1" lazy="true" cover="true" class="group-hover:opacity-50 transition-opacity duration-300" }}
+            </figure>
+        {{ else }}
+            <figure class="relative overflow-hidden aspect-[3/4] {{ count %2 ? 'md:aspect-[8/7]' : 'md:aspect-[5/3]' }} mb-4">
+                {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="30vw" aspect_ratio="3/4 " lazy="true" cover="true" class="md:hidden group-hover:opacity-50 transition-opacity duration-300" }}
+                {{ partial:statamic-peak-tools::components/picture :image="thumbnail ?? image" sizes="(min-width: 1280px) 430px, (min-width: 768px) 30vw, 90vw" aspect_ratio="{ count %2 ? '8/7' : '5/3' }" lazy="true" cover="true" class="hidden md:block group-hover:opacity-50 transition-opacity duration-300" }}
+            </figure>
+        {{ /if }}
+    </div>
 
-    <div class="flex flex-col gap-y-2">
+    <div class="flex-1 flex flex-col gap-y-2">
         <div class="flex justify-between">
             {{ partial:typography/caption :caption="collection:title" class="text-sm" }}
             {{ redirect ?= { svg:link-out class="w-4 h-4 text-black group-hover:text-blue motion-safe:transition" } }}

@@ -32,7 +32,7 @@ fields:
       visibility: visible
       hide_display: false
   -
-    handle: press
+    handle: thought_leadership
     field:
       max_items: 5
       mode: default

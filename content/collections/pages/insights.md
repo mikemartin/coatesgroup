@@ -17,8 +17,8 @@ page_builder:
       - 7f28aa3c-4821-44e8-8fe2-f69896bd58f5
       - 409452e6-fd28-4466-a7c7-b6947b1b8ed6
       - 9f21f438-65a5-47d4-a3ca-d7417bbcb6a1
-      - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
       - 4ac941c0-c57a-46ee-8a52-06138a57890c
+      - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
     topics:
       - news
       - events
@@ -54,7 +54,7 @@ page_builder:
     text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
     type: thought_leadership
     enabled: true
-    press:
+   thought_leadership:
       - 48b1173c-52e4-4d47-985d-ee278e932ba7
       - 753e810d-9a58-44b9-99d3-68e5780eec0b
       - 950e10c9-812f-465e-9b0f-77db58da8cc6
@@ -78,5 +78,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691295045
+updated_at: 1691369925
 ---
