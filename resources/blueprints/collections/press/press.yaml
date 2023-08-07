@@ -37,17 +37,26 @@ tabs:
               width: 50
               folder: press/thumbnails
           -
+            handle: redirect
+            field:
+              type: link
+          -
             handle: teaser
             field: common.text_plain
             config:
               display: Teaser
               character_limit: '250'
+              unless:
+                redirect: 'not null'
           -
             handle: article
             field: article.article
             config:
               validate:
                 - required
+                - sometimes
+              unless:
+                redirect: 'not null'
   seo:
     display: SEO
     sections:
@@ -124,6 +133,17 @@ tabs:
               columns: 1
               rows: 1
           -
+            handle: source
+            field:
+              type: text
+              display: 'Source'
+              validate:
+                - required
+                - sometimes
+              listable: true
+              if:
+                redirect: 'not null'
+          -
             handle: author
             field:
               max_items: 1
@@ -137,3 +157,5 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              unless:
+                redirect: 'not null'

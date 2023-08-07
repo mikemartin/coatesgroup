@@ -29,3 +29,10 @@ preferences:
       after_save: continue_editing
     press:
       per_page: 500
+    thought_leadership:
+      columns:
+        - title
+        - slug
+        - date
+        - status
+        - redirect
