@@ -5,7 +5,7 @@
 {{ elseif hero_type == 'case-study' }}
 	{{ partial:components/background_hero 
 		:hero_image="image" 
-		:headline="title"
+		:headline="headline ?? title"
 		show_breadcrumb="true"
 		show_client="true" }}
 {{ elseif hero_type == 'article' }}

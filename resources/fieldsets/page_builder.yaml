@@ -67,6 +67,13 @@ fields:
               fields:
                 -
                   import: block_carousel
+            products_carousel:
+              display: Products Carousel
+              instructions: 'Carousel of products with image and text'
+              icon: null
+              fields:
+                -
+                  import: products_carousel
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'

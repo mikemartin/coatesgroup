@@ -4,7 +4,7 @@
 #}}
 
 <!-- /navigation/_breadcrumbs.antlers.html -->
-<nav aria-label="breadcrumb" class="{{ class }}">
+<nav aria-label="breadcrumb" class="{{ class }} {{ color ?? 'text-charcoal' }}">
     <ol
         vocab="https://schema.org/"
         typeof="BreadcrumbList"
@@ -26,14 +26,14 @@
                         <span property="name">{{ title }}</span>
                     </a>
                     <meta property="position" content="{{ count }}">
-                    <span class="px-2 {{ color ?? 'text-charcoal' }}" aria-hidden>
+                    <span class="px-2" aria-hidden>
                         {{ svg:chevron-right class="w-2 h-3"}}
                     </span>
                 {{ else }}
                     <a
                         href="{{ url }}"
                         property="name"
-                        class="{{ color ?? 'text-charcoal' }} font-bold "
+                        class="font-bold "
                         aria-current="page"
                     >
                         <span property="name">{{ title }}</span>

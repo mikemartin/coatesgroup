@@ -7,11 +7,6 @@
 
 <!-- /case_studies/show.antlers.html -->
 <main class="outer-grid" id="content">
-    <div class="fluid-container">
-        {{ partial:navigation/breadcrumbs }}
-        {{ partial:typography/h1 :content="title" }}
-    </div>
-
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}
     {{ /page_builder }}

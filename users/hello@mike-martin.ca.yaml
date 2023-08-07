@@ -36,3 +36,6 @@ preferences:
         - date
         - status
         - redirect
+  assets:
+    images:
+      mode: grid

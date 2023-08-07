@@ -1,0 +1,37 @@
+title: 'Products Carousel'
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      display: Title
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
+    handle: buttons
+    field: buttons.buttons
+  -
+    handle: products
+    field:
+      mode: default
+      create: true
+      collections:
+        - products
+      display: Products
+      type: entries
+      icon: entries
+      listable: hidden
+      instructions_position: below
+      instructions: 'Select entries or leave empty to show all.'
+      visibility: visible
+      always_save: false

@@ -18,20 +18,23 @@ tabs:
               validate:
                 - required
           -
-            handle: client
+            handle: headline
             field:
-              max_items: 1
-              mode: default
-              create: true
-              collections:
-                - clients
-              type: entries
-              display: Client
-              icon: entries
+              input_type: text
+              antlers: false
+              type: text
+              display: Headline
+              icon: text
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              width: 50
       -
         display: 'Page builder'
         fields:
@@ -87,6 +90,21 @@ tabs:
               validate:
                 - required
           -
+            handle: client
+            field:
+              max_items: 1
+              mode: default
+              create: true
+              collections:
+                - clients
+              type: entries
+              display: Client
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
             handle: experience
             field:
               max_items: 1
@@ -133,8 +151,3 @@ tabs:
               inline: false
               columns: 1
               rows: 1
-          -
-            handle: image
-            field: common.image
-            config:
-              mode: grid
