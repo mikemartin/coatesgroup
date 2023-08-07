@@ -48,7 +48,13 @@ if (!supportMasonry) {
                 '768': elem.dataset.columns,
             }
         });
+
+        macy.runOnImageLoad(function () {
+            macy.recalculate(true, true);
+        }, true);
     });    
+
+    
 }
 
 // Call Alpine.

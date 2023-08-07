@@ -11,6 +11,7 @@
         class="flex text-lg"
     >
         {{ nav:breadcrumbs include_home="false" }}
+            {{ unless (title == 'Topics') || (title == 'Resources') }}
             <li
                 class="flex items-baseline"
                 property="itemListElement"
@@ -40,6 +41,7 @@
                     <meta property="position" content="{{ count }}">
                 {{ /unless }}
             </li>
+            {{ /unless}}
         {{ /nav:breadcrumbs }}
     </ol>
 </nav>

@@ -1,0 +1,25 @@
+{{#
+    @name Button Tag
+    @desc A single button tag component.
+#}}
+
+<!-- /components/_button_tag.antlers.html -->
+{{ if label }}
+    <{{ as or 'a' }}
+        {{ slot:attributes }}
+        class="
+        font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+        inline-flex items-center py-4 px-8 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+            {{ if selected }}
+                border border-blue bg-blue text-white focus-visible:ring-primary
+            {{ else }}
+                border border-charcoal-40 text-neutral w-medium hover:font-medium focus-visible:ring-primary
+            {{ /if }}
+            {{ class }}
+        "
+        {{ !faux ?= { partial:snippets/button_attributes } }}
+    >
+        {{ label }}
+    </{{ as or 'a' }}>
+{{ /if }}
+<!-- End: /components/_button_tag.antlers.html -->

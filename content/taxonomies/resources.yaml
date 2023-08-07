@@ -2,5 +2,5 @@ title: Resources
 preview_targets:
   -
     label: Term
-    url: '{permalink}'
+    url: '/thought-leadership/resources/{slug}'
     refresh: false

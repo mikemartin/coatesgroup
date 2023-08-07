@@ -35,4 +35,4 @@ tabs:
               required: true
               validate:
                 - required
-title: Resource
+title: Topic

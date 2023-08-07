@@ -12,7 +12,10 @@
 	{{ partial:components/background_hero 
 		:hero_image="image" 
 		:headline="title"
-		show_topic="true"
+		:show_topic="segment_1 == 'blog'"
+		:show_resource="segment_1 == 'thought-leadership'"
+		:show_press="segment_1 == 'press'"
+		:show_awards="segment_1 == 'awards'"
 		show_date="true" }}
 {{ else }}
 	{{ partial:components/hero :hero_color="hero_color:label" }}

@@ -2,5 +2,5 @@ title: Topics
 preview_targets:
   -
     label: Term
-    url: '{permalink}'
+    url: '/blog/topics/{slug}'
     refresh: false

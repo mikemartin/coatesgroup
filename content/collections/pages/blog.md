@@ -1,7 +1,7 @@
 ---
 id: 3d725beb-1cbc-4f1b-b377-48978e5836cf
 blueprint: page
-template: insights/archive
+template: blog/index
 title: Blog
 headline: '1 Liner about Our Blogs section'
 enable_hero: false

@@ -20,3 +20,4 @@ Route::statamic('/feed/insights', 'feed/feed', [
 ]);
 
 Route::statamic('/insights/type', 'insights/type');
+

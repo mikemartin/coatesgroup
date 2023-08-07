@@ -27,10 +27,10 @@
                 >
                 All
             </button>
-            {{ topics = block:topics ? block:topics : {taxonomy:topics } }}
+            {{ topics = block:topics ? block:topics : {taxonomy:topics collection="blog" } }}
 
             {{ topics }}
-                <a href="{{ url }}"
+                <a href="/blog/topics/{{ slug }}"
                     class="
                         font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
                         inline-flex items-center py-4 px-6 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
@@ -50,7 +50,7 @@
         </div>
 
         <nav class="mt-10 text-center">
-            {{ partial:components/button label="{trans:strings.blog_all}" link_type="url" url="/insights/blog" }}
+            {{ partial:components/button label="{trans:strings.blog_all}" link_type="url" url="/blog" }}
         </nav>
     </div>
 </section>

@@ -1,7 +1,7 @@
 ---
 id: f581a7bb-5f69-4a01-bee3-47e82ee9a5b6
 blueprint: page
-template: insights/archive
+template: thought_leadership/index
 title: 'Thought Leadership'
 headline: '1 Liner about Thought Leadership section'
 enable_hero: false
