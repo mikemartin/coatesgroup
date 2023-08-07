@@ -54,7 +54,7 @@ page_builder:
     text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
     type: thought_leadership
     enabled: true
-   thought_leadership:
+    thought_leadership:
       - 48b1173c-52e4-4d47-985d-ee278e932ba7
       - 753e810d-9a58-44b9-99d3-68e5780eec0b
       - 950e10c9-812f-465e-9b0f-77db58da8cc6
