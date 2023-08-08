@@ -67,6 +67,9 @@ tree:
     title: 'Secondary Tags'
     url: secondary-tags
   -
+    title: 'Dropdown'
+    url: dropdown
+  -
     id: 6299871d-8f05-4b26-9579-5c818ee3b004
     title: 'Slider Navigation'
     url: slider-navigation

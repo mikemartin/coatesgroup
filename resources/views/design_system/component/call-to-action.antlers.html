@@ -35,12 +35,20 @@
                         </span>
                     </a>
                 </li>
+                <li class="relative leading-none shrink-0">
+                    <a href="#call-to-action" @click="variant = 'render'" :class="variant == 'render' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'render'" class="w-4 h-4 bg-black rounded-full mr-3" x-cloak></span>
+                            Render
+                        </span>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
     <div class="mt-16 relative">
         <div x-show="variant == 'red'" x-cloak>
-            {{ partial:components/call_to_action 
+            {{ partial:components/cta_illustration
                 cta_title="Be part of our team"
                 cta_image="/images/careers/be-part-of-our-team-01.svg"
                 cta_color="Red" 
@@ -49,7 +57,7 @@
             }}
         </div>
         <div x-show="variant == 'green'" x-cloak>
-            {{ partial:components/call_to_action 
+            {{ partial:components/cta_illustration
                 cta_title="Be part of our team"
                 cta_image="/images/careers/be-part-of-our-team-01.svg"
                 cta_color="Green" 
@@ -57,7 +65,7 @@
                 anchor="green" }}
         </div>
         <div x-show="variant == 'blue'" x-cloak>
-            {{ partial:components/call_to_action 
+            {{ partial:components/cta_illustration
                 cta_title="Be part of our team"
                 cta_image="/images/careers/be-part-of-our-team-01.svg"
                 cta_color="Blue" 
@@ -65,12 +73,18 @@
                 anchor="blue" }}
         </div>
         <div x-show="variant == 'yellow'" x-cloak>
-            {{ partial:components/call_to_action 
+            {{ partial:components/cta_illustration 
                 cta_title="Be part of our team"
                 cta_image="/images/careers/be-part-of-our-team-01.svg"
                 cta_color="Yellow" 
                 cta_label="View Open Roles"
                 anchor="yellow" }}
+        </div>
+        <div x-show="variant == 'render'" x-cloak>
+            {{ partial:components/cta_render 
+                cta_title="Got a project with us?"
+                cta_image="/images/call-to-action/product-render.jpg"
+                cta_label="Get in touch" }}
         </div>
     </div>
 </div>

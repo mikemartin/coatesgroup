@@ -40,8 +40,8 @@
         
       }
 
-      .dark {
-        --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal));
+      [type="checkbox"]:checked {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%20d%3D%22M17.293%2018%209%209.707.707%2018H0v-.707L8.293%209%200%20.707V0h.707L9%208.293%2017.293%200H18v.707L9.707%209%2018%2017.293V18h-.707Z%22%20clip-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E"); 
       }
 }
 
@@ -74,4 +74,7 @@
 }
 
 @layer utilities {
+  .dark {
+    --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal));
+  }
 }

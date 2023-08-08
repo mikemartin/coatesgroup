@@ -1,0 +1,37 @@
+<div x-popover class="relative inline-block text-left">
+    <button
+      x-popover:button
+      class="inline-flex border border-black font-mono text-black hover:text-white hover:bg-black focus-visible:ring-primary items-center py-3 px-5 leading-none no-underline select-none whitespace-nowrap motion-safe:transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2"
+    >
+      <span>Industry</span>
+      <div :class="{ 'scale-y-[-1]': $popover.isOpen }" class="ml-1 motion-safe:transition-transform">
+        {{ svg:chevron_down class="w-3 ml-2.5 overflow-visible stroke-current" aria-hidden="true" }}
+      </div>
+    </button>
+
+    <div
+      x-popover:panel
+      x-cloak
+      x-collapse
+      class="absolute z-10 mt-2 max-h-60 overflow-auto bg-white p-4 ring-1 ring-black focus:outline-none"
+    >
+      <form class="space-y-3.5">
+        {{ collection:products }}
+          <div class="group flex items-center">
+            <input
+              id="filter-products-{{ slug }}"
+              name="products[]"
+              value="{{ slug }}"
+              type="checkbox"
+              class="h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
+            />
+            <label
+              for="filter-products-{{ slug }}"
+              class="w-full flex items-center ml-2 font-mono group-hover:font-medium text-black whitespace-nowrap">
+              {{ title }}
+            </label>
+          </div>
+        {{ /collection:products }}
+      </form>
+    </div>
+</div>
