@@ -1,0 +1,32 @@
+<div x-disclosure class="border-b border-charcoal-20 py-4 {{ class }}">
+    <h3 class="-my-4 flow-root">
+      <button x-disclosure:button type="button"
+        class="group flex w-full items-center justify-between font-mono hover:font-medium text-black py-4 px-5">
+        {{ label }}
+        <div :class="{ 'scale-y-[-1]': $disclosure.isOpen }" class="ml-2.5 motion-safe:transition-transform">
+            {{ svg:chevron_down class="w-3 overflow-visible stroke-current group-hover:stroke-[1.5px]" aria-hidden="true" }}
+        </div>
+      </button>
+    </h3>
+
+    <div x-disclosure:panel x-collapse class="pt-4">
+      <div class="space-y-4">
+        {{ collection:products }}
+          <div class="group flex items-center px-5">
+            <input 
+                id="filter-mobile-{{ label|slugify }}-{{ slug }}" 
+                name="{{ label|slugify }}[]" 
+                value="{{ slug }}"
+                type="checkbox"
+                class="h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
+            />
+            <label
+                for="filter-mobile-{{ label|slugify }}-{{ slug }}"
+                class="w-full flex items-center ml-2 font-mono group-hover:font-medium text-black whitespace-nowrap">
+                {{ title }}
+            </label>
+          </div>
+        {{ /collection:products }}
+      </div>
+    </div>
+</div>
