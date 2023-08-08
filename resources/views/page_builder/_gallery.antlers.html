@@ -5,10 +5,10 @@
 #}}
 
 <!-- /page_builder/_gallery.antlers.html -->
-<section class="fluid-container">
+<section class="overflow-hidden">
     {{ gallery = block:rows }}
 
-    <div class="hidden md:block md:space-y-16 lg:space-y-28">
+    <div class="hidden md:block md:space-y-16 lg:space-y-28 fluid-container">
         {{ gallery }}
             <div x-data="fadeIn()"
             x-init="hide($el.children)"
@@ -51,7 +51,7 @@
         {{ /gallery }}
     </div>
 
-    <div class="md:hidden">
+    <div class="md:hidden fluid-container">
         {{ partial:components/gallery_carousel }}
     </div>
 </section>
