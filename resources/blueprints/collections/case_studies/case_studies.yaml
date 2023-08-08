@@ -35,6 +35,7 @@ tabs:
             config:
               mode: grid
               width: 50
+              folder: case-studies
       -
         display: 'Page builder'
         fields:
@@ -93,7 +94,7 @@ tabs:
             handle: client
             field:
               max_items: 1
-              mode: default
+              mode: select
               create: true
               collections:
                 - clients
@@ -151,3 +152,12 @@ tabs:
               inline: false
               columns: 1
               rows: 1
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - case_studies
+              max_items: 1
+              listable: false
+              localizable: true

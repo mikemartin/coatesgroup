@@ -7,8 +7,8 @@
 <!-- /page_builder/_clients.antlers.html -->
 <section x-data="horizontalLoop()" x-init="
     loop1 = horizontalLoop($refs.loop1.children, {repeat: -1}), 
-    loop2 = horizontalLoop($refs.loop2.children, {repate: -1, reversed: true });" 
-    class="space-y-4 md:space-y-8">
+    loop2 = horizontalLoop($refs.loop2.children, {repeat: -1, reversed: true });" 
+    class="space-y-4 md:space-y-8 overflow-hidden">
     {{ rows:0 }}
         <ul x-ref="loop1" role="list" class="w-full flex justify-center">
             {{ loop times="2" }}

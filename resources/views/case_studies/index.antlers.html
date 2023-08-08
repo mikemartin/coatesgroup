@@ -18,13 +18,15 @@
 
 {{ section:index_content }}
     <!-- /case_studies/index.antlers.html -->
-    <div class="fluid-container grid md:grid-cols-12 gap-12">
+    <div class="fluid-container grid md:grid-cols-12 gap-10">
         {{ collection:case_studies sort="date:desc" paginate="true" limit="10" as="items" }}
             {{ unless no_results }}
                 {{ items }}
-                    <div class="md:col-span-6">
-                        <a class="underline" href="{{ url }}">{{ title }}</a>
-                    </div>
+                    {{ if count % 3 == 0 }}
+                        {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" }}
+                    {{ else }}
+                        {{ partial:components/case_study class="md:col-span-6" }}
+                    {{ /if }}
                 {{ /items }}
             {{ else }}
                 <div class="md:col-span-6">

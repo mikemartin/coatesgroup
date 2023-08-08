@@ -32,10 +32,16 @@
         --swiper-pagination-bullet-horizontal-gap: 4px;
         --swiper-pagination-bullet-vertical-gap: 6px;
 
+        
+
         @media screen(sm) {
           --swiper-pagination-bullet-width: 96px;
         }
         
+      }
+
+      .dark {
+        --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal));
       }
 }
 

@@ -19,63 +19,23 @@ x-init="swiper = new Swiper($refs.container, {
   },
   breakpoints: {
     640: {
-        slidesPerView: 2,
-        spaceBetween: 40
+        slidesPerView: 1.65,
+        spaceBetween: 60
     }
   }
 })" class="w-full bg-black dark py-16 md:py-24 overflow-hidden">
     <div class="fluid-container">
         {{ if block:title }}
-        <div x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" class="grid md:grid-cols-12 gap-8 md:col-span-12">
-            {{ partial:typography/h2 :content="block:title" class="md:col-span-6" }}
+        <div x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)">
+            {{ partial:typography/h2 :content="block:title" class="max-w-[20ch]" }}
         </div>
         {{/if}}
 
-        <div class="swiper mt-8 !pb-14" x-ref="container">
+        <div class="swiper mt-8 md:mt-14 !pb-14 !overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
                 {{ block:case_studies }}
                     <div class="swiper-slide">
-                        <div
-                            class="
-                                relative aspect-[7/9] md:aspect-[8/5] flex flex-col justify-between 
-                            "
-                        >
-                            <figure class="absolute inset-0 overflow-hidden">
-                                {{ partial
-                                    src="statamic-peak-tools::components/picture"
-                                    sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                                    aspect_ratio="7/9 large:8/5"
-                                    cover="true"
-                                    lazy="true"
-                                }}
-                            </figure>
-                            <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-5% to-black/[85%] to-70%"></div>
-                            <div class="p-5 relative h-full flex flex-col justify-between items-start">
-                                {{ if experience }}
-                                    <div class="relative z-10">
-                                        {{ experience }}
-                                            {{ partial:components/tag }}
-                                        {{ /experience }}
-                                    </div>
-                                {{ /if }}
-                                <div>
-                                    <span id="{{ title | slugify }}">
-                                        {{ partial:typography/h3 color="text-white" :content="title" }}
-                                    </span>
-                                    {{ if client }}
-                                        {{ partial:typography/annotation :content="client:title" class="mt-1" }}
-                                    {{ /if }}
-                                    {{ products ?= {partial:components/tags :tags="products" tag_type="secondary" class="z-10 mt-5" } }}
-                                </div>
-                                
-                            </div>
-                            <a {{ partial:snippets/button_attributes }} aria-labelledby="{{ title | slugify }}" class="focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary">
-                                <span class="absolute inset-0"></span>
-                            </a>
-                            
-                            
-                            
-                        </div>
+                        {{ partial:components/case_study }}
                     </div>
                 {{ /block:case_studies }}
             </div>

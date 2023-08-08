@@ -1,14 +1,21 @@
-title: Case Studies
-route: '/{mount}/{slug}'
-layout: layout
+title: 'Case Studies'
 template: case_studies/show
+layout: layout
+mount: a5663a02-3b33-48ec-8a46-625a20d4ccf3
 revisions: false
+route: '/{mount}/{slug}'
 date: true
 sort_dir: asc
 date_behavior:
   past: public
   future: private
-mount: a5663a02-3b33-48ec-8a46-625a20d4ccf3
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
 inject:
   enable_hero: true
   hero_type: case-study
+structure:
+  root: false
