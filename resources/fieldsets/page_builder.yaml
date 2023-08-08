@@ -136,6 +136,13 @@ fields:
               fields:
                 -
                   import: images_grid
+            gallery:
+              display: 'Gallery'
+              instructions: 'A minimal image gallery.'
+              icon: null
+              fields:
+                -
+                  import: gallery
             index_content:
               display: 'Index content'
               instructions: 'Render the currently mounted entries if available.'

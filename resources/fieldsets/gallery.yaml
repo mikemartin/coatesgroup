@@ -1,0 +1,47 @@
+title: Gallery
+fields:
+  -
+    handle: rows
+    field:
+      fields:
+        -
+          handle: images
+          field:
+            mode: table
+            max_rows: 2
+            add_row: 'Add Image'
+            reorderable: true
+            fullscreen: true
+            type: grid
+            display: Images
+            icon: grid
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            fields:
+              -
+                handle: image
+                field: common.image
+              -
+                handle: display
+                field:
+                  type: select
+                  options:
+                    small: Small
+                    wide: Wide
+                    tall: Tall
+                    large: Large
+      mode: table
+      add_row: 'Add image row'
+      reorderable: true
+      display: Rows
+      type: grid
+      icon: grid
+      listable: hidden
+      instructions_position: above
+      replicator_preview: false
+      visibility: visible
+      always_save: false
+      fullscreen: true
+      hide_display: false

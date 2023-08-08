@@ -23,14 +23,19 @@
         --swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
         --swiper-pagination-progressbar-size: 4px;
         --swiper-pagination-bullet-size: 8px;
-        --swiper-pagination-bullet-width: 96px;
+        --swiper-pagination-bullet-width: 50px;
         --swiper-pagination-bullet-height: 8px;
         --swiper-pagination-bullet-border-radius: 0px;
-        --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal));
+        --swiper-pagination-bullet-inactive-color: rgb(var(--color-charcoal-20));
         --swiper-pagination-bullet-inactive-opacity: 1;
         --swiper-pagination-bullet-opacity: 1;
         --swiper-pagination-bullet-horizontal-gap: 4px;
         --swiper-pagination-bullet-vertical-gap: 6px;
+
+        @media screen(sm) {
+          --swiper-pagination-bullet-width: 96px;
+        }
+        
       }
 }
 

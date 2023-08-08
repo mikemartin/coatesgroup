@@ -1,0 +1,34 @@
+<div x-data="{swiper: null}"
+    x-init="swiper = new Swiper($refs.container, {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+    })">
+    <div class="swiper relative !pb-10 !overflow-x-visible" x-ref="container">
+        <div class="swiper-wrapper">
+            {{ gallery }}
+                {{ images }}
+                    <div class="swiper-slide !h-auto bg-charcoal {{ (display == 'tall') || (display == 'small')  ?= '!w-1/2' }}">
+                        {{ partial
+                            src="statamic-peak-tools::components/picture"
+                            sizes="{{ (display == 'tall') || (display == 'small')  ? '50vw' : '90vw' }}"
+                            aspect_ratio="
+                                { switch(
+                                    (display == 'small') => '4/5',
+                                    (display == 'tall') => '4/5',
+                                    () => '7/5'
+                                )}
+                            "
+                            cover="true"
+                        }}
+                    </div>
+                {{ /images }}
+            {{ /gallery }}
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination !text-left absolute !bottom-0"></div>
+    </div>
+</div>
