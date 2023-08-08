@@ -49,8 +49,6 @@ tabs:
               visibility: visible
               hide_display: false
               width: 50
-              validate:
-                - required
           -
             handle: function
             field:
