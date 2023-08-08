@@ -1,0 +1,151 @@
+title: 'Globals SEO: Page Meta - Titles'
+fields:
+  -
+    handle: title_separator
+    field:
+      options:
+        ' | ': '|'
+        ' - ': '-'
+        ' / ': /
+        ' :: ': '::'
+        ' > ': '>'
+        ' ~ ': '~'
+      clearable: false
+      multiple: false
+      searchable: true
+      localizable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      type: select
+      instructions: 'Select the character to separate the page title and site title.'
+      instructions_position: below
+      width: 33
+      listable: hidden
+      display: Separator
+  -
+    handle: site_name
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: 'Website title'
+      instructions: "The title for the website. Defaults to Laravel's App Name."
+      instructions_position: below
+      width: 66
+  -
+    handle: change_page_title
+    field:
+      fields:
+        -
+          handle: collection
+          field:
+            max_items: 1
+            mode: select
+            display: Collection
+            type: collections
+            icon: collections
+            instructions: 'The collection you want to change the title for.'
+            width: 33
+            listable: hidden
+        -
+          handle: manipulate_title
+          field:
+            options:
+              collection_title: 'Add collection title'
+              custom_text: 'Add custom text'
+              replace_title: 'Replace title'
+            multiple: false
+            max_items: 1
+            clearable: false
+            searchable: false
+            taggable: false
+            push_tags: false
+            cast_booleans: false
+            display: 'Manipulate title'
+            type: select
+            icon: select
+            instructions: 'How to manipulate the title.'
+            width: 33
+            listable: hidden
+        -
+          handle: custom_text
+          field:
+            input_type: text
+            antlers: true
+            display: Text
+            type: text
+            icon: text
+            instructions: 'The custom text. You can use antlers tags in here.'
+            width: 33
+            listable: hidden
+            if:
+              manipulate_title: 'isnt collection_title'
+      mode: table
+      add_row: 'Add collection default'
+      reorderable: true
+      type: grid
+      icon: grid
+      localizable: true
+      display: 'Manipulate collection title'
+      instructions: 'Select collections where you want to add something to be part of the page title. For example: _Entry title - **Custom text** - Site title_. You can also replace the whole title using the _Replace title_ option and optionally add Antlers variables.'
+      listable: hidden
+  -
+    handle: change_term_title
+    field:
+      fields:
+        -
+          handle: taxonomy
+          field:
+            max_items: 1
+            mode: select
+            display: Taxonomies
+            type: taxonomies
+            icon: taxonomies
+            instructions: 'The taxonomy you want to change the title for.'
+            width: 33
+            listable: hidden
+        -
+          handle: manipulate_title
+          field:
+            options:
+              taxonomy_title: 'Add taxonomy title'
+              collection_title: 'Add collection title'
+              custom_text: 'Add custom text'
+              replace_title: 'Replace title'
+            multiple: false
+            max_items: 1
+            clearable: false
+            searchable: false
+            taggable: false
+            push_tags: false
+            cast_booleans: false
+            display: 'Manipulate title'
+            type: select
+            icon: select
+            instructions: 'How to manipulate the title.'
+            width: 33
+            listable: hidden
+        -
+          handle: custom_text
+          field:
+            input_type: text
+            antlers: true
+            display: Text
+            type: text
+            icon: text
+            width: 33
+            instructions: 'The custom text. You can use antlers tags in here.'
+            listable: hidden
+            if:
+              manipulate_title: 'isnt collection_title'
+      mode: table
+      add_row: 'Add taxonomy default'
+      reorderable: true
+      type: grid
+      icon: grid
+      localizable: true
+      display: 'Manipulate taxonomy title'
+      instructions: 'Select taxonomies where you want to add something to be part of the term title. For example: _Term title - **Custom text** - Site title_. You can also replace the whole title using the _Replace title_ option and optionally add Antlers variables.'
+      listable: hidden

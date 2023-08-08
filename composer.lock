@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "866d86a17c9418dd02760e703108c825",
+    "content-hash": "95a0569b3c287ddba61cad48e5d27c9d",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -5711,17 +5711,20 @@
         },
         {
             "name": "studio1902/statamic-peak-commands",
-            "version": "v2.1",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-commands.git",
-                "reference": "0b11c475c9da466144cb35ef2254ea4b5a890e4b"
+                "reference": "e4689723bd8d49a07b79da7d1c218a5d1b5f5a94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-commands/zipball/0b11c475c9da466144cb35ef2254ea4b5a890e4b",
-                "reference": "0b11c475c9da466144cb35ef2254ea4b5a890e4b",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-commands/zipball/e4689723bd8d49a07b79da7d1c218a5d1b5f5a94",
+                "reference": "e4689723bd8d49a07b79da7d1c218a5d1b5f5a94",
                 "shasum": ""
+            },
+            "require": {
+                "laravel/prompts": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -5743,7 +5746,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-commands/issues",
-                "source": "https://github.com/studio1902/statamic-peak-commands/tree/v2.1"
+                "source": "https://github.com/studio1902/statamic-peak-commands/tree/v2.3.1"
             },
             "funding": [
                 {
@@ -5751,20 +5754,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-05-11T12:02:46+00:00"
+            "time": "2023-08-05T08:21:30+00:00"
         },
         {
             "name": "studio1902/statamic-peak-seo",
-            "version": "v2.6.2",
+            "version": "v5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-seo.git",
-                "reference": "e0318646534e52c0e814d306d436c1b574adda47"
+                "reference": "5075cd856f2d08ba422a9fd8573798e7105af2cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-seo/zipball/e0318646534e52c0e814d306d436c1b574adda47",
-                "reference": "e0318646534e52c0e814d306d436c1b574adda47",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-seo/zipball/5075cd856f2d08ba422a9fd8573798e7105af2cd",
+                "reference": "5075cd856f2d08ba422a9fd8573798e7105af2cd",
                 "shasum": ""
             },
             "type": "library",
@@ -5787,7 +5790,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-seo/issues",
-                "source": "https://github.com/studio1902/statamic-peak-seo/tree/v2.6.2"
+                "source": "https://github.com/studio1902/statamic-peak-seo/tree/v5.0"
             },
             "funding": [
                 {
@@ -5795,7 +5798,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-04T08:55:45+00:00"
+            "time": "2023-08-04T12:39:22+00:00"
         },
         {
             "name": "studio1902/statamic-peak-tools",
