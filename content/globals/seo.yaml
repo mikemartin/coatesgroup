@@ -1,6 +1,6 @@
 title: SEO
 data:
-  title_separator: '-'
+  title_separator: '|'
   site_name: 'Coates Group'
   change_page_title:
     -
