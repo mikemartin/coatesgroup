@@ -1,5 +1,33 @@
 title: SEO
 data:
+  title_separator: '|'
+  site_name: 'Coates Group'
+  change_page_title:
+    -
+      id: ll1swm5r
+      collection: case_studies
+      manipulate_title: custom_text
+      custom_text: 'Case Study'
+    -
+      id: ll1v5opv
+      collection: blog
+      manipulate_title: custom_text
+      custom_text: Blog
+    -
+      id: ll1vchbg
+      collection: press
+      manipulate_title: custom_text
+      custom_text: Press
+    -
+      id: ll1verks
+      collection: thought_leadership
+      manipulate_title: custom_text
+      custom_text: 'Thought Leadership'
+    -
+      id: ll1vf386
+      collection: awards
+      manipulate_title: custom_text
+      custom_text: Awards
   noindex_local: true
   noindex_staging: true
   noindex_production: false
@@ -9,6 +37,13 @@ data:
   use_social_image_generation: false
   sitemap_collections:
     - pages
+    - awards
+    - case_studies
+    - blog
+    - press
+    - products
+    - thought_leadership
+    - experiences
   trackers_local: false
   trackers_staging: false
   trackers_production: true
