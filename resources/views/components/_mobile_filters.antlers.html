@@ -23,21 +23,23 @@
         x-transition:leave-end="translate-x-full" 
         class="relative ml-auto flex h-full w-full max-w-xl flex-col overflow-y-auto bg-white shadow-xl"
       >
-        <div class="absolute top-0 right-0 pt-4 pr-4">
-            <button type="button" @click="mobileFilterOpen = false" class="bg-gray-50 rounded-lg p-2 text-gray-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2">
-                <span class="sr-only">Close Menu</span>
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
+        <div class="flex items-center justify-between py-4 px-5">
+            {{ partial:typography/p content="Filters" class="font-medium" }}
+            <button @click.prevent.stop="mobileFilterOpen = false" class="text-black flex items-center justify-center focus:outline-none" aria-label="Close navigation">
+                <svg class="h-10 w-10 -m-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 50 50"> <path stroke="currentColor" d="M35.417 15.625 14.583 36.458m0-20.833 20.834 20.833"></path> </svg>
             </button>
         </div>
-        <form class="pb-12">
-            {{ partial:components/filter_mobile label="Industry" }}
-            {{ partial:components/filter_mobile label="Location" }}
-            {{ partial:components/filter_mobile label="Product" }}
-            {{ partial:components/filter_mobile label="Experience" }}
+
+        <form>
+            {{ partial:components/filter_mobile label="Industry" :options="industries" }}
+            {{ partial:components/filter_mobile label="Location" :options="locations" }}
+            {{ partial:components/filter_mobile label="Product" :options="products" }}
+            {{ partial:components/filter_mobile label="Experience" :options="experiences" }}
         </form>
+
+        <div class="fixed inset-x-0 bottom-0 ml-auto max-w-xl w-full px-5 py-4 bg-white">
+            {{ partial:components/button label="Show 62 Case Studies" button_type="black" class="w-full justify-center" }}
+        </div>
       </div>
     </div>
   </div>

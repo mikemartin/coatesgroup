@@ -20,6 +20,9 @@
                     ? 'text-white decoration-white focus-visible:ring-white'
                     : 'text-neutral decoration-neutral focus-visible:ring-primary'
                 }}
+            {{ elseif button_type == 'black' }}
+                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+                border border-neutral bg-black text-white font-medium focus-visible:ring-primary 
             {{ else }}
                 inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
                 {{ inverted

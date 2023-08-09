@@ -11,7 +11,7 @@
 
     <div x-disclosure:panel x-collapse class="pt-4">
       <div class="space-y-4">
-        {{ collection:products }}
+        {{ options }}
           <div class="group flex items-center px-5">
             <input 
                 id="filter-mobile-{{ label|slugify }}-{{ slug }}" 
@@ -26,7 +26,7 @@
                 {{ title }}
             </label>
           </div>
-        {{ /collection:products }}
+        {{ /options }}
       </div>
     </div>
 </div>

@@ -8,18 +8,21 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-        font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
-        inline-flex items-center py-4 px-8 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+        group font-mono focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+        inline-flex items-center justify-between py-4 px-5 leading-none no-underline select-none whitespace-nowrap hover:font-medium motion-safe:transition
             {{ if selected }}
                 border border-blue bg-blue text-white focus-visible:ring-primary
             {{ else }}
-                border border-charcoal-40 text-neutral w-medium hover:font-medium focus-visible:ring-primary
+                border border-black text-black hover:bg-black hover:text-white focus-visible:ring-primary
             {{ /if }}
             {{ class }}
         "
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
         {{ label }}
+        {{ icon ?= {svg :src="icon" class="w-4 h-4 ml-2.5 overflow-visible group-hover:stroke-[1.5px]"} }}
     </{{ as or 'a' }}>
 {{ /if }}
 <!-- End: /components/_button_tag.antlers.html -->
+
+

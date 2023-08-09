@@ -11,36 +11,42 @@
     </div>
     {{ if show_topics }}
         <div class="md:col-span-12 flex flex-wrap gap-4">
-            {{ partial:components/button_tag :selected="current_uri == '/blog'" url="/blog" label="All" }}
+            {{ partial:components/button_tag :selected="current_uri == '/blog'" url="/blog" label="All" /}}
             
             {{ taxonomy:topics collection="blog" }}
-                {{ partial:components/button_tag url="/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" }}
+                {{ partial:components/button_tag url="/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:topics }}
         </div>
     {{ /if }}
     {{ if show_resources }}
         <div class="md:col-span-12 flex flex-wrap gap-4">
-            {{ partial:components/button_tag :selected="current_uri == '/thought-leadership'" url="/thought-leadership" label="All" }}
+            {{ partial:components/button_tag :selected="current_uri == '/thought-leadership'" url="/thought-leadership" label="All" /}}
             
             {{ taxonomy:resources }}
-                {{ partial:components/button_tag url="/thought-leadership/resources/{{ slug }}" :selected="page:slug == slug" :label="title" }}
+                {{ partial:components/button_tag url="/thought-leadership/resources/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:resources }}
         </div>
     {{ /if }}
     {{ if show_filters }}
-        <div x-data="{ mobileFilterOpen: false }" class="md:col-span-12 flex flex-wrap gap-4">
+        {{ industries = {taxonomy:industries sort="entries_count:desc" } }}
+        {{ locations = {taxonomy:locations sort="entries_count:desc" } }}
+        {{ products = {collection:products} }}
+        {{ experiences = {collection:experiences} }}
+        <div x-data="{ mobileFilterOpen: false }" class="md:col-span-12">
             {{ partial:components/mobile_filters }} 
-
-            {{ industries = {taxonomy:industries sort="entries_count:desc" } }}
-            {{ locations = {taxonomy:locations sort="entries_count:desc" } }}
-            {{ products = {collection:products} }}
-            {{ experiences = {collection:experiences} }}
-
-            {{ partial:components/button_tag :selected="current_uri == '/case-studies'" url="/case-studies" label="All work" class="w-full md:w-auto" }}
-            {{ partial:components/filter label="Industry" :options="industries" class="hidden md:block flex-1" }}
-            {{ partial:components/filter label="Location" :options="locations" class="hidden md:block flex-1" }}
-            {{ partial:components/filter label="Products" :options="products" class="hidden md:block flex-1" }}
-            {{ partial:components/filter label="Experience" :options="experiences" class="hidden md:block flex-1" }}
+            <div class="flex flex-wrap gap-4">
+                {{ partial:components/button_tag :selected="current_uri == '/case-studies'" url="/case-studies" label="All work" class="w-full sm:flex-1 md:flex-initial md:justify-center md:w-36" /}}
+                {{ partial:components/button_tag as="button" label="Filter" class="w-full sm:flex-1 md:flex-auto md:w-auto md:hidden" icon="filter" }}
+                    {{ slot:attributes }}
+                        @click="mobileFilterOpen = true"
+                    {{ /slot:attributes  }}
+                {{ /partial:components/button_tag }}
+                
+                {{ partial:components/filter label="Industry" :options="industries" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Location" :options="locations" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Products" :options="products" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Experience" :options="experiences" class="hidden md:block flex-1" }}
+            </div>
         </div>
     {{ /if }}
 </section>
