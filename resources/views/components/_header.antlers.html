@@ -28,17 +28,19 @@
         </div>
     {{ /if }}
     {{ if show_filters }}
-        <div class="md:col-span-12 flex flex-wrap gap-4">
+        <div x-data="{ mobileFilterOpen: false }" class="md:col-span-12 flex flex-wrap gap-4">
+            {{ partial:components/mobile_filters }} 
+
             {{ industries = {taxonomy:industries sort="entries_count:desc" } }}
             {{ locations = {taxonomy:locations sort="entries_count:desc" } }}
             {{ products = {collection:products} }}
             {{ experiences = {collection:experiences} }}
 
-            {{ partial:components/button_tag :selected="current_uri == '/case-studies'" url="/case-studies" label="All Work" }}
-            {{ partial:components/filter label="Industry" :options="industries" class="flex-1" }}
-            {{ partial:components/filter label="Location" :options="locations" class="flex-1" }}
-            {{ partial:components/filter label="Products" :options="products" class="flex-1" }}
-            {{ partial:components/filter label="Experience" :options="experiences" class="flex-1" }}
+            {{ partial:components/button_tag :selected="current_uri == '/case-studies'" url="/case-studies" label="All work" class="w-full md:w-auto" }}
+            {{ partial:components/filter label="Industry" :options="industries" class="hidden md:block flex-1" }}
+            {{ partial:components/filter label="Location" :options="locations" class="hidden md:block flex-1" }}
+            {{ partial:components/filter label="Products" :options="products" class="hidden md:block flex-1" }}
+            {{ partial:components/filter label="Experience" :options="experiences" class="hidden md:block flex-1" }}
         </div>
     {{ /if }}
 </section>
