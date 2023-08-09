@@ -1,10 +1,10 @@
-<div x-popover class="w-[348px] relative inline-block text-left">
+<div x-data x-popover class="{{ class ?? 'w-[348px]' }} relative inline-block text-left">
     <button
       x-popover:button
       :class="{ 'hover:text-white hover:bg-black': !$popover.isOpen }"
       class="group w-full inline-flex border border-black font-mono hover:font-medium text-black focus-visible:ring-primary items-center justify-between py-4 px-5 leading-none no-underline select-none whitespace-nowrap motion-safe:transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2"
     >
-      <span>Industry</span>
+      <span>{{ label }}</span>
       <div :class="{ 'scale-y-[-1]': $popover.isOpen }" class="ml-1 motion-safe:transition-transform">
         {{ svg:chevron_down class="w-3 ml-2.5 overflow-visible stroke-current group-hover:stroke-[1.5px]" aria-hidden="true" }}
       </div>
@@ -14,25 +14,25 @@
       x-popover:panel
       x-cloak
       x-collapse
-      class="absolute z-10 -mt-px w-full max-h-60 overflow-auto border-t-0 border border-black bg-white px-5 pt-3 pb-4 focus:outline-none"
+      class="absolute z-20 -mt-px w-full max-h-60 overflow-auto border-t-0 border border-black bg-white px-5 pt-3 pb-4 focus:outline-none"
     >
       <form class="space-y-3.5">
-        {{ collection:products }}
+        {{ options }}
           <div class="group flex items-center">
             <input
-              id="filter-products-{{ slug }}"
-              name="products[]"
+              id="filter-{{ label|slugify }}-{{ slug }}"
+              name="{{ label|slugify }}[]"
               value="{{ slug }}"
               type="checkbox"
               class="h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
             />
             <label
-              for="filter-products-{{ slug }}"
+              for="filter-{{ label|slugify }}-{{ slug }}"
               class="w-full flex items-center ml-2 font-mono group-hover:font-medium text-black whitespace-nowrap">
               {{ title }}
             </label>
           </div>
-        {{ /collection:products }}
+        {{ /options }}
       </form>
     </div>
       
