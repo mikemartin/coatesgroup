@@ -19,7 +19,7 @@
 {{ section:index_content }}
     <!-- /case_studies/index.antlers.html -->
     <div class="fluid-container grid md:grid-cols-12 gap-10">
-        {{ collection:case_studies sort="date:desc" paginate="true" limit="10" as="items" }}
+        {{ collection:case_studies sort="order" paginate="true" as="items" }}
             {{ unless no_results }}
                 {{ items }}
                     {{ if count % 3 == 0 }}
