@@ -22,17 +22,17 @@ page_builder:
   -
     id: ljwuf4kb
     title: Experiences
-    experiences:
+    sections:
       - d79b7e76-43f9-49d0-8de5-09ef01c17e5e
       - ff9d8311-380b-41a3-8521-fca66900b6bb
-    type: experiences
+    type: tab_sections
     enabled: true
   -
     id: ljwufihx
     title: Products
-    type: products
+    type: tab_sections
     enabled: true
-    products:
+    sections:
       - 10b3a0e8-9688-479e-9a82-6433aa322e55
       - 5cad4e92-02fa-476d-8ad8-429bdf2aff00
       - a9353df9-7db6-4dea-8464-bd33c13faa2a

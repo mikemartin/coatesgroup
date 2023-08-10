@@ -67,13 +67,6 @@ fields:
               fields:
                 -
                   import: block_carousel
-            link_blocks_carousel:
-              display: Link Blocks Carousel
-              instructions: 'Carousel of linkable blocks with text.'
-              icon: null
-              fields:
-                -
-                  import: link_blocks_carousel
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'
@@ -88,13 +81,13 @@ fields:
               fields:
                 -
                   import: clients
-            experiences:
-              display: Experiences
-              instructions: 'Tab sections of experiences'
+            tab_sections:
+              display: Tab Sections
+              instructions: 'Tab sections of experiences or products'
               icon: null
               fields:
                 -
-                  import: experiences
+                  import: tab_sections
             form:
               display: Form
               instructions: 'Select and render a form.'
@@ -157,6 +150,13 @@ fields:
               fields:
                 -
                   import: link_blocks
+            products:
+              display: 'Products'
+              instructions: 'List of products with text.'
+              icon: link
+              fields:
+                -
+                  import: products
             offices:
               display: Offices
               instructions: 'List offices.'
@@ -170,13 +170,6 @@ fields:
               fields:
                 -
                   import: people
-            products:
-              display: Products
-              instructions: 'Tab sections of products'
-              icon: null
-              fields:
-                -
-                  import: products
         text:
           display: Text
           instructions: 'Text based blocks.'

@@ -1,0 +1,87 @@
+{{#
+    @name Experiences
+#}}
+
+<!-- /page_builder/_experiences.antlers.html -->
+<section x-data="{thumbs: null, swiper: null}"
+x-init="thumbs = new Swiper($refs.thumbs, {
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    freeMode: true,
+    multipleActiveThumbs: false,
+    a11y: true,
+    breakpoints: {
+        640: {
+            spaceBetween: 50
+        }
+    },
+});
+swiper = new Swiper($refs.container, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    edgeSwipeDetection: 'prevent',
+    updateOnWindowResize: true,
+    watchSlidesProgress: true,
+    slideToClickedSlide: true,
+    a11y: true,
+    freeMode: true,
+    breakpoints: {
+      640: {
+          slidesPerView: 1.25,
+          spaceBetween: 60
+      }
+    },
+    thumbs: {
+        swiper: thumbs,
+    }
+  });
+"
+class="overflow-hidden">
+    <div class="border-charcoal-20 border-t border-b">
+        <div class="fluid-container h-16 md:h-[4.5rem] flex justify-start items-center">
+            <div class="pr-6 md:pr-12">
+                <h3 class="text-lg md:text-2xl leading-tight text-black">{{ title }}</h3>
+            </div>
+            <div class="border-r border-chacoal-20 h-full md:h-1/2"></div>
+            <nav x-ref="thumbs" class="!pl-6 !md:pl-12 w-full h-full swiper relative md:!overflow-x-visible">
+                <div class="swiper-wrapper items-start justify-start">
+                    {{ sections }}
+                        <a href="javascript:void(0)" class="!w-auto swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
+                            <span class="swiper-tab-dot w-4 h-4 bg-green rounded-full mr-3"></span>
+                            {{ title }}
+                        </a>
+                    {{ /sections }}
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="fluid-container my-12 md:my-16">
+        <div class="swiper relative !overflow-x-visible" x-ref="container">
+            <div class="swiper-wrapper">
+            {{ sections }}
+                <div class="swiper-slide">
+                    <div class="flex flex-col justify-between items-start">
+                    <figure>
+                        {{ partial
+                            src="statamic-peak-tools::components/picture"
+                            sizes="(min-width: 1280px) 1150px, 90vw')"
+                            aspect_ratio="8/5 large:9/4"
+                            cover="true"
+                            lazy="true"
+                        }}
+                    </figure>
+                    {{ partial:typography/h2 class="mt-6" color="text-neutral" :content="headline" }}
+                    {{ if text }}
+                        {{ partial:typography/p class="mt-4" :content="text" }}
+                    {{ /if }}
+                    {{ partial:components/button class="mt-6" label="Read More" }}
+                    </div>
+                </div>
+            {{ /sections }}
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-- /page_builder/_experiences.antlers.html -->

@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1690886681
+updated_at: 1691647597
 page_builder:
   -
     id: lk0po80o
@@ -65,35 +65,40 @@ page_builder:
         id: lk7kncxs
         title: 'Annual Bonus Program'
         text: 'Market-competitive bonuses recognise our Crew for delivering exceptional quality and service to our clients.'
-        icon: competitive_bonus_program
+        icon: career_competitive_bonus_program
       -
         id: lk7ko1hz
         title: 'Flexible Work Options'
         text: 'Our flexible work options empower our Crew to balance personal priorities whilst facilitating connection...'
-        icon: competitive_bonus_program
+        icon: career_flexible_work_options
       -
         id: lk7ko61w
         title: 'Global Wellness Day'
         text: 'Our Wellness program gives Crew members a well-deserved break with dedicated time to rest, relax, and...'
-        icon: competitive_bonus_program
+        icon: career_global_wellness_day_off
       -
         id: lk7ko9ym
         title: 'Parental Leave'
         text: 'Our generous parental leave benefits support carers of all types – in all countries – as they balance growing their ...'
-        icon: competitive_bonus_program
+        icon: career_competitive_bonus_program
       -
         id: lk7koda3
         title: 'Growth, Learning & Development'
         text: 'We invest in your success. Our global Crew members at every level are supported in pursuing educational...'
-        icon: competitive_bonus_program
+        icon: career_competitive_bonus_program
       -
         id: lk7kohs4
         title: 'Give Back Day'
         text: 'Make an impact in your community with a paid “Give Back Day” to volunteer for a cause that’s close to your heart.'
-        icon: competitive_bonus_program
+        icon: career_competitive_bonus_program
     type: icon_list
     enabled: true
     title: 'Benefits of working with Coates'
+    color:
+      label: Grey
+      value:
+        - 'rgb(244 244 244)'
+    icon_position: left_side
   -
     id: lk7k4806
     title: 'Hear from a Coates Crew Member'
@@ -115,6 +120,7 @@ page_builder:
         button_type: button
     type: testimonial
     enabled: true
+    background: false
   -
     id: lk7k50fa
     title: 'Be part of our team'
@@ -123,9 +129,8 @@ page_builder:
       value:
         - 'rgb(0 163 227)'
     type: call_to_action
-    cta_type: 'illustration'
+    cta_type: illustration
     enabled: true
-    image: careers/be-part-of-our-team-01.svg
     label: 'View Open Roles'
     link_type: entry
     target_blank: false

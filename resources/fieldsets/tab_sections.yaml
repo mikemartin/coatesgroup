@@ -1,0 +1,25 @@
+title: Tab Sections
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Title
+  -
+    handle: sections
+    field:
+      mode: default
+      create: true
+      collections:
+        - experiences
+        - products
+      display: Sections
+      type: entries
+      icon: entries
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      always_save: false

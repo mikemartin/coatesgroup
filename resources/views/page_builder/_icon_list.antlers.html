@@ -5,25 +5,56 @@
 #}}
 
 <!-- /page_builder/_icon_list.antlers.html -->
-<section class="bg-black-10 py-12 md:py-16 lg:py-24">
+<section class="{{ switch(
+	(block:color:label == 'Black') => 'bg-black dark text-white',
+	(block:color:label == 'Grey') => 'bg-charcoal-10 text-black',
+	() => 'text-black'
+	)}} py-12 md:py-16 lg:py-24 w-full">
     <div class="fluid-container">
-        {{ if block:title }}
-            <div class="mx-auto max-w-2xl text-center">
-                {{ partial:typography/h2 :content="title" }}
+        {{ if block:title && block:text }}
+        <div 
+            x-data="fadeIn()" 
+            x-init="hide($el.children)" 
+            x-intersect.once.margin.-20%="fadeInStagger($el)" class="grid md:grid-cols-12 gap-8">
+            {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
+            <div class="md:col-start-7 md:col-span-6">
+                {{ partial:typography/p :content="block:text"}}
+                {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
             </div>
+        </div>
+        {{ else }}
+        <div class="mx-auto max-w-2xl text-center">
+            {{ partial:typography/h2 :content="title" }}
+        </div>
         {{ /if }}
         <dl x-data="fadeIn()"
         x-init="hide($el.children)"
-        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-8 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid grid-cols-1 gap-8 sm:grid-cols-12 lg:mx-0 {{ if block:icon_list|length > 5 }}lg:gap-x-2{{else}}lg:gap-x-16{{/if}}">
             {{ block:icon_list }}
-                <div class="relative flex items-start">
-                    {{ svg src="images/iconography/career-benefits/{icon | raw}" class="w-16 lg:w-24 h-auto shrink-0" }}
-                    <div class="ml-4">
+                {{ if block:icon_position == 'above' }}
+                <div class="relative flex gap-4  flex-col sm:col-span-6 {{ block:text ? 'items-start' : 'items-center text-center' }}
+                    {{ switch(
+                        (total_results === 2) => 'sm:col-span-6',
+                        (total_results === 3) => 'sm:col-span-6 md:col-span-4',
+                        (total_results === 4) => 'sm:col-span-6 md:col-span-3',
+                        (total_results > 5) => 'sm:col-span-6 md:col-span-2',
+                        () => void
+                    )}}">
+                    {{ svg src="images/iconography/{icon | raw}" class="w-16 h-16 lg:h-24 lg:w-24 h-auto shrink-0" }}
+                    <div>
+                        {{ partial:typography/large as="dt" :content="title" }}
+                        {{ partial:typography/p as="dd" :content="text" class="mt-4" }}
+                    </div>
+                </div>
+                {{ else }}
+                <div class="relative flex gap-4 items-start sm:col-span-6">
+                    {{ svg src="images/iconography/{icon | raw}" class="w-16 lg:w-24 h-auto shrink-0" }}
+                    <div>
                         {{ partial:typography/large as="dt" class="font-medium" :content="title" }}
                         {{ partial:typography/p as="dd" :content="text" class="mt-4" }}
                     </div>
-
                 </div>
+                {{ /if }}
             {{ /block:icon_list }}
         </dl>
     </div>

@@ -23,8 +23,34 @@ fields:
     handle: image
     field: common.image
     config:
+      mode: grid
       display: Image
       width: 50
-      mode: grid
       validate:
         - required
+  -
+    handle: image_position
+    field:
+      options:
+        above: Above
+        below: Below
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: below
+      type: select
+      display: 'Image Position'
+      icon: select
+      instructions: 'Show image above or below the text.'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      replicator_preview: false
+      if_any:
+        title: 'not empty'
+        text: 'not empty'

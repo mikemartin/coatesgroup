@@ -1,4 +1,4 @@
-title: Products
+title: 'Products'
 fields:
   -
     handle: title
@@ -9,17 +9,67 @@ fields:
       listable: hidden
       display: Title
   -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
+    handle: block_type
+    field:
+      options:
+        grid: 'Grid'
+        carousel: Carousel
+      default: grid
+      type: button_group
+      display: 'Block Type'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: products
     field:
-      mode: default
-      create: true
-      collections:
-        - products
-      display: Products
-      type: entries
-      icon: entries
+      fields:
+        -
+          handle: product
+          field:
+            max_items: 1
+            mode: default
+            type: entries
+            collections:
+              - products
+            localizable: true
+            listable: false
+            display: Product
+            replicator_preview: false
+        -
+          handle: title
+          field:
+            input_type: text
+            type: text
+            localizable: true
+            listable: hidden
+            display: Title
+            if:
+              product: empty
+        -
+          handle: text
+          field: common.text_plain
+          config: 
+            display: Text
+            if:
+              product: empty
+      mode: stacked
+      min_rows: 1
+      add_row: 'Add product'
+      reorderable: true
+      type: grid
+      localizable: true
       listable: hidden
-      instructions_position: below
-      instructions: 'Select entries or leave empty to show all.'
+      display: 'Products'
+      replicator_preview: false
+      instructions_position: above
       visibility: visible
-      always_save: false
+      fullscreen: true
+      hide_display: false

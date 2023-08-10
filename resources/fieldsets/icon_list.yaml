@@ -13,6 +13,11 @@ fields:
       visibility: visible
       hide_display: false
   -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
     handle: icon_list
     field:
       fields:
@@ -41,7 +46,6 @@ fields:
             visibility: visible
             hide_display: false
             directory: public/images/iconography
-            folder: career-benefits
       add_row: 'Add item'
       reorderable: true
       type: grid
@@ -53,4 +57,55 @@ fields:
       visibility: visible
       fullscreen: true
       mode: table
+      hide_display: false
+      instructions: 'Icon list will be centered when there is no text.'
+  -
+    handle: color
+    field:
+      colors:
+        -
+          label: White
+          value:
+            - 'rgb(255 255 255)'
+        -
+          id: lk0oxmjg
+          label: Grey
+          value:
+            - 'rgb(244 244 244)'
+        -
+          id: lk0oxmjg
+          label: Black
+          value:
+            - 'rgb(28 28 28)'
+      default: White
+      type: color_swatches
+      display: 'Background Color'
+      icon: color
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      replicator: false
+  -
+    handle: icon_position
+    field:
+      options:
+        above: Above
+        left_side: 'Left Side'
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: above
+      type: select
+      display: 'Icon Position'
+      icon: select
+      instructions: 'Show icon above or on the left side of the text.'
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
       hide_display: false

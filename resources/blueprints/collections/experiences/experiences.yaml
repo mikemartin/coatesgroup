@@ -34,6 +34,14 @@ tabs:
             field: common.text_plain
             config:
               display: Text
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              listable: true
+              folder: experiences
+              width: 50
       -
         display: 'Page builder'
         fields:
@@ -88,8 +96,3 @@ tabs:
               display: Slug
               validate:
                 - required
-          -
-            handle: image
-            field: common.image
-            config:
-              mode: grid
