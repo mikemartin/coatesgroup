@@ -1,0 +1,13 @@
+<div class="w-full mx-auto max-w-4xl flex flex-wrap border">
+    {{ assets container="images" folder="iconography" }}
+        <div class="p-4 w-1/6 text-center {{ if filename|contains('inverse') }}dark bg-black{{/if}}">
+            <a href="{{ url }}" download>
+                <img src="{{ url }}" class="w-16 h-16 mb-2 mx-auto"/>
+            </a>
+            {{ partial:typography/caption :caption="filename|replace('_',' ')" }}
+        </div>
+    {{ /assets }}
+</div>
+
+
+

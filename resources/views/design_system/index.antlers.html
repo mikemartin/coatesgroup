@@ -1,7 +1,7 @@
 <main class="py-12 lg:pl-72">
     <div class="fluid-container">
         {{ nav:design_system }}
-        <div x-show="component == '{{ url }}'" class="flex flex-col items-center space-y-12" :class="{ 'justify-center h-[calc(100vh-6rem)]': component != 'typography' }">
+        <div x-show="component == '{{ url }}'" class="flex flex-col items-center space-y-12 {{ if !fullpage }}justify-center h-[calc(100vh-6rem)]{{/if}}">
             {{ partial:design_system/component/{ url } }}
         </div>
         {{ /nav:design_system }}
