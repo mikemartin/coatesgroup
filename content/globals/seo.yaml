@@ -28,6 +28,12 @@ data:
       collection: awards
       manipulate_title: custom_text
       custom_text: Awards
+  change_term_title:
+    -
+      id: ll5ym6op
+      taxonomy: topics
+      manipulate_title: replace_title
+      custom_text: "Articles about Coates Group's {{ title }} | {{ site_name }}"
   noindex_local: true
   noindex_staging: true
   noindex_production: false
