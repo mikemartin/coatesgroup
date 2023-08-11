@@ -14,11 +14,11 @@
       x-popover:panel
       x-cloak
       x-collapse
-      class="absolute z-20 -mt-px w-full max-h-60 overflow-auto border-t-0 border border-black bg-white px-5 pt-3 pb-4 focus:outline-none"
+      class="absolute z-20 -mt-px w-full overflow-auto border-t-0 border border-black bg-white px-5 pt-3 pb-4 focus:outline-none"
     >
       <form class="space-y-3.5">
         {{ options }}
-          <div class="group flex items-center">
+          <div class="group flex items-start">
             <input
               id="filter-{{ label|slugify }}-{{ slug }}"
               name="{{ label|slugify }}[]"
@@ -28,7 +28,7 @@
             />
             <label
               for="filter-{{ label|slugify }}-{{ slug }}"
-              class="w-full flex items-center ml-2 font-mono group-hover:font-medium text-black whitespace-nowrap">
+              class="w-full flex items-center -mt-0.5 ml-2 font-mono group-hover:font-medium text-black {{ if title|length > 20 }}text-sm{{/if}}">
               {{ title }}
             </label>
           </div>

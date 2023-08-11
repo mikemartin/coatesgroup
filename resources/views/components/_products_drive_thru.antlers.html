@@ -57,13 +57,15 @@ class="w-full">
                     <div class="swiper" x-ref="container">
                         <!-- If we need navigation buttons -->
                         <div class="w-full flex justify-center gap-16 mb-8 lg:mb-0">
-                            <div class="swiper-prev transition lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0">
-                                <div :class="{ 'animate-bob': activeSlide == 2 }">
+                            <div class="swiper-prev transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:left-0">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide == 2 }">
                                     {{ svg:chevron-big-left class="w-8 h-8" }}
                                 </div>
                             </div>
-                            <div class="swiper-next transition lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
-                                <div :class="{ 'animate-bob': activeSlide < 2 }">{{ svg:chevron-big-right class="w-8 h-8" }}</div>
+                            <div class="swiper-next transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:right-0">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide < 2 }">
+                                    {{ svg:chevron-big-right class="w-8 h-8" }}
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-wrapper">
