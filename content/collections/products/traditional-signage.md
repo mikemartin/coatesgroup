@@ -9,4 +9,32 @@ headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
+page_builder:
+  -
+    id: ll4o90yj
+    title: 'Our Services'
+    icon_list:
+      -
+        id: ll4oaezz
+        title: Design
+        icon: inverse_design
+      -
+        id: ll4o92ig
+        title: Manufacturing
+        icon: inverse_manulogistics
+      -
+        id: ll4oa4l0
+        title: 'Delivery & Installation'
+        icon: inverse_installation
+      -
+        id: ll4o9tpc
+        title: 'Program Management'
+        icon: inverse_manulogistics
+    type: icon_list
+    enabled: true
+    color:
+      label: Black
+      value:
+        - 'rgb(28 28 28)'
+    icon_position: above
 ---

@@ -6,10 +6,10 @@
 
 <!-- /page_builder/_icon_list.antlers.html -->
 <section class="{{ switch(
-	(block:color:label == 'Black') => 'bg-black dark text-white',
-	(block:color:label == 'Grey') => 'bg-charcoal-10 text-black',
+	(block:color:label == 'Black') => 'py-12 md:py-16 lg:py-24 bg-black dark text-white',
+	(block:color:label == 'Grey') => 'py-12 md:py-16 lg:py-24 bg-charcoal-10 text-black',
 	() => 'text-black'
-	)}} py-12 md:py-16 lg:py-24 w-full">
+	)}} w-full">
     <div class="fluid-container">
         {{ if block:title && block:text }}
         <div 

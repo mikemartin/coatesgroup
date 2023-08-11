@@ -1,10 +1,9 @@
 {{#
-    @name Hero
-    @desc The hero component.
-    @param hero_type
+    @name Background Hero
+    @desc The background hero component.
 #}}
 
-<!-- /layout/_hero.antlers.html -->
+<!-- /layout/_background_hero.antlers.html -->
 <div class="relative bg-white {{ if hero_type != 'article'}}-mt-16{{/if}}">
     {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
@@ -58,4 +57,4 @@
         </div>
     </div>
 </div>
-<!-- /layout/_hero.antlers.html -->
+<!-- /layout/_background_hero.antlers.html -->

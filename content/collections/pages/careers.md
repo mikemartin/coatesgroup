@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691647597
+updated_at: 1691714446
 page_builder:
   -
     id: lk0po80o
@@ -65,32 +65,32 @@ page_builder:
         id: lk7kncxs
         title: 'Annual Bonus Program'
         text: 'Market-competitive bonuses recognise our Crew for delivering exceptional quality and service to our clients.'
-        icon: career_competitive_bonus_program
+        icon: careers_competitive_bonus_program
       -
         id: lk7ko1hz
         title: 'Flexible Work Options'
         text: 'Our flexible work options empower our Crew to balance personal priorities whilst facilitating connection...'
-        icon: career_flexible_work_options
+        icon: careers_flexible_work_options
       -
         id: lk7ko61w
         title: 'Global Wellness Day'
         text: 'Our Wellness program gives Crew members a well-deserved break with dedicated time to rest, relax, and...'
-        icon: career_global_wellness_day_off
+        icon: careers_wellness_day_off
       -
         id: lk7ko9ym
         title: 'Parental Leave'
         text: 'Our generous parental leave benefits support carers of all types – in all countries – as they balance growing their ...'
-        icon: career_competitive_bonus_program
+        icon: careers_paid_parental_leave
       -
         id: lk7koda3
         title: 'Growth, Learning & Development'
         text: 'We invest in your success. Our global Crew members at every level are supported in pursuing educational...'
-        icon: career_competitive_bonus_program
+        icon: careers_growth_learning_development
       -
         id: lk7kohs4
         title: 'Give Back Day'
         text: 'Make an impact in your community with a paid “Give Back Day” to volunteer for a cause that’s close to your heart.'
-        icon: career_competitive_bonus_program
+        icon: careers_give_back_day
     type: icon_list
     enabled: true
     title: 'Benefits of working with Coates'

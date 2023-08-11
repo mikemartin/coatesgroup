@@ -1,0 +1,29 @@
+{{#
+	@name Product
+	@desc The Full width image page builder block.
+    @set page.page_builder.product
+#}}
+
+<!-- /page_builder/_product.antlers.html -->
+<section class="border-t pt-12 md:pt-16 lg:pt-24">
+    <div class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
+        <div class="mx-auto max-w-2xl text-center md:col-span-12 ">
+            {{ partial:typography/h2 :content="title" }}
+        </div>
+        <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+        class="-mx-8 md:mx-0 md:col-span-10 md:col-start-2">
+            {{ partial:statamic-peak-tools::components/picture :image="block:image" cover="true" lazy="true" sizes="100vw" }}
+        </figure>
+        <div 
+            x-data="fadeIn()" 
+            x-init="hide($el.children)" 
+            x-intersect.once.margin.-20%="fadeInStagger($el)" class="md:col-span-12 grid md:grid-cols-12 gap-8">
+            {{ block:headline ?= { partial:typography/h2 :content="block:headline" class="md:col-span-5" } }}
+            <div class="md:col-start-7 md:col-span-6">
+                {{ partial:typography/p :content="block:text"}}
+                {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End: /page_builder/_product.antlers.html -->

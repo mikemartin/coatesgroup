@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691649869
+updated_at: 1691714676
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
@@ -45,6 +45,22 @@ page_builder:
     enabled: true
     block_type: grid
   -
+    id: ll5ttwbv
+    title: Software
+    headline: 'A data-driven CMS that powers all digital...'
+    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    buttons:
+      -
+        id: ll5tu4ih
+        label: 'Read more'
+        link_type: entry
+        target_blank: false
+        entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
+        button_type: button
+    image: experiences/in-restaurant/img_software.jpg
+    type: product
+    enabled: true
+  -
     id: ll4o90yj
     title: 'Our Services'
     icon_list:
@@ -55,11 +71,11 @@ page_builder:
       -
         id: ll4o9tpc
         title: 'Program Management'
-        icon: inverse_projectmanagement
+        icon: inverse_manulogistics
       -
         id: ll4o9zjb
         title: 'Content Development & Management'
-        icon: inverse_content_management
+        icon: inverse_contentmanagementicon
       -
         id: ll4oa4l0
         title: 'Delivery & Installation'
@@ -79,4 +95,16 @@ page_builder:
       value:
         - 'rgb(28 28 28)'
     icon_position: above
+  -
+    id: ll5usujh
+    cta_type: render
+    title: 'Got a project with us?'
+    label: 'Get in touch'
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: button
+    image: call-to-action/product-render.jpg
+    type: call_to_action
+    enabled: true
 ---

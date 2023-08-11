@@ -157,6 +157,13 @@ fields:
               fields:
                 -
                   import: products
+            product:
+              display: 'Product'
+              instructions: 'A full width product with optional text and button(s).'
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: product
             offices:
               display: Offices
               instructions: 'List offices.'

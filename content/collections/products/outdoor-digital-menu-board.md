@@ -3,7 +3,7 @@ id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691626649
+updated_at: 1691714549
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -20,26 +20,27 @@ page_builder:
         id: ll4om2j3
         title: 'Proven at Scale'
         text: 'Our outdoor signage displays scale with your business and have been proven across thousands of restaurant locations around the world.'
-        icon: features_proven_at_scale
+        icon: products_proven_at_scale
       -
         id: ll4om391
         title: 'Dynamic Messaging'
         text: 'When powered by our SwitchboardTM CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
-        icon: features_dynamic_messaging
+        icon: products_dynamic_messaging
       -
         id: ll4om45u
         title: 'Customer Experience'
         text: 'Our outdoor digital displays offer the ability to communicate directly and dynamically in the drive thru to enhance the customer experience.'
-        icon: features_ease_of_use
+        icon: products_customer_experience
       -
         id: ll4om4qs
         title: 'Drives ROI'
         text: 'Our menu display software and leading hardware drive ROI through increased average check sizes, speed of service, guest counts, and order accuracy.'
-        icon: features_drives_roi
+        icon: products_drives_roi
     color:
       label: White
       value:
         - 'rgb(255 255 255)'
     type: icon_list
     enabled: true
+    icon_position: above
 ---
