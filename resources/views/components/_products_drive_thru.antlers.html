@@ -1,0 +1,90 @@
+{{#
+    @name Products Carousel
+    @desc The Products Carousel page builder block.
+    @set page.page_builder.products_carousel
+#}}
+
+<!-- /page_builder/_products_carousel.antlers.html -->
+<section x-data="{swiper: null, activeSlide: 0}"
+x-init="swiper = new Swiper($refs.container, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  edgeSwipeDetection: 'prevent',
+  updateOnWindowResize: true,
+  a11y: true,
+  effect: 'fade',
+  loop: false,
+  fadeEffect: {           
+    crossFade: true
+  },
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+  on: {
+    slideChange: () => { activeSlide = swiper.activeIndex }
+  }
+})"
+class="w-full">
+        {{ if title }}
+        <div class="py-12 md:py-16 lg:py-24 bg-charcoal-10">
+            <div class="fluid-container grid md:grid-cols-12 gap-8 md:col-span-12">
+                {{ partial:typography/h2 :content="title" class="md:col-span-6" }}
+                <div class="md:col-span-6">
+                    {{ partial:typography/p :content="text"}}
+                    {{ partial:components/buttons :buttons="buttons" class="mt-6" }}
+                </div>
+            </div>
+        </div>
+        {{/if}}
+
+        <div class="overflow-hidden">
+            <figure class="h-80 md:h-[514px] relative flex items-center justify-center">
+                <img src="{{ block:image }}" alt="" 
+                class="max-w-none h-full transition duration-1000 transform scale-[1.75] -translate-y-[5%] translate-x-[63%]"
+                aria-hidden="true" loading="lazy"
+                :class="{ 
+                'translate-x-[63%] -translate-y-[5%] scale-[1.75]': activeSlide == 0, 
+                'translate-x-[10%] -translate-y-[5%] scale-150': activeSlide == 1, 
+                '-translate-x-1/3 scale-125 ': activeSlide == 2 
+                }"
+                >
+            </figure>
+
+            <div class="fluid-container mt-8 md:mt-16 md:grid md:grid-cols-12"> 
+                <div class="md:col-span-8 md:col-start-3 xl:col-span-6 xl:col-start-4">
+                    <div class="swiper" x-ref="container">
+                        <!-- If we need navigation buttons -->
+                        <div class="w-full flex justify-center gap-16 mb-8 lg:mb-0">
+                            <div class="swiper-prev transition lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0">
+                                <div :class="{ 'animate-bob': activeSlide == 2 }">
+                                    {{ svg:chevron-big-left class="w-8 h-8" }}
+                                </div>
+                            </div>
+                            <div class="swiper-next transition lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0">
+                                <div :class="{ 'animate-bob': activeSlide < 2 }">{{ svg:chevron-big-right class="w-8 h-8" }}</div>
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            {{ products }}
+                                <div class="swiper-slide">
+                                    <div class="relative text-center lg:px-12"
+                                    >
+                                        {{ partial:typography/large class="font-medium mb-4 mx-auto" :content="product_title ?? title" }}
+                                        {{ partial:typography/p class="mb-4 lg:max-w-md lg:mx-auto" :content="product:text ?? text" }}
+                                        {{ if product }}
+                                            {{ partial:components/button button_type="inline" as="span" label="View More" class="mx-auto" }}
+                                        {{ /if }}
+                                    </div>
+                                </div>
+                            {{ /products }}
+                        </div>
+            
+                        
+                    </div>
+                </div> 
+            </div>
+        </div>
+</section>
+<!-- End: /page_builder/_link_blocks_carousel.antlers.html -->

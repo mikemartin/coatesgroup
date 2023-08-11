@@ -1,5 +1,18 @@
 title: 'Call to action'
 fields:
+  
+  -
+    handle: title
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Title
+      validate:
+        - required
+  -
+    import: button
   -
     handle: cta_type
     field:
@@ -14,18 +27,6 @@ fields:
       instructions_position: above
       visibility: visible
       hide_display: false
-  -
-    handle: title
-    field:
-      input_type: text
-      type: text
-      localizable: true
-      listable: hidden
-      display: Title
-      validate:
-        - required
-  -
-    import: button
   -
     handle: image
     field: common.image

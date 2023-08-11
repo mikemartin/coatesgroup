@@ -10,6 +10,11 @@
         :title="block:title"
         :text="block:text"
         :products="block:products" }}
+{{ elseif block_type == 'drive_thru' }}
+    {{ partial:components/products_drive_thru
+        :title="block:title"
+        :text="block:text"
+        :products="block:products" }}
 {{ else }}
     {{ partial:components/products_grid
         :title="block:title"

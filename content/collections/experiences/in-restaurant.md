@@ -71,7 +71,7 @@ page_builder:
       -
         id: ll4o9tpc
         title: 'Program Management'
-        icon: inverse_projectmanagement
+        icon: inverse_programmanagement
       -
         id: ll4o9zjb
         title: 'Content Development & Management'
@@ -95,6 +95,11 @@ page_builder:
       value:
         - 'rgb(28 28 28)'
     icon_position: above
+  -
+    id: ll5w7qpd
+    title: 'Case Studies'
+    type: case_studies
+    enabled: true
   -
     id: ll5usujh
     cta_type: render

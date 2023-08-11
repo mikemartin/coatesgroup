@@ -70,6 +70,21 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        bob: 'bob 1s infinite',
+      },
+      keyframes: {
+        bob: {
+          '0%, 100%': {
+            transform: 'translateX(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+          },
+          '50%': {
+            transform: 'none',
+            animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
+          },
+        },
+      },
       // Set default transition durations and easing when using the transition utilities.
       transitionDuration: {
         DEFAULT: '300ms',

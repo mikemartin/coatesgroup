@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95a0569b3c287ddba61cad48e5d27c9d",
+    "content-hash": "1416dcf43e0cf599a1cef5f45e60088e",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -3674,6 +3674,51 @@
                 }
             ],
             "time": "2022-08-04T09:53:51+00:00"
+        },
+        {
+            "name": "ncla/statamic-focal-point-fieldtype",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ncla/statamic-focal-point-fieldtype.git",
+                "reference": "d1b1f4a4874fda49249058c4a185510edec6afef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ncla/statamic-focal-point-fieldtype/zipball/d1b1f4a4874fda49249058c4a185510edec6afef",
+                "reference": "d1b1f4a4874fda49249058c4a185510edec6afef",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Focal Point Fieldtype",
+                    "description": "Store focal point separately from an asset"
+                },
+                "laravel": {
+                    "providers": [
+                        "Ncla\\FocalPoint\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ncla\\FocalPoint\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Standalone asset focal point fieldtype for Statamic",
+            "support": {
+                "issues": "https://github.com/ncla/statamic-focal-point-fieldtype/issues",
+                "source": "https://github.com/ncla/statamic-focal-point-fieldtype/tree/v3.0.0"
+            },
+            "time": "2023-05-13T17:55:36+00:00"
         },
         {
             "name": "nesbot/carbon",

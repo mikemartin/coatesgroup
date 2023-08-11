@@ -36,6 +36,22 @@ preferences:
         - date
         - status
         - redirect
+    case_studies:
+      columns:
+        - title
+        - og_image
+        - date
+        - status
+        - products
   assets:
     images:
       mode: grid
+  forms:
+    contact:
+      columns:
+        - datestamp
+        - name
+        - consent
+        - enquiry_type
+        - email
+        - message_body

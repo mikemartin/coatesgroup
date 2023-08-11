@@ -8,18 +8,19 @@ import intersect from '@alpinejs/intersect'
 import 'focus-visible'
 import Swiper from 'swiper';
 import Macy from 'macy';
-import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid } from 'swiper/modules';
+import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/a11y';
 import 'swiper/css/mousewheel';
 import 'swiper/css/grid';
+import 'swiper/css/effect-fade';
 import fadeIn from './components/fadeIn.js'
 import horizontalLoop from './components/horizontalLoop.js'
 
 
-Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid]);
+Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade]);
 
 
 // Global get CSRF token function (used by forms).

@@ -1,0 +1,34 @@
+{{#
+    @name Case Studies
+    @desc The Case Studies grid block.
+#}}
+
+<!-- /components/_case_studies_grid.antlers.html -->
+<div class="fluid-container">
+    <div class="mx-auto max-w-2xl text-center">
+        {{ partial:typography/h2 :content="title" }}
+    </div>
+
+    {{ if (collection = 'experiences') }}
+        {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" :experiences:contains="page:id" } }}
+    {{ elseif (collection = 'products') }}
+        {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" :products:contains="page:id" } }}
+    {{ else }}
+        {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" } }}
+    {{ /if }}
+
+    <div class="grid md:grid-cols-12 gap-10 mt-10 lg:mt-20">
+        {{ case_studies }}
+            {{ if count % 3 == 0 }}
+                {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" }}
+            {{ else }}
+                {{ partial:components/case_study class="md:col-span-6" }}
+            {{ /if }}
+        {{ /case_studies }}
+    </div>
+
+    <nav class="mt-10 lg:mt-20 text-center">
+        {{ partial:components/button label="{trans:strings.case_studies_all}" link_type="url" url="/case-studies" }}
+    </nav>
+</div>
+<!-- End: /components/_case_studies_grid.antlers.html -->

@@ -1,4 +1,4 @@
-title: 'Products'
+title: Products
 fields:
   -
     handle: title
@@ -17,8 +17,9 @@ fields:
     handle: block_type
     field:
       options:
-        grid: 'Grid'
+        grid: Grid
         carousel: Carousel
+        drive_thru: 'Drive Thru'
       default: grid
       type: button_group
       display: 'Block Type'
@@ -28,9 +29,27 @@ fields:
       visibility: visible
       hide_display: false
   -
+    handle: image
+    field: common.image
+    config:
+      mode: grid
+      if:
+        block_type: 'equals drive_thru'
+  -
     handle: products
     field:
       fields:
+        -
+          handle: focal_point
+          field:
+              display: 'Focal Point'
+              type: focalpoint
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              assets_field_handle: image
         -
           handle: product
           field:
@@ -51,15 +70,11 @@ fields:
             localizable: true
             listable: hidden
             display: Title
-            if:
-              product: empty
         -
           handle: text
           field: common.text_plain
-          config: 
+          config:
             display: Text
-            if:
-              product: empty
       mode: stacked
       min_rows: 1
       add_row: 'Add product'
@@ -67,7 +82,7 @@ fields:
       type: grid
       localizable: true
       listable: hidden
-      display: 'Products'
+      display: Products
       replicator_preview: false
       instructions_position: above
       visibility: visible

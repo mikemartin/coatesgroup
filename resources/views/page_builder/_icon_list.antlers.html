@@ -6,10 +6,10 @@
 
 <!-- /page_builder/_icon_list.antlers.html -->
 <section class="{{ switch(
-	(block:color:label == 'Black') => 'py-12 md:py-16 lg:py-24 bg-black dark text-white',
-	(block:color:label == 'Grey') => 'py-12 md:py-16 lg:py-24 bg-charcoal-10 text-black',
+	(block:color:label == 'Black') => 'w-full py-12 md:py-16 lg:py-24 bg-black dark text-white',
+	(block:color:label == 'Grey') => 'w-full py-12 md:py-16 lg:py-24 bg-charcoal-10 text-black',
 	() => 'text-black'
-	)}} w-full">
+	)}}">
     <div class="fluid-container">
         {{ if block:title && block:text }}
         <div 
@@ -29,29 +29,30 @@
         {{ /if }}
         <dl x-data="fadeIn()"
         x-init="hide($el.children)"
-        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid grid-cols-1 gap-8 sm:grid-cols-12 lg:mx-0 {{ if block:icon_list|length > 5 }}lg:gap-x-2{{else}}lg:gap-x-16{{/if}}">
+        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid grid-cols-1 gap-8 sm:grid-cols-12 {{ if (block:icon_list|length === 5) && !{block:icon_list}:0:text }}md:grid-cols-10{{/if}} lg:mx-0 {{ if block:icon_list|length > 5 }}lg:gap-x-2{{else}}lg:gap-x-16{{/if}}">
             {{ block:icon_list }}
                 {{ if block:icon_position == 'above' }}
-                <div class="relative flex gap-4  flex-col sm:col-span-6 {{ block:text ? 'items-start' : 'items-center text-center' }}
+                <div class="relative flex gap-4  flex-col {{ text ? 'items-start' : 'items-center text-center' }}
                     {{ switch(
                         (total_results === 2) => 'sm:col-span-6',
                         (total_results === 3) => 'sm:col-span-6 md:col-span-4',
-                        (total_results === 4) => 'sm:col-span-6 md:col-span-3',
-                        (total_results > 5) => 'sm:col-span-6 md:col-span-2',
+                        ((total_results >= 4) && text) => 'sm:col-span-6 md:col-span-3',
+                        ((total_results === 4) && !text) => 'sm:col-span-6 md:col-span-3',
+                        ((total_results >= 5) && !text) => 'sm:col-span-6 md:col-span-2',
                         () => void
                     )}}">
-                    {{ svg src="images/iconography/{icon | raw}" class="w-16 h-16 lg:h-24 lg:w-24 h-auto shrink-0" }}
+                    {{ svg src="images/iconography/{icon | raw}" class="w-16 h-16 lg:h-24 lg:w-24 shrink-0" }}
                     <div>
                         {{ partial:typography/large as="dt" :content="title" }}
-                        {{ partial:typography/p as="dd" :content="text" class="mt-4" }}
+                        {{ text ?= {partial:typography/p as="dd" :content="text" class="mt-4" } }}
                     </div>
                 </div>
                 {{ else }}
                 <div class="relative flex gap-4 items-start sm:col-span-6">
-                    {{ svg src="images/iconography/{icon | raw}" class="w-16 lg:w-24 h-auto shrink-0" }}
+                    {{ svg src="images/iconography/{icon | raw}" class="w-16 h-16 lg:h-24 lg:w-24 shrink-0" }}
                     <div>
                         {{ partial:typography/large as="dt" class="font-medium" :content="title" }}
-                        {{ partial:typography/p as="dd" :content="text" class="mt-4" }}
+                        {{ text ?= {partial:typography/p as="dd" :content="text" class="mt-4" } }}
                     </div>
                 </div>
                 {{ /if }}

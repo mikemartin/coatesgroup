@@ -13,6 +13,20 @@ fields:
       visibility: visible
       always_save: false
   -
+    handle: block_type
+    field:
+      options:
+        grid: 'Grid'
+        carousel: Carousel
+      default: grid
+      type: button_group
+      display: 'Block Type'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: case_studies
     field:
       mode: default

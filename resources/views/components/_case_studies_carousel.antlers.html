@@ -1,0 +1,56 @@
+{{#
+    @name Case Studies
+    @desc The Case Studies carousel block.
+#}}
+
+<!-- /components/_case_studies_carousel.antlers.html -->
+<section x-data="{swiper: null}"
+x-init="swiper = new Swiper($refs.container, {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  edgeSwipeDetection: 'prevent',
+  updateOnWindowResize: true,
+  a11y: true,
+  freeMode: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    640: {
+        slidesPerView: 1.65,
+        spaceBetween: 60
+    }
+  }
+})" class="w-full bg-black dark py-16 md:py-24 overflow-hidden">
+    <div class="fluid-container">
+        {{ if title }}
+        <div x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)">
+            {{ partial:typography/h2 :content="title" class="max-w-[20ch]" }}
+        </div>
+        {{/if}}
+
+        {{ if (collection = 'experiences') }}
+            {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" :experiences:contains="page:id" } }}
+        {{ elseif (collection = 'products') }}
+            {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" :products:contains="page:id" } }}
+        {{ else }}
+            {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" } }}
+        {{ /if }}
+        
+        <div class="swiper mt-8 md:mt-14 !pb-14 !overflow-x-visible" x-ref="container">
+            <div class="swiper-wrapper">
+                {{ case_studies }}
+                    <div class="swiper-slide">
+                        {{ partial:components/case_study }}
+                    </div>
+                {{ /case_studies }}
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination absolute !bottom-0"></div>
+        </div>
+        
+    </div>
+</section>
+<!-- End: /components/_case_studies_carousel.antlers.html -->

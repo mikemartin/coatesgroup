@@ -3,17 +3,24 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691626691
+updated_at: 1691755314
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
-hero_image: products/software/img_software_hero.jpg
-enable_hero: true
+enable_hero: false
 page_builder:
+  -
+    id: ll6jel84
+    title: 'Power up your digital touchpoints with a...'
+    text: 'Deliver consistently engaging customer messaging through behavioural insights powered by the sophisticated integration and analytics capabilities of our dynamic and innovative Content Management System (CMS) - SwitchboardTM.'
+    image: products/software/img_software_hero.jpg
+    image_position: above
+    type: full_width_image
+    enabled: true
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
-    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check size, reduced wait times, and greater order accuracy – with our custom-built SwitchboardTM CMS digital menu board software.'
+    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check size, reduced wait times, and greater order accuracy – with our custom-built Switchboard™️ CMS digital menu board software.'
     icon_list:
       -
         id: ll4jid06
@@ -37,9 +44,21 @@ page_builder:
         icon: products_operational_cost
     type: icon_list
     enabled: true
-    color:
+    color: White
     label: White
     value:
       - 'rgb(255 255 255)'
     icon_position: above
+  -
+    id: ll5usujh
+    cta_type: render
+    title: 'Got a project with us?'
+    label: 'Get in touch'
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: button
+    image: call-to-action/product-render.jpg
+    type: call_to_action
+    enabled: true
 ---

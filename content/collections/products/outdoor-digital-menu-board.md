@@ -14,7 +14,7 @@ page_builder:
   -
     id: ll4olq0e
     title: 'Elevate the Drive Thru Ordering Experience'
-    text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary SwitchboardTM CMS, our outdoor signage displays deliver highly targeted and compelling messaging.'
+    text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary Switchboard™️ CMS, our outdoor signage displays deliver highly targeted and compelling messaging.'
     icon_list:
       -
         id: ll4om2j3
@@ -24,7 +24,7 @@ page_builder:
       -
         id: ll4om391
         title: 'Dynamic Messaging'
-        text: 'When powered by our SwitchboardTM CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
+        text: 'When powered by our Switchboard™️ CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
         icon: products_dynamic_messaging
       -
         id: ll4om45u
@@ -43,4 +43,16 @@ page_builder:
     type: icon_list
     enabled: true
     icon_position: above
+  -
+    id: ll5usujh
+    cta_type: render
+    title: 'Got a project with us?'
+    label: 'Get in touch'
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: button
+    image: call-to-action/product-render.jpg
+    type: call_to_action
+    enabled: true
 ---

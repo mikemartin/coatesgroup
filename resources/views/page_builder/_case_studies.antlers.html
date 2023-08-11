@@ -5,45 +5,14 @@
 #}}
 
 <!-- /page_builder/_case_studies.antlers.html -->
-<section x-data="{swiper: null}"
-x-init="swiper = new Swiper($refs.container, {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  edgeSwipeDetection: 'prevent',
-  updateOnWindowResize: true,
-  a11y: true,
-  freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-        slidesPerView: 1.65,
-        spaceBetween: 60
-    }
-  }
-})" class="w-full bg-black dark py-16 md:py-24 overflow-hidden">
-    <div class="fluid-container">
-        {{ if block:title }}
-        <div x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)">
-            {{ partial:typography/h2 :content="block:title" class="max-w-[20ch]" }}
-        </div>
-        {{/if}}
-
-        <div class="swiper mt-8 md:mt-14 !pb-14 !overflow-x-visible" x-ref="container">
-            <div class="swiper-wrapper">
-                {{ block:case_studies }}
-                    <div class="swiper-slide">
-                        {{ partial:components/case_study }}
-                    </div>
-                {{ /block:case_studies }}
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination absolute !bottom-0"></div>
-        </div>
-        
-    </div>
-</section>
-<!-- End: /page_builder/_case_studies.antlers.html -->
+{{ if block_type == 'carousel' }}
+    {{ partial:components/case_studies_carousel
+        :title="block:title"
+        :text="block:text"
+        :case_studies="block:case_studies" }}
+{{ else }}
+    {{ partial:components/case_studies_grid
+        :title="block:title"
+        :text="block:text"
+        :case_studies="block:case_studies" }}
+{{ /if }}

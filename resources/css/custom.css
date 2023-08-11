@@ -32,6 +32,7 @@
         --swiper-pagination-bullet-horizontal-gap: 4px;
         --swiper-pagination-bullet-vertical-gap: 6px;
 
+        --swiper-navigation-color: var(--swiper-theme-color);
         
 
         @media screen(sm) {
@@ -70,6 +71,26 @@
   .swiper-thumbs .swiper-slide-thumb-active .swiper-tab-dot {
     display: block;
   }
+
+  .swiper-prev,
+  .swiper-next {
+    z-index: 10;
+    cursor: pointer;
+    color: var(--swiper-navigation-color);
+  }
+
+  .swiper-prev.swiper-button-disabled, 
+  .swiper-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  .swiper-navigation-disabled .swiper-prev,
+  .swiper-navigation-disabled .swiper-next, {
+    display: none !important;
+  }
+  
 
 }
 

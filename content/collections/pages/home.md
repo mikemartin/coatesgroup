@@ -98,6 +98,7 @@ page_builder:
   -
     id: ljs76pgs
     type: case_studies
+    block_type: carousel
     enabled: true
     title: 'A headline about Case Studies goes here'
     case_studies:

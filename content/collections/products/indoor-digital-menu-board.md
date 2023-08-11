@@ -33,7 +33,7 @@ page_builder:
       -
         id: ll4om4qs
         title: 'Drives ROI'
-        text: 'The powerful combination of our hardware and SwitchboardTM software can improve average order values, driving ROI and meeting your business specificKPIs.'
+        text: 'The powerful combination of our hardware and Switchboard™️ software can improve average order values, driving ROI and meeting your business specificKPIs.'
         icon: products_drives_roi
     color:
       label: White
@@ -42,4 +42,16 @@ page_builder:
     type: icon_list
     enabled: true
     icon_position: above
+  -
+    id: ll5usujh
+    cta_type: render
+    title: 'Got a project with us?'
+    label: 'Get in touch'
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: button
+    image: call-to-action/product-render.jpg
+    type: call_to_action
+    enabled: true
 ---

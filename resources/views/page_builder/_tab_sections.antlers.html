@@ -59,7 +59,7 @@ class="overflow-hidden">
     <div class="fluid-container my-12 md:my-16">
         <div class="swiper relative !overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
-            {{ sections }}
+            {{ sections scope="slide" }}
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-between items-start">
                     <figure>
@@ -68,6 +68,7 @@ class="overflow-hidden">
                             sizes="(min-width: 1280px) 1150px, 90vw')"
                             aspect_ratio="8/5 large:9/4"
                             cover="true"
+                            :image="slide:hero_image ?? slide:image"
                             lazy="true"
                         }}
                     </figure>
