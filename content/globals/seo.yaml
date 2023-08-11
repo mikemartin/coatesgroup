@@ -4,11 +4,6 @@ data:
   site_name: 'Coates Group'
   change_page_title:
     -
-      id: ll1swm5r
-      collection: case_studies
-      manipulate_title: custom_text
-      custom_text: 'Case Study'
-    -
       id: ll1v5opv
       collection: blog
       manipulate_title: custom_text
@@ -33,7 +28,12 @@ data:
       id: ll5ym6op
       taxonomy: topics
       manipulate_title: replace_title
-      custom_text: "Articles about Coates Group's {{ title }} | {{ site_name }}"
+      custom_text: "Articles about Coates' {{ title }} | {{ site_name }}"
+    -
+      id: ll60diw7
+      taxonomy: resources
+      manipulate_title: custom_text
+      custom_text: 'Thought Leadership'
   noindex_local: true
   noindex_staging: true
   noindex_production: false
