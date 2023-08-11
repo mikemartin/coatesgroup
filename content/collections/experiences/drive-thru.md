@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691548426
+updated_at: 1691715809
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/drive-thru/heber-davis-6v1gbwk38qu-unsplash.jpg
 headline: 'Lorem ipsum dolor sit amet consectetur.'
@@ -28,7 +28,7 @@ page_builder:
       -
         id: ll4o9zjb
         title: 'Content Development & Management'
-        icon: inverse_content_management
+        icon: inverse_contentmanagementicon
       -
         id: ll4oa4l0
         title: 'Delivery & Installation'
