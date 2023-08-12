@@ -2,6 +2,9 @@ title: 'Case Studies'
 template: case_studies/show
 layout: layout
 mount: a5663a02-3b33-48ec-8a46-625a20d4ccf3
+taxonomies:
+  - industries
+  - locations
 revisions: false
 route: '/{mount}/{slug}'
 date: true

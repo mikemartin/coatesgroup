@@ -3,38 +3,38 @@
     @desc The Case Studies index template.
 #}}
 
-{{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label" show_filters="true" } }}
+{{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label" } }}
 
 <!-- /case_studies/index.antlers.html -->
-<main class="outer-grid" id="content">
-    {{ if enable_hero && hero_extend }}
-        {{ partial:components/hero_extend :hero_color="hero_color:label" }}
-    {{ /if }}
-    {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
-</main>
+{{ livewire:case-studies-index }}
 <!-- End: /case_studies/index.antlers.html -->
 
-{{ section:index_content }}
-    <!-- /case_studies/index.antlers.html -->
-    <div class="fluid-container grid md:grid-cols-12 gap-10">
-        {{ collection:case_studies sort="order" paginate="true" as="items" }}
-            {{ unless no_results }}
-                {{ items }}
-                    {{ if count % 3 == 0 }}
-                        {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" }}
-                    {{ else }}
-                        {{ partial:components/case_study class="md:col-span-6" }}
-                    {{ /if }}
-                {{ /items }}
-            {{ else }}
-                <div class="md:col-span-6">
-                    {{ trans:strings.no_results }}
-                </div>
-            {{ /unless }}
-            {{ partial:statamic-peak-tools::components/pagination class="md:col-span-12" }}
-        {{ /collection:case_studies }}
-    </div>
-    <!-- End: /case_studies/index.antlers.html -->
-{{ /section:index_content }}
+{{# <script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('properties', () => ({
+            init() {
+                const url = new URL(window.location.href);
+
+                this.$watch('$store.filter.industry', (value) => {
+                    url.searchParams.set('industry', value);
+                    history.pushState(null, document.title, url.toString());
+                });
+                
+                this.$watch('$store.filter.location', (value) => {
+                    url.searchParams.set('location', value.join('|'));
+                    history.pushState(null, document.title, url.toString());
+                });
+                
+                this.$watch('$store.filter.product', (value) => {
+                    url.searchParams.set('product', value.join('|'));
+                    history.pushState(null, document.title, url.toString());
+                });
+
+                this.$watch('$store.filter.experience', (value) => {
+                    url.searchParams.set('experience', value.join('|'));
+                    history.pushState(null, document.title, url.toString());
+                });
+            }
+        }))
+    })
+</script> #}}

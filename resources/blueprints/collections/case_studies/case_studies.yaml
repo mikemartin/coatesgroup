@@ -91,6 +91,24 @@ tabs:
               validate:
                 - required
           -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              listable: true
+              validate:
+                - required
+              display: Date
+              mode: single
+              time_enabled: false
+              time_required: false
+              earliest_date: '2016-01-01'
+              full_width: false
+              inline: false
+              columns: 1
+              rows: 1
+          -
             handle: client
             field:
               max_items: 1
@@ -100,6 +118,36 @@ tabs:
                 - clients
               type: entries
               display: Client
+              icon: entries
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+          -
+            handle: industries
+            field:
+              type: terms
+              taxonomies:
+                - industries
+              display: Industries
+              mode: select
+          -
+            handle: locations
+            field:
+              type: terms
+              taxonomies:
+                - locations
+              display: Locations
+              mode: select
+          -
+            handle: products
+            field:
+              mode: select
+              create: true
+              collections:
+                - products
+              type: entries
+              display: Products
               icon: entries
               listable: hidden
               instructions_position: above
@@ -120,38 +168,6 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-          -
-            handle: products
-            field:
-              mode: select
-              create: true
-              collections:
-                - products
-              type: entries
-              display: Products
-              icon: entries
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: date
-            field:
-              type: date
-              required: true
-              default: now
-              listable: true
-              validate:
-                - required
-              display: Date
-              mode: single
-              time_enabled: false
-              time_required: false
-              earliest_date: '2016-01-01'
-              full_width: false
-              inline: false
-              columns: 1
-              rows: 1
           -
             handle: parent
             field:
