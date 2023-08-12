@@ -38,7 +38,13 @@
         </form>
 
         <div class="fixed inset-x-0 bottom-0 ml-auto max-w-xl w-full px-5 py-4 bg-white">
-            {{ partial:components/button label="Show 62 Case Studies" button_type="black" class="w-full justify-center" }}
+            {{ partial:components/button label="Show {{ case-studies|length }} Case Studies" as="button" button_type="black" class="w-full justify-center" }}
+              {{ slot:attributes }}
+                @click.prevent.stop="mobileFilterOpen = false"
+              {{ /slot:attributes }}
+            {{ /partial:components/button }}
+
+
         </div>
       </div>
     </div>

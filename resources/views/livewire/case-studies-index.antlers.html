@@ -1,0 +1,50 @@
+
+{{#
+    @name Case Studies Index
+    @desc The Case Studies Index livewire component.
+#}}
+
+<main class="outer-grid pt-6 md:pt-8" id="content">
+    <div class="fluid-container grid md:grid-cols-12 gap-10">
+        <div x-data="{ 
+                mobileFilterOpen: false,
+                industry: {{ livewire:entangle property='industry' }}, 
+                location: {{ livewire:entangle property='location' }},
+                product: {{ livewire:entangle property='product' }},
+                experience: {{ livewire:entangle property='experience' }}
+             }" class="md:col-span-12">
+            {{ partial:components/mobile_filters }} 
+            <div class="flex flex-wrap gap-4">
+                {{ partial:components/button_tag as="button" selected="true" label="All work" class="w-full sm:flex-1 md:flex-initial md:justify-center md:w-36" }}
+                    {{ slot:attributes }}
+                        wire:click="resetFilters"
+                    {{ /slot:attributes }}
+                {{ /partial:components/button_tag }}
+                {{ partial:components/button_tag as="button" label="Filter" class="w-full sm:flex-1 md:flex-auto md:w-auto md:hidden" icon="filter" }}
+                    {{ slot:attributes }}
+                        @click="mobileFilterOpen = true"
+                    {{ /slot:attributes  }}
+                {{ /partial:components/button_tag }}
+                
+                {{ partial:components/filter label="Industry" :options="industries" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Location" :options="locations" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Product" :options="products" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="Experience" :options="experiences" class="hidden md:block flex-1" }}
+            </div>
+        </div>
+
+        {{ case-studies }}
+            {{ unless no_results }}
+                {{ if count % 3 == 0 }}
+                    {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" }}
+                {{ else }}
+                    {{ partial:components/case_study class="md:col-span-6" }}
+                {{ /if }}
+            {{ else }}
+                <div class="md:col-span-6">
+                    {{ trans:strings.no_results }}
+                </div>
+            {{ /unless }}
+        {{ /case-studies }}
+    </div>
+</main>
