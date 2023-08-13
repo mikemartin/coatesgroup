@@ -5,7 +5,11 @@
 #}}
 
 <!-- /components/_case_study.antlers.html -->
+{{ if loading }}
+{{ partial:components/case_study_loading }}
+{{ /if }}
 <div
+    {{ if loading }}wire:loading.remove{{/if}}
     class="
         dark relative aspect-[7/9] {{ size == 'wide' ? 'lg:aspect-[8/3]' : 'lg:aspect-[8/5]' }} flex flex-col justify-between {{ class }}
     "
@@ -36,7 +40,7 @@
         {{ if experience }}
             <div class="relative">
                 {{ experience }}
-                    {{ partial:components/tag }}
+                    {{ partial:components/tag class="false" }}
                 {{ /experience }}
             </div>
         {{ /if }}

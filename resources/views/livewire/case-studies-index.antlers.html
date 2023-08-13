@@ -36,9 +36,9 @@
         {{ case-studies }}
             {{ unless no_results }}
                 {{ if count % 3 == 0 }}
-                    {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" }}
+                    {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" loading="true" }}
                 {{ else }}
-                    {{ partial:components/case_study class="md:col-span-6" }}
+                    {{ partial:components/case_study class="md:col-span-6" loading="true" }}
                 {{ /if }}
             {{ else }}
                 <div class="md:col-span-6">

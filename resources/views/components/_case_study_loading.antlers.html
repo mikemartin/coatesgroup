@@ -1,0 +1,25 @@
+{{#
+    @name Case Study
+    @desc A Case Study loading component.
+    @param class Add optional CSS classes.
+#}}
+
+<!-- /components/_case_study_loading.antlers.html -->
+<div wire:loading
+    class="
+        relative animate-pulse border border-charcoal-20 bg-charcoal-10 aspect-[7/9] {{ size == 'wide' ? 'lg:aspect-[8/3]' : 'lg:aspect-[8/5]' }} flex flex-col justify-between {{ class }}
+    "
+>
+    <div class="p-5 md:p-8 relative h-full flex flex-col justify-between items-start">
+        <div class="w-32 h-9 bg-white rounded-full"></div>
+        <div>
+            <div class="w-56 h-10 bg-white rounded"></div>
+            <div class="w-36 h-4 bg-white rounded mt-3"></div>
+            <div class="flex flex-wrap gap-3 mt-5">
+                <div class="w-32 h-9 bg-white rounded"></div>
+                <div class="w-48 h-9 bg-white rounded"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /components/_case_study.antlers.html -->
