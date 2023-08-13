@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691491562
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1691921494
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -95,6 +95,7 @@ page_builder:
     type: full_width_image
     enabled: true
     image: homepage/traditionalsignage.jpg
+    image_position: below
   -
     id: ljs76pgs
     type: case_studies
@@ -147,6 +148,7 @@ page_builder:
     image: homepage/company.jpg
     type: full_width_image
     enabled: true
+    image_position: below
   -
     id: ljs6guak
     title: 'A headline about Insights goes here'
@@ -154,7 +156,7 @@ page_builder:
     enabled: true
     insights:
       - 1932f64f-adb6-4a6d-8b7c-67d42b572b28
-      - 1775e6e5-966c-4bc8-b8e2-4f056e760024
+      - bc27c735-9c4a-4107-929b-9328addd3338
       - 2ff83eca-2919-4abd-8b21-0cab6ef51083
       - 753e810d-9a58-44b9-99d3-68e5780eec0b
 hero_type: video
