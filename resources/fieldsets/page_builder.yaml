@@ -23,21 +23,21 @@ fields:
                 -
                   import: insights
             blog:
-              display: 'Blog'
+              display: Blog
               instructions: 'List blog articles and topics.'
               icon: media-news-paper
               fields:
                 -
                   import: blog
             press:
-              display: 'Press'
+              display: Press
               instructions: 'List Press articles.'
               icon: media-news-paper
               fields:
                 -
                   import: press
             awards:
-              display: 'Awards'
+              display: Awards
               instructions: 'List Awards articles.'
               icon: media-news-paper
               fields:
@@ -55,18 +55,18 @@ fields:
           instructions: 'Interactive blocks.'
           icon: programming-script-code
           sets:
-            call_to_action:
-              display: 'Call to action'
-              instructions: 'Show a call to action.'
-              fields:
-                -
-                  import: call_to_action
             block_carousel:
               display: 'Block Carousel'
               instructions: 'Carousel of blocks with image and text'
               fields:
                 -
                   import: block_carousel
+            call_to_action:
+              display: 'Call to action'
+              instructions: 'Show a call to action.'
+              fields:
+                -
+                  import: call_to_action
             case_studies:
               display: 'Case Studies'
               instructions: 'Carousel of featured case studies'
@@ -81,13 +81,6 @@ fields:
               fields:
                 -
                   import: clients
-            tab_sections:
-              display: Tab Sections
-              instructions: 'Tab sections of experiences or products'
-              icon: null
-              fields:
-                -
-                  import: tab_sections
             form:
               display: Form
               instructions: 'Select and render a form.'
@@ -109,12 +102,26 @@ fields:
               fields:
                 -
                   import: full_width_video
+            gallery:
+              display: Gallery
+              instructions: 'A minimal image gallery.'
+              icon: null
+              fields:
+                -
+                  import: gallery
             half_width_image:
               display: 'Half-width image'
               instructions: 'A half width image with optional text and button(s).'
               fields:
                 -
                   import: half_width_image
+            hardware:
+              display: Hardware
+              instructions: 'List of hardware with text.'
+              icon: link
+              fields:
+                -
+                  import: hardware
             hero:
               display: Hero
               instructions: null
@@ -129,13 +136,6 @@ fields:
               fields:
                 -
                   import: images_grid
-            gallery:
-              display: 'Gallery'
-              instructions: 'A minimal image gallery.'
-              icon: null
-              fields:
-                -
-                  import: gallery
             index_content:
               display: 'Index content'
               instructions: 'Render the currently mounted entries if available.'
@@ -150,20 +150,6 @@ fields:
               fields:
                 -
                   import: link_blocks
-            products:
-              display: 'Products'
-              instructions: 'List of products with text.'
-              icon: link
-              fields:
-                -
-                  import: products
-            product:
-              display: 'Product'
-              instructions: 'A full width product with optional text and button(s).'
-              icon: media-image-photo-focus-frame
-              fields:
-                -
-                  import: product
             offices:
               display: Offices
               instructions: 'List offices.'
@@ -177,6 +163,33 @@ fields:
               fields:
                 -
                   import: people
+            product:
+              display: Product
+              instructions: 'A full width product with optional text and button(s).'
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: product
+            product_features:
+              display: 'Product Features'
+              instructions: 'Animated product render with features'
+              fields:
+                -
+                  import: product_features
+            products:
+              display: Products
+              instructions: 'List of products with text.'
+              icon: link
+              fields:
+                -
+                  import: products
+            tab_sections:
+              display: 'Tab Sections'
+              instructions: 'Tab sections of experiences or products'
+              icon: null
+              fields:
+                -
+                  import: tab_sections
         text:
           display: Text
           instructions: 'Text based blocks.'
@@ -202,7 +215,7 @@ fields:
                 -
                   import: icon_list
             faq:
-              display: 'FAQ'
+              display: FAQ
               instructions: 'List frequently asked questions in an accordion.'
               fields:
                 -

@@ -18,7 +18,9 @@
                 {{ /block:images:0 }}
             </figure>
         {{ else }}
-                <div class="hidden md:grid aspect-[8/3] md:col-span-12 gap-5 md:grid-cols-4 md:grid-rows-2">
+                <div x-data="fadeIn()" 
+                x-init="hide($el.children)" 
+                x-intersect.once.margin.-20%="fadeInStagger($el)" class="hidden md:grid aspect-[8/3] md:col-span-12 gap-5 md:grid-cols-4 md:grid-rows-2">
                     {{ images }}
                         <figure class="bg-charcoal-10
                             {{ switch(

@@ -61,7 +61,7 @@ page_builder:
       - 866a7ac5-8bad-40d1-8ff4-e2a55cedf0c6
     resources:
       - webinars
-      - white-pages
+      - white-papers
       - media
       - interviews
 headline: 'Lorem ipsum dolor sit amet consectetur.'

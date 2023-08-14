@@ -1,0 +1,53 @@
+<section x-data="fadeIn()" 
+    x-init="hide($el.children)" 
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
+    {{ if title }}
+    <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
+        {{ partial:typography/h2 :content="title" class="md:col-span-5" }}
+        <div class="md:col-start-7 md:col-span-6">
+            {{ partial:typography/p :content="text"}}
+        </div>
+    </div>
+    {{ /if }}
+
+    {{ hardware }}
+        <div
+            class="flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
+            {{ switch(
+                (total_results === 1) => 'md:col-span-8 md:col-start-3',
+                (total_results === 2) => 'md:col-span-6',
+                (total_results > 2) => 'md:col-span-6 lg:col-span-4 lg:col-start-0',
+                () => void
+            )}}
+            "
+            aria-labelledby="{{ title | slugify }}"
+            draggable="false"
+        >
+
+            {{ if image }}
+            <figure class="bg-charcoal">
+                {{ partial
+                    src="statamic-peak-tools::components/picture"
+                    sizes="
+                        { switch(
+                            (total_results == 1) => '(min-width: 1280px) 1150px, 90vw',
+                            (total_results == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                            (total_results == 3) => '(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw',
+                        )}
+                    "
+                    aspect_ratio="{ total_results >= 3 ? '7/5' : '7/5 large:9/4' }"
+                    lazy="true"
+                }}
+            </figure>
+            {{ /if }}
+            
+            <div class="mt-6">
+                <span id="{{ title | slugify }}">
+                    {{ partial:typography/large class="mb-2 font-bold" color="text-neutral" :content="title" }}
+                </span>
+                {{ text ?= {partial:typography/p class="mb-4" :content="text" } }}
+            </div>
+            
+        </div>
+    {{ /hardware }}
+</section>

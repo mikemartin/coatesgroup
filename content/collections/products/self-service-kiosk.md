@@ -3,13 +3,38 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691992554
+updated_at: 1692013665
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
-image: products/self-service-kiosk/k2_closeup_transparent@2x.png
+image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
 enable_hero: true
 page_builder:
+  -
+    id: llat62hu
+    features:
+      -
+        id: llat63zr
+        title: 'Flexibility & Serviceability'
+        text: 'A range of mounting options to accommodate your footprint and plug and play components for easy servicing.'
+        feature_position: right
+      -
+        id: llat6s3z
+        title: 'Leading Design'
+        text: 'Award-winning design based on behavioural research ensures the focus is the customer’s experience rather than the kiosk itself.'
+        feature_position: left
+      -
+        id: llat73uf
+        title: Future-Proofed
+        text: 'Designed to accommodate industry-leading displays and technology, future integrations and upgrades as well as software architecture changes.'
+        feature_position: right
+      -
+        id: llat7oc0
+        title: 'Enhanced Ordering'
+        text: 'When paired with a dynamic CMS, self-order kiosks can leverage app integration and customisable order experiences.'
+        feature_position: left
+    type: product_features
+    enabled: true
   -
     id: llagmcte
     title: 'Self Service Kiosk'

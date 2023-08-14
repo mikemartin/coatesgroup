@@ -14,27 +14,14 @@ page_builder:
     id: llaho0qe
     title: 'Communicate your brand’s most important messages with impact.'
     text: 'At Coates Group, our experienced team delivers best-in-class indoor and outdoor signage that meets the highest standards of safety, compliance, and durability. Our solutions bring together self-service engagements and impactful messaging, enabling national and global brands to stand out from the crowd.'
-    block_type: grid
-    products:
-      -
-        id: rqzDoIFy
-        product: b6344748-a2f8-457e-9c38-2477a1c30203
-      -
-        id: llahoegt
-        product: 69c86745-dea0-467a-834a-d008d1a9917b
-      -
-        id: llahojat
-        product: 45a726b7-9408-4eaf-bbaa-c88087a74232
-      -
-        id: llahophy
-        product: 295bf52c-7002-4955-ab7b-f22749df0a18
-      -
-        id: llahowli
-        product: 07d83217-c31c-4699-b32d-727a42f1d8dd
-      -
-        id: llahp3l9
-        product: 1977dacd-9cfd-49b3-941b-f43fe9703856
-    type: products
+    hardware:
+      - b6344748-a2f8-457e-9c38-2477a1c30203
+      - 69c86745-dea0-467a-834a-d008d1a9917b
+      - 45a726b7-9408-4eaf-bbaa-c88087a74232
+      - 295bf52c-7002-4955-ab7b-f22749df0a18
+      - 07d83217-c31c-4699-b32d-727a42f1d8dd
+      - 1977dacd-9cfd-49b3-941b-f43fe9703856
+    type: hardware
     enabled: true
   -
     id: ll6j9l71

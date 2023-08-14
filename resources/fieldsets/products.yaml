@@ -18,7 +18,6 @@ fields:
     field:
       options:
         panels: Panels
-        grid: Grid
         carousel: Carousel
         drive_thru: 'Drive Thru'
       default: panels
@@ -75,6 +74,7 @@ fields:
       localizable: true
       listable: hidden
       display: Products
+      instructions: Display Product content or add your own title and text.
       replicator_preview: false
       instructions_position: above
       visibility: visible

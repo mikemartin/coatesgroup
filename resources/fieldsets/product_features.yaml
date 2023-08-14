@@ -1,0 +1,54 @@
+title: "Product Features"
+fields:
+  -
+    handle: features
+    field:
+      fields:
+        -
+          handle: title
+          field:
+            input_type: text
+            type: text
+            localizable: true
+            listable: hidden
+            display: Title
+        -
+          handle: text
+          field: common.text_plain
+          config:
+            display: Text
+        -
+          handle: feature_position
+          field:
+            options:
+              left: Left Side
+              right: Right Side
+            taggable: false
+            push_tags: false
+            multiple: false
+            clearable: false
+            searchable: true
+            cast_booleans: false
+            default: left
+            type: select
+            display: 'Feature Position'
+            icon: select
+            instructions: 'Show feature on the left or right side of 3d render.'
+            width: 50
+            listable: hidden
+            instructions_position: above
+            visibility: visible
+            hide_display: false
+            replicator_preview: false
+      mode: stacked
+      add_row: 'Add feature'
+      reorderable: true
+      type: grid
+      localizable: true
+      listable: hidden
+      display: Features
+      replicator_preview: false
+      instructions_position: above
+      visibility: visible
+      fullscreen: true
+      hide_display: false

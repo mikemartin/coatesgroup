@@ -1,0 +1,26 @@
+title: Hardware
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Title
+  -
+    handle: text
+    field: common.text_plain
+    config:
+      display: Text
+  -
+    handle: hardware
+    field:
+      mode: default
+      type: entries
+      collections:
+        - hardware
+      localizable: true
+      listable: false
+      display: Hardware
+      replicator_preview: false
