@@ -32,10 +32,10 @@ page_builder:
     enabled: true
     press:
       - 90a1d00c-28cf-4543-9974-eb45c85649ad
-      - b8c36515-da3f-44bf-866d-48de67333f74
-      - b3036152-9c75-4f2f-b05f-734d33ef65b0
-      - d6a5ad2a-6bfb-48e8-878f-90e1c13d4d31
       - bc27c735-9c4a-4107-929b-9328addd3338
+      - b3036152-9c75-4f2f-b05f-734d33ef65b0
+      - b8c36515-da3f-44bf-866d-48de67333f74
+      - d6a5ad2a-6bfb-48e8-878f-90e1c13d4d31
   -
     id: lkvsf50t
     title: '1 Liner about Awards section'
@@ -78,5 +78,5 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692019675
+updated_at: 1692019735
 ---
