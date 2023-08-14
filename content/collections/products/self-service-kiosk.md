@@ -3,13 +3,32 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691714572
+updated_at: 1691992554
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: products/self-service-kiosk/k2_closeup_transparent@2x.png
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
 enable_hero: true
 page_builder:
+  -
+    id: llagmcte
+    title: 'Self Service Kiosk'
+    headline: 'A data-driven CMS that powers all digital...'
+    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    images:
+      - products/self-service-kiosk/k2_closeup_transparent@2x.png
+      - products/self-service-kiosk/k2range_transparent@2x.png
+      - products/self-service-kiosk/k2_front_transparent@2x.png
+      - products/self-service-kiosk/k2_hero_transparent@2x.png
+    type: product
+    enabled: true
+  -
+    id: llagnile
+    video: 6--kiosk-10s.mp4
+    video_mobile: 6--720x1280-kiosk-10s.mp4
+    fill_screen: true
+    type: full_width_video
+    enabled: true
   -
     id: ll4ji16s
     title: 'Sleek, Modern Kiosks Create Engaging Customer Interactions'
@@ -42,6 +61,17 @@ page_builder:
       value:
         - 'rgb(255 255 255)'
     icon_position: above
+  -
+    id: llagnwy0
+    title: 'Frequently Asked Questions'
+    questions:
+      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
+      - 91ebcfef-1c85-4de0-aa33-a1684829930b
+      - 362c0cf4-599c-4d68-8d6c-546359f0751a
+      - 3418af77-19bd-4e20-9695-d701a08f09ab
+      - 65037a07-e985-4dd9-a270-4da643c3e5f6
+    type: faq
+    enabled: true
   -
     id: ll5usujh
     cta_type: render

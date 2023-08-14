@@ -9,11 +9,11 @@
     })">
     <div class="swiper relative !pb-10 !overflow-x-visible" x-ref="container">
         <div class="swiper-wrapper">
-            {{ gallery_images }}
-                <div class="swiper-slide !h-auto bg-charcoal {{ (display == 'tall') || (display == 'small')  ?= '!w-1/2' }}">
+            {{ images scope="images" }}
+                <div class="swiper-slide !h-auto bg-charcoal-10 {{ (display == 'tall') || (display == 'small')  ?= '!w-1/2' }}">
                     {{ partial
                         src="statamic-peak-tools::components/picture"
-                        sizes="{{ (display == 'tall') || (display == 'small')  ? '50vw' : '90vw' }}"
+                        :image="images:image ?? url" sizes="{{ (display == 'tall') || (display == 'small')  ? '50vw' : '90vw' }}"
                         aspect_ratio="
                             { switch(
                                 (display == 'small') => '4/5',
@@ -24,7 +24,7 @@
                         cover="true"
                     }}
                 </div>
-            {{ /gallery_images }}
+            {{ /images }}
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination !text-left absolute !bottom-0"></div>

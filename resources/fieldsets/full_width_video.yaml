@@ -28,7 +28,7 @@ fields:
       localizable: true
       listable: hidden
       display: 'Video URL'
-      instructions: "Add YouTube or Vimeo player."
+      instructions: 'Add YouTube or Vimeo player.'
       instructions_position: below
   -
     handle: video
@@ -42,8 +42,8 @@ fields:
     handle: video_mobile
     field: common.video
     config:
-      width: 50
       display: 'Mobile Video'
+      width: 50
       validate:
         - 'mimes:mp4'
       instructions: 'Must be a 720 x 1280 looping `mp4` file.'
@@ -55,3 +55,14 @@ fields:
       display: 'Fallback image'
       width: 50
       instructions: 'Image required while the video loads.'
+  -
+    handle: fill_screen
+    field:
+      default: false
+      type: toggle
+      display: 'Fill Screen'
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

@@ -3,13 +3,39 @@ id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691755118
+updated_at: 1691995567
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
 page_builder:
+  -
+    id: llaho0qe
+    title: 'Communicate your brand’s most important messages with impact.'
+    text: 'At Coates Group, our experienced team delivers best-in-class indoor and outdoor signage that meets the highest standards of safety, compliance, and durability. Our solutions bring together self-service engagements and impactful messaging, enabling national and global brands to stand out from the crowd.'
+    block_type: grid
+    products:
+      -
+        id: rqzDoIFy
+        product: b6344748-a2f8-457e-9c38-2477a1c30203
+      -
+        id: llahoegt
+        product: 69c86745-dea0-467a-834a-d008d1a9917b
+      -
+        id: llahojat
+        product: 45a726b7-9408-4eaf-bbaa-c88087a74232
+      -
+        id: llahophy
+        product: 295bf52c-7002-4955-ab7b-f22749df0a18
+      -
+        id: llahowli
+        product: 07d83217-c31c-4699-b32d-727a42f1d8dd
+      -
+        id: llahp3l9
+        product: 1977dacd-9cfd-49b3-941b-f43fe9703856
+    type: products
+    enabled: true
   -
     id: ll6j9l71
     image: products/traditional-signage/img_traditionalsignage_hero.jpg
@@ -47,6 +73,17 @@ page_builder:
     title: 'Case Studies'
     block_type: grid
     type: case_studies
+    enabled: true
+  -
+    id: llagq97v
+    title: 'Frequently Asked Questions'
+    questions:
+      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
+      - 91ebcfef-1c85-4de0-aa33-a1684829930b
+      - 362c0cf4-599c-4d68-8d6c-546359f0751a
+      - 3418af77-19bd-4e20-9695-d701a08f09ab
+      - 65037a07-e985-4dd9-a270-4da643c3e5f6
+    type: faq
     enabled: true
   -
     id: ll5usujh

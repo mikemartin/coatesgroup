@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691755314
+updated_at: 1691992609
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
@@ -49,6 +49,17 @@ page_builder:
     value:
       - 'rgb(255 255 255)'
     icon_position: above
+  -
+    id: llagpdj9
+    title: 'Frequently Asked Questions'
+    questions:
+      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
+      - 91ebcfef-1c85-4de0-aa33-a1684829930b
+      - 362c0cf4-599c-4d68-8d6c-546359f0751a
+      - 3418af77-19bd-4e20-9695-d701a08f09ab
+      - 65037a07-e985-4dd9-a270-4da643c3e5f6
+    type: faq
+    enabled: true
   -
     id: ll5usujh
     cta_type: render

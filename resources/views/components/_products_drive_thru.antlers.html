@@ -69,14 +69,14 @@ class="w-full">
                             </div>
                         </div>
                         <div class="swiper-wrapper">
-                            {{ products }}
+                            {{ products scope="custom" }}
                                 <div class="swiper-slide">
                                     <div class="relative text-center lg:px-12"
                                     >
-                                        {{ partial:typography/large class="font-medium mb-4 mx-auto" :content="product_title ?? title" }}
-                                        {{ partial:typography/p class="mb-4 lg:max-w-md lg:mx-auto" :content="product:text ?? text" }}
-                                        {{ if product }}
-                                            {{ partial:components/button button_type="inline" as="span" label="View More" class="mx-auto" }}
+                                        {{ partial:typography/large class="font-medium mb-4 mx-auto" :content="custom:title ?? product:title" }}
+                                        {{ partial:typography/p class="mb-4 lg:max-w-md lg:mx-auto" :content="custom:text ?? product:text" }}
+                                        {{ if product:url }}
+                                            {{ partial:components/button :url="product:url" button_type="inline" label="View More" class="mx-auto" }}
                                         {{ /if }}
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691714549
+updated_at: 1691992441
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -11,6 +11,25 @@ enable_hero: true
 duplicated_from: 10b3a0e8-9688-479e-9a82-6433aa322e55
 hero_image: products/outdoor-digital-menu-board/img_homepage_outdoordigitalmenuboard_hero.jpg
 page_builder:
+  -
+    id: llagiv1p
+    title: 'Outdoor Digital Menuboard'
+    headline: 'A data-driven CMS that powers all digital...'
+    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    images:
+      - products/outdoor-digital-menu-board/o4odmb_double_front_transparent@2x.png
+      - products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
+      - products/outdoor-digital-menu-board/o4odmb_single_hero_transparent@2x.png
+      - products/outdoor-digital-menu-board/o4odmb_single_front_transparent@2x.png
+    type: product
+    enabled: true
+  -
+    id: llagjyit
+    video: 5--outdoor-dmb-10s.mp4
+    video_mobile: 5--720x1280-outdoor-dmb-10s-2.mp4
+    fill_screen: true
+    type: full_width_video
+    enabled: true
   -
     id: ll4olq0e
     title: 'Elevate the Drive Thru Ordering Experience'
@@ -43,6 +62,17 @@ page_builder:
     type: icon_list
     enabled: true
     icon_position: above
+  -
+    id: llaglr87
+    title: 'Frequently Asked Questions'
+    questions:
+      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
+      - 91ebcfef-1c85-4de0-aa33-a1684829930b
+      - 362c0cf4-599c-4d68-8d6c-546359f0751a
+      - 3418af77-19bd-4e20-9695-d701a08f09ab
+      - 65037a07-e985-4dd9-a270-4da643c3e5f6
+    type: faq
+    enabled: true
   -
     id: ll5usujh
     cta_type: render
