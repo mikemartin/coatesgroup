@@ -43,11 +43,11 @@ page_builder:
     type: awards
     enabled: true
     awards:
-      - 87dfdcee-2559-4116-85ad-8b48bab37461
-      - c7623794-5306-4796-a0f0-28a52556a1bf
       - 8fa81eb4-68c3-4b94-a2b9-34e196740fbf
       - 39f19a4b-480d-4bae-832d-6782ae3201c3
       - 2ff83eca-2919-4abd-8b21-0cab6ef51083
+      - 87dfdcee-2559-4116-85ad-8b48bab37461
+      - c7623794-5306-4796-a0f0-28a52556a1bf
   -
     id: lkvsff6f
     title: '1 Liner about Thought Leadership section'
@@ -77,6 +77,6 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691369925
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692008732
 ---
