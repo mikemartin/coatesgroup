@@ -18,7 +18,8 @@ import 'swiper/css/grid';
 import 'swiper/css/effect-fade';
 import fadeIn from './components/fadeIn.js'
 import horizontalLoop from './components/horizontalLoop.js'
-
+import lottie from 'lottie-web'
+import { create } from '@lottiefiles/lottie-interactivity';
 
 Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade]);
 
@@ -58,6 +59,10 @@ if (!supportMasonry) {
 
     
 }
+
+// Init Lottie
+window.lottie = lottie
+window.create = create
 
 // Call Alpine.
 window.Alpine = Alpine

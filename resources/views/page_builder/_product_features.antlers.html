@@ -6,6 +6,39 @@
 
 <!-- /page_builder/_product_features.antlers.html -->
 <section class="fluid-container grid md:grid-cols-12 gap-8">
-    {{ partial:typography/h3 content="🔧<br>Product Features" class="md:col-span-12 text-center" }}
+    <div class="md:col-start-3 md:col-span-8">
+        <figure
+            x-data="{ animation: '' }"
+            x-init="
+                animation = lottie.loadAnimation({
+                    container: $el,
+                    renderer: 'svg',
+                    autoplay: false,
+                    loop: false,
+                    path: '{{ animation }}'
+                }),
+                create({
+                    mode: 'scroll',
+                    player: animation,
+                    container: '.animation-container-class',
+                    actions: [
+                        {
+                            visibility: [0, .1],
+                            type: 'seek',
+                            frames: [0, 0],
+                        },
+                        {
+                            visibility: [.1, .9],
+                            type: 'seek',
+                            frames: [0, {{ frames }}],
+                        },
+                    ],
+                })
+            "
+            aria-hidden="true"
+        >
+        </figure>
+    </div>
+    
 </section>
 <!-- End: /page_builder/_product_features.antlers.html -->

@@ -74,6 +74,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'animations' => [
+            'driver' => 'local',
+            'root' => public_path('animations'),
+            'url' => '/animations',
+            'visibility' => 'public',
+        ],
+
         'videos' => [
             'driver' => 'local',
             'root' => public_path('videos'),

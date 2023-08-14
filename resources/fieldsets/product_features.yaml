@@ -1,5 +1,31 @@
-title: "Product Features"
+title: 'Product Features'
 fields:
+  -
+    handle: animation
+    field: common.image
+    config:
+      container: animations
+      restrict: true
+      display: 'Lottie Animation'
+      instructions_position: below
+      width: 50
+      instructions: 'This should be a *.json* file.'
+      validate:
+        - required
+  -
+    handle: frames
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Frames
+      icon: text
+      instructions: 'Amount of frames from beginning to end.'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      hide_display: false
+      width: 50
   -
     handle: features
     field:
@@ -21,8 +47,8 @@ fields:
           handle: feature_position
           field:
             options:
-              left: Left Side
-              right: Right Side
+              left: 'Left Side'
+              right: 'Right Side'
             taggable: false
             push_tags: false
             multiple: false
@@ -33,7 +59,7 @@ fields:
             type: select
             display: 'Feature Position'
             icon: select
-            instructions: 'Show feature on the left or right side of 3d render.'
+            instructions: 'Show feature on the left or right side of the animation.'
             width: 50
             listable: hidden
             instructions_position: above

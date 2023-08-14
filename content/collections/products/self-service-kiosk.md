@@ -3,13 +3,25 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692013665
+updated_at: 1692015489
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
 enable_hero: true
 page_builder:
+  -
+    id: llagmcte
+    title: 'Self Service Kiosk'
+    headline: 'A data-driven CMS that powers all digital...'
+    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    images:
+      - products/self-service-kiosk/k2_closeup_transparent@2x.png
+      - products/self-service-kiosk/k2range_transparent@2x.png
+      - products/self-service-kiosk/k2_front_transparent@2x.png
+      - products/self-service-kiosk/k2_hero_transparent@2x.png
+    type: product
+    enabled: true
   -
     id: llat62hu
     features:
@@ -35,18 +47,8 @@ page_builder:
         feature_position: left
     type: product_features
     enabled: true
-  -
-    id: llagmcte
-    title: 'Self Service Kiosk'
-    headline: 'A data-driven CMS that powers all digital...'
-    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
-    images:
-      - products/self-service-kiosk/k2_closeup_transparent@2x.png
-      - products/self-service-kiosk/k2range_transparent@2x.png
-      - products/self-service-kiosk/k2_front_transparent@2x.png
-      - products/self-service-kiosk/k2_hero_transparent@2x.png
-    type: product
-    enabled: true
+    animation: self-service-kiosk.json
+    frames: '30'
   -
     id: llagnile
     video: 6--kiosk-10s.mp4

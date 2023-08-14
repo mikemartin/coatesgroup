@@ -16,9 +16,11 @@
     "@alpinejs/morph": "^3.12.3",
     "@alpinejs/persist": "^3.12.3",
     "@alpinejs/ui": "^3.12.3-beta.0",
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
     "alpinejs": "^3.12.3",
     "focus-visible": "^5.2.0",
     "gsap": "^3.12.2",
+    "lottie-web": "^5.12.2",
     "macy": "^2.5.1",
     "swiper": "^10.0.4"
   },

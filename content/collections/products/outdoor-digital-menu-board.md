@@ -3,7 +3,7 @@ id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691992441
+updated_at: 1692015874
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -22,6 +22,33 @@ page_builder:
       - products/outdoor-digital-menu-board/o4odmb_single_hero_transparent@2x.png
       - products/outdoor-digital-menu-board/o4odmb_single_front_transparent@2x.png
     type: product
+    enabled: true
+  -
+    id: llaui2th
+    animation: outdoor-digital-menu-board.json
+    frames: '30'
+    features:
+      -
+        id: llaui89p
+        title: 'Leading Design'
+        text: 'Award-winning human-centric design enables a seamless customer experience, flexibility of technology and customizable features.'
+        feature_position: right
+      -
+        id: llauiqf7
+        title: 'Serviceability & Usability'
+        text: 'Component agnostic, user-centric and tested in a range of climates, our design prioritizes ease of install, use and ongoing service.'
+        feature_position: left
+      -
+        id: llauixf7
+        title: Future-Proofed
+        text: 'Designed to accommodate industry-leading displays and technology, future integrations, upgrades and flexible architecture model'
+        feature_position: right
+      -
+        id: llauj6uo
+        title: 'Powered by Switchboard'
+        text: 'Our CMS connects all customer touchpoints in the drive-thru and ensures brands can communicate the right content to the right customer at the right time.'
+        feature_position: left
+    type: product_features
     enabled: true
   -
     id: llagjyit

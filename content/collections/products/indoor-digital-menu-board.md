@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Indoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692010228
+updated_at: 1692015900
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
@@ -22,6 +22,28 @@ page_builder:
       - products/indoor-digital-menu-board/idmb_portrait_hero_transparentbg.png
     type: product
     enabled: true
+  -
+    id: llaug1bz
+    animation: indoor-digital-menu-board.json
+    features:
+      -
+        id: llauga4k
+        title: 'Fit for Purpose'
+        text: 'Designed for simple serviceability of media players and cable management while meeting the unique challenges of restaurant environment'
+        feature_position: right
+      -
+        id: llaugits
+        title: Flexibility
+        text: 'Landscape or portrait mounting options to fit your footprint'
+        feature_position: left
+      -
+        id: llaugu7u
+        title: 'Powered by Switchboard™'
+        text: 'When powered by Switchboard™ CMS, menu content and promotional messaging becomes dynamic and evolves when and how you need it to.'
+        feature_position: right
+    type: product_features
+    enabled: true
+    frames: '30'
   -
     id: llag89j5
     video: 4--indoor-dmb.mp4

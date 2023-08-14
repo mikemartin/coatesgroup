@@ -172,7 +172,7 @@ fields:
                   import: product
             product_features:
               display: 'Product Features'
-              instructions: 'Animated product render with features'
+              instructions: 'Product animation with features'
               fields:
                 -
                   import: product_features
