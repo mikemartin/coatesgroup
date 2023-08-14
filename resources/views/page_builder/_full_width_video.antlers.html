@@ -45,7 +45,7 @@
         () => '--plyr-color-main: rgb(var(--color-blue))',
 	)}}"
     {{/if}} 
-    class="fluid-container">
+    class="{{ unless fill_screen }}fluid-container{{/unless}}">
     
     <figure 
         {{ if block:video_url }}

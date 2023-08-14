@@ -201,6 +201,12 @@ fields:
               fields:
                 -
                   import: icon_list
+            faq:
+              display: 'FAQ'
+              instructions: 'List frequently asked questions in an accordion.'
+              fields:
+                -
+                  import: faq
             repeating_squares:
               display: 'Repeating Squares'
               instructions: 'Repeating square outlines with text.'

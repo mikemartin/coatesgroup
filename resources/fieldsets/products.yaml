@@ -17,10 +17,11 @@ fields:
     handle: block_type
     field:
       options:
+        panels: Panels
         grid: Grid
         carousel: Carousel
         drive_thru: 'Drive Thru'
-      default: grid
+      default: panels
       type: button_group
       display: 'Block Type'
       icon: button_group
@@ -40,17 +41,6 @@ fields:
     field:
       fields:
         -
-          handle: focal_point
-          field:
-              display: 'Focal Point'
-              type: focalpoint
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              always_save: false
-              assets_field_handle: image
-        -
           handle: product
           field:
             max_items: 1
@@ -58,10 +48,12 @@ fields:
             type: entries
             collections:
               - products
+              - hardware
             localizable: true
             listable: false
             display: Product
             replicator_preview: false
+            instructions: 'Select from the [Products](/cp/collections/products) or [Hardware](/cp/collections/hardware) collections.'
         -
           handle: title
           field:

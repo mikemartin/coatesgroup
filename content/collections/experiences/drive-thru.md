@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691748784
+updated_at: 1691994110
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Lorem ipsum dolor sit amet consectetur.'
@@ -19,9 +19,9 @@ page_builder:
     products:
       -
         id: e7WAWvsw
-        title: 'Pre-Sell Menu Boards'
         text: 'Positioned before the order point, pre-sell displays deliver targeted marketing and promotions to customers entering the drive thru.'
         focal_point: 14-64-2
+        product: 22e8175d-2f1e-4e29-85a7-c548dbec709e
       -
         id: ll5xbxfr
         product: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
@@ -30,9 +30,9 @@ page_builder:
         focal_point: 42-68-1
       -
         id: ll5xd97z
-        title: 'Order Confirmation Units'
         text: 'Our outdoor order-taking units can incorporate cameras, scanners, Bluetooth, and other interactive signage technologies to communicate with customers.'
         focal_point: 76-57-1
+        product: b9fbdbf2-c567-4a71-9894-a9f0a8293289
     type: products
     enabled: true
     title: 'Drive thru solutions that engage in any environment'
@@ -51,7 +51,7 @@ page_builder:
         target_blank: false
         entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
         button_type: button
-    images: 
+    images:
       - experiences/in-restaurant/img_software.jpg
     type: product
     enabled: true

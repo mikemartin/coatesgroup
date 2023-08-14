@@ -43,11 +43,11 @@ x-init="swiper = new Swiper($refs.container, {
             <div class="hidden md:block">
                 <div class="swiper !pb-14" x-ref="container">
                     <div class="swiper-wrapper">
-                        {{ products }}
+                        {{ products scope="custom" }}
                             <div class="swiper-slide">
                                 <div class="relative border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary"
                                 >
-                                    {{ partial:typography/large class="font-medium mb-4" :content="product:title ?? title" }}
+                                    {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                                     {{ if product }}
                                         {{ partial:components/button button_type="inline" as="span" label="View More" faux="true" }}
                                         <a href="{{ product:url }}" class="absolute inset-0"></a>
@@ -62,12 +62,12 @@ x-init="swiper = new Swiper($refs.container, {
                 </div>
             </div>
             <div class="md:hidden space-y-6">
-                {{ products }}
+                {{ products scope="custom" }}
                 <div class="relative border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary">
-                    {{ partial:typography/large class="font-medium mb-4" :content="title" }}
-                    {{ if link }}
+                    {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
+                    {{ if product:url }}
                         {{ partial:components/button button_type="inline" as="span" label="View More" faux="true" }}
-                        <a href="{{ link }}" class="absolute inset-0"></a>
+                        <a href="{{ product:url }}" class="absolute inset-0"></a>
                     {{ /if }}
                 </div>
                 {{ /products }}

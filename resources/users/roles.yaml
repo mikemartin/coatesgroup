@@ -142,6 +142,15 @@ editor:
     - 'delete videos assets'
     - 'view contact form submissions'
     - 'delete contact form submissions'
+    - 'view hardware entries'
+    - 'edit hardware entries'
+    - 'create hardware entries'
+    - 'delete hardware entries'
+    - 'publish hardware entries'
+    - 'reorder hardware entries'
+    - 'edit other authors hardware entries'
+    - 'publish other authors hardware entries'
+    - 'delete other authors hardware entries'
 marketeer:
   title: Marketeer
   permissions:

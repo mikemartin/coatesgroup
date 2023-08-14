@@ -15,8 +15,13 @@
         :title="block:title"
         :text="block:text"
         :products="block:products" }}
-{{ else }}
+{{ elseif block_type == 'grid' }}
     {{ partial:components/products_grid
+        :title="block:title"
+        :text="block:text"
+        :products="block:products" }}
+{{ else}}
+    {{ partial:components/products_panels
         :title="block:title"
         :text="block:text"
         :products="block:products" }}

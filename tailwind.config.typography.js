@@ -55,6 +55,7 @@ module.exports = {
             '--tw-prose-invert-pre-bg': theme('colors.white'),
             '--tw-prose-invert-th-borders': theme('colors.white'),
             '--tw-prose-invert-td-borders': theme('colors.white'),
+            lineHeight: round(24 / 16),
             'ul > li > p, ol > li > p': {
               marginTop: '0em !important',
               marginBottom: '0em !important',
@@ -135,6 +136,8 @@ module.exports = {
         },
         lg: {
           css: {
+            lineHeight: round(25 / 18),
+
             '[class~="lead"]': {
               fontSize: em(45, 18),
               marginTop: em(32, 45),
