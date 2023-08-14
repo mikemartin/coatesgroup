@@ -1,4 +1,4 @@
-title: 'Product'
+title: Product
 fields:
   -
     handle: title
@@ -32,11 +32,12 @@ fields:
   -
     import: buttons
   -
-    handle: image
+    handle: images
     field: common.image
     config:
       mode: grid
-      display: Image
-      width: 50
+      display: Images
+      max_files: 0
       validate:
         - required
+      folder: products

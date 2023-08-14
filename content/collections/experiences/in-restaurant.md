@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691972491
+updated_at: 1691978381
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
@@ -57,7 +57,8 @@ page_builder:
         target_blank: false
         entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
         button_type: button
-    image: experiences/in-restaurant/img_software.jpg
+    images:
+      - experiences/in-restaurant/img_software.jpg
     type: product
     enabled: true
   -

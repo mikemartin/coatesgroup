@@ -5,15 +5,49 @@
 #}}
 
 <!-- /page_builder/_product.antlers.html -->
-<section class="{{ if first }}border-t pt-12 md:pt-16 lg:pt-24{{/if}}">
+<section class="{{ if !first }}border-t pt-12 md:pt-16 lg:pt-24{{/if}}">
     <div class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
         <div class="mx-auto max-w-2xl text-center md:col-span-12 ">
             {{ partial:typography/h2 :content="title" }}
         </div>
-        <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
-        class="-mx-8 md:mx-0 md:col-span-10 md:col-start-2">
-            {{ partial:statamic-peak-tools::components/picture :image="block:image" cover="true" lazy="true" sizes="100vw" }}
-        </figure>
+        {{ if images|length == 1 }}
+            <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+            class="-mx-8 md:mx-0 md:col-span-10 md:col-start-2">
+                {{ block:images:0 }}
+                    {{ partial:statamic-peak-tools::components/picture :image="url" cover="true" lazy="true" sizes="100vw" }}
+                {{ /block:images:0 }}
+            </figure>
+        {{ else }}
+                <div class="hidden md:grid aspect-[8/3] md:col-span-12 gap-5 md:grid-cols-4 md:grid-rows-2">
+                    {{ images }}
+                        <figure class="bg-charcoal-10
+                            {{ switch(
+                                (count == 1) => 'md:row-span-2 md:col-span-2',
+                                (count == 2) => 'md:col-span-2',
+                                () => '',
+                            )}}
+                        ">
+                            {{ partial
+                                src="statamic-peak-tools::components/picture"
+                                :image="url"
+                                sizes="
+                                    { switch(
+                                        (count == 1) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                        (count == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                        () => '(min-width: 1280px) 320px, (min-width: 768px) 25vw, 90vw',
+                                    )}
+                                "
+                                aspect_ratio="large:4/3"
+                                cover="true"
+                                lazy="true"
+                            }}
+                        </figure>
+                    {{ /images }}
+                </div>
+                <div class="md:hidden">
+                    {{ partial:components/gallery_carousel }}
+                </div>
+        {{ /if }}
         <div 
             x-data="fadeIn()" 
             x-init="hide($el.children)" 

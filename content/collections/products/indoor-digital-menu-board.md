@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Indoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691976640
+updated_at: 1691981848
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: products/indoor-digital-menu-board/idmb_portrait_hero_transparentbg.png
@@ -15,7 +15,11 @@ page_builder:
     title: 'Indoor Digital Menuboard'
     headline: 'A data-driven CMS that powers all digital ...'
     text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities, our proprietary Switchboard™ CMS allows for a single solution across all hardwarae touchpoints, ensuring a seamless and connected customer experience.'
-    image: products/indoor-digital-menu-board/idmb_landscape_hero_transparentbg.png
+    images:
+      - products/indoor-digital-menu-board/idmb_landscape_hero_transparentbg.png
+      - products/indoor-digital-menu-board/idmb_landscape_front_transparentbg.png
+      - products/indoor-digital-menu-board/idmb_portrait_front_transparentbg.png
+      - products/indoor-digital-menu-board/idmb_portrait_hero_transparentbg.png
     type: product
     enabled: true
   -

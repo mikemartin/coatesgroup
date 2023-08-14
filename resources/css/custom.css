@@ -14,8 +14,7 @@
         --color-charcoal-10: 244 244 244;
 
         --plyr-color-main: rgb(var(--color-blue));
-        --plyr-control-icon-size: 32px;
-
+        
         --swiper-theme-color: rgb(var(--color-blue)) !important;
         --swiper-pagination-color: var(--swiper-theme-color);
         --swiper-pagination-left: auto;
@@ -50,6 +49,10 @@
 }
 
 @layer components {
+
+  .plyr__control--overlaid {
+    --plyr-control-icon-size: 32px;
+  }    
 
   .swiper-watch-progress .swiper-slide {
     opacity: .5;

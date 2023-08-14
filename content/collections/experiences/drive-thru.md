@@ -51,7 +51,8 @@ page_builder:
         target_blank: false
         entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
         button_type: button
-    image: experiences/in-restaurant/img_software.jpg
+    images: 
+      - experiences/in-restaurant/img_software.jpg
     type: product
     enabled: true
   -
