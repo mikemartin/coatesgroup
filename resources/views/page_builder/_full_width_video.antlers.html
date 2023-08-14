@@ -5,8 +5,54 @@
 #}}
 
 <!-- /page_builder/_full_width_video.antlers.html -->
-<section class="fluid-container">
-    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" class="aspect-[5/7] md:aspect-[9/4] -mx-8 lg:mx-0">
+<section 
+    {{ if block:video_url }}
+    x-data="{ 
+        ready: false, 
+        autoplay: false,
+        loadPlayer() {
+            const player = new Plyr(this.$refs.player, {
+                ratio: '9:5',
+                hideControls: false,
+                keyboard: {
+                  global: true,
+                },
+                tooltips: {
+                  controls: true,
+                },
+                captions: {
+                  active: true,
+                },
+            });
+    
+            player.toggleControls(false);
+    
+            player.on('play', event => {
+                player.toggleControls(true);
+            });
+    
+            player.on('ready', event => {
+                this.ready = true;
+                if (this.autoplay) {
+                  player.play();
+                }
+            });
+        }
+    }" 
+    style="{{ switch(
+		(hero_color:label == 'Yellow') => '--plyr-color-main: rgb(var(--color-green))',
+        (hero_color:label == 'Red') => '--plyr-color-main: rgb(var(--color-green))',
+        () => '--plyr-color-main: rgb(var(--color-blue))',
+	)}}"
+    {{/if}} 
+    class="fluid-container">
+    
+    <figure 
+        {{ if block:video_url }}
+        x-show="!ready" 
+        @click="autoplay = true, loadPlayer()"
+        {{/if}} 
+        class="relative {{ if block:video_url }}aspect-[9/5]{{else}}aspect-[5/7] md:aspect-[9/4]{{/if}} -mx-8 lg:mx-0 {{ if block:video_url }}cursor-pointer{{/if}}">
         <video
                 playsinline muted autoplay loop preload
                 poster="{{ block:fallback_image }}"
@@ -14,7 +60,25 @@
             >
             <source src="{{ block:video }}" type="video/mp4">
         </video>
+        {{ if block:video_url }}
+        <button type="button" class="!block plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></svg>
+            <span class="plyr__sr-only">Play</span>
+        </button>
+        {{ /if }}
     </figure>
+    {{ if block:video_url }}
+    <div x-show="ready" class="relative -mx-8 lg:mx-0 overflow-hidden">
+        <div x-ref="player">
+            <iframe
+            class="absolute inset-0 w-full h-full overflow-hidden rounded-xl"
+            src="{{ video_url|embed_url }}?origin={{ site:url }}&widget_referrer={{site:url}}&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            width="100%"
+            ></iframe>
+        </div>
+    </div>
+    {{ /if }}
     <div x-data="fadeIn()" 
         x-init="hide($el.children)" 
         x-intersect.once.margin.-20%="fadeInStagger($el)" 
@@ -27,3 +91,16 @@
     </div>
 </section>
 <!-- End: /page_builder/_full_width_video.antlers.html -->
+
+{{ if block:video_url }}
+    {{ once }}
+    {{ push:styles }}
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+    {{ /push:styles }}
+
+    {{ push:scripts }}
+    <script defer src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    {{ /push:scripts }}
+    {{ /once }}
+{{ /if }}

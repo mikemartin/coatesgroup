@@ -17,6 +17,7 @@
         {{ vite src="resources/css/site.css|resources/js/site.js" }}
         {{ livewire:styles }}
         {{ stack:theme }}
+        {{ stack:styles }}
         {{ partial:statamic-peak-seo::snippets/seo }}
         {{ partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
         {{ partial:statamic-peak-tools::snippets/live_preview }}
@@ -33,6 +34,7 @@
         {{ yield:modal }}
         {{ yield:slideover }}
         {{ livewire:scripts }}
+        {{ stack:scripts }}
     </body>
 </html>
 <!-- End: /layout.antlers.html -->

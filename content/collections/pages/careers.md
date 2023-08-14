@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691714446
+updated_at: 1691970665
 page_builder:
   -
     id: lk0po80o
@@ -21,6 +21,7 @@ page_builder:
     fallback_image: careers/7.-careers.png
     type: full_width_video
     enabled: true
+    video_url: 'https://vimeo.com/833815652'
   -
     id: lk7k1ik2
     title: 'How You Fit In'

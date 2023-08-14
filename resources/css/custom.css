@@ -13,6 +13,9 @@
         --color-charcoal-20: 219 220 221;
         --color-charcoal-10: 244 244 244;
 
+        --plyr-color-main: rgb(var(--color-blue));
+        --plyr-control-icon-size: 32px;
+
         --swiper-theme-color: rgb(var(--color-blue)) !important;
         --swiper-pagination-color: var(--swiper-theme-color);
         --swiper-pagination-left: auto;
