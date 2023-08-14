@@ -9,3 +9,5 @@ preferences:
   collections:
     pages:
       after_save: continue_editing
+    press:
+      per_page: 500
