@@ -37,25 +37,26 @@ class CaseStudiesIndex extends Component
         $experiences = Entry::query()
             ->where('collection', 'experiences')
             ->get();
+        $case_studies = Entry::query()
+            ->where('collection', 'case_studies')
+            ->orderBy('order')
+            ->when($this->industry, function ($query) {
+                return $query->whereJsonContains('industries', $this->industry);
+            })
+            ->when($this->location, function ($query) {
+                return $query->whereJsonContains('locations', $this->location);
+            })
+            ->when($this->product, function ($query) use ($products) {
+                $productIds = $products->whereIn('slug', $this->product)->pluck('id')->all();
+                return $query->whereJsonContains('products', $productIds);
+            })
+            ->when($this->experience, function ($query) use ($experiences) {
+                $experienceIds = $experiences->whereIn('slug', $this->experience)->pluck('id')->all();
+                return $query->whereIn('experience', $experienceIds);
+            });
 
         return view('livewire.case-studies-index', [
-            'case-studies' => Entry::query()
-                ->where('collection', 'case_studies')
-                ->orderBy('date', 'desc')
-                ->when($this->industry, function ($query) {
-                    return $query->whereJsonContains('industries', $this->industry);
-                })
-                ->when($this->location, function ($query) {
-                    return $query->whereJsonContains('locations', $this->location);
-                })
-                ->when($this->product, function ($query) use ($products) {
-                    $productIds = $products->whereIn('slug', $this->product)->pluck('id')->all();
-                    return $query->whereJsonContains('products', $productIds);
-                })
-                ->when($this->experience, function ($query) use ($experiences) {
-                    $experienceIds = $experiences->whereIn('slug', $this->experience)->pluck('id')->all();
-                    return $query->whereIn('experience', $experienceIds);
-                }),
+            'case-studies' => $case_studies,
             'industries' => $industries,
             'locations' => $locations,
             'products' => $products,

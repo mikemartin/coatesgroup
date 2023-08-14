@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691970665
+updated_at: 1691977611
 page_builder:
   -
     id: lk0po80o
@@ -17,7 +17,7 @@ page_builder:
       Founded in 1963, Coates Group is a growing global technology company that delivers innovative, immersive brand experiences to clients in more than 50 global markets. 
 
       As a company, we're focused on creating dynamic, personalised, and engaging customer experiences through our range of traditional and digital signage solutions and proprietary content management system. And we're good at what we do – not only are we a 2X Australia Good Design Award winner, but we've also been recognised for successfully completing the largest hardware deployment in Quick Service Restaurant history.
-    video: 7--careerers-full-reel.mp4
+    video: 7--1280x720-10s-careers-full-reel-2.mp4
     fallback_image: careers/7.-careers.png
     type: full_width_video
     enabled: true

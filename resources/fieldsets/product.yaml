@@ -17,7 +17,7 @@ fields:
     field:
       input_type: text
       antlers: false
-      display: Title
+      display: Headline
       type: text
       icon: text
       listable: hidden

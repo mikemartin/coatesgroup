@@ -51,8 +51,10 @@
         {{ /gallery }}
     </div>
 
+    {{ gallery_images = gallery|pluck('images')|flatten }}
+
     <div class="md:hidden fluid-container">
-        {{ partial:components/gallery_carousel }}
+        {{ partial:components/gallery_carousel :images="gallery_images" }}
     </div>
 </section>
 <!-- End: /page_builder/_gallery.antlers.html -->
