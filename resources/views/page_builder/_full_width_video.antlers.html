@@ -52,7 +52,7 @@
         x-show="!ready" 
         @click="autoplay = true, loadPlayer()"
         {{/if}} 
-        class="relative {{ if block:video_url }}aspect-[9/5]{{else}}aspect-[5/7] md:aspect-[9/4]{{/if}} -mx-8 lg:mx-0 {{ if block:video_url }}cursor-pointer{{/if}}">
+        class="relative {{ if block:video_url }}aspect-[9/5]{{else}}aspect-[5/7] md:aspect-[9/4]{{/if}} {{ unless fill_screen }}-mx-8 lg:mx-0{{/unless}} {{ if block:video_url }}cursor-pointer{{/if}}">
         <video
                 playsinline muted autoplay loop preload
                 poster="{{ block:fallback_image }}"
@@ -68,7 +68,7 @@
         {{ /if }}
     </figure>
     {{ if block:video_url }}
-    <div x-show="ready" class="relative -mx-8 lg:mx-0 overflow-hidden">
+    <div x-show="ready" class="relative {{ unless fill_screen }}-mx-8 lg:mx-0{{/unless}} overflow-hidden">
         <div x-ref="player">
             <iframe
             class="absolute inset-0 w-full h-full overflow-hidden rounded-xl"
