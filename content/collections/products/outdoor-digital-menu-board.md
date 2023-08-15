@@ -26,7 +26,7 @@ page_builder:
   -
     id: llaui2th
     animation: outdoor-digital-menu-board.json
-    frames: '30'
+    frames: '29'
     features:
       -
         id: llaui89p

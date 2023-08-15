@@ -5,7 +5,7 @@
             container: $el,
             renderer: 'svg',
             autoplay: false,
-            loop: true,
+            loop: false,
             path: '{{ animation }}'
         }),
         create({
@@ -14,14 +14,24 @@
             container: '.animation-container-class',
             actions: [
                 {
-                    visibility: [0, .1],
+                    visibility: [0, 0.25],
                     type: 'seek',
-                    frames: [0, 0],
+                    frames: [0, 29],
                 },
                 {
-                    visibility: [.1, .9],
+                    visibility: [0.26, 0.5],
                     type: 'seek',
-                    frames: [0, {{ frames }}],
+                    frames: [28, 0], // Reverse animation
+                },
+                {
+                    visibility: [0.51, 0.75],
+                    type: 'seek',
+                    frames: [1, 29],
+                },
+                {
+                    visibility: [0.76, 1],
+                    type: 'seek',
+                    frames: [28, 0], // Reverse animation
                 },
             ],
         })

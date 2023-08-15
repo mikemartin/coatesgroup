@@ -48,7 +48,7 @@ page_builder:
     type: product_features
     enabled: true
     animation: self-service-kiosk.json
-    frames: '30'
+    frames: '29'
   -
     id: llagnile
     video: 6--kiosk-10s.mp4

@@ -43,7 +43,7 @@ page_builder:
         feature_position: right
     type: product_features
     enabled: true
-    frames: '30'
+    frames: '29'
   -
     id: llag89j5
     video: 4--indoor-dmb.mp4

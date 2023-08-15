@@ -10,7 +10,12 @@
             <div class="md:col-start-4 md:col-span-6 h-full">
                 {{ if animation }}
                     <figure class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
-                        {{ partial:components/product_animation class="max-w-xl"  }}
+                        <div x-data="fadeIn()" 
+                        x-init="hide($el)" 
+                        x-intersect:enter.margin.-20%="fadeIn($el)"
+                        x-intersect:leave.margin.-20%="fadeOut($el)">
+                            {{ partial:components/product_animation class="max-w-xl"  }}
+                        </div>
                     </figure>
                 {{ else }}
                     <figure class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
@@ -25,7 +30,7 @@
         </div>
         
         {{ features }}
-        <div class="mb-6 md:mb-0 grid md:grid-cols-12 {{ switch between="bg-charcoal-10|bg-charcoal-20" }}">
+        <div class="mb-6 md:mb-0 grid md:grid-cols-12">
             <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
                     <div class="md:h-[75vh] md:flex md:items-center">
                         <div x-data="fadeIn()" 
