@@ -8,14 +8,26 @@
 <section class="relative fluid-container">
         <div class="md:absolute md:inset-0 grid md:grid-cols-12">
             <div class="md:col-start-4 md:col-span-6 h-full">
-                {{ partial:components/product_animation class="md:sticky md:top-0 md:h-screen" }}
+                {{ if animation }}
+                    <figure class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
+                        {{ partial:components/product_animation class="max-w-xl"  }}
+                    </figure>
+                {{ else }}
+                    <figure class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
+                        {{ partial
+                            src="statamic-peak-tools::components/picture"
+                            sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                            class="max-w-xl" 
+                        }}
+                    </figure>
+                {{ /if }}
             </div>
         </div>
         
         {{ features }}
-        <div class="mb-6 md:mb-0 grid md:grid-cols-12">
+        <div class="mb-6 md:mb-0 grid md:grid-cols-12 {{ switch between="bg-charcoal-10|bg-charcoal-20" }}">
             <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
-                    <div class="md:h-screen md:flex md:items-center">
+                    <div class="md:h-[75vh] md:flex md:items-center">
                         <div x-data="fadeIn()" 
                         x-init="hide($el)" 
                         x-intersect:enter.margin.-20%="fadeIn($el)"

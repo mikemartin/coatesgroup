@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691992609
+updated_at: 1692078905
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
@@ -17,6 +17,22 @@ page_builder:
     image_position: above
     type: full_width_image
     enabled: true
+  -
+    id: llbvsumq
+    image: products/software/software_schedule_content_transparent_templated_content.png
+    type: product_features
+    enabled: true
+    features:
+      -
+        id: llbvw8zc
+        title: 'Content Simplification'
+        text: 'Simplified content creation and distribution through integration with a brand’s data sources and systems.'
+        feature_position: right
+      -
+        id: llbvwfy7
+        title: 'Data-Driven Content'
+        text: 'Drive content based on weather, segmentation, live transactions, location and other data inputs to strengthen connection with the customer.'
+        feature_position: left
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'

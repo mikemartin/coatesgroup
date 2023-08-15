@@ -10,8 +10,6 @@ fields:
       instructions_position: below
       width: 50
       instructions: 'This should be a *.json* file.'
-      validate:
-        - required
   -
     handle: frames
     field:
@@ -26,6 +24,13 @@ fields:
       visibility: visible
       hide_display: false
       width: 50
+  -
+    handle: image
+    field: common.image
+    config:
+      mode: grid
+      width: 50
+      folder: products
   -
     handle: features
     field:
