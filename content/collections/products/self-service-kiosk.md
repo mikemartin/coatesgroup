@@ -3,7 +3,7 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692015489
+updated_at: 1692094777
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
@@ -49,6 +49,9 @@ page_builder:
     enabled: true
     animation: self-service-kiosk.json
     frames: '29'
+    media_type: animation
+    size: lg
+    reverse_frames: true
   -
     id: llagnile
     video: 6--kiosk-10s.mp4

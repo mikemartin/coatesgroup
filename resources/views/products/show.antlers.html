@@ -6,6 +6,8 @@
 <!-- /products/show.antlers.html -->
 {{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label"} }}
 
+{{ show_product_tabs ?= { partial:components/product_tabs } }}
+
 <main class="outer-grid" id="content">
     {{ page_builder scope="block" }}
         {{ partial src="page_builder/{type}" }}

@@ -5,35 +5,31 @@
             container: $el,
             renderer: 'svg',
             autoplay: false,
-            loop: false,
+            loop: true,
             path: '{{ animation }}'
         }),
         create({
             mode: 'scroll',
             player: animation,
-            container: '.animation-container-class',
+            container: '.product-features',
             actions: [
                 {
-                    visibility: [0, 0.25],
-                    type: 'seek',
-                    frames: [0, 29],
+                    visibility: [0, .2],
+                    type: 'stop',
+                    frames: [{{ if reverse_frames }}{{ frames - 1 }}{{else}}0{{/if}}],
                 },
                 {
-                    visibility: [0.26, 0.5],
+                    visibility: [0.2, 0.45],
                     type: 'seek',
-                    frames: [28, 0], // Reverse animation
+                    frames: [{{ if reverse_frames }}{{ frames - 1 }}, 0{{else}}0, {{ frames - 1 }}{{/if}}],
                 },
                 {
-                    visibility: [0.51, 0.75],
+                    visibility: [0.45, 1.0],
                     type: 'seek',
-                    frames: [1, 29],
-                },
-                {
-                    visibility: [0.76, 1],
-                    type: 'seek',
-                    frames: [28, 0], // Reverse animation
+                    frames: [{{ if reverse_frames }}0, {{ frames - 1 }}{{else}}{{ frames - 1 }}, 0{{/if}}],
                 },
             ],
+        
         })
 "
 class="{{ class }}"

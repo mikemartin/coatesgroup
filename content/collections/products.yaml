@@ -15,4 +15,4 @@ preview_targets:
     refresh: true
 inject:
   enable_hero: true
-  hero_type: image
+  hero_type: product

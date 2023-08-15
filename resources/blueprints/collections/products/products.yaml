@@ -65,6 +65,18 @@ tabs:
               visibility: visible
               hide_display: false
               instructions: 'Replace page header with hero.'
+          -
+            handle: show_product_tabs
+            field:
+              default: false
+              type: toggle
+              display: 'Show Product Tabs'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
       -
         display: 'Page builder'
         fields:

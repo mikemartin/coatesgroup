@@ -1,6 +1,20 @@
 title: 'Product Features'
 fields:
   -
+    handle: media_type
+    field:
+      options:
+        animation: Animation
+        image: Image
+      default: animation
+      type: button_group
+      display: 'Media Type'
+      icon: button_group
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: animation
     field: common.image
     config:
@@ -10,6 +24,8 @@ fields:
       instructions_position: below
       width: 50
       instructions: 'This should be a *.json* file.'
+      if:
+        media_type: 'equals animation'
   -
     handle: frames
     field:
@@ -23,7 +39,22 @@ fields:
       instructions_position: below
       visibility: visible
       hide_display: false
-      width: 50
+      default: 30
+      width: 25
+      if:
+        media_type: 'equals animation'
+  -
+    handle: reverse_frames
+    field:
+      default: false
+      type: toggle
+      display: 'Reverse Frames'
+      icon: toggle
+      width: 25
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
   -
     handle: image
     field: common.image
@@ -31,6 +62,11 @@ fields:
       mode: grid
       width: 50
       folder: products
+      if:
+        media_type: 'equals image'
+  -
+    handle: size
+    field: common.size
   -
     handle: features
     field:

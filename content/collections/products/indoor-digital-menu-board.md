@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Indoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692015900
+updated_at: 1692095523
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
@@ -44,6 +44,9 @@ page_builder:
     type: product_features
     enabled: true
     frames: '29'
+    media_type: animation
+    reverse_frames: true
+    size: md
   -
     id: llag89j5
     video: 4--indoor-dmb.mp4
@@ -106,4 +109,5 @@ page_builder:
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
+show_product_tabs: true
 ---

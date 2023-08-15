@@ -1,0 +1,22 @@
+<div class="border-charcoal-20 border-t border-b">
+    <div class="fluid-container h-16 md:h-[4.5rem] flex justify-start items-center">
+        <div class="pr-12">
+            {{ partial:typography/large content="Products"}}
+        </div>
+        <div class="border-r border-chacoal-20 h-1/2"></div>
+        <nav class="overflow-auto h-full flex items-center pl-12">
+            <ul class="flex items-center space-x-8">
+                {{ collection:products limit="2" }}
+                    <li class="relative leading-none shrink-0">
+                        <a class="p-1 -m-1 {{ if page:url == url }}text-black{{else}}text-charcoal-40 hover:text-black{{/if}} inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary" href="{{ url }}">
+                            <span class="flex">
+                                {{ if page:url == url }}<span class="w-4 h-4 bg-green rounded-full mr-3"></span>{{/if}}
+                                {{ title }}
+                            </span>
+                        </a>
+                    </li>
+                {{ /collection:products }}
+            </ul>
+        </nav>
+    </div>
+</div>

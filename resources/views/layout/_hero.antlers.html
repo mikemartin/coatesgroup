@@ -17,6 +17,8 @@
 		:show_press="segment_1 == 'press'"
 		:show_awards="segment_1 == 'awards'"
 		show_date="true" }}
+{{ elseif hero_type == 'product' }}
+	{{ partial:components/background_hero show_breadcrumb="true" }}
 {{ else }}
 	{{ partial:components/hero :hero_color="hero_color:label" }}
 {{ /if }}
