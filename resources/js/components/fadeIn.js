@@ -8,6 +8,13 @@ export default () => ({
             duration: 0.5
         });
     },
+    fadeOut(target) {
+        gsap.to(target, {
+            autoAlpha: 0, 
+            y: 0, 
+            duration: 0.5
+        });
+    },
     hide(target) {
         gsap.set(target, {
             autoAlpha: 0, 

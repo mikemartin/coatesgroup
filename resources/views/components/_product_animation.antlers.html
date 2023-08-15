@@ -1,0 +1,32 @@
+<figure
+    x-data="{ animation: '' }"
+    x-init="
+        animation = lottie.loadAnimation({
+            container: $el,
+            renderer: 'svg',
+            autoplay: false,
+            loop: true,
+            path: '{{ animation }}'
+        }),
+        create({
+            mode: 'scroll',
+            player: animation,
+            container: '.animation-container-class',
+            actions: [
+                {
+                    visibility: [0, .1],
+                    type: 'seek',
+                    frames: [0, 0],
+                },
+                {
+                    visibility: [.1, .9],
+                    type: 'seek',
+                    frames: [0, {{ frames }}],
+                },
+            ],
+        })
+"
+class="{{ class }}"
+aria-hidden="true"
+>
+</figure>
