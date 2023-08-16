@@ -24,7 +24,7 @@ fields:
         -
           handle: images
           field:
-            mode: list
+            mode: grid
             container: images
             restrict: false
             allow_uploads: true
@@ -41,6 +41,7 @@ fields:
               - required
             show_set_alt: true
             hide_display: false
+            folder: about-us/gallery
       mode: table
       add_row: 'Add image row'
       reorderable: true

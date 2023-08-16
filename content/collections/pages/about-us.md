@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692187261
+updated_at: 1692187972
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -144,17 +144,17 @@ page_builder:
       -
         id: lk6gotg5
         images:
-          - about-us/img_3981-1.jpg
-          - about-us/20210327_coatesxmas0340-1.jpg
-          - about-us/1661533224378-1.jpg
-          - about-us/img_aboutus_2.jpg
+          - about-us/gallery/20210327_coatesxmas0109.jpg
+          - about-us/gallery/canada-dinner-2.jpg
+          - about-us/gallery/chocolate-paris.PNG
+          - about-us/gallery/1582fefb-6ef8-4d09-8ea1-c5cc6bf01a8f.JPG
       -
         id: lk6gviz6
         images:
-          - about-us/img_3980-1.jpg
-          - about-us/1635271238097-1.jpg
-          - about-us/jane-from-hq-office-visited-coates-china-1.jpg
-          - about-us/1661533224378-1.jpg
+          - about-us/gallery/india-lunch.PNG
+          - about-us/gallery/_202304261141571.jpg
+          - about-us/gallery/c555cf1e-31ec-408f-acb4-a7ba1753c022.JPG
+          - about-us/gallery/china-bbq-2.jpg
     type: images_grid
     enabled: true
     title: 'Lorem ipsum dolor sit amet consectetur.'
