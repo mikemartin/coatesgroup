@@ -25,6 +25,10 @@ swiper = new Swiper($refs.container, {
     slideToClickedSlide: true,
     a11y: true,
     freeMode: true,
+    mousewheel: {
+      enabled: true,
+      forceToAxis: true,
+    },
     breakpoints: {
       640: {
           slidesPerView: 1.25,

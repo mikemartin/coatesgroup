@@ -42,11 +42,21 @@ fields:
       always_save: false
       max_items: 1
   -
+    import: buttons
+  -
     handle: background
     field:
       default: false
       type: toggle
       display: 'Background'
+      width: 50
       icon: toggle
   -
-    import: buttons
+    handle: no_bottom_margin
+    field:
+      type: toggle
+      display: "Remove bottom margin"
+      width: 50
+      if:
+        background: true
+  

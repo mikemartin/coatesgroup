@@ -97,6 +97,9 @@
     display: none !important;
   }
   
+  .swiper-pagination-yellow {
+    --swiper-pagination-color:  rgb(var(--color-yellow));
+  }
 
 }
 

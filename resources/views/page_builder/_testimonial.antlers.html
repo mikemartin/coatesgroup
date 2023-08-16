@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_testimonial.antlers.html -->
-<section class="w-full {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24{{/if}}">
+<section class="w-full {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24 {{ if no_bottom_margin }}-mb-12 md:-mb-16 lg:-mb-24{{/if}}{{/if}}">
     <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-12 items-center">
         <article class="md:col-span-6 order-2">
             {{ block:title ?= { partial:typography/h3 :content="block:title" class="mb-4 font-medium" } }}

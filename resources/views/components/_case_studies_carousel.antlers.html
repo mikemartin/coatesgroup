@@ -12,6 +12,10 @@ x-init="swiper = new Swiper($refs.container, {
   updateOnWindowResize: true,
   a11y: true,
   freeMode: true,
+  mousewheel: {
+    enabled: true,
+    forceToAxis: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true

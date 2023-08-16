@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692154797
+updated_at: 1692187261
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -82,6 +82,7 @@ page_builder:
       - 6b3d5678-5cb7-4e81-941c-7e1b3416a992
       - 88219801-3f60-4061-9f11-9193f143193c
       - 6f358b01-b156-413c-9c85-de0591393a21
+      - 9ea64c07-a0e0-4ec1-a2bb-4a8f1601c8b4
     type: values_carousel
     enabled: true
   -
@@ -99,9 +100,14 @@ page_builder:
       -
         id: lk6fxmkf
         label: 'View our Leadership Team'
+        link_type: entry
+        target_blank: false
+        entry: b894f99b-58a9-41d0-bde4-411b91dcad01
+        button_type: button
     type: testimonial
     enabled: true
-    background: false
+    background: true
+    no_bottom_margin: true
   -
     id: lk6hhy08
     title: 'Lorem ipsum dolor sit amet consectetur'
