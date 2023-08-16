@@ -36,11 +36,14 @@ fields:
         -
           handle: text
           field: common.text_plain
+          config:
+            display: Text
         -
           handle: image
           field: common.image
           config:
             mode: grid
+            folder: about-us
       mode: stacked
       add_row: 'Add block'
       reorderable: true

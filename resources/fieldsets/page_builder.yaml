@@ -61,6 +61,12 @@ fields:
               fields:
                 -
                   import: block_carousel
+            values_carousel:
+              display: 'Values Carousel'
+              instructions: 'Carousel of values with text and image'
+              fields:
+                -
+                  import: values_carousel
             call_to_action:
               display: 'Call to action'
               instructions: 'Show a call to action.'

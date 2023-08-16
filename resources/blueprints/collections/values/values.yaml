@@ -1,0 +1,38 @@
+title: Values
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: General
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              input_type: text
+              localizable: true
+              listable: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: text
+            field: common.text_plain
+            config:
+              display: Text
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        display: Meta
+        fields:
+          -
+            handle: image
+            field: common.image
+            config:
+              mode: grid
+              listable: true
+              folder: about-us
+              width: 100

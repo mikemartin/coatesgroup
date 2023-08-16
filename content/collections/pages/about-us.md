@@ -74,6 +74,17 @@ page_builder:
       - about-us/img_aboutus_1.jpg
       - about-us/img_aboutus_2.jpg
   -
+    id: lldl3gts
+    title: 'Our Values'
+    values:
+      - 310004bd-fa0d-4105-8bff-5111f1267f56
+      - f47615f2-82f6-4f74-8e22-ed364d7aaf73
+      - 6b3d5678-5cb7-4e81-941c-7e1b3416a992
+      - 88219801-3f60-4061-9f11-9193f143193c
+      - 6f358b01-b156-413c-9c85-de0591393a21
+    type: values_carousel
+    enabled: true
+  -
     id: lk6fx9ls
     title: 'Hear from our CEO'
     quote:
@@ -88,10 +99,6 @@ page_builder:
       -
         id: lk6fxmkf
         label: 'View our Leadership Team'
-        link_type: entry
-        target_blank: false
-        entry: b894f99b-58a9-41d0-bde4-411b91dcad01
-        button_type: button
     type: testimonial
     enabled: true
     background: false

@@ -45,6 +45,8 @@ preferences:
         - products
     hardware:
       after_save: create_another
+    values:
+      after_save: create_another
   assets:
     images:
       mode: grid

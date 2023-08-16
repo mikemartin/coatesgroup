@@ -175,6 +175,15 @@ editor:
     - 'configure forms'
     - 'view contact form submissions'
     - 'delete contact form submissions'
+    - 'view values entries'
+    - 'edit values entries'
+    - 'create values entries'
+    - 'delete values entries'
+    - 'publish values entries'
+    - 'reorder values entries'
+    - 'edit other authors values entries'
+    - 'publish other authors values entries'
+    - 'delete other authors values entries'
 marketeer:
   title: Marketeer
   permissions:
