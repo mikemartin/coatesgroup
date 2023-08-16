@@ -75,6 +75,7 @@ tabs:
             handle: image
             field: common.image
             config:
+              mode: grid
               listable: true
               instructions_position: below
               validate:
