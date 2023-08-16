@@ -20,17 +20,6 @@ fields:
   -
     import: buttons
   -
-    handle: video_url
-    field:
-      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-      input_type: url
-      type: text
-      localizable: true
-      listable: hidden
-      display: 'Video URL'
-      instructions: 'Add YouTube or Vimeo player.'
-      instructions_position: below
-  -
     handle: video
     field: common.video
     config:
@@ -65,4 +54,18 @@ fields:
       listable: hidden
       instructions_position: above
       visibility: visible
+      hide_display: false
+  -
+    handle: video_url
+    field:
+      placeholder: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+      input_type: url
+      type: text
+      localizable: true
+      listable: hidden
+      display: 'Video URL'
+      instructions: 'Add YouTube or Vimeo player. (Optional)'
+      instructions_position: below
+      visibility: visible
+      antlers: false
       hide_display: false
