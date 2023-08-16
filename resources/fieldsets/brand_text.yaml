@@ -1,4 +1,4 @@
-title: 'Centered'
+title: 'Brand Text'
 fields:
   -
     handle: eyebrow
@@ -17,3 +17,17 @@ fields:
     field: common.text_plain
     config:
       display: Text
+  -
+    handle: images
+    field: common.image
+    config:
+      mode: grid
+      max_files: 2
+      display: Images
+      width: 50
+      max_items: 2
+  -
+    handle: color
+    field: common.color
+    config:
+      display: 'Background Color'

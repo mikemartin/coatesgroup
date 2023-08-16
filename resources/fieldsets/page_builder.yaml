@@ -202,12 +202,12 @@ fields:
               fields:
                 -
                   import: article
-            centered:
-              display: Centered
-              instructions: 'Centered lead text with eyebrow.'
+            brand_text:
+              display: Brand Text
+              instructions: 'Centered text with brand color and photos.'
               fields:
                 -
-                  import: centered
+                  import: brand_text
             icon_list:
               display: 'Icon List'
               instructions: 'List of icons with text.'

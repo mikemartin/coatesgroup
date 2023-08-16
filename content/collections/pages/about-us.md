@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689575322
+updated_at: 1692152244
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -25,6 +25,7 @@ page_builder:
     fallback_image: hero/coverr-running-with-a-kite.jpg
     type: full_width_video
     enabled: true
+    fill_screen: false
   -
     id: lk62z9oo
     squares:
@@ -63,8 +64,15 @@ page_builder:
     id: lk66i6f1
     eyebrow: 'Our Vision'
     text: "Revolutionising the way the world's leading \Lbrands leverage technology to drive the best \Lcustomer experience."
-    type: centered
+    type: brand_text
     enabled: true
+    color:
+      label: Red
+      value:
+        - 'rgb(238 48 53)'
+    images:
+      - about-us/img_aboutus_1.jpg
+      - about-us/img_aboutus_2.jpg
   -
     id: lk6fx9ls
     title: 'Hear from our CEO'
@@ -86,6 +94,7 @@ page_builder:
         button_type: button
     type: testimonial
     enabled: true
+    background: false
   -
     id: lk6hhy08
     title: 'Lorem ipsum dolor sit amet consectetur'
@@ -123,9 +132,9 @@ page_builder:
         id: lk6gotg5
         images:
           - about-us/img_3981-1.jpg
-          - about-us/coatesholidayparty-20-1.jpg
           - about-us/20210327_coatesxmas0340-1.jpg
           - about-us/1661533224378-1.jpg
+          - about-us/img_aboutus_2.jpg
       -
         id: lk6gviz6
         images:
@@ -150,7 +159,7 @@ page_builder:
       value:
         - 'rgb(117 187 67)'
     type: call_to_action
-    cta_type: 'illustration'
+    cta_type: illustration
     enabled: true
 enable_hero: true
 ---
