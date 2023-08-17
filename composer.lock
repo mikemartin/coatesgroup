@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a7ee79820af56381eec1c86e9e30d52",
+    "content-hash": "b1df5c44179f207c6aeb46feef529c7b",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -3649,6 +3649,52 @@
                 "source": "https://github.com/michelf/php-smartypants/tree/1.8.1"
             },
             "time": "2016-12-13T01:01:17+00:00"
+        },
+        {
+            "name": "mikemartin/helpscout-beacon",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikemartin/helpscout-beacon.git",
+                "reference": "6f796b55a14e8399e36c0d7f86334deebfa9ebd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikemartin/helpscout-beacon/zipball/6f796b55a14e8399e36c0d7f86334deebfa9ebd9",
+                "reference": "6f796b55a14e8399e36c0d7f86334deebfa9ebd9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "statamic/cms": "^3.0|^4.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Helpscout Beacon",
+                    "description": "Make it easy for clients to get help and access their support history."
+                },
+                "laravel": {
+                    "providers": [
+                        "Mikemartin\\HelpscoutBeacon\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mikemartin\\HelpscoutBeacon\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Make it easy for clients to get help and access their support history.",
+            "support": {
+                "issues": "https://github.com/mikemartin/helpscout-beacon/issues",
+                "source": "https://github.com/mikemartin/helpscout-beacon/tree/v1.0.3"
+            },
+            "time": "2023-06-06T13:08:28+00:00"
         },
         {
             "name": "monolog/monolog",
