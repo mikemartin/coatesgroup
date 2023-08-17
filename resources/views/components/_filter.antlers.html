@@ -1,7 +1,7 @@
 <div x-data x-popover class="{{ class ?? 'w-[348px]' }} relative inline-block text-left">
     <button
       x-popover:button
-      :class="{ 'hover:text-white hover:bg-black': !$popover.isOpen }"
+      :class="{ 'hover:text-white hover:shadow-black-hover': !$popover.isOpen }"
       class="group w-full inline-flex border border-black font-mono hover:font-medium text-black focus-visible:ring-primary items-center justify-between py-4 px-5 leading-none no-underline select-none whitespace-nowrap motion-safe:transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2"
     >
       <span>{{ label }}</span>

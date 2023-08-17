@@ -72,9 +72,9 @@ return [
     'copied_clipboard'                  => 'Copied to Clipboard',  
 
     // Pagination
-    'next'                              => 'next',
+    'next'                              => 'Next',
     'of'                                => 'of',
-    'previous'                          => 'previous',
+    'previous'                          => 'Previous',
 
     // Social images
     'social_images'                     => 'Generated one social image.|Generated :count social images.',

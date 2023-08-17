@@ -43,7 +43,7 @@
             <div class="pb-12 flex-1 flex flex-col justify-end items-center lg:items-start lg:pb-24 lg:flex-initial">
                 {{ partial:typography/h2 :content="cta_title" color="text-white { cta_color != 'Red' ?= 'lg:text-black' } " }}
                 {{ partial:components/button inverted="true" :label="cta_label" class="lg:hidden mt-4" }}
-                {{ partial:components/button :inverted="cta_color == 'Red'" :label="cta_label" class="hidden lg:inline-flex mt-4" }}
+                {{ partial:components/button :inverted="cta_color == 'Red'" :black_hover="cta_color != 'Red'" :label="cta_label" class="hidden lg:inline-flex mt-4" }}
             </div>
         </div>
     </div>

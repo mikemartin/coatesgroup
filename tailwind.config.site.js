@@ -73,6 +73,11 @@ module.exports = {
       animation: {
         bob: 'bob 1s infinite',
       },
+      boxShadow: {
+        'black-hover': 'inset 0 -3.25em 0 rgb(var(--color-black))',
+        'white-hover': 'inset 0 -3.25em 0 rgb(255,255,255)',
+        'blue-hover': 'inset 0 -3.25em 0 rgb(var(--color-blue))',
+      },
       keyframes: {
         bob: {
           '0%, 100%': {

@@ -1,6 +1,11 @@
+{{ industries = {taxonomy:industries} }}
+{{ locations = {taxonomy:locations } }}
+{{ products = {collection:products} }}
+{{ experiences = {collection:experiences} }}
+
 <div class="border w-[390px] h-[800px] pb-12 flex flex-col  bg-white">
-    {{ partial:components/filter_mobile label="Industry" }}
-    {{ partial:components/filter_mobile label="Location" }}
-    {{ partial:components/filter_mobile label="Product" }}
-    {{ partial:components/filter_mobile label="Experience" }}
+    {{ partial:components/filter_mobile label="Industry" :options="industries" }}
+    {{ partial:components/filter_mobile label="Location" :options="locations" }}
+    {{ partial:components/filter_mobile label="Product" :options="products" }}
+    {{ partial:components/filter_mobile label="Experience" :options="experiences"  }}
 </div>

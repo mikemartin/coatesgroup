@@ -10,7 +10,7 @@
               <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-4 space-y-4">
                 {{ children }}
                 <li class="flex">
-                    <a href="{{ url }}" class="text-charcoal hover:text-black hover:font-medium">{{ title }}</a>
+                    <a href="{{ url }}" class="text-charcoal hover:font-medium active:underline active:underline-offset-1">{{ title }}</a>
                 </li>
                 {{ /children }}
               </ul>

@@ -15,7 +15,7 @@
         class="
             focus:outline-none focus-visible:ring focus-visible:ring-offset-2
             {{ if button_type == 'inline' }}
-                decoration-2 underline motion-safe:transition text-lg leading-snug {{ color or 'text-black dark:text-white' }}
+                decoration-1 underline-offset-2 underline motion-safe:transition text-lg leading-snug {{ color or 'text-black dark:text-white' }} hover:font-medium active:no-underline
                 {{ inverted
                     ? 'text-white decoration-white focus-visible:ring-white'
                     : 'text-neutral decoration-neutral focus-visible:ring-primary'
@@ -24,10 +24,10 @@
                 inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
                 border border-neutral bg-black text-white font-medium focus-visible:ring-primary 
             {{ else }}
-                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
+                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
                 {{ inverted
-                    ? 'border border-white text-white focus-visible:ring-white'
-                    : 'border border-neutral text-neutral focus-visible:ring-primary'
+                    ? 'border border-white text-white focus-visible:ring-white hover:text-black hover:shadow-white-hover'
+                    : 'border border-neutral text-neutral focus-visible:ring-primary hover:text-white  {{ black_hover ? 'hover:shadow-black-hover' : 'hover:border-blue hover:shadow-blue-hover' }}'
                 }}   
             {{ /if }}
             {{ class }}

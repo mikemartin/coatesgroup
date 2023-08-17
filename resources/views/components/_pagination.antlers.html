@@ -1,0 +1,46 @@
+{{#
+    @name Pagination
+    @desc The pagination component. Include in a result set using `{{ partial:components/pagination }}`.
+    Auto adds pagination links to `statamic-peak-seo::snippets/_seo.antlers.html`.
+#}}
+
+<!-- components/_pagination.antlers.html -->
+{{ if paginate.total_pages > 1 }}
+    <div class="{{ class }}">
+        {{ paginate }}
+            {{# Section that will be yielded in the <head> of documents for search engines.. #}}
+            {{ section:pagination }}
+                {{ if prev_page }}
+                    {{ if current_page == 2 }}
+                        <link rel="prev" href="{{ prev_page | substr(0,-7) }}">
+                    {{ else }}
+                        <link rel="prev" href="{{ prev_page }}">
+                    {{ /if }}
+                {{ /if }}
+                {{ if next_page }}
+                    <link rel="next" href="{{ next_page }}">
+                {{ /if }}
+            {{ /section:pagination }}
+
+            {{# The actual pagination buttons. #}}
+            {{ active_classes = active_classes ?? 'text-black hover:font-medium active:underline' }}
+            {{ inactive_classes = inactive_classes ?? 'text-charcoal-40' }}
+            {{ location_classes = location_classes ?? '' }}
+
+            <nav class="md:px-8 flex items-center justify-center space-x-4">
+                {{ if prev_page }}
+                    <a class="{{ active_classes }} flex items-center" href="{{ prev_page }}">{{ svg:chevron-left class="w-2 h-3 mr-2"}} {{ trans:strings.previous }}</a>
+                {{ else }}
+                    <span class="{{ inactive_classes }} flex items-center">{{ svg:chevron-left class="w-2 h-3 mr-2"}} {{ trans:strings.previous }}</span>
+                {{ /if }}
+                <span class="{{ location_classes }} flex items-center">{{ current_page }} {{ trans:strings.of }} {{ total_pages }}</span>
+                {{ if next_page }}
+                    <a class="{{ active_classes }} flex items-center" href="{{ next_page }}">{{ trans:strings.next }} {{ svg:chevron-right class="ml-2 w-2 h-3"}}</a>
+                {{ else }}
+                    <span class="{{ inactive_classes }} flex items-center">{{ trans:strings.next }}{{ svg:chevron-right class="ml-2 w-2 h-3"}}</span>
+                {{ /if }}
+            </nav>
+        {{ /paginate }}
+    </div>
+{{ /if }}
+<!-- End: components/_pagination.antlers.html -->
