@@ -31,6 +31,9 @@ module.exports = {
         // Z-index stuff behind it's parent.
         'behind': '-1',
       },
+      screens: {
+        'desktop': '85.5rem',
+      }
     },
   },
   plugins: [

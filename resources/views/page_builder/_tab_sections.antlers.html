@@ -3,12 +3,16 @@
 #}}
 
 <!-- /page_builder/_experiences.antlers.html -->
-<section x-data="{thumbs: null, swiper: null}"
+<section x-data="{thumbs: null, swiper: null, activeSlide: 0}"
 x-init="thumbs = new Swiper($refs.thumbs, {
     slidesPerView: 'auto',
     spaceBetween: 32,
     freeMode: true,
     multipleActiveThumbs: false,
+    mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+    },
     a11y: true,
     breakpoints: {
         640: {
@@ -18,7 +22,7 @@ x-init="thumbs = new Swiper($refs.thumbs, {
 });
 swiper = new Swiper($refs.container, {
     slidesPerView: 1,
-    spaceBetween: 10,
+    spaceBetween: 20,
     edgeSwipeDetection: 'prevent',
     updateOnWindowResize: true,
     watchSlidesProgress: true,
@@ -37,17 +41,20 @@ swiper = new Swiper($refs.container, {
     },
     thumbs: {
         swiper: thumbs,
+    },
+    on: {
+      slideChange: () => { activeSlide = swiper.activeIndex }
     }
   });
 "
 class="overflow-hidden">
-    <div class="border-charcoal-20 border-t border-b">
-        <div class="fluid-container h-16 md:h-[4.5rem] flex justify-start items-center">
-            <div class="pr-6 md:pr-12">
+    <div class="hidden md:flex border-charcoal-20 border-t border-b">
+        <div class="flex md:mx-auto md:w-full md:max-w-screen-desktop h-16 md:h-[4.5rem] justify-start items-center">
+            <div class="pl-8 lg:pl-12 pr-6 md:pr-12">
                 <h3 class="text-lg md:text-2xl leading-tight text-black">{{ title }}</h3>
             </div>
             <div class="border-r border-chacoal-20 h-full md:h-1/2"></div>
-            <nav x-ref="thumbs" class="!pl-6 !md:pl-12 w-full h-full swiper relative md:!overflow-x-visible">
+            <nav x-ref="thumbs" class="!pl-6 md:!pl-12 w-full h-full swiper relative lg:!overflow-x-visible">
                 <div class="swiper-wrapper items-start justify-start">
                     {{ sections }}
                         <a href="javascript:void(0)" class="!w-auto swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
@@ -60,20 +67,54 @@ class="overflow-hidden">
         </div>
     </div>
 
+    <div x-data x-disclosure class="md:hidden border-b border-t border-charcoal-20 py-4">
+        <h3 class="-my-4 flow-root">
+          <button x-disclosure:button type="button"
+            class="group flex w-full items-center justify-between hover:font-medium text-black py-4 px-8">
+            {{ title }}
+            <div :class="{ 'scale-y-[-1]': $disclosure.isOpen }" class="ml-2.5 motion-safe:transition-transform">
+                {{ svg:chevron_down class="w-3 overflow-visible stroke-current group-hover:stroke-[1.5px]" aria-hidden="true" }}
+            </div>
+          </button>
+        </h3>
+    
+        <div x-disclosure:panel x-collapse class="pt-4">
+          <div class="space-y-4">
+            {{ sections }}
+              <div class="px-8 swiper-slide">
+                <button
+                @click="swiper.slideTo({{ index }})"
+                :class="{ 'text-black': activeSlide == {{ index }}, 'text-charcoal-40 hover:text-black': activeSlide !== {{ index }} }"
+                class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                  <span class="flex items-center">
+                      <span 
+                      :class="{ 'bg-green': activeSlide == {{ index }}, 'border border-charcoal-40': activeSlide !== {{ index }} }"
+                      class="w-4 h-4 rounded-full mr-3"></span>
+                      {{ title }}
+                  </span>
+                </button>
+              </div>
+            {{ /sections }}
+          </div>
+        </div>
+    </div>
+    
     <div class="fluid-container my-12 md:my-16">
         <div class="swiper relative !overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
             {{ sections scope="slide" }}
                 <div class="swiper-slide">
                     <div class="flex flex-col justify-between items-start">
-                    <figure>
+                    <figure class="relative w-full aspect-[8/5] lg:aspect-[9/4]">
                         {{ partial
                             src="statamic-peak-tools::components/picture"
-                            sizes="(min-width: 1280px) 1150px, 90vw')"
                             aspect_ratio="8/5 large:9/4"
+                            sizes="(min-width: 1280px) 100vw, (min-width: 768px) 50vw, 90vw"
                             cover="true"
+                            class="absolute inset-0"
                             :image="slide:hero_image ?? slide:image"
                             lazy="true"
+                            skip_ratio_steps="1"
                         }}
                     </figure>
                     {{ partial:typography/h2 class="mt-6" color="text-neutral" :content="headline" }}

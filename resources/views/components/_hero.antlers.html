@@ -19,7 +19,7 @@
 	() => 'bg-black text-white'
 	)}} -mb-12 md:-mb-16 lg:-mb-24">
 	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
-		<div x-data="fadeIn()" x-init="hide($el.children), setTimeout(() => fadeInStagger($el), 1000)" 
+		<div x-data="fadeIn()" x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" 
 		class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
 			{{ partial:navigation/breadcrumbs color="{ switch(
 				(is_inverted) => 'text-white',

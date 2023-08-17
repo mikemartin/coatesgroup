@@ -1,5 +1,5 @@
-<div class="border-charcoal-20 border-t border-b">
-    <div class="fluid-container h-16 md:h-[4.5rem] flex justify-start items-center">
+<div class="hidden md:block border-charcoal-20 border-t border-b">
+    <div class="flex fluid-container h-16 md:h-[4.5rem] justify-start items-center">
         <div class="pr-12">
             {{ partial:typography/large content="Products"}}
         </div>
@@ -20,3 +20,5 @@
         </nav>
     </div>
 </div>
+
+{{ partial:components/dropdown_mobile label="Products" options="{ collection:products limit="2" }" class="md:hidden" }}
