@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692092644
+updated_at: 1692314659
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
@@ -17,6 +17,7 @@ page_builder:
     image_position: above
     type: full_width_image
     enabled: true
+    mobile_panning: false
   -
     id: llbvsumq
     image: products/software/software_schedule_content_transparent_templated_content.png
@@ -35,6 +36,7 @@ page_builder:
         feature_position: left
     media_type: image
     size: sm
+    reverse_frames: false
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
@@ -90,4 +92,6 @@ page_builder:
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
+hero_image: products/software/img_software_hero.jpg
+show_product_tabs: false
 ---

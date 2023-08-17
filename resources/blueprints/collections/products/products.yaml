@@ -50,8 +50,6 @@ tabs:
               display: 'Hero Image'
               folder: products
               width: 50
-              if:
-                enable_hero: true
           -
             handle: enable_hero
             field:

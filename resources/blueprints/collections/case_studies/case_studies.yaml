@@ -161,6 +161,7 @@ tabs:
               create: true
               collections:
                 - experiences
+                - products
               type: entries
               display: Experience
               icon: entries

@@ -1,1 +1,8 @@
 title: Redirects
+data:
+  redirects:
+    -
+      id: llfsvg2d
+      url_old: /thrive-program
+      internal_url: 78d2947e-4486-4131-9c1b-2e7e9db548ec
+      response: '301'

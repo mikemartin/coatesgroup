@@ -25,11 +25,11 @@ tree:
         entry: 10b3a0e8-9688-479e-9a82-6433aa322e55
         title: 'Digital Menu Boards'
       -
-        id: e9f3152e-95ae-45f4-8987-e76a7084f10b
-        entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
-      -
         id: 88f9cf4b-db45-42d1-bb90-e5769c82f618
         entry: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
+      -
+        id: e9f3152e-95ae-45f4-8987-e76a7084f10b
+        entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
       -
         id: a7c5bff2-4c66-442e-b452-055679ab4f3b
         entry: 1d2592aa-536e-4dfd-8901-23b7413fc22a

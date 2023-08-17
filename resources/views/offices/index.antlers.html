@@ -19,18 +19,20 @@
     <!-- /offices/index.antlers.html -->
     <section class="fluid-container grid md:grid-cols-12 gap-y-5 gap-x-8 xl:gap-y-10 xl:gap-x-16">
         {{ collection:offices sort="order" scope="office" }}
-            <article x-data="{ open: false }" class="relative md:col-span-6 lg:col-span-4 flex flex-col gap-6">
-                <figure class="aspect-[7/4]">
-                    {{ partial
-                        src="statamic-peak-tools::components/picture"
-                        :image="office:image:url"
-                        aspect_ratio="7/4"
-                        sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
-                        cover="true"
-                        lazy="true"
-                    }}
-                </figure>
-                <header class="flex flex-col space-y-4">
+            <article x-data="{ open: false }" class="relative md:col-span-6 lg:col-span-4 flex md:flex-col gap-6">
+                <div class="relative w-40 md:w-full">
+                    <figure class="aspect-[10/9] lg:aspect-[7/4]">
+                        {{ partial
+                            src="statamic-peak-tools::components/picture"
+                            :image="office:image:url"
+                            aspect_ratio="10/9 large:7/4"
+                            sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                            cover="true"
+                            lazy="true"
+                        }}
+                    </figure>
+                </div>
+                <header class="flex-1 flex flex-col space-y-4">
                     {{ partial:typography/large :content="office:title" class="font-medium" }}
                     {{ partial:components/slideover slideover_inverted="true" label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ office:title }}" extend="true" }}
                         {{ slot:content }}
