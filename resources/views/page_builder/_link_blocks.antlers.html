@@ -7,10 +7,10 @@
 <!-- /page_builder/_link_blocks.antlers.html -->
 <section x-data="fadeIn()" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8 md:gap-12">
     {{ if block:title }}
     <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
-        {{ partial:typography/h2 :content="block:title" class="md:col-span-6" }}
+        {{ partial:typography/h2 :content="block:title" class="md:col-span-6 md:max-w-[20ch]" }}
     </div>
     {{ /if }}
 

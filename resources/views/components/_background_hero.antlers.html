@@ -34,15 +34,14 @@
     <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'products' }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn()" 
-                x-init="hide($el.children)" 
-                x-intersect.once.margin.-20%="fadeInStagger($el)" class="relative md:col-span-10">
+                x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-10">
                 {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
                 {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
                 {{ show_resource ?= {partial:components/tags :tags="resources" class="mb-3"} }}
                 {{ show_press ?= {partial:components/tag url="/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
                 {{ show_awards ?= {partial:components/tag url="/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
                 {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch]" }}
-                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6"} }}
+                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch]"} }}
                 {{ show_client ?= {partial:components/tag tag_type="client" :label="client:title" :url="client:website" target_blank="true" class="mt-4" } }}
                 {{ if show_date }}
                 <div class="flex flex-col md:flex-row md:items-center text-lg text-white mt-2 md:mt-4">

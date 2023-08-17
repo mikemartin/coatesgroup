@@ -15,6 +15,23 @@ fields:
       instructions_position: above
       visibility: visible
       hide_display: false
+      width: 50
+  -
+    handle: text_animation_delay
+    field:
+      min: 0
+      max: 8
+      step: 1
+      default: 0
+      append: seconds
+      type: range
+      display: 'Text Animation Delay'
+      icon: range
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
   -
     handle: hero_video
     field: common.video

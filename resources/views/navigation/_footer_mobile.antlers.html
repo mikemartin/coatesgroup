@@ -1,4 +1,4 @@
-<ul class="md:hidden flex flex-col py-2 space-y-4 overflow-auto">
+<ul class="md:hidden flex flex-col overflow-auto">
     {{ nav:footer max_depth="2" select="title|url" }}
         <li
             {{ if children }}
@@ -8,7 +8,7 @@
             class="leading-none"
         >
             <a
-                class="w-full py-2 flex items-center space-x-1 text-lg font-bold hover:text-white text-white focus:outline-none focus-visible:ring-2 ring-primary"
+                class="w-full py-2 flex items-center justify-between space-x-1 text-lg font-bold hover:text-white text-white focus:outline-none focus-visible:ring-2 ring-primary"
                 {{ if children }}
                     href="#"
                     @click.prevent="subnavOpen = !subnavOpen"
@@ -24,7 +24,7 @@
                 <span>{{ title }}</span>
                 {{ if children }}
                     <div :class="{ 'scale-y-[-1]': subnavOpen }" class="motion-safe:transition-transform">
-                        {{ svg:chevron_down class="w-2 ml-1 overflow-visible stroke-current text-white" aria-hidden="true" }}
+                        {{ svg:chevron_down class="w-2.5 ml-1 overflow-visible stroke-current text-white" aria-hidden="true" }}
                     </div>
                 {{ /if }}
             </a>
@@ -32,13 +32,13 @@
                 <ul
                     x-show="subnavOpen"
                     x-ref="subnav"
-                    class="flex flex-col items-stretch space-y-2"
+                    class="flex flex-col items-stretch space-y-1.5 pb-2"
                     x-collapse
                 >
                     {{ children }}
-                        <li class="{{ first ?= 'mt-2' }}">
+                        <li>
                             <a
-                                class="block py-2 whitespace-nowrap hover:text-primary text-white focus:outline-none focus-visible:ring-2 ring-primary"
+                                class="block py-1 whitespace-nowrap hover:text-primary text-white focus:outline-none focus-visible:ring-2 ring-primary"
                                 href="{{ url }}">
                                 {{ title }}
                             </a>

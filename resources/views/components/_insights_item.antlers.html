@@ -22,7 +22,7 @@ x-intersect.once.margin.-20%="fadeIn($el)" class="group flex md:flex-col {{ clas
             {{ collection:title }}
         </div>
 
-        <a href="{{ url }}" class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group">
+        <a href="{{ url }}" {{ if redirect}}target="_blank"{{ /if }} class="group p-1 -m-1 focus:outline-none focus-visible:ring-2 ring-primary group">
             {{ partial:typography/large :content="title" }} 
             <span class="absolute inset-0"></span>
         </a>

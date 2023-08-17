@@ -42,7 +42,7 @@ x-init="swiper = new Swiper($refs.container, {
             {{ case_studies = case_studies ? case_studies : {collection:case_studies limit="3" } }}
         {{ /if }}
         
-        <div class="swiper mt-8 md:mt-14 !pb-14 !overflow-x-visible" x-ref="container">
+        <div class="swiper mt-8 md:mt-14 !pb-20 !overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
                 {{ case_studies }}
                     <div class="swiper-slide">
