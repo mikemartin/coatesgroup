@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692232463
+updated_at: 1692281762
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -96,6 +96,7 @@ page_builder:
     enabled: true
     image: homepage/traditionalsignage.jpg
     image_position: above
+    mobile_panning: false
   -
     id: ljs76pgs
     type: case_studies
@@ -157,6 +158,7 @@ page_builder:
     type: full_width_image
     enabled: true
     image_position: below
+    mobile_panning: false
   -
     id: ljs6guak
     title: 'A headline about Insights goes here'
@@ -175,4 +177,5 @@ enable_hero: true
 hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
 fallback_image: homepage/1.-homepage.jpg
 text_animation_delay: 7
+seo_title: 'Coates Group'
 ---
