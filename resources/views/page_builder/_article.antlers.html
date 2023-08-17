@@ -8,11 +8,11 @@
 <section x-data="fadeIn()" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)" 
-    class="fluid-container grid grid-cols-12 gap-8">
+    class="fluid-container grid md:grid-cols-12 gap-8">
 
     {{ if block:title }}
-        {{ partial:typography/h2 :content="block:title" class="col-span-12 md:col-span-4" }}
-        <div class="col-span-12 md:col-span-8">
+        {{ partial:typography/h2 :content="block:title" class="md:col-span-4" }}
+        <div class="md:col-span-8">
     {{ /if }}
 
     {{ partial:typography/prose as="article" class="contents" }}
