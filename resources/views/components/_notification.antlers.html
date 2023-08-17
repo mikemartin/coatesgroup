@@ -9,12 +9,12 @@
 <!-- /components/_notification.antlers.html -->
 <div
     class="
-        rounded border p-4
+        p-4
         {{ switch(
-            (type == 'success') => 'bg-green-100 border-green-600',
-            (type == 'notice') => 'bg-yellow-100 border-yellow-600',
-            (type == 'error') => 'bg-red-100 border-red-600',
-            () => 'bg-gray-100 border-gray-600'
+            (type == 'success') => 'bg-green',
+            (type == 'notice') => 'bg-yellow',
+            (type == 'error') => 'bg-red',
+            () => 'bg-black'
         )}}
         {{ class }}
     "
@@ -27,12 +27,12 @@
                 alt=""
                 aria-hidden="true"
                 class="
-                    h-5 w-5 fill-current motion-safe:transition-colors
+                    h-5 w-5 stroke-current motion-safe:transition-colors
                     { switch(
-                        (type == 'success') => 'text-green-800',
-                        (type == 'notice') => 'text-yellow-800',
-                        (type == 'error') => 'text-red-800',
-                        () => 'text-gray-800'
+                        (type == 'success') => 'text-white',
+                        (type == 'notice') => 'text-black',
+                        (type == 'error') => 'text-white',
+                        () => 'text-white'
                     )}
                 "
             }}
@@ -40,16 +40,16 @@
         <div class="ml-3">
             <h3
                 class="
-                    text-sm leading-5 font-bold
+                    text-base font-medium
                     {{ switch(
-                        (type == 'success') => 'text-green-800',
-                        (type == 'notice') => 'text-yellow-800',
-                        (type == 'error') => 'text-red-800',
-                        () => 'text-gray-800'
+                        (type == 'success') => 'text-white',
+                        (type == 'notice') => 'text-black',
+                        (type == 'error') => 'text-white',
+                        () => 'text-charcoal'
                     )}}
                 "
             >
-                {{ content }}
+                {{ content|widont }}
             </h3>
         </div>
     </div>

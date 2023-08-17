@@ -66,12 +66,13 @@ tabs:
           -
             handle: consent
             field:
-              inline_label: 'I agree that my submitted data is being collected and stored.'
+              inline_label: 'By selecting this, you agree to our'
               default: false
-              display: Consent
               type: toggle
               icon: toggle
               listable: hidden
               instructions_position: above
               validate:
                 - accepted
+              visibility: visible
+              hide_display: false

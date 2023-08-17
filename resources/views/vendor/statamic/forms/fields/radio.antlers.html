@@ -1,6 +1,6 @@
 <!-- /vendor/statamic/forms/fields/radio.antlers.html -->
 <fieldset
-    class="flex
+    class="mt-2 flex items-center
         {{ inline
             ? 'space-x-4'
             : 'flex-col space-y-4'
@@ -9,9 +9,9 @@
     aria-describedBy="{{ handle }}"
 >
     {{ foreach:options as="value|label" }}
-        <label class="inline-flex items-center">
+        <label class="inline-flex items-center md:text-lg font-mono">
             <input
-                class="mr-2 border-neutral text-primary focus-visible:border-primary focus-visible:ring focus-visible:ring-primary motion-safe:transition"
+                class="mr-2 w-6 h-6 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
                 type="radio"
                 name="{{ handle }}"
                 value="{{ value }}"

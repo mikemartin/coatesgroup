@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689567466
+updated_at: 1692279569
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 enable_hero: false
 hero_type: brand
@@ -23,9 +23,12 @@ page_builder:
   -
     id: lk6cti69
     people:
-      - a85f3420-0809-4f7a-a5af-11635a138181
-      - 197ea0de-5ee1-4766-ab70-ca6eed914474
-      - 10126038-4a19-4f0b-a0aa-c409cdb2177d
+      - 3ad60460-d45e-482b-952a-8fe4b7391cb7
+      - 6b7171a6-47c2-4f30-a68a-66270fc72f30
+      - 5d6e66a1-e24b-4693-9aa3-83ea2f337cce
+      - 34567285-c097-43e3-84ff-b55994eafd7d
+      - c708c5f2-0026-474e-a5fe-268c00e4454d
+      - 2067a5c9-ac54-4db9-b8f9-e2df14916694
     type: people
     enabled: true
   -
@@ -41,6 +44,7 @@ page_builder:
       value:
         - 'rgb(238 48 53)'
     type: call_to_action
-    cta_type: 'illustration'
+    cta_type: illustration
     enabled: true
+text_animation_delay: 0
 ---

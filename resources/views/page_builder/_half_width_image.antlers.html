@@ -5,16 +5,29 @@
 #}}
 
 <!-- /page_builder/_half_width_image.antlers.html -->
-<section class="w-full relative bg-[#FCFCFC]">
+{{ is_inverted = switch(
+  (block:color:label == 'Blue') => 'true',
+	(block:color:label == 'Red') => 'true',
+	(block:color:label == 'Charcoal') => 'true',
+	(block:color:label == 'Black') => 'true'
+)}}
+<section class="w-full relative {{ switch(
+	(block:color:label == 'Red') => 'bg-red text-white',
+	(block:color:label == 'Yellow') => 'bg-yellow text-black',
+	(block:color:label == 'Green') => 'bg-green text-black',
+	(block:color:label == 'Blue') => 'bg-blue text-white',
+	(block:color:label == 'Charcoal') => 'bg-charcoal text-white',
+	() => 'bg-[#FCFCFC] text-black'
+	)}}">
     <figure class="lg:absolute lg:inset-0 lg:left-1/2">
         {{ partial:statamic-peak-tools::components/picture :image="block:image" class="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
     </figure>
-    <div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
+    <div class="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32 lg:pb-48">
       <div class="fluid-container">
         <div class="lg:mx-0 lg:max-w-lg">
             {{ partial:typography/h2 :content="block:title" }}
             {{ partial:typography/p :content="block:text" class="mt-4"}}
-            {{ partial:components/buttons :buttons="block:buttons" class="mt-6" }}
+            {{ partial:components/buttons :inverted="is_inverted" :buttons="block:buttons" class="mt-6" }}
         </div>
       </div>
     </div>

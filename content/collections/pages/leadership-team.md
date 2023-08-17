@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689561383
+updated_at: 1692277511
 headline: 'Meet our leadership team.'
 enable_hero: false
 hero_type: brand
@@ -23,9 +23,17 @@ page_builder:
   -
     id: lk67xsam
     people:
-      - 197ea0de-5ee1-4766-ab70-ca6eed914474
       - a85f3420-0809-4f7a-a5af-11635a138181
       - 10126038-4a19-4f0b-a0aa-c409cdb2177d
+      - 197ea0de-5ee1-4766-ab70-ca6eed914474
+      - 9be1c42f-22e7-42ec-8760-55348a15a581
+      - 3e37dda9-4cc8-4f3a-b5a0-3ad7e07509af
+      - 907486d6-cac0-4490-a2ae-c478dee7ddee
+      - 31506ce8-4e98-4ec6-9d7d-0495303c6043
+      - 82f7eed3-ad04-4851-a894-a8f1ccdf18bd
+      - af74c8eb-6178-4031-b768-788a9b07479a
+      - 47701b9a-6b8c-4b09-b0e3-10a673f05379
+      - e5c80b9a-2e8e-4fc2-9fcb-1c98e99c8b6f
     type: people
     enabled: true
   -
@@ -37,10 +45,11 @@ page_builder:
     entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
     button_type: button
     type: call_to_action
-    cta_type: 'illustration'
+    cta_type: illustration
     enabled: true
     color:
       label: Yellow
       value:
         - 'rgb(254 195 37)'
+text_animation_delay: 0
 ---

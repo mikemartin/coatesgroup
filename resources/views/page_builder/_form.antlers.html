@@ -28,7 +28,7 @@
                     </div>
 
                     {{ sections }}
-                        <fieldset class="w-full grid md:grid-cols-12 gap-6">
+                        <fieldset class="w-full grid md:grid-cols-12 gap-5 md:gap-10">
                             {{ if display || instructions }}
                                 <span class="md:col-span-12">
                                     {{ display ?= { partial:typography/h2 class="mb-2" as="legend" content="{ trans :key="display" }" } }}
@@ -39,7 +39,7 @@
                             {{# Render the default-styled fields. #}}
                             {{ fields }}
                                 <template x-if="{{ show_field }}">
-                                    <div class="{{ input_type == 'hidden' ?= 'hidden' }} flex flex-col space-y-3
+                                    <div class="{{ input_type == 'hidden' ?= 'hidden' }} flex flex-col
                                         {{ width == '25' ?= 'md:col-span-3' }}
                                         {{ width == '33' ?= 'md:col-span-4' }}
                                         {{ width == '50' ?= 'md:col-span-6' }}
@@ -47,8 +47,9 @@
                                         {{ width == '75' ?= 'md:col-span-9' }}
                                         {{ width == '100' ?= 'md:col-span-12' }}"
                                     >
-                                        <label class="font-bold" for="{{ handle }}">
-                                            {{ trans :key="display" }}
+                                        {{ if display }}
+                                        <label for="{{ handle }}">
+                                            {{ partial:typography/annotation as="span" content="{ trans :key="display" }" }}
                                             {{ if validate | contains('required') }}
                                                 <sup class="text-yellow-400">*</sup>
                                             {{ /if }}
@@ -56,13 +57,14 @@
                                                 {{ partial:typography/p class="text-sm my-1" content="{ trans :key="instructions" }" }}
                                             {{ /if }}
                                         </label>
+                                        {{ /if }}
 
                                         <div class="flex flex-col space-y-2">
                                             {{ field }}
 
                                             {{# Display error label when there is a validation error with the name field. #}}
                                             <template x-if="errors.{{ handle }}">
-                                                <span class="text-red-800 text-sm font-bold" id="{{ handle }}" x-text="errors.{{ handle}}"></span>
+                                                <span class="text-red" id="{{ handle }}" x-text="errors.{{ handle}}"></span>
                                             </template>
                                         </div>
 
@@ -74,14 +76,14 @@
 
                     <div class="w-full grid md:grid-cols-12 gap-6">
                         <template x-if="error">
-                            {{ partial src="components/notification" type="error" class="md:col-span-12" content="{trans:strings.form_error}" }}
+                            {{ partial src="components/notification" type="notice" class="md:col-span-12" content="{trans:strings.form_error}" }}
                         </template>
                         <template x-if="success">
                             {{ partial src="components/notification" type="success" class="md:col-span-12" content="{trans:strings.form_success}" }}
                         </template>
 
                         {{# Pulse button and disable upon sending. #}}
-                        <div class="md:col-span-12 flex justify-end">
+                        <div class="md:col-span-12 flex">
                             {{ partial:components/button as="button" label="{ trans:strings.form_send }" }}
                                 {{ slot:attributes }}
                                     :disabled="sending" :class="{ 'opacity-25 cursor-default': sending }"

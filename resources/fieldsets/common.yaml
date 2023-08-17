@@ -95,6 +95,7 @@ fields:
       buttons:
         - h2
         - h3
+        - h4
         - bold
         - italic
         - unorderedlist

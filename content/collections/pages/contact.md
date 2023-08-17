@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1689639068
+updated_at: 1692265539
 page_builder:
   -
     id: ljmfvd7s
@@ -29,11 +29,16 @@ page_builder:
         target_blank: false
         entry: 82143229-3dff-4e67-a5a4-21ec485cec07
         button_type: button
-    image: offices/christoph-schulz-aeiu9niln_c-unsplash.jpg
+    image: contact/img_contact_1.jpg
     type: half_width_image
     enabled: true
+    color:
+      label: Blue
+      value:
+        - 'rgb(0 162 222)'
 hero_type: image
-hero_image: hero/coverr-running-with-a-kite.jpg
+hero_image: contact/img_contact_hero.jpg
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 enable_hero: true
+text_animation_delay: 0
 ---

@@ -10,9 +10,9 @@
     aria-describedBy="{{ handle }}"
 >
     {{ foreach:options as="value|label" }}
-        <label class="inline-flex items-center">
+        <label class="inline-flex items-center md:text-lg font-mono">
             <input
-                class="mr-2 rounded border-neutral text-primary focus-visible:ring focus-visible:ring-primary motion-safe:transition"
+                class="mr-2 h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
                 type="checkbox"
                 name="{{ handle }}[]"
                 value="{{ value }}"
@@ -23,4 +23,5 @@
         </label>
     {{ /foreach:options }}
 </div>
+
 <!-- End: /vendor/statamic/forms/fields/checkboxes.antlers.html -->

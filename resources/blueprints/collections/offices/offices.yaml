@@ -85,6 +85,14 @@ tabs:
             field: common.text_rich
             config:
               display: About
+              buttons:
+                - h4
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - anchor
   sidebar:
     display: Sidebar
     sections:

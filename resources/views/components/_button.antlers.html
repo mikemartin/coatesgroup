@@ -13,9 +13,9 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-            focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            text-lg leading-snug focus:outline-none focus-visible:ring focus-visible:ring-offset-2
             {{ if button_type == 'inline' }}
-                decoration-1 underline-offset-2 underline motion-safe:transition text-lg leading-snug {{ color or 'text-black dark:text-white' }} hover:font-medium active:no-underline
+                decoration-1 underline-offset-2 underline motion-safe:transition {{ color or 'text-black dark:text-white' }} hover:font-medium active:no-underline
                 {{ inverted
                     ? 'text-white decoration-white focus-visible:ring-white'
                     : 'text-neutral decoration-neutral focus-visible:ring-primary'
@@ -39,6 +39,7 @@
     >
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
         {{ if show_arrow }}<span aria-hidden="true"> →</span>{{ /if }}
+        {{ if extend }}<span class="inset-0 absolute"></span>{{/if}}
     </{{ as or 'a' }}>
 {{ /if }}
 <!-- End: /components/_button.antlers.html -->

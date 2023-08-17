@@ -156,12 +156,6 @@ fields:
               fields:
                 -
                   import: link_blocks
-            offices:
-              display: Offices
-              instructions: 'List offices.'
-              fields:
-                -
-                  import: offices
             people:
               display: People
               instructions: 'List People.'

@@ -17,20 +17,66 @@
 
 {{ section:index_content }}
     <!-- /offices/index.antlers.html -->
-    <div class="fluid-container self-start grid md:grid-cols-12 gap-8">
-        {{ collection:offices sort="date:desc" paginate="true" limit="12" as="items" }}
-            {{ unless no_results }}
-                {{ items }}
-                    {{ partial:components/offices_item class="md:col-span-4" }}
-                {{ /items }}
-            {{ else }}
-                <div class="md:col-span-6">
-                    {{ trans:strings.no_results }}
-                </div>
-            {{ /unless }}
+    <section class="fluid-container grid md:grid-cols-12 gap-y-5 gap-x-8 xl:gap-y-10 xl:gap-x-16">
+        {{ collection:offices sort="order" scope="office" }}
+            <article x-data="{ open: false }" class="relative md:col-span-6 lg:col-span-4 flex flex-col gap-6">
+                <figure class="aspect-[7/4]">
+                    {{ partial
+                        src="statamic-peak-tools::components/picture"
+                        :image="office:image:url"
+                        aspect_ratio="7/4"
+                        sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                        cover="true"
+                        lazy="true"
+                    }}
+                </figure>
+                <header class="flex flex-col space-y-4">
+                    {{ partial:typography/large :content="office:title" class="font-medium" }}
+                    {{ partial:components/slideover slideover_inverted="true" label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ office:title }}" extend="true" }}
+                        {{ slot:content }}
+                            <div class="aspect-[7/4]">
+                                {{ partial
+                                    src="statamic-peak-tools::components/picture"
+                                    :image="office:image:url"
+                                    aspect_ratio="7/4"
+                                    sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                                    cover="true"
+                                    lazy="true"
+                                }}
+                            </div>
+                            <div class="p-8 md:p-12 space-y-8">
+                                <div>
+                                    {{ partial:typography/h3 content="{office:title} {office:head_office ?= '(Head Office)'}" }}
+                                    <p class="mt-2 text-lg leading-snug text-white">
+                                        {{ office:address }}
+                                            {{ value }}<br/>
+                                        {{ /office:address }}
+                                    </p>
+                                </div>
+                                <div>
+                                    {{ if office:email }}
+                                    <a href="mailto:{{ email | obfuscate_email }}" class="mt-2 flex text-lg leading-snug text-white">
+                                        {{ svg:mail class="w-6 h-6 mr-1" }} {{ office:email | obfuscate_email }}
+                                    </a>
+                                    {{ /if }}
 
-            {{ partial:components/pagination class="md:col-span-12" }}
+                                    {{ if office:tel }}
+                                    <a href="tel:{{ office:tel }}" class="mt-2 flex text-lg leading-snug text-white">
+                                        {{ svg:phone class="w-6 h-6 mr-1" }} {{ office:tel }}
+                                    </a>
+                                    {{ /if }}
+                                </div>
+                                {{ partial:typography/prose }}
+                                    <strong>About the {{ office:city }} Office</strong>
+                                    {{ office:about }}
+                                {{ /partial:typography/prose }}
+                            </div>
+                            
+                        {{ /slot:content }}
+                    {{ /partial:components/slideover }}
+                </header>
+            </article>
         {{ /collection:offices }}
-    </div>
+    </section>
     <!-- End: /offices/index.antlers.html -->
 {{ /section:index_content }}

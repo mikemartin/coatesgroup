@@ -1,0 +1,34 @@
+<div class="w-full max-w-lg mx-auto space-y-5 md:space-y-10">
+    <label class="block">
+        {{ partial:typography/annotation content="Name" }}
+        {{ partial:vendor/statamic/forms/fields/text handle="name" placeholder="Eg. John Doe" }}
+    </label>
+
+     <label class="block">
+        {{ partial:typography/annotation content="Enquiry Type" }}
+        <select class="
+            block
+            w-full
+            mt-2
+            p-2.5
+            text-black
+            border-black
+            focus:ring-0 focus:border-black
+          ">
+          <option>Corporate event</option>
+          <option>Wedding</option>
+          <option>Birthday</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label class="block">
+        {{ partial:typography/annotation content="Message" }}
+        {{ partial:vendor/statamic/forms/fields/textarea handle="message" placeholder="Message" }}
+      </label>
+
+     {{ partial:vendor/statamic/forms/fields/toggle handle="checkbox" inline_label="Email me news and special things" }}
+
+     {{ partial:vendor/statamic/forms/fields/radio handle="radio" label="This is an option" }}
+ </div>
+ 

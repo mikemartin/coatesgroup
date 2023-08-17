@@ -1,12 +1,12 @@
 <!-- /vendor/statamic/forms/fields/toggle.antlers.html -->
 <label
-    class="inline-flex items-center"
+    class="{{ if display }}mt-2{{/if}} inline-flex items-start"
     :aria-invalid="errors.hasOwnProperty('{{ handle }}')"
     aria-describedBy="{{ handle }}"
 >
     <input type="hidden" name="{{ handle }}" value="0">
     <input
-        class="mr-2 inline-flex rounded border-neutral text-primary focus-visible:ring focus-visible:ring-primary motion-safe:transition"
+        class="mr-2 h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
         type="checkbox"
         name="{{ handle }}"
         value="1"
@@ -14,13 +14,13 @@
         {{ (!old && default) ?= 'checked' }}
     >
     {{ if inline_label }}
-        <span>
+        <span class="md:text-lg font-mono -mt-0.5">
             {{ trans :key="inline_label" }}
             {{ if handle === 'consent' }}
                 {{ if configuration:privacy_statement_type == 'entry' }}
-                    <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.cookie_learn_more }}</a>
+                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_entry:url }}">privacy policy</a>
                 {{ elseif configuration:privacy_statement_type == 'pdf' }}
-                    <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.cookie_learn_more }}</a>
+                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_asset }}" target="_blank">privacy policy</a>
                 {{ /if }}
             {{ /if }}
         </span>

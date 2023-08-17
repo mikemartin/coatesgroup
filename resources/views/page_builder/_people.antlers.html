@@ -8,7 +8,7 @@
 <section 
     x-data="fadeIn()" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-8">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-y-6 gap-x-8 xl:gap-y-10 xl:gap-x-16">
     {{
         people = block:people
             ? block:people
@@ -16,46 +16,53 @@
     }}
 
     {{ people scope="person" }}
-        <article x-data="{ open: false }" class="md:col-span-4 flex flex-col gap-3">
-            <figure class="relative aspect-[4/3] lg:aspect-[7/8]">
-                {{ partial:components/tag :label="person:office:title" as="span" faux="true" class="absolute top-4 left-4" }}
-                {{ partial
-                    src="statamic-peak-tools::components/picture"
-                    :image="person:image:url"
-                    aspect_ratio="4/3 large:7/8 "
-                    sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
-                    cover="true"
-                    lazy="true"
-                }}
-            </figure>
-            <header class="flex flex-col">
-                {{ partial:typography/large :content="person:title" class="font-bold" }}
-                {{ partial:typography/p :content="person:function" }}
-                {{ partial:components/slideover label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ person:title }}" }}
-                    {{ slot:content }}
-                        <div class="aspect-[7/3]">
-                            {{ partial
-                                src="statamic-peak-tools::components/picture"
-                                :image="person:image:url"
-                                aspect_ratio="7/3"
-                                sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
-                                cover="true"
-                                lazy="true"
-                            }}
-                        </div>
-                        <div class="p-8">
-                            <div class="space-y-2">
-                                {{ partial:typography/h3 :content="person:title" class="font-bold" }}
-                                {{ partial:typography/p :content="person:function" class="font-bold"}}
-                                {{ partial:typography/p :content="person:office:title" class="mt-2" }}
+        <article x-data="{ open: false }" class="relative md:col-span-6 lg:col-span-4 flex md:flex-col gap-4">
+            <div class="relative w-40 md:w-full">
+                <figure class="relative aspect-[9/10] lg:aspect-[7/8]">
+                    {{ partial:components/tag :title="person:office:city" tag_type="location" as="span" faux="true" class="hidden md:inline-block absolute top-4 left-4 md:top-6 md:left-6 rounded-full" }}
+                    {{ partial
+                        src="statamic-peak-tools::components/picture"
+                        :image="person:image:url"
+                        aspect_ratio="9/10 large:7/8 "
+                        sizes="(min-width: 1280px) 762px, (min-width: 768px) 33vw, 50vw"
+                        cover="true"
+                        lazy="true"
+                    }}
+                </figure>
+            </div>
+            <header class="flex-1 flex flex-col space-y-4">
+                <div>
+                    {{ partial:components/tag :title="person:office:city" tag_type="location" as="span" faux="true" class="md:hidden mb-2 rounded-full" }}
+                    {{ partial:typography/large :content="person:title" class="font-bold" }}
+                    {{ partial:typography/p :content="person:function" class="mt-1" }}
+                </div>
+                {{ if person:bio }}
+                    {{ partial:components/slideover label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ person:title }}" extend="true" }}
+                        {{ slot:content }}
+                            <figure class="aspect-[10/9] bg-black">
+                                {{ partial
+                                    src="statamic-peak-tools::components/picture"
+                                    :image="person:image:url"
+                                    aspect_ratio="10/9"
+                                    sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
+                                    cover="true"
+                                    lazy="true"
+                                }}
+                            </figure>
+                            <div class="p-8">
+                                <div class="space-y-2">
+                                    {{ partial:typography/h3 :content="person:title" class="font-bold" }}
+                                    {{ partial:typography/p :content="person:function" class="font-bold"}}
+                                    {{ partial:typography/p :content="person:office:title" class="mt-2" }}
+                                </div>
+                                {{ partial:typography/prose class="mt-8" }}
+                                    {{ person:bio }}
+                                {{ /partial:typography/prose }}
                             </div>
-                            {{ partial:typography/prose class="mt-8" }}
-                                {{ person:bio }}
-                            {{ /partial:typography/prose }}
-                        </div>
-                        
-                    {{ /slot:content }}
-                {{ /partial:components/slideover }}
+                            
+                        {{ /slot:content }}
+                    {{ /partial:components/slideover }}
+                {{ /if }}
             </header>
         </article>
     {{ /people }}

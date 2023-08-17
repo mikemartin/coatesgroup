@@ -115,3 +115,7 @@ tree:
     id: 7b59f722-71f7-4244-b31c-571df6d56885
     title: Form
     url: form
+  -
+    id: 86a3053f-5d7f-46be-8c90-97625f1bbe67
+    title: Notifications
+    url: notifications

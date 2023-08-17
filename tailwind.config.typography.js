@@ -72,6 +72,9 @@ module.exports = {
             'p strong': {
               fontWeight: '500',
             },
+            'strong': {
+              fontWeight: '500',
+            },
             '[class~="lead"]': {
               fontSize: em(35, 16),
               lineHeight: round(42 / 35),
@@ -117,7 +120,7 @@ module.exports = {
               color: 'inherit',
             },
             h4: {
-              fontWeight: '300',
+              fontWeight: '500',
               color: 'var(--tw-prose-headings)',
               fontSize: em(18, 16),
               lineHeight: round(28 / 18),
