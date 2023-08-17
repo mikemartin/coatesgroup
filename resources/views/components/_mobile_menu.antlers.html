@@ -12,7 +12,7 @@
 </div>
 <div class="overflow-auto flex-1 py-2 fluid-container">
         <ul class="py-12 flex flex-col space-y-2">
-            {{ nav:main max_depth="3" select="title|url" }}
+            {{ nav:main max_depth="3" select="title|mobile_title|url" }}
                 <li
                     {{ if children }}
                         x-data="{ subnavOpen: false }"
@@ -23,7 +23,7 @@
                     <a
                         class="w-full py-2 flex items-center space-x-1 text-2xl leading-tight hover:font-medium text-black focus:outline-none focus-visible:ring-2 ring-primary"
                         {{ if children }}
-                            href="#"
+                            href="javascript:void(0)"
                             @click.prevent="subnavOpen = !subnavOpen"
                             @click.outside="subnavOpen = false"
                             :aria-label="subnavOpen
@@ -34,7 +34,7 @@
                             href="{{ url }}"
                         {{ /if }}
                     >
-                        <span>{{ title }}</span>
+                        <span>{{ mobile_title ?? title }}</span>
                         {{ if children }}
                             <div :class="{ 'scale-y-[-1]': subnavOpen }" class="motion-safe:transition-transform">
                                 {{ svg:chevron_down class="w-3 ml-1.5 overflow-visible stroke-current text-neutral" aria-hidden="true" }}
@@ -45,22 +45,33 @@
                         <div
                             x-show="subnavOpen"
                             x-ref="subnav"
-                            class="flex flex-col items-stretch space-y-6 py-2 pl-6"
+                            class="flex flex-col items-stretch space-y-5 py-2 pl-5"
                             x-collapse
                         >
                             {{ children }}
-                                <div>
-                                    {{ partial:typography/p id="{{ title|slugify }}-heading" :content="title" color="text-black"  }}
-                                    <ul role="list" aria-labelledby="{{ title|slugify }}-heading" class="mt-4 space-y-4">
-                                        {{ children }}
-                                        <li class="flex">
-                                            <a href="#" class="text-charcoal hover:font-medium">{{ title }}</a>
-                                        </li>
-                                        {{ /children }}
-                                    </ul>
-                                </div>
+                                <ul role="list" class="space-y-4">
+                                    {{ if url }}
+                                    <li>
+                                        <a href="{{ url }}" class="text-black text-lg font-medium">{{ mobile_title ?? title }}</a>
+                                    </li>
+                                    {{ else }}
+                                    <li>
+                                        <span class="text-black text-lg font-medium">{{ mobile_title ?? title }}</span>
+                                    </li>
+                                    {{ /if }}
+                                    {{ children }}
+                                    <li>
+                                        <a href="{{ url }}" class="text-charcoal hover:font-medium">{{ mobile_title ?? title }}</a>
+                                    </li>
+                                    {{ /children }}
+                                </ul>
                             {{ /children }}
+
+                            <div>
+                                {{ partial:components/button :label="cta:nav_title" :url="cta:nav_buttons:0:url" class="mt-2" button_type="light" }}
                             </div>
+
+                        </div>
                     {{ /if }}
                 </li>
             {{ /nav:main }}

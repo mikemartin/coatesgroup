@@ -4,3 +4,16 @@ tabs:
     sections:
       -
         display: General
+        fields:
+          -
+            handle: mobile_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Mobile Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false

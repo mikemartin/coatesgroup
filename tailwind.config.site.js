@@ -75,6 +75,7 @@ module.exports = {
       },
       boxShadow: {
         'black-hover': 'inset 0 -3.25em 0 rgb(var(--color-black))',
+        'charcoal-hover': 'inset 0 -3.25em 0 rgb(var(--color-charcoal))',
         'white-hover': 'inset 0 -3.25em 0 rgb(255,255,255)',
         'blue-hover': 'inset 0 -3.25em 0 rgb(var(--color-blue))',
       },

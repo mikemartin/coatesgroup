@@ -64,6 +64,14 @@ tree:
     title: 'Secondary Button'
     url: secondary-button
   -
+    id: 53bb277d-b3ba-4f2a-9402-2ac705bcf388
+    title: 'Dark Button'
+    url: dark-button
+  -
+    id: e1a891e7-2231-4f2a-821d-5d778db9e1f3
+    title: 'Light Button'
+    url: light-button
+  -
     id: 536312d1-8a8d-4140-8220-ff42d1569768
     title: 'Social Media Buttons'
     url: social-media-buttons

@@ -17,7 +17,7 @@
         class="absolute p-2 right-4 top-1/2 -translate-y-1/2 text-black dark:text-white flex items-center justify-center rounded focus:outline-none focus-visible:ring-2 ring-primary ring-offset-2"
         aria-label="{{ trans:strings.nav_open }}"
     >
-        {{ svg:menu class="h-6 w-6" }}
+        {{ svg:menu class="h-8 w-8" }}
     </button>
 
     <div x-show="mobileNavOpen" x-transition:enter="transition-opacity ease-linear duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-linear duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 bg-gray-900/80" style="display: none;"></div>
