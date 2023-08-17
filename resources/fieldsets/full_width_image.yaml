@@ -54,3 +54,14 @@ fields:
       if_any:
         title: 'not empty'
         text: 'not empty'
+  -
+    handle: mobile_panning
+    field:
+      default: false
+      type: toggle
+      display: 'Mobile Panning'
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false

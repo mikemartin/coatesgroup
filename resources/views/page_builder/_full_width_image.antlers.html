@@ -6,10 +6,19 @@
 
 <!-- /page_builder/_full_width_image.antlers.html -->
 <section class="fluid-container flex flex-col gap-6 md:gap-10">
-    <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
-    class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
-        {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="7/5 large:8/3" cover="true" lazy="true" sizes="100vw" }}
-    </figure>
+    {{ if mobile_panning }}
+        <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+        class="relative aspect-[4/3] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
+            <div class="overflow-x-scroll text-center absolute inset-0">
+                {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="8/3" lazy="true" sizes="100vw" class="h-full w-auto max-w-none" }}
+            </div>
+        </figure>
+    {{ else }}
+        <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+        class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
+            {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="7/5 large:8/3" cover="true" lazy="true" sizes="100vw" }}
+        </figure>
+    {{ /if }}
     {{ if block:title }}
     <div 
         x-data="fadeIn()" 

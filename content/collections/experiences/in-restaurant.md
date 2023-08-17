@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691993896
+updated_at: 1692251689
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
@@ -22,6 +22,7 @@ page_builder:
     title: 'Solutions for a ​ seamless experience'
     text: 'A powerful combination of industry-leading digital hardware, a dynamic and data-driven CMS and end-to-end services enables the world’s leading brands to drive the best customer experiences and impactful ROI.'
     image_position: below
+    mobile_panning: true
   -
     id: ll4d65v7
     title: 'Lorem ipsum dolor sit amet consectetur.'
