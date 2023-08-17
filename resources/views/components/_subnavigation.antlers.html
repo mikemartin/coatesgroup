@@ -1,7 +1,7 @@
 <div class="relative bg-white">
     <div class="fluid-container">
-      <div class="grid grid-cols-12 gap-x-8 gap-y-10 py-14">
-        <div class="col-start-2 col-span-6 grid grid-cols-3 gap-8 pr-6">
+      <div class="grid grid-cols-12 gap-4 xl:gap-8 py-14">
+        <div class="col-span-8 xl:col-start-2 xl:col-span-7 grid grid-cols-3 gap-4 xl:gap-8 pr-6">
           {{ children }}
           <div>
               {{ if url }}<a href="{{ url }}">{{ /if }}
@@ -17,7 +17,7 @@
             </div>
           {{ /children }}
         </div>
-        <div class="col-span-4">
+        <div class="col-span-4 xl:col-span-3">
           <div class="bg-black-10 px-10 py-8">
               {{ partial:typography/p as="h3" class="font-medium" :content="cta:nav_title" color="text-black" }}
               {{ partial:typography/p class="mt-2" :content="cta:nav_text" color="text-black" }}

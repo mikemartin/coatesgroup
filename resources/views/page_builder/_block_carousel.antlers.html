@@ -39,7 +39,7 @@ x-init="swiper = new Swiper($refs.container, {
         </div>
         {{/if}}
 
-        <div class="mt-10 md:mt-20 swiper !pb-14" x-ref="container">
+        <div class="mt-10 md:mt-20 swiper !pb-14 md:!overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
                 {{ block:blocks }}
                     <div class="swiper-slide">
@@ -62,7 +62,7 @@ x-init="swiper = new Swiper($refs.container, {
             </div>
 
             <!-- If we need pagination -->
-            <div class="swiper-pagination absolute !bottom-0"></div>
+            <div class="swiper-pagination absolute !text-left !bottom-0"></div>
         </div>
         
     </div>

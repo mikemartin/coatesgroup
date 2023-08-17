@@ -44,8 +44,8 @@ x-init="swiper = new Swiper($refs.container, {
                 <div class="swiper !pb-14" x-ref="container">
                     <div class="swiper-wrapper">
                         {{ products scope="custom" }}
-                            <div class="swiper-slide">
-                                <div class="relative border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary"
+                            <div class="swiper-slide !h-auto">
+                                <div class="relative h-full border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary"
                                 >
                                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                                     {{ if product }}

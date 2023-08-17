@@ -47,38 +47,43 @@
     {{/if}} 
     class="{{ unless fill_screen }}fluid-container{{/unless}}">
     
-    <figure 
+    <div class="bg-black overflow-hidden {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}} {{ unless fill_screen }} -mx-8 lg:mx-0 {{/unless}} ">
+        <figure 
+            {{ if block:video_url }}
+            x-show="!ready" 
+            x-transition.opacity.duration.1000
+            @click="autoplay = true, loadPlayer()"
+            {{/if}} 
+            class="relative {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}} {{ if block:video_url }}cursor-pointer{{/if}}">
+            <video
+                    playsinline muted autoplay loop preload
+                    poster="{{ block:fallback_image }}"
+                    class="w-full h-full object-cover object-center"
+                >
+                <source src="{{ block:video }}" type="video/mp4">
+            </video>
+            {{ if block:video_url }}
+            <button type="button" class="!block plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></svg>
+                <span class="plyr__sr-only">Play</span>
+            </button>
+            {{ /if }}
+        </figure>
         {{ if block:video_url }}
-        x-show="!ready" 
-        @click="autoplay = true, loadPlayer()"
-        {{/if}} 
-        class="relative {{ if block:video_url }}aspect-[9/5]{{else}}aspect-[5/7] md:aspect-[9/4]{{/if}} {{ unless fill_screen }}-mx-8 lg:mx-0{{/unless}} {{ if block:video_url }}cursor-pointer{{/if}}">
-        <video
-                playsinline muted autoplay loop preload
-                poster="{{ block:fallback_image }}"
-                class="w-full h-full object-cover object-center"
-            >
-            <source src="{{ block:video }}" type="video/mp4">
-        </video>
-        {{ if block:video_url }}
-        <button type="button" class="!block plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></svg>
-            <span class="plyr__sr-only">Play</span>
-        </button>
-        {{ /if }}
-    </figure>
-    {{ if block:video_url }}
-    <div x-show="ready" class="relative {{ unless fill_screen }}-mx-8 lg:mx-0{{/unless}} overflow-hidden">
-        <div x-ref="player">
-            <iframe
-            class="absolute inset-0 w-full h-full overflow-hidden rounded-xl"
-            src="{{ video_url|embed_url }}?origin={{ site:url }}&widget_referrer={{site:url}}&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            width="100%"
-            ></iframe>
+        <div x-show="ready" 
+        x-transition.opacity.duration.1000
+        class="relative overflow-hidden">
+            <div x-ref="player">
+                <iframe
+                class="absolute inset-0 w-full h-full overflow-hidden rounded-xl"
+                src="{{ video_url|embed_url }}?origin={{ site:url }}&widget_referrer={{site:url}}&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                width="100%"
+                ></iframe>
+            </div>
         </div>
+        {{ /if }}
     </div>
-    {{ /if }}
     <div x-data="fadeIn()" 
         x-init="hide($el.children)" 
         x-intersect.once.margin.-20%="fadeInStagger($el)" 

@@ -1,6 +1,18 @@
 title: 'Repeating Squares'
 fields:
   -
+    handle: title
+    field:
+      input_type: text
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+  -
     handle: squares
     field:
       type: list
@@ -19,4 +31,4 @@ fields:
     handle: no_bottom_margin
     field:
       type: toggle
-      display: "Remove bottom margin"
+      display: 'Remove bottom margin'

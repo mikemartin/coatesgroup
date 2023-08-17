@@ -59,7 +59,7 @@ class="overflow-hidden">
                     {{ sections }}
                         <a href="javascript:void(0)" class="!w-auto swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
                             <span class="swiper-tab-dot w-4 h-4 bg-green rounded-full mr-3"></span>
-                            {{ title }}
+                            {{ nav_title ?? title }}
                         </a>
                     {{ /sections }}
                 </div>
@@ -90,7 +90,7 @@ class="overflow-hidden">
                       <span 
                       :class="{ 'bg-green': activeSlide == {{ index }}, 'border border-charcoal-40': activeSlide !== {{ index }} }"
                       class="w-4 h-4 rounded-full mr-3"></span>
-                      {{ title }}
+                      {{ nav_title ?? title }}
                   </span>
                 </button>
               </div>

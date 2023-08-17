@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692187972
+updated_at: 1692254244
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -60,6 +60,7 @@ page_builder:
     type: repeating_squares
     enabled: true
     no_bottom_margin: true
+    title: 'Our Purpose'
   -
     id: lk66i6f1
     eyebrow: 'Our Vision'
@@ -175,4 +176,5 @@ page_builder:
     cta_type: illustration
     enabled: true
 enable_hero: true
+text_animation_delay: 0
 ---

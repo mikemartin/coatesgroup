@@ -29,16 +29,22 @@
         {{ /if }}
         <dl x-data="fadeIn()"
         x-init="hide($el.children)"
-        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-20 grid grid-cols-1 gap-8 sm:grid-cols-12 {{ if (block:icon_list|length === 5) && !{block:icon_list}:0:text }}md:grid-cols-10{{/if}} lg:mx-0 {{ if block:icon_list|length > 5 }}lg:gap-x-2{{else}}lg:gap-x-16{{/if}}">
+        x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-12 {{ if (block:icon_list|length === 5) && !{block:icon_list}:0:text }}md:grid-cols-10{{/if}} lg:mx-0 
+        
+        {{ if block:icon_position == 'above' }}
+            gap-8 {{ if block:icon_list|length > 5 }}lg:gap-x-2{{else}}lg:gap-x-16{{/if}}
+        {{ else }}
+            gap-8 lg:gap-y-16 lg:gap-x-10
+        {{ /if }}">
             {{ block:icon_list }}
                 {{ if block:icon_position == 'above' }}
-                <div class="relative flex gap-4  flex-col {{ text ? 'items-start' : 'items-center text-center' }}
+                <div class="relative flex gap-4  sm:flex-col {{ text ? 'items-start' : 'items-center text-center' }}
                     {{ switch(
                         (total_results === 2) => 'sm:col-span-6',
                         (total_results === 3) => 'sm:col-span-6 md:col-span-4',
                         ((total_results >= 4) && text) => 'sm:col-span-6 md:col-span-3',
                         ((total_results === 4) && !text) => 'sm:col-span-6 md:col-span-3',
-                        ((total_results >= 5) && !text) => 'sm:col-span-6 md:col-span-2',
+                        ((total_results >= 5) && !text) => 'sm:col-span-6 md:col-span-4 xl:col-span-2',
                         () => void
                     )}}">
                     {{ svg src="images/iconography/{icon | raw}" class="w-16 h-16 lg:h-24 lg:w-24 shrink-0" }}

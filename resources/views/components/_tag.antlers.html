@@ -13,7 +13,7 @@
             inline-flex items-center py-2.5 px-6 leading-none no-underline select-none whitespace-nowrap motion-safe:transition
             {{ if tag_type == 'secondary' }}
                 text-black bg-white focus-visible:ring-primary {{ rounded ?= 'rounded-full' }}
-            {{ elseif tag_type == 'client' }}
+            {{ elseif tag_type == 'location' }}
                 text-black bg-yellow focus-visible:ring-primary {{ rounded ?= 'rounded-full' }}
             {{ else }}
                 text-white bg-red focus-visible:ring-primary rounded-full
