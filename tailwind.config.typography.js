@@ -120,7 +120,7 @@ module.exports = {
               color: 'inherit',
             },
             h4: {
-              fontWeight: '500',
+              fontWeight: '300',
               color: 'var(--tw-prose-headings)',
               fontSize: em(18, 16),
               lineHeight: round(28 / 18),
