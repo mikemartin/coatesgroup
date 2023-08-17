@@ -18,6 +18,7 @@ import 'swiper/css/grid';
 import 'swiper/css/effect-fade';
 import fadeIn from './components/fadeIn.js'
 import horizontalLoop from './components/horizontalLoop.js'
+import DrawSVGPlugin from './vendor/DrawSVGPlugin.js';
 import lottie from 'lottie-web'
 import { create } from '@lottiefiles/lottie-interactivity';
 
