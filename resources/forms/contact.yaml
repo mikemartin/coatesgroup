@@ -2,13 +2,15 @@ title: Contact
 honeypot: fax
 email:
   -
-    to: info@site.com
-    from: info@site.com
+    id: Iw1FJh8L
+    to: "{{ switch( (enquiry == 'careers') => 'peopleandcultureau@coatesgroup.com', (enquiry == 'support') => 'websupport@coatesgroup.com', () => 'info@coatesgroup.com' ) }}"
+    from: info@coatesgroup.com
     reply_to: '{{ email }}'
     subject: '{{ trans:strings.form_subject_received }}'
     html: email/form_owner
     text: email/form_owner_text
   -
+    id: 5oHjqgEM
     to: '{{ email }}'
     from: info@site.com
     reply_to: info@site.com

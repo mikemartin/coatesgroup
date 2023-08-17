@@ -33,10 +33,13 @@ tabs:
               antlers: false
               hide_display: false
           -
-            handle: enquiry_type
+            handle: enquiry
             field:
               options:
                 general: 'General Enquiry'
+                careers: Careers
+                sales: Sales
+                support: Support
               taggable: false
               push_tags: false
               multiple: false
@@ -50,6 +53,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              default: general
           -
             handle: message_body
             field:
