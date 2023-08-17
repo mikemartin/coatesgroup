@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_product_features.antlers.html -->
-<section class="relative fluid-container product-features">
+<section class="-z-10 relative fluid-container product-features">
         <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
             <div class="{{ switch(
                 (size == 'md') => 'md:col-span-6 md:col-start-4',
@@ -34,9 +34,9 @@
         </div>
         
         {{ features }}
-        <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12">
+        <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12 {{ if first }} md:mt-[10vh] {{/if}} {{ if last }} md:mb-[10vh] {{/if}}">
             <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
-                    <div class="md:h-[75vh] md:flex md:items-center">
+                    <div class="md:h-[45vh] md:flex md:items-center">
                         <div x-data="fadeIn()" 
                         x-init="hide($el)" 
                         x-intersect:enter.margin.-20%="fadeIn($el)"
