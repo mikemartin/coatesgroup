@@ -8,11 +8,11 @@
 <section 
     x-data="fadeIn()" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-y-6 gap-x-8 xl:gap-y-10 xl:gap-x-16">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-y-8 gap-x-8 xl:gap-y-12 xl:gap-x-16">
     {{
         people = block:people
             ? block:people
-            : { collection:people sort="order" }
+            : { collection:people sort="order" redirects="true" }
     }}
 
     {{ people scope="person" }}
@@ -36,7 +36,9 @@
                     {{ partial:typography/large :content="person:title" class="font-bold" }}
                     {{ partial:typography/p :content="person:function" class="mt-1" }}
                 </div>
-                {{ if person:bio }}
+                {{ if redirect }}
+                    {{ partial:components/button button_type="inline" label="{trans:strings.read_more}" extend="true" target_blank="true" }}
+                {{ elseif person:bio }}
                     {{ partial:components/slideover label_open="{trans:strings.read_more}" label_close="Close" label_aria="Open {{ person:title }}" extend="true" }}
                         {{ slot:content }}
                             <figure class="aspect-[10/9] bg-black">

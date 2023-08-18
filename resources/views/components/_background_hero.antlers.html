@@ -4,7 +4,7 @@
 #}}
 
 <!-- /layout/_background_hero.antlers.html -->
-<div class="relative bg-white {{ if hero_type != 'article' && hero_type != 'products' && hero_type != 'case-study' }}-mt-16{{/if}}">
+<div class="relative bg-white {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study' }}-mt-16{{/if}}">
     {{ if hero_type == 'video' && hero_video }}
     <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video
@@ -28,11 +28,12 @@
         <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
             {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" sizes="100vw" }}
         </div>
-        <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%"></div>
-        {{ if hero_type != 'article' && hero_type != 'products' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]"></div>{{/if}}
+        <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%" 
+        style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>
+        {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>{{/if}}
     {{ /if}}
 
-    <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'products' && hero_type != 'case-study'  }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
+    <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn()" 
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-10">

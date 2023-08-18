@@ -15,7 +15,7 @@
         {{ product_text = custom:text ?? product:text  }}
         <div
             class="bg-charcoal-10
-                flex flex-col sm:flex-row md:flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
+                flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary
                 md:col-span-6
             "
             aria-labelledby="{{ product_title | slugify }}"
@@ -32,13 +32,13 @@
                 {{ product:url ?= { partial:components/button :url="product:url" aria-label="{ product_title | slugify }" label="View More" } }}
             </div>
             {{ if product:image }}
-            <figure class="sm:mt-5 md:-mt-12 w-full flex justify-end overflow-hidden">
+            <figure class="sm:mt-5 lg:-mt-12 w-full flex justify-end overflow-hidden">
                 {{ partial
                     src="statamic-peak-tools::components/picture"
                     sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
                     aspect_ratio="10/9"
                     :image="product:image"
-                    class="w-full max-w-xs lg:max-w-md"
+                    class="w-full max-w-xs sm:max-w-sm md:max-w-xs lg:max-w-md"
                     lazy="true"
                 }}
             </figure>

@@ -7,12 +7,32 @@
 <!-- /page_builder/_full_width_image.antlers.html -->
 <section class="fluid-container flex flex-col gap-6 md:gap-10">
     {{ if mobile_panning }}
-        <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
-        class="relative aspect-[4/3] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
-            <div class="overflow-x-scroll text-center absolute inset-0">
-                {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="8/3" lazy="true" sizes="100vw" class="h-full w-auto max-w-none" }}
+        <div x-data="{ 
+            width: null,
+            left: 0
+        }" x-init="width = $refs.image.querySelector('img').offsetWidth" class="{{ if block:image_position == 'below'}}order-1{{/if}}">
+            <figure class="relative aspect-[4/3] md:aspect-[8/3] -mx-8 lg:mx-0">
+                <div 
+                x-ref="image" 
+                x-on:resize.window="width = $refs.image.querySelector('img').offsetWidth"
+                x-on:scroll="left = $refs.image.scrollLeft"
+                class="overflow-x-auto overscroll-x-contain scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden text-center absolute inset-0">
+                    {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="8/3" lazy="true" sizes="100vw" class="h-full w-auto max-w-none" }}
+                </div>
+            </figure>
+            <div class="mt-8 md:mt-16 md:hidden relative w-full flex justify-center gap-16 mb-8 lg:mb-0">
+                <div @click="$refs.image.scrollBy(width/-3, 0)" class="text-primary cursor-pointer transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:left-0">
+                    <div class="p-3"  :class="{ 'animate-bob': left == width/2 }">
+                        {{ svg:chevron-big-left class="w-8 h-8" }}
+                    </div>
+                </div>
+                <div @click="$refs.image.scrollBy(width/3, 0)" class="text-primary cursor-pointer transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:right-0">
+                    <div class="p-3" :class="{ 'animate-bob': left == 0 }">
+                        {{ svg:chevron-big-right class="w-8 h-8" }}
+                    </div>
+                </div>
             </div>
-        </figure>
+        </div>
     {{ else }}
         <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
         class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">

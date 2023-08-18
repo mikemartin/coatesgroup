@@ -41,6 +41,24 @@ tabs:
             field:
               type: link
           -
+            handle: overlay_opacity
+            field:
+              min: 0
+              max: 100
+              step: 5
+              default: 100
+              append: '%'
+              type: range
+              display: 'Overlay Opacity'
+              icon: range
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              unless:
+                redirect: 'not null'
+          -
             handle: teaser
             field: common.text_plain
             config:

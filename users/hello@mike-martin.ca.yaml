@@ -45,15 +45,6 @@ preferences:
       after_save: create_another
     values:
       after_save: continue_editing
-  forms:
-    contact:
-      columns:
-        - datestamp
-        - name
-        - consent
-        - enquiry_type
-        - email
-        - message_body
   assets:
     images:
       mode: grid

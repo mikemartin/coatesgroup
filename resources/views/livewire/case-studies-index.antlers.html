@@ -4,8 +4,9 @@
     @desc The Case Studies Index livewire component.
 #}}
 
-<main class="outer-grid pt-6 md:pt-8" id="content">
+<main class="outer-grid {{ if enable_filters }}pt-6 md:pt-8{{/if}}" id="content">
     <div class="fluid-container grid md:grid-cols-12 gap-10">
+        {{ if enable_filters }}
         <div x-data="{ 
                 mobileFilterOpen: false,
                 industry: {{ livewire:entangle property='industry' }}, 
@@ -32,6 +33,7 @@
                 {{ partial:components/filter label="Experience" :options="experiences" class="hidden md:block flex-1" }}
             </div>
         </div>
+        {{ /if }}
 
         {{ case-studies }}
             {{ unless no_results }}

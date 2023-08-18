@@ -6,8 +6,14 @@
 {{# Redirect if current_url is in the Redirects global. #}}
 {{ partial:statamic-peak-seo::errors/redirects }}
 
+{{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label"} }}
+
 <!-- /errors/404.antlers.html -->
 <main class="outer-grid" id="content">
-    {{ partial:statamic-peak-seo::errors/entry_content }}
+    {{ {enable_hero && hero_extend && hero_type == 'brand'} ?= { partial:components/hero_extend :hero_color="hero_color:label" } }}
+
+    {{ page_builder scope="block" }}
+        {{ partial src="page_builder/{type}" }}
+    {{ /page_builder }}
 </main>
 <!-- End: /errors/404.antlers.html -->

@@ -8,33 +8,3 @@
 <!-- /case_studies/index.antlers.html -->
 {{ livewire:case-studies-index }}
 <!-- End: /case_studies/index.antlers.html -->
-
-{{# <script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('properties', () => ({
-            init() {
-                const url = new URL(window.location.href);
-
-                this.$watch('$store.filter.industry', (value) => {
-                    url.searchParams.set('industry', value);
-                    history.pushState(null, document.title, url.toString());
-                });
-                
-                this.$watch('$store.filter.location', (value) => {
-                    url.searchParams.set('location', value.join('|'));
-                    history.pushState(null, document.title, url.toString());
-                });
-                
-                this.$watch('$store.filter.product', (value) => {
-                    url.searchParams.set('product', value.join('|'));
-                    history.pushState(null, document.title, url.toString());
-                });
-
-                this.$watch('$store.filter.experience', (value) => {
-                    url.searchParams.set('experience', value.join('|'));
-                    history.pushState(null, document.title, url.toString());
-                });
-            }
-        }))
-    })
-</script> #}}

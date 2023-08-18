@@ -111,3 +111,21 @@ fields:
       hide_display: false
       if:
         hero_type: 'equals brand'
+  -
+    handle: overlay_opacity
+    field:
+      min: 0
+      max: 100
+      step: 5
+      default: 100
+      append: '%'
+      type: range
+      display: 'Overlay Opacity'
+      icon: range
+      width: 50
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      if:
+        hero_type: 'equals image'

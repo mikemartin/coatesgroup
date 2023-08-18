@@ -12,7 +12,7 @@ tabs:
               validate: required
               localizable: true
               instructions_position: above
-              listable: hidden
+              listable: true
               visibility: visible
               input_type: text
               placeholder: 'Eg. John Doe'
@@ -21,12 +21,12 @@ tabs:
           -
             handle: email
             field:
-              display: 'Email address'
+              display: Email
               type: text
               validate: required|email
               localizable: true
               instructions_position: above
-              listable: hidden
+              listable: true
               visibility: visible
               input_type: text
               placeholder: sample@mail.com
@@ -49,7 +49,7 @@ tabs:
               type: select
               display: 'Enquiry Type'
               icon: select
-              listable: hidden
+              listable: true
               instructions_position: above
               visibility: visible
               hide_display: false
@@ -74,7 +74,7 @@ tabs:
               default: false
               type: toggle
               icon: toggle
-              listable: hidden
+              listable: true
               instructions_position: above
               validate:
                 - accepted

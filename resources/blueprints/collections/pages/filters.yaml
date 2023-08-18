@@ -1,4 +1,5 @@
-title: Page
+hide: true
+title: Filters
 tabs:
   main:
     display: Main
@@ -50,19 +51,18 @@ tabs:
               hide_display: false
               instructions: 'Replace page header with hero. See options in Hero tab.'
           -
-            handle: center_headline
+            handle: enable_filters
             field:
               default: false
               type: toggle
-              display: 'Center Headline'
+              display: 'Enable Filters'
               icon: toggle
               width: 50
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
-              if:
-                enable_hero: 'equals false'
+              instructions: 'Add filter menu to page header.'
       -
         display: 'Page builder'
         fields:

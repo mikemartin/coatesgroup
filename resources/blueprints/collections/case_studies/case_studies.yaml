@@ -36,6 +36,22 @@ tabs:
               mode: grid
               width: 50
               folder: case-studies
+          -
+            handle: overlay_opacity
+            field:
+              min: 0
+              max: 100
+              step: 5
+              default: 100
+              append: '%'
+              type: range
+              display: 'Overlay Opacity'
+              icon: range
+              width: 50
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
       -
         display: 'Page builder'
         fields:
