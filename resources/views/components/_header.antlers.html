@@ -6,7 +6,7 @@
 <!-- /components/_header.antlers.html -->
 <section class="fluid-container grid md:grid-cols-12 gap-8 pt-8 md:pt-16">
     <div class="relative md:col-span-10 {{ if center_headline }}md:flex md:flex-col md:items-center md:text-center md:col-start-2{{/if}}">
-        {{ partial:navigation/breadcrumbs }}
+        {{ !hide_breadcrumb ?= { partial:navigation/breadcrumbs } }}
         {{ partial:typography/h1 :content="headline ?? title" class="mt-4 md:max-w-[18ch]" }}
     </div>
     {{ if show_topics }}

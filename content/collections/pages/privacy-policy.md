@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692335580
+updated_at: 1692338095
 enable_hero: false
 page_builder:
   -
@@ -44,6 +44,6 @@ hero_color:
 hero_extend: false
 text_animation_delay: 0
 overlay_opacity: 0
-headline: 'Our approach to protecting your privacy'
 center_headline: true
+hide_breadcrumb: true
 ---

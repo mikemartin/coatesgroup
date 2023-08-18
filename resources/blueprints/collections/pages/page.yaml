@@ -56,7 +56,21 @@ tabs:
               type: toggle
               display: 'Center Headline'
               icon: toggle
-              width: 50
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              if:
+                enable_hero: 'equals false'
+          -
+            handle: hide_breadcrumb
+            field:
+              default: false
+              type: toggle
+              display: 'Hide Breadcrumb'
+              icon: toggle
+              width: 25
               listable: hidden
               instructions_position: above
               visibility: visible
