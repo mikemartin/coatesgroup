@@ -52,23 +52,25 @@
                                 <ul role="list" class="space-y-4">
                                     {{ if url }}
                                     <li>
-                                        <a href="{{ url }}" class="text-black text-lg font-medium">{{ mobile_title ?? title }}</a>
+                                        <a href="{{ url }}" class="text-black text-lg font-medium active:underline active:underline-offset-1">{{ mobile_title ?? title }}</a>
                                     </li>
                                     {{ else }}
                                     <li>
-                                        <span class="text-black text-lg font-medium">{{ mobile_title ?? title }}</span>
+                                        <span class="text-black text-lg font-medium active:underline active:underline-offset-1">{{ mobile_title ?? title }}</span>
                                     </li>
                                     {{ /if }}
                                     {{ children }}
                                     <li>
-                                        <a href="{{ url }}" class="text-charcoal hover:font-medium">{{ mobile_title ?? title }}</a>
+                                        <a href="{{ url }}" class="text-charcoal hover:font-medium active:underline active:underline-offset-1">{{ mobile_title ?? title }}</a>
                                     </li>
                                     {{ /children }}
                                 </ul>
                             {{ /children }}
 
                             <div>
-                                {{ partial:components/button :label="cta:nav_title" :url="cta:nav_buttons:0:url" class="mt-2" button_type="light" }}
+                                {{ cta:nav_buttons }}
+                                    {{ partial:components/button :label="cta:nav_title" button_type="light" }}
+                                {{ /cta:nav_buttons }}
                             </div>
 
                         </div>

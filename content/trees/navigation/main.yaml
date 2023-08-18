@@ -6,8 +6,7 @@ tree:
       -
         id: c5fdb8c0-9b57-4f51-9b6c-45f90f045f04
         entry: d70deed0-6959-4ec0-97a2-75d120b8899e
-        data:
-          mobile_title: Overview
+        title: Overview
       -
         id: b368118c-c50f-4f34-a5a3-99139b0236ff
         title: Experiences

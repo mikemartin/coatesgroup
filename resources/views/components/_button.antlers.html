@@ -13,7 +13,7 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-            text-lg leading-snug focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            md:text-lg leading-snug focus:outline-none focus-visible:ring focus-visible:ring-offset-2
             {{ if button_type == 'inline' }}
                 decoration-1 underline-offset-2 underline motion-safe:transition {{ color or 'text-black dark:text-white' }} hover:font-medium active:no-underline
                 {{ inverted
@@ -21,13 +21,13 @@
                     : 'text-neutral decoration-neutral focus-visible:ring-primary'
                 }}
             {{ elseif button_type == 'black' }}
-                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
+                inline-flex items-center py-2 md:py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
                 border border-neutral bg-black text-white font-medium focus-visible:ring-primary hover:border-charcoal hover:shadow-charcoal-hover
             {{ elseif button_type == 'light' }}
-                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
+                inline-flex items-center py-2 md:py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
                 border border-charcoal-20 bg-charcoal-20 font-medium text-neutral focus-visible:ring-primary hover:text-white hover:border-black hover:shadow-black-hover
             {{ else }}
-                inline-flex items-center py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
+                inline-flex items-center py-2 md:py-3 px-4 leading-none no-underline select-none whitespace-nowrap motion-safe:transition active:scale-105
                 {{ inverted
                     ? 'border border-white text-white focus-visible:ring-white hover:text-black hover:shadow-white-hover'
                     : 'border border-neutral text-neutral focus-visible:ring-primary hover:text-white  {{ black_hover ? 'hover:shadow-black-hover' : 'hover:border-blue hover:shadow-blue-hover' }}'
