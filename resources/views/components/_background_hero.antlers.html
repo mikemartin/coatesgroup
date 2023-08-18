@@ -29,8 +29,8 @@
             {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" sizes="100vw" }}
         </div>
         <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%" 
-        style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>
-        {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>{{/if}}
+        style="opacity: {{ !overlay_opacity ? '0' : (overlay_opacity / 100) }}"></div>
+        {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '0' : (overlay_opacity / 100) }}"></div>{{/if}}
     {{ /if}}
 
     <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
