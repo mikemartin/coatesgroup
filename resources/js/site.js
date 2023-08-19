@@ -18,8 +18,10 @@ import 'swiper/css/grid';
 import 'swiper/css/effect-fade';
 import fadeIn from './components/fadeIn.js'
 import horizontalLoop from './components/horizontalLoop.js'
+import Vivus from 'vivus';
 import lottie from 'lottie-web'
 import { create } from '@lottiefiles/lottie-interactivity';
+import { gsap } from 'gsap';
 
 Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade]);
 
@@ -67,6 +69,9 @@ window.create = create
 // Call Alpine.
 window.Alpine = Alpine
 window.Swiper = Swiper;
+window.Vivus = Vivus;
+window.gsap = gsap;
+
 
 Alpine.plugin([ui, collapse, focus, morph, persist, intersect])
 Alpine.data('fadeIn', fadeIn)

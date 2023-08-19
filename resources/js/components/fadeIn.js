@@ -1,5 +1,3 @@
-import { gsap } from 'gsap';
-
 export default () => ({
     fadeIn(target) {
         gsap.to(target, {

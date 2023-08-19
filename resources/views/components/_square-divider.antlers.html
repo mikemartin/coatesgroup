@@ -1,4 +1,35 @@
-<h2 class="text-2xl md:text-5xl xl:text-7xl leading-tighter text-white xl:-ml-3">{{ headline }}</h2>
-<div class="relative mt-4 mb-10 lg:mb-0 lg:mt-10 {{ class }}">
-    <span class="absolute bottom-0 lg:top-0 right-0 lg:left-0 w-screen aspect-square border-2 border-white"></span>
+<div x-data="{
+        vivus: null
+    }" 
+    x-init="
+    vivus = new Vivus($refs.square, {
+        duration: 100,
+        start: 'manual',
+        animTimingFunction: Vivus.EASE
+    });
+
+    const resizeObserver = new ResizeObserver((entries) => {
+        vivus.recalc();
+    });
+
+    resizeObserver.observe(vivus.el);
+    
+    gsap.set($el.children, {
+        autoAlpha: 0, 
+        y: 24
+    })" 
+    x-intersect.once.margin.-20%="gsap.to($el.children, {
+        autoAlpha: 1, 
+        y: 0, 
+        duration: 0.5, 
+        stagger: 0.12
+    }), vivus.play()">
+
+    <h2 class="text-2xl md:text-5xl xl:text-7xl leading-tighter text-white xl:-ml-3">{{ headline }}</h2>
+    <div class="relative mt-4 mb-10 lg:mb-0 lg:mt-10 {{ class }}">
+        <svg x-ref="square" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 1463"
+        class="transform scale-[-1] lg:scale-100 absolute bottom-0 lg:top-0 right-0 lg:left-0 w-screen">
+            <path vector-effect="non-scaling-stroke" stroke="#fff" stroke-width="2" d="M1 1463V1h1462"/>
+        </svg>
+    </div>
 </div>

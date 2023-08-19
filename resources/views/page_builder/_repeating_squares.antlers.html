@@ -6,7 +6,7 @@
 
 <!-- /page_builder/_repeating_squares.antlers.html -->
 
-<section class="w-full overflow-hidden bg-black dark py-14 md:py-20 {{ if no_bottom_margin }}-mb-12 md:-mb-16 lg:-mb-24{{/if}}">
+<section class="w-full bg-black dark py-14 md:py-20 {{ if no_bottom_margin }}-mb-12 md:-mb-16 lg:-mb-24{{/if}}">
     <div class="fluid-container">
         {{ partial:typography/p :content="title" color="text-white" class="mb-6 md:mb-10" }}
         {{ partial:components/square-divider :headline="squares:0" class="w-[80%]"}}
@@ -14,7 +14,9 @@
             {{ partial:components/square-divider :headline="squares:1" class="w-[90%]"}}
             <div class="relative lg:pl-24 lg:pt-6 xl:pl-28 xl:pt-14">
                 {{ partial:components/square-divider :headline="squares:2"}}
-                <div class="relative lg:pl-24 md:pt-12 xl:pl-28 xl:pt-24">
+                <div x-data="fadeIn()" 
+                x-init="hide($el)" 
+                x-intersect.once.margin.-20%="fadeIn($el)" class="relative lg:pl-24 md:pt-12 xl:pl-28 xl:pt-24">
                     {{ partial:typography/prose class="md:columns-2 lg:columns-auto xl:columns-2 xl:gap-14 leading-snug"}}
                         {{ text }}
                     {{ /partial:typography/prose }}

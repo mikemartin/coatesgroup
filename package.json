@@ -22,7 +22,8 @@
     "gsap": "^3.12.2",
     "lottie-web": "^5.12.2",
     "macy": "^2.5.1",
-    "swiper": "^10.0.4"
+    "swiper": "^10.0.4",
+    "vivus": "^0.4.6"
   },
   "devDependencies": {
     "@csstools/postcss-oklab-function": "^2.2.2",
