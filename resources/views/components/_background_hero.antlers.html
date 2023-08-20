@@ -35,7 +35,7 @@
 
     <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
-            <div x-data="fadeIn" x-cloak
+            <div x-data="fadeIn"
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-10">
                 {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
                 {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
