@@ -1,3 +1,5 @@
+import { gsap } from 'gsap';
+
 export default () => ({
     pause(loop, timescale) {
         gsap.to(loop, { timeScale: timescale ?? 0, overwrite: true })

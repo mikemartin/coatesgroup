@@ -13,7 +13,7 @@
     <div class="fluid-container">
         {{ if block:title && block:text }}
         <div 
-            x-data="fadeIn()" 
+            ax-load x-data="fadeIn" 
             x-init="hide($el.children)" 
             x-intersect.once.margin.-20%="fadeInStagger($el)" class="grid md:grid-cols-12 gap-8">
             {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
@@ -27,7 +27,7 @@
             {{ partial:typography/h2 :content="title" }}
         </div>
         {{ /if }}
-        <dl x-data="fadeIn()"
+        <dl ax-load x-data="fadeIn"
         x-init="hide($el.children)"
         x-intersect.once.margin.-20%="fadeInStagger($el)" class="mx-auto mt-10 md:mt-20 grid grid-cols-1 sm:grid-cols-12 {{ if (block:icon_list|length === 5) && !{block:icon_list}:0:text }}md:grid-cols-10{{/if}} lg:mx-0 
         

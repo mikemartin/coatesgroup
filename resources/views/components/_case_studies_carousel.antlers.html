@@ -4,32 +4,10 @@
 #}}
 
 <!-- /components/_case_studies_carousel.antlers.html -->
-<section x-data="{swiper: null}"
-x-init="swiper = new Swiper($refs.container, {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  edgeSwipeDetection: 'prevent',
-  updateOnWindowResize: true,
-  a11y: true,
-  freeMode: true,
-  mousewheel: {
-    enabled: true,
-    forceToAxis: true,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-        slidesPerView: 1.65,
-        spaceBetween: 60
-    }
-  }
-})" class="w-full bg-black dark py-16 md:py-24 overflow-hidden">
+<section ax-load x-data="caseStudies" class="w-full bg-black dark py-16 md:py-24 overflow-hidden">
     <div class="fluid-container">
         {{ if title }}
-        <div x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)">
+        <div ax-load x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)">
             {{ partial:typography/h2 :content="title" class="max-w-[20ch]" }}
         </div>
         {{/if}}

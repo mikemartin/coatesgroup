@@ -1,38 +1,8 @@
 <figure
-    x-data="{ animation: '' }"
-    x-init="
-        animation = lottie.loadAnimation({
-            container: $el,
-            renderer: 'svg',
-            autoplay: false,
-            loop: true,
-            path: '{{ animation }}'
-        }),
-        create({
-            mode: 'scroll',
-            player: animation,
-            container: '.product-features',
-            actions: [
-                {
-                    visibility: [0, .2],
-                    type: 'stop',
-                    frames: [{{ if reverse_frames }}{{ frames - 1 }}{{else}}0{{/if}}],
-                },
-                {
-                    visibility: [0.2, 0.45],
-                    type: 'seek',
-                    frames: [{{ if reverse_frames }}{{ frames - 1 }}, 0{{else}}0, {{ frames - 1 }}{{/if}}],
-                },
-                {
-                    visibility: [0.45, 1.0],
-                    type: 'seek',
-                    frames: [{{ if reverse_frames }}0, {{ frames - 1 }}{{else}}{{ frames - 1 }}, 0{{/if}}],
-                },
-            ],
-        
-        })
-"
-class="{{ class }}"
-aria-hidden="true"
+    x-ignore
+    ax-load="visible"
+    x-data="animatedRender('{{ animation }}', {{ frames - 1 }}, {{ reverse_frames }})"
+    class="{{ class }}"
+    aria-hidden="true"
 >
 </figure>

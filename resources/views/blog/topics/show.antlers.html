@@ -8,7 +8,7 @@
 <!-- /topics/show.antlers.html -->
 <main class="outer-grid" id="content">
     {{ {enable_hero && hero_extend} ?= { partial:components/hero_extend :hero_color="hero_color:label" } }}
-    <div class="fluid-container grid md:grid-cols-12">
+    <div ax-load x-data="masonryGrid" class="fluid-container grid md:grid-cols-12">
             {{ entries sort="date:desc" paginate="true" limit="24" as="items" redirects="true" }}
                 {{ unless no_results }}
                     <div class="md:col-span-12 grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-8" data-columns="4">

@@ -18,6 +18,7 @@
     "@alpinejs/ui": "^3.12.3-beta.0",
     "@lottiefiles/lottie-interactivity": "^1.6.2",
     "alpinejs": "^3.12.3",
+    "async-alpine": "^1.0.0",
     "focus-visible": "^5.2.0",
     "gsap": "^3.12.2",
     "lottie-web": "^5.12.2",

@@ -7,7 +7,7 @@
 <!-- /page_builder/_press.antlers.html -->
 <section class="fluid-container">
     <div 
-    x-data="fadeIn()" 
+    ax-load x-data="fadeIn" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
     class="pb-10 border-b">
@@ -20,7 +20,7 @@
 
         {{ press = block:press ? block:press : {collection:press limit="5" redirects="true" } }}
 
-        <div class="mt-10 grid md:grid-cols-12 gap-6">
+        <div ax-load x-data="masonryGrid" class="mt-10 grid md:grid-cols-12 gap-6">
 
             {{ press:0 }}
                 {{ partial:components/article_item large="true" class="md:col-span-6" }}

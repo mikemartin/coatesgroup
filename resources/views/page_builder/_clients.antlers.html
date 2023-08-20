@@ -7,7 +7,7 @@
 <!-- /page_builder/_clients.antlers.html -->
 <section class="space-y-4 md:space-y-8 overflow-hidden">
     {{ rows:0 }}
-        <ul x-data="horizontalLoop()" x-init="loop = horizontalLoop($el.children, {repeat: -1})" role="list" class="w-full flex justify-center">
+        <ul ax-load x-data="horizontalLoop" x-init="loop = horizontalLoop($el.children, {repeat: -1})" role="list" class="w-full flex justify-center">
             {{ loop times="2" }}
                 {{ clients }}
                 <li class="px-11 md:px-20">
@@ -20,7 +20,7 @@
         </ul>
     {{ /rows:0 }}
     {{ rows:1 }}
-        <ul x-data="horizontalLoop()" x-init="loop = horizontalLoop($el.children, {repeat: -1, reversed: true });" role="list" class="w-full flex justify-center">
+        <ul ax-load x-data="horizontalLoop" x-init="loop = horizontalLoop($el.children, {repeat: -1, reversed: true });" role="list" class="w-full flex justify-center">
             {{ loop times="2" }}
                 {{ clients }}
                 <li class="px-8 md:px-16">

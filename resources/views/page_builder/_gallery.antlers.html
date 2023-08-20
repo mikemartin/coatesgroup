@@ -10,7 +10,7 @@
 
     <div class="hidden md:block md:space-y-16 lg:space-y-28 fluid-container">
         {{ gallery }}
-            <div x-data="fadeIn()"
+            <div ax-load x-data="fadeIn"
             x-init="hide($el.children)"
             x-intersect.once.margin.-20%="fadeInStagger($el)"
             class="flex justify-between gap-6">

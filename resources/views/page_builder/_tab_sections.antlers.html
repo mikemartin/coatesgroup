@@ -1,52 +1,9 @@
 {{#
-    @name Experiences
+    @name Tab Sections
 #}}
 
-<!-- /page_builder/_experiences.antlers.html -->
-<section x-data="{thumbs: null, swiper: null, activeSlide: 0}"
-x-init="thumbs = new Swiper($refs.thumbs, {
-    slidesPerView: 'auto',
-    spaceBetween: 32,
-    freeMode: true,
-    multipleActiveThumbs: false,
-    mousewheel: {
-        enabled: true,
-        forceToAxis: true,
-    },
-    a11y: true,
-    breakpoints: {
-        640: {
-            spaceBetween: 50
-        }
-    },
-});
-swiper = new Swiper($refs.container, {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    edgeSwipeDetection: 'prevent',
-    updateOnWindowResize: true,
-    watchSlidesProgress: true,
-    slideToClickedSlide: true,
-    a11y: true,
-    freeMode: true,
-    mousewheel: {
-      enabled: true,
-      forceToAxis: true,
-    },
-    breakpoints: {
-      640: {
-          slidesPerView: 1.25,
-          spaceBetween: 60
-      }
-    },
-    thumbs: {
-        swiper: thumbs,
-    },
-    on: {
-      slideChange: () => { activeSlide = swiper.activeIndex }
-    }
-  });
-"
+<!-- /page_builder/_tab_sections.antlers.html -->
+<section ax-load x-data="tabSections"
 class="overflow-hidden">
     <div class="hidden md:flex border-charcoal-20 border-t border-b">
         <div class="flex md:mx-auto md:w-full md:max-w-screen-desktop h-16 md:h-[4.5rem] justify-start items-center">
@@ -130,4 +87,4 @@ class="overflow-hidden">
     </div>
     
 </section>
-<!-- /page_builder/_experiences.antlers.html -->
+<!-- /page_builder/_tab_sections.antlers.html -->

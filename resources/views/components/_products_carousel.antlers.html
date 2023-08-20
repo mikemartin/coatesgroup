@@ -5,29 +5,7 @@
 #}}
 
 <!-- /page_builder/_products_carousel.antlers.html -->
-<section x-data="{swiper: null}"
-x-init="swiper = new Swiper($refs.container, {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  edgeSwipeDetection: 'prevent',
-  updateOnWindowResize: true,
-  a11y: true,
-  freeMode: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  breakpoints: {
-    640: {
-        slidesPerView: 3,
-        grid: {
-          fill: 'rows',
-          rows: 2,
-        },
-        spaceBetween: 24
-    }
-  }
-})" class="overflow-hidden">
+<section ax-load x-data="productsCarousel" class="overflow-hidden">
     <div class="fluid-container">
         {{ if title }}
         <div class="grid md:grid-cols-12 gap-8 md:col-span-12">

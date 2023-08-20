@@ -6,7 +6,7 @@
 
 <!-- /page_builder/_awards.antlers.html -->
 <section class="fluid-container">
-    <div x-data="fadeIn()" 
+    <div ax-load x-data="fadeIn" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)"
     class="pb-10 border-b">
@@ -19,7 +19,7 @@
 
         {{ awards = block:awards ? block:awards : {collection:awards limit="5" redirects="true" } }}
 
-        <div class="grid md:grid-cols-12 gap-6 mt-10">    
+        <div ax-load x-data="masonryGrid" class="grid md:grid-cols-12 gap-6 mt-10">    
             {{ awards:0 }}
                 {{ partial:components/article_item large="true" class="md:col-span-6" }}
             {{ /awards:0 }}

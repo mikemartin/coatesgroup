@@ -11,14 +11,14 @@
             {{ partial:typography/h2 :content="title" }}
         </div>
         {{ if images|length == 1 }}
-            <figure x-data="fadeIn()" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+            <figure ax-load x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
             class="-mx-8 md:mx-0 md:col-span-10 md:col-start-2">
                 {{ block:images:0 }}
                     {{ partial:statamic-peak-tools::components/picture :image="url" cover="true" lazy="true" sizes="100vw" }}
                 {{ /block:images:0 }}
             </figure>
         {{ else }}
-                <div x-data="fadeIn()" 
+                <div ax-load x-data="fadeIn" 
                 x-init="hide($el.children)" 
                 x-intersect.once.margin.-20%="fadeInStagger($el)" class="hidden md:grid aspect-[8/3] md:col-span-12 gap-5 md:grid-cols-4 md:grid-rows-2">
                     {{ images }}
@@ -51,7 +51,7 @@
                 </div>
         {{ /if }}
         <div 
-            x-data="fadeIn()" 
+            ax-load x-data="fadeIn" 
             x-init="hide($el.children)" 
             x-intersect.once.margin.-20%="fadeInStagger($el)" class="md:col-span-12 grid md:grid-cols-12 gap-8">
             {{ block:headline ?= { partial:typography/h2 :content="block:headline" class="md:col-span-5" } }}

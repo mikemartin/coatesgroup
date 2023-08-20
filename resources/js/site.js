@@ -1,30 +1,12 @@
-import ui from '@alpinejs/ui'
+import AsyncAlpine from 'async-alpine';
 import Alpine from 'alpinejs'
+import ui from '@alpinejs/ui'
 import collapse from '@alpinejs/collapse'
 import morph from '@alpinejs/morph'
 import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import intersect from '@alpinejs/intersect'
 import 'focus-visible'
-import Swiper from 'swiper';
-import Macy from 'macy';
-import { Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/a11y';
-import 'swiper/css/mousewheel';
-import 'swiper/css/grid';
-import 'swiper/css/effect-fade';
-import fadeIn from './components/fadeIn.js'
-import horizontalLoop from './components/horizontalLoop.js'
-import Vivus from 'vivus';
-import lottie from 'lottie-web'
-import { create } from '@lottiefiles/lottie-interactivity';
-import { gsap } from 'gsap';
-
-Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Thumbs, Grid, EffectFade]);
-
 
 // Global get CSRF token function (used by forms).
 window.getToken = async () => {
@@ -38,43 +20,24 @@ window.getToken = async () => {
         })
 }
 
-// Masonry Support
-// https://techhub.iodigital.com/articles/why-you-should-be-using-new-css-features-today/why-you-should-be-using-new-css-features-today-part-2
-const supportMasonry = CSS.supports('grid-template-rows', 'masonry')
-
-if (!supportMasonry) {
-    document.querySelectorAll('.grid[data-columns]').forEach((elem) => {
-        const macy = Macy({
-            container: elem,
-            columns: 1,
-            mobileFirst: true,
-            margin: 24,
-            breakAt: {
-                '768': elem.dataset.columns,
-            }
-        });
-
-        macy.runOnImageLoad(function () {
-            macy.recalculate(true, true);
-        }, true);
-    });    
-
-    
-}
-
-// Init Lottie
-window.lottie = lottie
-window.create = create
-
-// Call Alpine.
 window.Alpine = Alpine
-window.Swiper = Swiper;
-window.Vivus = Vivus;
-window.gsap = gsap;
 
+AsyncAlpine.init(Alpine)
+    .data('fadeIn', () => import('./components/fadeIn.js'))
+    .data('horizontalLoop', () => import('./components/horizontalLoop.js'))
+    .data('squareDivider', () => import('./components/squareDivider.js'))
+    .data('masonryGrid', () => import('./components/masonryGrid.js'))
+    .data('animatedRender', () => import('./components/animatedRender.js'))
+    .data('valuesCarousel', () => import('./components/valuesCarousel.js'))
+    .data('tabSections', () => import('./components/tabSections.js'))
+    .data('linkBlockCarousel', () => import('./components/linkBlockCarousel.js'))
+    .data('blockCarousel', () => import('./components/blockCarousel.js'))
+    .data('galleryCarousel', () => import('./components/galleryCarousel.js'))
+    .data('productsCarousel', () => import('./components/productsCarousel.js'))
+    .data('productsDriveThru', () => import('./components/productsDriveThru.js'))
+    .data('caseStudies', () => import('./components/caseStudies.js'))
+    .start();
 
-Alpine.plugin([ui, collapse, focus, morph, persist, intersect])
-Alpine.data('fadeIn', fadeIn)
-Alpine.data('horizontalLoop', horizontalLoop)
-Alpine.start()
+Alpine.plugin([ui, collapse, focus, morph, persist, intersect]);
+Alpine.start();
 

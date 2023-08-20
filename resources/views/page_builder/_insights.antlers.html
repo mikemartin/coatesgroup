@@ -7,7 +7,7 @@
 <!-- /page_builder/_insights.antlers.html -->
 <section class="w-full bg-black-10 py-16 md:py-24">
     <div 
-    x-data="fadeIn()" 
+    ax-load x-data="fadeIn" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container">
         {{ if block:title }}

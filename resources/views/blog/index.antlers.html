@@ -17,7 +17,7 @@
 {{ section:index_content }}
     <!-- /insights/archive.antlers.html -->
     <section class="fluid-container">
-        <div class="grid md:grid-cols-12">
+        <div ax-load x-data="masonryGrid" class="grid md:grid-cols-12">
             {{ collection :from="mount" sort="date:desc" paginate="true" limit="30" as="items" redirects="true" }}
                 {{ unless no_results }}
                     <div class="md:col-span-12 grid supports-[grid-template-rows:masonry]:grid-rows-[masonry] md:grid-cols-12 gap-8" data-columns="4">

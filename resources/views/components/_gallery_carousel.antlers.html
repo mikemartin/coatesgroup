@@ -1,12 +1,7 @@
-<div x-data="{swiper: null}"
-    x-init="swiper = new Swiper($refs.container, {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    }
-    })">
+<div
+    x-ignore
+    ax-load="media (max-width: 768px)" 
+    x-data="galleryCarousel">
     <div class="swiper relative !pb-10 !overflow-x-visible" x-ref="container">
         <div class="swiper-wrapper">
             {{ images scope="images" }}

@@ -1,31 +1,11 @@
 {{#
-    @name Products Carousel
-    @desc The Products Carousel page builder block.
-    @set page.page_builder.products_carousel
+    @name Products Drive Thru
+    @desc The Products Drive Thur page builder block.
+    @set page.page_builder.products_drive_thru
 #}}
 
-<!-- /page_builder/_products_carousel.antlers.html -->
-<section x-data="{swiper: null, activeSlide: 0}"
-x-init="swiper = new Swiper($refs.container, {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  edgeSwipeDetection: 'prevent',
-  updateOnWindowResize: true,
-  a11y: true,
-  effect: 'fade',
-  loop: false,
-  fadeEffect: {           
-    crossFade: true
-  },
-  centeredSlides: true,
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-  },
-  on: {
-    slideChange: () => { activeSlide = swiper.activeIndex }
-  }
-})"
+<!-- /page_builder/_products_drive_thru.antlers.html -->
+<section ax-load x-data="productsDriveThru"
 class="w-full">
         {{ if title }}
         <div class="py-12 md:py-16 lg:py-24 bg-charcoal-10">
@@ -89,4 +69,4 @@ class="w-full">
             </div>
         </div>
 </section>
-<!-- End: /page_builder/_link_blocks_carousel.antlers.html -->
+<!-- End: /page_builder/_products_drive_thru.antlers.html -->

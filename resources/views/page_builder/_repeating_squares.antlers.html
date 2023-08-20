@@ -14,7 +14,7 @@
             {{ partial:components/square-divider :headline="squares:1" class="w-[90%]"}}
             <div class="relative lg:pl-24 lg:pt-6 xl:pl-28 xl:pt-14">
                 {{ partial:components/square-divider :headline="squares:2"}}
-                <div x-data="fadeIn()" 
+                <div ax-load x-data="fadeIn" 
                 x-init="hide($el)" 
                 x-intersect.once.margin.-20%="fadeIn($el)" class="relative lg:pl-24 md:pt-12 xl:pl-28 xl:pt-24">
                     {{ partial:typography/prose class="md:columns-2 lg:columns-auto xl:columns-2 xl:gap-14 leading-snug"}}

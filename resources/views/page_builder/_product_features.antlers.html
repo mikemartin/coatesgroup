@@ -13,7 +13,7 @@
                 () => 'md:col-span-6 md:col-start-4'
             )}} h-full">
                 <div class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
-                    <div x-data="fadeIn()" 
+                    <div ax-load x-data="fadeIn" 
                         x-init="hide($el)" 
                         x-intersect:enter.margin.-20%="fadeIn($el)"
                         x-intersect:leave.margin.-20%="fadeOut($el)"
@@ -37,7 +37,7 @@
         <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12 {{ if first }} md:mt-[10vh] {{/if}} {{ if last }} md:mb-[10vh] {{/if}}">
             <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
                     <div class="md:h-[45vh] md:flex md:items-center">
-                        <div x-data="fadeIn()" 
+                        <div ax-load x-data="fadeIn" 
                         x-init="hide($el)" 
                         x-intersect:enter.margin.-20%="fadeIn($el)"
                         x-intersect:leave.margin.-20%="fadeOut($el)">

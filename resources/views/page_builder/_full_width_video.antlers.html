@@ -84,7 +84,7 @@
         </div>
         {{ /if }}
     </div>
-    <div x-data="fadeIn()" 
+    <div ax-load x-data="fadeIn" 
         x-init="hide($el.children)" 
         x-intersect.once.margin.-20%="fadeInStagger($el)" 
         class="mt-8 grid md:grid-cols-12 gap-8">
