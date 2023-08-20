@@ -19,6 +19,7 @@ export default () => ({
             updateOnWindowResize: true,
             a11y: true,
             freeMode: true,
+            passiveListeners: true,
             pagination: {
               el: '.swiper-pagination',
               clickable: true

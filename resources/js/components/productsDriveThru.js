@@ -18,6 +18,7 @@ export default () => ({
             edgeSwipeDetection: 'prevent',
             updateOnWindowResize: true,
             a11y: true,
+            passiveListeners: true,
             effect: 'fade',
             loop: false,
             fadeEffect: {           

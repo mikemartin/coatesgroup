@@ -17,6 +17,7 @@ export default () => ({
             spaceBetween: 32,
             freeMode: true,
             multipleActiveThumbs: false,
+            passiveListeners: true,
             mousewheel: {
                 enabled: true,
                 forceToAxis: true,
@@ -38,6 +39,7 @@ export default () => ({
             slideToClickedSlide: true,
             a11y: true,
             freeMode: true,
+            passiveListeners: true,
             mousewheel: {
               enabled: true,
               forceToAxis: true,
