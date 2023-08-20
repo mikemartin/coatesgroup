@@ -30,20 +30,20 @@
         </div>
         <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-10% to-[#000] to-75%" 
         style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>
-        {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '0' : (overlay_opacity / 100) }}"></div>{{/if}}
+        {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>{{/if}}
     {{ /if}}
 
     <div class="relative w-full flex flex-col justify-end {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }} min-h-[760px] {{else}} min-h-[696px] {{/if}} pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
-            <div x-data="fadeIn"
+            <div x-data="fadeIn" 
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-10">
                 {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
                 {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
                 {{ show_resource ?= {partial:components/tags :tags="resources" class="mb-3"} }}
                 {{ show_press ?= {partial:components/tag url="/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
                 {{ show_awards ?= {partial:components/tag url="/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
-                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch]" style="opacity: 0" }}
-                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch]"} }}
+                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch] opacity-0" }}
+                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch] opacity-0"} }}
                 {{ show_location ?= {partial:components/tag tag_type="location" as="span" :title="locations:0:long_title ?? locations:0:title" class="mt-4" } }}
                 {{ if show_date }}
                 <div class="flex flex-col md:flex-row md:items-center text-lg text-white mt-2 md:mt-4">

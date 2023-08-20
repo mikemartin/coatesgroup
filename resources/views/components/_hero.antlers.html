@@ -21,13 +21,13 @@
 	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
 		<div x-data="fadeIn" x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" 
 		class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
-			{{ partial:typography/p :content="title" color="{ switch(
+			{{ partial:typography/p :content="title" class="opacity-0" color="{ switch(
 				(is_inverted) => 'text-white',
 				(hero_color) => 'text-black',
 				() => 'text-charcoal-40'
 			)}" }}
 
-			{{ partial:typography/h1 :content="headline" color="text-inherit" class="md:mx-auto" }}
+			{{ partial:typography/h1 :content="headline" color="text-inherit" class="md:mx-auto opacity-0" }}
         </div>
 	</div>
 </div>

@@ -16,6 +16,7 @@
         "jgrossi/corcel": "^7.0",
         "jonassiewertsen/statamic-livewire": "^2.12",
         "laravel/framework": "^10.8",
+        "laravel/horizon": "^5.19",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "mikemartin/helpscout-beacon": "^1.0",
