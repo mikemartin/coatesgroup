@@ -6,6 +6,7 @@ import morph from '@alpinejs/morph'
 import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import intersect from '@alpinejs/intersect'
+import fadeIn from './components/fadeIn.js'
 import 'focus-visible'
 
 // Global get CSRF token function (used by forms).
@@ -23,7 +24,6 @@ window.getToken = async () => {
 window.Alpine = Alpine
 
 AsyncAlpine.init(Alpine)
-    .data('fadeIn', () => import('./components/fadeIn.js'))
     .data('horizontalLoop', () => import('./components/horizontalLoop.js'))
     .data('squareDivider', () => import('./components/squareDivider.js'))
     .data('masonryGrid', () => import('./components/masonryGrid.js'))
@@ -39,5 +39,6 @@ AsyncAlpine.init(Alpine)
     .start();
 
 Alpine.plugin([ui, collapse, focus, morph, persist, intersect]);
+Alpine.data('fadeIn', fadeIn);
 Alpine.start();
 

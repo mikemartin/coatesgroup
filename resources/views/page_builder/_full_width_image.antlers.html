@@ -34,14 +34,14 @@
             </div>
         </div>
     {{ else }}
-        <figure ax-load x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
+        <figure x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
         class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
             {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="7/5 large:8/3" cover="true" lazy="true" sizes="100vw" }}
         </figure>
     {{ /if }}
     {{ if block:title }}
     <div 
-        ax-load x-data="fadeIn" 
+        x-data="fadeIn" 
         x-init="hide($el.children)" 
         x-intersect.once.margin.-20%="fadeInStagger($el)" class="grid md:grid-cols-12 gap-8">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}

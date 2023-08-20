@@ -54,7 +54,7 @@
                     {{ partial:typography/h2 content="{ trans:strings.insights_next }" class="md:col-span-12" }}
     
                     {{ items }}
-                        <article ax-load x-data="fadeIn" 
+                        <article x-data="fadeIn" 
                         x-init="hide($el)" 
                         x-intersect.once.margin.-20%="fadeIn($el)" class="group relative flex flex-col md:col-span-6">
                             {{ svg:corner-piece class="z-10 absolute top-4 right-4 opacity-0 tranform -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-300"}}
