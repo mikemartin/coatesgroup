@@ -7,10 +7,9 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1692596517
-headline: 'Lorem ipsum dolor sit amet consectetur.'
-text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692607505
+headline: 'A Connected Restaurant Ecosystem'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
 page_builder:
   -
@@ -19,39 +18,47 @@ page_builder:
     type: full_width_image
     enabled: true
     text_position: below
-    title: 'Solutions for a ​ seamless experience'
-    text: 'A powerful combination of industry-leading digital hardware, a dynamic and data-driven CMS and end-to-end services enables the world’s leading brands to drive the best customer experiences and impactful ROI.'
+    title: 'Digital Solutions to Power Your Customer Journey'
+    text: 'Our industry-leading digital hardware, dynamic and data-driven CMS, and end-to-end services create best-in-class in restaurant experiences to drive impactful ROI for global brands.'
     image_position: below
     mobile_panning: true
   -
     id: ll4d65v7
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    title: 'Industry-Leading Digital Hardware'
+    text: 'Our in restaurant digital menu boards and other technologies feature in-house designed hardware and cutting-edge software to create engaging touchpoints for your customers.'
     products:
       -
         id: tLZhWxQZ
         product: 10b3a0e8-9688-479e-9a82-6433aa322e55
+        title: 'Indoor Digital Menu Boards'
+        text: 'Showcase your menu content with a menu display board that combines intuitive design, flexible mounting options, and leading technology to suit the in restaurant environment.'
       -
         id: ll4d6xbn
         product: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
+        title: 'Self-Service Kiosks'
+        text: 'Enable a connected customer journey with self-service kiosks, refined to fit seamlessly into your space, keeping both your crew and customers in mind.'
       -
         id: ll4d7kek
         product: c2ebe5d6-ce49-43a1-adac-618463c4cfb0
+        title: 'In-Window Displays'
+        text: 'Our custom-designed, dual-sided in-window displays ensure your messaging stands out at entry and exit points.'
       -
         id: ll4d7v64
         product: 79d89027-6469-4e75-83ee-f28d379ed6d7
+        title: Display
+        text: 'Our digital display solutions enable flexible mounting options and orientations to suit your restaurant space and messaging goals.'
     type: products
     enabled: true
     block_type: panels
   -
     id: ll5ttwbv
     title: Software
-    headline: 'A data-driven CMS that powers all digital...'
-    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    headline: 'A Data-Driven CMS for Your Restaurant Touchpoints'
+    text: 'Our dynamic and innovative CMS, SwitchboardTM, delivers sophisticated integration capabilities and creates a seamless, connected customer experience across all digital touchpoints.'
     buttons:
       -
         id: ll5tu4ih
-        label: 'Read more'
+        label: 'Learn more'
         link_type: entry
         target_blank: false
         entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
@@ -66,28 +73,32 @@ page_builder:
     icon_list:
       -
         id: ll4o92ig
+        title: Design
+        icon: inverse_design
+      -
+        id: ll4o9tpc
         title: Manufacturing
         icon: inverse_manulogistics
       -
-        id: ll4o9tpc
-        title: 'Program Management'
-        icon: inverse_programmanagement
-      -
         id: ll4o9zjb
+        title: 'Supply Chain & Logistics'
+        icon: supply-chain_logistics-(3)
+      -
+        id: ll4oa4l0
         title: 'Content Development & Management'
         icon: inverse_contentmanagementicon
       -
-        id: ll4oa4l0
+        id: ll4oab24
+        title: 'Program Management'
+        icon: inverse_programmanagement
+      -
+        id: ll4oaezz
         title: 'Delivery & Installation'
         icon: inverse_installation
       -
-        id: ll4oab24
+        id: llkmp03b
         title: Support
         icon: inverse_support
-      -
-        id: ll4oaezz
-        title: Design
-        icon: inverse_design
     type: icon_list
     enabled: true
     color:
@@ -104,7 +115,7 @@ page_builder:
   -
     id: ll5usujh
     cta_type: render
-    title: 'Got a project with us?'
+    title: 'Enhance Your Digital Restaurant Experience'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
