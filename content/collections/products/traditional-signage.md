@@ -3,7 +3,7 @@ id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692629097
+updated_at: 1692629197
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
@@ -90,4 +90,5 @@ page_builder:
     enabled: true
 show_product_tabs: false
 overlay_opacity: 100
+headline: 'Traditional Signage Solutions That Bring Brands to Life'
 ---
