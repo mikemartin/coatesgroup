@@ -5,7 +5,7 @@
 #}}
 
 <!-- /components/_blog_gallery.antlers.html -->
-<div class="not-prose
+<div class="not-prose py-8
     {{ switch(
         (size == 'sm') => 'size-sm',
         (size == 'md') => 'size-md',
@@ -13,7 +13,7 @@
         () => 'size-md'
     )}}
 ">
-    <div class=" -mx-8 md:mx-0 grid py-8 gap-4 grid-cols-12 md:gap-6">
+    <div class=" -mx-8 md:mx-0 grid gap-4 grid-cols-12 md:gap-6">
         {{ rows }}
             {{ images }}
                 <figure class="
@@ -41,5 +41,6 @@
             {{ /images }}
         {{ /rows }}
     </div>
+    {{ partial:typography/caption class="mt-4" }}
 </div>
 <!-- End: /components/_blog_gallery.antlers.html -->

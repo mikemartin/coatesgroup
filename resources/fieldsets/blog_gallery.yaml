@@ -38,3 +38,11 @@ fields:
     field: common.size
     config:
       width: 50
+  -
+    handle: caption
+    field:
+      input_type: text
+      type: text
+      localizable: true
+      listable: hidden
+      display: Caption
