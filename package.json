@@ -17,6 +17,7 @@
     "@alpinejs/persist": "^3.12.3",
     "@alpinejs/ui": "^3.12.3-beta.0",
     "@lottiefiles/lottie-interactivity": "^1.6.2",
+    "@victoryoalli/alpinejs-screen": "^1.0.0",
     "alpinejs": "^3.12.3",
     "async-alpine": "^1.0.0",
     "focus-visible": "^5.2.0",

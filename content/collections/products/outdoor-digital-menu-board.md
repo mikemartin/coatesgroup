@@ -3,7 +3,7 @@ id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692096575
+updated_at: 1692579582
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -60,6 +60,7 @@ page_builder:
     fill_screen: true
     type: full_width_video
     enabled: true
+    fallback_image: products/outdoor-digital-menu-board/5.-outdoor-dmb.jpg
   -
     id: ll4olq0e
     title: 'Elevate the Drive Thru Ordering Experience'
@@ -116,4 +117,5 @@ page_builder:
     type: call_to_action
     enabled: true
 show_product_tabs: true
+overlay_opacity: 100
 ---

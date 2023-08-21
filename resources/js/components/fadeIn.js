@@ -29,5 +29,4 @@ export default () => ({
             stagger: faster ? 0.12 : 0.2
         });
     },
-
 })

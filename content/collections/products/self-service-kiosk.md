@@ -3,7 +3,7 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692094777
+updated_at: 1692579605
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
@@ -59,6 +59,7 @@ page_builder:
     fill_screen: true
     type: full_width_video
     enabled: true
+    fallback_image: products/self-service-kiosk/6.-kiosk-.jpg
   -
     id: ll4ji16s
     title: 'Sleek, Modern Kiosks Create Engaging Customer Interactions'
@@ -114,4 +115,6 @@ page_builder:
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
+show_product_tabs: false
+overlay_opacity: 100
 ---

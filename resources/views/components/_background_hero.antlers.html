@@ -6,21 +6,17 @@
 <!-- /layout/_background_hero.antlers.html -->
 <div class="relative bg-white {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study' }}-mt-16{{/if}}">
     {{ if hero_type == 'video' && hero_video }}
-    <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
+    <div x-data="{video: ($width>768) ? '{{ hero_video }}' : '{{ hero_video_mobile }}', poster: ($width>768) ? '{{ fallback_image }}' : '{{ glide:fallback_image w="720" h="1280" }}'}" 
+        x-screen="video = ($width>768) ? '{{ hero_video }}' : '{{ hero_video_mobile }}'"
+        x-effect="$refs.video.load()"
+        aria-hidden="true" class="absolute inset-0 overflow-hidden">
         <video
+            x-ref="video" 
                 playsinline muted autoplay loop
-                poster="{{ fallback_image }}"
-                class="hidden md:block w-full h-full object-cover object-center"
+                :poster="poster"
+                class="w-full h-full object-cover object-center"
             >
-            <source src="{{ hero_video }}" type="video/mp4">
-        </video>
-
-        <video
-                playsinline muted autoplay loop
-                poster="{{ fallback_image }}"
-                class="md:hidden w-full h-full object-cover object-center"
-            >
-            <source src="{{ hero_video_mobile }}" type="video/mp4">
+            <source :src="video" type="video/mp4">
         </video>
     </div>
     <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
@@ -37,13 +33,14 @@
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn" 
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-10">
-                {{ show_breadcrumb ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
+                {{ show_breadcrumb && !show_title ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
+                {{ show_title ?= {partial:typography/p :content="title" color="text-charcoal-40"} }}
                 {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
                 {{ show_resource ?= {partial:components/tags :tags="resources" class="mb-3"} }}
                 {{ show_press ?= {partial:components/tag url="/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
                 {{ show_awards ?= {partial:components/tag url="/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
-                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch] opacity-0" }}
-                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch] opacity-0"} }}
+                {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch] {!live_preview ?= 'opacity-0'}" }}
+                {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch] {!live_preview ?= 'opacity-0'}"} }}
                 {{ show_location ?= {partial:components/tag tag_type="location" as="span" :title="locations:0:long_title ?? locations:0:title" class="mt-4" } }}
                 {{ if show_date }}
                 <div class="flex flex-col md:flex-row md:items-center text-lg text-white mt-2 md:mt-4">

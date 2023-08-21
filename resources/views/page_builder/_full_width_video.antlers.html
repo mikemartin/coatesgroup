@@ -53,14 +53,17 @@
             x-show="!ready" 
             x-transition.opacity.duration.1000
             @click="autoplay = true, loadPlayer()"
-            {{/if}} 
+            {{ /if }}
+            x-data="{video: ($width>768) ? '{{ block:video }}' : '{{ block:video_mobile }}', poster: ($width>768) ? '{{ block:fallback_image }}' : '{{ glide :src="block:fallback_image" w="720" h="1280" }}'}" 
+            x-screen="video = ($width>768) ? '{{ block:video }}' : '{{ block:video_mobile }}'"
+            x-effect="$refs.video.load()"
             class="relative {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}} {{ if block:video_url }}cursor-pointer{{/if}}">
-            <video
+            <video x-ref="video"
                     playsinline muted autoplay loop preload
-                    poster="{{ block:fallback_image }}"
+                    :poster="poster"
                     class="w-full h-full object-cover object-center"
                 >
-                <source src="{{ block:video }}" type="video/mp4">
+                <source :src="video" type="video/mp4">
             </video>
             {{ if block:video_url }}
             <button type="button" class="!block plyr__control plyr__control--overlaid" data-plyr="play" aria-pressed="false" aria-label="Play">

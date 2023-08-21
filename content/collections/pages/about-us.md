@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692254244
+updated_at: 1692579497
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -26,6 +26,7 @@ page_builder:
     enabled: true
     fill_screen: false
     video_mobile: 3--720x1280-about-us-people-office-initiative-10s-2.mp4
+    fallback_image: about-us/3.-about-us.jpg
   -
     id: lk62z9oo
     squares:
@@ -177,4 +178,5 @@ page_builder:
     enabled: true
 enable_hero: true
 text_animation_delay: 0
+overlay_opacity: 0
 ---
