@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692599649
+updated_at: 1692600128
 text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Solutions Designed for a Seamless Drive Thru Experience'
@@ -78,7 +78,7 @@ page_builder:
       -
         id: ll4o9zjb
         title: 'Supply Chain & Logistics'
-        icon: supply-chain_logistics
+        icon: supply-chain_logistics_light
       -
         id: ll4oa4l0
         title: 'Content Development & Management'
