@@ -1,6 +1,5 @@
 ---
 id: 72d335c9-ed5c-4bf4-87e8-a91510aaefcb
-published: false
 blueprint: products
 title: 'Order Confirmation Screens'
 enable_hero: true
