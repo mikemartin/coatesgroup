@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692627060
+updated_at: 1692627310
 headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
@@ -26,7 +26,7 @@ page_builder:
       -
         id: llbvw8zc
         title: 'Content Simplification'
-        text: 'Our SwitchboardTM CMS integrates with your data sources and systems to simplify content creation and distribution processes to meet all digital touchpoints.'
+        text: 'Our Switchboard™ CMS integrates with your data sources and systems to simplify content creation and distribution processes to meet all digital touchpoints.'
         feature_position: right
       -
         id: llbvwfy7
@@ -46,7 +46,7 @@ page_builder:
       -
         id: llkco0gi
         title: 'Scheduling & Dayparting'
-        text: 'Schedule your digital menu content by daypart, weekpart, season, promotions, and more within our SwitchboardTM CMS dashboard.'
+        text: 'Schedule your digital menu content by daypart, weekpart, season, promotions, and more within our Switchboard™ CMS dashboard.'
         feature_position: right
     media_type: image
     size: sm
@@ -54,7 +54,7 @@ page_builder:
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
-    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check, reduced wait times, and increased order accuracy – with our custom-built SwitchboardTM CMS digital menu board software.'
+    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check, reduced wait times, and increased order accuracy – with our custom-built Switchboard™ CMS digital menu board software.'
     icon_list:
       -
         id: ll4jid06
@@ -111,5 +111,5 @@ page_builder:
 hero_image: products/software/img_software_hero.jpg
 show_product_tabs: false
 overlay_opacity: 100
-text: 'Our proprietary CMS, SwitchboardTM with sophisticated integration capabilities allows you to manage your digital merchandising touchpoints both in the restaurant and in the drive thru via a single solution.'
+text: 'Switchboard™, our dynamic and innovative content management system (CMS) offers sophisticated integration capabilities and creates a seamless, connected ecosystem for your brand. Enjoy a single solution that enables dynamic, data-driven menu content across all hardware touchpoints and ensures an engaging ordering experience for customers.'
 ---
