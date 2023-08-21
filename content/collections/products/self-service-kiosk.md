@@ -3,7 +3,7 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692590201
+updated_at: 1692596417
 headline: 'Ordering Reimagined'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
@@ -95,9 +95,9 @@ page_builder:
     id: llagnwy0
     title: 'Frequently Asked Questions'
     questions:
-      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
-      - 91ebcfef-1c85-4de0-aa33-a1684829930b
-      - 362c0cf4-599c-4d68-8d6c-546359f0751a
+      - 92e2c8df-4104-4c4c-93a3-8b30fa63649a
+      - df55fc54-1488-4a09-8824-2b063d26ec7f
+      - 8dba2999-909c-46a1-8693-ba3f2771c416
     type: faq
     enabled: true
   -
