@@ -2,10 +2,9 @@
 id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Board'
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692579582
-headline: 'Lorem ipsum dolor sit amet consectetur.'
-text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692589283
+headline: 'Designed to Power Connected Customer Journeys'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
 enable_hero: true
 duplicated_from: 10b3a0e8-9688-479e-9a82-6433aa322e55
@@ -14,8 +13,8 @@ page_builder:
   -
     id: llagiv1p
     title: 'Outdoor Digital Menuboard'
-    headline: 'A data-driven CMS that powers all digital...'
-    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    headline: 'Elevate the Drive Thru Ordering Experience'
+    text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary SwitchboardTM CMS - our outdoor digital signage solutions deliver highly targeted and compelling messaging.'
     images:
       - products/outdoor-digital-menu-board/o4odmb_double_front_transparent@2x.png
       - products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -31,22 +30,22 @@ page_builder:
       -
         id: llaui89p
         title: 'Leading Design'
-        text: 'Award-winning human-centric design enables a seamless customer experience, flexibility of technology and customizable features.'
+        text: 'Our award-winning, human-centric design enables a seamless customer experience, flexibility of technology, and highly customisable features.'
         feature_position: right
       -
         id: llauiqf7
-        title: 'Serviceability & Usability'
-        text: 'Component agnostic, user-centric and tested in a range of climates, our design prioritizes ease of install, use and ongoing service.'
+        title: 'Usability & Serviceability'
+        text: 'Component agnostic and tested in a range of climates, our digital menu screens facilitate easy installation, simple operation, and ongoing serviceability'
         feature_position: left
       -
         id: llauixf7
         title: Future-Proofed
-        text: 'Designed to accommodate industry-leading displays and technology, future integrations, upgrades and flexible architecture model'
+        text: 'Our menu boards for restaurants are built to accommodate future integrations, upgrades, and flexible architecture models.'
         feature_position: right
       -
         id: llauj6uo
         title: 'Powered by Switchboard'
-        text: 'Our CMS connects all customer touchpoints in the drive-thru and ensures brands can communicate the right content to the right customer at the right time.'
+        text: 'Our CMS connects all drive thru touchpoints, ensuring your messaging reaches the right customers, with the right offer, at the right time.'
         feature_position: left
     type: product_features
     enabled: true
@@ -69,22 +68,27 @@ page_builder:
       -
         id: ll4om2j3
         title: 'Proven at Scale'
-        text: 'Our outdoor signage displays scale with your business and have been proven across thousands of restaurant locations around the world.'
+        text: 'Our outdoor signage displays scale with your brand and have been proven across thousands of restaurant locations around the world.'
         icon: products_proven_at_scale
       -
         id: ll4om391
         title: 'Dynamic Messaging'
-        text: 'When powered by our Switchboard™️ CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
+        text: 'When powered by our SwitchboardTM CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
         icon: products_dynamic_messaging
       -
         id: ll4om45u
+        title: 'Immersive Ordering'
+        text: 'Enabled by SwitchboardTM our menu board solution features a customer order display, suggestive selling, and personalised content.'
+        icon: products_immersive_ordering
+      -
+        id: ll4om4qs
         title: 'Customer Experience'
         text: 'Our outdoor digital displays offer the ability to communicate directly and dynamically in the drive thru to enhance the customer experience.'
         icon: products_customer_experience
       -
-        id: ll4om4qs
+        id: llkbui7t
         title: 'Drives ROI'
-        text: 'Our menu display software and leading hardware drive ROI through increased average check sizes, speed of service, guest counts, and order accuracy.'
+        text: 'Our menu display software and leading hardware drive ROI through increased average check sizes, speed of service, visitor count and order accuracy.'
         icon: products_drives_roi
     color:
       label: White
