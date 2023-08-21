@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692609592
+updated_at: 1692609645
 headline: 'A Connected Restaurant Ecosystem'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
 page_builder:
