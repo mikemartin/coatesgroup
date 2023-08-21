@@ -1,0 +1,12 @@
+title: Blog Gallery
+fields:
+  -
+    handle: images
+    field: common.image
+    config:
+      mode: grid
+      display: Images
+      max_files: 0
+      validate:
+        - required
+      folder: blog
