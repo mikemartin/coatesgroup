@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Indoor Digital Menu Boards'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692603906
+updated_at: 1692603917
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Enhance Your In Restaurant Ordering Experience'
 image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
