@@ -1,5 +1,6 @@
 ---
 id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
+published: false
 blueprint: products
 title: 'Outdoor Digital Menu Boards'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
