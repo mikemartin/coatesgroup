@@ -1,0 +1,43 @@
+{{#
+	@name Gallery
+	@desc The gallery page builder block.
+    @set page.page_builder.gallery
+#}}
+
+<!-- /page_builder/_gallery.antlers.html -->
+<section class="md:col-span-12 overflow-hidden">
+
+    <div class="hidden md:block md:space-y-16 lg:space-y-28 fluid-container">
+            <div class="flex flex-wrap justify-between md:gap-y-16 lg:gap-y-28">
+                {{ images }}
+                    <figure x-data="fadeIn"
+                    x-init="hide($el)"
+                    x-intersect.once.margin.-20%="fadeIn($el)" class="flex items-center justify-center
+                        {{ if count % 3 == 0 }}
+                            md:mx-auto md:w-3/5
+                        {{ else }}
+                            md:w-1/2
+                        {{ /if }}
+                    ">
+                        {{ partial
+                            :image="url"
+                            src="statamic-peak-tools::components/picture"
+                            sizes="
+                                { switch(
+                                    (total_results == 1) => '(min-width: 1280px) 1150px, 90vw',
+                                    (total_results == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                )}
+                            "
+                            lazy="true"
+                        }}
+                    </figure>
+                {{ /images }}
+            </div>
+    </div>
+
+
+    <div class="md:hidden fluid-container">
+        {{ partial:components/gallery_carousel }}
+    </div>
+</section>
+<!-- End: /page_builder/_gallery.antlers.html -->
