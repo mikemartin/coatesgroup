@@ -28,3 +28,5 @@ fields:
       always_save: false
       validate:
         - required
+      instructions: 'Select from the [FAQ](/cp/collections/faq) collection.'
+      hide_display: false
