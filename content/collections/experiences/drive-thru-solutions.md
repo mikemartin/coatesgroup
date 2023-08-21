@@ -7,11 +7,11 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692600481
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692600634
 text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
-headline: 'Solutions Designed for a Seamless Drive Thru Experience'
+headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
   -
     id: ll5xa828
@@ -94,7 +94,7 @@ page_builder:
       -
         id: llkgvc4j
         title: Support
-        icon: support
+        icon: supply-chain_logistics
     type: icon_list
     enabled: true
     icon_position: above
