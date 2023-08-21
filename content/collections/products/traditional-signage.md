@@ -1,19 +1,17 @@
 ---
 id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
-title: 'Traditional Signage'
+title: 'Traditional Signage Solutions That Bring Brands to Life'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692610384
-text: 'Our wayfinding and building signage, pylons, directional signage, canopies, and gantries increase brand exposure while providing customers with critical information. Even better, our start-to-finish services ensure you’re supported from initial concept to completed rollout.'
-headline: 'Communicate Brand Messages with Impact'
+updated_at: 1692629005
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
 page_builder:
   -
     id: llaho0qe
-    title: 'Communicate your brand’s most important messages with impact.'
-    text: 'At Coates Group, our experienced team delivers best-in-class indoor and outdoor signage that meets the highest standards of safety, compliance, and durability. Our solutions bring together self-service engagements and impactful messaging, enabling national and global brands to stand out from the crowd.'
+    title: 'Communicate Your Most Important Messages with Impact'
+    text: 'At Coates Group, our experienced teams have been delivering best-in-class indoor and outdoor signage to meet the highest standards of safety, compliance, and durability for the world’s leading brands since 1963. Our solutions bring together cutting-edge technology and impactful design and messaging, enabling national and global brands to stand out from the crowd.'
     hardware:
       - b6344748-a2f8-457e-9c38-2477a1c30203
       - 69c86745-dea0-467a-834a-d008d1a9917b
@@ -42,13 +40,13 @@ page_builder:
         title: Manufacturing
         icon: inverse_manulogistics
       -
-        id: ll4oa4l0
-        title: 'Delivery & Installation'
-        icon: inverse_installation
-      -
         id: ll4o9tpc
         title: 'Program Management'
         icon: inverse_manulogistics
+      -
+        id: ll4oa4l0
+        title: 'Delivery & Installation'
+        icon: inverse_installation
     type: icon_list
     enabled: true
     color:
@@ -62,6 +60,8 @@ page_builder:
     block_type: grid
     type: case_studies
     enabled: true
+    case_studies:
+      - 647766b6-ea13-4ac5-861d-c6aa73b93d4a
   -
     id: llagq97v
     title: 'Frequently Asked Questions'
@@ -71,13 +71,16 @@ page_builder:
       - 362c0cf4-599c-4d68-8d6c-546359f0751a
       - 3418af77-19bd-4e20-9695-d701a08f09ab
       - 65037a07-e985-4dd9-a270-4da643c3e5f6
+      - fe73b46f-33c7-49f1-a838-af8817b38b22
+      - 8f1d6678-2917-4dfd-87a9-fdd40b7f43eb
+      - 299d1f30-e854-448a-925f-688fd9f28e95
     type: faq
     enabled: true
   -
     id: ll5usujh
     cta_type: render
-    title: 'Got a project with us?'
-    label: 'Get in touch'
+    title: 'Start Your Next Signage Project'
+    label: 'Reach out'
     link_type: entry
     target_blank: false
     entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
