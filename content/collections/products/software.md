@@ -3,8 +3,8 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692610344
-headline: 'Create a Data-Driven  Digital Journey'
+updated_at: 1692627060
+headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
 page_builder:
