@@ -25,17 +25,19 @@ class CaseStudiesIndex extends Component
     {
         $industries = Term::query()
             ->where('taxonomy', 'industries')
-            ->orderBy('entries_count', 'desc')
+            ->orderBy('title', 'asc')
             ->get();
         $locations = Term::query()
             ->where('taxonomy', 'locations')
-            ->orderBy('entries_count', 'desc')
+            ->orderBy('title', 'asc')
             ->get();
         $products = Entry::query()
             ->where('collection', 'products')
+            ->orderBy('order')
             ->get();
         $experiences = Entry::query()
             ->where('collection', 'experiences')
+            ->orderBy('order')
             ->get();
         $case_studies = Entry::query()
             ->where('collection', 'case_studies')
@@ -57,7 +59,7 @@ class CaseStudiesIndex extends Component
 
         return view('livewire.case-studies-index', [
             'case-studies' => $case_studies,
-            'industries' => $industries,
+            'industries' => $this->moveOtherToEnd($industries),
             'locations' => $locations,
             'products' => $products,
             'experiences' => $experiences
@@ -67,5 +69,16 @@ class CaseStudiesIndex extends Component
     public function resetFilters()
     {
         $this->reset();
+    }
+
+    public function moveOtherToEnd($collection){
+        //move the item with the name == 'Other' to the end of the collection      
+        return $collection->reject(function($value){
+            return $value['title'] =='Other';
+        })
+        ->merge($collection->filter(function($value){
+            return $value['title'] =='Other';
+            })
+        );
     }
 }

@@ -1,13 +1,20 @@
 title: Experiences
-route: '/{mount}/{slug}'
-layout: layout
 template: experiences/show
+layout: layout
+mount: d70deed0-6959-4ec0-97a2-75d120b8899e
 revisions: false
-date: false
+route: '/{mount}/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
   future: private
-mount: d70deed0-6959-4ec0-97a2-75d120b8899e
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
 inject:
   enable_hero: true
+structure:
+  root: false
+  max_depth: 1
