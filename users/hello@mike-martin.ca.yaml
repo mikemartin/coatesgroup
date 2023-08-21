@@ -45,6 +45,8 @@ preferences:
       after_save: create_another
     values:
       after_save: continue_editing
+    faq:
+      after_save: create_another
   assets:
     images:
       mode: grid
