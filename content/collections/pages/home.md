@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692607925
+updated_at: 1692608631
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -43,14 +43,14 @@ page_builder:
     enabled: true
   -
     id: ljs3iyhr
-    title: 'A headline about Products on two lines'
+    title: 'Digital Solutions to Enable A Connected Experience'
     link_blocks:
       -
         id: lC8ei2CA
-        title: 'Digital Menu Board'
-        text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.vehicula sapien maecenas.vehicula.'
+        title: 'Digital Menu Boards'
+        text: 'Our indoor and outdoor digital signage for QSR brands offers the robustness needed for global use, as well as the adaptability to support rapid shifts in technology.'
         image: homepage/digitalmenuboard.jpg
-        label: 'View More'
+        label: 'See more'
         show_arrow: true
         link_type: entry
         target_blank: false
@@ -58,10 +58,10 @@ page_builder:
         button_type: button
       -
         id: ljs3nwqo
-        title: 'Self-Service Kiosk'
-        text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
+        title: 'Self-Service Kiosks'
+        text: "Interactive self-service kiosks enhance your customers' ordering experience whilst driving ROI, an increase in average check size, and reduced wait times, for your brand."
         image: homepage/selfservicekiosks.jpg
-        label: 'View More'
+        label: 'See more'
         show_arrow: true
         link_type: entry
         target_blank: false
@@ -69,10 +69,10 @@ page_builder:
         button_type: button
       -
         id: ljs3oszb
-        title: Software
-        text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
+        title: 'Content Management'
+        text: 'With SwitchboardTM - brands can create, manage, distribute, and display digital content based on real-time data and rich analytics to orchestrate a seamless customer journey.'
         image: homepage/software.jpg
-        label: 'View More'
+        label: 'See more'
         show_arrow: false
         link_type: entry
         target_blank: false
@@ -82,12 +82,12 @@ page_builder:
     enabled: true
   -
     id: ljs441zs
-    title: 'A headline about Traditional Signage'
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in faucibus aenean ornare montes lorem dui. In ultricies consequat massa ornare. Dictumst volutpat ultrices cras sed. Neque id ullamcorper pulvinar aliquet hac. Suspendisse faucibus tincidunt elementum morbi nisl dictumst aenean. Orci massa in faucibus viverra. Egestas amet maecenas malesuada nibh ultrices.'
+    title: 'Traditional Signage Solutions. Modern Implementations.'
+    text: "Our traditional signage solutions maximise the impact of your most important messages whilst helping your brand stand out from the crowd. We've been providing traditional signage solutions to our customers since we first opened our doors 60 years ago – so we know what it means to deliver exceptional experiences at all stages of the rollout process, from initial design through to final installation."
     buttons:
       -
         id: ljs44ak2
-        label: 'View More'
+        label: 'Learn more'
         show_arrow: true
         link_type: entry
         target_blank: false
@@ -103,7 +103,7 @@ page_builder:
     type: case_studies
     block_type: carousel
     enabled: true
-    title: 'A headline about Case Studies goes here'
+    title: 'Top Brands Trust Our Proven Expertise'
     case_studies:
       - 1c37dfff-7c87-4872-a2fb-21aaeeba89ea
       - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
@@ -130,26 +130,20 @@ page_builder:
         id: lklucc9w
         clients:
           - 91e99798-6674-4dec-b39f-edf3482957f9
-          - a57f2074-3e76-41fe-86ca-20a156c23b03
-          - a2a6cedb-b6e3-48d6-98d2-920e195b1b1c
           - a3cffb0a-0c45-4ae0-8858-dd07b4763bde
-          - b5ed9803-ef57-425f-89d6-ce3d3b4270c5
           - f2b58d8b-8bde-4b53-ae16-988dc5f5949b
+          - b5ed9803-ef57-425f-89d6-ce3d3b4270c5
+          - 3768eb0b-da94-40e1-ae93-751bde10352e
       -
         id: lledcahe
-        clients:
-          - 3768eb0b-da94-40e1-ae93-751bde10352e
-          - ab72888e-927d-453a-b653-1bbd0142f3fc
-          - 50de6185-118a-4915-8a2b-3021687bea3a
-          - 0378a75a-702a-49b1-95eb-193e6b6068e9
   -
     id: ljs5n5ni
-    title: 'A headline about the Company'
-    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    title: 'Driving Innovation with a Crew Built on Connection'
+    text: 'At Coates, we’re redefining the way brands connect with their customers through our range of digital solutions. Our Crew is committed to delivering innovative merchandising solutions and doing things differently when it comes to our people, partnerships, and products to deliver unrivaled results.'
     buttons:
       -
         id: ljs5op1o
-        label: 'View About Us'
+        label: 'About us'
         show_arrow: true
         link_type: entry
         target_blank: false
@@ -162,7 +156,7 @@ page_builder:
     mobile_panning: false
   -
     id: ljs6guak
-    title: 'A headline about Insights goes here'
+    title: 'Insights and Resources Built on Experiences'
     type: insights
     enabled: true
     insights:
