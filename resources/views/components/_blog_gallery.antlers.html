@@ -1,0 +1,45 @@
+{{#
+	@name Blog gallery
+	@desc The blog gallery component. A sizeable gallery with multiple rows.
+    @set page.article.blog_gallery
+#}}
+
+<!-- /components/_blog_gallery.antlers.html -->
+<div class="not-prose
+    {{ switch(
+        (size == 'sm') => 'size-sm',
+        (size == 'md') => 'size-md',
+        (size == 'lg') => 'size-lg',
+        () => 'size-md'
+    )}}
+">
+    <div class=" -mx-8 md:mx-0 grid py-8 gap-4 grid-cols-12 md:gap-6">
+        {{ rows }}
+            {{ images }}
+                <figure class="
+                    {{ switch(
+                        (total_results == 1) => 'col-span-12',
+                        (total_results == 2) => 'col-span-6',
+                        (total_results == 3) => '{ first ? 'col-span-12' : 'col-span-6' } md:col-span-4',
+                    )}}
+                ">
+                    {{ partial
+                        src="statamic-peak-tools::components/picture"
+                        :image="url"
+                        sizes="
+                            { switch(
+                                (total_results == 1) => '(min-width: 1280px) 1150px, 90vw',
+                                (total_results == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                (total_results == 3) => '(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw',
+                            )}
+                        "
+                        aspect_ratio="{ total_results > 1 ?= 'large:4/3' }"
+                        cover="{ total_results == 1 ? false : true }"
+                        lazy="true"
+                    }}
+                </figure>
+            {{ /images }}
+        {{ /rows }}
+    </div>
+</div>
+<!-- End: /components/_blog_gallery.antlers.html -->
