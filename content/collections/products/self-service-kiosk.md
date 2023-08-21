@@ -2,10 +2,9 @@
 id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosk'
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692579605
-headline: 'Lorem ipsum dolor sit amet consectetur.'
-text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692590201
+headline: 'Ordering Reimagined'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
 enable_hero: true
@@ -13,8 +12,8 @@ page_builder:
   -
     id: llagmcte
     title: 'Self Service Kiosk'
-    headline: 'A data-driven CMS that powers all digital...'
-    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    headline: 'Ordering Reimagined'
+    text: 'Create an intuitive and engaging in restaurant ordering experience. Our award-winning self-service digital kiosks fit seamlessly into your space and are designed in-house with the needs of both your crew and customers in mind.'
     images:
       - products/self-service-kiosk/k2_closeup_transparent@2x.png
       - products/self-service-kiosk/k2range_transparent@2x.png
@@ -27,23 +26,23 @@ page_builder:
     features:
       -
         id: llat63zr
-        title: 'Flexibility & Serviceability'
-        text: 'A range of mounting options to accommodate your footprint and plug and play components for easy servicing.'
+        title: 'Leading Design'
+        text: 'Award-winning touch screen kiosk design based on behavioural research keeps the focus on the customer’s experience – rather than the kiosk itself.'
         feature_position: right
       -
         id: llat6s3z
-        title: 'Leading Design'
-        text: 'Award-winning design based on behavioural research ensures the focus is the customer’s experience rather than the kiosk itself.'
+        title: 'Flexibility & Serviceability'
+        text: 'A range of mounting options seamlessly accommodates both your footprint and plug-and-play components for easy servicing.'
         feature_position: left
       -
         id: llat73uf
         title: Future-Proofed
-        text: 'Designed to accommodate industry-leading displays and technology, future integrations and upgrades as well as software architecture changes.'
+        text: 'Our kiosk hardware integrates with  industry-leading displays, technology, kiosk software, payment solutions, and software architecture changes.'
         feature_position: right
       -
         id: llat7oc0
         title: 'Enhanced Ordering'
-        text: 'When paired with a dynamic CMS, self-order kiosks can leverage app integration and customisable order experiences.'
+        text: 'When paired with a dynamic CMS, self-service kiosks can enable app integrations and customisable ordering experiences.'
         feature_position: left
     type: product_features
     enabled: true
@@ -63,12 +62,12 @@ page_builder:
   -
     id: ll4ji16s
     title: 'Sleek, Modern Kiosks Create Engaging Customer Interactions'
-    text: 'As a primary ordering and interaction point, self-service kiosks positively impact the customer experience and drive measurable results for your business.'
+    text: 'As a primary ordering and interaction point, self-service kiosks positively impact the customer experience and drive measurable results for your brand.'
     icon_list:
       -
         id: ll4jid06
         title: 'Proven at Scale'
-        text: 'Our self-service kiosks are deployed across leading brands in thousands of global locations and are proven to meet unique needs at scale.'
+        text: 'Our self-service kiosks are deployed across leading brands in thousands of global locations and are proven to meet your unique needs at scale.'
         icon: products_proven_at_scale
       -
         id: ll4jij4o
@@ -78,12 +77,12 @@ page_builder:
       -
         id: ll4jiuja
         title: 'Drives ROI'
-        text: 'A self-ordering kiosk drives ROI by increasing your average check size, reducing visitor wait times, and improving customer experience.'
+        text: 'A self-service kiosk can help drive ROI by increasing your average check size, reducing visitor wait times, and improving the customer experience.'
         icon: products_drives_roi
       -
         id: ll4jj5yj
         title: 'Operational Cost'
-        text: 'SOK solutions enable automated in-restaurant workflows, resulting in reduced operational costs.'
+        text: 'Our self-service kiosk solutions enable automated in restaurant workflows, resulting in reduced operational costs.'
         icon: products_operational_cost
     type: icon_list
     enabled: true
@@ -99,14 +98,12 @@ page_builder:
       - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
       - 91ebcfef-1c85-4de0-aa33-a1684829930b
       - 362c0cf4-599c-4d68-8d6c-546359f0751a
-      - 3418af77-19bd-4e20-9695-d701a08f09ab
-      - 65037a07-e985-4dd9-a270-4da643c3e5f6
     type: faq
     enabled: true
   -
     id: ll5usujh
     cta_type: render
-    title: 'Got a project with us?'
+    title: 'Ready to Start Your Digital Journey?'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
