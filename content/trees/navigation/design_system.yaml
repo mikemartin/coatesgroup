@@ -6,6 +6,12 @@ tree:
     data:
       fullpage: true
   -
+    id: f0ec1662-1701-42a7-b66f-c4ac7a0ca554
+    title: Article
+    url: 'article'
+    data:
+      fullpage: true
+  -
     id: ff9656a0-0da5-4d58-837f-6d9097180711
     title: Iconography
     url: iconography

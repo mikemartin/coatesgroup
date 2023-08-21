@@ -5,11 +5,6 @@
 #}}
 
 <!-- /components/_video.antlers.html -->
-{{ cookie_embeds =
-    (environment == 'local' && seo:trackers_local && seo:embeds) or
-    (environment == 'staging' && seo:trackers_staging && seo:embeds) or
-    (environment == 'production' && seo:trackers_production && seo:embeds)
-}}
 <div
     x-data="{ 
         init() {
@@ -41,11 +36,13 @@
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
             () => 'size-md'
-        )}}
+        )}}  py-8
     "
 >
-    <div x-ref="player" class="relative aspect-video">
-        <iframe class="absolute top-0 left-0 w-full h-full" width="100%" src="{{ video_url | embed_url }}" height="auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="border">
+        <div x-ref="player" class="relative aspect-video">
+            <iframe class="absolute top-0 left-0 w-full h-full" width="100%" src="{{ video_url | embed_url }}" height="auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
     {{ partial:typography/caption }}
