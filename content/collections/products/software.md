@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692591037
+updated_at: 1692596785
 headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
@@ -90,10 +90,10 @@ page_builder:
     id: llagpdj9
     title: 'Frequently Asked Questions'
     questions:
-      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
-      - 91ebcfef-1c85-4de0-aa33-a1684829930b
-      - 362c0cf4-599c-4d68-8d6c-546359f0751a
-      - 3418af77-19bd-4e20-9695-d701a08f09ab
+      - 4760ba50-819c-4625-83da-0f40b930128c
+      - 091ff26f-c143-4bc6-945a-c219cff361b9
+      - b9a01397-4ae1-408d-b174-f998100df7b4
+      - dae996b1-fce6-41de-94fa-969c3bfa1d22
     type: faq
     enabled: true
   -
