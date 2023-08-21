@@ -1,17 +1,17 @@
 ---
 id: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
 blueprint: experiences
-title: 'Drive Thru'
+title: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1692597224
-text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692598352
+text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: 'Solutions Designed for a Seamless Drive Thru Experience'
 page_builder:
   -
     id: ll5xa828
@@ -30,9 +30,17 @@ page_builder:
         focal_point: 42-68-1
       -
         id: ll5xd97z
-        text: 'Our outdoor order-taking units can incorporate cameras, scanners, Bluetooth, and other interactive signage technologies to communicate with customers.'
+        text: 'Outdoor order-taking units can incorporate cameras, scanners, Bluetooth, and other interactive technologies to better communicate with customers.'
         focal_point: 76-57-1
         product: b9fbdbf2-c567-4a71-9894-a9f0a8293289
+      -
+        id: llkgsqmz
+        title: 'Order Confirmation Screens'
+        text: 'As the final point of interaction before payment, these dynamic solutions promote customer confidence and order accuracy through a visual confirmation of each order.'
+      -
+        id: llkgt218
+        title: 'Crew Facing Screens'
+        text: 'Driving a stronger connection between customers and restaurant crews, this solution lives inside the order-taking window and mirrors menu board content to create clarity and opportunities for upsell.'
     type: products
     enabled: true
     title: 'Drive thru solutions that engage in any environment'
@@ -41,8 +49,8 @@ page_builder:
   -
     id: ll5ttwbv
     title: Software
-    headline: 'A data-driven CMS that powers all digital...'
-    text: 'A dynamic and innovative Content Management System with sophisticated integration capabilities allows for a single solution across all hardware touchpoints, ensuring a seamless and connected customer experience.'
+    headline: 'Our SwitchboardTM CMS Brings Your Drive Thru Experience to Life'
+    text: 'Our proprietary SwitchboardTM CMS provides a single, centralised solution for managing messaging across all drive thru hardware touchpoints, while our advanced analytics capabilities and  integrations drive a seamless and connected customer experience.'
     buttons:
       -
         id: ll5tu4ih
@@ -61,28 +69,32 @@ page_builder:
     icon_list:
       -
         id: ll4o92ig
-        title: Manufacturing
-        icon: inverse_manulogistics
+        title: Design
+        icon: design
       -
         id: ll4o9tpc
-        title: 'Program Management'
-        icon: inverse_programmanagement
+        title: Manufacturing
+        icon: manulogistics
       -
         id: ll4o9zjb
-        title: 'Content Development & Management'
+        title: 'Supply Chain & Logistics'
         icon: inverse_contentmanagementicon
       -
         id: ll4oa4l0
-        title: 'Delivery & Installation'
-        icon: inverse_installation
+        title: 'Content Development & Management'
+        icon: content_management
       -
         id: ll4oab24
-        title: Support
-        icon: inverse_support
+        title: 'Program Management'
+        icon: projectmanagement
       -
         id: ll4oaezz
-        title: Design
-        icon: inverse_design
+        title: 'Delivery & Installation'
+        icon: installation
+      -
+        id: llkgvc4j
+        title: Support
+        icon: support
     type: icon_list
     enabled: true
     color:
