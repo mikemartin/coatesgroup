@@ -1,9 +1,9 @@
 ---
 id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
-title: 'Self-Service Kiosk'
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692596417
+title: 'Self-Service Kiosks'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692603961
 headline: 'Ordering Reimagined'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
