@@ -1,6 +1,5 @@
 ---
 id: a4da6d0e-6bb5-4d98-b666-c1107ab77f8e
-published: false
 blueprint: products
 title: 'Crew Facing Screens'
 enable_hero: true
