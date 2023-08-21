@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1692596573
+updated_at: 1692597224
 text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Lorem ipsum dolor sit amet consectetur.'
