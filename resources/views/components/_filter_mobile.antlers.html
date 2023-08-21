@@ -15,7 +15,7 @@
           <div class="group flex items-center px-5">
             <input 
                 id="filter-mobile-{{ label|slugify }}-{{ slug }}" 
-                x-model="{{ label|slugify }}"
+                x-model="{{ label|slugify|singular }}"
                 value="{{ slug }}"
                 type="checkbox"
                 class="h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"

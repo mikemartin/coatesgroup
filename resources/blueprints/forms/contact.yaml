@@ -36,7 +36,7 @@ tabs:
             handle: enquiry
             field:
               options:
-                general: 'General Enquiry'
+                general: 'General'
                 careers: Careers
                 sales: Sales
                 support: Support
@@ -70,7 +70,7 @@ tabs:
           -
             handle: consent
             field:
-              inline_label: 'By selecting this, you agree to our'
+              inline_label: 'By ticking this box, you agree to our'
               default: false
               type: toggle
               icon: toggle

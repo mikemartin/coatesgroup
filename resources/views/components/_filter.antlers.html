@@ -20,7 +20,7 @@
         {{ options }}
           <div class="group flex items-start">
             <input
-              x-model="{{ label|slugify }}"
+              x-model="{{ label|slugify|singular }}"
               value="{{ slug }}"
               id="filter-{{ label|slugify }}-{{ slug }}"
               type="checkbox"

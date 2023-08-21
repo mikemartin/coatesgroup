@@ -14,19 +14,19 @@
     </div>
     {{ if show_topics }}
         <div class="md:col-span-12 flex flex-wrap gap-4">
-            {{ partial:components/button_tag :selected="current_uri == '/blog'" url="/blog" label="All" /}}
+            {{ partial:components/button_tag :selected="current_uri == '/insights/blog'" url="/insights/blog" label="All" /}}
             
             {{ taxonomy:topics collection="blog" }}
-                {{ partial:components/button_tag url="/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
+                {{ partial:components/button_tag url="/insights/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:topics }}
         </div>
     {{ /if }}
     {{ if show_resources }}
         <div class="md:col-span-12 flex flex-wrap gap-4">
-            {{ partial:components/button_tag :selected="current_uri == '/thought-leadership'" url="/thought-leadership" label="All" /}}
+            {{ partial:components/button_tag :selected="current_uri == '/insights/thought-leadership'" url="/insights/thought-leadership" label="All" /}}
             
             {{ taxonomy:resources }}
-                {{ partial:components/button_tag url="/thought-leadership/resources/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
+                {{ partial:components/button_tag url="/insights/thought-leadership/resources/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:resources }}
         </div>
     {{ /if }}
