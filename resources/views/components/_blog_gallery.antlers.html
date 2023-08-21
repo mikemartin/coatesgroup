@@ -1,43 +1,45 @@
 {{#
-	@name Gallery
-	@desc The gallery page builder block.
-    @set page.page_builder.gallery
+	@name Blog gallery
+	@desc The blog gallery component. A sizeable gallery with multiple rows.
+    @set page.article.blog_gallery
 #}}
 
-<!-- /page_builder/_gallery.antlers.html -->
-<section class="md:col-span-12 overflow-hidden">
-
-    <div class="hidden md:block md:space-y-16 lg:space-y-28 fluid-container">
-            <div class="flex flex-wrap justify-between md:gap-y-16 lg:gap-y-28">
-                {{ images }}
-                    <figure x-data="fadeIn"
-                    x-init="hide($el)"
-                    x-intersect.once.margin.-20%="fadeIn($el)" class="flex items-center justify-center
-                        {{ if count % 3 == 0 }}
-                            md:mx-auto md:w-3/5
-                        {{ else }}
-                            md:w-1/2
-                        {{ /if }}
-                    ">
-                        {{ partial
-                            :image="url"
-                            src="statamic-peak-tools::components/picture"
-                            sizes="
-                                { switch(
-                                    (total_results == 1) => '(min-width: 1280px) 1150px, 90vw',
-                                    (total_results == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
-                                )}
-                            "
-                            lazy="true"
-                        }}
-                    </figure>
-                {{ /images }}
-            </div>
+<!-- /components/_blog_gallery.antlers.html -->
+<div class="not-prose
+    {{ switch(
+        (size == 'sm') => 'size-sm',
+        (size == 'md') => 'size-md',
+        (size == 'lg') => 'size-lg',
+        () => 'size-md'
+    )}}
+">
+    <div class=" -mx-8 md:mx-0 grid py-8 gap-4 grid-cols-12 md:gap-6">
+        {{ rows }}
+            {{ images }}
+                <figure class="
+                    {{ switch(
+                        (total_results == 1) => 'col-span-12',
+                        (total_results == 2) => 'col-span-6',
+                        (total_results == 3) => '{ first ? 'col-span-12' : 'col-span-6' } md:col-span-4',
+                    )}}
+                ">
+                    {{ partial
+                        src="statamic-peak-tools::components/picture"
+                        :image="url"
+                        sizes="
+                            { switch(
+                                (total_results == 1) => '(min-width: 1280px) 1150px, 90vw',
+                                (total_results == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                (total_results == 3) => '(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw',
+                            )}
+                        "
+                        aspect_ratio="{ total_results > 1 ?= 'large:4/3' }"
+                        cover="{ total_results == 1 ? false : true }"
+                        lazy="true"
+                    }}
+                </figure>
+            {{ /images }}
+        {{ /rows }}
     </div>
-
-
-    <div class="md:hidden fluid-container">
-        {{ partial:components/gallery_carousel }}
-    </div>
-</section>
-<!-- End: /page_builder/_gallery.antlers.html -->
+</div>
+<!-- End: /components/_blog_gallery.antlers.html -->
