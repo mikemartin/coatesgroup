@@ -25,7 +25,7 @@
         </article>
 
         <figure class="md:col-span-6">
-            {{ partial:statamic-peak-tools::components/picture :image="block:author:image" aspect_ratio="1/1" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
+            {{ partial:statamic-peak-tools::components/picture :image="block:image ?? block:author:image" aspect_ratio="1/1" sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw" }}
         </figure>
     </div>
 </section>

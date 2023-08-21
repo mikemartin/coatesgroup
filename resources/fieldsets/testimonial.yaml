@@ -44,6 +44,17 @@ fields:
   -
     import: buttons
   -
+    handle: image
+    field: common.image
+    config:
+      mode: grid
+      listable: true
+      instructions_position: below
+      validate:
+        - required
+      folder: people
+      instructions: Replace author image
+  -
     handle: background
     field:
       default: false
