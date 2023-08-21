@@ -1,14 +1,14 @@
 ---
 id: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
 blueprint: experiences
-title: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
+title: 'Drive Thru'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692599625
+updated_at: 1692599649
 text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Solutions Designed for a Seamless Drive Thru Experience'
