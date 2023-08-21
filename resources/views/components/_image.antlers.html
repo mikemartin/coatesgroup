@@ -13,7 +13,7 @@
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
             () => 'size-md'
-        )}}
+        )}}  py-8
     "
 >
     {{
@@ -32,6 +32,6 @@
         "
     }}
 
-    {{ partial:typography/caption as="figcaption" }}
+    {{ partial:typography/caption as="figcaption" class="mt-4 md:mt-6" }}
 </figure>
 <!-- End: /components/_image.antlers.html -->

@@ -5,15 +5,30 @@
 #}}
 
 <!-- /components/_video.antlers.html -->
-{{ cookie_embeds =
-    (environment == 'local' && seo:trackers_local && seo:embeds) or
-    (environment == 'staging' && seo:trackers_staging && seo:embeds) or
-    (environment == 'production' && seo:trackers_production && seo:embeds)
-}}
 <div
-    {{ if cookie_embeds }}
-        x-data
-    {{ /if }}
+    x-data="{ 
+        init() {
+            const player = new Plyr(this.$refs.player, {
+                ratio: '9:5',
+                hideControls: false,
+                keyboard: {
+                global: true,
+                },
+                tooltips: {
+                controls: true,
+                },
+                captions: {
+                active: true,
+                },
+            });
+
+            player.toggleControls(false);
+
+            player.on('play', event => {
+                player.toggleControls(true);
+            });
+        }
+    }" 
     class="
         not-prose
         {{ switch(
@@ -21,27 +36,26 @@
             (size == 'md') => 'size-md',
             (size == 'lg') => 'size-lg',
             () => 'size-md'
-        )}}
+        )}}  py-8
     "
 >
-    <div class="relative aspect-video">
-        {{ if cookie_embeds }}
-            <div
-                x-show="!$store.cookieBanner.consent || !$store.cookieBanner.embeds"
-                class="absolute z-10 inset-0 p-6 flex justify-center items-center bg-neutral/10 text-neutral/80"
-            >
-                <a @click.prevent="$store.cookieBanner.setConsent(null)" href="#" class="p-1 -m-1 underline focus:outline-none focus-visible:ring-2 ring-primary">
-                    {{ trans:strings.cookie_embeds_disabled }}
-                </a>
-            </div>
-            <template x-if="$store.cookieBanner.consent && $store.cookieBanner.embeds">
-                <iframe class="absolute top-0 left-0 w-full h-full" width="100%" src="{{ video_url | embed_url }}" height="auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </template>
-        {{ else }}
+    <div class="border">
+        <div x-ref="player" class="relative aspect-video">
             <iframe class="absolute top-0 left-0 w-full h-full" width="100%" src="{{ video_url | embed_url }}" height="auto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        {{ /if }}
+        </div>
     </div>
 
-    {{ partial:typography/caption }}
+    {{ partial:typography/caption class="mt-4 md:mt-6" }}
 </div>
 <!-- End: /components/_video.antlers.html -->
+
+{{ once }}
+{{ push:styles }}
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+{{ /push:styles }}
+
+{{ push:scripts }}
+<script defer src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+{{ /push:scripts }}
+{{ /once }}

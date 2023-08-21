@@ -78,7 +78,7 @@
         class="relative overflow-hidden">
             <div x-ref="player">
                 <iframe
-                class="absolute inset-0 w-full h-full overflow-hidden rounded-xl"
+                class="absolute inset-0 w-full h-full overflow-hidden"
                 src="{{ video_url|embed_url }}?origin={{ site:url }}&widget_referrer={{site:url}}&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 width="100%"
@@ -99,6 +99,7 @@
     </div>
 </section>
 <!-- End: /page_builder/_full_width_video.antlers.html -->
+
 
 {{ if block:video_url }}
     {{ once }}
