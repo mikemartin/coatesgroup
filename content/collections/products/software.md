@@ -2,9 +2,9 @@
 id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692596785
-headline: 'Switchboard™️ CMS'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692610344
+headline: 'Create a Data-Driven  Digital Journey'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
 page_builder:
@@ -111,4 +111,5 @@ page_builder:
 hero_image: products/software/img_software_hero.jpg
 show_product_tabs: false
 overlay_opacity: 100
+text: 'Our proprietary CMS, SwitchboardTM with sophisticated integration capabilities allows you to manage your digital merchandising touchpoints both in the restaurant and in the drive thru via a single solution.'
 ---
