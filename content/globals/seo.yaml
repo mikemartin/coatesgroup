@@ -36,7 +36,7 @@ data:
       custom_text: 'Thought Leadership'
   noindex_local: true
   noindex_staging: true
-  noindex_production: true
+  noindex_production: false
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
