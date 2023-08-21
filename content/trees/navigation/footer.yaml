@@ -2,19 +2,20 @@ tree:
   -
     id: ddae2de9-db43-4f66-8fbc-a58e8361abf4
     title: 'What We Do'
-  -
-    id: 388ca437-cf39-464c-9235-d1cf39a593ef
-    entry: d70deed0-6959-4ec0-97a2-75d120b8899e
-    title: Overview
-  -
-    id: fae83afb-1926-441b-a01d-9976614e3b85
-    entry: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
-  -
-    id: 54e1c9d1-7697-4651-8dc0-ea72d2339c9c
-    entry: ff9d8311-380b-41a3-8521-fca66900b6bb
-  -
-    id: 41455746-1f62-4e79-9664-c4c835766c98
-    entry: a5663a02-3b33-48ec-8a46-625a20d4ccf3
+    children:
+      -
+        id: 388ca437-cf39-464c-9235-d1cf39a593ef
+        entry: d70deed0-6959-4ec0-97a2-75d120b8899e
+        title: Overview
+      -
+        id: fae83afb-1926-441b-a01d-9976614e3b85
+        entry: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
+      -
+        id: 54e1c9d1-7697-4651-8dc0-ea72d2339c9c
+        entry: ff9d8311-380b-41a3-8521-fca66900b6bb
+      -
+        id: 41455746-1f62-4e79-9664-c4c835766c98
+        entry: a5663a02-3b33-48ec-8a46-625a20d4ccf3
   -
     id: cd8ac142-6378-4d49-8f8c-76c47b25254f
     title: Products
