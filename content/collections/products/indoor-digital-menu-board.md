@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Indoor Digital Menu Board'
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692594922
+updated_at: 1692595588
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Enhance Your In Restaurant Ordering Experience'
 image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
@@ -90,9 +90,9 @@ page_builder:
     id: llabvox4
     title: 'Frequently Asked Questions'
     questions:
-      - f81182c3-1625-4fa0-bd8c-ef111582615f
-      - d05a5d57-201a-4acc-9973-ef18c66b7e11
-      - b30b3417-da61-4667-a017-2858c082fdf1
+      - 768cd6f7-ffbe-4205-b4e6-97f06bf06c57
+      - a8979d0d-08ee-488a-8f05-c68fb1bec057
+      - da546fba-5134-4748-9587-a9dd49e03bca
     type: faq
     enabled: true
   -
