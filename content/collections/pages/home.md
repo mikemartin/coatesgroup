@@ -2,25 +2,26 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692281762
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692607908
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-headline: 'Lorem ipsum dolor sit amet consectetur.'
-supporting_text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc.'
+headline: 'Award-Winning Connected Restaurant  Technology for Leading Brands Worldwide'
 page_builder:
   -
     id: ljs2lhvj
-    title: 'A headline about Experiences on two lines'
+    title: 'Meet the Connected Restaurant Ecosystem'
     link_blocks:
       -
         id: ludHHOwH
-        title: Drive-Thru
-        text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas. Lorem ipsum dolor sit amet consectetur. Aliquam leo'
-        label: 'View More'
+        title: 'Drive Thru'
+        text: |-
+          Our fully connected digital solutions
+          power a dynamic and data-driven drive thru experience for your customers.
+        label: 'See more'
         show_arrow: true
         image: homepage/drivethru.jpg
         link_type: entry
@@ -29,9 +30,9 @@ page_builder:
         button_type: button
       -
         id: ljs2mon9
-        title: In-Restaurant
-        text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
-        label: 'View More'
+        title: 'In Restaurant'
+        text: 'Deliver engaging in restaurant customer experiences through our industry-leading hardware, proprietary SwitchboardTM CMS, and end-to-end services.'
+        label: 'See more'
         show_arrow: true
         image: homepage/inrestaurant.jpg
         link_type: entry
@@ -178,4 +179,5 @@ hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
 fallback_image: homepage/1.-homepage.jpg
 text_animation_delay: 7
 seo_title: 'Coates Group'
+overlay_opacity: 0
 ---
