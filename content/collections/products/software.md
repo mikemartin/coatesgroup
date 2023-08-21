@@ -2,17 +2,16 @@
 id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692314659
-text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692591037
 headline: 'Switchboard™️ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
 page_builder:
   -
     id: ll6jel84
-    title: 'Power up your digital touchpoints with a...'
-    text: 'Deliver consistently engaging customer messaging through behavioural insights powered by the sophisticated integration and analytics capabilities of our dynamic and innovative Content Management System (CMS) - SwitchboardTM.'
+    title: 'Power Up Your Digital Touchpoints with Our Proprietary CMS'
+    text: 'Switchboard™, our dynamic and innovative content management system (CMS) offers sophisticated integration capabilities and creates a seamless, connected ecosystem for your brand. Enjoy a single solution that enables dynamic, data-driven menu content across all hardware touchpoints and ensures an engaging ordering experience for customers.'
     image: products/software/img_software_hero.jpg
     image_position: above
     type: full_width_image
@@ -27,44 +26,62 @@ page_builder:
       -
         id: llbvw8zc
         title: 'Content Simplification'
-        text: 'Simplified content creation and distribution through integration with a brand’s data sources and systems.'
+        text: 'Our SwitchboardTM CMS integrates with your data sources and systems to simplify content creation and distribution processes to meet all digital touchpoints.'
         feature_position: right
       -
         id: llbvwfy7
         title: 'Data-Driven Content'
-        text: 'Drive content based on weather, segmentation, live transactions, location and other data inputs to strengthen connection with the customer.'
+        text: 'Connect with your customers through customised content based on weather, customer identification, live order basket, segmentation, live transactions, location, externally managed menu and pricing data, plus much more.'
         feature_position: left
+      -
+        id: llkcmshg
+        title: 'Templated Content'
+        text: 'Smart components make it easy to create standardised content templates that can be adapted based on location and attributes.'
+        feature_position: right
+      -
+        id: llkcnclo
+        title: 'Content Management'
+        text: 'Easily push out content updates from multiple devices through our centralised asset management capabilities.'
+        feature_position: left
+      -
+        id: llkco0gi
+        title: 'Scheduling & Dayparting'
+        text: 'Schedule your digital menu content by daypart, weekpart, season, promotions, and more within our SwitchboardTM CMS dashboard.'
+        feature_position: right
     media_type: image
     size: sm
     reverse_frames: false
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
-    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check size, reduced wait times, and greater order accuracy – with our custom-built Switchboard™️ CMS digital menu board software.'
+    text: 'Leverage your existing data to drive real-time results and efficiencies – such as higher average check, reduced wait times, and increased order accuracy – with our custom-built SwitchboardTM CMS digital menu board software.'
     icon_list:
       -
         id: ll4jid06
         title: 'Dynamic Messaging'
         text: 'Communicate the right message, to the right customer, at the right time by leveraging data integrations and programmable logic.'
-        icon: products_proven_at_scale
+        icon: products_dynamic_messaging
       -
         id: ll4jij4o
         title: 'Customer Experience'
         text: 'Create a personalised and connected customer ordering experience across all internal and external touchpoints.'
-        icon: products_customer_preference
+        icon: products_customer_experience
       -
         id: ll4jiuja
         title: 'Easy to Use'
         text: 'Easily manage menu content, layouts, distribution, and updates, while providing a range of content management access to your team, as needed.'
-        icon: products_drives_roi
+        icon: ease_of_use
       -
         id: ll4jj5yj
         title: 'Real-Time Data & Analytics'
         text: 'Harness valuable data about customer behaviour, merchandising results, menu layout, and content performance to drive real-time ROI.'
-        icon: products_operational_cost
+        icon: real_time_data
     type: icon_list
     enabled: true
-    color: White
+    color:
+      label: White
+      value:
+        - 'rgb(255 255 255)'
     label: White
     value:
       - 'rgb(255 255 255)'
@@ -77,13 +94,12 @@ page_builder:
       - 91ebcfef-1c85-4de0-aa33-a1684829930b
       - 362c0cf4-599c-4d68-8d6c-546359f0751a
       - 3418af77-19bd-4e20-9695-d701a08f09ab
-      - 65037a07-e985-4dd9-a270-4da643c3e5f6
     type: faq
     enabled: true
   -
     id: ll5usujh
     cta_type: render
-    title: 'Got a project with us?'
+    title: 'Learn More About Our Innovative CMS'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
@@ -94,4 +110,5 @@ page_builder:
     enabled: true
 hero_image: products/software/img_software_hero.jpg
 show_product_tabs: false
+overlay_opacity: 100
 ---
