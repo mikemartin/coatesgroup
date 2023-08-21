@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692600634
+updated_at: 1692602226
 text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
@@ -36,7 +36,8 @@ page_builder:
       -
         id: llkgsqmz
         title: 'Order Confirmation Screens'
-        text: 'As the final point of interaction before payment, these dynamic solutions promote customer confidence and order accuracy through a visual confirmation of each order.'
+        text: 'As the final point of interaction before payment, these dynamic solutions promote customer confidence and order accuracy through visual confirmation of each order.'
+        product: 72d335c9-ed5c-4bf4-87e8-a91510aaefcb
       -
         id: llkgt218
         title: 'Crew Facing Screens'
@@ -111,7 +112,7 @@ page_builder:
   -
     id: ll5usujh
     cta_type: render
-    title: 'Got a project with us?'
+    title: 'Ready for a Digital Evolution?'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
