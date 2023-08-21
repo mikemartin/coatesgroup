@@ -8,8 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692602226
-text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
+updated_at: 1692603200
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
@@ -37,15 +36,16 @@ page_builder:
         id: llkgsqmz
         title: 'Order Confirmation Screens'
         text: 'As the final point of interaction before payment, these dynamic solutions promote customer confidence and order accuracy through visual confirmation of each order.'
-        product: 72d335c9-ed5c-4bf4-87e8-a91510aaefcb
+        product: fd807dfb-1285-4115-be4e-0b31eef1863e
       -
         id: llkgt218
         title: 'Crew Facing Screens'
         text: 'Driving a stronger connection between customers and restaurant crews, this solution lives inside the order-taking window and mirrors menu board content to create clarity and opportunities for upsell.'
+        product: 9a4ee33a-5544-48af-bf48-882e8e28496f
     type: products
     enabled: true
-    title: 'Drive thru solutions that engage in any environment'
-    text: 'Global brands like McDonalds, KFC, and Krispy Kreme trust the Coates Group’s industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive-thru experiences and an impactful ROI.'
+    title: 'Solutions Designed for a Seamless Drive Thru Experience'
+    text: 'Global brands rely on our industry-leading digital hardware, data-driven CMS, and end-to-end services to deliver engaging drive thru experiences and an impactful ROI.'
     image: experiences/drive-thru/img_drivethru_render.jpg
   -
     id: ll5ttwbv
@@ -79,11 +79,11 @@ page_builder:
       -
         id: ll4o9zjb
         title: 'Supply Chain & Logistics'
-        icon: supply-chain_logistics_light
+        icon: supply-chain_logistics
       -
         id: ll4oa4l0
         title: 'Content Development & Management'
-        icon: content_management
+        icon: inverse_contentmanagementicon
       -
         id: ll4oab24
         title: 'Program Management'
@@ -95,7 +95,7 @@ page_builder:
       -
         id: llkgvc4j
         title: Support
-        icon: supply-chain_logistics
+        icon: inverse_support
     type: icon_list
     enabled: true
     icon_position: above
