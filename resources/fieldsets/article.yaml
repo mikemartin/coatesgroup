@@ -102,6 +102,13 @@ fields:
               fields:
                 -
                   import: video
+            gallery:
+              display: Gallery
+              instructions: 'A minimal image gallery.'
+              icon: null
+              fields:
+                -
+                  import: gallery
       container: images
       enable_input_rules: true
       enable_paste_rules: true

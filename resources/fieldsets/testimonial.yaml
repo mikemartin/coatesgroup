@@ -1,4 +1,4 @@
-title: 'Testimonial'
+title: Testimonial
 fields:
   -
     handle: title
@@ -50,24 +50,21 @@ fields:
       mode: grid
       listable: true
       instructions_position: below
-      validate:
-        - required
       folder: people
-      instructions: Replace author image
+      instructions: 'Replace author image'
   -
     handle: background
     field:
       default: false
       type: toggle
-      display: 'Background'
+      display: Background
       width: 50
       icon: toggle
   -
     handle: no_bottom_margin
     field:
       type: toggle
-      display: "Remove bottom margin"
+      display: 'Remove bottom margin'
       width: 50
       if:
         background: true
-  

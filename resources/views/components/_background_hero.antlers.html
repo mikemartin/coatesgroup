@@ -37,8 +37,8 @@
                 {{ show_title ?= {partial:typography/p :content="title" color="text-charcoal-40"} }}
                 {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
                 {{ show_resource ?= {partial:components/tags :tags="resources" class="mb-3"} }}
-                {{ show_press ?= {partial:components/tag url="/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
-                {{ show_awards ?= {partial:components/tag url="/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
+                {{ show_press ?= {partial:components/tag url="/insights/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
+                {{ show_awards ?= {partial:components/tag url="/insights/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
                 {{ partial:typography/h1 :content="headline" color="text-white" class="md:max-w-[20ch] {!live_preview ?= 'opacity-0'}" }}
                 {{ supporting_text ?= {partial:typography/p :content="supporting_text" color="text-white" class="mt-2 md:mt-6 max-w-[86ch] {!live_preview ?= 'opacity-0'}"} }}
                 {{ show_location ?= {partial:components/tag tag_type="location" as="span" :title="locations:0:long_title ?? locations:0:title" class="mt-4" } }}
