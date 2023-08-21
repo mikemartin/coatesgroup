@@ -2,8 +2,8 @@
 id: 69c86745-dea0-467a-834a-d008d1a9917b
 blueprint: hardware
 title: 'Building Signage'
-text: 'Lorem ipsum dolor sit amet consectetur. Aliquam leo proin integer vehicula sapien maecenas.'
+text: 'Our building signage provides directional guidance, enhances visibility, reinforces brand recognition, and fosters a sense of familiarity amongst customers.'
 image: products/traditional-signage/wordmark.png
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691995514
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692628593
 ---
