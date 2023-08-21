@@ -1,11 +1,11 @@
 title: 'Call to action'
 data:
-  footer_title: 'Connect with Coates today'
-  footer_text: 'Coates delivers holistic drive-thru experiences encompassing hardware touchpoints and the advanced CMS technology needed to bring them together. Reach out to see how our drive-thru solutions can help maximise the ROI for your brand.'
+  footer_title: 'Connect with Coates Today'
+  footer_text: "Create engaging, connected digital customer journeys with Coates Group solutions. Reach out to see why the world's leading brands trust our innovative technology and end-to-end support."
   footer_buttons:
     -
       id: ljrv2tmg
-      label: 'Get in touch'
+      label: 'Contact us'
       link_type: entry
       target_blank: false
       entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
