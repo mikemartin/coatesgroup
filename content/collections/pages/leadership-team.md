@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692277511
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692748562
 headline: 'Meet our leadership team.'
 enable_hero: false
 hero_type: brand
@@ -52,4 +52,9 @@ page_builder:
       value:
         - 'rgb(254 195 37)'
 text_animation_delay: 0
+center_headline: false
+hide_breadcrumb: false
+overlay_opacity: 0
+seo_title: 'Meet Our Leadership Team | Coates Group'
+seo_description: 'Explore the minds behind Coates Group, leaders in digital signage solutions. Meet the team guiding innovation and excellence in the industry.'
 ---
