@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_products_carousel.antlers.html -->
-<section ax-load x-data="productsCarousel" class="overflow-hidden">
+<section ax-load x-data="productsCarousel({{ products|length }})" class="overflow-hidden">
     <div class="fluid-container">
         {{ if title }}
         <div class="grid md:grid-cols-12 gap-8 md:col-span-12">

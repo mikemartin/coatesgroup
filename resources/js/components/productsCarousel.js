@@ -9,7 +9,7 @@ import 'swiper/css/grid';
 
 Swiper.use([Pagination, Navigation, Mousewheel, A11y, FreeMode, Grid]);
 
-export default () => ({
+export default (products) => ({
     swiper: null,
     init() {
         this.swiper = new Swiper(this.$refs.container, {
@@ -29,7 +29,7 @@ export default () => ({
                   slidesPerView: 3,
                   grid: {
                     fill: 'rows',
-                    rows: 2,
+                    rows: (products < 5) ? 1 : 2,
                   },
                   spaceBetween: 24
               }
