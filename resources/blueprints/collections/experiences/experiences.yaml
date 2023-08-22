@@ -112,3 +112,15 @@ tabs:
               display: Slug
               validate:
                 - required
+          -
+            handle: nav_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Nav Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false

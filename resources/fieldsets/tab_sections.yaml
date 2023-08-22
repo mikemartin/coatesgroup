@@ -11,15 +11,46 @@ fields:
   -
     handle: sections
     field:
-      mode: default
-      create: true
-      collections:
-        - experiences
-        - products
-      display: Sections
-      type: entries
-      icon: entries
+      fields:
+        -
+          handle: section
+          field:
+            mode: default
+            create: true
+            collections:
+              - experiences
+              - products
+            display: Section
+            type: entries
+            icon: entries
+            listable: hidden
+            instructions_position: below
+            max_items: 1
+            width: 33
+            visibility: visible
+            always_save: false
+            instructions: 'Select from the Products or Experiences collections.'
+        -
+          handle: headline
+          field:
+            input_type: text
+            type: text
+            localizable: true
+            width: 66
+            listable: hidden
+            display: Headline
+      mode: table
+      min_rows: 1
+      add_row: 'Add section'
+      reorderable: true
+      type: grid
+      localizable: true
       listable: hidden
-      instructions_position: below
+      display: Sections
+      instructions: Display Product/Experience content or add your own headline.
+      replicator_preview: false
+      instructions_position: above
       visibility: visible
-      always_save: false
+      fullscreen: true
+      hide_display: false
+  

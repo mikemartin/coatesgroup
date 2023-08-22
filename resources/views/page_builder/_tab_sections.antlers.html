@@ -16,7 +16,7 @@ class="overflow-hidden">
                     {{ sections }}
                         <a href="javascript:void(0)" class="!w-auto swiper-slide cursor-pointer !inline-flex h-full items-center font-mono font-normal">
                             <span class="swiper-tab-dot w-4 h-4 bg-green rounded-full mr-3"></span>
-                            {{ nav_title ?? title }}
+                            {{ section:nav_title ?? section:title }}
                         </a>
                     {{ /sections }}
                 </div>
@@ -47,7 +47,7 @@ class="overflow-hidden">
                       <span 
                       :class="{ 'bg-green': activeSlide == {{ index }}, 'border border-charcoal-40': activeSlide !== {{ index }} }"
                       class="w-4 h-4 rounded-full mr-3"></span>
-                      {{ nav_title ?? title }}
+                      {{ section:nav_title ?? section:title }}
                   </span>
                 </button>
               </div>
@@ -69,16 +69,16 @@ class="overflow-hidden">
                             sizes="(min-width: 1280px) 100vw, (min-width: 768px) 50vw, 90vw"
                             cover="true"
                             class="absolute inset-0"
-                            :image="slide:hero_image ?? slide:image"
+                            :image="section:hero_image ?? section:image"
                             lazy="true"
                             skip_ratio_steps="1"
                         }}
                     </figure>
-                    {{ partial:typography/h2 class="mt-6" color="text-neutral" :content="headline" }}
-                    {{ if text }}
-                        {{ partial:typography/p class="mt-4" :content="text" }}
+                    {{ partial:typography/h2 class="mt-6" color="text-neutral" :content="slide:headline ?? section:headline" }}
+                    {{ if section:text }}
+                        {{ partial:typography/p class="mt-4" :content="section:text|widont" }}
                     {{ /if }}
-                    {{ partial:components/button class="mt-6" label="Read More" }}
+                    {{ partial:components/button class="mt-6" label="{trans:strings.learn_more}" }}
                     </div>
                 </div>
             {{ /sections }}

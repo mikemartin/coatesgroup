@@ -24,8 +24,12 @@ page_builder:
     id: ljwuf4kb
     title: Experiences
     sections:
-      - d79b7e76-43f9-49d0-8de5-09ef01c17e5e
-      - ff9d8311-380b-41a3-8521-fca66900b6bb
+      - 
+        section: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
+        headline: 'Seamless, Engaging Drive Thru Solutions'
+      - 
+        section: ff9d8311-380b-41a3-8521-fca66900b6bb
+        headline: 'Indoor Digital Experiences Create a Connected Journey'
     type: tab_sections
     enabled: true
   -
@@ -34,10 +38,18 @@ page_builder:
     type: tab_sections
     enabled: true
     sections:
-      - 10b3a0e8-9688-479e-9a82-6433aa322e55
-      - 5cad4e92-02fa-476d-8ad8-429bdf2aff00
-      - a9353df9-7db6-4dea-8464-bd33c13faa2a
-      - 1d2592aa-536e-4dfd-8901-23b7413fc22a
+      -
+        section: 10b3a0e8-9688-479e-9a82-6433aa322e55
+        headline: 'Digital Menu Boards Engage Customers'
+      - 
+        section: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
+        headline: 'Meet Customers Where They Are'
+      - 
+        section: a9353df9-7db6-4dea-8464-bd33c13faa2a
+        headline: 'Create a Data-Driven Digital Journey'
+      - 
+        section: 1d2592aa-536e-4dfd-8901-23b7413fc22a
+        headline: 'Communicate Brand Messages with Impact'
 headline: 'Digital Signage Solutions Built on Innovation and Engagement'
 hero_type: brand
 background_color:

@@ -52,19 +52,20 @@ return [
     'language_close' => 'Close language picker',
 
     // Insights
-    'insights_all' => 'View All Insights',
+    'insights_all' => 'View all insights',
     'insights_more' => 'More articles',
     'insights_next' => 'Next',
     'insights_read_more' => 'Read more',
-    'blog_all' => 'View All Blogs',
-    'awards_all' => 'View All Awards',
-    'press_all' => 'View All Press',
-    'thought_leadership_all' => 'View All Thought Leadership',
+    'blog_all' => 'View all blogs',
+    'awards_all' => 'View all awards',
+    'press_all' => 'View all press',
+    'thought_leadership_all' => 'View all thought leadership',
 
     'read_more' => 'Read more',
+    'learn_more' => 'Learn more',
 
     // Case Studies
-    'case_studies_all' => 'View Case Studies',
+    'case_studies_all' => 'View case studies',
 
     // Other
     'no_results'                        => 'There are currently no posts.',

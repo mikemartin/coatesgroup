@@ -27,7 +27,7 @@
                                 >
                                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                                     {{ if product }}
-                                        {{ partial:components/button button_type="inline" as="span" label="View More" faux="true" }}
+                                        {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}
                                         <a href="{{ product:url }}" class="absolute inset-0"></a>
                                     {{ /if }}
                                 </div>
@@ -44,7 +44,7 @@
                 <div class="relative border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary">
                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                     {{ if product:url }}
-                        {{ partial:components/button button_type="inline" as="span" label="View More" faux="true" }}
+                        {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}
                         <a href="{{ product:url }}" class="absolute inset-0"></a>
                     {{ /if }}
                 </div>

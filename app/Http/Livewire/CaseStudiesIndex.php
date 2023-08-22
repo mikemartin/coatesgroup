@@ -41,6 +41,7 @@ class CaseStudiesIndex extends Component
             ->get();
         $case_studies = Entry::query()
             ->where('collection', 'case_studies')
+            ->where('published', true)
             ->orderBy('order')
             ->when($this->industry, function ($query) {
                 return $query->whereJsonContains('industries', $this->industry);

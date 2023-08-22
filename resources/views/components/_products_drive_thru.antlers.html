@@ -56,7 +56,7 @@ class="w-full">
                                         {{ partial:typography/large class="font-medium mb-4 mx-auto" :content="custom:title ?? product:title" }}
                                         {{ partial:typography/p class="mb-4 lg:max-w-md lg:mx-auto" :content="custom:text ?? product:text" }}
                                         {{ if product:url }}
-                                            {{ partial:components/button :url="product:url" button_type="inline" label="View More" class="mx-auto" }}
+                                            {{ partial:components/button :url="product:url" button_type="inline" label="{trans:strings.learn_more}" class="mx-auto" }}
                                         {{ /if }}
                                     </div>
                                 </div>
