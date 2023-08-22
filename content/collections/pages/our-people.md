@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692279569
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692748781
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 enable_hero: false
 hero_type: brand
@@ -47,4 +47,9 @@ page_builder:
     cta_type: illustration
     enabled: true
 text_animation_delay: 0
+center_headline: false
+hide_breadcrumb: false
+overlay_opacity: 0
+seo_title: 'Get To Know Our Team Of Experts and Innovators | Coates Group'
+seo_description: 'Get to know our team of innovators, experts and deisgners. We are a diverse and commited team. Would you like to join us?'
 ---
