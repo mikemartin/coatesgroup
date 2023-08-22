@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692718110
+updated_at: 1692719340
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
@@ -42,8 +42,8 @@ page_builder:
   -
     id: ll5ttwbv
     title: Software
-    headline: 'Our SwitchboardTM CMS Brings Your Drive Thru Experience to Life'
-    text: 'Our proprietary SwitchboardTM CMS provides a single, centralised solution for managing messaging across all drive thru hardware touchpoints, while our advanced analytics capabilities and  integrations drive a seamless and connected customer experience.'
+    headline: 'Our Switchboard™ CMS Brings Your Drive Thru Experience to Life'
+    text: 'Our proprietary Switchboard™ CMS provides a single, centralised solution for managing messaging across all drive thru hardware touchpoints, while our advanced analytics capabilities and integrations drive a seamless and connected customer experience.'
     buttons:
       -
         id: ll5tu4ih
