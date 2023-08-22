@@ -2,8 +2,8 @@
 id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692668653
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692718960
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
