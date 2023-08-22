@@ -3,7 +3,7 @@ id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Boards'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692602702
+updated_at: 1692686222
 headline: 'Designed to Power Connected Customer Journeys'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
 enable_hero: true
@@ -14,7 +14,7 @@ page_builder:
     id: llagiv1p
     title: 'Outdoor Digital Menuboard'
     headline: 'Elevate the Drive Thru Ordering Experience'
-    text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary SwitchboardTM CMS - our outdoor digital signage solutions deliver highly targeted and compelling messaging.'
+    text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary Switchboard™ CMS - our outdoor digital signage solutions deliver highly targeted and compelling messaging.'
     images:
       - products/outdoor-digital-menu-board/o4odmb_double_front_transparent@2x.png
       - products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
@@ -73,12 +73,12 @@ page_builder:
       -
         id: ll4om391
         title: 'Dynamic Messaging'
-        text: 'When powered by our SwitchboardTM CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
+        text: 'When powered by our Switchboard™ CMS, menu content and promotional messaging become dynamic, evolving when and how you need them to.'
         icon: products_dynamic_messaging
       -
         id: ll4om45u
         title: 'Immersive Ordering'
-        text: 'Enabled by SwitchboardTM our menu board solution features a customer order display, suggestive selling, and personalised content.'
+        text: 'Enabled by Switchboard™ our menu board solution features a customer order display, suggestive selling, and personalised content.'
         icon: products_immersive_ordering
       -
         id: ll4om4qs
