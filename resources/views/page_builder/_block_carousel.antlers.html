@@ -20,18 +20,18 @@
         <div class="mt-10 md:mt-20 swiper !pb-14 !overflow-x-visible" x-ref="container">
             <div class="swiper-wrapper">
                 {{ block:blocks }}
-                    <div class="swiper-slide">
-                        <figure class="aspect-[7/5] lg:aspect-[5/2]">
+                    <div class="swiper-slide !h-auto !flex !flex-col">
+                        <figure class="aspect-[7/5] lg:aspect-[2/1]">
                             {{ partial
                                 src="statamic-peak-tools::components/picture"
                                 sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                                aspect_ratio="7/5 large:5/2"
+                                aspect_ratio="7/5 large:2/1"
                                 cover="true"
                                 lazy="true"
                             }}
                         </figure>
 
-                        <div class="px-8 pt-6 pb-12 relative bg-black">
+                        <div class="px-8 pt-6 pb-12 relative bg-black flex-1">
                             {{ partial:typography/large color="text-white font-medium" :content="title" }}
                             {{ partial:typography/p class="text-white text-sm" :content="text" }}
                         </div>
