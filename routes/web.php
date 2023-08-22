@@ -24,7 +24,6 @@ Route::redirect('/2017-2/', '/insights/blog', 301);
 Route::redirect('/2017-sydney-team-event/', '/insights/blog/2017-sydney-team-event', 301);
 Route::redirect('/2021-burger-hack/', '/insights/blog', 301);
 Route::redirect('/55-year-of-coates/', '/insights/blog/55-year-of-coates', 301);
-Route::redirect('/about-us/', '/about-us', 301);
 Route::redirect('/adding-strength-to-the-us-team/', '/insights/blog', 301);
 Route::redirect('/ampol/', '/insights/blog/australias-leading-signage-company-coates-group-selected-as-key-partner-in-relaunch-of-iconic-fuel-brand-ampol', 301);
 Route::redirect('/an-industry-first-in-vr/', '/insights/blog', 301);
@@ -83,7 +82,6 @@ Route::redirect('/coates-x-national-restaurant-association/', '/insights/blog/co
 Route::redirect('/coates-x-unstoppable-2017-mcdonalds-owner-operator-convention/', '/insights/blog/coates-x-unstoppable-2017-mcdonalds-owner-operator-convention', 301);
 Route::redirect('/coatescornersoftheglobe-2018/', '/insights/blog', 301);
 Route::redirect('/congratulations-to-the-mcdonalds-mea-team/', '/insights/blog/congratulations-to-the-mcdonalds-mea-team', 301);
-Route::redirect('/contact/', '/contact', 301);
 Route::redirect('/display/', '/what-we-do/indoor-digital-menu-board', 301);
 Route::redirect('/ed-welsh-at-dse/', '/insights/blog', 301);
 Route::redirect('/farewell-2019/', '/insights/blog', 301);
