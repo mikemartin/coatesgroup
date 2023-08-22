@@ -8,8 +8,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692274713
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692748654
 page_builder:
   -
     id: llf4o2iv
@@ -26,4 +26,9 @@ hero_color:
     - 28)
 hero_extend: false
 text_animation_delay: 0
+center_headline: false
+hide_breadcrumb: false
+overlay_opacity: 0
+seo_title: 'Discover Our Global Office Locations | Coates Group'
+seo_description: "Explore Coates Group's global offices. Connect with us for cutting-edge digital signage and merchandising solutions. Reach out today!"
 ---
