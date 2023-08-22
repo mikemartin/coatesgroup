@@ -108,6 +108,6 @@ page_builder:
     type: call_to_action
     enabled: true
 show_product_tabs: true
-nav_title: 'Digital Menu Boards'
+nav_title: 'Indoor Digital Menu Boards'
 overlay_opacity: 100
 ---

@@ -11,7 +11,7 @@
                         <a class="p-1 -m-1 {{ if page:url == url }}text-black{{else}}text-charcoal-40 hover:text-black{{/if}} inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary" href="{{ url }}">
                             <span class="flex">
                                 {{ if page:url == url }}<span class="w-4 h-4 bg-green rounded-full mr-3"></span>{{/if}}
-                                {{ title }}
+                                {{ nav_title ?? title }}
                             </span>
                         </a>
                     </li>

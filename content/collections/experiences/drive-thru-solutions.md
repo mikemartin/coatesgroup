@@ -19,28 +19,20 @@ page_builder:
       -
         id: e7WAWvsw
         text: 'Positioned before the order point, pre-sell displays deliver targeted marketing and promotions to customers entering the drive thru.'
-        focal_point: 14-64-2
         product: 22e8175d-2f1e-4e29-85a7-c548dbec709e
       -
         id: ll5xbxfr
         product: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
         title: 'Outdoor Digital Menu Boards'
         text: 'Our outdoor digital signage enables dynamic menu content, helps optimise the customer experience, and drives ROI for your brand.'
-        focal_point: 42-68-1
       -
         id: ll5xd97z
-        text: 'Outdoor order-taking units can incorporate cameras, scanners, Bluetooth, and other interactive technologies to better communicate with customers.'
-        focal_point: 76-57-1
         product: b9fbdbf2-c567-4a71-9894-a9f0a8293289
       -
         id: llkgsqmz
-        title: 'Order Confirmation Screens'
-        text: 'As the final point of interaction before payment, these dynamic solutions promote customer confidence and order accuracy through visual confirmation of each order.'
         product: fd807dfb-1285-4115-be4e-0b31eef1863e
       -
         id: llkgt218
-        title: 'Crew Facing Screens'
-        text: 'Driving a stronger connection between customers and restaurant crews, this solution lives inside the order-taking window and mirrors menu board content to create clarity and opportunities for upsell.'
         product: 9a4ee33a-5544-48af-bf48-882e8e28496f
     type: products
     enabled: true
