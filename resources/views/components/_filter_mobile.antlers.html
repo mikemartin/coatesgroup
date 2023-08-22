@@ -23,7 +23,7 @@
             <label
                 for="filter-mobile-{{ label|slugify }}-{{ slug }}"
                 class="w-full flex items-center ml-2 font-mono group-hover:font-medium text-black whitespace-nowrap">
-                {{ title }}
+                {{ nav_title ?? title }}
             </label>
           </div>
         {{ /options }}
