@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692671152
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692719653
 page_builder:
   -
     id: lk0po80o
@@ -112,7 +112,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'My experience has helped me grow into a technology leader to set the vision for our proprietary CMS by bringing it to life through our amazing technologists and partnering with world class enterprise customers to address their everyday business challenges. The future of our technology and how it revolutionises the way businesses connect with their audiences, is something I’m passionate about, and couldn’t be more thrilled for the journey ahead at Coates Group!'
+            text: 'My experience has helped me grow into a technology leader to set the vision for our proprietary CMS by bringing it to life through our amazing technologists and partnering with world-class enterprise customers to address their everyday business challenges. The future of our technology and how it revolutionises the way businesses connect with their audiences is something I’m passionate about, and couldn’t be more thrilled for the journey ahead at Coates Group!'
     author: 4142e41e-8977-4681-a060-a5bbdd355d91
     buttons:
       -
@@ -135,7 +135,7 @@ page_builder:
     type: call_to_action
     cta_type: illustration
     enabled: true
-    label: 'Apply Now'
+    label: 'Apply now'
     link_type: entry
     target_blank: false
     entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
