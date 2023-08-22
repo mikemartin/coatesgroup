@@ -46,7 +46,7 @@
         {{ /if }}
         <div>
             <span id="{{ title | slugify }}">
-                {{ partial:typography/h3 color="text-white" :content="title" }}
+                {{ partial:typography/h3 color="text-white" :content="headline" }}
             </span>
             {{ if client }}
                 {{ partial:typography/annotation :content="client:title" class="mt-1" }}
