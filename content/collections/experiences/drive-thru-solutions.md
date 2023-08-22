@@ -8,9 +8,9 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692609680
+updated_at: 1692693553
 image: experiences/drive-thru/img_drivethru_hero.jpg
-headline: 'Seamless, Engaging Drive Thru Solutions'
+headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
   -
     id: ll5xa828
@@ -63,15 +63,15 @@ page_builder:
       -
         id: ll4o92ig
         title: Design
-        icon: design
+        icon: inverse_design
       -
         id: ll4o9tpc
         title: Manufacturing
-        icon: manulogistics
+        icon: inverse_manulogistics
       -
         id: ll4o9zjb
         title: 'Supply Chain & Logistics'
-        icon: supply-chain_logistics
+        icon: supply-chain_logistics-(3)
       -
         id: ll4oa4l0
         title: 'Content Development & Management'
@@ -79,11 +79,11 @@ page_builder:
       -
         id: ll4oab24
         title: 'Program Management'
-        icon: projectmanagement
+        icon: inverse_programmanagement
       -
         id: ll4oaezz
         title: 'Delivery & Installation'
-        icon: installation
+        icon: inverse_installation
       -
         id: llkgvc4j
         title: Support
@@ -114,5 +114,4 @@ page_builder:
     type: call_to_action
     enabled: true
 overlay_opacity: 100
-text: 'Our powerful combination of industry-leading hardware, a dynamic and data-driven CMS, and end-to-end services enables the world’s most prominent brands to deliver unparalleled drive thru experiences for their customers as well as generate impactful ROI.'
 ---
