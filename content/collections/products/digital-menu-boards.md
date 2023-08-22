@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692610251
+updated_at: 1692686145
 headline: 'Digital Menu Boards Engage Customers'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
@@ -14,7 +14,7 @@ page_builder:
     id: lla767is
     title: 'Indoor Digital Menuboard'
     headline: 'Enhance Your In Restaurant Ordering Experience'
-    text: 'Deployed in thousands of restaurants around the world, our indoor digital menu boards combine intuitive design, flexible mounting options, and leading technology. Pair them with our SwitchboardTM CMS to create powerful, dynamic touchpoints in the connected restaurant ecosystem.'
+    text: 'Deployed in thousands of restaurants around the world, our indoor digital menu boards combine intuitive design, flexible mounting options, and leading technology. Pair them with our Switchboard™ CMS to create powerful, dynamic touchpoints in the connected restaurant ecosystem.'
     images:
       - products/indoor-digital-menu-board/idmb_landscape_hero_transparentbg.png
       - products/indoor-digital-menu-board/idmb_landscape_front_transparentbg.png
@@ -39,7 +39,7 @@ page_builder:
       -
         id: llaugu7u
         title: 'Powered by Switchboard™'
-        text: 'When powered by SwitchboardTM CMS, menu content and promotional messaging become dynamic -evolving whenever and however you need.'
+        text: 'When powered by Switchboard™ CMS, menu content and promotional messaging become dynamic -evolving whenever and however you need.'
         feature_position: right
     type: product_features
     enabled: true
