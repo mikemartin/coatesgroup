@@ -3,7 +3,7 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosks'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692610312
+updated_at: 1692686286
 headline: 'Meet Customers Where They Are'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
