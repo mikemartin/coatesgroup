@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692338095
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692750591
 enable_hero: false
 page_builder:
   -
@@ -46,4 +46,5 @@ text_animation_delay: 0
 overlay_opacity: 0
 center_headline: true
 hide_breadcrumb: true
+seo_description: "Review Coates Group's privacy policy for a clear understanding about our data handling and protection. Understand our commitment to your privacy. Read now."
 ---
