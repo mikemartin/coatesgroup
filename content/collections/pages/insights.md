@@ -77,6 +77,11 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692019784
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692750433
+center_headline: false
+hide_breadcrumb: false
+text_animation_delay: 0
+overlay_opacity: 0
+seo_description: "Stay updated with Coates Group's latest press releases & news. Explore our achievements & innovations. Stay informed - Dive into our press section now!"
 ---
