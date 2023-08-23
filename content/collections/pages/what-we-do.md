@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692610390
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692751511
 page_builder:
   -
     id: ljwscq36
@@ -24,10 +24,12 @@ page_builder:
     id: ljwuf4kb
     title: Experiences
     sections:
-      - 
+      -
+        id: Sa8bqt39
         section: d79b7e76-43f9-49d0-8de5-09ef01c17e5e
         headline: 'Seamless, Engaging Drive Thru Solutions'
-      - 
+      -
+        id: B2fuwTBn
         section: ff9d8311-380b-41a3-8521-fca66900b6bb
         headline: 'Indoor Digital Experiences Create a Connected Journey'
     type: tab_sections
@@ -39,15 +41,19 @@ page_builder:
     enabled: true
     sections:
       -
+        id: Xs6G1rxk
         section: 10b3a0e8-9688-479e-9a82-6433aa322e55
         headline: 'Digital Menu Boards Engage Customers'
-      - 
+      -
+        id: dOctVF9K
         section: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
         headline: 'Meet Customers Where They Are'
-      - 
+      -
+        id: vQ1UULmC
         section: a9353df9-7db6-4dea-8464-bd33c13faa2a
         headline: 'Create a Data-Driven Digital Journey'
-      - 
+      -
+        id: 3cLgtpfL
         section: 1d2592aa-536e-4dfd-8901-23b7413fc22a
         headline: 'Communicate Brand Messages with Impact'
 headline: 'Digital Signage Solutions Built on Innovation and Engagement'
@@ -67,4 +73,5 @@ hero_color:
 hero_extend: true
 text_animation_delay: 0
 overlay_opacity: 0
+seo_description: 'Coates Group deliver connected customer experiences for drive thru and in restaurant experiences. Learn more.'
 ---
