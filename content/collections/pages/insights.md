@@ -77,11 +77,12 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692750470
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692776854
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
 overlay_opacity: 0
 seo_description: 'Get insights about Coates Group from our blog, webinars, thought leadership & more. Visit our website.'
+seo_title: 'Insights into Digital Signage Solutions & Trends | Coates Group'
 ---
