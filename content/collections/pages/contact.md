@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692750392
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692776782
 page_builder:
   -
     id: ljmfvd7s
@@ -43,4 +43,5 @@ enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 100
 seo_description: 'Contact our team to find out how our end-to-end digital merchandising solutions can drive engaging customer journeys for your business. Contact us today.'
+seo_title: 'Contact Us to Discuss Your Digital Signage Needs | Coates Group'
 ---
