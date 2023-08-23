@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692718085
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692751646
 headline: 'A Connected Restaurant Ecosystem'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
 page_builder:
@@ -126,4 +126,5 @@ page_builder:
     enabled: true
 overlay_opacity: 100
 text: 'Build compelling in restaurant experiences through the installation of our digital menu boards, self-service kiosks, CMS software and peripheral solutions.'
+seo_description: 'We combine our digital hardware, dynamic content management system, and end-to-end support to upgrade your in restaurant experience. Contact us today.'
 ---
