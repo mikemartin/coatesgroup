@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692751511
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692783538
 page_builder:
   -
     id: ljwscq36
@@ -74,4 +74,5 @@ hero_extend: true
 text_animation_delay: 0
 overlay_opacity: 0
 seo_description: 'Coates Group deliver connected customer experiences for drive thru and in restaurant experiences. Learn more.'
+seo_title: 'Digital Signage Solutions Built on Innovation | Coates Group'
 ---
