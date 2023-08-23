@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692719653
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692748916
 page_builder:
   -
     id: lk0po80o
@@ -150,4 +150,6 @@ hero_extend: true
 enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 0
+seo_title: 'Join the Crew of a Leading Digital Signage Company | Coates Group'
+seo_description: "Join a Crew that's built on connection. We're always looking for curious, and authentic Crew members to join our digital signage company. Contact us today."
 ---
