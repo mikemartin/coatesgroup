@@ -3,13 +3,13 @@ id: home
 blueprint: page
 title: Home
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692608801
+updated_at: 1692777635
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-headline: 'Award-Winning Connected Restaurant  Technology for Leading Brands Worldwide'
+headline: 'Award-Winning Connected Restaurant Technology for Leading Brands Worldwide'
 page_builder:
   -
     id: ljs2lhvj
@@ -31,7 +31,7 @@ page_builder:
       -
         id: ljs2mon9
         title: 'In Restaurant'
-        text: 'Deliver engaging in restaurant customer experiences through our industry-leading hardware, proprietary SwitchboardTM CMS, and end-to-end services.'
+        text: 'Deliver engaging in restaurant customer experiences through our industry-leading hardware, proprietary Switchboard™ CMS, and end-to-end services.'
         label: 'See more'
         show_arrow: true
         image: homepage/inrestaurant.jpg
@@ -70,7 +70,7 @@ page_builder:
       -
         id: ljs3oszb
         title: 'Content Management'
-        text: 'With SwitchboardTM - brands can create, manage, distribute, and display digital content based on real-time data and rich analytics to orchestrate a seamless customer journey.'
+        text: 'With Switchboard™ - brands can create, manage, distribute, and display digital content based on real-time data and rich analytics to orchestrate a seamless customer journey.'
         image: homepage/software.jpg
         label: 'See more'
         show_arrow: false
