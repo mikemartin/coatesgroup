@@ -78,7 +78,7 @@ class="overflow-hidden">
                     {{ if section:text }}
                         {{ partial:typography/p class="mt-4" :content="section:text|widont" }}
                     {{ /if }}
-                    {{ partial:components/button class="mt-6" label="{trans:strings.learn_more}" }}
+                    {{ partial:components/button class="mt-6" :url="section:url" label="{trans:strings.learn_more}" }}
                     </div>
                 </div>
             {{ /sections }}
