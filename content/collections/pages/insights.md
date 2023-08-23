@@ -78,10 +78,10 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692750433
+updated_at: 1692750470
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
 overlay_opacity: 0
-seo_description: "Stay updated with Coates Group's latest press releases & news. Explore our achievements & innovations. Stay informed - Dive into our press section now!"
+seo_description: 'Get insights about Coates Group from our blog, webinars, thought leadership & more. Visit our website.'
 ---
