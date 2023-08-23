@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692579497
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1692750037
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -179,4 +179,6 @@ page_builder:
 enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 0
+seo_title: 'About Coates: Digital Signage Solutions Leader | Coates Group'
+seo_description: 'Discover our mission: forging human connections, empowering partnerships, and always pushing boundaries. Revolutionise brand tech experiences. Learn more!'
 ---
