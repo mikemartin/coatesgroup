@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692783613
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692856481
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
@@ -21,13 +21,13 @@ page_builder:
         text: 'Positioned before the order point, pre-sell displays deliver targeted marketing and promotions to customers entering the drive thru.'
         product: 22e8175d-2f1e-4e29-85a7-c548dbec709e
       -
+        id: ll5xd97z
+        product: b9fbdbf2-c567-4a71-9894-a9f0a8293289
+      -
         id: ll5xbxfr
         product: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
         title: 'Outdoor Digital Menu Boards'
         text: 'Our outdoor digital signage enables dynamic menu content, helps optimise the customer experience, and drives ROI for your brand.'
-      -
-        id: ll5xd97z
-        product: b9fbdbf2-c567-4a71-9894-a9f0a8293289
       -
         id: llkgsqmz
         product: fd807dfb-1285-4115-be4e-0b31eef1863e
