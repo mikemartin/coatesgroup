@@ -1,4 +1,4 @@
-<div class="hidden md:block border-charcoal-20 border-t border-b">
+<div class="hidden md:block sticky top-0 z-50 bg-white/95 border-charcoal-20 border-t border-b">
     <div class="flex fluid-container h-16 md:h-[4.5rem] justify-start items-center">
         <div class="pr-12">
             {{ partial:typography/large content="Products"}}
@@ -22,4 +22,4 @@
     </div>
 </div>
 
-{{ partial:components/dropdown_mobile label="Products" options="{ product_types limit="2" }" class="md:hidden" }}
+{{ partial:components/dropdown_mobile label="Products" options="{ product_types }" class="md:hidden" }}

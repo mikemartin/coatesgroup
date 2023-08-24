@@ -189,7 +189,6 @@ page_builder:
         - 'rgb(255 255 255)'
     type: icon_list
     enabled: true
-    icon_position: left_side
     product_type: outdoor-digital-menu-board
   -
     id: AZtKE6vJ
