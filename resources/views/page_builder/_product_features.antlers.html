@@ -5,49 +5,48 @@
 #}}
 
 <!-- /page_builder/_product_features.antlers.html -->
-<section class="-z-10 relative fluid-container product-features">
-        <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
-            <div class="{{ switch(
-                (size == 'md') => 'md:col-span-6 md:col-start-4',
-                (size == 'lg') => 'md:col-span-8 md:col-start-3',
-                () => 'md:col-span-6 md:col-start-4'
-            )}} h-full">
-                <div class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
-                    <div x-data="fadeIn" 
-                        x-init="hide($el)" 
-                        x-intersect:enter.margin.-20%="fadeIn($el)"
-                        x-intersect:leave.margin.-20%="fadeOut($el)"
-                        class="{{ size == 'sm' ?= 'max-w-xl' }}">
-                        {{ if animation }}
-                            {{ partial:components/product_animation  }}
-                        {{ else }}
-                            <figure>
-                                {{ partial
-                                    src="statamic-peak-tools::components/picture"
-                                    sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                                }}
-                            </figure>
-                        {{ /if }}
-                    </div>
+<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'"{{/if}} class="-z-10 relative fluid-container" id="{{ block:product_type:slug ?? page:slug }}-features">
+    <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
+        <div class="{{ switch(
+            (size == 'md') => 'md:col-span-6 md:col-start-4',
+            (size == 'lg') => 'md:col-span-8 md:col-start-3',
+            () => 'md:col-span-6 md:col-start-4'
+        )}} h-full">
+            <div class="md:sticky md:top-0 md:h-[75vh] md:flex md:items-center md:justify-center">
+                <div x-data="fadeIn" 
+                    x-init="hide($el)" 
+                    x-intersect:enter.margin.-20%="fadeIn($el)"
+                    x-intersect:leave.margin.-20%="fadeOut($el)"
+                    class="{{ size == 'sm' ?= 'max-w-xl' }}">
+                    {{ if animation }}
+                        {{ partial:components/product_animation  }}
+                    {{ else }}
+                        <figure>
+                            {{ partial
+                                src="statamic-peak-tools::components/picture"
+                                sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                            }}
+                        </figure>
+                    {{ /if }}
                 </div>
             </div>
         </div>
-        
-        {{ features }}
-        <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12 {{ if first }} md:mt-[10vh] {{/if}} {{ if last }} md:mb-[10vh] {{/if}}">
-            <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
-                    <div class="md:h-[45vh] md:flex md:items-center">
-                        <div x-data="fadeIn" 
-                        x-init="hide($el)" 
-                        x-intersect:enter.margin.-20%="fadeIn($el)"
-                        x-intersect:leave.margin.-20%="fadeOut($el)">
-                            {{ partial:typography/large class="font-medium" :content="title" }}
-                            {{ partial:typography/p :content="text" class="mt-3" color="text-charcoal" }}
-                        </div>
-                    </div>
-            </div>
-        </div>
-        {{ /features }}
     </div>
+    
+    {{ features }}
+    <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12 {{ if first }} md:mt-[10vh] {{/if}} {{ if last }} md:mb-[10vh] {{/if}}">
+        <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
+                <div class="md:h-[45vh] md:flex md:items-center">
+                    <div x-data="fadeIn" 
+                    x-init="hide($el)" 
+                    x-intersect:enter.margin.-20%="fadeIn($el)"
+                    x-intersect:leave.margin.-20%="fadeOut($el)">
+                        {{ partial:typography/large class="font-medium" :content="title" }}
+                        {{ partial:typography/p :content="text" class="mt-3" color="text-charcoal" }}
+                    </div>
+                </div>
+        </div>
+    </div>
+    {{ /features }}
 </section>
 <!-- End: /page_builder/_product_features.antlers.html -->

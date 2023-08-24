@@ -1,6 +1,25 @@
 title: FAQ
 fields:
   -
+    handle: product_type
+    field:
+      mode: select
+      create: true
+      taxonomies:
+        - product_types
+      type: terms
+      display: Product Type
+      max_items: 1
+      icon: taxonomy
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      hide_display: false
+      instructions: 'When to show this section.'
+      width: 50
+      if:
+        root.show_product_types: 'equals true'
+  -
     handle: title
     field:
       input_type: text

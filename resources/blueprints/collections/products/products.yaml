@@ -64,11 +64,12 @@ tabs:
               hide_display: false
               instructions: 'Replace page header with hero.'
           -
-            handle: show_product_tabs
+            handle: show_product_types
             field:
               default: false
               type: toggle
-              display: 'Show Product Tabs'
+              display: 'Show Product Types'
+              instructions: 'Add tabs to show or hide product type sections.'
               icon: toggle
               listable: hidden
               instructions_position: above
@@ -123,4 +124,19 @@ tabs:
               listable: hidden
               instructions_position: above
               visibility: visible
+              hide_display: false
+          -
+            handle: product_types
+            field:
+              type: terms
+              taxonomies:
+                - product_types
+              display: 'Product Types'
+              mode: default
+              if:
+                show_product_types: 'equals true'
+              instructions_position: above
+              listable: true
+              visibility: visible
+              create: true
               hide_display: false

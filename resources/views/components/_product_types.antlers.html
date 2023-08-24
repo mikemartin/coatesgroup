@@ -1,0 +1,25 @@
+<div class="hidden md:block border-charcoal-20 border-t border-b">
+    <div class="flex fluid-container h-16 md:h-[4.5rem] justify-start items-center">
+        <div class="pr-12">
+            {{ partial:typography/large content="Products"}}
+        </div>
+        <div class="border-r border-chacoal-20 h-1/2"></div>
+        <nav class="overflow-auto h-full flex items-center pl-12">
+            <ul class="flex items-center space-x-8">
+                {{ product_types }}
+                    <li class="relative leading-none shrink-0">
+                        <button
+                        @click="product_type = '{{ slug }}'"
+                        :class="product_type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
+                        class="p-1 -m-1 inline-flex items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                            <span x-show="product_type == '{{slug}}'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            {{ title }}
+                        </button>
+                    </li>
+                {{ /product_types }}
+            </ul>
+        </nav>
+    </div>
+</div>
+
+{{ partial:components/dropdown_mobile label="Products" options="{ product_types limit="2" }" class="md:hidden" }}

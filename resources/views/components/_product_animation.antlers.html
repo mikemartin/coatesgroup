@@ -1,7 +1,7 @@
 <figure
     x-ignore
     ax-load="visible"
-    x-data="animatedRender('{{ animation }}', {{ frames - 1 }}, {{ reverse_frames }})"
+    x-data="animatedRender('{{ animation }}', {{ frames - 1 }}, '#{{ block:product_type:slug ?? page:slug }}-features', {{ reverse_frames }})"
     class="{{ class }}"
     aria-hidden="true"
 >
