@@ -2,8 +2,8 @@
 id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
 title: 'Outdoor Digital Menu Boards'
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692686222
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692853102
 headline: 'Designed to Power Connected Customer Journeys'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
 enable_hero: true
@@ -96,7 +96,7 @@ page_builder:
         - 'rgb(255 255 255)'
     type: icon_list
     enabled: true
-    icon_position: above
+    icon_position: left_side
   -
     id: llaglr87
     title: 'Frequently Asked Questions'
