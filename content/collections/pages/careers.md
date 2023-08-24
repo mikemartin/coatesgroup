@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692748916
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692914374
 page_builder:
   -
     id: lk0po80o
@@ -55,7 +55,7 @@ page_builder:
     buttons:
       -
         id: lko2nskr
-        label: 'About Us'
+        label: 'About us'
         link_type: entry
         target_blank: false
         entry: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
