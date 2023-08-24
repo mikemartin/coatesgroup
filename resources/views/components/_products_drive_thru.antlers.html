@@ -22,12 +22,14 @@ class="w-full">
         <div class="overflow-hidden">
             <figure class="h-80 md:h-[514px] relative flex items-center justify-center">
                 <img src="{{ block:image }}" alt="" 
-                class="max-w-none h-full transition duration-1000 transform scale-[1.75] -translate-y-[5%] translate-x-[63%]"
+                class="max-w-none h-full transition origin-left duration-1000 transform translate-x-[26%] -translate-y-[5%] scale-[1.75]"
                 aria-hidden="true" loading="lazy"
                 :class="{ 
-                'translate-x-[63%] -translate-y-[5%] scale-[1.75]': activeSlide == 0, 
-                'translate-x-[10%] -translate-y-[5%] scale-150': activeSlide == 1, 
-                '-translate-x-1/3 scale-125 ': activeSlide == 2 
+                'translate-x-[26%] -translate-y-[5%] scale-[1.75]': activeSlide == 0, {{# Pre-Sell Displays #}}
+                '-translate-x-[27%] -translate-y-[17%] scale-[2]': activeSlide == 1, {{# Order Confirmation Units #}}
+                '-translate-x-[18%] -translate-y-[5%] scale-[1.5]': activeSlide == 2, {{# Outdoor DMB #}}
+                '-translate-y-[16%] -translate-x-[72%] scale-[1.75]': activeSlide == 3, {{# Order Confirmation Screens #}}
+                '-translate-x-[49%] scale-[1.25] ': activeSlide == 4, {{# Crew Facing Screens #}}
                 }"
                 >
             </figure>
@@ -38,12 +40,12 @@ class="w-full">
                         <!-- If we need navigation buttons -->
                         <div class="w-full flex justify-center gap-16 mb-8 lg:mb-0">
                             <div class="swiper-prev transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:left-0">
-                                <div class="p-3" :class="{ 'animate-bob': activeSlide == 2 }">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide == 5 }">
                                     {{ svg:chevron-big-left class="w-8 h-8" }}
                                 </div>
                             </div>
                             <div class="swiper-next transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:right-0">
-                                <div class="p-3" :class="{ 'animate-bob': activeSlide < 2 }">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide < 5 }">
                                     {{ svg:chevron-big-right class="w-8 h-8" }}
                                 </div>
                             </div>
