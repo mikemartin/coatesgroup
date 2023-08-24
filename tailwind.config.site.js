@@ -70,6 +70,9 @@ module.exports = {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        '14': 'repeat(14, minmax(0, 1fr))',
+      },
       animation: {
         bob: 'bob 1s infinite',
       },
