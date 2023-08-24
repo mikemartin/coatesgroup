@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692776782
+updated_at: 1692914304
 page_builder:
   -
     id: ljmfvd7s
@@ -38,7 +38,7 @@ page_builder:
         - 'rgb(0 162 222)'
 hero_type: image
 hero_image: contact/img_contact_hero.jpg
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: 'Ready to Get Started? Contact Us Today!'
 enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 100
