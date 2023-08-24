@@ -118,7 +118,6 @@ Route::redirect('/payments/', '/what-we-do/software', 301);
 Route::redirect('/portfolio-sitemap.xml', '/sitemap.xml', 301);
 Route::redirect('/post_tag-sitemap.xml', '/sitemap.xml', 301);
 Route::redirect('/post-sitemap.xml', '/sitemap.xml', 301);
-Route::redirect('/privacy-policy/', '/privacy-policy', 301);
 Route::redirect('/project-type-sitemap.xml', '/sitemap.xml', 301);
 Route::redirect('/project-type/digital-outdoor/', '/what-we-do/outdoor-digital-menu-board', 301);
 Route::redirect('/project-type/digital-signage/', '/what-we-do/indoor-digital-menu-board', 301);
