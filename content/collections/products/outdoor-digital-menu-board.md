@@ -1,9 +1,9 @@
 ---
 id: 75485d54-8422-4ab9-8bf5-bdc70eb4b74a
 blueprint: products
-title: 'Outdoor Digital Menu Boards'
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692918429
+title: 'Outdoor Digital Menu Board'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692923374
 headline: 'Designed to Power Connected Customer Journeys'
 image: products/outdoor-digital-menu-board/o4odmb_double_hero_transparent@2x.png
 enable_hero: true
