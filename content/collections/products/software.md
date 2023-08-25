@@ -2,8 +2,8 @@
 id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692718915
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692930312
 headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
@@ -50,7 +50,7 @@ page_builder:
         feature_position: right
     media_type: image
     size: sm
-    reverse_frames: false
+    background: true
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
@@ -112,4 +112,5 @@ hero_image: products/software/img_software_hero.jpg
 show_product_tabs: false
 overlay_opacity: 100
 text: 'Switchboard™, our dynamic and innovative content management system (CMS) offers sophisticated integration capabilities and creates a seamless, connected ecosystem for your brand. Enjoy a single solution that enables dynamic, data-driven menu content across all hardware touchpoints and ensures an engaging ordering experience for customers.'
+show_product_types: false
 ---
