@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_product_features.antlers.html -->
-<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative fluid-container" id="{{ block:product_type:slug ?? page:slug }}-features">
+<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative fluid-container {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24{{/if}}" id="{{ block:product_type:slug ?? page:slug }}-features">
     <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
         <div class="{{ switch(
             (size == 'md') => 'md:col-span-6 md:col-start-4',

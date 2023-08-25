@@ -45,18 +45,18 @@
             :aria-label="ariaLabel"
             aria-slideover="true"
             x-cloak
-            class="fixed inset-0 overflow-hidden pl-12 z-50"
+            class="fixed inset-0 overflow-hidden z-50"
         >   
             <!-- Overlay -->
             <div
                 x-show="slideoverOpen"
                 @click="close()"
-                class="fixed inset-0 bg-black/80"
+                class="fixed inset-0 bg-white/70"
                 x-transition.opacity.duration.400ms>
             </div>
 
             <!-- Panel -->
-            <div class="fixed inset-y-0 right-0 max-w-xl w-full">
+            <div class="fixed inset-y-0 right-0 max-w-xl pl-10 w-full">
                 <div
                     x-show="slideoverOpen"
                     class="h-full w-full"
@@ -67,7 +67,7 @@
                     x-transition:leave-start="translate-x-0" 
                     x-transition:leave-end="translate-x-full" 
                 >
-                    <div class="h-full flex flex-col justify-between {{ slideover_inverted ? 'bg-black dark' : 'bg-white' }} shadow-lg overflow-y-auto">
+                    <div class="h-full flex flex-col justify-between {{ slideover_inverted ? 'bg-black dark' : 'bg-white' }} shadow-2xl overflow-y-auto">
                         <div class="absolute top-0 right-0 pt-2 pr-2">
                             <button
                                 @click="close()"

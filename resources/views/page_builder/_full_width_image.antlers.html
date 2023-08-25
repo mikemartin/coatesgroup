@@ -11,7 +11,7 @@
             width: null,
             left: 0
         }" x-init="width = $refs.image.querySelector('img').offsetWidth" class="{{ if block:image_position == 'below'}}order-1{{/if}}">
-            <figure class="relative aspect-[4/3] md:aspect-[8/3] -mx-8 lg:mx-0">
+            <figure class="relative aspect-[4/3] md:aspect-[8/3]">
                 <div 
                 x-ref="image" 
                 x-on:resize.window="width = $refs.image.querySelector('img').offsetWidth"
@@ -35,7 +35,7 @@
         </div>
     {{ else }}
         <figure x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
-        class="aspect-[7/5] md:aspect-[8/3] -mx-8 lg:mx-0 {{ if block:image_position == 'below'}}order-1{{/if}}">
+        class="aspect-[7/5] md:aspect-[8/3] {{ if block:image_position == 'below'}}order-1{{/if}}">
             {{ partial:statamic-peak-tools::components/picture :image="block:image" aspect_ratio="7/5 large:8/3" cover="true" lazy="true" sizes="100vw" }}
         </figure>
     {{ /if }}
