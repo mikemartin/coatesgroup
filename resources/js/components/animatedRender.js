@@ -2,7 +2,7 @@
 import lottie from 'lottie-web'
 import { create } from '@lottiefiles/lottie-interactivity';
 
-export default (path, frames, reversed = false) => ({
+export default (path, frames, container, reversed = false) => ({
     animation: '',
     init() {
         this.animation = lottie.loadAnimation({
@@ -15,7 +15,7 @@ export default (path, frames, reversed = false) => ({
         create({
             mode: 'scroll',
             player: this.animation,
-            container: '.product-features',
+            container: container,
             actions: [
                 {
                     visibility: [0, .2],
@@ -25,19 +25,11 @@ export default (path, frames, reversed = false) => ({
                     ] 
                 },
                 {
-                    visibility: [0.2, 0.45],
+                    visibility: [0.2, 1.0],
                     type: 'seek',
                     frames: [
                         reversed ? frames : 0,
                         reversed ? 0 : frames
-                    ]
-                },
-                {
-                    visibility: [0.45, 1.0],
-                    type: 'seek',
-                    frames: [
-                        reversed ? 0 : frames,
-                        reversed ? frames : 0
                     ]
                 },
             ],

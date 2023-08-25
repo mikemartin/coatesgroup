@@ -1,4 +1,9 @@
-<div class="flex flex-wrap justify-center gap-3 {{ class }}">
+<div x-data="{ 
+    industry: [], 
+    location: [],
+    product: [],
+    experience: []
+ }" class="flex flex-wrap justify-center gap-3 {{ class }}">
     {{ products = {collection:products} }}
     {{ industries = {taxonomy:industries} }}
     {{ partial:components/filter label="Industry" :options="industries" }}

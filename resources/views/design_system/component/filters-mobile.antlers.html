@@ -3,7 +3,12 @@
 {{ products = {collection:products} }}
 {{ experiences = {collection:experiences} }}
 
-<div class="relative border w-[390px] h-[800px] flex flex-col justify-between  bg-white">
+<div x-data="{ 
+    industry: [], 
+    location: [],
+    product: [],
+    experience: []
+ }" class="relative border w-[390px] h-[800px] flex flex-col justify-between  bg-white">
      <div class="pb-12">
         <div class="flex items-center justify-between py-4 px-5">
             {{ partial:typography/p content="Filters" class="font-medium" }}
