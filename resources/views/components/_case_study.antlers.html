@@ -11,7 +11,7 @@
 <div
     {{ if loading }}wire:loading.remove{{/if}}
     class="
-        dark relative aspect-[7/9] {{ size == 'wide' ? 'lg:aspect-[8/3]' : 'lg:aspect-[8/5]' }} flex flex-col justify-between {{ class }}
+        dark group relative aspect-[7/9] {{ size == 'wide' ? 'lg:aspect-[8/3]' : 'lg:aspect-[8/5]' }} flex flex-col justify-between {{ class }}
     "
 >
     <figure class="absolute inset-0 overflow-hidden">
@@ -23,6 +23,7 @@
                 cover="true" 
                 lazy="true" 
                 skip_ratio_steps="3"
+                class="transition duration-300 group-hover:scale-[105%]"
             }}
         {{ else }}
             {{ partial
@@ -32,10 +33,11 @@
                 cover="true"
                 lazy="true"
                 skip_ratio_steps="3"
+                class="transition duration-300 group-hover:scale-[105%]"
             }}
         {{ /if }} 
     </figure>
-    <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-5% to-black/[85%] to-70%"></div>
+    <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-b from-black/0 from-5% to-black/[85%] to-70% group-hover:opacity-75 transition-opacity duration-300"></div>
     <div class="p-5 md:p-8 relative h-full flex flex-col  {{ if experience }}justify-between {{ else }} justify-end {{/if}} items-start">
         {{ if experience }}
             <div class="relative">
