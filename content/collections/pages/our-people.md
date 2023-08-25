@@ -7,9 +7,9 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692748781
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692933967
+headline: 'Unveiling Our Talent: Get to Know Some of the Faces Across Our Global Teams'
 enable_hero: false
 hero_type: brand
 hero_color:
@@ -33,11 +33,10 @@ page_builder:
     enabled: true
   -
     id: lk6ctsui
-    title: 'Be part of our team'
-    label: 'View Open Roles'
-    link_type: entry
-    target_blank: false
-    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    title: 'Browse Open Positions'
+    label: 'Join Us Today'
+    link_type: url
+    target_blank: true
     button_type: button
     color:
       label: Red
@@ -46,6 +45,7 @@ page_builder:
     type: call_to_action
     cta_type: illustration
     enabled: true
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=OurPeoplePage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 text_animation_delay: 0
 center_headline: false
 hide_breadcrumb: false
