@@ -1,4 +1,5 @@
-data: {  }
+data:
+  focus: 42-30-1
 size: 1756130
 last_modified: 1692937909
 width: 2500
