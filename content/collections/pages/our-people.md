@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692933967
+updated_at: 1692936077
 headline: 'Unveiling Our Talent: Get to Know Some of the Faces Across Our Global Teams'
 enable_hero: false
 hero_type: brand
@@ -23,12 +23,16 @@ page_builder:
   -
     id: lk6cti69
     people:
-      - 3ad60460-d45e-482b-952a-8fe4b7391cb7
       - 6b7171a6-47c2-4f30-a68a-66270fc72f30
-      - 5d6e66a1-e24b-4693-9aa3-83ea2f337cce
-      - 34567285-c097-43e3-84ff-b55994eafd7d
-      - c708c5f2-0026-474e-a5fe-268c00e4454d
       - 2067a5c9-ac54-4db9-b8f9-e2df14916694
+      - ee5f9ede-c0dc-41cf-b374-a8073fadbf9d
+      - 5d6e66a1-e24b-4693-9aa3-83ea2f337cce
+      - 05fe095b-9eda-46d8-a75a-7cb32115d15d
+      - 3ad60460-d45e-482b-952a-8fe4b7391cb7
+      - c708c5f2-0026-474e-a5fe-268c00e4454d
+      - 8342678a-ab09-417f-ab89-7fc4f4ea5504
+      - 34567285-c097-43e3-84ff-b55994eafd7d
+      - 5d16471a-a20f-4c4d-b498-6850b8344675
     type: people
     enabled: true
   -
