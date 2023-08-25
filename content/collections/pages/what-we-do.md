@@ -1,14 +1,14 @@
 ---
 id: d70deed0-6959-4ec0-97a2-75d120b8899e
 blueprint: page
-title: 'What we do'
+title: 'What We Do'
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692783575
+updated_at: 1692923558
 page_builder:
   -
     id: ljwscq36
