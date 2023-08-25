@@ -8,11 +8,11 @@
 <div x-dialog x-model="mobileFilterOpen" class="relative z-50 lg:hidden" x-cloak @close="mobileFiltersOpen = false">  
     <div
         x-dialog:overlay 
-        class="fixed inset-0 bg-black/80"
+        class="fixed inset-0 bg-white/70"
         x-transition.opacity.duration.400ms>
     </div>
 
-    <div class="fixed inset-0 z-50 flex">
+    <div class="fixed inset-0 z-50 flex pl-10">
       <div
         x-dialog:panel
         x-transition:enter="transform transition ease-in-out duration-500 sm:duration-700" 
@@ -21,7 +21,7 @@
         x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700" 
         x-transition:leave-start="translate-x-0" 
         x-transition:leave-end="translate-x-full" 
-        class="relative ml-auto flex h-full w-full max-w-xl flex-col overflow-y-auto bg-white shadow-xl"
+        class="relative ml-auto flex h-full w-full max-w-xl flex-col overflow-y-auto bg-white shadow-2xl"
       >
         <div class="flex items-center justify-between py-4 px-5">
             {{ partial:typography/p content="Filters" class="font-medium" }}
