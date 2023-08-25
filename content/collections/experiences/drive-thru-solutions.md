@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692856481
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692923476
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
