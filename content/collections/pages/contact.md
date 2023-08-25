@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692923042
+updated_at: 1692923512
 page_builder:
   -
     id: ljmfvd7s
@@ -24,7 +24,7 @@ page_builder:
     buttons:
       -
         id: lk7jgjos
-        label: 'View Offices'
+        label: 'View offices'
         link_type: entry
         target_blank: false
         entry: 82143229-3dff-4e67-a5a4-21ec485cec07
