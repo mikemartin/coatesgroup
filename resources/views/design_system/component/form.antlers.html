@@ -1,4 +1,6 @@
-<div class="w-full max-w-lg mx-auto space-y-5 md:space-y-10">
+<div x-data="{ 
+  errors: []
+}" class="w-full max-w-lg mx-auto space-y-5 md:space-y-10">
     <label class="block">
         {{ partial:typography/annotation content="Name" }}
         {{ partial:vendor/statamic/forms/fields/text handle="name" placeholder="Eg. John Doe" }}

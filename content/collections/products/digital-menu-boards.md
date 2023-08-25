@@ -46,7 +46,7 @@ page_builder:
     enabled: true
     frames: '29'
     media_type: animation
-    reverse_frames: true
+    reverse_frames: false
     size: md
     product_type: indoor-digital-menu-board
   -

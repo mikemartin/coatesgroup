@@ -6,7 +6,7 @@
 
 <!-- /page_builder/_full_width_video.antlers.html -->
 <section 
-    {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'"{{/if}}
+    {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}}
     {{ if block:video_url }}
     x-data="{ 
         ready: false, 
