@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692922096
+updated_at: 1692922305
 page_builder:
   -
     id: ljmfvd7s
-    title: 'Expertise You Can Trust'
+    title: 'Stay Ahead In The Digital World: Embrace The Future With Our Dynamic Digital Signage'
     text: "Ready to take a leap into the world of immersive digital experiences? Let's collaborate to bring your vision to life. Contact us today to explore the endless possibilities we can help you achieve for your brand."
     form: contact
     type: form
@@ -24,7 +24,7 @@ page_builder:
     buttons:
       -
         id: lk7jgjos
-        label: 'View offices'
+        label: 'View Offices'
         link_type: entry
         target_blank: false
         entry: 82143229-3dff-4e67-a5a4-21ec485cec07
