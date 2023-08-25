@@ -7,9 +7,9 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692748562
-headline: 'Meet our leadership team.'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692933355
+headline: 'Meet Our Senior Leadership Team'
 enable_hero: false
 hero_type: brand
 hero_color:
@@ -38,11 +38,10 @@ page_builder:
     enabled: true
   -
     id: lk68o78u
-    title: 'Be part of our team'
-    label: 'View Open Roles'
-    link_type: entry
-    target_blank: false
-    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    title: 'Join Our Crew'
+    label: 'View open roles'
+    link_type: url
+    target_blank: true
     button_type: button
     type: call_to_action
     cta_type: illustration
@@ -51,6 +50,7 @@ page_builder:
       label: Yellow
       value:
         - 'rgb(254 195 37)'
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=LeadershipTeamPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 text_animation_delay: 0
 center_headline: false
 hide_breadcrumb: false
