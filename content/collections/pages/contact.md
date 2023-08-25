@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692922305
+updated_at: 1692923042
 page_builder:
   -
     id: ljmfvd7s
-    title: 'Stay Ahead In The Digital World: Embrace The Future With Our Dynamic Digital Signage'
+    title: 'Stay Ahead in the Digital World: Embrace the Future with Our Dynamic Digital Signage'
     text: "Ready to take a leap into the world of immersive digital experiences? Let's collaborate to bring your vision to life. Contact us today to explore the endless possibilities we can help you achieve for your brand."
     form: contact
     type: form
