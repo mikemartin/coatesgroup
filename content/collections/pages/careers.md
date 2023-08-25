@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692925259
+updated_at: 1692925311
 page_builder:
   -
     id: lk0po80o
@@ -97,7 +97,7 @@ page_builder:
         icon: careers_give_back_day
     type: icon_list
     enabled: true
-    title: 'Benefits of working with Coates'
+    title: 'Benefits of Working with Coates'
     color:
       label: Grey
       value:
