@@ -23,8 +23,8 @@
             </div>
         </div>
         {{ else }}
-        <div class="mx-auto max-w-2xl text-center">
-            {{ partial:typography/h2 :content="title" }}
+        <div class="md:mx-auto md:max-w-2xl md:text-center">
+            {{ partial:typography/h2 :content="title|widont" }}
         </div>
         {{ /if }}
         <dl x-data="fadeIn"
