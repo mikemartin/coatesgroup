@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692925314
+updated_at: 1692925959
 page_builder:
   -
     id: lk0po80o
@@ -39,7 +39,7 @@ page_builder:
         id: lk7k2628
         title: 'Diversity, Equity & Inclusion'
         text: 'Our holistic approach to our Diversity, Equity and Inclusion strategy at Coates prioritises equity, opportunity, inclusivity, and accountability in everything we do – and we follow through on our commitment with regular monitoring and progress reporting.'
-        image: careers/trive-desktop-copy-4.png
+        image: 'about-us/diversity-equity-&-inclusion.png'
       -
         id: lk7k2djo
         title: 'Thrive Well-Being Initiative'
