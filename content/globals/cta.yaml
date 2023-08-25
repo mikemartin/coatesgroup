@@ -13,12 +13,12 @@ data:
       attr_title: 'Contact Us'
       attr_aria: 'Contact Us'
       show_arrow: true
-  nav_title: 'Got a project with us?'
-  nav_text: 'Lorem ipsum dolor sit amet consectetur.'
+  nav_title: "Let's Get Started!"
+  nav_text: "We're here to listen and assist."
   nav_buttons:
     -
       id: ljrv3z8h
-      label: 'Read more'
+      label: 'Contact us today'
       link_type: entry
       target_blank: false
       entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
