@@ -3,10 +3,10 @@
     {{ if count %2 }}
         <source media="(min-width: 769px)" width="768" height="877" srcset="{{ glide:image w="768" h="877" }}" type="image/jpeg"/>
         <source media="(min-width: 769px)" width="768" height="877" srcset="{{ glide:image w="768" h="877" format="webp" }}" type="image/jpeg"/>
-        <img src="{{ glide:image w="768" h="877" }}" width="768" height="877" alt="{{ image:alt }}" class="object-cover w-full h-full group-hover:opacity-50 transition-opacity duration-300" style="object-position:  {{ focus | background_position }}" aria-hidden="true" loading="lazy">
+        <img src="{{ glide:image w="768" h="877" }}" width="768" height="877" alt="{{ image:alt }}" class="object-cover w-full h-full" style="object-position:  {{ focus | background_position }}" aria-hidden="true" loading="lazy">
     {{ else }}
         <source media="(min-width: 769px)" width="768" height="1075" srcset="{{ glide:image w="768" h="1075" }}" type="image/jpeg"/>
         <source media="(min-width: 769px)" width="768" height="1075" srcset="{{ glide:image w="768" h="1075" format="webp" }}" type="image/webp"/>
-        <img src="{{ glide:image w="768" h="1075" }}" width="768" height="1075" alt="{{ image:alt }}" class="object-cover w-full h-full group-hover:opacity-50 transition-opacity duration-300" style="object-position:  {{ focus | background_position }}" aria-hidden="true" loading="lazy">
+        <img src="{{ glide:image w="768" h="1075" }}" width="768" height="1075" alt="{{ image:alt }}" class="object-cover w-full h-full" style="object-position:  {{ focus | background_position }}" aria-hidden="true" loading="lazy">
     {{ /if }}
 </picture>

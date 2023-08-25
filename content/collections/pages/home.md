@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692777642
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692939745
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -152,7 +152,7 @@ page_builder:
     image: homepage/company.jpg
     type: full_width_image
     enabled: true
-    image_position: below
+    image_position: above
     mobile_panning: false
   -
     id: ljs6guak

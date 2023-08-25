@@ -19,9 +19,9 @@
     <!-- /offices/index.antlers.html -->
     <section class="fluid-container grid md:grid-cols-12 gap-y-5 gap-x-8 xl:gap-y-10 xl:gap-x-16">
         {{ collection:offices sort="order" scope="office" }}
-            <article x-data="{ open: false }" class="relative md:col-span-6 lg:col-span-4 flex md:flex-col gap-6">
+            <article x-data="{ open: false }" class="group relative md:col-span-6 lg:col-span-4 flex md:flex-col gap-6">
                 <div class="relative w-40 md:w-full">
-                    <figure class="aspect-[10/9] lg:aspect-[7/4]">
+                    <figure class="overflow-hidden aspect-[10/9] lg:aspect-[7/4]">
                         {{ partial
                             src="statamic-peak-tools::components/picture"
                             :image="office:image:url"
@@ -29,6 +29,7 @@
                             sizes="(min-width: 1280px) 430px, (min-width: 768px) 33vw, 90vw"
                             cover="true"
                             lazy="true"
+                            class="transition duration-300 scale-[105%] group-hover:scale-[100%]"
                         }}
                     </figure>
                 </div>
