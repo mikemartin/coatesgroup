@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692936853
+updated_at: 1692936892
 headline: 'Get to Know Some of the Faces Across Our Global Teams'
 enable_hero: false
 hero_type: brand
@@ -38,7 +38,7 @@ page_builder:
   -
     id: lk6ctsui
     title: 'Browse Open Positions'
-    label: 'Join Us Today'
+    label: 'Join us today'
     link_type: url
     target_blank: true
     button_type: button
