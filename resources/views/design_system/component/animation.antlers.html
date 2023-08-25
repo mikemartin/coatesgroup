@@ -1,0 +1,50 @@
+<div x-data="{ variant: 'outdoor' }">
+    <div class="z-50 fixed top-0 inset-0 lg:pl-72">
+        <div class="w-full bg-white border-charcoal-20 h-[4.5rem] border-t border-b flex justify-start items-center">
+            <ul class="fluid-container flex items-center space-x-8">
+                <li class="relative leading-none shrink-0">
+                    <a href="#animation" @click="variant = 'outdoor'" :class="variant == 'outdoor' ? 'text-black' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'outdoor'" class="w-4 h-4 bg-black rounded-full mr-3" x-cloak></span>
+                            Outdoor Digital Menu Board
+                        </span>
+                    </a>
+                </li>
+                <li class="relative leading-none shrink-0">
+                    <a href="#animation" @click="variant = 'self-service'" :class="variant == 'self-service' ? 'text-charcoal' : 'text-charcoal-40 hover:text-black'" class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+                        <span class="flex">
+                            <span x-show="variant == 'self-service'" class="w-4 h-4 bg-charcoal rounded-full mr-3" x-cloak></span>
+                            Self Service Kiosk
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="relative grid grid-cols-12">
+        <div x-show="variant == 'outdoor'" x-cloak id="outdoor" class="h-[calc(100vh-4.5rem)] size-md relative md:flex md:items-center md:justify-center"">
+            <figure
+                x-ignore
+                ax-load="visible"
+                x-data="animatedRender('/animations/outdoor-digital-menu-board.json', 29, '#outdoor')"
+                aria-hidden="true"
+            >
+            </figure>
+        </div>
+        <div x-show="variant == 'self-service'" x-cloak id="self-service" class="h-[calc(100vh-4.5rem)] size-md relative  md:flex md:items-center md:justify-center"">
+            <figure
+                x-ignore
+                ax-load="visible"
+                x-data="animatedRender('/animations/self-service-kiosk.json', 29, '#self-service')"
+                aria-hidden="true"
+            >
+            </figure>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+

@@ -49,7 +49,7 @@ page_builder:
     frames: '29'
     media_type: animation
     size: lg
-    reverse_frames: true
+    reverse_frames: false
   -
     id: llagnile
     video: 6--kiosk-10s.mp4

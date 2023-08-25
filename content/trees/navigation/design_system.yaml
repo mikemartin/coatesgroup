@@ -8,7 +8,7 @@ tree:
   -
     id: f0ec1662-1701-42a7-b66f-c4ac7a0ca554
     title: Article
-    url: 'article'
+    url: article
     data:
       fullpage: true
   -
@@ -125,3 +125,9 @@ tree:
     id: 86a3053f-5d7f-46be-8c90-97625f1bbe67
     title: Notifications
     url: notifications
+  -
+    id: 83804ce3-7835-4307-abc9-02367f96a6ab
+    title: Animation
+    url: animation
+    data:
+      fullpage: true

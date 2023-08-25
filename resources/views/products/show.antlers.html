@@ -6,11 +6,14 @@
 <!-- /products/show.antlers.html -->
 {{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label"} }}
 
-{{ show_product_tabs ?= { partial:components/product_tabs } }}
+<div {{ if show_product_types }}x-data="{ product_type: '{{ product_types:0:slug }}' }"{{/if}}>
+    {{ show_product_types ?= { partial:components/product_types } }}
 
-<main class="outer-grid" id="content">
-    {{ page_builder scope="block" }}
-        {{ partial src="page_builder/{type}" }}
-    {{ /page_builder }}
-</main>
+    <main class="outer-grid" id="content">
+        {{ page_builder scope="block" }}
+            {{ partial src="page_builder/{type}" }}
+        {{ /page_builder }}
+    </main>
+</div>
+
 <!-- End: /products/show.antlers.html -->

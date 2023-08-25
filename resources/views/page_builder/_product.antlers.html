@@ -5,11 +5,13 @@
 #}}
 
 <!-- /page_builder/_product.antlers.html -->
-<section class="{{ if !first }}border-t pt-12 md:pt-16 lg:pt-24{{/if}} overflow-hidden pb-4">
+<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="{{ if !first && !block:product_type  }}border-t pt-12 md:pt-16 lg:pt-24{{/if}} overflow-hidden pb-4">
     <div class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
+        {{ if block:title }}
         <div class="mx-auto max-w-2xl text-center md:col-span-12 ">
             {{ partial:typography/h2 :content="title" }}
         </div>
+        {{ /if }}
         {{ if images|length == 1 }}
             <figure x-data="fadeIn" x-init="hide($el)" x-intersect.once.margin.-20%="fadeIn($el)" 
             class="-mx-8 md:mx-0 md:col-span-10 md:col-start-2">
