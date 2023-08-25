@@ -8,9 +8,9 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692932747
+updated_at: 1692937936
 hero_type: brand
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
   label: Yellow
   value:
@@ -101,7 +101,7 @@ page_builder:
     buttons:
       -
         id: lk6fxmkf
-        label: 'View our Leadership Team'
+        label: 'View our leadership team'
         link_type: entry
         target_blank: false
         entry: b894f99b-58a9-41d0-bde4-411b91dcad01
