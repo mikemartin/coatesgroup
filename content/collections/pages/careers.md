@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692926075
+updated_at: 1692933033
 page_builder:
   -
     id: lk0po80o
@@ -139,7 +139,7 @@ page_builder:
     link_type: url
     target_blank: true
     button_type: button
-    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=website&utm_campaign=Lever+Launch'
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 hero_type: brand
 headline: 'A Crew Built on Connection: Careers at Coates Group'
 hero_color:
