@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692925249
+updated_at: 1692925259
 page_builder:
   -
     id: lk0po80o
@@ -97,7 +97,7 @@ page_builder:
         icon: careers_give_back_day
     type: icon_list
     enabled: true
-    title: 'Benefits of Working with Coates'
+    title: 'Benefits of working with Coates'
     color:
       label: Grey
       value:
@@ -136,10 +136,10 @@ page_builder:
     cta_type: illustration
     enabled: true
     label: 'Apply now'
-    link_type: url
-    target_blank: true
+    link_type: entry
+    target_blank: false
+    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
     button_type: button
-    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=website&utm_campaign=Lever+Launch'
 hero_type: brand
 headline: 'A Crew Built on Connection: Careers at Coates Group'
 hero_color:
