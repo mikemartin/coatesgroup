@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692750037
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692932747
 hero_type: brand
 headline: 'Lorem ipsum dolor sit amet consectetur.'
 hero_color:
@@ -163,11 +163,10 @@ page_builder:
     text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
   -
     id: lk693ywn
-    title: 'Be part of our team'
-    label: 'View Open Roles'
-    link_type: entry
-    target_blank: false
-    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    title: 'Join Us Today!'
+    label: 'View open roles'
+    link_type: url
+    target_blank: true
     button_type: button
     color:
       label: Green
@@ -176,6 +175,7 @@ page_builder:
     type: call_to_action
     cta_type: illustration
     enabled: true
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesAboutUsPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 0
