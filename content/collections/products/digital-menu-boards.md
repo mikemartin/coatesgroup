@@ -2,11 +2,11 @@
 id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692877986
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692943476
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
-image: 'experiences/in-restaurant/idmb_portrait_hero_b&w.png'
+image: products/idmb---portraitv2.png
 enable_hero: true
 hero_image: products/indoor-digital-menu-board/img_homepage_indoordigitalmenuboard_hero.jpg
 page_builder:
@@ -49,6 +49,7 @@ page_builder:
     reverse_frames: false
     size: md
     product_type: indoor-digital-menu-board
+    background: false
   -
     id: fjwEdG9R
     video: 4--indoor-dmb.mp4
@@ -144,6 +145,7 @@ page_builder:
     size: md
     reverse_frames: true
     product_type: outdoor-digital-menu-board
+    background: false
   -
     id: WgNldn2R
     video: 5--outdoor-dmb-10s.mp4
@@ -190,6 +192,7 @@ page_builder:
     type: icon_list
     enabled: true
     product_type: outdoor-digital-menu-board
+    icon_position: above
   -
     id: AZtKE6vJ
     title: 'Frequently Asked Questions'
