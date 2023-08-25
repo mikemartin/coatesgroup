@@ -6,7 +6,7 @@
 >
     <input type="hidden" name="{{ handle }}" value="0">
     <input
-        class="mr-2 h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
+        class="mr-2.5 h-5 w-5 !border-black !bg-transparent text-black focus:ring-0 focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-2"
         type="checkbox"
         name="{{ handle }}"
         value="1"
@@ -14,7 +14,7 @@
         {{ (!old && default) ?= 'checked' }}
     >
     {{ if inline_label }}
-        <span class="md:text-lg font-mono -mt-0.5">
+        <span class="-mt-0.5">
             {{ trans :key="inline_label" }}
             {{ if handle === 'consent' }}
                 {{ if configuration:privacy_statement_type == 'entry' }}

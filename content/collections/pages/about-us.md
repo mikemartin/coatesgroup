@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692937936
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692943458
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -161,6 +161,14 @@ page_builder:
     enabled: true
     title: 'Lorem ipsum dolor sit amet consectetur.'
     text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    buttons:
+      -
+        id: llq6t0td
+        label: Careers
+        link_type: entry
+        target_blank: false
+        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+        button_type: button
   -
     id: lk693ywn
     title: 'Join Us Today!'
