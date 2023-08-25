@@ -9,7 +9,7 @@
     <div class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
         {{ if block:title }}
         <div class="mx-auto max-w-2xl text-center md:col-span-12 ">
-            {{ partial:typography/h2 :content="title" }}
+            {{ partial:typography/h2 :content="block:title" }}
         </div>
         {{ /if }}
         {{ if images|length == 1 }}
@@ -54,8 +54,8 @@
         {{ /if }}
         <div 
             x-data="fadeIn" 
-            x-init="hide($el.children)" 
-            x-intersect.once.margin.-20%="fadeInStagger($el)" class="md:col-span-12 grid md:grid-cols-12 gap-8">
+            x-init="hide($el)" 
+            x-intersect.once.margin.-20%="fadeIn($el)" class="md:col-span-12 grid md:grid-cols-12 gap-8">
             {{ block:headline ?= { partial:typography/h2 :content="block:headline" class="md:col-span-5" } }}
             <div class="md:col-start-7 md:col-span-6">
                 {{ partial:typography/p :content="block:text"}}

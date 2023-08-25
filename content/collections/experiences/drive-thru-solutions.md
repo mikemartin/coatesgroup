@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692856481
+updated_at: 1692944060
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
@@ -113,7 +113,7 @@ page_builder:
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
-overlay_opacity: 100
+overlay_opacity: 80
 text: 'Our powerful combination of industry-leading hardware, a dynamic and data-driven CMS, and end-to-end services enables the world’s most prominent brands to deliver unparalleled drive thru experiences for their customers as well as generate impactful ROI.'
 seo_description: 'Drive thru solutions from Coates Group are powered by a connected digital ecosystem to create a seamless experience for customers. Contact us today.'
 seo_title: 'Innovative Drive Thru Solutions from Coates Group'

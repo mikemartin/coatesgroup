@@ -18,6 +18,8 @@ fields:
     config:
       display: Text
   -
+    import: buttons
+  -
     handle: rows
     field:
       fields:
