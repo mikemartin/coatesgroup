@@ -10,7 +10,7 @@ sitemap_priority: 0.5
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
 updated_at: 1692943458
 hero_type: brand
-headline: 'Lorem ipsum dolor sit amet consectetur.'
+headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
   label: Yellow
   value:
@@ -101,7 +101,7 @@ page_builder:
     buttons:
       -
         id: lk6fxmkf
-        label: 'View our Leadership Team'
+        label: 'View our leadership team'
         link_type: entry
         target_blank: false
         entry: b894f99b-58a9-41d0-bde4-411b91dcad01
@@ -171,11 +171,10 @@ page_builder:
         button_type: button
   -
     id: lk693ywn
-    title: 'Be part of our team'
-    label: 'View Open Roles'
-    link_type: entry
-    target_blank: false
-    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    title: 'Join Us Today!'
+    label: 'View open roles'
+    link_type: url
+    target_blank: true
     button_type: button
     color:
       label: Green
@@ -184,6 +183,7 @@ page_builder:
     type: call_to_action
     cta_type: illustration
     enabled: true
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesAboutUsPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 enable_hero: true
 text_animation_delay: 0
 overlay_opacity: 0

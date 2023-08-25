@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692748916
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1692937048
 page_builder:
   -
     id: lk0po80o
@@ -39,7 +39,7 @@ page_builder:
         id: lk7k2628
         title: 'Diversity, Equity & Inclusion'
         text: 'Our holistic approach to our Diversity, Equity and Inclusion strategy at Coates prioritises equity, opportunity, inclusivity, and accountability in everything we do – and we follow through on our commitment with regular monitoring and progress reporting.'
-        image: careers/trive-desktop-copy-4.png
+        image: 'about-us/diversity-equity-&-inclusion.png'
       -
         id: lk7k2djo
         title: 'Thrive Well-Being Initiative'
@@ -55,7 +55,7 @@ page_builder:
     buttons:
       -
         id: lko2nskr
-        label: 'About Us'
+        label: 'About us'
         link_type: entry
         target_blank: false
         entry: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
@@ -97,7 +97,7 @@ page_builder:
         icon: careers_give_back_day
     type: icon_list
     enabled: true
-    title: 'Benefits of working with Coates'
+    title: 'Benefits of Working with Coates'
     color:
       label: Grey
       value:
@@ -117,10 +117,10 @@ page_builder:
     buttons:
       -
         id: lk7k4jde
-        label: 'View our People'
+        label: 'View our people'
         link_type: entry
         target_blank: false
-        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+        entry: 4e8b0869-92ca-4971-ac6b-95ba0d48057b
         button_type: button
     type: testimonial
     enabled: true
@@ -136,10 +136,10 @@ page_builder:
     cta_type: illustration
     enabled: true
     label: 'Apply now'
-    link_type: entry
-    target_blank: false
-    entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+    link_type: url
+    target_blank: true
     button_type: button
+    url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
 hero_type: brand
 headline: 'A Crew Built on Connection: Careers at Coates Group'
 hero_color:
