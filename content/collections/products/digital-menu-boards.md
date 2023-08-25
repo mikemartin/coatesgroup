@@ -2,8 +2,8 @@
 id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692943476
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1692944152
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portraitv2.png
@@ -215,7 +215,6 @@ page_builder:
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
-nav_title: 'Indoor Digital Menu Boards'
 overlay_opacity: 100
 product_types:
   - indoor-digital-menu-board

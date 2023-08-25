@@ -162,6 +162,14 @@ page_builder:
     enabled: true
     title: 'Lorem ipsum dolor sit amet consectetur.'
     text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    buttons:
+      -
+        id: llq6t0td
+        label: Careers
+        link_type: entry
+        target_blank: false
+        entry: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+        button_type: button
   -
     id: lk693ywn
     title: 'Join Us Today!'
