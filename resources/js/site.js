@@ -7,6 +7,7 @@ import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import intersect from '@alpinejs/intersect'
 import screen from '@victoryoalli/alpinejs-screen'
+import sticky from 'alpinejs-sticky'
 import fadeIn from './components/fadeIn.js'
 import 'focus-visible'
 
@@ -39,7 +40,7 @@ AsyncAlpine.init(Alpine)
     .data('caseStudies', () => import('./components/caseStudies.js'))
     .start();
 
-Alpine.plugin([ui, collapse, focus, morph, persist, intersect, screen]);
+Alpine.plugin([ui, collapse, focus, morph, persist, intersect, screen, sticky]);
 Alpine.data('fadeIn', fadeIn);
 Alpine.start();
 

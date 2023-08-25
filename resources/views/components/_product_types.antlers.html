@@ -12,7 +12,7 @@
                         @click="product_type = '{{ slug }}'"
                         :class="product_type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
                         class="p-1 -m-1 inline-flex items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
-                            <span x-show="product_type == '{{slug}}'" class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            <span x-show="product_type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
                             {{ title }}
                         </button>
                     </li>
@@ -22,4 +22,56 @@
     </div>
 </div>
 
-{{ partial:components/dropdown_mobile label="Products" options="{ product_types }" class="md:hidden" }}
+<div x-data="pinned"
+    x-disclosure 
+    default-open 
+    class="md:hidden sticky -top-px z-50 border-b border-charcoal-20 py-4 bg-white/95">
+    <h3 class="-my-4 flow-root">
+    <button x-disclosure:button type="button"
+        class="group flex w-full items-center justify-between hover:font-medium text-black py-4 px-8">
+        Products
+        <div :class="{ 'scale-y-[-1]': $disclosure.isOpen }" class="ml-2.5 motion-safe:transition-transform">
+            {{ svg:chevron_down class="w-3 overflow-visible stroke-current group-hover:stroke-[1.5px]" aria-hidden="true" }}
+        </div>
+    </button>
+    </h3>
+
+    <div x-disclosure:panel x-collapse class="pt-4">
+    <div class="space-y-4">
+        {{ product_types }}
+        <div class="px-8">
+            <button 
+            @click="product_type = '{{ slug }}'" 
+            :class="product_type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
+            class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
+            <span class="flex items-center">
+                <span x-show="product_type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                <span x-show="product_type !== '{{slug}}'" x-cloak class="w-4 h-4 border border-charcoal-40 rounded-full mr-3"></span>
+                {{ title }}
+            </span>
+            </button>
+        </div>
+        {{ /product_types }}
+    </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('pinned', () => ({ 
+            init() {
+                const observer = new IntersectionObserver( 
+                    ([e]) => {
+                      if (e.intersectionRatio < 1) {
+                        this.$disclosure.close()
+                      };
+                    },
+                    { threshold: [1] }
+                );
+
+                observer.observe(this.$el);
+            },
+        }))
+    })
+</script>
+
