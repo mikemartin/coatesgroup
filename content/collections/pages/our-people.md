@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692936892
+updated_at: 1692941144
 headline: 'Get to Know Some of the Faces Across Our Global Teams'
 enable_hero: false
 hero_type: brand
@@ -23,6 +23,7 @@ page_builder:
   -
     id: lk6cti69
     people:
+      - 049717b2-0cfd-4177-b09d-eee2db01d82f
       - 6b7171a6-47c2-4f30-a68a-66270fc72f30
       - 2067a5c9-ac54-4db9-b8f9-e2df14916694
       - ee5f9ede-c0dc-41cf-b374-a8073fadbf9d
