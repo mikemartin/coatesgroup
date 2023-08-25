@@ -1,10 +1,8 @@
-{{ collection:next :in="in" sort="date:asc" as="items" limit="2" redirects="true" }}
-    {{ if no_results }}
-        {{ partial:components/prev in="blog"}}
-    {{ else }}
+{{ collection:previous :in="in" sort="date:asc" limit="2" as="items" redirects="true" }}
+    {{ unless no_results }}
         <section class="w-full bg-charcoal-10 py-16 md:py-24">
             <div class="fluid-container grid md:grid-cols-12 gap-8">
-                {{ partial:typography/h2 content="{ trans:strings.insights_next }" class="md:col-span-12" }}
+                {{ partial:typography/h2 content="{ trans:strings.insights_previous }" class="md:col-span-12" }}
 
                 {{ items }}
                     <article x-data="fadeIn" 
@@ -32,5 +30,5 @@
             </div>
         </section>
         
-    {{ /if }}
-{{ /collection:next }}
+    {{ /unless }}
+{{ /collection:previous }}
