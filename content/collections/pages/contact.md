@@ -8,23 +8,23 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692914304
+updated_at: 1692922090
 page_builder:
   -
     id: ljmfvd7s
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Erat blandit ultricies pharetra semper eget consequat. Sollicitudin id neque quam sed diam. Amet tortor cursus amet ullamcorper et massa consequat ornare vulputate. Sit quis venenatis tempor est mi adipiscing nec. Aliquam vel sit interdum ut cursus et sit lacus nunc.'
+    title: 'Expertise You Can Trust'
+    text: "Ready to take a leap into the world of immersive digital experiences? Let's collaborate to bring your vision to life. Contact us today to explore the endless possibilities we can help you achieve for your brand."
     form: contact
     type: form
     enabled: true
   -
     id: lk7jg5fv
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    title: 'Explore Our Offices'
+    text: 'Your journey to unparalleled creativity and innovation starts with a single click. Explore our global offices today.'
     buttons:
       -
         id: lk7jgjos
-        label: 'View Offices'
+        label: 'View offices'
         link_type: entry
         target_blank: false
         entry: 82143229-3dff-4e67-a5a4-21ec485cec07
