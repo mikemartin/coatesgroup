@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692942986
+updated_at: 1692943341
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -110,7 +110,7 @@ page_builder:
     enabled: true
     background: true
     no_bottom_margin: true
-    image: people/seeing-the-signs-1692942980.jpg
+    image: people/seeing-the-signs-copy.jpg
   -
     id: lk6hhy08
     title: 'Lorem ipsum dolor sit amet consectetur'
