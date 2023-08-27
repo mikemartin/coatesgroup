@@ -5,47 +5,52 @@
 #}}
 
 <!-- /page_builder/_product_features.antlers.html -->
-<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative fluid-container {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24{{/if}}" id="{{ block:product_type:slug ?? page:slug }}-features">
-    <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
-        <div class="{{ switch(
-            (size == 'md') => 'md:col-span-6 md:col-start-4',
-            (size == 'lg') => 'md:col-span-8 md:col-start-3',
-            () => 'md:col-span-6 md:col-start-4'
-        )}} h-full">
-            <div class="sticky {{ if show_product_types }}top-14 md:top-[4.5rem]{{else}}md:top-0{{/if}} md:h-[680px] md:flex md:items-center md:justify-center">
-                <div 
-                    class="{{ size == 'sm' ?= 'max-w-xl' }}">
-                    {{ if animation }}
-                        {{ partial:components/product_animation  }}
-                    {{ else }}
-                        <figure>
-                            {{ partial
-                                src="statamic-peak-tools::components/picture"
-                                sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                            }}
-                        </figure>
-                    {{ /if }}
+<section>
+    
+</section>
+<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24{{/if}}" id="{{ block:product_type:slug ?? page:slug }}-features">
+    <div class="fluid-container">
+        <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
+            <div class="{{ switch(
+                (size == 'md') => 'md:col-span-6 md:col-start-4',
+                (size == 'lg') => 'md:col-span-8 md:col-start-3',
+                () => 'md:col-span-6 md:col-start-4'
+            )}} h-full">
+                <div class="sticky {{ if show_product_types }}top-14 md:top-[4.5rem]{{else}}md:top-0{{/if}} md:h-[680px] md:flex md:items-center md:justify-center">
+                    <div 
+                        class="{{ size == 'sm' ?= 'max-w-xl' }}">
+                        {{ if animation }}
+                            {{ partial:components/product_animation  }}
+                        {{ else }}
+                            <figure>
+                                {{ partial
+                                    src="statamic-peak-tools::components/picture"
+                                    sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                                }}
+                            </figure>
+                        {{ /if }}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="md:py-20 md:space-y-20">
-        {{ features }}
-        <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12">
-            <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
-                    <div class="md:flex md:items-center">
-                        <div x-data="fadeIn" 
-                        x-init="hide($el)" 
-                        x-intersect:enter.margin.-20%="fadeIn($el)"
-                        x-intersect:leave.margin.-20%="fadeOut($el)">
-                            {{ partial:typography/large class="font-medium" :content="title" }}
-                            {{ partial:typography/p :content="text" class="mt-3" color="text-charcoal" }}
+        
+        <div class="md:py-20 md:space-y-20">
+            {{ features }}
+            <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12">
+                <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
+                        <div class="md:flex md:items-center">
+                            <div x-data="fadeIn" 
+                            x-init="hide($el)" 
+                            x-intersect:enter.margin.-20%="fadeIn($el)"
+                            x-intersect:leave.margin.-20%="fadeOut($el)">
+                                {{ partial:typography/large class="font-medium" :content="title" }}
+                                {{ partial:typography/p :content="text" class="mt-3" color="text-charcoal" }}
+                            </div>
                         </div>
-                    </div>
+                </div>
             </div>
+            {{ /features }}
         </div>
-        {{ /features }}
     </div>
 </section>
 <!-- End: /page_builder/_product_features.antlers.html -->
