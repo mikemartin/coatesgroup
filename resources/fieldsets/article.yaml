@@ -45,70 +45,48 @@ fields:
       validate:
         - required
       sets:
-        interactive:
-          display: Interactive
-          instructions: 'Interactive sets.'
-          icon: programming-script-code
-          sets:
-            buttons:
-              display: Buttons
-              instructions: 'Add one or multiple buttons.'
-              icon: link
-              fields:
-                -
-                  import: buttons
-            invoke_modal:
-              display: 'Invoke modal'
-              instructions: null
-              icon: null
-              fields:
-                -
-                  import: invoke_modal
-        text:
-          display: Text
-          instructions: 'Text based sets.'
-          icon: text-formatting-initial-letter
-          sets:
-            pull_quote:
-              display: 'Pull quote'
-              instructions: 'Add a pull quote with an optional author.'
-              icon: text-formatting-quotation
-              fields:
-                -
-                  import: pull_quote
-            table:
-              display: Table
-              instructions: 'Add a data table with headers, rows and columns.'
-              icon: layout-grid-dots
-              fields:
-                -
-                  import: table
-        image_video:
-          display: 'Image & video'
-          instructions: "Sets with images or embeddable video's."
-          icon: media-image-camera
-          sets:
-            image:
-              display: Image
-              instructions: 'Add a single image with an optional caption.'
-              icon: media-image-picture-orientation
-              fields:
-                -
-                  import: image
-            video:
-              display: Video
-              instructions: 'Add a YouTube or Vimeo video with an optional caption.'
-              icon: media-webcam-video
-              fields:
-                -
-                  import: video
-            blog_gallery:
-              display: Gallery
-              instructions: 'A minimal image gallery.'
-              icon: null
-              fields:
-                -
-                  import: blog_gallery
+        image:
+          display: Image
+          instructions: 'Add a single image with an optional caption.'
+          icon: media-image-picture-orientation
+          fields:
+            -
+              import: image
+        video:
+          display: Video
+          instructions: 'Add a YouTube or Vimeo video with an optional caption.'
+          icon: media-webcam-video
+          fields:
+            -
+              import: video
+        blog_gallery:
+          display: Gallery
+          instructions: 'A minimal image gallery.'
+          icon: media-image-picture-gallery
+          fields:
+            -
+              import: blog_gallery
+        buttons:
+          display: Buttons
+          instructions: 'Add one or multiple buttons.'
+          icon: link
+          fields:
+            -
+              import: buttons
+        pull_quote:
+          display: 'Pull quote'
+          instructions: 'Add a pull quote with an optional author.'
+          icon: text-formatting-quotation
+          fields:
+            -
+              import: pull_quote
+        table:
+          display: Table
+          instructions: 'Add a data table with headers, rows and columns.'
+          icon: layout-grid-dots
+          fields:
+            -
+              import: table
       container: images
       enable_input_rules: true
       enable_paste_rules: true
