@@ -105,11 +105,10 @@ page_builder:
     enabled: true
     title: 'Top Brands Trust Our Proven Expertise'
     case_studies:
-      - 1c37dfff-7c87-4872-a2fb-21aaeeba89ea
       - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
       - 647766b6-ea13-4ac5-861d-c6aa73b93d4a
-      - c31e8cd3-213c-4cc2-99cd-ea10d13f5f59
-      - 93713e1f-9903-4a1c-b901-6be957a60542
+      - 3228beed-2533-46ec-9fce-f5d3d5d06c49
+      - 1deb99d3-148b-4e55-be21-7318742b0a67
   -
     id: ljs64twe
     clients:
