@@ -6,8 +6,7 @@ template: insights/index
 page_builder:
   -
     id: lkvseit7
-    title: '1 Liner about Our Blogs section'
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
+    title: 'Check Out Our Blog Posts'
     type: blog
     enabled: true
     blog:
@@ -26,8 +25,7 @@ page_builder:
       - company-culture
   -
     id: lkvsev2o
-    title: '1 Liner about Press section'
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
+    title: 'Browse Our Press Highlights'
     type: press
     enabled: true
     press:
@@ -38,8 +36,7 @@ page_builder:
       - b3036152-9c75-4f2f-b05f-734d33ef65b0
   -
     id: lkvsf50t
-    title: '1 Liner about Awards section'
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
+    title: 'Celebrating Excellence: Dive into Our Collection of Awards'
     type: awards
     enabled: true
     awards:
@@ -50,8 +47,7 @@ page_builder:
       - c7623794-5306-4796-a0f0-28a52556a1bf
   -
     id: lkvsff6f
-    title: '1 Liner about Thought Leadership section'
-    text: 'Lorem ipsum dolor sit amet consectetur. Eget semper enim in.'
+    title: 'Navigating Change with Expertise: Explore Our Thought Leadership Content'
     type: thought_leadership
     enabled: true
     thought_leadership:
@@ -64,7 +60,7 @@ page_builder:
       - white-papers
       - media
       - interviews
-headline: 'Access Our Hub for Valuable Industry Insights'
+headline: 'Stay Updated: Explore Our Latest Industry Insights'
 enable_hero: false
 hero_type: brand
 hero_color:
@@ -78,7 +74,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693212519
+updated_at: 1693228621
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
