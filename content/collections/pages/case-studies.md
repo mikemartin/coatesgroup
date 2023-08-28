@@ -13,9 +13,9 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1692748830
-headline: 'A study of innovation and creativity'
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693210955
+headline: 'Elevating Excellence to Drive Proven Results For Global Brands'
 enable_hero: false
 hero_type: brand
 hero_color:
