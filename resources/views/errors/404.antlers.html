@@ -6,4 +6,4 @@
 {{# Redirect if current_url is in the Redirects global. #}}
 {{ partial:statamic-peak-seo::errors/redirects }}
 
-{{ enable_hero ? {partial:layout/hero title="404" show_title="true" } : {partial:components/header title="404" show_title="true" :hero_color="hero_color:label" } }}
+{{ enable_hero ? {partial:layout/hero title="404" show_title="true" } : {partial:components/header title="404" show_title="true" :hero_color="hero_color:label" bottom_margin="true" } }}

@@ -6,9 +6,9 @@
 
 <!-- /page_builder/_products_carousel.antlers.html -->
 <section ax-load x-data="productsCarousel({{ products|length }})" class="overflow-hidden">
-    <div class="fluid-container">
+    <div class="fluid-container flex flex-col gap-10 md:gap-16 lg:gap-20">
         {{ if title }}
-        <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
+        <div class="grid md:grid-cols-12 gap-8">
             {{ partial:typography/h2 :content="title" class="md:col-span-5" }}
             <div class="md:col-start-7 md:col-span-6">
                 {{ partial:typography/p :content="text"}}
@@ -17,16 +17,16 @@
         </div>
         {{/if}}
 
-        <div class="mt-10 md:mt-20 pb-14">   
+        <div>   
             <div class="hidden md:block">
-                <div class="swiper !pb-14" x-ref="container">
+                <div class="swiper !pb-16" x-ref="container">
                     <div class="swiper-wrapper">
                         {{ products scope="custom" }}
                             <div class="swiper-slide !h-auto">
                                 <div class="relative h-full border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary"
                                 >
                                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
-                                    {{ if product }}
+                                    {{ if product:url }}
                                         {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}
                                         <a href="{{ product:url }}" class="absolute inset-0"></a>
                                     {{ /if }}
@@ -41,7 +41,7 @@
             </div>
             <div class="md:hidden space-y-6">
                 {{ products scope="custom" }}
-                <div class="relative border border-charcoal-40 px-10 py-8 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary">
+                <div class="relative border border-charcoal-40 p-5 flex flex-col justify-between items-start no-underline focus:outline-none focus-visible:ring-2 ring-offset-2 ring-primary">
                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                     {{ if product:url }}
                         {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}

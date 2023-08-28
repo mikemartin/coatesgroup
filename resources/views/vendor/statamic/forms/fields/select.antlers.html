@@ -1,32 +1,59 @@
 <!-- /vendor/statamic/forms/fields/select.antlers.html -->
-<select class="
-    block
-    w-full
-    mt-2
-    p-2.5
-    text-black
-    border-black
-    focus:ring-0 focus:border-black
-    "
-    :class="{ 'border-red focus:border-red': errors.{{ handle }} }"
-    name="{{ handle }}{{ multiple ?= "[]" }}"
-    :aria-invalid="errors.hasOwnProperty('{{ handle }}')"
-    aria-describedBy="{{ handle }}"
-    {{ multiple ?= "multiple" }}
-    {{ js_attributes }}
+<div
+    x-data='{
+        value: null,
+        options: [
+            {{ foreach:options as="value|label" }}
+            {
+                id: {{ value|to_json }},
+                name: {{ label|to_json}},
+                disabled: false,
+            },
+            {{ /foreach:options }}
+        ],
+    }'
 >
-    {{ unless multiple }}
-        <option value>{{ trans key="Please select..." }}</option>
-    {{ /unless }}
-    {{ foreach:options as="value|label" }}
-        <option
-            value="{{ value }}"
-            {{ if old|in_array(value) or old === value }}
-                selected
-            {{ /if }}
+    <div
+        x-listbox
+        name="{{ handle }}"
+        aria-describedBy="{{ handle }}"
+        x-model="value"
+        class="relative mt-2"
+    > 
+        <button
+            x-listbox:button
+            class="w-full group inline-flex border border-black text-black focus-visible:ring-primary items-center justify-between py-2.5 px-3 no-underline select-none whitespace-nowrap motion-safe:transition focus:outline-none focus-visible:ring focus-visible:ring-offset-2"
         >
-            {{ trans :key="label" }}
-        </option>
-    {{ /foreach:options }}
-</select>
+            <span x-text="value ? value.name : '{{ trans key="Please select..." }}'" class="truncate"></span>
+ 
+            <!-- Heroicons up/down -->
+            {{ svg:chevron_down class="w-3 ml-2.5 overflow-visible stroke-current group-hover:stroke-[1.5px]" aria-hidden="true" }}
+        </button>
+ 
+        <ul
+            x-listbox:options
+            x-cloak
+            x-collapse
+            class="absolute z-20 -mt-px pb-2.5 w-full overflow-auto border-t-0 border border-black bg-white focus:outline-none"
+        >
+            <template x-for="option in options" :key="option.id">
+                <li
+                    x-listbox:option
+                    :value="option"
+                    :disabled="option.disabled"
+                    class="flex items-center cursor-default w-full px-3 py-1.5 font-mono hover:font-medium text-black"
+                >   
+                    <span 
+                    :class="{
+                        'bg-green': $listboxOption.isActive,
+                        'border border-charcoal-40': ! $listboxOption.isActive,
+                        'border border-charcoal-20 cursor-not-allowed': $listboxOption.isDisabled,
+                    }"
+                    class="w-4 h-4 rounded-full mr-3"></span>
+                    <span x-text="option.name"></span>
+                </li>
+            </template>
+        </ul>
+    </div>
+</div>
 <!-- End: /vendor/statamic/forms/fields/select.antlers.html -->

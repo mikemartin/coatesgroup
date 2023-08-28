@@ -8,6 +8,7 @@ import focus from '@alpinejs/focus'
 import intersect from '@alpinejs/intersect'
 import screen from '@victoryoalli/alpinejs-screen'
 import sticky from 'alpinejs-sticky'
+import queryString from "@invoate/alpine-query-string"
 import fadeIn from './components/fadeIn.js'
 import 'focus-visible'
 
@@ -30,6 +31,7 @@ AsyncAlpine.init(Alpine)
     .data('squareDivider', () => import('./components/squareDivider.js'))
     .data('masonryGrid', () => import('./components/masonryGrid.js'))
     .data('animatedRender', () => import('./components/animatedRender.js'))
+    .data('animatedSoftware', () => import('./components/animatedSoftware.js'))
     .data('valuesCarousel', () => import('./components/valuesCarousel.js'))
     .data('tabSections', () => import('./components/tabSections.js'))
     .data('linkBlockCarousel', () => import('./components/linkBlockCarousel.js'))
@@ -40,7 +42,7 @@ AsyncAlpine.init(Alpine)
     .data('caseStudies', () => import('./components/caseStudies.js'))
     .start();
 
-Alpine.plugin([ui, collapse, focus, morph, persist, intersect, screen, sticky]);
+Alpine.plugin([ui, collapse, focus, morph, persist, intersect, screen, sticky, queryString]);
 Alpine.data('fadeIn', fadeIn);
 Alpine.start();
 

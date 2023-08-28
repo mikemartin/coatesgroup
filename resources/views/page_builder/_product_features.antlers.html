@@ -5,18 +5,15 @@
 #}}
 
 <!-- /page_builder/_product_features.antlers.html -->
-<section>
-    
-</section>
-<section {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative {{ if block:background }}bg-charcoal-10 py-12 md:py-16 lg:py-24{{/if}}" id="{{ block:product_type:slug ?? page:slug }}-features">
-    <div class="fluid-container">
+<section {{ if show_product_types }}x-show="type == '{{ block:product_type:slug }}'" x-cloak{{/if}} class="-z-10 relative {{ if block:background }}bg-charcoal-10 py-10 md:py-16 lg:py-20{{/if}}" id="{{ block:product_type:slug ?? page:slug }}-features">
+    <div class="fluid-container relative">
         <div class="md:absolute md:inset-0 grid gap-6 md:grid-cols-12">
-            <div class="{{ switch(
+            <div class="{{ size }} {{ switch(
                 (size == 'md') => 'md:col-span-6 md:col-start-4',
                 (size == 'lg') => 'md:col-span-8 md:col-start-3',
                 () => 'md:col-span-6 md:col-start-4'
             )}} h-full">
-                <div class="sticky {{ if show_product_types }}top-14 md:top-[4.5rem]{{else}}md:top-0{{/if}} md:h-[680px] md:flex md:items-center md:justify-center">
+                <div class="sticky {{ if show_product_types }}top-14 md:top-[4.5rem]{{else}}md:top-0{{/if}} {{ if animation:filename == 'software' }}md:h-[540px]{{else}}md:h-[680px]{{/if}} md:flex md:items-center md:justify-center">
                     <div 
                         class="{{ size == 'sm' ?= 'max-w-xl' }}">
                         {{ if animation }}

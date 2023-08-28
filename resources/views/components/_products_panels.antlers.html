@@ -1,8 +1,8 @@
 <section x-data="fadeIn" 
     x-init="hide($el.children)" 
-    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container grid md:grid-cols-12 gap-6 md:gap-10">
+    x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container flex flex-col gap-10 md:gap-16 lg:gap-20">
     {{ if title }}
-    <div class="grid md:grid-cols-12 gap-8 md:col-span-12">
+    <div class="w-full grid md:grid-cols-12 gap-8">
         {{ partial:typography/h2 :content="title" class="md:col-span-5" }}
         <div class="md:col-start-7 md:col-span-6">
             {{ partial:typography/p :content="text"}}
@@ -10,6 +10,7 @@
     </div>
     {{ /if }}
 
+    <div class="grid md:grid-cols-12 md:col-span-12 gap-6 md:gap-10">
     {{ products scope="custom" }}
         {{ product_title = custom:title ?? product:title }}
         {{ product_text = custom:text ?? product:text  }}
@@ -45,4 +46,5 @@
             {{ /if }}
         </div>
     {{ /products }}
+    </div>  
 </section>

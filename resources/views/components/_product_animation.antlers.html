@@ -1,3 +1,13 @@
+{{ if animation:filename == 'software' }}
+<figure
+    x-ignore
+    ax-load="visible"
+    x-data="animatedSoftware('{{ animation }}', {{ frames - 1 }}, '#{{ block:product_type:slug ?? page:slug }}-features', {{ reverse_frames }})"
+    class="{{ class }}"
+    aria-hidden="true"
+>
+</figure>
+{{ else }}
 <figure
     x-ignore
     ax-load="visible"
@@ -6,3 +16,4 @@
     aria-hidden="true"
 >
 </figure>
+{{ /if }}

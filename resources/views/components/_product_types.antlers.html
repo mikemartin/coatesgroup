@@ -9,10 +9,10 @@
                 {{ product_types }}
                     <li class="relative leading-none shrink-0">
                         <button
-                        @click="product_type = '{{ slug }}'"
-                        :class="product_type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
+                        @click="type = '{{ slug }}'"
+                        :class="type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
                         class="p-1 -m-1 inline-flex items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
-                            <span x-show="product_type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                            <span x-show="type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
                             {{ title }}
                         </button>
                     </li>
@@ -41,12 +41,12 @@
         {{ product_types }}
         <div class="px-8">
             <button 
-            @click="product_type = '{{ slug }}'" 
-            :class="product_type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
+            @click="type = '{{ slug }}'" 
+            :class="type == '{{slug}}' ? 'text-black' : 'text-charcoal-40 hover:text-black'"
             class="p-1 -m-1 inline-flex flex-col items-center font-mono font-normal focus:outline-none focus-visible:ring-2 ring-primary">
             <span class="flex items-center">
-                <span x-show="product_type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
-                <span x-show="product_type !== '{{slug}}'" x-cloak class="w-4 h-4 border border-charcoal-40 rounded-full mr-3"></span>
+                <span x-show="type == '{{slug}}'" x-cloak class="w-4 h-4 bg-green rounded-full mr-3"></span>
+                <span x-show="type !== '{{slug}}'" x-cloak class="w-4 h-4 border border-charcoal-40 rounded-full mr-3"></span>
                 {{ title }}
             </span>
             </button>
