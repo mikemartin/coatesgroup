@@ -12,7 +12,16 @@ bio:
     content:
       -
         type: text
-        text: '✨ Meet Valentine Potié, our Product Engagement Lead in France ✨'
+        text: '✨ '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Meet Valentine Potié, our Product Engagement Lead in France '
+      -
+        type: text
+        text: ✨
       -
         type: hardBreak
       -
@@ -31,24 +40,21 @@ bio:
         type: hardBreak
       -
         type: hardBreak
-      -
-        type: text
-        text: '🌟 '
-      -
-        type: text
-        marks:
+  -
+    type: set
+    attrs:
+      id: lluyozm0
+      values:
+        type: buttons
+        buttons:
           -
-            type: link
-            attrs:
-              href: 'https://www.instagram.com/p/CriEPScsAX3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='
-              rel: noopener
-              target: _blank
-              title: null
-        text: 'Click here to learn more about Valentine'
-      -
-        type: text
-        text: ' 🌟'
+            id: lluyp0ju
+            label: 'Learn more about Valentine'
+            link_type: url
+            target_blank: true
+            url: 'https://www.instagram.com/p/CriEPScsAX3/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=='
+            button_type: inline
 image: people/valentinep.jpg
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692934538
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1693233025
 ---

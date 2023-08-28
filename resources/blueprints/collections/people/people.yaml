@@ -77,6 +77,14 @@ tabs:
                 - orderedlist
                 - removeformat
                 - anchor
+              sets:
+                buttons:
+                  display: Buttons
+                  instructions: 'Add one or multiple buttons.'
+                  icon: link
+                  fields:
+                    -
+                      import: buttons
   sidebar:
     display: Sidebar
     sections:

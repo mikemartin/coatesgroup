@@ -13,7 +13,7 @@
     <{{ as or 'a' }}
         {{ slot:attributes }}
         class="
-            md:text-lg leading-snug focus:outline-none focus-visible:ring focus-visible:ring-offset-2
+            inline-flex items-center group md:text-lg leading-snug focus:outline-none focus-visible:ring focus-visible:ring-offset-2
             {{ if button_type == 'inline' }}
                 decoration-1 underline-offset-2 underline motion-safe:transition {{ color or 'text-black dark:text-white' }} hover:font-medium active:no-underline
                 {{ inverted
@@ -38,7 +38,7 @@
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
-        {{ if show_arrow }}<span aria-hidden="true"> →</span>{{ /if }}
+        {{ target_blank ?= { svg:link-out class="ml-2.5 w-4 h-4 text-black motion-safe:transition" } }}
         {{ if extend }}<span class="inset-0 absolute"></span>{{/if}}
     </{{ as or 'a' }}>
 {{ /if }}
