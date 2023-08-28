@@ -19,3 +19,4 @@ preview_targets:
 inject:
   enable_hero: true
   hero_type: article
+  disable_fixed_nav: true

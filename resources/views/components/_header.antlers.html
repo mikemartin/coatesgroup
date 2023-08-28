@@ -4,7 +4,7 @@
 #}}
 
 <!-- /components/_header.antlers.html -->
-<section class="fluid-container grid md:grid-cols-12 gap-8 {{ if bottom_margin }}py-8 md:py-16{{ else }}pt-8 md:pt-16{{/if}}">
+<section class="fluid-container grid md:grid-cols-12 gap-8 pt-24 md:pt-44 {{ if bottom_margin }}pb-8 md:pb-16{{ /if }}">
     <div class="relative md:col-span-10 {{ if center_headline }}md:flex md:flex-col md:items-center md:text-center md:col-start-2{{/if}}">
         {{ !hide_breadcrumb && !show_title ?= { partial:navigation/breadcrumbs } }}
         {{ show_title ?= {partial:typography/p :content="title" color="text-charcoal-40"} }}

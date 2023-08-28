@@ -4,7 +4,32 @@
 #}}
 
 <!-- /layout/_header.antlers.html -->
-<header class="relative z-10 w-full {{ class }}">
+
+{{ dark_header = switch(
+    (hero_type == 'product') => 'true',
+    (hero_type == 'case-study') => 'true',
+    (enable_hero) => 'true'
+)}}
+
+<header 
+    x-data="{ isTop: true, isHidden: false, lastPos: 0 }" 
+    @scroll.window="
+        isTop = window.pageYOffset < $el.offsetHeight;
+        // Determine if the header should be hidden or shown
+        isHidden = window.pageYOffset > lastPos;
+
+        // Update the last scroll position, but ensure it's not negative
+        lastPos = window.pageYOffset;"
+    {{ unless disable_fixed_nav }}
+    x-show="!isHidden"
+    x-transition:enter="transition duration-500 transform ease-in-out"
+    x-transition:enter-start="-translate-y-full"
+    x-transition:enter-end="translate-y-0"
+    x-transition:leave="transition duration-500 transform ease-in-out"
+    x-transition:leave-start="translate-y-0"
+    x-transition:leave-end="-translate-y-full"
+    {{ /unless }}
+    class="{{ disable_fixed_nav ? 'absolute' : 'fixed' }} top-0 z-10 w-full {{ class }}">
     <div class="hidden md:block {{ switch(
 		(hero_color == 'Yellow') => 'bg-green',
         (hero_color == 'Red') => 'bg-green',
@@ -15,19 +40,16 @@
             {{ partial:navigation/utility }}
         </div>
     </div>
-    <div class="{{ switch(
-		(hero_color == 'Red') => 'bg-white',
-		(hero_color == 'Yellow') => 'bg-white',
-        (hero_color == 'Red') => 'bg-white',
-        (hero_color == 'Green') => 'bg-white',
-        (hero_color == 'Blue') => 'bg-white',
-        (hero_type == 'article') => 'bg-white',
-        (hero_type == 'product') => 'bg-black dark',
-        (hero_type == 'case-study') => 'bg-black dark',
-        (enable_hero) => 'bg-transparent dark',
+    <div 
+        {{ if hero_type != 'article' && hero_type != 'case-study'  }}
+        :class="{ '{{ dark_header ? 'bg-opacity-0' : 'bg-opacity-100' }}': isTop, 'bg-opacity-95': !isTop }" 
+        {{ /if }}
+        class="{{ switch(
+        (dark_header && hero_type === 'case-study') => 'bg-black bg-opacity-95 dark',
+        (dark_header) => 'bg-black bg-opacity-0 dark',
         (background) => background,
-        () => 'bg-transparent',
-	)}}">
+        () => 'bg-white',
+    )}} transition duration-500">
         <div class="h-16 fluid-container flex justify-between items-center">
             {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
             {{ partial:components/logo class="text-black dark:text-white" }}
@@ -36,4 +58,3 @@
     </div>
 </header>
 <!-- End: /layout/_header.antlers.html -->
-
