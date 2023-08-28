@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692943354
+updated_at: 1693229293
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -19,7 +19,7 @@ hero_extend: true
 page_builder:
   -
     id: lk0ploc5
-    title: 'Our story'
+    title: 'Our Story'
     text: 'Lorem ipsum dolor sit amet consectetur. Consequat ullamcorper lorem nunc nulla. In etiam ac pellentesque egestas nunc diam. Egestas aliquet neque elementum quisque luctus ac dolor suscipit. Tellus sed lorem ridiculus cras. Amet quis mattis feugiat bibendum turpis iaculis ornare. Tristique dolor leo suscipit felis amet elit. Facilisi elementum libero amet magna nibh viverra. At ut iaculis nullam non quam blandit laoreet aliquam. Amet ut porta diam eros nunc commodo pharetra. A duis in integer dictum. Feugiat velit id urna semper bibendum blandit ac aenean. Ullamcorper quisque sed sed sit consequat. Praesent tempor elit ultricies porttitor. In est diam sem arcu vitae diam quis ridiculus.'
     video: 3--about-us-people-office-initiative-10s.mp4
     type: full_width_video
@@ -89,7 +89,7 @@ page_builder:
     enabled: true
   -
     id: lk6fx9ls
-    title: 'Hear from our CEO'
+    title: 'Hear from Our CEO'
     quote:
       -
         type: paragraph
@@ -117,20 +117,20 @@ page_builder:
     stats:
       -
         id: lk6hi163
-        number: '5'
+        number: '9'
         label: Countries
       -
         id: lk6hi5b6
         number: '12'
         label: Cities
       -
+        id: lk6hider
+        number: '+350'
+        label: Employees
+      -
         id: lk6hi8iu
         number: XXX
         label: 'Lorem Ipsum'
-      -
-        id: lk6hider
-        number: '13,500'
-        label: Employees
     buttons:
       -
         id: lk6hijcm
