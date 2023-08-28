@@ -64,7 +64,7 @@ page_builder:
       - white-papers
       - media
       - interviews
-headline: 'Explore Our Rich Repository of Resources'
+headline: 'Access Our Hub for Valuable Industry Insights'
 enable_hero: false
 hero_type: brand
 hero_color:
@@ -78,7 +78,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693212248
+updated_at: 1693212519
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
