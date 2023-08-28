@@ -14,8 +14,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693210974
-headline: 'Elevating Excellence to Drive Proven Results For Global Brands'
+updated_at: 1693210989
+headline: 'Elevating Excellence to Drive Proven Results for Global Brands'
 enable_hero: false
 hero_type: brand
 hero_color:
