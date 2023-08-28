@@ -20,7 +20,7 @@
 	)}} {{ if hero_extend }}-mb-10 md:-mb-16 lg:-mb-20{{/if}}">
 	<div class="fluid-container py-14 md:py-20 grid md:grid-cols-12 gap-8 md:gap-y-20">
 		<div x-data="fadeIn" x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" 
-		class="relative md:col-start-3 md:col-span-8 text-center flex flex-col items-center">
+		class="relative md:col-start-2 md:col-span-10 text-center flex flex-col items-center">
 			{{ partial:typography/p :content="title" class="{!live_preview ?= 'opacity-0'}" color="{ switch(
 				(is_inverted) => 'text-white',
 				(hero_color) => 'text-black',
