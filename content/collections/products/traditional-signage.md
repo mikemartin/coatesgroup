@@ -3,7 +3,7 @@ id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692718960
+updated_at: 1693211374
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
@@ -62,6 +62,7 @@ page_builder:
     enabled: true
     case_studies:
       - 647766b6-ea13-4ac5-861d-c6aa73b93d4a
+      - 1deb99d3-148b-4e55-be21-7318742b0a67
   -
     id: llagq97v
     title: 'Frequently Asked Questions'
@@ -92,4 +93,5 @@ show_product_tabs: false
 overlay_opacity: 100
 headline: 'Traditional Signage Solutions That Bring Brands to Life'
 text: 'Our wayfinding and building signage, pylons, directional signage, canopies, and gantries increase brand exposure while providing customers with critical information. Even better, our start-to-finish services ensure you’re supported from initial concept to completed rollout.'
+show_product_types: false
 ---
