@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693211282
+updated_at: 1693211449
 headline: 'A Connected Restaurant Ecosystem'
 image: experiences/in-restaurant/img_inrestaurant_hero.jpg
 page_builder:
@@ -59,10 +59,6 @@ page_builder:
       -
         id: ll5tu4ih
         label: 'Learn more'
-        link_type: entry
-        target_blank: false
-        entry: a9353df9-7db6-4dea-8464-bd33c13faa2a
-        button_type: button
     images:
       - experiences/in-restaurant/img_software.jpg
     type: product
@@ -113,18 +109,13 @@ page_builder:
     enabled: true
     block_type: grid
     case_studies:
-      - 1deb99d3-148b-4e55-be21-7318742b0a67
-      - 3228beed-2533-46ec-9fce-f5d3d5d06c49
       - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
+      - 3228beed-2533-46ec-9fce-f5d3d5d06c49
   -
     id: ll5usujh
     cta_type: render
     title: 'Enhance Your Digital Restaurant Experience'
     label: 'Get in touch'
-    link_type: entry
-    target_blank: false
-    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
-    button_type: button
     image: call-to-action/product-render.jpg
     type: call_to_action
     enabled: true
