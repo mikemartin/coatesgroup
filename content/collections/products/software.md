@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1692930312
+updated_at: 1693194846
 headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
@@ -19,7 +19,6 @@ page_builder:
     mobile_panning: false
   -
     id: llbvsumq
-    image: products/software/software_schedule_content_transparent_templated_content.png
     type: product_features
     enabled: true
     features:
@@ -48,9 +47,12 @@ page_builder:
         title: 'Scheduling & Dayparting'
         text: 'Schedule your digital menu content by daypart, weekpart, season, promotions, and more within our Switchboard™ CMS dashboard.'
         feature_position: right
-    media_type: image
-    size: sm
+    media_type: animation
+    size: md
     background: true
+    animation: software.json
+    frames: '119'
+    reverse_frames: false
   -
     id: ll4ji16s
     title: 'A CMS that Drives Unparalleled Results for You and Your Customers'
