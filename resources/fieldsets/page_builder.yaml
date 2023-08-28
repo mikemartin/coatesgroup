@@ -10,90 +10,107 @@ fields:
       listable: false
       display: 'Page builder'
       sets:
-        insights:
-          display: Insights
-          instructions: 'Insights articles'
-          icon: media-news-paper
+        content:
+          display: Content
+          instructions: 'Blocks with custom content.'
+          icon: text-formatting-image-left
           sets:
-            insights:
-              display: Insights
-              instructions: 'List all Insights articles.'
-              icon: media-news-paper
+            article:
+              display: Article
+              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
+              icon: text-formatting-initial-letter
               fields:
                 -
-                  import: insights
-            blog:
-              display: Blog
-              instructions: 'List blog articles and topics.'
-              icon: media-news-paper
+                  import: article
+            brand_text:
+              display: 'Brand Text'
+              instructions: 'Centered text with brand color and photos.'
+              icon: media-image-photo-focus-frame
               fields:
                 -
-                  import: blog
-            press:
-              display: Press
-              instructions: 'List Press articles.'
-              icon: media-news-paper
-              fields:
-                -
-                  import: press
-            awards:
-              display: Awards
-              instructions: 'List Awards articles.'
-              icon: media-news-paper
-              fields:
-                -
-                  import: awards
-            thought_leadership:
-              display: 'Thought Leadership'
-              instructions: 'List Thought Leadership articles and topics.'
-              icon: media-news-paper
-              fields:
-                -
-                  import: thought_leadership
-        interactive:
-          display: Interactive
-          instructions: 'Interactive blocks.'
-          icon: programming-script-code
-          sets:
+                  import: brand_text
             block_carousel:
               display: 'Block Carousel'
               instructions: 'Carousel of blocks with image and text'
+              icon: layout-carousel-horizontal
               fields:
                 -
                   import: block_carousel
-            values_carousel:
-              display: 'Values Carousel'
-              instructions: 'Carousel of values with text and image'
-              fields:
-                -
-                  import: values_carousel
             call_to_action:
               display: 'Call to action'
               instructions: 'Show a call to action.'
+              icon: alert-alarm-bell
               fields:
                 -
                   import: call_to_action
-            case_studies:
-              display: 'Case Studies'
-              instructions: 'Carousel of featured case studies'
-              icon: null
+            icon_list:
+              display: 'Icon List'
+              instructions: 'List of icons with text.'
+              icon: addon-boxes-stack
               fields:
                 -
-                  import: case_studies
-            clients:
-              display: Clients
-              instructions: 'A Clients logo cloud.'
-              icon: null
-              fields:
-                -
-                  import: clients
+                  import: icon_list
             form:
               display: Form
               instructions: 'Select and render a form.'
-              icon: mail-chat-bubble-text
+              icon: form-text-field
               fields:
                 -
                   import: form
+            link_blocks:
+              display: 'Link blocks'
+              instructions: 'Show linkable blocks with text.'
+              icon: link
+              fields:
+                -
+                  import: link_blocks
+            product:
+              display: Product
+              instructions: 'A full width product with optional text and button(s).'
+              icon: media-image-photo-focus-frame
+              fields:
+                -
+                  import: product
+            product_features:
+              display: 'Product Features'
+              instructions: 'Product animation with features'
+              icon: hierarchy-vertical-nav-flow
+              fields:
+                -
+                  import: product_features
+            repeating_squares:
+              display: 'Repeating Squares'
+              instructions: 'Repeating square outlines with text.'
+              icon: layout-header-sidebar-left
+              fields:
+                -
+                  import: repeating_squares
+            stats:
+              display: Stats
+              instructions: A horizontal list of stats.
+              icon: money-cashier-calculator
+              fields:
+                -
+                  import: stats
+            tab_sections:
+              display: 'Tab Sections'
+              instructions: 'Tab sections of experiences or products'
+              icon: edit-design-compare-ab-testing
+              fields:
+                -
+                  import: tab_sections
+            testimonial:
+              display: Testimonial
+              instructions: 'Testimonial with photo.'
+              icon: user-avatar
+              fields:
+                -
+                  import: testimonial
+        image_video:
+          display: 'Image & Video'
+          instructions: 'Blocks with images or videos.'
+          icon: media-image-picture-orientation
+          sets:
             full_width_image:
               display: 'Full width image'
               instructions: 'A full width image with optional text and button(s).'
@@ -111,51 +128,57 @@ fields:
             gallery:
               display: Gallery
               instructions: 'A minimal image gallery.'
-              icon: null
+              icon: media-image-picture-gallery
               fields:
                 -
                   import: gallery
             half_width_image:
               display: 'Half-width image'
               instructions: 'A half width image with optional text and button(s).'
+              icon: layout-split-verical
               fields:
                 -
                   import: half_width_image
-            hardware:
-              display: Hardware
-              instructions: 'List of hardware with text.'
-              icon: link
-              fields:
-                -
-                  import: hardware
-            hero:
-              display: Hero
-              instructions: null
-              icon: null
-              fields:
-                -
-                  import: hero
             images_grid:
               display: 'Images grid'
               instructions: 'A multi row image grid.'
-              icon: null
+              icon: layout-display-split-quarters
               fields:
                 -
                   import: images_grid
-            index_content:
-              display: 'Index content'
-              instructions: 'Render the currently mounted entries if available.'
-              icon: null
+        entries:
+          display: Entries
+          instructions: 'List entries from collections.'
+          icon: layout-carousel-horizontal
+          sets:
+            case_studies:
+              display: 'Case Studies'
+              instructions: 'Carousel of featured case studies'
+              icon: presentation-board
               fields:
                 -
-                  import: index_content
-            link_blocks:
-              display: 'Link blocks'
-              instructions: 'Show linkable blocks with text.'
-              icon: link
+                  import: case_studies
+            clients:
+              display: Clients
+              instructions: 'A Clients logo cloud.'
+              icon: shopping-store
               fields:
                 -
-                  import: link_blocks
+                  import: clients
+            faq:
+              display: FAQ
+              instructions: 'List frequently asked questions in an accordion.'
+              icon: alert-help-question
+              fields:
+                -
+                  import: faq
+            hardware:
+              display: Hardware
+              instructions: 'List of hardware with text.'
+              icon: shopping-store-signage
+              fields:
+                -
+                  import: hardware
             people:
               display: People
               instructions: 'List People.'
@@ -163,82 +186,67 @@ fields:
               fields:
                 -
                   import: people
-            product:
-              display: Product
-              instructions: 'A full width product with optional text and button(s).'
-              icon: media-image-photo-focus-frame
-              fields:
-                -
-                  import: product
-            product_features:
-              display: 'Product Features'
-              instructions: 'Product animation with features'
-              fields:
-                -
-                  import: product_features
             products:
               display: Products
               instructions: 'List of products with text.'
-              icon: link
+              icon: media-computer-screen-tv
               fields:
                 -
                   import: products
-            tab_sections:
-              display: 'Tab Sections'
-              instructions: 'Tab sections of experiences or products'
-              icon: null
+            values_carousel:
+              display: 'Values Carousel'
+              instructions: 'Carousel of values with text and image'
+              icon: favorite-heart
               fields:
                 -
-                  import: tab_sections
-        text:
-          display: Text
-          instructions: 'Text based blocks.'
-          icon: text-formatting-initial-letter
+                  import: values_carousel
+            index_content:
+              display: 'Index content'
+              instructions: 'Render the currently mounted entries if available.'
+              icon: dashboard-layout
+              fields:
+                -
+                  import: index_content
+        articles:
+          display: Articles
+          instructions: 'List articles from Insights collections.'
+          icon: media-news-paper
           sets:
-            article:
-              display: Article
-              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
-              icon: text-formatting-image-bottom
+            insights:
+              display: Insights
+              instructions: 'List all Insights articles.'
+              icon: content-book-open
               fields:
                 -
-                  import: article
-            brand_text:
-              display: Brand Text
-              instructions: 'Centered text with brand color and photos.'
+                  import: insights
+            blog:
+              display: Blog
+              instructions: 'List blog articles and topics.'
+              icon: edit-pen
               fields:
                 -
-                  import: brand_text
-            icon_list:
-              display: 'Icon List'
-              instructions: 'List of icons with text.'
+                  import: blog
+            press:
+              display: Press
+              instructions: 'List Press articles.'
+              icon: share-mega-phone
               fields:
                 -
-                  import: icon_list
-            faq:
-              display: FAQ
-              instructions: 'List frequently asked questions in an accordion.'
+                  import: press
+            awards:
+              display: Awards
+              instructions: 'List Awards articles.'
+              icon: favorite-award
               fields:
                 -
-                  import: faq
-            repeating_squares:
-              display: 'Repeating Squares'
-              instructions: 'Repeating square outlines with text.'
-              icon: layout-header-sidebar-left
+                  import: awards
+            thought_leadership:
+              display: 'Thought Leadership'
+              instructions: 'List Thought Leadership articles and topics.'
+              icon: puzzle-complete
               fields:
                 -
-                  import: repeating_squares
-            stats:
-              display: Stats
-              instructions: null
-              fields:
-                -
-                  import: stats
-            testimonial:
-              display: Testimonial
-              instructions: 'An photo and testimonial side by side.'
-              fields:
-                -
-                  import: testimonial
+                  import: thought_leadership
       instructions_position: above
       visibility: visible
       previews: true

@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Studio1902\PeakSeo\Handlers\ErrorPage;
+use Statamic;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Statamic\Fieldtypes\Hidden::makeSelectableInForms();
     }
 
     /**
@@ -26,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     {
         // Statamic::script('app', 'cp');
         // Statamic::style('app', 'cp');
-
+       
         ErrorPage::handle404AsEntry();
     }
 }

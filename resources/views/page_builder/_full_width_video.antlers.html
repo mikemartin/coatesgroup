@@ -6,7 +6,7 @@
 
 <!-- /page_builder/_full_width_video.antlers.html -->
 <section 
-    {{ if show_product_types }}x-show="product_type == '{{ block:product_type:slug }}'" x-cloak{{/if}}
+    {{ if show_product_types }}x-show="type == '{{ block:product_type:slug }}'" x-cloak{{/if}}
     {{ if block:video_url }}
     x-data="{ 
         ready: false, 
@@ -48,7 +48,7 @@
     {{/if}} 
     class="{{ unless fill_screen }}fluid-container{{/unless}}">
     
-    <div class="bg-black overflow-hidden {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}} {{ unless fill_screen }} -mx-8 lg:mx-0 {{/unless}} ">
+    <div class="bg-black overflow-hidden {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}}">
         <figure 
             {{ if block:video_url }}
             x-show="!ready" 
@@ -91,7 +91,7 @@
     <div x-data="fadeIn" 
         x-init="hide($el.children)" 
         x-intersect.once.margin.-20%="fadeInStagger($el)" 
-        class="mt-8 grid md:grid-cols-12 gap-8">
+        class="mt-10 md:mt-16 grid md:grid-cols-12 gap-4 md:gap-8">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
         <div class="md:col-start-7 md:col-span-6">
             {{ partial:typography/p :content="block:text"}}

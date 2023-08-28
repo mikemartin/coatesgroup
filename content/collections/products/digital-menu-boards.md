@@ -2,8 +2,13 @@
 id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
+<<<<<<< HEAD
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
 updated_at: 1693200762
+=======
+updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+updated_at: 1693193793
+>>>>>>> 3884b68fa946199bcd7d0e80c4abb95c6103dac4
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portrait.png

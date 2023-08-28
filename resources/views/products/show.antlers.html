@@ -7,10 +7,10 @@
 {{ enable_hero ? {partial:layout/hero} : {partial:components/header :hero_color="hero_color:label"} }}
 
 {{ if show_product_types }}
-<div x-data="{ product_type: '{{ product_types:0:slug }}' }">
+<div x-data="{ type: '{{ get:type ?? product_types:0:slug }}' }" x-query-string="type">
     {{ partial:components/product_types }}
 {{ /if }}
-    <main class="outer-grid" id="content">
+    <main class="outer-grid {{ if !enable_hero }}md:pt-12{{/if}}" id="content">
         {{ page_builder scope="block" }}
             {{ partial src="page_builder/{type}" }}
         {{ /page_builder }}

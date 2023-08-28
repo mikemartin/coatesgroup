@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_full_width_image.antlers.html -->
-<section class="fluid-container flex flex-col gap-6 md:gap-10">
+<section class="fluid-container flex flex-col gap-10 md:gap-16">
     {{ if mobile_panning }}
         <div x-data="{ 
             width: null,
@@ -43,7 +43,7 @@
     <div 
         x-data="fadeIn" 
         x-init="hide($el.children)" 
-        x-intersect.once.margin.-20%="fadeInStagger($el)" class="grid md:grid-cols-12 gap-8">
+        x-intersect.once.margin.-20%="fadeInStagger($el)" class="grid md:grid-cols-12 gap-4 md:gap-8">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
         <div class="md:col-start-7 md:col-span-6">
             {{ partial:typography/p :content="block:text"}}
