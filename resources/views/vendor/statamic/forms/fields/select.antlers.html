@@ -3,13 +3,27 @@
     x-data='{
         value: null,
         options: [
-            {{ foreach:options as="value|label" }}
-            {
-                id: {{ value|to_json }},
-                name: {{ label|to_json}},
-                disabled: false,
-            },
-            {{ /foreach:options }}
+            {{ if handle == 'location' }}
+                {{ taxonomy:locations sort="title:asc" }}
+                {
+                    id: {{ slug|to_json }},
+                    {{ if long_title }}
+                    name: {{ long_title|to_json }},
+                    {{ else }}
+                    name: {{ title|to_json }},
+                    {{ /if }}
+                    disabled: false,
+                },
+                {{ /taxonomy:locations }}
+            {{ else }}
+                {{ foreach:options as="value|label" }}
+                {
+                    id: {{ value|to_json }},
+                    name: {{ label|to_json}},
+                    disabled: false,
+                },
+                {{ /foreach:options }}
+            {{ /if }}
         ],
     }'
 >
@@ -19,6 +33,7 @@
         aria-describedBy="{{ handle }}"
         x-model="value"
         class="relative mt-2"
+        {{ js_attributes }}
     > 
         <button
             x-listbox:button

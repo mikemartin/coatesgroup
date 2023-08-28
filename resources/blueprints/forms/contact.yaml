@@ -32,11 +32,25 @@ tabs:
               placeholder: sample@mail.com
               antlers: false
               hide_display: false
+              width: 50
+          -
+            handle: company
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Company
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
           -
             handle: enquiry
             field:
               options:
-                general: 'General'
+                general: General
                 careers: Careers
                 sales: Sales
                 support: Support
@@ -54,6 +68,24 @@ tabs:
               visibility: visible
               hide_display: false
               default: general
+              width: 50
+          -
+            handle: location
+            field:
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Location
+              icon: select
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              width: 50
           -
             handle: message_body
             field:
