@@ -74,7 +74,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693228621
+updated_at: 1693228750
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
