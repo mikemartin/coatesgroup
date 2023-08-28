@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693211310
+updated_at: 1693211462
 image: experiences/drive-thru/img_drivethru_hero.jpg
 headline: 'Drive Thru Solutions, Powered by a Connected Digital Ecosystem'
 page_builder:
@@ -102,9 +102,8 @@ page_builder:
     enabled: true
     block_type: grid
     case_studies:
-      - 1deb99d3-148b-4e55-be21-7318742b0a67
-      - 3228beed-2533-46ec-9fce-f5d3d5d06c49
       - ec62c839-52f8-41d5-ac47-c8aee43f2ef4
+      - 3228beed-2533-46ec-9fce-f5d3d5d06c49
   -
     id: ll5usujh
     cta_type: render
