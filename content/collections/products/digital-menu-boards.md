@@ -22,7 +22,7 @@ page_builder:
       - products/indoor-digital-menu-board/idmb_portrait_hero_transparentbg.png
     type: product
     enabled: true
-    product_type: indoor-digital-menu-board
+    product_type: indoor
   -
     id: E4P5VQSp
     animation: indoor-digital-menu-board.json
@@ -48,7 +48,7 @@ page_builder:
     media_type: animation
     reverse_frames: false
     size: md
-    product_type: indoor-digital-menu-board
+    product_type: indoor
     background: false
   -
     id: fjwEdG9R
@@ -57,7 +57,7 @@ page_builder:
     type: full_width_video
     enabled: true
     fill_screen: true
-    product_type: indoor-digital-menu-board
+    product_type: indoor
   -
     id: zKfoIXCt
     title: 'A Data-Driven Indoor Digital Menu Board Solution'
@@ -90,7 +90,7 @@ page_builder:
     type: icon_list
     enabled: true
     icon_position: above
-    product_type: indoor-digital-menu-board
+    product_type: indoor
   -
     id: irLofWdz
     title: 'Frequently Asked Questions'
@@ -100,7 +100,7 @@ page_builder:
       - da546fba-5134-4748-9587-a9dd49e03bca
     type: faq
     enabled: true
-    product_type: indoor-digital-menu-board
+    product_type: indoor
   -
     id: a5jYE9nM
     title: 'Outdoor Digital Menuboard'
@@ -113,7 +113,7 @@ page_builder:
       - products/outdoor-digital-menu-board/o4odmb_single_front_transparent@2x.png
     type: product
     enabled: true
-    product_type: outdoor-digital-menu-board
+    product_type: outdoor
   -
     id: Nbys9SV4
     animation: outdoor-digital-menu-board.json
@@ -144,7 +144,7 @@ page_builder:
     media_type: animation
     size: md
     reverse_frames: true
-    product_type: outdoor-digital-menu-board
+    product_type: outdoor
     background: false
   -
     id: WgNldn2R
@@ -154,7 +154,7 @@ page_builder:
     type: full_width_video
     enabled: true
     fallback_image: products/outdoor-digital-menu-board/5.-outdoor-dmb.jpg
-    product_type: outdoor-digital-menu-board
+    product_type: outdoor
   -
     id: 3JGhTegS
     title: 'Elevate the Drive Thru Ordering Experience'
@@ -191,7 +191,7 @@ page_builder:
         - 'rgb(255 255 255)'
     type: icon_list
     enabled: true
-    product_type: outdoor-digital-menu-board
+    product_type: outdoor
     icon_position: above
   -
     id: AZtKE6vJ
@@ -202,7 +202,7 @@ page_builder:
       - 6bff1232-280d-491e-afa2-4377f1198471
     type: faq
     enabled: true
-    product_type: outdoor-digital-menu-board
+    product_type: outdoor
   -
     id: WFO1NcEa
     cta_type: render
@@ -217,7 +217,7 @@ page_builder:
     enabled: true
 overlay_opacity: 100
 product_types:
-  - indoor-digital-menu-board
-  - outdoor-digital-menu-board
+  - indoor
+  - outdoor
 show_product_types: true
 ---
