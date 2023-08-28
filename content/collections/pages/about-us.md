@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693229293
+updated_at: 1693229422
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -30,9 +30,9 @@ page_builder:
   -
     id: lk62z9oo
     squares:
-      - 'Creating Connections.'
-      - 'Empowering Partnerships.'
-      - 'Always Evolving.'
+      - 'Creating Connections'
+      - 'Empowering Partnerships'
+      - 'Always Evolving'
     text:
       -
         type: paragraph
@@ -121,8 +121,8 @@ page_builder:
         label: Countries
       -
         id: lk6hi5b6
-        number: '12'
-        label: Cities
+        number: XXX
+        label: 'Lorem Ipsum'
       -
         id: lk6hider
         number: '+350'
