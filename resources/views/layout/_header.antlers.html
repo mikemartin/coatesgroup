@@ -7,8 +7,11 @@
 
 {{ dark_header = switch(
     (hero_type == 'product' && enable_hero) => 'true',
-    (hero_type == 'case-study') => 'true',
-    (enable_hero) => 'true'
+    (hero_type == 'case-study' && enable_hero) => 'true',
+    (hero_type == 'image' && enable_hero) => 'true',
+    (hero_type == 'video' && enable_hero) => 'true',
+    (hero_type == 'video' && enable_hero) => 'true',
+    (hero_color == 'Charcoal') => 'true',
 )}}
 
 <header 
@@ -17,9 +20,8 @@
         isTop = window.pageYOffset < $el.offsetHeight;
         // Determine if the header should be hidden or shown
         isHidden = window.pageYOffset > lastPos;
-
-        // Update the last scroll position, but ensure it's not negative
-        lastPos = window.pageYOffset;"
+        // Update the last scroll position, ensuring it's not negative
+        lastPos = window.pageYOffset >= 0 ? window.pageYOffset : 0;"
     {{ unless disable_fixed_nav }}
     x-show="!isHidden"
     x-transition:enter="transition duration-500 transform ease-in-out"
@@ -49,7 +51,7 @@
         (dark_header && hero_type === 'case-study') => 'bg-black bg-opacity-95 dark',
         (dark_header) => 'bg-black bg-opacity-0 dark',
         (background) => background,
-        () => 'bg-white',
+        () => 'bg-white bg-opacity-100',
     )}} transition duration-500">
         <div class="h-16 fluid-container flex justify-between items-center">
             {{# Make partials you want to use for the header or use and edit premade examples like the following ones. #}}
