@@ -24,6 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('horizon:snapshot')->everyFiveMinutes();
         // $schedule->command('cache:clear')->daily();
         // $schedule->command('config:cache')->daily();
         // $schedule->command('route:cache')->daily();

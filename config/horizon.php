@@ -179,6 +179,20 @@ return [
     |
     */
 
+    'defaults' => [
+        'supervisor-1' => [
+            'connection' => 'redis',
+            'balance' => 'auto',
+            'autoScalingStrategy' => 'time',
+            'maxTime' => 0,
+            'maxJobs' => 0,
+            'memory' => 128,
+            'tries' => 1,
+            'timeout' => 60,
+            'nice' => 0,
+        ],
+    ],
+
     'environments' => [
         'production' => [
             'supervisor-1' => [
