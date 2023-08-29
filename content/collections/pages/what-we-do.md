@@ -8,11 +8,11 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692923558
+updated_at: 1693271949
 page_builder:
   -
     id: ljwscq36
-    title: 'End-to-End Support For Connected Customer Experiences'
+    title: 'End-to-End Support for Connected Customer Experiences'
     text: 'Backed by almost 60 years of experience, our Crew create connected restaurant ecosystems through industry-leading technology. Our game-changing CMS, award-winning hardware, and full-spectrum services make it possible for brands of all sizes to create dynamic, data-driven, experiences for their customers at scale – and our end-to-end services ensure you’re supported every step of the way.'
     video: 2--1280x720-what-we-do-product-creators-10s.mp4
     fallback_image: what-we-do/2.-what-we-do.jpg
