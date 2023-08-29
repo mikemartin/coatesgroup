@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693211050
+updated_at: 1693273647
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -43,7 +43,7 @@ page_builder:
     enabled: true
   -
     id: ljs3iyhr
-    title: 'Digital Solutions to Enable A Connected Experience'
+    title: 'Digital Solutions to Enable a Connected Experience'
     link_blocks:
       -
         id: lC8ei2CA
