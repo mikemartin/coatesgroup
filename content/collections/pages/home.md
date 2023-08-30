@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693273647
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693356877
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -171,6 +171,7 @@ enable_hero: true
 hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
 fallback_image: homepage/1.-homepage.jpg
 text_animation_delay: 1
-seo_title: 'Coates Group'
+seo_title: 'Signage Solutions for Leading Global Restaurants'
 overlay_opacity: 0
+seo_description: 'We deliver end-to-end digital merchandising solutions that drive engaging customer journeys and business ROI for companies worldwide. Connect with us today.'
 ---
