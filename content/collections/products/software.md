@@ -3,7 +3,7 @@ id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693362671
+updated_at: 1693363253
 headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false
@@ -115,7 +115,7 @@ show_product_tabs: false
 overlay_opacity: 100
 text: 'Switchboard™, our dynamic and innovative content management system (CMS) offers sophisticated integration capabilities and creates a seamless, connected ecosystem for your brand. Enjoy a single solution that enables dynamic, data-driven menu content across all hardware touchpoints and ensures an engaging ordering experience for customers.'
 show_product_types: false
-seo_title: 'Digital Menu Board Software'
+seo_title: 'Digital Menu Board Software | Coates Group'
 seo_description: "Don't compromise on digital menu board software. Switchboard™, our CMS, combines an easy-to-use interface with integrations and rich analytics. Learn more."
 seo_noindex: false
 seo_nofollow: false
