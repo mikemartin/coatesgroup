@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693376712
+updated_at: 1693376839
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portrait.png
@@ -12,7 +12,7 @@ hero_image: products/indoor-digital-menu-board/img_homepage_indoordigitalmenuboa
 page_builder:
   -
     id: I5tG2gz0
-    title: 'Indoor Digital Menuboard'
+    title: 'Indoor Digital Menu Board'
     headline: 'Enhance Your In Restaurant Ordering Experience'
     text: 'Deployed in thousands of restaurants around the world, our indoor digital menu boards combine intuitive design, flexible mounting options, and leading technology. Pair them with our Switchboard™ CMS to create powerful, dynamic touchpoints in the connected restaurant ecosystem.'
     images:
@@ -103,7 +103,7 @@ page_builder:
     product_type: indoor
   -
     id: a5jYE9nM
-    title: 'Outdoor Digital Menuboard'
+    title: 'Outdoor Digital  Menu Board'
     headline: 'Elevate the Drive Thru Ordering Experience'
     text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary Switchboard™ CMS - our outdoor digital signage solutions deliver highly targeted and compelling messaging.'
     images:
