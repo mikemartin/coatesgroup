@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692937048
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693371464
 page_builder:
   -
     id: lk0po80o

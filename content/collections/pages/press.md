@@ -3,7 +3,7 @@ id: f629b35c-b8e1-4a91-81a0-ba156bdd7eff
 blueprint: page
 template: insights/archive
 title: Press
-headline: '1 Liner about Press section'
+headline: 'Browse Our Press Highlights'
 enable_hero: false
 page_builder:
   -
@@ -22,7 +22,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692776947
+updated_at: 1693361602
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0

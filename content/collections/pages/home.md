@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693273647
+updated_at: 1693385035
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -18,9 +18,7 @@ page_builder:
       -
         id: ludHHOwH
         title: 'Drive Thru'
-        text: |-
-          Our fully connected digital solutions
-          power a dynamic and data-driven drive thru experience for your customers.
+        text: 'Our fully connected digital solutions power a dynamic and data-driven drive thru experience for your customers.'
         label: 'See more'
         show_arrow: true
         image: homepage/drivethru.jpg
@@ -82,7 +80,7 @@ page_builder:
     enabled: true
   -
     id: ljs441zs
-    title: 'Traditional Signage Solutions. Modern Implementations.'
+    title: 'Traditional Signage Solutions: Modern Implementations'
     text: "Our traditional signage solutions maximise the impact of your most important messages whilst helping your brand stand out from the crowd. We've been providing traditional signage solutions to our customers since we first opened our doors 60 years ago – so we know what it means to deliver exceptional experiences at all stages of the rollout process, from initial design through to final installation."
     buttons:
       -
@@ -171,7 +169,30 @@ enable_hero: true
 hero_video_mobile: 1--720x1280-homepage-mix-10s-3_1.mp4
 fallback_image: homepage/1.-homepage.jpg
 text_animation_delay: 1
-seo_title: 'Signage Solutions for Leading Global Restaurants'
+seo_title: 'Signage Solutions for Leading Global Restaurants | Coates Group'
 overlay_opacity: 0
 seo_description: 'We deliver end-to-end digital merchandising solutions that drive engaging customer journeys and business ROI for companies worldwide. Connect with us today.'
+schema_jsonld: |-
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Coates Group Pty Ltd",
+    "url": "https://www.coatesgroup.com/",
+    "telephone": "+61 2 9699 3122",
+    "email": "info@coatesgroup.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "36 Doody St",
+      "addressLocality": "Alexandria",
+      "addressRegion": "NSW",
+      "postalCode": "2015",
+      "addressCountry": "Australia"
+    },
+    "sameAs": [
+      "https://www.facebook.com/coatesgroup",
+      "https://www.vimeo.com/coatesgroup/",
+      "https://www.instagram.com/coatesgroup/",
+      "https://twitter.com/coatesgroup/"
+    ]
+  }
 ---

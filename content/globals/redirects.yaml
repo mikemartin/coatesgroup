@@ -6,3 +6,18 @@ data:
       url_old: /thrive-program
       internal_url: 78d2947e-4486-4131-9c1b-2e7e9db548ec
       response: '301'
+    -
+      id: llxai1dw
+      url_old: /what-we-do/indoor-digital-menu-board
+      internal_url: 10b3a0e8-9688-479e-9a82-6433aa322e55
+      response: '301'
+    -
+      id: llxaiq4g
+      url_old: /what-we-do/outdoor-digital-menu-board
+      internal_url: 10b3a0e8-9688-479e-9a82-6433aa322e55
+      response: '301'
+    -
+      id: llxakply
+      url_old: /what-we-do/self-service-kiosks
+      internal_url: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
+      response: '301'

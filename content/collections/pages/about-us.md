@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693229422
+updated_at: 1693381919
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -65,7 +65,7 @@ page_builder:
   -
     id: lk66i6f1
     eyebrow: 'Our Vision'
-    text: "Revolutionising the way the world's leading \Lbrands leverage technology to drive the best \Lcustomer experience."
+    text: "Revolutionising the way the world's leading \Lbrands leverage technology to drive the best \Lcustomer experience"
     type: brand_text
     enabled: true
     color:

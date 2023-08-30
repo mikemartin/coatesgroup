@@ -1,4 +1,10 @@
 title: Events
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1693360556
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693361811
 blueprint: topic
+seo_description: 'Explore our blogs and dive into our events. Read more.'
+seo_noindex: false
+seo_nofollow: false
+seo_canonical_type: entry
+sitemap_change_frequency: weekly
+sitemap_priority: 0.5

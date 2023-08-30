@@ -3,7 +3,7 @@ id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693211374
+updated_at: 1693379976
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
@@ -42,7 +42,7 @@ page_builder:
       -
         id: ll4o9tpc
         title: 'Program Management'
-        icon: inverse_manulogistics
+        icon: inverse_programmanagement
       -
         id: ll4oa4l0
         title: 'Delivery & Installation'
@@ -67,11 +67,6 @@ page_builder:
     id: llagq97v
     title: 'Frequently Asked Questions'
     questions:
-      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
-      - 91ebcfef-1c85-4de0-aa33-a1684829930b
-      - 362c0cf4-599c-4d68-8d6c-546359f0751a
-      - 3418af77-19bd-4e20-9695-d701a08f09ab
-      - 65037a07-e985-4dd9-a270-4da643c3e5f6
       - fe73b46f-33c7-49f1-a838-af8817b38b22
       - 8f1d6678-2917-4dfd-87a9-fdd40b7f43eb
       - 299d1f30-e854-448a-925f-688fd9f28e95
@@ -94,4 +89,11 @@ overlay_opacity: 100
 headline: 'Traditional Signage Solutions That Bring Brands to Life'
 text: 'Our wayfinding and building signage, pylons, directional signage, canopies, and gantries increase brand exposure while providing customers with critical information. Even better, our start-to-finish services ensure you’re supported from initial concept to completed rollout.'
 show_product_types: false
+seo_title: 'Traditional Signage Solutions Bring Your Brand to Life | Coates Group'
+seo_description: 'Traditional signage solutions from Coates Group bring brands to life and communicate customer messages with impact. learn more.'
+seo_noindex: false
+seo_nofollow: false
+seo_canonical_type: entry
+sitemap_change_frequency: weekly
+sitemap_priority: 0.5
 ---

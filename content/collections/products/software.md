@@ -2,8 +2,8 @@
 id: a9353df9-7db6-4dea-8464-bd33c13faa2a
 blueprint: products
 title: Software
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1693194846
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693370664
 headline: 'Switchboard™ CMS'
 image: products/software/software_schedule_content_transparent_templated_content.png
 enable_hero: false

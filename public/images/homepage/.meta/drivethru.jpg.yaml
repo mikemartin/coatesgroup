@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: "MacDonald's data-driven drive-thru experience powered by Coates Group"
 size: 727904
-last_modified: 1690439236
+last_modified: 1690503364
 width: 2500
 height: 1535
 mime_type: image/jpeg

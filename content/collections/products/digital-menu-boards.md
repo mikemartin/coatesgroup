@@ -2,8 +2,8 @@
 id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693360396
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693376839
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portrait.png
@@ -12,7 +12,7 @@ hero_image: products/indoor-digital-menu-board/img_homepage_indoordigitalmenuboa
 page_builder:
   -
     id: I5tG2gz0
-    title: 'Indoor Digital Menuboard'
+    title: 'Indoor Digital Menu Board'
     headline: 'Enhance Your In Restaurant Ordering Experience'
     text: 'Deployed in thousands of restaurants around the world, our indoor digital menu boards combine intuitive design, flexible mounting options, and leading technology. Pair them with our Switchboard™ CMS to create powerful, dynamic touchpoints in the connected restaurant ecosystem.'
     images:
@@ -103,7 +103,7 @@ page_builder:
     product_type: indoor
   -
     id: a5jYE9nM
-    title: 'Outdoor Digital Menuboard'
+    title: 'Outdoor Digital  Menu Board'
     headline: 'Elevate the Drive Thru Ordering Experience'
     text: 'Thousands of restaurants around the world use our outdoor digital menu boards to create powerful, dynamic touchpoints in the connected drive thru journey. Featuring menu board enclosures that house media players powering our proprietary Switchboard™ CMS - our outdoor digital signage solutions deliver highly targeted and compelling messaging.'
     images:
@@ -136,7 +136,7 @@ page_builder:
         feature_position: right
       -
         id: llauj6uo
-        title: 'Powered by Switchboard'
+        title: 'Powered by Switchboard™️'
         text: 'Our CMS connects all drive thru touchpoints, ensuring your messaging reaches the right customers, with the right offer, at the right time.'
         feature_position: left
     type: product_features
@@ -206,7 +206,7 @@ page_builder:
   -
     id: WFO1NcEa
     cta_type: render
-    title: 'Take the Next Step In Your Digital Journey'
+    title: 'Take the Next Step in Your Digital Journey'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
@@ -220,4 +220,11 @@ product_types:
   - indoor
   - outdoor
 show_product_types: true
+seo_title: 'Digital Menu Boards Power Connected Customer Journeys | Coates Group'
+seo_description: 'At Coates Group, we combine intuitive design, flexible mounting options, and leading technology to deliver engaging in-restaurant and drive-thru experiences. Learn more.'
+seo_noindex: false
+seo_nofollow: false
+seo_canonical_type: entry
+sitemap_change_frequency: weekly
+sitemap_priority: 0.5
 ---

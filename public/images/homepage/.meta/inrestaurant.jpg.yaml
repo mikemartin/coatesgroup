@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: "MacDonald's in-restaurant digital menu boards powered by Coates Group"
 size: 1001858
-last_modified: 1690439237
+last_modified: 1690503364
 width: 2500
 height: 1664
 mime_type: image/jpeg
