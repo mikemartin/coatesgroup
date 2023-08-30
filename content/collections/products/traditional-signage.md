@@ -3,7 +3,7 @@ id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693370951
+updated_at: 1693374712
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
@@ -67,11 +67,6 @@ page_builder:
     id: llagq97v
     title: 'Frequently Asked Questions'
     questions:
-      - 3a95404a-ecd1-4229-a0bb-bf1f1c22e674
-      - 91ebcfef-1c85-4de0-aa33-a1684829930b
-      - 362c0cf4-599c-4d68-8d6c-546359f0751a
-      - 3418af77-19bd-4e20-9695-d701a08f09ab
-      - 65037a07-e985-4dd9-a270-4da643c3e5f6
       - fe73b46f-33c7-49f1-a838-af8817b38b22
       - 8f1d6678-2917-4dfd-87a9-fdd40b7f43eb
       - 299d1f30-e854-448a-925f-688fd9f28e95
