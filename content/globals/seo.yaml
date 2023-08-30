@@ -43,6 +43,11 @@ data:
       taxonomy: topics
       fallback: field
       field_handle: headline
+    -
+      id: llx27umj
+      taxonomy: resources
+      fallback: field
+      field_handle: headline
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
