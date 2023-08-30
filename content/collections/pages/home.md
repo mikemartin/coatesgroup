@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693376289
+updated_at: 1693385035
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -80,7 +80,7 @@ page_builder:
     enabled: true
   -
     id: ljs441zs
-    title: 'Traditional Signage Solutions. Modern Implementations.'
+    title: 'Traditional Signage Solutions: Modern Implementations'
     text: "Our traditional signage solutions maximise the impact of your most important messages whilst helping your brand stand out from the crowd. We've been providing traditional signage solutions to our customers since we first opened our doors 60 years ago – so we know what it means to deliver exceptional experiences at all stages of the rollout process, from initial design through to final installation."
     buttons:
       -
