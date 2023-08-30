@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693356877
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693273647
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry

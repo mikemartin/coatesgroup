@@ -7,10 +7,9 @@
 
 {{ dark_header = switch(
     (hero_type == 'product' && enable_hero) => 'true',
-    (hero_type == 'case-study' && enable_hero) => 'true',
-    (hero_type == 'image' && enable_hero) => 'true',
-    (hero_type == 'video' && enable_hero) => 'true',
-    (hero_type == 'video' && enable_hero) => 'true',
+    (hero_type == 'case-study') => 'true',
+    (hero_type == 'image') => 'true',
+    (hero_type == 'video') => 'true',
     (hero_color == 'Charcoal') => 'true',
 )}}
 

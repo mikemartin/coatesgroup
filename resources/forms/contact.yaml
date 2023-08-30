@@ -4,7 +4,7 @@ email:
   -
     id: Iw1FJh8L
     to: "{{ switch( (enquiry == 'careers') => 'peopleandcultureau@coatesgroup.com', (enquiry == 'support') => 'websupport@coatesgroup.com', () => 'info@coatesgroup.com' ) }}"
-    from: info@coatesgroup.com
+    from: contact@coatesgroup.com
     reply_to: '{{ email }}'
     subject: '{{ trans:strings.form_subject_received }}'
     html: email/form_owner
@@ -12,8 +12,8 @@ email:
   -
     id: 5oHjqgEM
     to: '{{ email }}'
-    from: info@site.com
-    reply_to: info@site.com
+    from: contact@coatesgroup.com
+    reply_to: contact@coatesgroup.com
     subject: '{{ trans:strings.form_subject_sent }}'
     html: email/form_sender
     text: email/form_sender_text

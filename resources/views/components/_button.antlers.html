@@ -38,7 +38,7 @@
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
-        {{ target_blank ?= { svg:link-out class="ml-2.5 w-4 h-4 text-black motion-safe:transition" } }}
+        {{ target_blank ?= { svg:link-out class="ml-2.5 w-4 h-4" } }}
         {{ if extend }}<span class="inset-0 absolute"></span>{{/if}}
     </{{ as or 'a' }}>
 {{ /if }}

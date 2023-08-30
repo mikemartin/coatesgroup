@@ -15,6 +15,7 @@ preview_targets:
     refresh: true
 inject:
   enable_hero: true
+  hero_type: image
 structure:
   root: false
   max_depth: 1
