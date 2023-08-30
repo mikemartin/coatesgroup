@@ -37,6 +37,12 @@ data:
   noindex_local: true
   noindex_staging: true
   noindex_production: false
+  taxonomy_defaults:
+    -
+      id: llx1bkju
+      taxonomy: topics
+      fallback: field
+      field_handle: headline
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
