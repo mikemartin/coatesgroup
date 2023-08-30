@@ -62,8 +62,8 @@ data:
     - thought_leadership
     - experiences
   sitemap_taxonomies:
-    - topics
     - resources
+    - topics
   sitemap_collection_taxonomies:
     -
       id: llx2ji89
