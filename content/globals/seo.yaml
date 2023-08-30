@@ -41,13 +41,13 @@ data:
     -
       id: llx1bkju
       taxonomy: topics
-      fallback: field
-      field_handle: headline
+      fallback: custom_text
+      custom_text: Testing
     -
       id: llx27umj
       taxonomy: resources
-      fallback: field
-      field_handle: headline
+      fallback: custom_text
+      custom_text: Testing
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
