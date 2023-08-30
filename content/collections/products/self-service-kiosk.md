@@ -3,7 +3,7 @@ id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosks'
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693362649
+updated_at: 1693363244
 headline: 'Self-Service Kiosks'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
@@ -116,7 +116,7 @@ show_product_tabs: false
 overlay_opacity: 100
 text: 'Self-service kiosks let customers engage with your brand on their own terms. Our kiosks, digital screens, and custom-built CMS positively impact the customer experience and drive ROI for your business.'
 show_product_types: false
-seo_title: 'Ordering Reimagined With Self-Service Kiosks'
+seo_title: 'Ordering Reimagined With Self-Service Kiosks | Coates Group'
 seo_description: 'Drive engaging and intuitive customer experiences through our self-service kiosk solution that is flexible, future-proofed, and proven at scale by global brands. Learn more.'
 seo_noindex: false
 seo_nofollow: false
