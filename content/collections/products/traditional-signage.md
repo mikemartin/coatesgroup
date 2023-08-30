@@ -2,8 +2,8 @@
 id: 1d2592aa-536e-4dfd-8901-23b7413fc22a
 blueprint: products
 title: 'Traditional Signage'
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693374712
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693379976
 hero_image: products/traditional-signage/img_traditionalsignage_hero.jpg
 enable_hero: true
 image: products/traditional-signage/directional.png
@@ -42,7 +42,7 @@ page_builder:
       -
         id: ll4o9tpc
         title: 'Program Management'
-        icon: inverse_manulogistics
+        icon: inverse_programmanagement
       -
         id: ll4oa4l0
         title: 'Delivery & Installation'
