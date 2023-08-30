@@ -83,7 +83,7 @@ class RebuildStaticCache extends Command
         ];
 
         // Get the 20 latest blog posts
-        Entry::whereInCollection(['blog','awards','press','thought_leadership'])->map(function ($post) {
+        Entry::whereInCollection(['blog','awards','press','thought_leadership'])->where('redirect',null)->map(function ($post) {
             return [
                 'uri' => $post->uri(),
                 'date' => $post->date->timestamp,
