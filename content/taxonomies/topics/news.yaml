@@ -1,4 +1,10 @@
 title: News
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693212725
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693361823
 blueprint: topic
+seo_description: 'Our blog provides news and insights about Coates Group. From company announcements and updates to global conventions. Read more.'
+seo_noindex: false
+seo_nofollow: false
+seo_canonical_type: entry
+sitemap_change_frequency: weekly
+sitemap_priority: 0.5
