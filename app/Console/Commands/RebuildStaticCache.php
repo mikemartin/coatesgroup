@@ -82,13 +82,29 @@ class RebuildStaticCache extends Command
             '/insights/thought-leadership',
         ];
 
-        // Get the 20 latest blog posts
-        Entry::whereInCollection(['blog','awards','press','thought_leadership'])->where('status', 'published')->where('redirect',null)->map(function ($post) {
+        // Get featured blog posts
+        $insights = Entry::query()
+            ->where('uri', '/insights')
+            ->first()
+            ->augmentedValue('page_builder');
+
+        collect($insights)
+            ->flatMap(function ($set) {
+                return match ($set->type) {
+                    'blog' => $set->blog,
+                    'press' => $set->press,
+                    'awards' => $set->awards,
+                    'thought_leadership' => $set->thought_leadership,
+                    default => [],
+                };
+            })
+            ->filter(fn ($post) => is_null($post->redirect))
+            ->map(function ($post) {
             return [
                 'uri' => $post->uri(),
                 'date' => $post->date->timestamp,
             ];
-        })->sortByDesc('date')->limit(20)->pluck('uri')->map(function ($uri) use (&$popularPages) {
+        })->sortByDesc('date')->pluck('uri')->map(function ($uri) use (&$popularPages) {
             $popularPages[] = $uri;
         });
 
