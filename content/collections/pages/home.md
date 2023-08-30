@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693363142
+updated_at: 1693365101
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -174,4 +174,27 @@ text_animation_delay: 1
 seo_title: 'Signage Solutions for Leading Global Restaurants | Coates Group'
 overlay_opacity: 0
 seo_description: 'We deliver end-to-end digital merchandising solutions that drive engaging customer journeys and business ROI for companies worldwide. Connect with us today.'
+schema_jsonld: |-
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Coates Group Pty Ltd",
+    "url": "https://www.coatesgroup.com/",
+    "telephone": "+61 2 9699 3122",
+    "email": "info@coatesgroup.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "36 Doody St",
+      "addressLocality": "Alexandria",
+      "addressRegion": "NSW",
+      "postalCode": "2015",
+      "addressCountry": "Australia"
+    },
+    "sameAs": [
+      "https://www.facebook.com/coatesgroup",
+      "https://www.vimeo.com/coatesgroup/",
+      "https://www.instagram.com/coatesgroup/",
+      "https://twitter.com/coatesgroup/"
+    ]
+  }
 ---
