@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Digital signage software called Switchboard created by Coates Group'
 size: 114667
-last_modified: 1692078542
+last_modified: 1692079757
 width: 1279
 height: 1000
 mime_type: image/png
