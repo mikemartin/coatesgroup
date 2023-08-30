@@ -1,4 +1,4 @@
-# site.ext
+# coatesgroup.com
 
 ## Installation instructions
 
