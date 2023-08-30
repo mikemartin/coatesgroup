@@ -3,7 +3,7 @@ id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
 updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693362625
+updated_at: 1693363235
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portrait.png
@@ -220,7 +220,7 @@ product_types:
   - indoor
   - outdoor
 show_product_types: true
-seo_title: 'Digital Menu Boards Power Connected Customer Journeys'
+seo_title: 'Digital Menu Boards Power Connected Customer Journeys | Coates Group'
 seo_description: 'At Coates Group, we combine intuitive design, flexible mounting options, and leading technology to deliver engaging in-restaurant and drive-thru experiences. Learn more.'
 seo_noindex: false
 seo_nofollow: false
