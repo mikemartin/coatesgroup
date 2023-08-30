@@ -61,8 +61,6 @@ data:
     - products
     - thought_leadership
     - experiences
-  sitemap_taxonomies:
-    - resources
   sitemap_collection_taxonomies:
     -
       id: llx2ji89
