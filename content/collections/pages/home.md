@@ -2,8 +2,8 @@
 id: home
 blueprint: page
 title: Home
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693371309
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693376289
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -18,9 +18,7 @@ page_builder:
       -
         id: ludHHOwH
         title: 'Drive Thru'
-        text: |-
-          Our fully connected digital solutions
-          power a dynamic and data-driven drive thru experience for your customers.
+        text: 'Our fully connected digital solutions power a dynamic and data-driven drive thru experience for your customers.'
         label: 'See more'
         show_arrow: true
         image: homepage/drivethru.jpg
