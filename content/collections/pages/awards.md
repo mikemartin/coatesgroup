@@ -21,6 +21,12 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691211124
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693356991
+center_headline: false
+hide_breadcrumb: false
+text_animation_delay: 0
+overlay_opacity: 0
+seo_title: 'Digital Signage Solution Awards & Recognition | Coates Group'
+seo_description: 'Dive into the awards that Coates Group has achieved for our pioneering digital signage and merchandising solutions. Read more!'
 ---
