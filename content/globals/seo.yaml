@@ -37,6 +37,17 @@ data:
   noindex_local: true
   noindex_staging: true
   noindex_production: false
+  taxonomy_defaults:
+    -
+      id: llx1bkju
+      taxonomy: topics
+      fallback: custom_text
+      custom_text: Testing
+    -
+      id: llx27umj
+      taxonomy: resources
+      fallback: custom_text
+      custom_text: Testing
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
@@ -50,6 +61,17 @@ data:
     - products
     - thought_leadership
     - experiences
+  sitemap_collection_taxonomies:
+    -
+      id: llx2ji89
+      taxonomy: topics
+      collections:
+        - blog
+    -
+      id: llx2jr19
+      taxonomy: resources
+      collections:
+        - thought_leadership
   trackers_local: false
   trackers_staging: false
   trackers_production: true

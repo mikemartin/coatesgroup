@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Four in-restaurant self-service kiosks with different mounting options designed by Coates Group'
 size: 125974
-last_modified: 1690637427
+last_modified: 1691710856
 width: 1920
 height: 1080
 mime_type: image/jpeg

@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'MacDonald restaurant self-service kiosk designed by Coates'
 size: 1074553
-last_modified: 1690461128
+last_modified: 1691710856
 width: 2500
 height: 1667
 mime_type: image/jpeg

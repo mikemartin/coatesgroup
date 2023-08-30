@@ -21,6 +21,12 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1691211075
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693357264
+center_headline: false
+hide_breadcrumb: false
+text_animation_delay: 0
+overlay_opacity: 0
+seo_title: 'Digital & Traditional Signage Blogs | Coates Group'
+seo_description: 'Stay updated with how Coates Group take on the digital & traditional signage world. Browse our blogs and get inspired. Dive in today!'
 ---

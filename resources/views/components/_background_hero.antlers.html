@@ -35,8 +35,8 @@
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-11">
                 {{ show_breadcrumb && !show_title ?= { partial:navigation/breadcrumbs color="text-white" class="mb-3" } }}
                 {{ show_title ?= {partial:typography/p :content="title" color="text-charcoal-40"} }}
-                {{ show_topic ?= {partial:components/tags :tags="topics" class="mb-3"} }}
-                {{ show_resource ?= {partial:components/tags :tags="resources" class="mb-3"} }}
+                {{ show_topic && topics ?= {partial:components/tags :tags="topics" class="mb-3"} }}
+                {{ show_resource && resources ?= {partial:components/tags :tags="resources" class="mb-3"} }}
                 {{ show_press ?= {partial:components/tag url="/insights/press" tag_type="secondary" rounded="true" title="Press" class="mb-3"} }}
                 {{ show_awards ?= {partial:components/tag url="/insights/awards" tag_type="secondary" title="Awards" class="mb-3"} }}
                 {{ partial:typography/h1 :content="headline" color="text-white" class="{!live_preview ?= 'opacity-0'}" }}

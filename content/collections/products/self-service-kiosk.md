@@ -2,8 +2,8 @@
 id: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
 blueprint: products
 title: 'Self-Service Kiosks'
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1692718791
+updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
+updated_at: 1693360831
 headline: 'Self-Service Kiosks'
 image: 'experiences/in-restaurant/k2_closeup_b&w@2x.png'
 hero_image: products/self-service-kiosk/img_homepage_selfservicekiosks_hero.jpg
@@ -50,6 +50,7 @@ page_builder:
     media_type: animation
     size: lg
     reverse_frames: false
+    background: false
   -
     id: llagnile
     video: 6--kiosk-10s.mp4
@@ -114,4 +115,5 @@ page_builder:
 show_product_tabs: false
 overlay_opacity: 100
 text: 'Self-service kiosks let customers engage with your brand on their own terms. Our kiosks, digital screens, and custom-built CMS positively impact the customer experience and drive ROI for your business.'
+show_product_types: false
 ---
