@@ -2,8 +2,8 @@
 id: 10b3a0e8-9688-479e-9a82-6433aa322e55
 blueprint: products
 title: 'Digital Menu Boards'
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693363235
+updated_by: 481974df-e3f1-46c6-9945-1e609185f271
+updated_at: 1693376712
 headline: 'Designed to Power Connected Customer Journeys'
 text: 'Whether you need indoor or outdoor solutions, our digital menu boards consistently drive compelling brand experiences that combine fit-for-purpose hardware and screens, proprietary CMS software, and supporting services.'
 image: products/idmb---portrait.png
@@ -136,7 +136,7 @@ page_builder:
         feature_position: right
       -
         id: llauj6uo
-        title: 'Powered by Switchboard'
+        title: 'Powered by Switchboard™️'
         text: 'Our CMS connects all drive thru touchpoints, ensuring your messaging reaches the right customers, with the right offer, at the right time.'
         feature_position: left
     type: product_features
@@ -206,7 +206,7 @@ page_builder:
   -
     id: WFO1NcEa
     cta_type: render
-    title: 'Take the Next Step In Your Digital Journey'
+    title: 'Take the Next Step in Your Digital Journey'
     label: 'Get in touch'
     link_type: entry
     target_blank: false
