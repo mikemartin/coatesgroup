@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb2480b811e0135a6af09f2be1d3e8f9",
+    "content-hash": "2408ee00991f0a830a75186bb604048d",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -1260,6 +1260,56 @@
                 }
             ],
             "time": "2022-09-10T18:51:20+00:00"
+        },
+        {
+            "name": "duncanmcclean/static-cache-manager",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/duncanmcclean/static-cache-manager.git",
+                "reference": "8c9e5d34bfbdd805a97a976267112a8b3ba9362f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/duncanmcclean/static-cache-manager/zipball/8c9e5d34bfbdd805a97a976267112a8b3ba9362f",
+                "reference": "8c9e5d34bfbdd805a97a976267112a8b3ba9362f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "statamic/cms": "^4.0"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^6.1",
+                "orchestra/testbench": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Static Cache Manager",
+                    "description": "Simple little utility to clear paths in your static cache."
+                },
+                "laravel": {
+                    "providers": [
+                        "DuncanMcClean\\StaticCacheManager\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DuncanMcClean\\StaticCacheManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Simple little utility to clear paths in your static cache.",
+            "support": {
+                "issues": "https://github.com/duncanmcclean/static-cache-manager/issues",
+                "source": "https://github.com/duncanmcclean/static-cache-manager/tree/v3.1.1"
+            },
+            "time": "2023-07-09T10:20:48+00:00"
         },
         {
             "name": "egulias/email-validator",

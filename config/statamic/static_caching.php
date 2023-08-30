@@ -77,7 +77,74 @@ return [
 
         'class' => null,
 
-        'rules' => 'all',
+        'rules' => [
+            'collections' => [
+                'blog' => [
+                    'urls' => [
+                        '/insights',
+                        '/insights/blog',
+                        '/insights/blog/topics/*'
+                    ],
+                ],
+                'press' => [
+                    'urls' => [
+                        '/insights',
+                        '/insights/press',
+                    ],
+                ],
+                'awards' => [
+                    'urls' => [
+                        '/insights',
+                        '/insights/awards',
+                    ],
+                ],
+                'thought_leadership' => [
+                    'urls' => [
+                        '/insights',
+                        '/insights/thought-leadership',
+                        '/insights/thought-leadership/resources/*'
+                    ],
+                ],
+                'people' => [
+                    'urls' => [
+                        '/careers/our-people',
+                        '/about-us/leadership-team'
+                    ],
+                ],
+                'offices' => [
+                    'urls' => [
+                        '/about-us/offices'
+                    ],
+                ],
+                'case-studies' => [
+                    'urls' => [
+                        '/case-studies'
+                    ],
+                ],
+                'clients' => [
+                    'urls' => [
+                        '/',
+                        '/case-studies'
+                    ],
+                ],
+                'values' => [
+                    'urls' => [
+                        '/about-us',
+                    ],
+                ],
+                'experiences' => [
+                    'urls' => [
+                        '/what-we-do',
+                    ],
+                ],
+                'products' => [
+                    'urls' => [
+                        '/what-we-do',
+                    ],
+                ],
+            ],
+        ],
+    
 
     ],
 
