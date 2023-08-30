@@ -77,7 +77,7 @@
     {{ elseif seo_canonical_type == 'external' }}
         <link rel="canonical" href="{{ seo_canonical_external }}">
     {{ elseif seo_canonical_type == 'entry' }}
-        <link rel="canonical" href="{{ permalink }}">
+        <link rel="canonical" href="{{ permalink }}{{ if get:page }}?page={{get:page}}{{/if}}">
     {{ /if }}
 {{ /if }}
 
