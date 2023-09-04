@@ -16,7 +16,7 @@
     
     <div class="mt-10 md:mt-20 space-y-4 md:space-y-8 overflow-hidden">
         {{ block:rows:0 }}
-            <div ax-load x-data="horizontalLoop" x-init="loop1 = horizontalLoop($el.children, {repeat: -1, speed: .66})" class="flex">
+            <div ax-load x-data="horizontalLoop" x-init="loop1 = horizontalLoop($el.children, {repeat: -1, speed: .4})" class="flex">
                 {{ loop times="2" }}
                     <div class="shrink-0 h-36 md:h-72 px-2 md:px-4 flex gap-4 md:gap-8">
                         {{ images }}
@@ -35,7 +35,7 @@
         {{ /block:rows:0 }}
         {{ block:rows:1 }}
             {{ if images }}
-            <div ax-load x-data="horizontalLoop" x-init="loop2 = horizontalLoop($el.children, {repeat: -1, reversed: true, speed: .66 });" class="flex">
+            <div ax-load x-data="horizontalLoop" x-init="loop2 = horizontalLoop($el.children, {repeat: -1, reversed: true, speed: .4 });" class="flex">
                 {{ loop times="2" }}
                     <div class="shrink-0 h-36 md:h-72 px-2 md:px-4 flex gap-4 md:gap-8">
                         {{ images }}
