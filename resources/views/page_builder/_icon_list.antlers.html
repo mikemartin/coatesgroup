@@ -44,7 +44,7 @@
         
             {{ block:icon_list}}
                 {{ if block:icon_position == 'above' }}
-                <div class="relative flex gap-4  sm:flex-col {{ text ? 'items-start' : 'items-center text-center' }}
+                <div class="relative flex gap-4  sm:flex-col {{ text ? 'items-start' : 'items-center sm:text-center' }}
                     {{ switch(
                         (total_results === 2) => 'sm:col-span-6',
                         (total_results === 3) => 'sm:col-span-6 md:col-span-4',
