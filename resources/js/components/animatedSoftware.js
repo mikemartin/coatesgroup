@@ -18,14 +18,14 @@ export default (path, frames, container, reversed = false) => ({
             container: container,
             actions: [
                 {
-                    visibility: [0, 0.45],
+                    visibility: [0, 0.25],
                     type: 'stop',
                     frames: [
                         0
                     ] 
                 },
                 {
-                    visibility: [0.45, 0.75],
+                    visibility: [0.25, 0.75],
                     type: 'seek',
                     frames: [
                         1, 120
