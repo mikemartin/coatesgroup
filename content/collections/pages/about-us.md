@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1693785632
+updated_at: 1693785924
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -113,7 +113,7 @@ page_builder:
     image: people/seeing-the-signs-copy.jpg
   -
     id: lk6hhy08
-    title: 'Lorem ipsum dolor sit amet consectetur'
+    title: 'Coates in Numbers'
     stats:
       -
         id: lk6hi163
