@@ -19,7 +19,7 @@
             <source :src="video" type="video/mp4">
         </video>
     </div>
-    <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-black-50"></div>
     {{ elseif hero_image }}
         <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
             {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" sizes="100vw" }}
