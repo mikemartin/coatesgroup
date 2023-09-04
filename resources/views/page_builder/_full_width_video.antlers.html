@@ -55,7 +55,7 @@
             x-transition.opacity.duration.1000
             @click="autoplay = true, loadPlayer()"
             {{ /if }}
-            x-data="{video: ($width>768) ? '{{ block:video }}' : '{{ block:video_mobile }}', poster: ($width>768) ? '{{ block:fallback_image }}' : '{{ glide :src="block:fallback_image" w="720" h="1280" }}'}" 
+            x-data="{video: ($width>768) ? '{{ block:video }}' : '{{ block:video_mobile }}', poster: ($width>768) ? '{{ glide :src="block:fallback_image" w="1280" h="720" fit="crop_focal" quality="85" format="jpg" }}' : '{{ glide :src="block:fallback_image" w="720" h="1280"  fit="crop_focal" quality="85" format="jpg" }}'}" 
             x-screen="video = ($width>768) ? '{{ block:video }}' : '{{ block:video_mobile }}'"
             x-effect="$refs.video.load()"
             class="relative {{ if block:video_url }} aspect-[9/5] {{else}} aspect-[5/7] md:aspect-[9/4] {{/if}} {{ if block:video_url }}cursor-pointer{{/if}}">

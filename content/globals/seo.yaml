@@ -37,17 +37,6 @@ data:
   noindex_local: true
   noindex_staging: true
   noindex_production: false
-  taxonomy_defaults:
-    -
-      id: llx1bkju
-      taxonomy: topics
-      fallback: custom_text
-      custom_text: Testing
-    -
-      id: llx27umj
-      taxonomy: resources
-      fallback: custom_text
-      custom_text: Testing
   hreflang_auto: true
   json_ld_type: none
   breadcrumbs: false
