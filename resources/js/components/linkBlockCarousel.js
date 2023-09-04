@@ -17,7 +17,6 @@ export default () => ({
             updateOnWindowResize: true,
             a11y: true,
             freeMode: true,
-            cssMode: true,
             passiveListeners: true,
             mousewheel: {
               enabled: true,
