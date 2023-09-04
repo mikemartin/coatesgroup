@@ -46,7 +46,7 @@ page_builder:
     enabled: true
     frames: '29'
     media_type: animation
-    reverse_frames: false
+    reverse_frames: true
     size: md
     product_type: indoor
     background: false

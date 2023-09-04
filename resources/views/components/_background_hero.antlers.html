@@ -19,7 +19,7 @@
             <source :src="video" type="video/mp4">
         </video>
     </div>
-    <div aria-hidden="true" class="absolute inset-0 bg-black-50"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-black-50"></div>
     {{ elseif hero_image }}
         <div aria-hidden="true" class="absolute inset-0 overflow-hidden">
             {{ partial:statamic-peak-tools::components/picture :image="hero_image" aspect_ratio="1/1 large:2/1" cover="true" sizes="100vw" }}
@@ -29,7 +29,7 @@
         {{ if hero_type != 'article' && hero_type != 'product' && hero_type != 'case-study'  }}<div aria-hidden="true" class="absolute top-0 inset-x-0 h-32 bg-gradient-to-t to-70% from-black/0 to-[#000]" style="opacity: {{ !overlay_opacity ? '1' : (overlay_opacity / 100) }}"></div>{{/if}}
     {{ /if}}
 
-    <div class="relative w-full flex flex-col justify-end min-h-[800px] pb-8 md:pt-64 md:pb-16">
+    <div class="{{ if hero_type == 'video' }}pointer-events-none{{/if}} relative w-full flex flex-col justify-end min-h-screen md:min-h-[800px] pb-8 md:pt-64 md:pb-16">
         <div class="fluid-container grid md:grid-cols-12 gap-8 md:gap-y-20">
             <div x-data="fadeIn" 
                 x-init="hide($el.children), setTimeout(() => fadeInStagger($el), {{ text_animation_delay >= 1 ? (text_animation_delay * 1000) : '300' }})" class="relative md:col-span-11">

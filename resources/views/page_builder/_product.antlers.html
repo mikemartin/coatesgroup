@@ -20,33 +20,34 @@
                 {{ /block:images:0 }}
             </figure>
         {{ else }}
-                <div x-data="fadeIn" 
-                x-init="hide($el.children)" 
-                x-intersect.once.margin.-20%="fadeInStagger($el)" class="hidden md:grid aspect-[8/3] md:col-span-12 gap-5 md:grid-cols-4 md:grid-rows-2">
-                    {{ images }}
-                        <figure class="bg-charcoal-10
-                            {{ switch(
-                                (count == 1) => 'md:row-span-2 md:col-span-2',
-                                (count == 2) => 'md:col-span-2',
-                                () => '',
-                            )}}
-                        ">
-                            {{ partial
-                                src="statamic-peak-tools::components/picture"
-                                :image="url"
-                                sizes="
-                                    { switch(
-                                        (count == 1) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
-                                        (count == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
-                                        () => '(min-width: 1280px) 320px, (min-width: 768px) 25vw, 90vw',
-                                    )}
-                                "
-                                aspect_ratio="large:4/3"
-                                cover="true"
-                                lazy="true"
-                            }}
-                        </figure>
-                    {{ /images }}
+                <div class="hidden md:col-span-12 md:block">
+
+                    <div class="w-full aspect-[8/3] grid gap-5 md:grid-cols-4 md:grid-rows-2">
+                        {{ images }}
+                            <figure class="bg-charcoal-10
+                                {{ switch(
+                                    (count == 1) => 'md:row-span-2 md:col-span-2',
+                                    (count == 2) => 'md:col-span-2',
+                                    () => '',
+                                )}}
+                            ">
+                                {{ partial
+                                    src="statamic-peak-tools::components/picture"
+                                    :image="url"
+                                    sizes="
+                                        { switch(
+                                            (count == 1) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                            (count == 2) => '(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw',
+                                            () => '(min-width: 1280px) 320px, (min-width: 768px) 25vw, 90vw',
+                                        )}
+                                    "
+                                    aspect_ratio="large:4/3"
+                                    cover="true"
+                                    lazy="true"
+                                }}
+                            </figure>
+                        {{ /images }}
+                    </div>
                 </div>
                 <div class="md:hidden">
                     {{ partial:components/gallery_carousel }}

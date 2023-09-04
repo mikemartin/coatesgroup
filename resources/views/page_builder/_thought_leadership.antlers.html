@@ -28,7 +28,7 @@ class="fluid-container">
                 >
                 All
             </button>
-            {{ resources = block:resources ? block:resources : {taxonomy:resources} }}
+            {{ resources = block:resources ? block:resources : {taxonomy:resources sort="order:asc"} }}
 
             {{ resources }}
                 <a href="/insights/thought-leadership/resources/{{ slug }}"

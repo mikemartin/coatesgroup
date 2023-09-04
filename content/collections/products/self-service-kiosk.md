@@ -49,7 +49,7 @@ page_builder:
     frames: '29'
     media_type: animation
     size: lg
-    reverse_frames: false
+    reverse_frames: true
     background: false
   -
     id: llagnile

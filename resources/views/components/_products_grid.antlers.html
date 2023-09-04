@@ -51,7 +51,7 @@
                 {{ if product_text }}
                     {{ partial:typography/p class="mb-4" :content="product_text" }}
                 {{ /if }}
-                {{ product:url ?= { partial:components/button :url="product:url" aria-label="{ product_title | slugify }" label="{trans:strings.learn_more}" } }}
+                {{ product:url ?= { partial:components/button url="{product:url}{ (custom:title|contains('Outdoor Digital')) ?= '?type=outdoor' }" aria-label="{ product_title | slugify }" label="{trans:strings.learn_more}" } }}
             </div>
             
         </div>

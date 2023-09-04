@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693381919
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1693785924
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -113,24 +113,24 @@ page_builder:
     image: people/seeing-the-signs-copy.jpg
   -
     id: lk6hhy08
-    title: 'Lorem ipsum dolor sit amet consectetur'
+    title: 'Coates in Numbers'
     stats:
       -
         id: lk6hi163
         number: '9'
-        label: Countries
+        label: 'Global Offices'
       -
         id: lk6hi5b6
-        number: XXX
-        label: 'Lorem Ipsum'
+        number: '60'
+        label: 'Years of Experience'
       -
         id: lk6hider
-        number: '+350'
-        label: Employees
+        number: 380+
+        label: 'Global Crew'
       -
         id: lk6hi8iu
-        number: XXX
-        label: 'Lorem Ipsum'
+        number: '150,000+'
+        label: 'Screens Deployed Globally'
     buttons:
       -
         id: lk6hijcm

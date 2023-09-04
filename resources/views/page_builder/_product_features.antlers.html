@@ -13,9 +13,9 @@
                 (size == 'lg') => 'md:col-span-8 md:col-start-3',
                 () => 'md:col-span-6 md:col-start-4'
             )}} h-full">
-                <div class="sticky {{ if show_product_types }}top-14 md:top-[4.5rem]{{else}}md:top-0{{/if}} {{ if animation:filename == 'software' }}md:h-[540px]{{else}}md:h-[680px]{{/if}} md:flex md:items-center md:justify-center">
+                <div class="sticky {{ if show_product_types }} top-14 md:top-[4.5rem] {{else}} md:top-0 {{/if}} {{ if animation:filename == 'software' }} md:h-[540px] {{else}} md:h-[680px] {{/if}} md:flex md:items-center md:justify-center">
                     <div 
-                        class="{{ size == 'sm' ?= 'max-w-xl' }}">
+                        class="w-full {{ size == 'sm' ?= 'max-w-xl' }}">
                         {{ if animation }}
                             {{ partial:components/product_animation  }}
                         {{ else }}
@@ -33,7 +33,7 @@
         
         <div class="md:py-20 md:space-y-20">
             {{ features }}
-            <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12">
+            <div class="mb-6 md:mb-0 grid gap-6 md:grid-cols-12 md:h-[calc(50vh-4.5rem)]">
                 <div class="md:col-span-3 {{ if feature_position == "right" }}md:col-start-10{{/if}}">
                         <div class="md:flex md:items-center">
                             <div x-data="fadeIn" 

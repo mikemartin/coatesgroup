@@ -20,7 +20,7 @@
         <div class="flex flex-wrap gap-4">
             {{ partial:components/button_tag :selected="current_uri == '/insights/blog'" url="/insights/blog" label="All" /}}
             
-            {{ taxonomy:topics collection="blog" }}
+            {{ taxonomy:topics collection="blog" sort="order:asc" }}
                 {{ partial:components/button_tag url="/insights/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:topics }}
         </div>

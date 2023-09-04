@@ -73,6 +73,14 @@
     opacity: 1;
   }
 
+  .swiper-watch-progress .swiper-slide > * {
+    pointer-events: none;
+  }
+
+  .swiper-watch-progress .swiper-slide.swiper-slide-active > * {
+    pointer-events: auto;
+  }
+  
   .swiper-thumbs .swiper-slide {
     @apply text-charcoal-40 hover:text-black;
   }

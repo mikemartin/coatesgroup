@@ -27,7 +27,7 @@
                 >
                 All
             </button>
-            {{ topics = block:topics ? block:topics : {taxonomy:topics collection="blog" } }}
+            {{ topics = block:topics ? block:topics : {taxonomy:topics collection="blog" sort="order:asc" } }}
 
             {{ topics }}
                 <a href="/insights/blog/topics/{{ slug }}"

@@ -13,11 +13,7 @@
         <div class="fluid-container grid md:grid-cols-12 gap-10">
             {{ collection:case_studies sort="order" }}
                 {{ unless no_results }}
-                    {{ if count % 3 == 0 }}
-                        {{ partial:components/case_study size="wide" class="md:col-span-6 lg:col-span-12" loading="true" }}
-                    {{ else }}
-                        {{ partial:components/case_study class="md:col-span-6" loading="true" }}
-                    {{ /if }}
+                    {{ partial:components/case_study class="md:col-span-6" loading="true" }}
                 {{ else }}
                     <div class="md:col-span-6">
                         {{ trans:strings.no_results }}
