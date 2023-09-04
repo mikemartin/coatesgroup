@@ -40,12 +40,12 @@ class="w-full">
                         <!-- If we need navigation buttons -->
                         <div class="w-full flex justify-center gap-16 mb-8 lg:mb-0">
                             <div class="swiper-prev transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:left-0">
-                                <div class="p-3" :class="{ 'animate-bob': activeSlide == 5 }">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide == 4 }">
                                     {{ svg:chevron-big-left class="w-8 h-8" }}
                                 </div>
                             </div>
                             <div class="swiper-next transition lg:absolute lg:top-1/2 lg:-translate-y-3/4 lg:right-0">
-                                <div class="p-3" :class="{ 'animate-bob': activeSlide < 5 }">
+                                <div class="p-3" :class="{ 'animate-bob': activeSlide < 4 }">
                                     {{ svg:chevron-big-right class="w-8 h-8" }}
                                 </div>
                             </div>
@@ -58,7 +58,7 @@ class="w-full">
                                         {{ partial:typography/large class="font-medium mb-4 mx-auto" :content="custom:title ?? product:title" }}
                                         {{ partial:typography/p class="mb-4 lg:max-w-md lg:mx-auto" :content="custom:text ?? product:text" }}
                                         {{ if product:url }}
-                                            {{ partial:components/button :url="product:url" button_type="inline" label="{trans:strings.learn_more}" class="mx-auto" }}
+                                            {{ partial:components/button url="{product:url}{ (custom:title|contains('Outdoor Digital')) ?= '?type=outdoor' }" button_type="inline" label="{trans:strings.learn_more}" class="mx-auto" }}
                                         {{ /if }}
                                     </div>
                                 </div>

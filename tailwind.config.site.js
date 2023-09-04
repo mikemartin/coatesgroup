@@ -110,8 +110,8 @@ module.exports = {
       fontSize: {
         lg: ['1.125rem', { lineHeight: '1.575rem' }],
         '2xl': ['1.5625rem;', { lineHeight: '2.03125rem' }],
-        '4xl': ['2.1875rem', { lineHeight: '2.5rem' }],
-        '5xl': ['2.8125rem', { lineHeight: '2.625rem' }],
+        '4xl': ['2.1875rem', { lineHeight: '2.625rem' }],
+        '5xl': ['2.8125rem', { lineHeight: '3.09375rem' }],
         '7xl': ['4.5rem', { lineHeight: '4.95rem' }]
       },
     },

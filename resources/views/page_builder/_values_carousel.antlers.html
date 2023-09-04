@@ -19,18 +19,20 @@
                 <div class="mt-10 md:mt-20 swiper !pb-12 md:!pb-20 !overflow-x-visible" x-ref="container">
                     <div class="swiper-wrapper">
                         {{ block:values }}
-                            <div class="swiper-slide aspect-[2/3] md:aspect-[7/10] !h-auto border border-charcoal-40 !flex flex-col">
-                                <div class="px-8 py-10 relative flex-1">
-                                    {{ partial:typography/large color="font-medium max-w-[20ch]" :content="title|widont" }}
-                                    {{ partial:typography/p class="mt-6 max-w-[36ch]" :content="text|widont" }}
+                            <div class="swiper-slide !h-auto border border-charcoal-40 ">
+                                <div class="aspect-[2/3] md:aspect-[7/10] !flex flex-col">
+                                    <div class="px-8 py-10 relative flex-1">
+                                        {{ partial:typography/large color="font-medium max-w-[20ch]" :content="title|widont" }}
+                                        {{ partial:typography/p class="mt-6 max-w-[36ch]" :content="text|widont" }}
+                                    </div>
+                                    {{ partial
+                                        src="statamic-peak-tools::components/picture"
+                                        sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
+                                        lazy="true"
+                                        aspect_ratio="1/1"
+                                        class="absolute bottom-0 inset-x-0"
+                                    }}
                                 </div>
-                                {{ partial
-                                    src="statamic-peak-tools::components/picture"
-                                    sizes="(min-width: 1280px) 640px, (min-width: 768px) 50vw, 90vw"
-                                    lazy="true"
-                                    aspect_ratio="1/1"
-                                    class="absolute bottom-0 inset-x-0"
-                                }}
                             </div>
                         {{ /block:values }}
                     </div>

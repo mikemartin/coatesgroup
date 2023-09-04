@@ -28,7 +28,7 @@
                                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                                     {{ if product:url }}
                                         {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}
-                                        <a href="{{ product:url }}" class="absolute inset-0"></a>
+                                        <a href="{{ product:url }}{{ if custom:title|contains('Outdoor Digital')}}?type=outdoor{{/if}}" class="absolute inset-0"></a>
                                     {{ /if }}
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                     {{ partial:typography/large class="font-medium mb-4" :content="custom:title ?? product:title" }}
                     {{ if product:url }}
                         {{ partial:components/button button_type="inline" as="span" label="{trans:strings.learn_more}" faux="true" }}
-                        <a href="{{ product:url }}" class="absolute inset-0"></a>
+                        <a href="{{ product:url }}{{ if custom:title|contains('Outdoor Digital')}}?type=outdoor{{/if}}" class="absolute inset-0"></a>
                     {{ /if }}
                 </div>
                 {{ /products }}

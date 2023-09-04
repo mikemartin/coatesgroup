@@ -11,6 +11,20 @@ tabs:
               required: true
               validate:
                 - required
+              width: 66
+          -
+            handle: order
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Order
+              icon: text
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
           -
             handle: headline
             field:

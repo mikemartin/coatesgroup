@@ -11,7 +11,7 @@
         <div class="flex flex-wrap gap-4">
             {{ partial:components/button_tag :selected="current_uri == '/insights/thought-leadership'" url="/insights/thought-leadership" label="All" /}}
             
-            {{ taxonomy:resources }}
+            {{ taxonomy:resources collection="thought_leadership" sort="order:asc" }}
                 {{ partial:components/button_tag url="/insights/thought-leadership/resources/{{ slug }}" :selected="page:slug == slug" :label="title" /}}
             {{ /taxonomy:resources }}
         </div>
