@@ -16,6 +16,7 @@ export default () => ({
             slidesPerView: 'auto',
             spaceBetween: 32,
             freeMode: true,
+            cssMode: true,
             multipleActiveThumbs: false,
             passiveListeners: true,
             mousewheel: {
@@ -39,6 +40,7 @@ export default () => ({
             slideToClickedSlide: true,
             a11y: true,
             freeMode: true,
+            cssMode: true,
             passiveListeners: true,
             mousewheel: {
               enabled: true,

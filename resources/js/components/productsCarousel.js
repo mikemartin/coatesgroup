@@ -19,6 +19,7 @@ export default (products) => ({
             updateOnWindowResize: true,
             a11y: true,
             freeMode: true,
+            cssMode: true,
             passiveListeners: true,
             pagination: {
               el: '.swiper-pagination',

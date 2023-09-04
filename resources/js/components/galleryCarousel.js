@@ -16,6 +16,7 @@ export default () => ({
             edgeSwipeDetection: 'prevent',
             a11y: true,
             freeMode: true,
+            cssMode: true,
             passiveListeners: true,
             mousewheel: {
               enabled: true,
