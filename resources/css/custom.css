@@ -40,6 +40,12 @@
 
       @media screen(sm) {
         :root {
+          --swiper-pagination-bullet-width: 64px;
+        }
+      }
+
+      @media screen(md) {
+        :root {
           --swiper-pagination-bullet-width: 96px;
         }
       }

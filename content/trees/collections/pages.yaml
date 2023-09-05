@@ -15,8 +15,8 @@ tree:
     children:
       -
         entry: b894f99b-58a9-41d0-bde4-411b91dcad01
-      -
-        entry: 82143229-3dff-4e67-a5a4-21ec485cec07
+  -
+    entry: 82143229-3dff-4e67-a5a4-21ec485cec07
   -
     entry: d11a5ec8-9915-4528-8cfe-e282362ef9ee
     children:

@@ -21,3 +21,8 @@ data:
       url_old: /what-we-do/self-service-kiosks
       internal_url: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
       response: '301'
+    -
+      id: lm5w6vmq
+      url_old: /about-us/offices
+      internal_url: 82143229-3dff-4e67-a5a4-21ec485cec07
+      response: '301'

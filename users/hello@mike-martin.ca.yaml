@@ -41,6 +41,7 @@ preferences:
         - date
         - status
         - products
+        - experience
     hardware:
       after_save: create_another
     values:
