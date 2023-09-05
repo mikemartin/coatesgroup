@@ -5,7 +5,7 @@
 #}}
 
 <!-- /page_builder/_images_grid.antlers.html -->
-<section>
+<section class="overflow-hidden">
     <div class="grid gap-8 fluid-container md:grid-cols-12">
         {{ block:title ?= { partial:typography/h2 :content="block:title" class="md:col-span-5" } }}
         <div class="md:col-start-7 md:col-span-6">
@@ -14,9 +14,11 @@
         </div>
     </div>
     
-    <div class="mt-10 md:mt-20 space-y-4 md:space-y-8 overflow-hidden">
-        {{ block:rows:0 }}
-            <div ax-load x-data="horizontalLoop" x-init="loop1 = horizontalLoop($el.children, {repeat: -1, speed: .4})" class="flex">
+    {{ gallery = block:rows }}
+
+    <div class="hidden md:block mt-10 md:mt-20 space-y-4 md:space-y-8">
+        {{ gallery:0 }}
+            <div x-ignore ax-load="media (min-width: 768px)" x-data="horizontalLoop" x-init="loop1 = horizontalLoop($el.children, {repeat: -1, speed: .4})" class="flex">
                 {{ loop times="2" }}
                     <div class="shrink-0 h-36 md:h-72 px-2 md:px-4 flex gap-4 md:gap-8">
                         {{ images }}
@@ -32,10 +34,10 @@
                     </div>
                 {{ /loop }}
             </div>
-        {{ /block:rows:0 }}
-        {{ block:rows:1 }}
+        {{ /gallery:0 }}
+        {{ gallery:1 }}
             {{ if images }}
-            <div ax-load x-data="horizontalLoop" x-init="loop2 = horizontalLoop($el.children, {repeat: -1, reversed: true, speed: .4 });" class="flex">
+            <div x-ignore ax-load="media (min-width: 768px)" x-data="horizontalLoop" x-init="loop2 = horizontalLoop($el.children, {repeat: -1, reversed: true, speed: .4 });" class="flex">
                 {{ loop times="2" }}
                     <div class="shrink-0 h-36 md:h-72 px-2 md:px-4 flex gap-4 md:gap-8">
                         {{ images }}
@@ -52,7 +54,13 @@
                 {{ /loop }}
             </div>
             {{ /if }}
-        {{ /block:rows:1 }}
+        {{ /gallery:1 }}
+    </div>
+
+    {{ gallery_images = gallery|pluck('images')|flatten }}
+
+    <div class="md:hidden mt-10 fluid-container">
+        {{ partial:components/gallery_carousel :images="gallery_images" }}
     </div>
 </section>
 <!-- End: /page_builder/_images_grid.antlers.html -->
