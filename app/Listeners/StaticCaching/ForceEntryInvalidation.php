@@ -47,7 +47,7 @@ class ForceEntryInvalidation implements ShouldQueue
         ],
         'offices' => [
             'urls' => [
-                '/about-us/offices'
+                '/offices'
             ],
         ],
         'case-studies' => [

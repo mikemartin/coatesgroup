@@ -113,7 +113,7 @@ return [
                 ],
                 'offices' => [
                     'urls' => [
-                        '/about-us/offices'
+                        '/offices'
                     ],
                 ],
                 'case-studies' => [
