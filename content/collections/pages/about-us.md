@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1694119083
+updated_at: 1694126080
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -20,7 +20,10 @@ page_builder:
   -
     id: lk0ploc5
     title: 'Our Story'
-    text: 'Lorem ipsum dolor sit amet consectetur. Consequat ullamcorper lorem nunc nulla. In etiam ac pellentesque egestas nunc diam. Egestas aliquet neque elementum quisque luctus ac dolor suscipit. Tellus sed lorem ridiculus cras. Amet quis mattis feugiat bibendum turpis iaculis ornare. Tristique dolor leo suscipit felis amet elit. Facilisi elementum libero amet magna nibh viverra. At ut iaculis nullam non quam blandit laoreet aliquam. Amet ut porta diam eros nunc commodo pharetra. A duis in integer dictum. Feugiat velit id urna semper bibendum blandit ac aenean. Ullamcorper quisque sed sed sit consequat. Praesent tempor elit ultricies porttitor. In est diam sem arcu vitae diam quis ridiculus.'
+    text: |-
+      For 60 years, our solutions have enabled impactful connections between some of the world’s leading brands and their customers. And over those 60 years, we're proud to have maintained the values of our family-founded business while cultivating the innovative spirit of a start-up. Today, this combination fuels our purpose - Creating Connections. Empowering Partnerships. Always Evolving. 
+
+      We are curious, charismatic, authentic and we value and leverage the diversity of our Crew. We are imaginers, kindness enthusiasts, experts, creators, thinkers, challengers, collaborators and over-achievers. And together, as a Crew, we are revolutionising the way the world’s leading brands leverage technology to drive the best customer experiences.
     video: 3--about-us-people-office-initiative-10s.mp4
     type: full_width_video
     enabled: true
