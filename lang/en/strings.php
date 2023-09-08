@@ -8,7 +8,7 @@ return [
     'form_mail_closing'                 => 'Kind regards',
     'form_mail_from'                    => 'The Coates Crew',
     'form_mail_greeting'                => 'Dear',
-    'form_mail_logo'                    => 'https://new.coatesgroup.com/visuals/coates-logo.svg',
+    'form_mail_logo'                    => 'https://coatesgroup.com/visuals/coates-logo.svg',
     'form_mail_submitted'               => 'Submitted',
     'form_mail_title'                   => 'Contact form',
     'form_mail_url'                     => config('app.url'),
