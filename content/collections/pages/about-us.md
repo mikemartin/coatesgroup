@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1694126080
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1694131579
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
