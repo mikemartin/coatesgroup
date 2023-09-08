@@ -163,8 +163,8 @@ page_builder:
           - about-us/gallery/china-bbq-2.jpg
     type: images_grid
     enabled: true
-    title: 'Lorem ipsum dolor sit amet consectetur.'
-    text: 'Lorem ipsum dolor sit amet consectetur. Fringilla consequat magna pellentesque scelerisque nunc nunc pellentesque neque. Cras lectus fermentum elit sit diam. Habitant a id quis et urna scelerisque. Mauris faucibus tellus mi et enim aliquet.'
+    title: 'Want to Join a Crew Built on Connection?'
+    text: "At Coates Group, we're building a collaborative, people-centric culture like no other by putting our people at the forefront of everything we do. If you're dedicated to continuous learning and growth – and to delighting customers with exceptional experiences – we'd love to have you join the Crew."
     buttons:
       -
         id: llq6t0td
