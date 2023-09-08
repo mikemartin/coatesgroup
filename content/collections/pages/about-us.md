@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1694131579
+updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
+updated_at: 1694134938
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -99,7 +99,7 @@ page_builder:
         content:
           -
             type: text
-            text: "In the 20 years I’ve been involved in the business, we’ve seen many evolutions. What’s been constant through them all is the integrity, passion and connection shared across our Crew. It’s the relationships within\_Coates\_and with our partners that I love most about the business. Our Crew are truly at the heart of it all, and I’m proud to lead them both today and into the future"
+            text: '“In the 20 years I’ve been involved in the business, we’ve seen many evolutions. What’s been constant through them all is the integrity, passion and connection shared across our Crew. It’s the relationships within Coates and with our partners that I love most about the business. Our Crew are truly at the heart of it all, and I’m proud to lead them both today and into the future.”'
     author: a85f3420-0809-4f7a-a5af-11635a138181
     buttons:
       -
