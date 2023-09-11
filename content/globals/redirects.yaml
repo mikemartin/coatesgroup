@@ -36,3 +36,8 @@ data:
       url_old: /modal-content/signage/
       internal_url: 1d2592aa-536e-4dfd-8901-23b7413fc22a
       response: '301'
+    -
+      id: lme52pda
+      url_old: /products/signage/
+      internal_url: 1d2592aa-536e-4dfd-8901-23b7413fc22a
+      response: '301'
