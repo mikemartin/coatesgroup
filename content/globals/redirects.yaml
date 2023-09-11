@@ -21,3 +21,18 @@ data:
       url_old: /what-we-do/self-service-kiosks
       internal_url: 5cad4e92-02fa-476d-8ad8-429bdf2aff00
       response: '301'
+    -
+      id: lme4utk6
+      url_old: /about/contact
+      internal_url: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+      response: '301'
+    -
+      id: lme4vbpb
+      url_old: /about
+      internal_url: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
+      response: '301'
+    -
+      id: lme4vp44
+      url_old: /modal-content/signage/
+      internal_url: 1d2592aa-536e-4dfd-8901-23b7413fc22a
+      response: '301'
