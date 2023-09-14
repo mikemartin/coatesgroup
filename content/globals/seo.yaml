@@ -68,7 +68,6 @@ data:
   use_fathom: false
   use_plausible: false
   use_cloudflare_web_analytics: false
-  tracker_type: gtag
-  google_analytics: G-G7XNRRCSBG
-  anonymize_ip: true
+  tracker_type: gtm
+  google_tag_manager: GTM-PPD4PR2Q
   use_cookie_banner: false
