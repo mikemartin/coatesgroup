@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693371464
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1695786287
 page_builder:
   -
     id: lk0po80o
@@ -135,7 +135,7 @@ page_builder:
     type: call_to_action
     cta_type: illustration
     enabled: true
-    label: 'Apply now'
+    label: 'Explore now'
     link_type: url
     target_blank: true
     button_type: button
