@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1694145118
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1695875068
 headline: 'Meet Our Senior Leadership Team'
 enable_hero: false
 hero_type: brand
@@ -25,16 +25,16 @@ page_builder:
     people:
       - a85f3420-0809-4f7a-a5af-11635a138181
       - 10126038-4a19-4f0b-a0aa-c409cdb2177d
-      - 197ea0de-5ee1-4766-ab70-ca6eed914474
-      - 9be1c42f-22e7-42ec-8760-55348a15a581
-      - 3e37dda9-4cc8-4f3a-b5a0-3ad7e07509af
       - 907486d6-cac0-4490-a2ae-c478dee7ddee
       - 31506ce8-4e98-4ec6-9d7d-0495303c6043
-      - 82f7eed3-ad04-4851-a894-a8f1ccdf18bd
       - af74c8eb-6178-4031-b768-788a9b07479a
-      - 47701b9a-6b8c-4b09-b0e3-10a673f05379
-      - e5c80b9a-2e8e-4fc2-9fcb-1c98e99c8b6f
+      - 3e37dda9-4cc8-4f3a-b5a0-3ad7e07509af
       - ffece07b-682b-41e2-9d42-43079421302c
+      - 9be1c42f-22e7-42ec-8760-55348a15a581
+      - 82f7eed3-ad04-4851-a894-a8f1ccdf18bd
+      - 197ea0de-5ee1-4766-ab70-ca6eed914474
+      - e5c80b9a-2e8e-4fc2-9fcb-1c98e99c8b6f
+      - 47701b9a-6b8c-4b09-b0e3-10a673f05379
     type: people
     enabled: true
   -

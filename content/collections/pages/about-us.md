@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1695869315
+updated_at: 1695875223
 hero_type: brand
 headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
 hero_color:
@@ -119,6 +119,8 @@ page_builder:
     title: 'Coates in Numbers'
     stats:
       -
+        id: ln2o9enw
+      -
         id: lk6hi163
         number: '9'
         label: 'Global Offices'
@@ -127,13 +129,7 @@ page_builder:
         number: '60'
         label: 'Years of Experience'
       -
-        id: ln2krftl
-        number: 380+
-        label: Crew
-      -
-        id: ln2ksgvc
-        number: '150,000+'
-        label: 'Screens deployed'
+        id: ln2o9yjg
     buttons:
       -
         id: lk6hijcm
