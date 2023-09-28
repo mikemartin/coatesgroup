@@ -32,17 +32,27 @@ data:
       internal_url: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
       response: '301'
     -
-      id: lme87gy7
-      url_old: /modal-content/signage/
-      internal_url: 1d2592aa-536e-4dfd-8901-23b7413fc22a
-      response: '301'
-    -
       id: lme87mo7
       url_old: /products/signage/
-      internal_url: 1d2592aa-536e-4dfd-8901-23b7413fc22a
+      internal_url: home
       response: '301'
     -
       id: lme87sag
       url_old: /about/contact
       internal_url: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+      response: '301'
+    -
+      id: ln2i9t6q
+      url_old: /modal-content/signage/
+      internal_url: d70deed0-6959-4ec0-97a2-75d120b8899e
+      response: '301'
+    -
+      id: ln2icg24
+      url_old: /careers-with-coates/Careers
+      internal_url: 1172c566-619f-48e4-ba53-b44f86bd9ba6
+      response: '301'
+    -
+      id: ln2icqzs
+      url_old: /signage-expo-china/feed/
+      internal_url: f9ce7e71-620d-45b9-84c2-be501924639e
       response: '301'
