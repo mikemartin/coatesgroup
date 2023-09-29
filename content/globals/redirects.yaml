@@ -34,7 +34,7 @@ data:
     -
       id: lme87mo7
       url_old: /products/signage/
-      internal_url: home
+      internal_url: 4db3125f-0cc5-4bd9-a026-a7aa9d063e9c
       response: '301'
     -
       id: lme87sag
