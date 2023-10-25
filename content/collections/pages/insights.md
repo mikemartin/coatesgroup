@@ -10,11 +10,11 @@ page_builder:
     type: blog
     enabled: true
     blog:
+      - c1f89b68-0b48-4d22-98b7-a2f0a16f8f29
       - 0813273e-735b-4cdc-818c-15066c800004
       - 7a1ce215-5b7f-4aa1-a624-706210e0360b
       - 1932f64f-adb6-4a6d-8b7c-67d42b572b28
       - 7f28aa3c-4821-44e8-8fe2-f69896bd58f5
-      - 409452e6-fd28-4466-a7c7-b6947b1b8ed6
       - 9f21f438-65a5-47d4-a3ca-d7417bbcb6a1
       - 4ac941c0-c57a-46ee-8a52-06138a57890c
       - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
@@ -73,8 +73,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693228750
+updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
+updated_at: 1698219194
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
