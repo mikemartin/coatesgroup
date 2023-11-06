@@ -22,8 +22,8 @@ data:
     -
       id: ljmepi0x
       handle: coatesgroup
-      prefix: 'https://www.twitter.com/'
-      type: twitter
+      prefix: 'https://www.x.com/'
+      type: x
       enabled: true
     -
       id: ljmeqj2l

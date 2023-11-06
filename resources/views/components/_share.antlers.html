@@ -9,7 +9,7 @@
         <div class="flex space-x-3">
             <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:linkedin:share :text="title" }}" aria-label="Share on LinkedIn" target="_blank">{{ svg:linkedin class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
             <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:facebook:share :text="title" }}" aria-label="Share on Facebook" target="_blank">{{ svg:facebook class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
-            <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:twitter:share :text="title" }}" aria-label="Share on Twitter" target="_blank">{{ svg:twitter class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
+            <a class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary" href="{{ social:twitter:share :text="title" }}" aria-label="Share on Twitter" target="_blank">{{ svg:x class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</a>
             <button @click="navigator.clipboard.writeText(link), success = true, setTimeout(() => success = false, 1000)" class="p-1 -m-1 text-blue hover:text-blue/60 focus:outline-none focus-visible:ring-2 ring-primary">{{ svg:link class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" }}</button>
         </div>
         <div class="hidden md:block border-r border-chacoal-20 h-1/2"></div>

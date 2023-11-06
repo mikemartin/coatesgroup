@@ -148,10 +148,10 @@ tabs:
                           field:
                             type: hidden
                             default: 'https://www.pinterest.com/'
-                    twitter:
-                      display: Twitter
+                    x:
+                      display: X
                       instructions: null
-                      icon: social-twitter
+                      icon: social-x
                       fields:
                         -
                           handle: handle
@@ -160,14 +160,14 @@ tabs:
                             type: text
                             localizable: true
                             listable: hidden
-                            prepend: 'https://www.twitter.com/'
+                            prepend: 'https://www.x.com/'
                             display: Handle
                             validate: required
                         -
                           handle: prefix
                           field:
                             type: hidden
-                            default: 'https://www.twitter.com/'
+                            default: 'https://www.x.com/'
                     vimeo:
                       display: Vimeo
                       instructions: null
