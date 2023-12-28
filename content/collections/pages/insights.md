@@ -10,12 +10,12 @@ page_builder:
     type: blog
     enabled: true
     blog:
+      - ddcf0b7e-fd1f-46cc-8273-2b48384fd595
       - c1f89b68-0b48-4d22-98b7-a2f0a16f8f29
       - 0813273e-735b-4cdc-818c-15066c800004
       - 7a1ce215-5b7f-4aa1-a624-706210e0360b
       - 1932f64f-adb6-4a6d-8b7c-67d42b572b28
       - 7f28aa3c-4821-44e8-8fe2-f69896bd58f5
-      - 9f21f438-65a5-47d4-a3ca-d7417bbcb6a1
       - 4ac941c0-c57a-46ee-8a52-06138a57890c
       - 7bb3eb82-7662-4f79-8e7c-3b9117f55314
     topics:
@@ -74,7 +74,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1698219194
+updated_at: 1703789588
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
