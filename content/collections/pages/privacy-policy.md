@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 481974df-e3f1-46c6-9945-1e609185f271
-updated_at: 1693235838
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1708511138
 enable_hero: false
 page_builder:
   -
@@ -33,7 +33,27 @@ page_builder:
             text: '(https://www.oaic.gov.au/'
           -
             type: text
-            text: '). If you have a question about our approach to privacy, would like to obtain a copy of our Privacy Policy, or would like to gain access to the information we might hold about you, please contact us.'
+            text: '). '
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'If you would like to obtain a copy of our Privacy Policy, '
+          -
+            type: text
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://coatesgroup.com/files/coates-group-privacy-policy.pdf'
+                  rel: null
+                  target: null
+                  title: null
+            text: 'click here'
+          -
+            type: text
+            text: '. '
     type: article
     enabled: true
 hero_type: brand
