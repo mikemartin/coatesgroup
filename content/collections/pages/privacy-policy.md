@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1708511138
+updated_at: 1710389352
 enable_hero: false
 page_builder:
   -
@@ -19,7 +19,10 @@ page_builder:
         content:
           -
             type: text
-            text: 'Our approach to privacy adheres to the Australian Privacy Principles (APPs), which are contained in Schedule 1 of the Privacy Act 1988. You can obtain more information on Australia’s approach to privacy from the Australian Information Commissioner’s website '
+            marks:
+              -
+                type: italic
+            text: "Our approach to privacy adheres to applicable privacy laws in the countries where we operate, including the EU GDPR, California Consumer Privacy Act and the Australian Privacy Principles (APPs), which are contained in Schedule 1 of the Privacy Act 1988. You can obtain more information on Australia’s approach to privacy from the Australian Information Commissioner’s website\_"
           -
             type: text
             marks:
@@ -29,11 +32,29 @@ page_builder:
                   href: 'https://www.oaic.gov.au/'
                   rel: null
                   target: _blank
-                  title: null
-            text: '(https://www.oaic.gov.au/'
+                  title: 'https://www.oaic.gov.au/'
+              -
+                type: italic
+            text: (
           -
             type: text
-            text: '). '
+            marks:
+              -
+                type: link
+                attrs:
+                  href: 'https://www.oaic.gov.au/'
+                  rel: null
+                  target: null
+                  title: null
+              -
+                type: italic
+            text: 'https://www.oaic.gov.au/'
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: )
       -
         type: paragraph
         content:
