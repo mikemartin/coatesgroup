@@ -1,1 +1,26 @@
+footer_title: "Se connecter avec Coates aujourd'hui"
+footer_text: 'Créez des parcours clients numériques engageants et connectés avec les solutions du Groupe Coates. Découvrez pourquoi les plus grandes marques mondiales font confiance à notre technologie innovante et à notre assistance de bout en bout.'
+footer_buttons:
+  -
+    id: ljrv2tmg
+    label: 'Contactez nous'
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: outline
+    attr_title: 'Contact Us'
+    attr_aria: 'Contact Us'
+    show_arrow: true
+nav_title: 'Commençons !'
+nav_text: 'Nous sommes là pour vous écouter et vous aider.'
+nav_buttons:
+  -
+    id: ljrv3z8h
+    label: "Contactez-nous dès aujourd'hui"
+    link_type: entry
+    target_blank: false
+    entry: 5a24b3b6-b78e-4c76-bc5d-4c907e27b167
+    button_type: inline
+    attr_title: 'Read more'
+    attr_aria: 'Read more'
 origin: en

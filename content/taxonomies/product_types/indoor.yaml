@@ -2,3 +2,9 @@ title: 'Indoor Digital Menu Board'
 updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
 updated_at: 1692875451
 blueprint: product_type
+localizations:
+  fr:
+    title: "Tableau de menu numérique d'intérieur"
+    slug: indoor
+    updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
+    updated_at: 1712551250
