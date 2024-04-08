@@ -1,4 +1,14 @@
 title: People
+sites:
+  - en
+  - ja
+  - zh_cn
+  - zh_tw
+  - nl
+  - hi
+  - ar
+  - fr
+propagate: false
 template: default
 layout: layout
 mount: 4e8b0869-92ca-4971-ac6b-95ba0d48057b
