@@ -19,7 +19,8 @@
             ? '{{ trans:strings.language_close }}'
             : '{{ trans:strings.language_open :current_language="site:name" }}'"
         :aria-expanded="languagePickerOpen"
-        class="p-1 -m-1 flex items-center font-bold text-xs uppercase tracking-wide dark:text-white hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
+        class="p-1 -m-1 flex items-center uppercase tracking-wide dark:text-white w-medium hover:font-medium
+        focus:outline-none focus-visible:ring-2 ring-primary"
 
     >
         {{ site:short_locale }}
@@ -33,18 +34,18 @@
     <ul
         x-show="languagePickerOpen"
         x-ref="picker"
-        class="absolute mt-2 -ml-3 py-2 px-3 bg-white border border-neutral/10 rounded shadow"
+        class="absolute right-0 mt-2 -ml-3 py-2 px-3 bg-white border border-neutral/10 rounded shadow"
         @click.outside="languagePickerOpen = false"
         x-transition
     >
-        {{ locales all="true" self="false"  }}
+        {{ locales all="true" current_first="true" }}
             <li>
                 <a
                     href="{{ permalink }}"
                     aria-label="{{ locale:name }}"
-                    class="uppercase tracking-wide whitespace-nowrap py-2 px-1 -mx-1 block text-xs font-bold hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
+                    class="whitespace-nowrap py-2 px-1 -mx-1 block w-medium hover:font-medium hover:text-black active:underline active:underline-offset-1 focus:outline-none focus-visible:ring-2 ring-primary {{ if is_current }}font-medium underline underline-offset-1 text-black{{else}}text-charcoal{{/if}}"
                 >
-                    {{ locale:short }}
+                    {{ locale:name }}
                 </a>
             </li>
         {{ /locales }}
