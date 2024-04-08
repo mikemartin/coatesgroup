@@ -12,7 +12,6 @@ buttons:
     label: 'Download Datasheets'
     link_type: asset
     target_blank: true
-    asset: c3canopycert/datasheets.zip
     button_type: inline
     attr_title: 'Download Datasheets'
     attr_aria: 'Download Datasheets'
