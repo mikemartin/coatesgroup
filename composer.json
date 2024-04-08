@@ -11,6 +11,7 @@
     "require": {
         "php": "^8.1",
         "aerni/social-links": "^3.1",
+        "appswithlove/statamic-one-click-content-translation": "^4.62",
         "codedge/statamic-move-entries": "dev-main",
         "duncanmcclean/static-cache-manager": "^3.1",
         "guzzlehttp/guzzle": "^7.2",

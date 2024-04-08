@@ -8,7 +8,7 @@ fields:
       taxonomies:
         - product_types
       type: terms
-      display: Product Type
+      display: 'Product Type'
       max_items: 1
       icon: taxonomy
       listable: hidden
@@ -19,6 +19,7 @@ fields:
       width: 50
       if:
         root.show_product_types: 'equals true'
+      localizable: true
   -
     handle: media_type
     field:
@@ -34,6 +35,7 @@ fields:
       visibility: visible
       hide_display: false
       width: 50
+      localizable: false
   -
     handle: background
     field:
@@ -42,6 +44,7 @@ fields:
       display: Background
       width: 50
       icon: toggle
+      localizable: false
   -
     handle: animation
     field: common.image
@@ -71,6 +74,7 @@ fields:
       width: 25
       if:
         media_type: 'equals animation'
+      localizable: false
   -
     handle: reverse_frames
     field:
@@ -85,6 +89,7 @@ fields:
       hide_display: false
       if:
         media_type: 'equals animation'
+      localizable: false
   -
     handle: image
     field: common.image

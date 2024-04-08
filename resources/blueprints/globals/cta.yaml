@@ -18,6 +18,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true
           -
             handle: footer_text
             field: common.text_plain
@@ -26,6 +27,14 @@ tabs:
           -
             handle: footer_buttons
             field: buttons.buttons
+          -
+            handle: one_click_content_translation
+            field:
+              display: 'One-click Content Translation'
+              type: one_click_content_translation_inputs
+              listable: hidden
+              visibility: hidden
+              localizable: false
       -
         display: Navigation
         instructions: 'Small call to action shown in dropdown navigation.'
@@ -42,6 +51,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true
           -
             handle: nav_text
             field: common.text_plain

@@ -11,6 +11,15 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: true
+          -
+            handle: one_click_content_translation
+            field:
+              display: 'One-click Content Translation'
+              type: one_click_content_translation_inputs
+              listable: hidden
+              visibility: hidden
+              localizable: false
   sidebar:
     display: Sidebar
     sections:
@@ -23,4 +32,5 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: false
 title: Industry

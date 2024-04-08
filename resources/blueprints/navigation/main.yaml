@@ -6,6 +6,20 @@ tabs:
         display: General
         fields:
           -
+            handle: title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Title'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
+              localizable: true
+
+          -
             handle: mobile_title
             field:
               input_type: text
@@ -17,3 +31,4 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true

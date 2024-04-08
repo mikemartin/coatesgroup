@@ -12,6 +12,7 @@ tabs:
               validate:
                 - required
               width: 66
+              localizable: true
           -
             handle: order
             field:
@@ -25,6 +26,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: false
           -
             handle: headline
             field:
@@ -37,6 +39,15 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true
+          -
+            handle: one_click_content_translation
+            field:
+              display: 'One-click Content Translation'
+              type: one_click_content_translation_inputs
+              listable: hidden
+              visibility: hidden
+              localizable: false
   seo:
     display: SEO
     sections:
@@ -82,4 +93,5 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: false
 title: Topic

@@ -29,6 +29,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true
           -
             handle: text
             field: common.text_plain
@@ -63,6 +64,7 @@ tabs:
               visibility: visible
               hide_display: false
               instructions: 'Replace page header with hero.'
+              localizable: false
           -
             handle: show_product_types
             field:
@@ -76,6 +78,7 @@ tabs:
               visibility: visible
               hide_display: false
               width: 50
+              localizable: false
           -
             handle: overlay_opacity
             field:
@@ -92,11 +95,20 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: false
       -
         display: 'Page builder'
         fields:
           -
             import: page_builder
+          -
+            handle: one_click_content_translation
+            field:
+              display: 'One-click Content Translation'
+              type: one_click_content_translation_inputs
+              listable: hidden
+              visibility: hidden
+              localizable: false
   seo:
     display: SEO
     sections:
@@ -158,6 +170,7 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              localizable: true
           -
             handle: product_types
             field:
@@ -173,3 +186,4 @@ tabs:
               visibility: visible
               create: true
               hide_display: false
+              localizable: true
