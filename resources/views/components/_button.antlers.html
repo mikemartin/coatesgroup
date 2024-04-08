@@ -37,8 +37,9 @@
         "
         {{ !faux ?= { partial:snippets/button_attributes } }}
     >
+        {{ link_type == 'asset' ?= { svg:arrow-down-tray class="mr-2.5 w-4 h-4" } }}
         {{ link_type == 'email' ? { label | obfuscate_email } : label }}
-        {{ target_blank ?= { svg:link-out class="ml-2.5 w-4 h-4" } }}
+        {{ target_blank && (link_type !== 'asset') ?= { svg:link-out class="ml-2.5 w-4 h-4" } }}
         {{ if extend }}<span class="inset-0 absolute"></span>{{/if}}
     </{{ as or 'a' }}>
 {{ /if }}

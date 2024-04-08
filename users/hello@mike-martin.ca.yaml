@@ -43,7 +43,7 @@ preferences:
         - products
         - experience
     hardware:
-      after_save: create_another
+      after_save: continue_editing
     values:
       after_save: continue_editing
     faq:

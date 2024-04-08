@@ -1,3 +1,10 @@
+{{#
+    @name Hardware
+    @desc The hardware page builder block.
+    @set page.page_builder.hardware
+#}}
+
+<!-- /page_builder/_hardware.antlers.html -->
 <section x-data="fadeIn" 
     x-init="hide($el.children)" 
     x-intersect.once.margin.-20%="fadeInStagger($el)" class="fluid-container flex flex-col gap-10 md:gap-16 lg:gap-20">
@@ -47,9 +54,11 @@
                     {{ partial:typography/large class="mb-2 font-bold" color="text-neutral" :content="title" }}
                 </span>
                 {{ text ?= {partial:typography/p class="mb-4" :content="text" } }}
+                {{ partial:components/buttons }}
             </div>
             
         </div>
     {{ /hardware }}
     </div>
 </section>
+<!-- End: /page_builder/_hardware.antlers.html -->

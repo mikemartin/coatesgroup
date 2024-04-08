@@ -23,6 +23,8 @@ tabs:
             config:
               listable: true
               display: Text
+          -
+            import: buttons
   sidebar:
     display: Sidebar
     sections:
