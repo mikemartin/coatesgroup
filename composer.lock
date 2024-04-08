@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2408ee00991f0a830a75186bb604048d",
+    "content-hash": "36b19f7c374847618b4b70892fd67ca5",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -239,6 +239,108 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "brick/varexporter",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brick/varexporter.git",
+                "reference": "2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brick/varexporter/zipball/2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb",
+                "reference": "2fd038f7c9d12d468130c6e1b3ce06e4160a7dbb",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "^4.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpunit/phpunit": "^8.5 || ^9.0",
+                "vimeo/psalm": "5.15.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brick\\VarExporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A powerful alternative to var_export(), which can export closures and objects without __set_state()",
+            "keywords": [
+                "var_export"
+            ],
+            "support": {
+                "issues": "https://github.com/brick/varexporter/issues",
+                "source": "https://github.com/brick/varexporter/tree/0.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/BenMorel",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-09-01T21:10:07+00:00"
+        },
+        {
+            "name": "calebporzio/sushi",
+            "version": "v2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/calebporzio/sushi.git",
+                "reference": "20aad4e9d9ea74df64a86f6d327e55bdfc92d204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/calebporzio/sushi/zipball/20aad4e9d9ea74df64a86f6d327e55bdfc92d204",
+                "reference": "20aad4e9d9ea74df64a86f6d327e55bdfc92d204",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sqlite3": "*",
+                "illuminate/database": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+                "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
+                "php": "^7.1.3|^8.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.9 || ^3.1.4",
+                "orchestra/testbench": "3.8.* || 3.9.* || ^4.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "phpunit/phpunit": "^7.5 || ^8.4 || ^9.0 || ^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Sushi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "Eloquent's missing \"array\" driver.",
+            "support": {
+                "source": "https://github.com/calebporzio/sushi/tree/v2.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/calebporzio",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-02-05T14:40:50+00:00"
         },
         {
             "name": "codedge/statamic-move-entries",
@@ -2393,6 +2495,71 @@
                 "source": "https://github.com/justinrainbow/json-schema/tree/5.2.12"
             },
             "time": "2022-04-13T08:02:27+00:00"
+        },
+        {
+            "name": "kkomelin/laravel-translatable-string-exporter",
+            "version": "1.22.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kkomelin/laravel-translatable-string-exporter.git",
+                "reference": "0c6dbec4694a7e702830ecfc005d131cd5ffe402"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kkomelin/laravel-translatable-string-exporter/zipball/0c6dbec4694a7e702830ecfc005d131cd5ffe402",
+                "reference": "0c6dbec4694a7e702830ecfc005d131cd5ffe402",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "^8|^9|^10.0|^11.0",
+                "illuminate/translation": "^8|^9|^10.0|^11.0",
+                "php": "^8.0",
+                "symfony/finder": "^5|^6|^7.0"
+            },
+            "require-dev": {
+                "nunomaduro/larastan": "^1.0|^2.0",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.0|^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "KKomelin\\TranslatableStringExporter\\Providers\\ExporterServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "KKomelin\\TranslatableStringExporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Komelin",
+                    "email": "konstantin.komelin@gmail.com"
+                }
+            ],
+            "description": "Translatable String Exporter for Laravel",
+            "keywords": [
+                "export",
+                "exporter",
+                "json",
+                "laravel",
+                "localization",
+                "translation",
+                "translations"
+            ],
+            "support": {
+                "issues": "https://github.com/kkomelin/laravel-translatable-string-exporter/issues",
+                "source": "https://github.com/kkomelin/laravel-translatable-string-exporter/tree/1.22.0"
+            },
+            "time": "2024-03-13T13:44:41+00:00"
         },
         {
             "name": "laragraph/utils",
@@ -5529,6 +5696,81 @@
                 "source": "https://github.com/riasvdv/statamic-color-swatches/tree/v2.2.0"
             },
             "time": "2023-05-10T07:25:54+00:00"
+        },
+        {
+            "name": "ryanmitchell/statamic-translation-manager",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryanmitchell/statamic-translation-manager.git",
+                "reference": "75e42aadfda40aaa9b1ee9ff25469efc864e900c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryanmitchell/statamic-translation-manager/zipball/75e42aadfda40aaa9b1ee9ff25469efc864e900c",
+                "reference": "75e42aadfda40aaa9b1ee9ff25469efc864e900c",
+                "shasum": ""
+            },
+            "require": {
+                "brick/varexporter": "^0.4",
+                "calebporzio/sushi": "^2.4",
+                "ext-pdo_sqlite": "*",
+                "kkomelin/laravel-translatable-string-exporter": "^1.20",
+                "laravel/framework": "^9.6 || ^10.0",
+                "php": "^8.0",
+                "statamic/cms": "^4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.1",
+                "nunomaduro/collision": "^7.0",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Translation Manager",
+                    "description": "Manager Laravel language files from the Statamic CP"
+                },
+                "laravel": {
+                    "providers": [
+                        "RyanMitchell\\StatamicTranslationManager\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RyanMitchell\\StatamicTranslationManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "mit"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Mitchell",
+                    "email": "ryan@thoughtcollective.com",
+                    "homepage": "https://www.thoughtcollective.com",
+                    "role": "Chief"
+                }
+            ],
+            "description": "Manager Laravel language files from the Statamic CP",
+            "support": {
+                "issues": "https://github.com/ryanmitchell/statamic-translation-manager/issues",
+                "source": "https://github.com/ryanmitchell/statamic-translation-manager/tree/1.4.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tastyigniter",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/tastyigniter",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2024-01-30T17:21:25+00:00"
         },
         {
             "name": "scrivo/highlight.php",
@@ -12735,5 +12977,5 @@
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

@@ -23,6 +23,7 @@
         "mikemartin/helpscout-beacon": "^1.0",
         "ncla/statamic-focal-point-fieldtype": "^3.0",
         "rias/statamic-color-swatches": "^2.2",
+        "ryanmitchell/statamic-translation-manager": "^1.4",
         "statamic/cms": "^4.0",
         "studio1902/statamic-peak-browser-appearance": "^3.0",
         "studio1902/statamic-peak-commands": "^2.0",
