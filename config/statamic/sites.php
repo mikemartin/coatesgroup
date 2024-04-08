@@ -18,7 +18,7 @@ return [
         'en' => [
             'name' => 'English',
             'locale' => 'en_US',
-            'url' => '/'
+            'url' => '/',
         ],
 
         'fr' => [
@@ -69,6 +69,6 @@ return [
             'lang' => 'nl',
             'url' => '/nl/',
         ],
-        
+
     ],
 ];

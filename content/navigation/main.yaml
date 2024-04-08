@@ -4,3 +4,12 @@ collections:
   - experiences
   - products
 max_depth: 3
+sites:
+  - en
+  - ja
+  - zh_cn
+  - zh_tw
+  - nl
+  - hi
+  - ar
+  - fr
