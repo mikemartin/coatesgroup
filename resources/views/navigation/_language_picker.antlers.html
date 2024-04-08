@@ -19,11 +19,11 @@
             ? '{{ trans:strings.language_close }}'
             : '{{ trans:strings.language_open :current_language="site:name" }}'"
         :aria-expanded="languagePickerOpen"
-        class="p-1 -m-1 flex items-center font-bold text-xs uppercase tracking-wide hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
+        class="p-1 -m-1 flex items-center font-bold text-xs uppercase tracking-wide dark:text-white hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary"
 
     >
         {{ site:short_locale }}
-        <svg class="w-2 ml-1 overflow-visible stroke-current text-neutral"
+        <svg class="w-2 ml-1 overflow-visible stroke-current text-neutral dark:text-white"
             :class="{ 'rotate-180': languagePickerOpen }"
             aria-hidden="true"
             stroke-width="16"
