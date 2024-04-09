@@ -18,9 +18,9 @@
             {{ trans :key="inline_label" }}
             {{ if handle === 'consent' }}
                 {{ if configuration:privacy_statement_type == 'entry' }}
-                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_entry:url }}">privacy policy</a>
+                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_entry:url }}">{{ trans key="privacy policy" }}</a>
                 {{ elseif configuration:privacy_statement_type == 'pdf' }}
-                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_asset }}" target="_blank">privacy policy</a>
+                    <a class="px-1 -m-1 underline underline-offset-2 hover:font-medium" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans key="privacy policy" }}</a>
                 {{ /if }}
             {{ /if }}
         </span>

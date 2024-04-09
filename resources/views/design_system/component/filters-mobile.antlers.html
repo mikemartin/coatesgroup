@@ -18,10 +18,10 @@
         </div>
 
         <form>
-            {{ partial:components/filter_mobile label="Industry" :options="industries" }}
-            {{ partial:components/filter_mobile label="Locations" :options="locations" }}
-            {{ partial:components/filter_mobile label="Products" :options="products" }}
-            {{ partial:components/filter_mobile label="Experiences" :options="experiences" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.industry }" :options="industries" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.locations }" :options="locations" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.products }" :options="products" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.experiences }" :options="experiences" }}
         </form>
       </div>
         <div class="ml-auto max-w-xl w-full px-5 py-4 bg-white">

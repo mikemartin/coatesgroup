@@ -18,7 +18,7 @@
     <!-- /insights/archive.antlers.html -->
     <section class="fluid-container">
         <div class="flex flex-wrap gap-4">
-            {{ partial:components/button_tag :selected="current_uri == '/insights/blog'" url="/insights/blog" label="All" /}}
+            {{ partial:components/button_tag :selected="current_uri == '/insights/blog'" url="/insights/blog" label="{ trans:strings.all }" /}}
             
             {{ taxonomy:topics collection="blog" sort="order:asc" }}
                 {{ partial:components/button_tag url="/insights/blog/topics/{{ slug }}" :selected="page:slug == slug" :label="title" /}}

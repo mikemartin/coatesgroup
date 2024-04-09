@@ -26,10 +26,10 @@
                     {{ /slot:attributes  }}
                 {{ /partial:components/button_tag }}
                 
-                {{ partial:components/filter label="Industry" :options="industries" class="hidden md:block flex-1" }}
-                {{ partial:components/filter label="Locations" :options="locations" class="hidden md:block flex-1" }}
-                {{ partial:components/filter label="Products" :options="products" class="hidden md:block flex-1" }}
-                {{ partial:components/filter label="Experiences" :options="experiences" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="{ trans:strings.industry }" :options="industries" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="{ trans:strings.locations }" :options="locations" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="{ trans:strings.products }" :options="products" class="hidden md:block flex-1" }}
+                {{ partial:components/filter label="{ trans:strings.experiences }" :options="experiences" class="hidden md:block flex-1" }}
             </div>
         </div>
 

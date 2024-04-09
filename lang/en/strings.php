@@ -1,9 +1,17 @@
 <?php
 
 return [
+    'all' => 'All',
+    'industry' => 'Industry',
+    'locations' => 'Locations',
+    'products' => 'Products',
+    'experiences' => 'Experiences',
+    'awards' => 'Awards',
     'awards_all' => 'View all awards',
     'blog_all' => 'View all blogs',
+    'show_case_studies' => 'Show :count Case Studies',
     'case_studies_all' => 'View case studies',
+    'about_the_office' => 'About the :city office',
     'close' => 'Close',
     'cookie_accept' => 'Accept',
     'cookie_accept_all' => '',
@@ -56,6 +64,7 @@ return [
     'no_script' => 'This website requires Javascript for some parts to function properly. Your experience may vary.',
     'of' => 'of',
     'on' => 'on',
+    'press' => 'Press',
     'press_all' => 'View all press',
     'previous' => 'Previous',
     'read_more' => 'Read more',

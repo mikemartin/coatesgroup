@@ -23,11 +23,11 @@ fields:
       default: panels
       type: button_group
       display: 'Block Type'
-      icon: button_group
       listable: hidden
       instructions_position: above
       visibility: visible
       hide_display: false
+      localizable: false
   -
     handle: image
     field: common.image
@@ -74,7 +74,7 @@ fields:
       localizable: true
       listable: hidden
       display: Products
-      instructions: Display Product content or add your own title and text.
+      instructions: 'Display Product content or add your own title and text.'
       replicator_preview: false
       instructions_position: above
       visibility: visible

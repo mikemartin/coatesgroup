@@ -31,14 +31,14 @@
         </div>
 
         <form>
-            {{ partial:components/filter_mobile label="Industry" :options="industries" }}
-            {{ partial:components/filter_mobile label="Locations" :options="locations" }}
-            {{ partial:components/filter_mobile label="Products" :options="products" }}
-            {{ partial:components/filter_mobile label="Experiences" :options="experiences" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.industry }" :options="industries" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.locations }" :options="locations" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.products }" :options="products" }}
+            {{ partial:components/filter_mobile label="{ trans:strings.experiences }" :options="experiences" }}
         </form>
 
         <div class="fixed inset-x-0 bottom-0 ml-auto max-w-xl w-full px-5 py-4 bg-white">
-            {{ partial:components/button label="Show {{ case-studies|length }} Case Studies" as="button" button_type="black" class="w-full justify-center" }}
+            {{ partial:components/button label="{ trans:strings.show_case_studies :count='case-studies|length' }" as="button" button_type="black" class="w-full justify-center" }}
               {{ slot:attributes }}
                 @click.prevent.stop="mobileFilterOpen = false"
               {{ /slot:attributes }}

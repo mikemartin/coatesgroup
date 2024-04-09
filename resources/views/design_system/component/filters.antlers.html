@@ -6,6 +6,6 @@
  }" class="flex flex-wrap justify-center gap-3 {{ class }}">
     {{ products = {collection:products} }}
     {{ industries = {taxonomy:industries} }}
-    {{ partial:components/filter label="Industry" :options="industries" }}
+    {{ partial:components/filter label="{ trans:strings.industry }" :options="industries" }}
     {{ partial:components/filter label="Product" :options="products" }}
 </div>

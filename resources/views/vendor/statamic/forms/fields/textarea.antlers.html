@@ -14,7 +14,7 @@
     id="{{ handle }}"
     name="{{ handle }}"
     rows="5"
-    placeholder="{{ placeholder }}"
+    placeholder="{{ trans :key="placeholder" }}"
     :aria-invalid="errors.hasOwnProperty('{{ handle }}')"
     aria-describedBy="{{ handle }}"
     {{ js_attributes }}>{{ old }}</textarea>
