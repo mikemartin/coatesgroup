@@ -7,8 +7,8 @@ text: |-
 
   To access our Clean Energy Council compliance certification, click on the 'Download PDF' button below.
 image: products/traditional-signage/canopy.png
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1712546148
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1713828225
 buttons:
   -
     id: luqcne9d
