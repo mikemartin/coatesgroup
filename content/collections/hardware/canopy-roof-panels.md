@@ -18,5 +18,5 @@ buttons:
     button_type: inline
     attr_title: 'Download Clean Energy Council compliance certification'
     attr_aria: 'Download Clean Energy Council compliance certification'
-    asset: c3canopycert/clean-energy-council-compliance.zip
+    asset: c3canopycert/files.zip
 ---
