@@ -13,3 +13,6 @@ preferences:
       per_page: 500
     thought_leadership:
       per_page: 500
+  forms:
+    contact:
+      per_page: 500
