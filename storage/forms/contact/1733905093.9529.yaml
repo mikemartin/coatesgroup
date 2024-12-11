@@ -1,0 +1,7 @@
+name: 'Tristan LARUELLE'
+email: tristan.laruelle@dis-groupe.fr
+company: 'Bourasseau Industrie'
+enquiry: support
+location: france
+message_body: "Hi,\r\n\r\nI'm sending this message in hope to reach your IT support.\r\n\r\nWe are facing an issue when trying to send ma550 Administrative prohibition - \"envelope blocked -ils to address in @coatesgroup.com\"\r\n\r\nOur mail should be coming from mibc-fr-01-outgoing-07.mailinblack.com and we do not appear to have SPF issue so I'm wondering if for some reason mailinblack ( the service we are using as anti-spam and outgoing relay ) is blocked in your mimecast configuration ?\r\n\r\nThank you in advance for your time."
+consent: true
