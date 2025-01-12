@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89a406348247a910abbbf67da1d729cc",
+    "content-hash": "17d12665a38efaebd917f7acb7681694",
     "packages": [
         {
             "name": "aerni/social-links",
@@ -5487,17 +5487,20 @@
         },
         {
             "name": "studio1902/statamic-peak-seo",
-            "version": "v6.0.1",
+            "version": "v8.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/studio1902/statamic-peak-seo.git",
-                "reference": "08be0989da960e82b31eec7109498c6fdc41eafd"
+                "reference": "2c0c765bbd5f7acd62e0b1b81e546f96ebdb4d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/studio1902/statamic-peak-seo/zipball/08be0989da960e82b31eec7109498c6fdc41eafd",
-                "reference": "08be0989da960e82b31eec7109498c6fdc41eafd",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-seo/zipball/2c0c765bbd5f7acd62e0b1b81e546f96ebdb4d37",
+                "reference": "2c0c765bbd5f7acd62e0b1b81e546f96ebdb4d37",
                 "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^5.0"
             },
             "type": "library",
             "extra": {
@@ -5519,7 +5522,7 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/studio1902/statamic-peak-seo/issues",
-                "source": "https://github.com/studio1902/statamic-peak-seo/tree/v6.0.1"
+                "source": "https://github.com/studio1902/statamic-peak-seo/tree/v8.19.0"
             },
             "funding": [
                 {
@@ -5527,7 +5530,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-09-04T10:42:11+00:00"
+            "time": "2025-01-06T19:11:10+00:00"
         },
         {
             "name": "studio1902/statamic-peak-tools",

@@ -75,13 +75,13 @@
     "
     x-cloak
 >
-    <h2 class="text-2xl font-bold">{{ trans:strings.cookie_title }}</h2>
+    <h2 class="text-2xl font-bold">{{ trans:strings.consent_title }}</h2>
     <p class="text-sm font-bold text-neutral">
-        {{ trans:strings.cookie_explanation }}
+        {{ trans:strings.consent_explanation }}
         {{ if configuration:privacy_statement_type == 'entry' }}
-            <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.cookie_learn_more }}</a>
+            <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_entry:url }}">{{ trans:strings.consent_learn_more }}</a>
         {{ elseif configuration:privacy_statement_type == 'pdf' }}
-            <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.cookie_learn_more }}</a>
+            <a class="px-1 -m-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary" href="{{ configuration:privacy_statement_asset }}" target="_blank">{{ trans:strings.consent_learn_more }}</a>
         {{ /if }}
     </p>
 
@@ -90,8 +90,8 @@
         <label class="inline-flex items-center">
             <input class="mr-3 w-5 h-5 rounded border-neutral text-primary focus:outline-none focus-visible:ring focus-visible:ring-primary motion-safe:transition opacity-50" type="checkbox" name="functional" checked disabled>
             <span class="flex flex-col">
-                <span class="font-bold text-xs">{{ trans:strings.cookie_functional }}</span>
-                <span class="text-xs text-neutral/75">{{ trans:strings.cookie_functional_explanation }}</span>
+                <span class="font-bold text-xs">{{ trans:strings.consent_functional }}</span>
+                <span class="text-xs text-neutral/75">{{ trans:strings.consent_functional_explanation }}</span>
             </span>
         </label>
 
@@ -100,8 +100,8 @@
             <label class="inline-flex items-center">
                 <input class="mr-3 w-5 h-5 rounded border-neutral text-primary focus:outline-none focus-visible:ring focus-visible:ring-primary motion-safe:transition" type="checkbox" name="analytics_storage" x-model="analyticsStorage">
                 <span class="flex flex-col">
-                    <span class="font-bold text-xs">{{ trans:strings.cookie_analytics }}</span>
-                    <span class="text-xs text-neutral/75">{{ trans:strings.cookie_analytics_explanation }}</span>
+                    <span class="font-bold text-xs">{{ trans:strings.consent_analytics }}</span>
+                    <span class="text-xs text-neutral/75">{{ trans:strings.consent_analytics_explanation }}</span>
                 </span>
             </label>
         {{ /unless }}
@@ -111,8 +111,8 @@
             <label class="inline-flex items-center">
                 <input class="mr-3 w-5 h-5 rounded border-neutral text-primary focus:outline-none focus-visible:ring focus-visible:ring-primary motion-safe:transition" type="checkbox" name="ad_storage" x-model="adStorage">
                 <span class="flex flex-col">
-                    <span class="font-bold text-xs">{{ trans:strings.cookie_ads }}</span>
-                    <span class="text-xs text-neutral/75">{{ trans:strings.cookie_ads_explanation }}</span>
+                    <span class="font-bold text-xs">{{ trans:strings.consent_ads }}</span>
+                    <span class="text-xs text-neutral/75">{{ trans:strings.consent_ads_explanation }}</span>
                 </span>
             </label>
         {{ /if }}
@@ -144,8 +144,8 @@
             <label class="inline-flex items-center">
                 <input class="mr-3 w-5 h-5 rounded border-neutral text-primary focus:outline-none focus-visible:ring focus-visible:ring-primary motion-safe:transition" type="checkbox" name="embeds" x-model="embeds">
                 <span class="flex flex-col">
-                    <span class="font-bold text-xs">{{ trans:strings.cookie_embeds }}</span>
-                    <span class="text-xs text-neutral/75">{{ trans:strings.cookie_embeds_explanation }}</span>
+                    <span class="font-bold text-xs">{{ trans:strings.consent_embeds }}</span>
+                    <span class="text-xs text-neutral/75">{{ trans:strings.consent_embeds_explanation }}</span>
                 </span>
             </label>
         {{ /if }}
@@ -175,7 +175,7 @@
             type="button"
             class="px-4 py-2 bg-primary rounded text-sm font-bold text-white focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-primary motion-safe:transition"
             >
-            {{ trans:strings.cookie_accept_all }}
+            {{ trans:strings.consent_accept_all }}
         </button>
 
         {{# Save selected options. #}}
@@ -187,22 +187,22 @@
             type="button"
             class="px-1 py-2 rounded text-sm font-bold text-neutral focus:outline-none focus-visible:ring focus-visible:ring-offset-2 focus-visible:ring-primary motion-safe:transition"
         >
-            {{ trans:strings.cookie_accept_selected }}
+            {{ trans:strings.consent_accept_selected }}
         </button>
     </div>
 </div>
 <!-- End: statamic-peak-seo::components/_cookie_banner.antlers.html -->
 
 {{# Yield this section in `resources/layouts/_footer.antlers.html` so users can reset their consent. #}}
-{{ section:reset_cookie_consent }}
+{{ section:reset_consent }}
     <!-- statamic-peak-seo::components/_cookie_banner.antlers.html -->
-    {{ if seo:use_cookie_banner }}
+    {{ if seo:use_consent_banner }}
         {{# Read out global store consent status and display a reset consent link by saving the initial state. #}}
         <span x-data x-cloak>
             <span x-show="$store.cookieBanner.consent !== null">
-                <a @click.prevent="$store.cookieBanner.setConsent(null)" class="{{ reset_cookie_consent_class ?? 'px-1 -mx-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors' }}" href="#">{{ trans:strings.cookie_change_preferences }}</a>
+                <a @click.prevent="$store.cookieBanner.setConsent(null)" class="{{ reset_cookie_consent_class ?? 'px-1 -mx-1 underline rounded hover:text-primary focus:outline-none focus-visible:ring-2 ring-primary motion-safe:transition-colors' }}" href="#">{{ trans:strings.consent_change_preferences }}</a>
             </span>
         </span>
     {{ /if }}
     <!-- End: statamic-peak-seo::components/_cookie_banner.antlers.html -->
-{{ /section:reset_cookie_consent }}
+{{ /section:reset_consent }}

@@ -70,4 +70,4 @@ data:
   use_cloudflare_web_analytics: false
   tracker_type: gtm
   google_tag_manager: GTM-PPD4PR2Q
-  use_cookie_banner: false
+  use_consent_banner: false
