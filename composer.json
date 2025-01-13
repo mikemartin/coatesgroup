@@ -13,11 +13,10 @@
         "aerni/social-links": "^3.2",
         "duncanmcclean/static-cache-manager": "^4.0",
         "guzzlehttp/guzzle": "^7.2",
-        "jgrossi/corcel": "^7.0",
         "jonassiewertsen/statamic-livewire": "^3.8",
-        "laravel/framework": "^10.8",
+        "laravel/framework": "^11",
         "laravel/horizon": "^5.19",
-        "laravel/sanctum": "^3.2",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "mikemartin/helpscout-beacon": "^1.0",
         "ncla/statamic-focal-point-fieldtype": "^4.0",
@@ -26,8 +25,7 @@
         "studio1902/statamic-peak-browser-appearance": "^3.0",
         "studio1902/statamic-peak-commands": "^2.0",
         "studio1902/statamic-peak-seo": "^8.0",
-        "studio1902/statamic-peak-tools": "^3.0",
-        "swiftmade/statamic-clear-assets": "^3.1"
+        "studio1902/statamic-peak-tools": "^3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8.1",
@@ -35,7 +33,7 @@
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
+        "nunomaduro/collision": "^8.1",
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0",
         "spatie/laravel-ray": "^1.32"
