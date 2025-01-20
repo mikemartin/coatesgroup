@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1737335992
+updated_at: 1737336310
 page_builder:
   -
     id: lk0po80o
@@ -99,6 +99,7 @@ page_builder:
         id: m64cmz4m
         title: PerkBox
         text: 'We’ve partnered with Perkbox - a platform designed to enhance our Crew’s experience by providing perks and benefits that align with our culture, support mental and physical wellbeing, and add tangible value to daily life'
+        icon: careers_give_back_day
     type: icon_list
     enabled: true
     title: 'Benefits of Working with Coates'
