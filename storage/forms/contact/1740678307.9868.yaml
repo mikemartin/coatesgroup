@@ -1,0 +1,7 @@
+name: 'Hemant Kumar'
+email: hemant17kumar10@gmail.com
+company: 'Looking for opportunities'
+enquiry: general
+location: other
+message_body: "Hi Team,\r\n\r\nI appreciate the automated mails that we get while applying for the job openings. I found out something which you don’t want us to judge you for. \r\n\r\nI am enclosing the copy of mail which I received.\r\n\r\nDear {{Candidate first name}},\r\n\r\nThank you for your interest in Coates Group. We appreciate the time and effort you put into your application.\r\n\r\nWe are currently reviewing all applications, and you can expect to hear back from us within the next few weeks regarding the status of your application.\r\n\r\nIn the meantime, please feel free to reach out if you have any questions.\r\n\r\nThank you again for considering Coates Group as the next step in your career. We look forward to being in touch soon.\r\n\r\nBest regards,\r\n\r\nTalent Acquisition Team\r\n\r\nwww.coatesgroup.com"
+consent: true
