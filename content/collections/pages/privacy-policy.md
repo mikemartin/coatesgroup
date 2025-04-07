@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1710389352
+updated_at: 1744003817
 enable_hero: false
 page_builder:
   -
@@ -67,14 +67,14 @@ page_builder:
               -
                 type: link
                 attrs:
-                  href: 'https://coatesgroup.com/files/coates-group-privacy-policy.pdf'
+                  href: 'https://coatesgroup.com/files/coates-group-privacy-policy-april2025.pdf'
                   rel: null
                   target: null
                   title: null
-            text: 'click here'
+            text: 'click here.'
           -
             type: text
-            text: '. '
+            text: ' '
     type: article
     enabled: true
 hero_type: brand
