@@ -8,9 +8,9 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1695875223
+updated_at: 1745369141
 hero_type: brand
-headline: 'Elevating Brands with Cutting-Edge Digital Signage Technology'
+headline: 'Empowering Millions of Customer Interactions Every Day'
 hero_color:
   label: Yellow
   value:
@@ -21,9 +21,9 @@ page_builder:
     id: lk0ploc5
     title: 'Our Story'
     text: |-
-      For 60 years, our solutions have enabled impactful connections between some of the world’s leading brands and their customers. And over those 60 years, we're proud to have maintained the values of our family-founded business while cultivating the innovative spirit of a start-up. Today, this combination fuels our purpose - Creating Connections. Empowering Partnerships. Always Evolving. 
+      For over 60 years, we’ve helped the world’s biggest and most loved brands simplify the complexity of connected restaurant operations and deliver millions of seamless customer experiences—every day. Our solutions have enabled impactful connections between some of the world’s most iconic brands and their customers. And throughout this time, we've proudly maintained the values of our family-founded business while cultivating the innovative spirit of a start-up. Today, this combination fuels our mission: Create connections, empower partnerships, and always evolve. 
 
-      We are curious, charismatic, authentic and we value and leverage the diversity of our Crew. We are imaginers, kindness enthusiasts, experts, creators, thinkers, challengers, collaborators and over-achievers. And together, as a Crew, we are revolutionising the way the world’s leading brands leverage technology to drive the best customer experiences.
+      We are curious, charismatic, and authentic—and we value and leverage the diversity of our Crew. We are imaginers, kindness enthusiasts, experts, creators, thinkers, challengers, collaborators and over-achievers. And together, as a Crew, we are on a mission to become the leading global restaurant experience partner.
     video: 3--about-us-people-office-initiative-10s.mp4
     type: full_width_video
     enabled: true
