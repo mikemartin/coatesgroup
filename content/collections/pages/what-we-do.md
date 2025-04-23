@@ -7,13 +7,16 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 071d1a69-4df7-4eb1-91d6-d67964b1264e
-updated_at: 1693371373
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1745368425
 page_builder:
   -
     id: ljwscq36
-    title: 'End-to-End Support for Connected Customer Experiences'
-    text: 'Backed by almost 60 years of experience, our Crew create connected restaurant ecosystems through industry-leading technology. Our game-changing CMS, award-winning hardware, and full-spectrum services make it possible for brands of all sizes to create dynamic, data-driven, experiences for their customers at scale – and our end-to-end services ensure you’re supported every step of the way.'
+    title: 'End-to-End Solutions for Seamless Customer Experiences'
+    text: |-
+      For more than 60 years, our Crew has been simplifying complex restaurant operations to create connected restaurant ecosystems through our tailored solutions, technology and end-to-end services.  
+
+      With our game-changing CMS, award-winning hardware, and full-spectrum services, we empower brands of all sizes to deliver dynamic, data-driven customer experiences at scale. And with end-to-end support, we make it easy, ensuring you're supported at every step.
     video: 2--1280x720-what-we-do-product-creators-10s.mp4
     fallback_image: what-we-do/2.-what-we-do.jpg
     type: full_width_video
@@ -56,7 +59,7 @@ page_builder:
         id: 3cLgtpfL
         section: 1d2592aa-536e-4dfd-8901-23b7413fc22a
         headline: 'Communicate Brand Messages with Impact'
-headline: 'Digital Signage Solutions Built on Innovation and Engagement'
+headline: 'Simplify Complex Restaurant Ecosystems with Tailored Solutions and End-to-End Services'
 hero_type: brand
 background_color:
   label: Black
