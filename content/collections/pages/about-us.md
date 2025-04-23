@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745383465
+updated_at: 1745433664
 hero_type: brand
 headline: 'We Empower Millions of Customer Interactions Every Day'
 hero_color:
@@ -85,7 +85,7 @@ page_builder:
         content:
           -
             type: text
-            text: "\_Our uncompromising mission ensures that our people, partnerships and products are at the forefront of what we do, both now and in the future.\_"
+            text: "Our uncompromising mission ensures that our people, partnerships and products are at the forefront of what we do, both now and in the future.\_"
     type: repeating_squares
     enabled: true
     no_bottom_margin: true
