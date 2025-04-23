@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745369141
+updated_at: 1745371374
 hero_type: brand
 headline: 'Empowering Millions of Customer Interactions Every Day'
 hero_color:
@@ -31,44 +31,22 @@ page_builder:
     video_mobile: 3--720x1280-about-us-people-office-initiative-10s-2.mp4
     fallback_image: about-us/3.-about-us.jpg
   -
-    id: lk62z9oo
-    squares:
-      - 'Creating Connections'
-      - 'Empowering Partnerships'
-      - 'Always Evolving'
-    text:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Our purpose is found in the magic of creating human connections and building strong relationships. Which is why we pride ourselves on being more than just a place for our Crew to work and more than just a technology provider to our customers.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'We are bonded by the epic journey we’re on - leveraging our creativity and passion to build partnerships that deliver impactful solutions. It’s how we continuously deliver unrivaled results for our partners, together.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'For us, evolution isn’t simply a goal or a choice – it’s who we are. A strategic focus on the future, driven by insight, expertise and the desire to be better, means we’re always anticipating what’s next, pushing what’s possible and breaking boundaries to stay ahead in an ever-changing world.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Our uncompromising purpose ensures that our people, partnerships and products are at the forefront of what we do, both now and in the future.'
-    type: repeating_squares
+    id: m9t7vner
+    eyebrow: 'Our Purpose'
+    text: 'Empower millions of seamless customer experiences around the world every day.'
+    type: brand_text
     enabled: true
-    no_bottom_margin: true
-    title: 'Our Purpose'
+    color:
+      label: Blue
+      value:
+        - 'rgb(0 162 222)'
+    images:
+      - about-us/img_aboutus_2.jpg
+      - about-us/img_aboutus_1.jpg
   -
-    id: lk66i6f1
+    id: m9t81pah
     eyebrow: 'Our Vision'
-    text: "Revolutionising the way the world's leading \Lbrands leverage technology to drive the best \Lcustomer experience"
+    text: 'Become the leading global restaurant experience partner.'
     type: brand_text
     enabled: true
     color:
@@ -76,8 +54,42 @@ page_builder:
       value:
         - 'rgb(238 48 53)'
     images:
-      - about-us/img_aboutus_1.jpg
-      - about-us/img_aboutus_2.jpg
+      - case-studies/4mcdsqueenst.jpg
+  -
+    id: lk62z9oo
+    squares:
+      - 'Create connections,'
+      - 'empower partnerships'
+      - '& always evolve.'
+    text:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "Our mission is found in the magic of creating human connections and building strong relationships. Which is why we pride ourselves on being more than just a place for our Crew to work and more than just a technology provider to our customers.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We are bonded by the epic journey we’re on — leveraging our creativity and passion to build strong partnerships that drive impactful solutions. It’s how we continuously simplify the complex operations of our partners, delivering unrivalled results, together.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "For us, evolution isn’t simply a goal or a choice – it’s who we are. A strategic focus on the future, driven by insight, expertise and the desire to be better, means we’re always anticipating what’s next, pushing what’s possible and breaking boundaries to stay ahead in an ever-changing world.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "\_Our uncompromising mission ensures that our people, partnerships and products are at the forefront of what we do, both now and in the future.\_"
+    type: repeating_squares
+    enabled: true
+    no_bottom_margin: true
+    title: 'Our Mission'
   -
     id: lldl3gts
     title: 'Our Values'
