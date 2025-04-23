@@ -8,17 +8,17 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1737336473
+updated_at: 1745368807
 page_builder:
   -
     id: lk0po80o
-    title: 'A Leading Digital Signage Company'
+    title: 'A Workplace with Purpose'
     text: |-
-      Founded in 1963, Coates Group is a growing global technology and digital merchandising solutions provider that delivers connected, data-driven brand experiences to customers in more than 50 global markets out of nine offices across the world. 
+      Founded in 1963, Coates is a QSR experience ecosystem partner that simplifies complex restaurant operations to deliver connected, data-driven customer experiences. With nine offices worldwide, we support customers in over 50 global markets. 
 
-      As a company, we're revolutionising the way the world’s leading brands leverage technology to create dynamic, personalised, and connected customer experiences. But we're more than the products and services we deliver. We're a forward-thinking company that believes in the magic of creating human connections and forming strong partnerships.
+      We simplify the way the world’s leading brands leverage technology to create dynamic, personalised, and connected customer experiences. But we're more than just the products and services we deliver — we're a forward-thinking company that believes in the magic of human connection, the power of strong partnerships, and the importance of continuous evolution. 
 
-      We’re driving an evolution in digital customer experiences, and are committed to making Coates a place where people genuinely enjoy working – one that values integrity, individuality, and inclusivity.
+      We're driving the next evolution in connected customer experiences and are committed to making Coates a place where people genuinely enjoy working — one that values integrity, individuality, and inclusivity.
     video: 7--1280x720-10s-careers-full-reel-2.mp4
     fallback_image: careers/7.-careers.png
     type: full_width_video
