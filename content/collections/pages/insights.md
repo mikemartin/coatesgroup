@@ -60,7 +60,7 @@ page_builder:
       - white-papers
       - media
       - interviews
-headline: 'Stay Updated: Explore Our Latest Industry Insights'
+headline: 'Stay Updated: Explore Our Industry Expertise'
 enable_hero: false
 hero_type: brand
 hero_color:
@@ -73,8 +73,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1703789588
+updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
+updated_at: 1745371489
 center_headline: false
 hide_breadcrumb: false
 text_animation_delay: 0
