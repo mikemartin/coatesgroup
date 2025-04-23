@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745368425
+updated_at: 1745383588
 page_builder:
   -
     id: ljwscq36
@@ -59,7 +59,7 @@ page_builder:
         id: 3cLgtpfL
         section: 1d2592aa-536e-4dfd-8901-23b7413fc22a
         headline: 'Communicate Brand Messages with Impact'
-headline: 'Simplify Complex Restaurant Ecosystems with Tailored Solutions and End-to-End Services'
+headline: 'Simplify Complex Restaurant Ecosystems'
 hero_type: brand
 background_color:
   label: Black

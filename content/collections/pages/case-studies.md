@@ -14,8 +14,8 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745368595
-headline: 'Simplifying the Complex to Drive Proven Results for Global Brands'
+updated_at: 1745383619
+headline: 'Simplifying the Complex to Drive Proven Results'
 enable_hero: false
 hero_type: brand
 hero_color:
