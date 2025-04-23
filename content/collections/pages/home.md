@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745368022
+updated_at: 1745423126
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry
@@ -136,7 +136,7 @@ page_builder:
   -
     id: ljs5n5ni
     title: 'Simplifying the Complex with a Crew Built on Connection'
-    text: 'At Coates, we’re simplifying complex restaurant ecosystems to redefine the way brands connect with their customers through our tailored solutions, technology, and end-to-end services. Our Crew is committed to asking ‘What If? and doing things differently when it comes to our partnerships and products to deliver unrivalled results.'
+    text: "At Coates, we’re simplifying complex restaurant ecosystems to redefine the way brands connect with their customers through our tailored solutions, technology, and end-to-end services. Our Crew is committed to asking ‘What If?' and doing things differently when it comes to our partnerships and products to deliver unrivalled results."
     buttons:
       -
         id: ljs5op1o
