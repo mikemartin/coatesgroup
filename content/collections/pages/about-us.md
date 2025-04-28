@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745434443
+updated_at: 1745806739
 hero_type: brand
 headline: 'We Empower Millions of Customer Interactions Every Day'
 hero_color:
@@ -33,7 +33,7 @@ page_builder:
   -
     id: m9t7vner
     eyebrow: 'Our Purpose'
-    text: 'Empower millions of seamless customer experiences around the world every day for the world’s leading QSR brands.'
+    text: 'Empower millions of seamless customer experiences around the world every day.'
     type: brand_text
     enabled: true
     color:
