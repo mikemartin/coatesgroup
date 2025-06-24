@@ -40,6 +40,8 @@ AsyncAlpine.init(Alpine)
     .data('productsCarousel', () => import('./components/productsCarousel.js'))
     .data('productsDriveThru', () => import('./components/productsDriveThru.js'))
     .data('caseStudies', () => import('./components/caseStudies.js'))
+    .data('fullWidthVideo', () => import('./components/fullWidthVideo.js'))
+    .data('videoEmbed', () => import('./components/videoEmbed.js'))
     .start();
 
 Alpine.plugin([ui, collapse, focus, morph, persist, intersect, screen, sticky, queryString]);

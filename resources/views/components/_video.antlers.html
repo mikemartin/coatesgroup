@@ -6,29 +6,8 @@
 
 <!-- /components/_video.antlers.html -->
 <div
-    x-data="{ 
-        init() {
-            const player = new Plyr(this.$refs.player, {
-                ratio: '9:5',
-                hideControls: false,
-                keyboard: {
-                global: true,
-                },
-                tooltips: {
-                controls: true,
-                },
-                captions: {
-                active: true,
-                },
-            });
-
-            player.toggleControls(false);
-
-            player.on('play', event => {
-                player.toggleControls(true);
-            });
-        }
-    }" 
+    ax-load 
+    x-data="videoEmbed" 
     class="
         not-prose
         {{ switch(
@@ -48,14 +27,3 @@
     {{ partial:typography/caption class="mt-4 md:mt-6" }}
 </div>
 <!-- End: /components/_video.antlers.html -->
-
-{{ once }}
-{{ push:styles }}
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-{{ /push:styles }}
-
-{{ push:scripts }}
-<script defer src="https://www.youtube.com/iframe_api"></script>
-<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-{{ /push:scripts }}
-{{ /once }}

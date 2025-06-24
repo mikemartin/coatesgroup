@@ -8,38 +8,7 @@
 <section 
     {{ if show_product_types }}x-show="type == '{{ block:product_type:slug }}'" x-cloak{{/if}}
     {{ if block:video_url }}
-    x-data="{ 
-        ready: false, 
-        autoplay: false,
-        loadPlayer() {
-            const player = new Plyr(this.$refs.player, {
-                ratio: '9:5',
-                hideControls: false,
-                keyboard: {
-                  global: true,
-                },
-                tooltips: {
-                  controls: true,
-                },
-                captions: {
-                  active: true,
-                },
-            });
-    
-            player.toggleControls(false);
-    
-            player.on('play', event => {
-                player.toggleControls(true);
-            });
-    
-            player.on('ready', event => {
-                this.ready = true;
-                if (this.autoplay) {
-                  player.play();
-                }
-            });
-        }
-    }" 
+    ax-load x-data="fullWidthVideo" 
     style="{{ switch(
 		(hero_color:label == 'Yellow') => '--plyr-color-main: rgb(var(--color-green))',
         (hero_color:label == 'Red') => '--plyr-color-main: rgb(var(--color-green))',
@@ -100,17 +69,3 @@
     </div>
 </section>
 <!-- End: /page_builder/_full_width_video.antlers.html -->
-
-
-{{ if block:video_url }}
-    {{ once }}
-    {{ push:styles }}
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    {{ /push:styles }}
-
-    {{ push:scripts }}
-    <script defer src="https://www.youtube.com/iframe_api"></script>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    {{ /push:scripts }}
-    {{ /once }}
-{{ /if }}
