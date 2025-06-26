@@ -43,6 +43,7 @@ page_builder:
     images:
       - about-us/img_aboutus_2.jpg
       - about-us/img_aboutus_1.jpg
+    no_bottom_margin: true
   -
     id: m9t81pah
     eyebrow: 'Our Vision'
@@ -55,6 +56,7 @@ page_builder:
         - 'rgb(238 48 53)'
     images:
       - case-studies/4mcdsqueenst.jpg
+    no_bottom_margin: true
   -
     id: lk62z9oo
     squares:
@@ -88,7 +90,6 @@ page_builder:
             text: "Our uncompromising mission ensures that our people, partnerships and products are at the forefront of what we do, both now and in the future.\_"
     type: repeating_squares
     enabled: true
-    no_bottom_margin: true
     title: 'Our Mission'
   -
     id: lldl3gts
@@ -131,8 +132,6 @@ page_builder:
     title: 'Coates in Numbers'
     stats:
       -
-        id: ln2o9enw
-      -
         id: lk6hi163
         number: '9'
         label: 'Global Offices'
@@ -140,8 +139,6 @@ page_builder:
         id: lk6hi5b6
         number: '60'
         label: 'Years of Experience'
-      -
-        id: ln2o9yjg
     buttons:
       -
         id: lk6hijcm

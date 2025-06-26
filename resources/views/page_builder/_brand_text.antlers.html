@@ -12,7 +12,8 @@
 	(color:label == 'Blue') => 'bg-blue text-black',
 	(color:label == 'Charcoal') => 'bg-charcoal text-white',
 	() => 'bg-black text-white'
-	)}}">
+	)}}
+    {{ if no_bottom_margin }}-mb-12 md:-mb-16 lg:-mb-24{{/if}}">
     <div class="fluid-container grid md:grid-cols-12 gap-8 py-10 md:py-16 lg:py-20xl:py-32">
         {{ images:0 }}
         <div x-data="fadeIn"

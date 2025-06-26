@@ -31,3 +31,9 @@ fields:
     field: common.color
     config:
       display: 'Background Color'
+  -
+    handle: no_bottom_margin
+    field:
+      type: toggle
+      display: 'Remove bottom margin'
+      width: 50

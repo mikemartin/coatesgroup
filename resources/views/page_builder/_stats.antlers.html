@@ -11,7 +11,14 @@
             {{ partial:typography/h2 :content="block:title" }}
         </div>
         {{ block:stats }}
-            <div class="md:col-span-3 text-center">
+            <div class="
+                {{ switch(
+                    (total_results >= 4) => 'md:col-span-3',
+                    ((total_results === 2) && first) => 'md:col-start-3 md:col-span-4',
+                    (total_results >= 2) => 'md:col-span-4',
+                    () => void
+                )}}
+             text-center">
                 {{ partial:typography/h1 class="tracking-tight" :content="number" }}
                 {{ partial:typography/p class="mt-4 font-mono" :content="label" }}
             </div>
