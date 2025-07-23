@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 95132932-3b2a-4a4c-97b8-7f062ce5478f
-updated_at: 1753247583
+updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
+updated_at: 1753281288
 page_builder:
   -
     id: lk0po80o
@@ -200,12 +200,6 @@ page_builder:
                   -
                     type: text
                     text: 'We do not use third-party messaging apps (such as WhatsApp) to conduct interviews or make job offers.'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "If you are unsure about any communications that you have received claiming to be from Coates Group, please contact us at info[at]coatesgroup[dot]com\_before sharing any personal information."
       -
         type: paragraph
         content:
