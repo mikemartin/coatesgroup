@@ -7,8 +7,8 @@ seo_nofollow: false
 seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
-updated_by: 356ab58d-4a8a-432a-b276-3fb2343afbaa
-updated_at: 1745368807
+updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
+updated_at: 1753244140
 page_builder:
   -
     id: lk0po80o
@@ -145,6 +145,75 @@ page_builder:
     target_blank: true
     button_type: button
     url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
+  -
+    id: mdffwaol
+    title: 'Important Recruitment Update'
+    article:
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "We’ve been made aware that individuals or organisations are falsely claiming to represent Coates Group and discussing\_illegitimate\_role opportunities.\_"
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Here’s what to expect from our real recruitment process:'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "Our careers page is located at\_the link provided above. This has a list of all current open roles."
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: "All emails from us will come from our official domain, which is\_[at]coatesgroup[dot]com"
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'We will never request payment, bank details, or sensitive personal information (like your passport) during the recruitment process.'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'We do not use third-party messaging apps (such as WhatsApp) to conduct interviews or make job offers.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "If you are unsure about any communications that you have received claiming to be from Coates Group, please contact us at info[at]coatesgroup[dot]com\_before sharing any personal information."
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Thanks for your interest in joining Coates Group — we’re excited to meet you!'
+    type: article
+    enabled: true
 hero_type: brand
 headline: 'A Crew Built on Connection: Careers at Coates Group'
 hero_color:
