@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1753281288
+updated_at: 1753393521
 page_builder:
   -
     id: lk0po80o
@@ -181,7 +181,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: "All emails from us will come from our official domain, which is\_[at]coatesgroup[dot]com"
+                    text: "All emails from us will come from our official domain, which is\_[at]coatesgroup[dot]com or via our Applicant Tracking System (ATS) email address, which is no-reply[at]hire.lever[dot]co"
           -
             type: listItem
             content:
