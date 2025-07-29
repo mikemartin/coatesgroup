@@ -8,7 +8,7 @@ seo_canonical_type: entry
 sitemap_change_frequency: weekly
 sitemap_priority: 0.5
 updated_by: ac229d5c-b146-4247-bcab-94ff2abeedd9
-updated_at: 1753393521
+updated_at: 1753799133
 page_builder:
   -
     id: lk0po80o
@@ -147,20 +147,26 @@ page_builder:
     url: 'https://jobs.lever.co/coatesgroup?utm_source=CoatesCareersPage&utm_medium=Button+Clicks+&utm_campaign=Lever+'
   -
     id: mdffwaol
-    title: 'Important Recruitment Update'
+    title: 'Fraud Alert: Employment Scam Advisory'
     article:
       -
         type: paragraph
         content:
           -
             type: text
-            text: "We’ve been made aware that individuals or organisations are falsely claiming to represent Coates Group and discussing\_illegitimate\_role opportunities.\_"
+            text: "It has come to our attention that unauthorised individuals are impersonating our company and reaching out to job seekers through fraudulent emails, falsely claiming to represent Coates. These emails often request personal information and appear to come from domains that are not affiliated with our organisation, such as\_coatesgroupcareer.com."
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Here’s what to expect from our real recruitment process:'
+            text: 'We take this matter very seriously. Coates has reported these incidents to law enforcement and is cooperating with the ongoing investigation. We are committed to protecting the integrity of our recruitment process and the privacy of our applicants.'
+      -
+        type: paragraph
+        content:
+          -
+            type: text
+            text: "\_Please be advised of the following:"
       -
         type: bulletList
         content:
@@ -172,7 +178,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: "Our careers page is located at\_the link provided above. This has a list of all current open roles."
+                    text: 'Coates does not operate or communicate through any domain resembling “coatesgroupcareer.com”'
           -
             type: listItem
             content:
@@ -181,7 +187,7 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: "All emails from us will come from our official domain, which is\_[at]coatesgroup[dot]com or via our Applicant Tracking System (ATS) email address, which is no-reply[at]hire.lever[dot]co"
+                    text: "We\_do not contact employment candidates via email to solicit personal or financial information"
           -
             type: listItem
             content:
@@ -190,7 +196,32 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'We will never request payment, bank details, or sensitive personal information (like your passport) during the recruitment process.'
+                    text: "All applications for employment must be submitted through our official website\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'https://coatesgroup.com/careers'
+                          rel: null
+                          target: null
+                          title: null
+                    text: 'https://coatesgroup.com/careers'
+                  -
+                    type: text
+                    text: "\_or directly through our LinkedIn profile:\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: link
+                        attrs:
+                          href: 'https://www.linkedin.com/company/coatesgroup/'
+                          rel: null
+                          target: null
+                          title: 'https://www.linkedin.com/company/coatesgroup/'
+                    text: 'Coates Group'
           -
             type: listItem
             content:
@@ -199,13 +230,28 @@ page_builder:
                 content:
                   -
                     type: text
-                    text: 'We do not use third-party messaging apps (such as WhatsApp) to conduct interviews or make job offers.'
+                    text: "All emails from us will come from our official domain, which is\_"
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: italic
+                    text: '[at]coatesgroup[dot]com'
+                  -
+                    type: text
+                    text: ' or via our Applicant Tracking System (ATS) email address, which is '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: italic
+                    text: "no-reply[at]hire.lever[dot]co\_"
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Thanks for your interest in joining Coates Group — we’re excited to meet you!'
+            text: "If you receive any suspicious communications purporting to be from Coates, we urge you not to respond, do not click any links, and do not provide any personal information.\_Your safety and trust are of the utmost importance to us. Thank you for your vigilance."
     type: article
     enabled: true
 hero_type: brand
