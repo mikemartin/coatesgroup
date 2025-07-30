@@ -1,0 +1,6 @@
+name: 'Peter  Madden'
+email: petemadden@att.net
+enquiry: careers
+location: usa
+message_body: "FYI - I applied for an open position today and received the following email (just thought you should know that the mail merge is not working correctly):\r\n\r\n\"Dear {{Candidate first name}},\r\n\r\nThank you for your interest in Coates Group. We appreciate the time and effort you put into your application.\r\n\r\nWe are currently reviewing all applications, and you can expect to hear back from us within the next few weeks regarding the status of your application.\r\n\r\nIn the meantime, please feel free to reach out if you have any questions.\r\n\r\nThank you again for considering Coates Group as the next step in your career. We look forward to being in touch soon.\r\n\r\nBest regards,\r\n\r\nTalent Acquisition Team\""
+consent: true
