@@ -1,0 +1,7 @@
+name: Ganesh
+email: ganesh123zade@gmail.com
+company: Freelancer
+enquiry: general
+location: india
+message_body: "I’d like to bring to your attention a small mistake I observed in the auto-generated \"email sent from no-reply@hire.lever.co.\"\r\nThe salutation currently shows as:\r\n\"Dear {{Candidate first name}},\"\r\nIt seems the query didn’t fetch the candidate’s name from the backend as expected.\r\nThis is a small mistake, but I observed it and thought to inform you. I believe even small mistakes can sometimes lead to bigger issues, so it's good to address them early."
+consent: true
