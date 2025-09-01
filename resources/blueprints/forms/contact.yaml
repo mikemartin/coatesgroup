@@ -11,13 +11,9 @@ tabs:
               type: text
               validate: required
               localizable: true
-              instructions_position: above
               listable: true
-              visibility: visible
-              input_type: text
               placeholder: 'Eg. John Doe'
-              antlers: false
-              hide_display: false
+              width: 50
           -
             handle: email
             field:
@@ -25,26 +21,28 @@ tabs:
               type: text
               validate: required|email
               localizable: true
-              instructions_position: above
               listable: true
-              visibility: visible
-              input_type: text
               placeholder: sample@mail.com
-              antlers: false
-              hide_display: false
               width: 50
+          -
+            handle: phone
+            field:
+              type: text
+              display: Phone
+              width: 50
+              validate:
+                - required
           -
             handle: company
             field:
-              input_type: text
-              antlers: false
               type: text
               display: Company
-              icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
+              width: 50
+          -
+            handle: location
+            field:
+              type: select
+              display: Location
               width: 50
           -
             handle: enquiry
@@ -54,37 +52,10 @@ tabs:
                 careers: Careers
                 sales: Sales
                 support: Support
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
               type: select
               display: 'Enquiry Type'
-              icon: select
               listable: true
-              instructions_position: above
-              visibility: visible
-              hide_display: false
               default: general
-              width: 50
-          -
-            handle: location
-            field:
-              taggable: false
-              push_tags: false
-              multiple: false
-              clearable: false
-              searchable: true
-              cast_booleans: false
-              type: select
-              display: Location
-              icon: select
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
               width: 50
           -
             handle: message_body
@@ -93,22 +64,12 @@ tabs:
               type: textarea
               validate: required
               localizable: true
-              instructions_position: above
-              listable: hidden
-              visibility: visible
               placeholder: 'Your message here'
-              antlers: false
-              hide_display: false
           -
             handle: consent
             field:
               inline_label: 'By ticking this box, you agree to our'
-              default: false
               type: toggle
-              icon: toggle
               listable: true
-              instructions_position: above
               validate:
                 - accepted
-              visibility: visible
-              hide_display: false
